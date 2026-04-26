@@ -1,5 +1,5 @@
 {
-  "version": "9.1.0",
+  "version": "10.9.0",
   "updated": "2026-04-26",
   "items": {
     "delete_note": {
@@ -17,12 +17,13 @@
       "name": "self_repair",
       "path": "capabilities/self_repair.py",
       "description": "Capability: self_repair",
-      "status": "planned",
+      "status": "active",
       "created_at": "2026-04-24",
       "registered_at": "2026-04-24",
-      "wired": false,
-      "tested": false,
-      "documented": false
+      "wired": true,
+      "tested": true,
+      "documented": true,
+      "activated_at": "2026-04-26"
     },
     "query_contact": {
       "name": "query_contact",
@@ -270,12 +271,13 @@
       "name": "explain_invocation_status",
       "path": "capabilities/explain_invocation_status.py",
       "description": "Capability: explain_invocation_status",
-      "status": "planned",
+      "status": "active",
       "created_at": "2026-04-24",
       "registered_at": "2026-04-24",
-      "wired": false,
-      "tested": false,
-      "documented": false
+      "wired": true,
+      "tested": true,
+      "documented": true,
+      "activated_at": "2026-04-26"
     },
     "query_calendar_event": {
       "name": "query_calendar_event",
@@ -292,12 +294,13 @@
       "name": "diagnostics",
       "path": "capabilities/diagnostics.py",
       "description": "Capability: diagnostics",
-      "status": "planned",
+      "status": "active",
       "created_at": "2026-04-24",
       "registered_at": "2026-04-24",
-      "wired": false,
-      "tested": false,
-      "documented": false
+      "wired": true,
+      "tested": true,
+      "documented": true,
+      "activated_at": "2026-04-26"
     },
     "query_message_status": {
       "name": "query_message_status",

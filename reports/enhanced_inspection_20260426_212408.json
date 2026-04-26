@@ -1,0 +1,116 @@
+{
+  "version": "2.0.0",
+  "timestamp": "2026-04-26T21:24:08.995727",
+  "total_duration_ms": 1909.07621383667,
+  "summary": {
+    "total": 11,
+    "pass": 8,
+    "fail": 0,
+    "warning": 2,
+    "fixed": 1
+  },
+  "auto_fixed": [
+    "clean_package_pollution"
+  ],
+  "checks": [
+    {
+      "name": "directory_structure",
+      "category": "structure",
+      "status": "pass",
+      "detail": "all_12_dirs_present",
+      "severity": "info",
+      "duration_ms": 1.4996528625488281,
+      "fix_applied": false
+    },
+    {
+      "name": "route_registry",
+      "category": "routing",
+      "status": "pass",
+      "detail": "routes=54, distribution={'L3': 16, 'L0': 18, 'L1': 6, 'L2': 12, 'L4': 2}",
+      "severity": "info",
+      "duration_ms": 1.7459392547607422,
+      "fix_applied": false
+    },
+    {
+      "name": "module_registry",
+      "category": "modules",
+      "status": "pass",
+      "detail": "modules=191",
+      "severity": "info",
+      "duration_ms": 2.0723342895507812,
+      "fix_applied": false
+    },
+    {
+      "name": "capability_registry",
+      "category": "capabilities",
+      "status": "pass",
+      "detail": "registered=53, actual=53",
+      "severity": "info",
+      "duration_ms": 3.0155181884765625,
+      "fix_applied": false
+    },
+    {
+      "name": "config_consistency",
+      "category": "config",
+      "status": "pass",
+      "detail": "all_key_configs_present",
+      "severity": "info",
+      "duration_ms": 0.13208389282226562,
+      "fix_applied": false
+    },
+    {
+      "name": "report_directory",
+      "category": "reports",
+      "status": "pass",
+      "detail": "all_report_dirs_present",
+      "severity": "info",
+      "duration_ms": 0.1316070556640625,
+      "fix_applied": false
+    },
+    {
+      "name": "orphan_components",
+      "category": "integrity",
+      "status": "warning",
+      "detail": "orphans={'modules': 6, 'capabilities': 0, 'scripts': 0}",
+      "severity": "warning",
+      "duration_ms": 1.9252300262451172,
+      "fix_applied": false
+    },
+    {
+      "name": "critical_files",
+      "category": "integrity",
+      "status": "pass",
+      "detail": "all_6_files_present",
+      "severity": "info",
+      "duration_ms": 0.6639957427978516,
+      "fix_applied": false
+    },
+    {
+      "name": "test_collection",
+      "category": "testing",
+      "status": "warning",
+      "detail": "files=117, tests=956, invalid=['test_phase3_group2_final.py']",
+      "severity": "warning",
+      "duration_ms": 13.170480728149414,
+      "fix_applied": false
+    },
+    {
+      "name": "skill_registry",
+      "category": "skills",
+      "status": "pass",
+      "detail": "skills=201, all_registered",
+      "severity": "info",
+      "duration_ms": 22.387981414794922,
+      "fix_applied": false
+    },
+    {
+      "name": "clean_package_pollution",
+      "category": "integrity",
+      "status": "fixed",
+      "detail": "pollution_count=4692",
+      "severity": "error",
+      "duration_ms": 872.6229667663574,
+      "fix_applied": true
+    }
+  ]
+}
