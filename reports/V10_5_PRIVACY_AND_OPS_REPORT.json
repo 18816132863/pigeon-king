@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "privacy": {
+    "status": "privacy_prepared",
+    "payload": {
+      "goal": "x",
+      "secret": "[REDACTED]",
+      "token": "[REDACTED]"
+    },
+    "minimized": true,
+    "redacted": true
+  },
+  "ops": {
+    "status": "supervised",
+    "drift": {
+      "status": "stable",
+      "changed_keys": [],
+      "requires_review": false
+    },
+    "uptime": {
+      "status": "checked",
+      "checks": [
+        {
+          "connector_id": "api",
+          "status": "planned",
+          "healthy": true
+        }
+      ],
+      "unhealthy_count": 0
+    },
+    "incident": null
+  }
+}

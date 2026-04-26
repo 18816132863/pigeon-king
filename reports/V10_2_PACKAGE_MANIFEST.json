@@ -1,0 +1,18 @@
+{
+  "package_name": "pigeon_king_v10.2.0_autonomous_runtime_loop_clean_full.zip",
+  "created_at": "2026-04-26T07:17:47.555666",
+  "base": "pigeon_king_v10.1 (4).0_cleaned.zip",
+  "shape": "Self-Evolving Personal Operating Agent + Autonomous Runtime Loop",
+  "file_count": 3946,
+  "missing_required_files": [],
+  "remaining_pollution_count": 0,
+  "remaining_pollution_sample": [],
+  "validation": {
+    "direct_runtime_import": {
+      "status": "ready",
+      "shape": "Autonomous Runtime Orchestrator",
+      "acquisition_plans": 1
+    }
+  },
+  "note": "Continue target-runtime pytest and connected-device validation after replacement."
+}

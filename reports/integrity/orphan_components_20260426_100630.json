@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-04-26T10:06:30.701832",
+  "orphans": {
+    "modules": [],
+    "capabilities": [],
+    "configs": [
+      {
+        "name": "default_skill_config",
+        "path": "/home/sandbox/.openclaw/workspace/config/default_skill_config.py",
+        "reason": "未被任何代码引用"
+      }
+    ],
+    "scripts": [],
+    "documents": [],
+    "tests": [],
+    "tables": []
+  },
+  "summary": {
+    "total": 1,
+    "by_category": {
+      "modules": 0,
+      "capabilities": 0,
+      "configs": 1,
+      "scripts": 0,
+      "documents": 0,
+      "tests": 0,
+      "tables": 0
+    }
+  }
+}

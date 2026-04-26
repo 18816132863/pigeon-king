@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "score": 100,
+  "blockers": [],
+  "warnings": [],
+  "decision": "release_candidate"
+}

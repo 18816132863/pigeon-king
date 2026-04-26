@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "rules": {
+    "status": "rules_ready",
+    "rules": [
+      "never_fake_success",
+      "never_bypass_confirmation",
+      "never_install_untrusted_code_as_active",
+      "minimize_private_data",
+      "verify_before_claiming_done",
+      "rollback_required_for_external_change"
+    ]
+  },
+  "alignment": {
+    "status": "aligned",
+    "violations": []
+  },
+  "boundary": {
+    "status": "strong_boundary",
+    "auto_execute": false,
+    "confirmation_required": true
+  }
+}

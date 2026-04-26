@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-04-26T03:45:24.105796",
+  "orphans": {
+    "modules": [],
+    "capabilities": [],
+    "configs": [],
+    "scripts": [
+      {
+        "name": "check_connected_adapter",
+        "path": "/mnt/data/v9_2_build_work/scripts/check_connected_adapter.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "connected_adapter_smoke",
+        "path": "/mnt/data/v9_2_build_work/scripts/connected_adapter_smoke.py",
+        "reason": "未注册到 script_registry.json"
+      }
+    ],
+    "documents": [],
+    "tests": [],
+    "tables": []
+  },
+  "summary": {
+    "total": 2,
+    "by_category": {
+      "modules": 0,
+      "capabilities": 0,
+      "configs": 0,
+      "scripts": 2,
+      "documents": 0,
+      "tests": 0,
+      "tables": 0
+    }
+  }
+}

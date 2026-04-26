@@ -1,0 +1,2853 @@
+{
+  "version": "10.9.0",
+  "updated": "2026-04-26",
+  "modules": {
+    "device_capability_bus": {
+      "name": "Device Capability Bus",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "设备能力总线，统一管理设备能力的注册、发现和执行",
+      "path": "device_capability_bus/",
+      "entry_points": [
+        "__init__.py",
+        "capability_registry.py",
+        "capability_executor.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "safety_governor": {
+      "name": "Safety Governor",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "安全治理器，策略引擎、审批门、风险等级管理",
+      "path": "safety_governor/",
+      "entry_points": [
+        "__init__.py",
+        "policy_engine.py",
+        "approval_gate.py"
+      ],
+      "dependencies": [
+        "device_capability_bus"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "learning_loop": {
+      "name": "Learning Loop",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "学习闭环，执行记忆、计划优化、模式提取",
+      "path": "learning_loop/",
+      "entry_points": [
+        "__init__.py",
+        "execution_memory.py",
+        "plan_optimizer.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "skill_asset_registry": {
+      "name": "Skill Asset Registry",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "技能资产库，扫描器、注册表、资产定义",
+      "path": "skill_asset_registry/",
+      "entry_points": [
+        "__init__.py",
+        "skill_scanner.py",
+        "skill_registry.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "autonomous_planner": {
+      "name": "Autonomous Planner",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "自主规划器，目标解析、任务分解、规划引擎",
+      "path": "autonomous_planner/",
+      "entry_points": [
+        "__init__.py",
+        "goal_parser.py",
+        "task_decomposer.py"
+      ],
+      "dependencies": [
+        "device_capability_bus",
+        "skill_asset_registry"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "visual_operation_agent": {
+      "name": "Visual Operation Agent",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "视觉操作代理，屏幕观察、UI接地、动作执行",
+      "path": "visual_operation_agent/",
+      "entry_points": [
+        "__init__.py",
+        "screen_observer.py",
+        "ui_grounding.py"
+      ],
+      "dependencies": [
+        "device_capability_bus"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "closed_loop_verifier": {
+      "name": "Closed Loop Verifier",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "闭环验证器，结果检查、审计写入、恢复管理",
+      "path": "closed_loop_verifier/",
+      "entry_points": [
+        "__init__.py",
+        "result_checker.py",
+        "audit_writer.py"
+      ],
+      "dependencies": [
+        "device_capability_bus",
+        "learning_loop"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "domain": {
+      "name": "Domain",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "领域层，任务规格和状态机",
+      "path": "domain/",
+      "entry_points": [
+        "__init__.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "skill_entry": {
+      "name": "Skill Entry",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "技能入口，输入路由、响应格式化、验证器",
+      "path": "skill_entry/",
+      "entry_points": [
+        "__init__.py",
+        "input_router.py",
+        "response_formatter.py",
+        "validators.py",
+        "error_codes.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "speculative_decoding": {
+      "name": "Speculative Decoding",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "Draft-target speculative decoding framework - V9 正式功能",
+      "path": "execution/speculative_decoding.py",
+      "responsibility": "使用草稿模型生成候选token，目标模型验证，实现推理加速",
+      "entry_points": [
+        "speculative_decoding.py"
+      ],
+      "exports": [
+        "DraftModel",
+        "TargetModel",
+        "SpeculativeDecoder",
+        "SpeculativeDecodingConfig",
+        "SpeculativeDecodeConfig",
+        "SpeculativeResult",
+        "SpeculativeDecodeResult"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_speculative_decoding.py",
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "failover": {
+      "name": "Failover",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "故障转移系统 - V9 新增",
+      "path": "execution/failover/",
+      "responsibility": "健康检查、负载均衡、自动切换",
+      "entry_points": [
+        "failover.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "auto_tuner": {
+      "name": "Auto Tuner",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "自动调优系统 - V9 新增",
+      "path": "execution/optimizer/",
+      "responsibility": "性能参数自动调优",
+      "entry_points": [
+        "auto_tuner.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "quantization": {
+      "name": "Quantization",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "向量量化系统 - V9 新增",
+      "path": "execution/quantization/",
+      "responsibility": "INT8/OPQ量化，内存优化",
+      "entry_points": [
+        "quantization.py",
+        "opq_quantization.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "rag_optimizer": {
+      "name": "RAG Optimizer",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "RAG优化器 - V9 新增",
+      "path": "execution/rag/",
+      "responsibility": "HyDE查询重写、检索增强",
+      "entry_points": [
+        "rag_optimizer.py",
+        "query_rewriter.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "vector_ops": {
+      "name": "Vector Ops",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "向量操作模块 - V9 新增",
+      "path": "execution/vector_ops/",
+      "responsibility": "向量计算、ANN索引",
+      "entry_points": [
+        "vector_ops.py",
+        "ann.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "realtime_scheduler": {
+      "name": "Realtime Scheduler",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "实时调度系统 - V9 新增",
+      "path": "governance/scheduler/",
+      "responsibility": "低延迟任务调度",
+      "entry_points": [
+        "realtime_scheduler.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "access_control": {
+      "name": "Access Control",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "访问控制系统 - V9 新增",
+      "path": "governance/access_control/",
+      "responsibility": "权限管理、访问控制",
+      "entry_points": [
+        "access_control.py",
+        "permission_manager.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "security_confirmation": {
+      "name": "Security Confirmation",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "安全确认系统 - V9 新增",
+      "path": "governance/security/",
+      "responsibility": "敏感操作确认",
+      "entry_points": [
+        "security_confirmation.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "three_engine_manager": {
+      "name": "Three Engine Manager",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "三引擎向量架构 - V9 新增",
+      "path": "infrastructure/vector_engines/",
+      "responsibility": "sqlite-vec/Qdrant/TF-IDF三引擎管理",
+      "entry_points": [
+        "three_engine_manager.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "cache_optimizer": {
+      "name": "Cache Optimizer",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "缓存优化系统 - V9 新增",
+      "path": "infrastructure/cache/",
+      "responsibility": "查询缓存、RAG缓存优化",
+      "entry_points": [
+        "cache_optimizer.py",
+        "query_cache.py",
+        "rag_cache.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "hardware_optimizer": {
+      "name": "Hardware Optimizer",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "硬件优化系统 - V9 新增",
+      "path": "infrastructure/hardware/",
+      "responsibility": "CPU/GPU/NUMA优化",
+      "entry_points": [
+        "cpu_optimizer.py",
+        "gpu_ops.py",
+        "numa_optimizer.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "connection_pool": {
+      "name": "Connection Pool",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "连接池管理 - V9 新增",
+      "path": "infrastructure/pool/",
+      "responsibility": "数据库连接池管理",
+      "entry_points": [
+        "connection_pool.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "model_router": {
+      "name": "Model Router",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "多模型路由 - V9 新增",
+      "path": "orchestration/router/",
+      "responsibility": "模型选择、成本优化",
+      "entry_points": [
+        "model_router.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "llm_streaming": {
+      "name": "LLM Streaming",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "LLM流式输出 - V9 新增",
+      "path": "orchestration/streaming/",
+      "responsibility": "流式输出、首字延迟优化",
+      "entry_points": [
+        "llm_streaming.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "conversation": {
+      "name": "Conversation",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "多轮对话管理 - V9 新增",
+      "path": "orchestration/conversation/",
+      "responsibility": "上下文管理、对话状态",
+      "entry_points": [
+        "conversation.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "multimodal_search": {
+      "name": "Multimodal Search",
+      "layer": "L2",
+      "layer_name": "Memory Context",
+      "description": "多模态搜索 - V9 新增",
+      "path": "memory_context/multimodal/",
+      "responsibility": "图文音视频多模态检索",
+      "entry_points": [
+        "multimodal_search.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "cross_lingual": {
+      "name": "Cross Lingual",
+      "layer": "L2",
+      "layer_name": "Memory Context",
+      "description": "跨语言搜索 - V9 新增",
+      "path": "memory_context/cross_lingual/",
+      "responsibility": "多语言支持、跨语言检索",
+      "entry_points": [
+        "cross_lingual.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "maintenance": {
+      "name": "Maintenance",
+      "layer": "L2",
+      "layer_name": "Memory Context",
+      "description": "智能维护系统 - V9 新增",
+      "path": "memory_context/maintenance/",
+      "responsibility": "向量维护、覆盖率检查",
+      "entry_points": [
+        "run_maintenance.py",
+        "check_coverage.py",
+        "vector_system_optimizer.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "monitoring": {
+      "name": "Monitoring",
+      "layer": "L1",
+      "layer_name": "Core",
+      "description": "性能监控面板 - V9 新增",
+      "path": "core/monitoring/",
+      "responsibility": "性能监控、健康检查",
+      "entry_points": [
+        "performance_monitor.py",
+        "health_monitor.py",
+        "cli_tool.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "connected_adapter_bootstrap": {
+      "name": "Connected Adapter Bootstrap",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "真实小艺连接端 adapter 自举、probe-only 探测和 L0/L1 小流量 smoke 前置门",
+      "path": "infrastructure/connected_adapter_bootstrap.py",
+      "entry_points": [
+        "connected_adapter_bootstrap.py",
+        "../scripts/check_connected_adapter.py",
+        "../scripts/connected_adapter_smoke.py"
+      ],
+      "dependencies": [
+        "device_runtime_state",
+        "device_capability_bus",
+        "connected_runtime_recovery_policy"
+      ],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "tested_by": [
+        "tests/test_connected_adapter_bootstrap.py"
+      ],
+      "documented_in": [
+        "reports/CONNECTED_ADAPTER_BOOTSTRAP_REPORT.txt"
+      ]
+    },
+    "goal_strategy_kernel": {
+      "name": "Goal Strategy Kernel",
+      "layer": "L3",
+      "layer_name": "Decision",
+      "description": "自主目标建模、策略选择、优先级排序内核",
+      "path": "core/autonomy/goal_strategy_kernel.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "task_graph_compiler": {
+      "name": "Task Graph Compiler",
+      "layer": "L3",
+      "layer_name": "Decision",
+      "description": "一句话目标转任务图",
+      "path": "core/autonomy/task_graph_compiler.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "personal_codex": {
+      "name": "Personal Codex",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "用户个人规则、偏好、禁区与强确认策略",
+      "path": "governance/codex/personal_codex.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "personalization_engine": {
+      "name": "Personalization Engine",
+      "layer": "L4",
+      "layer_name": "Learning",
+      "description": "偏好模型、风险模型、决策风格模型和行为模式模型",
+      "path": "memory_context/personalization/personalization_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "external_capability_bus": {
+      "name": "External Capability Bus",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "外部 API / 设备 / 插件 / MCP / 数据库能力接入总线",
+      "path": "infrastructure/external_capability_bus.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "solution_search_orchestrator": {
+      "name": "Solution Search Orchestrator",
+      "layer": "L3",
+      "layer_name": "Decision",
+      "description": "无技能/无方案时自动搜索解决方案并形成候选方案",
+      "path": "infrastructure/solution_search_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "capability_self_extension_kernel": {
+      "name": "Capability Self Extension Kernel",
+      "layer": "L4",
+      "layer_name": "Infrastructure",
+      "description": "Detects capability gaps and creates sandboxed, approval-gated extension plans",
+      "path": "infrastructure/capability_self_extension.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_SELF_EXTENSION_REPORT.txt"
+      ]
+    },
+    "personal_autonomous_os_agent": {
+      "name": "Personal Autonomous OS Agent",
+      "layer": "L2",
+      "layer_name": "Orchestration",
+      "description": "个人操作系统级自治智能体编排入口",
+      "path": "orchestration/personal_autonomous_os_agent.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "judgement_engine": {
+      "name": "Judgement Engine",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "强判断性与规则性，不做傻执行",
+      "path": "governance/codex/judgement_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "capability_self_extension": {
+      "name": "Capability Self Extension",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "能力缺口识别、方案评估、安全接入、回滚与晋升机制",
+      "path": "infrastructure/capability_self_extension.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_autonomous_agent.py"
+      ],
+      "documented_in": [
+        "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+      ]
+    },
+    "system_self_test_agent": {
+      "name": "System Self-Test Agent",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "V10 系统级自测智能体，负责极限自检、诊断、自愈建议和发布门禁",
+      "path": "core/self_test/system_self_test_agent.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "test_plan_generator": {
+      "name": "Test Plan Generator",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "自动生成 V10 极限自测计划",
+      "path": "core/self_test/test_plan_generator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "self_diagnostics": {
+      "name": "Self Diagnostics",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "离线结构自诊断、注册表一致性检查、clean 包污染检查",
+      "path": "core/self_test/self_diagnostics.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "self_healing_policy": {
+      "name": "Self Healing Policy",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "将诊断问题映射为可审计、可回滚、边界内的自愈动作",
+      "path": "core/self_test/self_healing_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "perfection_gate": {
+      "name": "Perfection Gate",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "V10 发布门禁，阻止不完整、污染或注册表错位的包被冻结",
+      "path": "core/self_test/perfection_gate.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_PERFECTION_GATE_REPORT.txt"
+      ]
+    },
+    "audit_verifier": {
+      "name": "Audit Verifier",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "验证能力扩展计划是否包含沙箱、审计、回滚和强确认边界",
+      "path": "governance/self_audit/audit_verifier.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "package_cleanliness_guard": {
+      "name": "Package Cleanliness Guard",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "clean full 包污染守卫",
+      "path": "infrastructure/guards/package_cleanliness_guard.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "registry_consistency_guard": {
+      "name": "Registry Consistency Guard",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "module/fusion/skill 等注册表一致性守卫",
+      "path": "infrastructure/guards/registry_consistency_guard.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_extreme_self_test.py"
+      ],
+      "documented_in": [
+        "reports/V10_EXTREME_SELF_TEST_REPORT.md"
+      ]
+    },
+    "autonomous_runtime_kernel": {
+      "name": "Autonomous Runtime Kernel",
+      "layer": "L3",
+      "layer_name": "Runtime",
+      "description": "Bounded autonomous runtime loop",
+      "path": "core/runtime/autonomous_runtime_kernel.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "decision_cycle": {
+      "name": "Decision Cycle",
+      "layer": "L3",
+      "layer_name": "Runtime",
+      "description": "Observe-orient-decide-act-verify-learn cycle",
+      "path": "core/runtime/decision_cycle.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "goal_memory": {
+      "name": "Goal Memory",
+      "layer": "L4",
+      "layer_name": "Runtime",
+      "description": "Goal memory interface",
+      "path": "core/runtime/goal_memory.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "priority_scheduler": {
+      "name": "Priority Scheduler",
+      "layer": "L3",
+      "layer_name": "Runtime",
+      "description": "Risk-aware priority scheduling",
+      "path": "core/runtime/priority_scheduler.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "runtime_state_machine": {
+      "name": "Runtime State Machine",
+      "layer": "L3",
+      "layer_name": "Runtime",
+      "description": "Autonomous runtime state machine",
+      "path": "core/runtime/runtime_state_machine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "autonomy_level_policy": {
+      "name": "Autonomy Level Policy",
+      "layer": "L5",
+      "layer_name": "Runtime",
+      "description": "Autonomy level policy",
+      "path": "governance/policy/autonomy_level_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "runtime_policy_enforcer": {
+      "name": "Runtime Policy Enforcer",
+      "layer": "L5",
+      "layer_name": "Runtime",
+      "description": "Runtime policy enforcement",
+      "path": "governance/policy/runtime_policy_enforcer.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "capability_marketplace": {
+      "name": "Capability Marketplace",
+      "layer": "L4",
+      "layer_name": "Runtime",
+      "description": "Trusted capability marketplace interface",
+      "path": "infrastructure/acquisition/capability_marketplace.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "solution_acquisition_pipeline": {
+      "name": "Solution Acquisition Pipeline",
+      "layer": "L4",
+      "layer_name": "Runtime",
+      "description": "Solution acquisition pipeline",
+      "path": "infrastructure/acquisition/solution_acquisition_pipeline.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "preference_evolution": {
+      "name": "Preference Evolution",
+      "layer": "L4",
+      "layer_name": "Runtime",
+      "description": "Personal preference evolution",
+      "path": "learning_loop/personal_model/preference_evolution.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "decision_style_model": {
+      "name": "Decision Style Model",
+      "layer": "L4",
+      "layer_name": "Runtime",
+      "description": "Decision style model",
+      "path": "learning_loop/personal_model/decision_style_model.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "autonomous_runtime_orchestrator": {
+      "name": "Autonomous Runtime Orchestrator",
+      "layer": "L2",
+      "layer_name": "Runtime",
+      "description": "Autonomous runtime orchestration entry",
+      "path": "orchestration/autonomous_runtime_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ],
+      "documented_in": [
+        "reports/V10_2_AUTONOMOUS_RUNTIME_SYSTEM_REPORT.md"
+      ]
+    },
+    "mission_control_center": {
+      "name": "Mission Control Center",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/mission/mission_control_center.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mission_graph": {
+      "name": "Mission Graph",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/mission/mission_graph.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "proactive_observer": {
+      "name": "Proactive Observer",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/mission/proactive_observer.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mission_priority_engine": {
+      "name": "Mission Priority Engine",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/mission/mission_priority_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "role_team": {
+      "name": "Role Team",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/multi_agent/role_team.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "critic_agent": {
+      "name": "Critic Agent",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/multi_agent/critic_agent.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "verifier_agent": {
+      "name": "Verifier Agent",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/multi_agent/verifier_agent.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "executor_agent": {
+      "name": "Executor Agent",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/multi_agent/executor_agent.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "result_verifier": {
+      "name": "Result Verifier",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/verification/result_verifier.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "rollback_manager": {
+      "name": "Rollback Manager",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/verification/rollback_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "audit_trail": {
+      "name": "Audit Trail",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "core/verification/audit_trail.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "external_connector_registry": {
+      "name": "External Connector Registry",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/connectors/external_connector_registry.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "permission_scope_manager": {
+      "name": "Permission Scope Manager",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/connectors/permission_scope_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "connector_health_monitor": {
+      "name": "Connector Health Monitor",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/connectors/connector_health_monitor.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "skill_discovery_engine": {
+      "name": "Skill Discovery Engine",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/capability_acquisition/skill_discovery_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "trusted_source_policy": {
+      "name": "Trusted Source Policy",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/capability_acquisition/trusted_source_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "extension_lifecycle_manager": {
+      "name": "Extension Lifecycle Manager",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/capability_acquisition/extension_lifecycle_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "sandbox_promotion_gate": {
+      "name": "Sandbox Promotion Gate",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "infrastructure/capability_acquisition/sandbox_promotion_gate.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "personal_feedback_router": {
+      "name": "Personal Feedback Router",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "learning_loop/personal_evolution/personal_feedback_router.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "behavior_pattern_miner": {
+      "name": "Behavior Pattern Miner",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "learning_loop/personal_evolution/behavior_pattern_miner.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "risk_tolerance_calibrator": {
+      "name": "Risk Tolerance Calibrator",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "learning_loop/personal_evolution/risk_tolerance_calibrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "proactive_personal_os_orchestrator": {
+      "name": "Proactive Personal Os Orchestrator",
+      "layer": "L3",
+      "layer_name": "Autonomy",
+      "description": "V10.3 proactive personal OS capability",
+      "path": "orchestration/proactive_personal_os_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_3_proactive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_3_PROACTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "strategic_autonomy_cortex": {
+      "name": "Strategic Autonomy Cortex",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/strategy/strategic_autonomy_cortex.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "policy_simulator": {
+      "name": "Policy Simulator",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/strategy/policy_simulator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "risk_reward_evaluator": {
+      "name": "Risk Reward Evaluator",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/strategy/risk_reward_evaluator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "strategy_memory": {
+      "name": "Strategy Memory",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/strategy/strategy_memory.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "execution_contract": {
+      "name": "Execution Contract",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/execution_contract/execution_contract.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "side_effect_budget": {
+      "name": "Side Effect Budget",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/execution_contract/side_effect_budget.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "confirmation_ledger": {
+      "name": "Confirmation Ledger",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/execution_contract/confirmation_ledger.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "execution_readiness_gate": {
+      "name": "Execution Readiness Gate",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/execution_contract/execution_readiness_gate.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "goal_portfolio_manager": {
+      "name": "Goal Portfolio Manager",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/portfolio/goal_portfolio_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "task_backlog": {
+      "name": "Task Backlog",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/portfolio/task_backlog.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "progress_evaluator": {
+      "name": "Progress Evaluator",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/portfolio/progress_evaluator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "user_context_graph": {
+      "name": "User Context Graph",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/world_model/user_context_graph.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "environment_state": {
+      "name": "Environment State",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/world_model/environment_state.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "intent_state": {
+      "name": "Intent State",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "core/world_model/intent_state.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "connector_blueprint_factory": {
+      "name": "Connector Blueprint Factory",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "infrastructure/connector_factory/connector_blueprint_factory.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "api_connector_blueprint": {
+      "name": "Api Connector Blueprint",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "infrastructure/connector_factory/api_connector_blueprint.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mcp_connector_blueprint": {
+      "name": "Mcp Connector Blueprint",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "infrastructure/connector_factory/mcp_connector_blueprint.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "device_connector_blueprint": {
+      "name": "Device Connector Blueprint",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "infrastructure/connector_factory/device_connector_blueprint.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "database_connector_blueprint": {
+      "name": "Database Connector Blueprint",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "infrastructure/connector_factory/database_connector_blueprint.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "reflection_engine": {
+      "name": "Reflection Engine",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "learning_loop/reflection/reflection_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "failure_pattern_analyzer": {
+      "name": "Failure Pattern Analyzer",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "learning_loop/reflection/failure_pattern_analyzer.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "success_pattern_promoter": {
+      "name": "Success Pattern Promoter",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "learning_loop/reflection/success_pattern_promoter.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "strategic_personal_os_orchestrator": {
+      "name": "Strategic Personal Os Orchestrator",
+      "layer": "L3",
+      "layer_name": "Strategic Autonomy",
+      "description": "V10.4 strategic autonomy capability",
+      "path": "orchestration/strategic_personal_os_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_4_strategic_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_4_STRATEGIC_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "continuous_intelligence_kernel": {
+      "name": "Continuous Intelligence Kernel",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/continuous/continuous_intelligence_kernel.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "attention_manager": {
+      "name": "Attention Manager",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/continuous/attention_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "initiative_engine": {
+      "name": "Initiative Engine",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/continuous/initiative_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "runtime_budget_manager": {
+      "name": "Runtime Budget Manager",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/continuous/runtime_budget_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "context_refresh_planner": {
+      "name": "Context Refresh Planner",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/continuous/context_refresh_planner.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "scenario_simulator": {
+      "name": "Scenario Simulator",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/simulation/scenario_simulator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "what_if_engine": {
+      "name": "What If Engine",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/simulation/what_if_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "outcome_predictor": {
+      "name": "Outcome Predictor",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/simulation/outcome_predictor.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "counterfactual_reviewer": {
+      "name": "Counterfactual Reviewer",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/simulation/counterfactual_reviewer.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "knowledge_refinery": {
+      "name": "Knowledge Refinery",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/knowledge/knowledge_refinery.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "source_quality_evaluator": {
+      "name": "Source Quality Evaluator",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/knowledge/source_quality_evaluator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "solution_memory_index": {
+      "name": "Solution Memory Index",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/knowledge/solution_memory_index.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "knowledge_decay_policy": {
+      "name": "Knowledge Decay Policy",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/knowledge/knowledge_decay_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "privacy_boundary_engine": {
+      "name": "Privacy Boundary Engine",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/privacy/privacy_boundary_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "data_minimization_filter": {
+      "name": "Data Minimization Filter",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/privacy/data_minimization_filter.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "scope_redaction_policy": {
+      "name": "Scope Redaction Policy",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "core/privacy/scope_redaction_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "ops_health_supervisor": {
+      "name": "Ops Health Supervisor",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/ops/ops_health_supervisor.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "connector_uptime_monitor": {
+      "name": "Connector Uptime Monitor",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/ops/connector_uptime_monitor.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "drift_detector": {
+      "name": "Drift Detector",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/ops/drift_detector.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "incident_manager": {
+      "name": "Incident Manager",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/ops/incident_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "capability_maturity_model": {
+      "name": "Capability Maturity Model",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/capability_lifecycle/capability_maturity_model.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "capability_promotion_engine": {
+      "name": "Capability Promotion Engine",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/capability_lifecycle/capability_promotion_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "capability_retirement_policy": {
+      "name": "Capability Retirement Policy",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "infrastructure/capability_lifecycle/capability_retirement_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "meta_learning_engine": {
+      "name": "Meta Learning Engine",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "learning_loop/meta_learning/meta_learning_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "prompt_strategy_optimizer": {
+      "name": "Prompt Strategy Optimizer",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "learning_loop/meta_learning/prompt_strategy_optimizer.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "evaluation_memory": {
+      "name": "Evaluation Memory",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "learning_loop/meta_learning/evaluation_memory.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "continuous_personal_os_orchestrator": {
+      "name": "Continuous Personal Os Orchestrator",
+      "layer": "L4",
+      "layer_name": "Continuous Intelligence",
+      "description": "V10.5 continuous intelligence capability",
+      "path": "orchestration/continuous_personal_os_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_5_continuous_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "reality_grounding_kernel": {
+      "name": "Reality Grounding Kernel",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/reality/reality_grounding_kernel.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "fact_state_resolver": {
+      "name": "Fact State Resolver",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/reality/fact_state_resolver.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "environment_capability_probe": {
+      "name": "Environment Capability Probe",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/reality/environment_capability_probe.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "uncertainty_manager": {
+      "name": "Uncertainty Manager",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/reality/uncertainty_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "authorization_intent_gateway": {
+      "name": "Authorization Intent Gateway",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/authorization/authorization_intent_gateway.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "consent_scope_model": {
+      "name": "Consent Scope Model",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/authorization/consent_scope_model.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "action_risk_attestation": {
+      "name": "Action Risk Attestation",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/authorization/action_risk_attestation.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "user_confirmation_contract": {
+      "name": "User Confirmation Contract",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/authorization/user_confirmation_contract.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "project_brain": {
+      "name": "Project Brain",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/project_autonomy/project_brain.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "milestone_planner": {
+      "name": "Milestone Planner",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/project_autonomy/milestone_planner.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "project_memory_graph": {
+      "name": "Project Memory Graph",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/project_autonomy/project_memory_graph.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "autonomous_project_review": {
+      "name": "Autonomous Project Review",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "core/project_autonomy/autonomous_project_review.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "tool_capability_negotiator": {
+      "name": "Tool Capability Negotiator",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/tool_negotiation/tool_capability_negotiator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "tool_contract_registry": {
+      "name": "Tool Contract Registry",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/tool_negotiation/tool_contract_registry.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "tool_fallback_matrix": {
+      "name": "Tool Fallback Matrix",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/tool_negotiation/tool_fallback_matrix.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "real_execution_broker": {
+      "name": "Real Execution Broker",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/execution_runtime/real_execution_broker.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "dry_run_mirror": {
+      "name": "Dry Run Mirror",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/execution_runtime/dry_run_mirror.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "execution_trace_recorder": {
+      "name": "Execution Trace Recorder",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/execution_runtime/execution_trace_recorder.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "runtime_replay_engine": {
+      "name": "Runtime Replay Engine",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/execution_runtime/runtime_replay_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "self_upgrade_governor": {
+      "name": "Self Upgrade Governor",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/upgrade_governance/self_upgrade_governor.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "version_lineage_tracker": {
+      "name": "Version Lineage Tracker",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/upgrade_governance/version_lineage_tracker.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "upgrade_diff_risk_analyzer": {
+      "name": "Upgrade Diff Risk Analyzer",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/upgrade_governance/upgrade_diff_risk_analyzer.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "rollback_snapshot_policy": {
+      "name": "Rollback Snapshot Policy",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "infrastructure/upgrade_governance/rollback_snapshot_policy.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "audit_replay_learner": {
+      "name": "Audit Replay Learner",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "learning_loop/audit_replay/audit_replay_learner.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "decision_trace_index": {
+      "name": "Decision Trace Index",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "learning_loop/audit_replay/decision_trace_index.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mistake_prevention_rules": {
+      "name": "Mistake Prevention Rules",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "learning_loop/audit_replay/mistake_prevention_rules.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "reality_connected_personal_os_orchestrator": {
+      "name": "Reality Connected Personal Os Orchestrator",
+      "layer": "L4",
+      "layer_name": "Reality Connection",
+      "description": "V10.6 reality-connected execution capability",
+      "path": "orchestration/reality_connected_personal_os_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_6_REALITY_CONNECTED_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "agent_role_registry": {
+      "name": "Agent Role Registry",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/collaboration/agent_role_registry.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "delegation_planner": {
+      "name": "Delegation Planner",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/collaboration/delegation_planner.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "collaboration_protocol": {
+      "name": "Collaboration Protocol",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/collaboration/collaboration_protocol.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "consensus_gate": {
+      "name": "Consensus Gate",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/collaboration/consensus_gate.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "collaborative_autonomy_kernel": {
+      "name": "Collaborative Autonomy Kernel",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/collaboration/collaborative_autonomy_kernel.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mesh_node_registry": {
+      "name": "Mesh Node Registry",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "infrastructure/mesh/mesh_node_registry.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mesh_message_bus": {
+      "name": "Mesh Message Bus",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "infrastructure/mesh/mesh_message_bus.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "mesh_health_router": {
+      "name": "Mesh Health Router",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "infrastructure/mesh/mesh_health_router.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "personal_digital_twin": {
+      "name": "Personal Digital Twin",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/digital_twin/personal_digital_twin.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "preference_twin": {
+      "name": "Preference Twin",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/digital_twin/preference_twin.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "decision_twin": {
+      "name": "Decision Twin",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/digital_twin/decision_twin.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "risk_twin": {
+      "name": "Risk Twin",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/digital_twin/risk_twin.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "habit_twin": {
+      "name": "Habit Twin",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/digital_twin/habit_twin.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "identity_drift_guard": {
+      "name": "Identity Drift Guard",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/digital_twin/identity_drift_guard.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "identity_evolution_engine": {
+      "name": "Identity Evolution Engine",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "learning_loop/identity_evolution/identity_evolution_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "preference_versioning": {
+      "name": "Preference Versioning",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "learning_loop/identity_evolution/preference_versioning.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "correction_incorporator": {
+      "name": "Correction Incorporator",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "learning_loop/identity_evolution/correction_incorporator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "executive_operating_kernel": {
+      "name": "Executive Operating Kernel",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/executive_os/executive_operating_kernel.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "command_intent_compiler": {
+      "name": "Command Intent Compiler",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/executive_os/command_intent_compiler.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "end_to_end_closure_engine": {
+      "name": "End To End Closure Engine",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/executive_os/end_to_end_closure_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "autonomy_maturity_score": {
+      "name": "Autonomy Maturity Score",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/executive_os/autonomy_maturity_score.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "operating_mode_switch": {
+      "name": "Operating Mode Switch",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/executive_os/operating_mode_switch.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "constitutional_policy_core": {
+      "name": "Constitutional Policy Core",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/self_governance/constitutional_policy_core.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "value_alignment_checker": {
+      "name": "Value Alignment Checker",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/self_governance/value_alignment_checker.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "autonomy_boundary_manager": {
+      "name": "Autonomy Boundary Manager",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "core/self_governance/autonomy_boundary_manager.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "runtime_fabric_orchestrator": {
+      "name": "Runtime Fabric Orchestrator",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "infrastructure/runtime_fabric/runtime_fabric_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "service_mesh_adapter": {
+      "name": "Service Mesh Adapter",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "infrastructure/runtime_fabric/service_mesh_adapter.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "state_sync_engine": {
+      "name": "State Sync Engine",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "infrastructure/runtime_fabric/state_sync_engine.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    },
+    "executive_personal_os_orchestrator": {
+      "name": "Executive Personal Os Orchestrator",
+      "layer": "L4",
+      "layer_name": "Executive Personal OS",
+      "description": "V10.7-V10.9 executive personal OS capability",
+      "path": "orchestration/executive_personal_os_orchestrator.py",
+      "status": "active",
+      "tested_by": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ],
+      "documented_in": [
+        "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
+      ]
+    }
+  },
+  "stats": {
+    "total": 188,
+    "by_status": {
+      "active": 188
+    },
+    "by_layer": {
+      "L4": 104,
+      "L5": 15,
+      "L6": 7,
+      "L3": 56,
+      "L2": 5,
+      "L1": 1
+    }
+  }
+}

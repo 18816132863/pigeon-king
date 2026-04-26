@@ -1,0 +1,189 @@
+{
+  "status": "pass",
+  "agent_shape": "Self-Evolving Personal Operating Agent",
+  "self_test_shape": "Autonomous System Self-Test Agent",
+  "test_plan": [
+    {
+      "name": "v10_agent_shape",
+      "category": "v10_core",
+      "command": "python scripts/check_v10_autonomous_agent.py",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "v10_self_extension",
+      "category": "v10_core",
+      "command": "python scripts/v10_self_extension_smoke.py",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "v10_core_tests",
+      "category": "tests",
+      "command": "python -m pytest tests/test_v10_autonomous_agent.py -q",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "route_registry",
+      "category": "registry",
+      "command": "python scripts/check_route_registry.py",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "system_integrity",
+      "category": "integrity",
+      "command": "python scripts/system_integrity_check.py",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "orphan_components",
+      "category": "integrity",
+      "command": "python scripts/find_orphan_components.py",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "extreme_self_test",
+      "category": "self_test",
+      "command": "python scripts/run_v10_extreme_self_test.py --internal-only",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    },
+    {
+      "name": "perfection_gate",
+      "category": "gate",
+      "command": "python scripts/check_v10_perfection_gate.py",
+      "required": true,
+      "timeout_seconds": 120,
+      "side_effect_free": true
+    }
+  ],
+  "diagnostics": {
+    "status": "pass",
+    "error_count": 0,
+    "warning_count": 0,
+    "findings": [
+      {
+        "name": "required_file:core/autonomy/goal_strategy_kernel.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:core/autonomy/task_graph_compiler.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:governance/codex/personal_codex.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:governance/codex/judgement_engine.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:memory_context/personalization/personalization_engine.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:infrastructure/external_capability_bus.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:infrastructure/solution_search_orchestrator.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:infrastructure/capability_self_extension.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:orchestration/personal_autonomous_os_agent.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:core/self_test/system_self_test_agent.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "required_file:core/self_test/perfection_gate.py",
+        "status": "pass",
+        "detail": "present",
+        "severity": "info"
+      },
+      {
+        "name": "clean_package_pollution",
+        "status": "pass",
+        "detail": "pollution_count=0",
+        "severity": "info"
+      },
+      {
+        "name": "skill_registry_count",
+        "status": "pass",
+        "detail": "skills=201",
+        "severity": "info"
+      },
+      {
+        "name": "skill_inverted_total",
+        "status": "pass",
+        "detail": "total=201",
+        "severity": "info"
+      },
+      {
+        "name": "fusion_index_skill_total",
+        "status": "pass",
+        "detail": "skills_total=201, has_275=False",
+        "severity": "info"
+      },
+      {
+        "name": "module_registry_stats",
+        "status": "pass",
+        "detail": "stats_total=188, actual=188",
+        "severity": "info"
+      }
+    ]
+  },
+  "healing_plan": [],
+  "perfection_gate": {
+    "status": "pass",
+    "score": 100,
+    "blockers": [],
+    "warnings": [],
+    "decision": "release_candidate"
+  },
+  "real_environment_required": [
+    "real_device_runtime",
+    "external_account_authorization",
+    "API_keys",
+    "MCP_servers",
+    "long_term_personalization_data"
+  ]
+}

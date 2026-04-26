@@ -1,0 +1,276 @@
+{
+  "status": "proactive_os_plan_ready",
+  "shape": "Proactive Self-Extending Personal OS Agent",
+  "mission": {
+    "status": "mission_ready",
+    "mission_shape": "Proactive Mission Control",
+    "observed": {
+      "status": "observed",
+      "signals": [
+        {
+          "priority": "high",
+          "type": "goal"
+        }
+      ],
+      "needs_attention": [
+        {
+          "priority": "high",
+          "type": "goal"
+        }
+      ],
+      "missing_integrations": [],
+      "side_effect": false
+    },
+    "mission": {
+      "mission_id": "mission_1668296609818010900",
+      "objective": "一句话帮我完成目标，没技能就自己找方案，能接外部能力但必须安全",
+      "status": "planned",
+      "nodes": [
+        {
+          "node_id": "observe",
+          "objective": "理解目标和上下文",
+          "node_type": "observe",
+          "risk_level": "L0",
+          "status": "planned",
+          "depends_on": [],
+          "required_capabilities": [
+            "goal_modeling"
+          ],
+          "verification": [
+            "context_read"
+          ]
+        },
+        {
+          "node_id": "decide",
+          "objective": "判断策略、风险和优先级",
+          "node_type": "decision",
+          "risk_level": "L1",
+          "status": "planned",
+          "depends_on": [
+            "observe"
+          ],
+          "required_capabilities": [
+            "risk_judgement"
+          ],
+          "verification": [
+            "policy_check"
+          ]
+        },
+        {
+          "node_id": "plan",
+          "objective": "生成任务链和验证链",
+          "node_type": "planning",
+          "risk_level": "L1",
+          "status": "planned",
+          "depends_on": [
+            "decide"
+          ],
+          "required_capabilities": [
+            "task_graph"
+          ],
+          "verification": [
+            "graph_valid"
+          ]
+        },
+        {
+          "node_id": "acquire",
+          "objective": "搜索方案并生成能力接入计划",
+          "node_type": "capability_acquisition",
+          "risk_level": "L2",
+          "status": "planned",
+          "depends_on": [
+            "plan"
+          ],
+          "required_capabilities": [
+            "solution_search"
+          ],
+          "verification": [
+            "sandbox_plan",
+            "rollback_plan"
+          ]
+        },
+        {
+          "node_id": "execute_gate",
+          "objective": "执行前门控",
+          "node_type": "gate",
+          "risk_level": "L2",
+          "status": "planned",
+          "depends_on": [
+            "acquire"
+          ],
+          "required_capabilities": [
+            "policy_gate"
+          ],
+          "verification": [
+            "strong_confirm_if_needed"
+          ]
+        },
+        {
+          "node_id": "learn",
+          "objective": "结果验证和学习写回",
+          "node_type": "learning",
+          "risk_level": "L1",
+          "status": "planned",
+          "depends_on": [
+            "execute_gate"
+          ],
+          "required_capabilities": [
+            "personal_learning"
+          ],
+          "verification": [
+            "writeback_audit"
+          ]
+        }
+      ]
+    },
+    "priority": {
+      "priority_score": 35,
+      "max_risk": "L2",
+      "urgency": 50
+    },
+    "requires_confirmation": false,
+    "next_gate": "runtime_policy_gate"
+  },
+  "team_review": {
+    "status": "team_review_complete",
+    "critique": {
+      "status": "pass",
+      "issues": []
+    },
+    "verification": {
+      "status": "verification_plan_ready",
+      "checks": [
+        "policy_gate",
+        "result_check",
+        "rollback_available",
+        "audit_written"
+      ]
+    },
+    "execution": {
+      "status": "execution_prepared",
+      "side_effect": false,
+      "real_execution_requires_route_runtime": true,
+      "requires_confirmation": false
+    },
+    "allowed_to_execute": true
+  },
+  "capability_discovery": {
+    "status": "candidates_discovered",
+    "gap": "solution_or_skill_gap",
+    "candidates": [
+      {
+        "name": "builtin_solution_search",
+        "source_type": "builtin",
+        "risk_level": "L1",
+        "policy": {
+          "trusted": true,
+          "source_type": "builtin",
+          "risk_level": "L1",
+          "requires_approval": false,
+          "direct_install_allowed": false
+        }
+      },
+      {
+        "name": "mcp_connector_template",
+        "source_type": "local_template",
+        "risk_level": "L2",
+        "policy": {
+          "trusted": true,
+          "source_type": "local_template",
+          "risk_level": "L2",
+          "requires_approval": false,
+          "direct_install_allowed": false
+        }
+      },
+      {
+        "name": "external_package_candidate",
+        "source_type": "unknown_external",
+        "risk_level": "L3",
+        "policy": {
+          "trusted": false,
+          "source_type": "unknown_external",
+          "risk_level": "L3",
+          "requires_approval": true,
+          "direct_install_allowed": false
+        }
+      }
+    ]
+  },
+  "connector_plan": {
+    "connector_id": "external_all_domain_connector",
+    "type": "mixed",
+    "scopes": [
+      "read",
+      "search"
+    ],
+    "status": "planned",
+    "requires_user_authorization": true
+  },
+  "scope_policy": {
+    "status": "allowed_for_planning",
+    "high_risk_scopes": [],
+    "least_privilege_required": true
+  },
+  "rollback_plan": {
+    "status": "rollback_plan_ready",
+    "steps": [
+      {
+        "for_step": 0,
+        "rollback": "restore_previous_state_or_disable_experimental_capability"
+      },
+      {
+        "for_step": 1,
+        "rollback": "restore_previous_state_or_disable_experimental_capability"
+      },
+      {
+        "for_step": 2,
+        "rollback": "restore_previous_state_or_disable_experimental_capability"
+      },
+      {
+        "for_step": 3,
+        "rollback": "restore_previous_state_or_disable_experimental_capability"
+      },
+      {
+        "for_step": 4,
+        "rollback": "restore_previous_state_or_disable_experimental_capability"
+      },
+      {
+        "for_step": 5,
+        "rollback": "restore_previous_state_or_disable_experimental_capability"
+      }
+    ],
+    "requires_snapshot": true
+  },
+  "audit_event": {
+    "event_type": "v10_3_orchestration",
+    "payload": {
+      "goal": "一句话帮我完成目标，没技能就自己找方案，能接外部能力但必须安全",
+      "mission_id": "mission_1668296609818010900"
+    },
+    "created_at": "2026-04-26T09:51:06.381398Z",
+    "audit_required": true
+  },
+  "personal_evolution": {
+    "feedback_route": {
+      "status": "routed",
+      "target": "preference_model",
+      "feedback": {
+        "goal": "一句话帮我完成目标，没技能就自己找方案，能接外部能力但必须安全"
+      }
+    },
+    "patterns": {
+      "status": "mined",
+      "patterns": {
+        "direct_execution_preference": false,
+        "artifact_delivery_preference": false
+      }
+    },
+    "risk_tolerance": {
+      "status": "calibrated",
+      "low_risk_auto": true,
+      "medium_risk_auto": true,
+      "high_risk_strong_confirm": true
+    }
+  },
+  "execution_allowed_now": true
+}

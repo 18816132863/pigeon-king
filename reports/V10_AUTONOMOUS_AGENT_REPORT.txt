@@ -1,0 +1,302 @@
+{
+  "status": "ready",
+  "agent_shape": "Self-Evolving Personal Operating Agent",
+  "goal_compilation": {
+    "status": "compiled",
+    "agent_type": "self_evolving_personal_operating_agent",
+    "goal": {
+      "raw_goal": "一句话帮我自动规划任务，缺技能就自己查找方案并在安全边界内补能力",
+      "objective": "一句话帮我自动规划任务，缺技能就自己查找方案并在安全边界内补能力",
+      "constraints": [
+        "minimize_follow_up_questions"
+      ],
+      "success_criteria": [
+        "goal_understood",
+        "risk_checked",
+        "capabilities_resolved_or_gap_reported",
+        "execution_graph_ready"
+      ],
+      "required_capabilities": [
+        "goal_modeling",
+        "risk_judgement",
+        "execution_graph",
+        "solution_search",
+        "skill_registry",
+        "autonomous_execution"
+      ],
+      "risk_hints": [],
+      "autonomy_level": "bounded_high"
+    },
+    "chosen_strategy": {
+      "name": "self_extending_if_gap",
+      "priority": 3,
+      "expected_value": 0.91,
+      "risk_level": "L2",
+      "requires_approval": true,
+      "steps": [
+        "compile_goal_tree",
+        "judge_risk_and_rules",
+        "resolve_capabilities",
+        "build_execution_graph",
+        "run_safe_steps",
+        "pause_for_approval_on_high_risk",
+        "verify_result_and_learn",
+        "detect_capability_gap",
+        "search_solution",
+        "sandbox_new_capability"
+      ]
+    },
+    "alternatives": [
+      {
+        "name": "safe_first",
+        "priority": 1,
+        "expected_value": 0.72,
+        "risk_level": "L1",
+        "requires_approval": false,
+        "steps": [
+          "compile_goal_tree",
+          "judge_risk_and_rules",
+          "resolve_capabilities",
+          "build_execution_graph",
+          "run_safe_steps",
+          "pause_for_approval_on_high_risk",
+          "verify_result_and_learn"
+        ]
+      },
+      {
+        "name": "personal_autonomy_balanced",
+        "priority": 2,
+        "expected_value": 0.86,
+        "risk_level": "L2",
+        "requires_approval": false,
+        "steps": [
+          "compile_goal_tree",
+          "judge_risk_and_rules",
+          "resolve_capabilities",
+          "build_execution_graph",
+          "run_safe_steps",
+          "pause_for_approval_on_high_risk",
+          "verify_result_and_learn",
+          "use_personal_style_model",
+          "auto_recover_failures"
+        ]
+      },
+      {
+        "name": "self_extending_if_gap",
+        "priority": 3,
+        "expected_value": 0.91,
+        "risk_level": "L2",
+        "requires_approval": true,
+        "steps": [
+          "compile_goal_tree",
+          "judge_risk_and_rules",
+          "resolve_capabilities",
+          "build_execution_graph",
+          "run_safe_steps",
+          "pause_for_approval_on_high_risk",
+          "verify_result_and_learn",
+          "detect_capability_gap",
+          "search_solution",
+          "sandbox_new_capability"
+        ]
+      }
+    ]
+  },
+  "judgement": {
+    "decision": "allowed_bounded_autonomy",
+    "risk_level": "L2",
+    "reasons": [
+      "bounded_autonomy_allowed"
+    ],
+    "requires_approval": false,
+    "allowed_auto_steps": [
+      "research",
+      "plan",
+      "safe_probe",
+      "draft"
+    ]
+  },
+  "execution_graph": {
+    "graph_id": "graph_8702482151",
+    "nodes": [
+      {
+        "id": "n1",
+        "name": "understand_goal",
+        "node_type": "reasoning",
+        "risk_level": "L0",
+        "requires_approval": false,
+        "depends_on": []
+      },
+      {
+        "id": "n2",
+        "name": "check_rules_and_risk",
+        "node_type": "governance",
+        "risk_level": "L1",
+        "requires_approval": false,
+        "depends_on": [
+          "n1"
+        ]
+      },
+      {
+        "id": "n3",
+        "name": "resolve_capabilities",
+        "node_type": "capability_resolution",
+        "risk_level": "L1",
+        "requires_approval": false,
+        "depends_on": [
+          "n2"
+        ]
+      },
+      {
+        "id": "n4",
+        "name": "search_solution",
+        "node_type": "research",
+        "risk_level": "L1",
+        "requires_approval": false,
+        "depends_on": [
+          "n3"
+        ]
+      },
+      {
+        "id": "n9",
+        "name": "verify_and_learn",
+        "node_type": "verification",
+        "risk_level": "L1",
+        "requires_approval": false,
+        "depends_on": [
+          "n4"
+        ]
+      }
+    ],
+    "completion_criteria": [
+      "safe_steps_finished",
+      "result_verified",
+      "learning_written_back"
+    ],
+    "reversible": true
+  },
+  "capability_gaps": [
+    {
+      "gap_id": "gap_solution_search",
+      "description": "missing capability: solution_search",
+      "required_for_goal": "solution_search",
+      "severity": "medium",
+      "existing_options_checked": [
+        "execution_graph",
+        "skill_registry",
+        "autonomous_execution",
+        "goal_modeling",
+        "risk_judgement"
+      ]
+    }
+  ],
+  "capability_extension_plans": [
+    {
+      "status": "extension_plan_ready",
+      "gap": {
+        "gap_id": "gap_solution_search",
+        "description": "missing capability: solution_search",
+        "required_for_goal": "solution_search",
+        "severity": "medium",
+        "existing_options_checked": [
+          "execution_graph",
+          "skill_registry",
+          "autonomous_execution",
+          "goal_modeling",
+          "risk_judgement"
+        ]
+      },
+      "auto_mode": true,
+      "search_plan": {
+        "status": "search_plan_ready",
+        "gap": "missing capability: solution_search",
+        "search_order": [
+          "local_skill_registry",
+          "local_docs_and_reports",
+          "trusted_connectors_or_mcp_catalog",
+          "official_api_docs",
+          "trusted_package_sources",
+          "general_web_search_last"
+        ],
+        "stop_condition": "candidate_passes_risk_and_minimal_test"
+      },
+      "candidates": [
+        {
+          "source": "local_registry",
+          "title": "reuse_existing_skill_for_solution_search",
+          "confidence": 0.55,
+          "action": "reuse_or_wrap_existing_skill",
+          "requires_network": false,
+          "requires_install": false
+        },
+        {
+          "source": "mcp_connector",
+          "title": "connect_mcp_for_solution_search",
+          "confidence": 0.72,
+          "action": "register_external_connector",
+          "requires_network": true,
+          "requires_install": false
+        },
+        {
+          "source": "trusted_skill_catalog",
+          "title": "install_sandboxed_skill_for_solution_search",
+          "confidence": 0.66,
+          "action": "sandbox_install_then_evaluate",
+          "requires_network": true,
+          "requires_install": true
+        }
+      ],
+      "safety_policy": {
+        "no_untrusted_direct_install": true,
+        "sandbox_required": true,
+        "rollback_required": true,
+        "approval_required_for_executable_code": true,
+        "promote_only_after_minimal_tests": true
+      },
+      "bus_registration": {
+        "status": "registered_candidate",
+        "capability": {
+          "capability_id": "gap_solution_search_candidate",
+          "kind": "mcp_or_connector",
+          "endpoint": null,
+          "status": "candidate",
+          "risk_level": "L2",
+          "requires_approval": false,
+          "metadata": {
+            "source": "mcp_connector",
+            "title": "connect_mcp_for_solution_search",
+            "confidence": 0.72,
+            "action": "register_external_connector",
+            "requires_network": true,
+            "requires_install": false
+          }
+        }
+      }
+    }
+  ],
+  "next_action": "resolve_capability_gaps_before_execution",
+  "personalization": {
+    "communication_style": "direct_concrete_no_repeated_questions",
+    "autonomy_preference": "high_for_low_risk_confirm_for_high_risk",
+    "risk_tolerance": "medium_low_for_irreversible_actions",
+    "planning_style": "one_shot_detailed_execution_package",
+    "disliked_patterns": [
+      "反复问",
+      "乱猜",
+      "只说不做",
+      "没有压缩包"
+    ],
+    "preferred_patterns": [
+      "一次性多给",
+      "明确指令",
+      "可替换包",
+      "先验收再结论"
+    ]
+  },
+  "interaction_policy": {
+    "ask_followup_only_if_blocking": true,
+    "prefer_concrete_execution": true,
+    "prefer_package_delivery": true,
+    "avoid_guessing": true
+  }
+}

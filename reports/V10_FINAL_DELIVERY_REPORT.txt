@@ -1,0 +1,28 @@
+V10.0.0 FINAL DELIVERY REPORT
+=============================
+
+Base: V9.2.0 Connected Adapter Bootstrap
+Target: Self-Evolving Personal Operating Agent
+
+Added core shape:
+- strong autonomous decision kernel
+- personalization engine
+- personal codex / judgement engine
+- external capability bus
+- solution search orchestrator
+- capability self-extension kernel
+- one-sentence goal to execution graph compiler
+
+Safety posture:
+- bounded autonomy
+- high-risk strong confirmation
+- no untrusted direct install
+- sandbox required for executable capability expansion
+- rollback and promotion checks required
+
+Validation commands included:
+- python scripts/check_v10_autonomous_agent.py
+- python scripts/v10_self_extension_smoke.py
+- python -m pytest tests/test_v10_autonomous_agent.py -q
+- python scripts/system_integrity_check.py
+- python scripts/find_orphan_components.py

@@ -1,0 +1,18 @@
+{
+  "package_name": "pigeon_king_v10.3.0_proactive_self_extending_personal_os_clean_full.zip",
+  "created_at": "2026-04-26T07:31:38.743593",
+  "base": "pigeon_king_v10.2.0_autonomous_runtime_loop_clean_full.zip",
+  "shape": "Proactive Self-Extending Personal OS Agent",
+  "file_count": 3980,
+  "missing_required_files": [],
+  "remaining_pollution_count": 0,
+  "remaining_pollution_sample": [],
+  "validation": {
+    "direct_proactive_import": {
+      "status": "proactive_os_plan_ready",
+      "shape": "Proactive Self-Extending Personal OS Agent",
+      "capability_discovery": true
+    }
+  },
+  "note": "Run full pytest in target runtime after replacement."
+}

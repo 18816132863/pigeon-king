@@ -1,0 +1,305 @@
+{
+  "status": "executive_personal_os_ready",
+  "shape": "Executive Personal OS Agent",
+  "executive": {
+    "status": "executive_os_ready",
+    "shape": "Executive Personal OS Agent",
+    "intent": {
+      "status": "compiled",
+      "raw": "一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+      "intent": "complete_goal",
+      "needs_artifact": false,
+      "needs_external_connection": true,
+      "needs_self_extension": true,
+      "style": "balanced"
+    },
+    "operating_mode": {
+      "status": "selected",
+      "mode": "real_world",
+      "policy": {
+        "auto_execute": "authorized_only",
+        "auto_search": true,
+        "auto_extend": "approval_required"
+      }
+    },
+    "closure": {
+      "status": "closure_ready",
+      "must_verify": true,
+      "must_deliver_artifact_or_result": true,
+      "must_write_audit": true,
+      "must_update_learning": true,
+      "must_report_uncertainty": true,
+      "done_definition": [
+        "result_verified",
+        "artifact_or_output_delivered",
+        "audit_written",
+        "learning_updated"
+      ]
+    },
+    "maturity": {
+      "status": "scored",
+      "score": 100,
+      "dimensions": {
+        "decision": true,
+        "execution_gate": true,
+        "learning": true,
+        "privacy": true,
+        "reality_grounding": true,
+        "self_extension": true
+      }
+    },
+    "real_world_execution_policy": "authorized_only"
+  },
+  "collaboration": {
+    "status": "collaboration_ready",
+    "shape": "Collaborative Autonomy Mesh",
+    "roles": {
+      "strategist": {
+        "capabilities": [
+          "goal_strategy",
+          "risk_reward"
+        ],
+        "side_effect": false
+      },
+      "critic": {
+        "capabilities": [
+          "assumption_check",
+          "contradiction_detection"
+        ],
+        "side_effect": false
+      },
+      "operator": {
+        "capabilities": [
+          "execution_preparation",
+          "tool_selection"
+        ],
+        "side_effect": false
+      },
+      "verifier": {
+        "capabilities": [
+          "result_check",
+          "rollback_check"
+        ],
+        "side_effect": false
+      },
+      "learner": {
+        "capabilities": [
+          "memory_update",
+          "pattern_promotion"
+        ],
+        "side_effect": false
+      }
+    },
+    "delegation": {
+      "status": "delegated",
+      "objective": "一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+      "tasks": [
+        {
+          "role": "strategist",
+          "task": "strategist_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+          "side_effect": false,
+          "requires_confirmation": false,
+          "capabilities": [
+            "goal_strategy",
+            "risk_reward"
+          ]
+        },
+        {
+          "role": "critic",
+          "task": "critic_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+          "side_effect": false,
+          "requires_confirmation": false,
+          "capabilities": [
+            "assumption_check",
+            "contradiction_detection"
+          ]
+        },
+        {
+          "role": "operator",
+          "task": "operator_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+          "side_effect": false,
+          "requires_confirmation": false,
+          "capabilities": [
+            "execution_preparation",
+            "tool_selection"
+          ]
+        },
+        {
+          "role": "verifier",
+          "task": "verifier_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+          "side_effect": false,
+          "requires_confirmation": false,
+          "capabilities": [
+            "result_check",
+            "rollback_check"
+          ]
+        },
+        {
+          "role": "learner",
+          "task": "learner_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+          "side_effect": false,
+          "requires_confirmation": false,
+          "capabilities": [
+            "memory_update",
+            "pattern_promotion"
+          ]
+        }
+      ]
+    },
+    "protocol": {
+      "status": "protocol_applied",
+      "rules": [
+        "critic_reviews_before_operator",
+        "verifier_checks_before_success_claim",
+        "learner_updates_only_after_verified_outcome",
+        "no_role_can_bypass_authorization_gateway"
+      ],
+      "delegated": {
+        "status": "delegated",
+        "objective": "一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+        "tasks": [
+          {
+            "role": "strategist",
+            "task": "strategist_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+            "side_effect": false,
+            "requires_confirmation": false,
+            "capabilities": [
+              "goal_strategy",
+              "risk_reward"
+            ]
+          },
+          {
+            "role": "critic",
+            "task": "critic_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+            "side_effect": false,
+            "requires_confirmation": false,
+            "capabilities": [
+              "assumption_check",
+              "contradiction_detection"
+            ]
+          },
+          {
+            "role": "operator",
+            "task": "operator_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+            "side_effect": false,
+            "requires_confirmation": false,
+            "capabilities": [
+              "execution_preparation",
+              "tool_selection"
+            ]
+          },
+          {
+            "role": "verifier",
+            "task": "verifier_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+            "side_effect": false,
+            "requires_confirmation": false,
+            "capabilities": [
+              "result_check",
+              "rollback_check"
+            ]
+          },
+          {
+            "role": "learner",
+            "task": "learner_work_for_一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果",
+            "side_effect": false,
+            "requires_confirmation": false,
+            "capabilities": [
+              "memory_update",
+              "pattern_promotion"
+            ]
+          }
+        ]
+      }
+    },
+    "consensus": {
+      "status": "consensus_ready",
+      "blockers": [],
+      "requires_user_review": false
+    },
+    "side_effect": false
+  },
+  "personal_digital_twin": {
+    "status": "digital_twin_ready",
+    "shape": "Personal Digital Twin",
+    "twin": {
+      "preference": {
+        "style": "direct",
+        "artifact_first": false,
+        "avoid": [
+          "反复确认低风险问题",
+          "让对方猜",
+          "只说下一步不交付"
+        ]
+      },
+      "decision": {
+        "decision_style": "high_autonomy_with_rules",
+        "prefers_complete_delivery": false,
+        "requires_precision": true
+      },
+      "risk": {
+        "low_risk_auto": true,
+        "medium_risk_auto_with_audit": true,
+        "high_risk_requires_strong_confirmation": true,
+        "external_write_requires_confirmation": true
+      },
+      "habit": {
+        "iteration_speed": "normal",
+        "handoff_preference": "zip_and_command",
+        "validation_preference": "direct_check_then_package"
+      }
+    },
+    "guard": {
+      "status": "safe",
+      "violations": [],
+      "must_not_impersonate_user": true
+    },
+    "privacy": "local_only"
+  },
+  "constitutional_rules": {
+    "status": "rules_ready",
+    "rules": [
+      "never_fake_success",
+      "never_bypass_confirmation",
+      "never_install_untrusted_code_as_active",
+      "minimize_private_data",
+      "verify_before_claiming_done",
+      "rollback_required_for_external_change"
+    ]
+  },
+  "alignment": {
+    "status": "aligned",
+    "violations": []
+  },
+  "autonomy_boundary": {
+    "status": "bounded_autonomy",
+    "auto_execute": true,
+    "confirmation_required": false
+  },
+  "runtime_fabric": {
+    "status": "runtime_fabric_ready",
+    "mesh": {
+      "status": "mesh_plan_ready",
+      "services": [],
+      "external_calls": 0,
+      "requires_runtime_binding": true
+    },
+    "sync": {
+      "status": "sync_plan_ready",
+      "states": [
+        "executive",
+        "memory",
+        "runtime"
+      ],
+      "conflict_policy": "newer_verified_state_wins",
+      "requires_audit": true
+    },
+    "real_binding_required": true
+  },
+  "done_definition": [
+    "result_verified",
+    "artifact_or_output_delivered",
+    "audit_written",
+    "learning_updated"
+  ],
+  "can_claim_done": false
+}

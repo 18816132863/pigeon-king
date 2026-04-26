@@ -1,0 +1,261 @@
+{
+  "version": "10.9.0",
+  "updated": "2026-04-26",
+  "description": "架构融合索引 - 统一入口",
+  "indexes": {
+    "skills": {
+      "registry": "infrastructure/inventory/skill_registry.json",
+      "inverted": "infrastructure/inventory/skill_inverted_index.json",
+      "total": 201
+    },
+    "rules": {
+      "registry": "core/RULE_REGISTRY.json",
+      "exceptions": "core/RULE_EXCEPTIONS.json",
+      "total": 8
+    },
+    "config": {
+      "unified": "infrastructure/config/unified.json",
+      "llm": "skills/llm-memory-integration/config/llm_config.json"
+    },
+    "reports": {
+      "ops": "reports/ops/",
+      "audit": "governance/audit/"
+    },
+    "connected_adapter": {
+      "bootstrap": "infrastructure/connected_adapter_bootstrap.py",
+      "check": "scripts/check_connected_adapter.py",
+      "smoke": "scripts/connected_adapter_smoke.py",
+      "report": "reports/CONNECTED_ADAPTER_BOOTSTRAP_REPORT.txt"
+    },
+    "self_test": {
+      "system_agent": "core/self_test/system_self_test_agent.py",
+      "perfection_gate": "core/self_test/perfection_gate.py",
+      "scripts": [
+        "scripts/run_v10_extreme_self_test.py",
+        "scripts/check_v10_perfection_gate.py"
+      ],
+      "tests": [
+        "tests/test_v10_extreme_self_test.py"
+      ]
+    },
+    "autonomous_runtime": {
+      "kernel": "core/runtime/autonomous_runtime_kernel.py",
+      "orchestrator": "orchestration/autonomous_runtime_orchestrator.py",
+      "policy": "governance/policy/runtime_policy_enforcer.py",
+      "tests": [
+        "tests/test_v10_2_autonomous_runtime.py"
+      ]
+    },
+    "proactive_personal_os": {
+      "mission": "core/mission/mission_control_center.py",
+      "multi_agent": "core/multi_agent/role_team.py",
+      "capability_acquisition": "infrastructure/capability_acquisition/skill_discovery_engine.py",
+      "orchestrator": "orchestration/proactive_personal_os_orchestrator.py",
+      "tests": [
+        "tests/test_v10_3_proactive_os.py"
+      ]
+    },
+    "strategic_personal_os": {
+      "strategy": "core/strategy/strategic_autonomy_cortex.py",
+      "contract": "core/execution_contract/execution_contract.py",
+      "portfolio": "core/portfolio/goal_portfolio_manager.py",
+      "world_model": "core/world_model/user_context_graph.py",
+      "connector_factory": "infrastructure/connector_factory/connector_blueprint_factory.py",
+      "reflection": "learning_loop/reflection/reflection_engine.py",
+      "orchestrator": "orchestration/strategic_personal_os_orchestrator.py",
+      "tests": [
+        "tests/test_v10_4_strategic_os.py"
+      ]
+    },
+    "continuous_personal_os": {
+      "continuous": "core/continuous/continuous_intelligence_kernel.py",
+      "simulation": "core/simulation/scenario_simulator.py",
+      "knowledge": "core/knowledge/knowledge_refinery.py",
+      "privacy": "core/privacy/privacy_boundary_engine.py",
+      "ops": "infrastructure/ops/ops_health_supervisor.py",
+      "lifecycle": "infrastructure/capability_lifecycle/capability_promotion_engine.py",
+      "meta_learning": "learning_loop/meta_learning/meta_learning_engine.py",
+      "orchestrator": "orchestration/continuous_personal_os_orchestrator.py",
+      "tests": [
+        "tests/test_v10_5_continuous_os.py"
+      ]
+    },
+    "reality_connected_personal_os": {
+      "reality": "core/reality/reality_grounding_kernel.py",
+      "authorization": "core/authorization/authorization_intent_gateway.py",
+      "project": "core/project_autonomy/project_brain.py",
+      "tool_negotiation": "infrastructure/tool_negotiation/tool_capability_negotiator.py",
+      "execution_runtime": "infrastructure/execution_runtime/real_execution_broker.py",
+      "upgrade_governance": "infrastructure/upgrade_governance/self_upgrade_governor.py",
+      "audit_replay": "learning_loop/audit_replay/audit_replay_learner.py",
+      "orchestrator": "orchestration/reality_connected_personal_os_orchestrator.py",
+      "tests": [
+        "tests/test_v10_6_reality_connected_os.py"
+      ]
+    },
+    "executive_personal_os": {
+      "v10_7_collaboration": "core/collaboration/collaborative_autonomy_kernel.py",
+      "v10_8_digital_twin": "core/digital_twin/personal_digital_twin.py",
+      "v10_9_executive": "core/executive_os/executive_operating_kernel.py",
+      "self_governance": "core/self_governance/constitutional_policy_core.py",
+      "runtime_fabric": "infrastructure/runtime_fabric/runtime_fabric_orchestrator.py",
+      "orchestrator": "orchestration/executive_personal_os_orchestrator.py",
+      "tests": [
+        "tests/test_v10_7_8_9_executive_os.py"
+      ]
+    }
+  },
+  "performance": {
+    "parallel_execution": true,
+    "cache_enabled": true,
+    "lazy_load": true,
+    "batch_operations": true,
+    "inspector_version": "4.0.0",
+    "numba_enabled": true,
+    "numpy_enabled": true,
+    "max_workers": 6,
+    "target_time_ms": 10000
+  },
+  "injection": {
+    "mode": "minimal",
+    "config": "infrastructure/config/injection_config.json",
+    "estimated_tokens": 3500,
+    "minimal_tokens": 2762,
+    "modes": {
+      "full": {
+        "tokens": 13000000,
+        "description": "全量注入"
+      },
+      "minimal": {
+        "tokens": 5000,
+        "description": "精简注入"
+      },
+      "ultra_minimal": {
+        "tokens": 2762,
+        "description": "极简注入"
+      },
+      "smart": {
+        "tokens": 2000,
+        "description": "智能注入 - 自动压缩"
+      }
+    },
+    "tools": {
+      "compressor": "scripts/smart_compressor.py",
+      "updater": "scripts/incremental_updater.py",
+      "summarizer": "scripts/auto_summarizer.py"
+    }
+  },
+  "inspector": {
+    "version": "5.0.0",
+    "checks": 8,
+    "workers": 8,
+    "target_time_ms": 6000
+  },
+  "token_optimization": {
+    "modes": [
+      "full",
+      "minimal",
+      "ultra_minimal",
+      "smart"
+    ],
+    "tools": [
+      "smart_compressor.py",
+      "incremental_updater.py",
+      "auto_summarizer.py"
+    ],
+    "estimated_tokens": {
+      "full": 13000000,
+      "minimal": 5000,
+      "ultra_minimal": 2800,
+      "smart": 2000
+    }
+  },
+  "llm_memory_integration": {
+    "version": "5.1.5",
+    "path": "skills/llm-memory-integration",
+    "category": "memory",
+    "features": {
+      "embedding_dimensions": 4096,
+      "embedding_model": "Qwen3-Embedding-8B",
+      "llm_model": "Qwen3-235B-A22B",
+      "provider": "Gitee AI",
+      "three_engines": [
+        "sqlite-vec",
+        "qdrant",
+        "tfidf"
+      ],
+      "auto_update": true,
+      "sync_enabled": true
+    },
+    "config_files": [
+      "config/llm_config.json",
+      "config/three_engine_config.json",
+      "config/persona_update.json",
+      "config/progressive_config.json"
+    ]
+  },
+  "modules": {
+    "dependency_manager": {
+      "script": "scripts/dependency_manager.py",
+      "config": "infrastructure/config/dependency_manifest.json",
+      "report": "reports/ops/dependency_status.json",
+      "categories": [
+        "core",
+        "llm",
+        "embedding",
+        "vector",
+        "ml",
+        "performance",
+        "document"
+      ]
+    },
+    "delete_manager": {
+      "script": "scripts/delete_manager.py",
+      "trash_dir": "archive/trash/",
+      "log": "reports/ops/delete_log.json",
+      "pending": "reports/ops/pending_deletes.json",
+      "protected_files": [
+        "core/ARCHITECTURE.md",
+        "core/RULE_REGISTRY.json",
+        "core/SOUL.md",
+        "core/USER.md",
+        "MEMORY.md"
+      ]
+    }
+  },
+  "skills": {
+    "total": 201,
+    "local_skill_dirs": 201,
+    "registered_skills": 201,
+    "active_skills": 54,
+    "document_only_skills": 137,
+    "invalid_skills": 10
+  },
+  "v10_autonomous_agent": {
+    "agent_shape": "Self-Evolving Personal Operating Agent",
+    "core_modules": [
+      "goal_strategy_kernel",
+      "task_graph_compiler",
+      "personal_codex",
+      "personalization_engine",
+      "external_capability_bus",
+      "solution_search_orchestrator",
+      "capability_self_extension_kernel",
+      "personal_autonomous_os_agent"
+    ],
+    "principles": [
+      "bounded_autonomy",
+      "personalization",
+      "judgement_before_execution",
+      "capability_gap_search",
+      "sandboxed_extension",
+      "approval_for_high_risk",
+      "trace_and_rollback"
+    ],
+    "reports": [
+      "reports/V10_AUTONOMOUS_AGENT_REPORT.txt",
+      "reports/V10_SELF_EXTENSION_REPORT.txt",
+      "reports/V10_STRATEGIC_SHAPE_REPORT.md"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "package_name": "pigeon_king_v10.0.0_self_evolving_personal_os_agent_clean_full.zip",
+  "created_at": "2026-04-26T05:03:45.167235",
+  "base": "pigeon_king_v9.2.0_connected_adapter_bootstrap.zip",
+  "shape": "Self-Evolving Personal Operating Agent",
+  "file_count": 3903,
+  "dir_count": 730,
+  "required_v10_files_present": 12,
+  "missing_required_v10_files": [],
+  "removed_pollution_count": 5,
+  "remaining_pollution_count": 0,
+  "remaining_pollution_sample": [],
+  "note": "Full pytest must be executed in the real project/runtime environment after replacement."
+}

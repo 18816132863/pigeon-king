@@ -1,0 +1,19 @@
+{
+  "package_name": "pigeon_king_v10.6.0_reality_connected_personal_os_clean_full.zip",
+  "created_at": "2026-04-26T08:39:49.548371",
+  "base": "pigeon_king_v10.5.0_continuous_intelligence_personal_os_clean_full.zip",
+  "shape": "Reality-Connected Personal OS Agent",
+  "file_count": 3898,
+  "missing_required_files": [],
+  "remaining_pollution_count": 0,
+  "remaining_pollution_sample": [],
+  "validation": {
+    "direct_v10_6_import": {
+      "status": "reality_connected_os_ready",
+      "shape": "Reality-Connected Personal OS Agent",
+      "real_execution_allowed_now": false,
+      "authorization_status": "waiting_confirmation"
+    }
+  },
+  "note": "Run full pytest and real connector/device validation in target runtime after replacement."
+}

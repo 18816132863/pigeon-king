@@ -1,0 +1,201 @@
+{
+  "status": "continuous_personal_os_ready",
+  "shape": "Continuous Intelligence Personal OS Agent",
+  "continuous_tick": {
+    "status": "continuous_tick_ready",
+    "shape": "Continuous Intelligence Kernel",
+    "budget": {
+      "status": "budget_allocated",
+      "mode": "bounded_high",
+      "budget": {
+        "max_background_checks_per_hour": 4,
+        "max_external_reads_per_cycle": 3,
+        "max_external_writes_without_confirmation": 0,
+        "max_device_actions_without_confirmation": 0,
+        "max_cost_without_confirmation": 0
+      }
+    },
+    "attention": {
+      "status": "ranked",
+      "top": [
+        {
+          "priority": "high",
+          "type": "goal",
+          "reason": "user_requested_fast_iteration",
+          "attention_score": 80,
+          "rank_id": 0
+        }
+      ],
+      "should_interrupt_user": false
+    },
+    "context_refresh": {
+      "status": "refresh_plan_ready",
+      "sources": [
+        "goal_portfolio",
+        "personal_preferences",
+        "recent_goals",
+        "risk_policy"
+      ],
+      "side_effect": false
+    },
+    "initiatives": {
+      "status": "initiatives_ready",
+      "initiatives": [
+        {
+          "title": "handle_goal",
+          "reason": "user_requested_fast_iteration",
+          "side_effect": false,
+          "requires_confirmation": false
+        }
+      ]
+    },
+    "external_side_effect": false,
+    "next_decision": "prepare_initiative"
+  },
+  "simulation": {
+    "status": "simulation_ready",
+    "scenarios": [
+      {
+        "scenario": "use_existing_capability",
+        "risk_level": "L1",
+        "cost": "low",
+        "prediction": {
+          "status": "predicted",
+          "success_probability": 0.9,
+          "risk_level": "L1",
+          "uncertainty": "medium"
+        }
+      },
+      {
+        "scenario": "search_solution_first",
+        "risk_level": "L2",
+        "cost": "medium",
+        "prediction": {
+          "status": "predicted",
+          "success_probability": 0.75,
+          "risk_level": "L2",
+          "uncertainty": "medium"
+        }
+      },
+      {
+        "scenario": "connect_external_capability",
+        "risk_level": "L3",
+        "cost": "medium",
+        "confirmation_required": true,
+        "prediction": {
+          "status": "predicted",
+          "success_probability": 0.55,
+          "risk_level": "L3",
+          "uncertainty": "high"
+        }
+      }
+    ],
+    "selected": {
+      "scenario": "use_existing_capability",
+      "risk_level": "L1",
+      "cost": "low",
+      "prediction": {
+        "status": "predicted",
+        "success_probability": 0.9,
+        "risk_level": "L1",
+        "uncertainty": "medium"
+      }
+    },
+    "counterfactual_review": {
+      "status": "reviewed",
+      "selected": {
+        "scenario": "use_existing_capability",
+        "risk_level": "L1",
+        "cost": "low",
+        "prediction": {
+          "status": "predicted",
+          "success_probability": 0.9,
+          "risk_level": "L1",
+          "uncertainty": "medium"
+        }
+      },
+      "safer_alternatives": [],
+      "should_reconsider": false
+    }
+  },
+  "knowledge_refinery": {
+    "status": "refined",
+    "accepted_count": 1,
+    "rejected_count": 0,
+    "indexed": [
+      {
+        "goal": "长期持续推进系统，自己关注重点，自己模拟方案，保护隐私，越用越像我",
+        "solution": {
+          "type": "internal_report",
+          "topic": "架构",
+          "quality": {
+            "status": "evaluated",
+            "trusted": true,
+            "quality_score": 90,
+            "requires_cross_check": true
+          },
+          "decay": {
+            "status": "classified",
+            "decay": "slow",
+            "refresh_required": false
+          }
+        },
+        "status": "indexed"
+      }
+    ],
+    "requires_refresh": false
+  },
+  "privacy_boundary": {
+    "status": "privacy_prepared",
+    "payload": {
+      "goal": "continue"
+    },
+    "minimized": true,
+    "redacted": true
+  },
+  "ops_health": {
+    "status": "supervised",
+    "drift": {
+      "status": "stable",
+      "changed_keys": [],
+      "requires_review": false
+    },
+    "uptime": {
+      "status": "checked",
+      "checks": [],
+      "unhealthy_count": 0
+    },
+    "incident": null
+  },
+  "capability_promotion": {
+    "status": "promotion_ready",
+    "maturity": {
+      "status": "classified",
+      "stage": "experimental"
+    },
+    "can_be_core": false
+  },
+  "capability_retirement": {
+    "status": "keep",
+    "reason": "still_useful",
+    "requires_backup": false
+  },
+  "meta_learning": {
+    "status": "meta_learning_ready",
+    "stored": {
+      "status": "stored",
+      "count": 1
+    },
+    "strategy": {
+      "status": "optimized",
+      "response_strategy": "direct_artifact_first",
+      "avoid": [
+        "unnecessary_clarification",
+        "vague_next_steps",
+        "unsupported_claims"
+      ]
+    },
+    "next_run_adjustment": "prefer_direct_complete_artifact"
+  },
+  "execution_side_effect": false
+}

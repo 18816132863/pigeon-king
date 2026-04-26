@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "gate": {
+    "status": "requires_confirmation",
+    "reason": "strong_confirmation_required"
+  },
+  "risk_level": "L3",
+  "strong_confirmation_enforced": true
+}

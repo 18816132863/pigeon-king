@@ -1,0 +1,257 @@
+{
+  "status": "reality_connected_os_ready",
+  "shape": "Reality-Connected Personal OS Agent",
+  "reality": {
+    "status": "grounded",
+    "goal": "接入真实外部能力但必须先授权、可审计、可回滚",
+    "fact_state": {
+      "status": "resolved",
+      "known_facts": [
+        {
+          "name": "user_requested",
+          "value": true
+        }
+      ],
+      "stale_facts": [],
+      "assumptions": [],
+      "missing_facts": [],
+      "can_execute_reality_bound_action": true
+    },
+    "environment_state": {
+      "status": "probed",
+      "ready_connectors": [],
+      "missing_connectors": [
+        {
+          "connector_id": "api",
+          "status": "planned"
+        }
+      ],
+      "device_runtime_ready": false,
+      "external_execution_possible": false,
+      "side_effect": false
+    },
+    "uncertainty": {
+      "status": "classified",
+      "uncertainty_level": "low",
+      "next_action": "proceed_to_policy_gate",
+      "must_not_claim_success": false
+    },
+    "execution_grounded": false
+  },
+  "project_autonomy": {
+    "status": "project_autonomy_ready",
+    "project": {
+      "project_id": "project_5512152415857866631",
+      "goal": "接入真实外部能力但必须先授权、可审计、可回滚",
+      "status": "active"
+    },
+    "milestones": {
+      "status": "milestones_ready",
+      "milestones": [
+        {
+          "milestone": "define_success_state",
+          "risk": "L0"
+        },
+        {
+          "milestone": "map_capabilities",
+          "risk": "L1"
+        },
+        {
+          "milestone": "run_sandbox_execution",
+          "risk": "L2"
+        },
+        {
+          "milestone": "authorize_external_connectors",
+          "risk": "L3"
+        },
+        {
+          "milestone": "validate_real_runtime",
+          "risk": "L2"
+        },
+        {
+          "milestone": "promote_stable_path",
+          "risk": "L1"
+        }
+      ]
+    },
+    "memory_graph": {
+      "status": "project_graph_ready",
+      "project": {
+        "project_id": "project_5512152415857866631",
+        "goal": "接入真实外部能力但必须先授权、可审计、可回滚",
+        "status": "active"
+      },
+      "event_count": 0,
+      "nodes": [
+        {
+          "type": "project",
+          "id": "project_5512152415857866631"
+        }
+      ],
+      "edges": [],
+      "privacy": "local_only"
+    },
+    "review": {
+      "status": "reviewed",
+      "max_risk": "L3",
+      "needs_external_validation": true,
+      "strong_confirm_required": true
+    }
+  },
+  "tool_negotiation": {
+    "status": "negotiated",
+    "registered_tools": [
+      {
+        "tool_id": "internal_search",
+        "capabilities": [
+          "search"
+        ],
+        "side_effects": [],
+        "status": "contract_registered"
+      }
+    ],
+    "fallback_matrix": {
+      "status": "fallback_matrix_ready",
+      "required_capability": "search",
+      "primary": {
+        "tool_id": "internal_search",
+        "capabilities": [
+          "search"
+        ],
+        "side_effects": [],
+        "status": "contract_registered"
+      },
+      "fallbacks": [],
+      "missing": false
+    },
+    "requires_acquisition": false
+  },
+  "authorization": {
+    "status": "waiting_confirmation",
+    "scope": {
+      "status": "evaluated",
+      "scopes": [
+        "read",
+        "search",
+        "install"
+      ],
+      "high_risk_scopes": [
+        "install"
+      ],
+      "least_privilege": true,
+      "requires_explicit_consent": true
+    },
+    "attestation": {
+      "status": "attested",
+      "risk_level": "L3",
+      "side_effect": false,
+      "requires_confirmation": true,
+      "human_readable_summary": "接入真实外部能力但必须先授权、可审计、可回滚"
+    },
+    "confirmation_contract": {
+      "confirmation_id": "confirm_2216390841267028473",
+      "action_id": "planned_action",
+      "summary": "接入真实外部能力但必须先授权、可审计、可回滚",
+      "risk_level": "L3",
+      "scopes": [
+        "read",
+        "search",
+        "install"
+      ],
+      "status": "pending_user_confirmation",
+      "confirmed": false,
+      "created_at": "2026-04-26T09:49:36.697790Z"
+    },
+    "can_execute_now": false
+  },
+  "execution_broker": {
+    "status": "dry_run_only",
+    "dry_run": {
+      "status": "dry_run_ready",
+      "action": {
+        "action_id": "planned_action",
+        "summary": "接入真实外部能力但必须先授权、可审计、可回滚",
+        "risk_level": "L3",
+        "scopes": [
+          "read",
+          "search",
+          "install"
+        ],
+        "side_effect": false
+      },
+      "side_effect": false,
+      "would_execute": "planned_action"
+    },
+    "trace": {
+      "status": "trace_recorded",
+      "action": {
+        "action_id": "planned_action",
+        "summary": "接入真实外部能力但必须先授权、可审计、可回滚",
+        "risk_level": "L3",
+        "scopes": [
+          "read",
+          "search",
+          "install"
+        ],
+        "side_effect": false
+      },
+      "outcome": {
+        "status": "dry_run_ready",
+        "action": {
+          "action_id": "planned_action",
+          "summary": "接入真实外部能力但必须先授权、可审计、可回滚",
+          "risk_level": "L3",
+          "scopes": [
+            "read",
+            "search",
+            "install"
+          ],
+          "side_effect": false
+        },
+        "side_effect": false,
+        "would_execute": "planned_action"
+      },
+      "created_at": "2026-04-26T09:49:36.697803Z"
+    },
+    "real_side_effect": false
+  },
+  "upgrade_governance": {
+    "status": "upgrade_governed",
+    "lineage": {
+      "status": "lineage_ready",
+      "current": "10.5.0",
+      "target": "10.6.0",
+      "upgrade_path": [
+        "10.5.0",
+        "10.6.0"
+      ]
+    },
+    "diff_risk": {
+      "status": "analyzed",
+      "changed_count": 3,
+      "high_risk_modules": [
+        "core/authorization",
+        "infrastructure/execution_runtime"
+      ],
+      "requires_full_tests": true
+    },
+    "snapshot_policy": {
+      "status": "snapshot_required",
+      "before_upgrade": true,
+      "after_upgrade": true,
+      "rollback_command_required": true,
+      "reason": "10.6.0"
+    },
+    "can_auto_promote": false,
+    "requires_user_review": true
+  },
+  "audit_replay_learning": {
+    "status": "audit_replay_learned",
+    "indexed": 1,
+    "prevention_rules": {
+      "status": "rules_ready",
+      "rules": []
+    }
+  },
+  "real_execution_allowed_now": false
+}

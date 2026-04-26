@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "authorization": {
+    "status": "waiting_confirmation",
+    "scope": {
+      "status": "evaluated",
+      "scopes": [
+        "send"
+      ],
+      "high_risk_scopes": [
+        "send"
+      ],
+      "least_privilege": true,
+      "requires_explicit_consent": true
+    },
+    "attestation": {
+      "status": "attested",
+      "risk_level": "L3",
+      "side_effect": true,
+      "requires_confirmation": true,
+      "human_readable_summary": "send message"
+    },
+    "confirmation_contract": {
+      "confirmation_id": "confirm_6029678390851481974",
+      "action_id": "send_test",
+      "summary": "send message",
+      "risk_level": "L3",
+      "scopes": [
+        "send"
+      ],
+      "status": "pending_user_confirmation",
+      "confirmed": false,
+      "created_at": "2026-04-26T09:49:41.537069Z"
+    },
+    "can_execute_now": false
+  },
+  "execution": {
+    "status": "dry_run_only",
+    "dry_run": {
+      "status": "dry_run_ready",
+      "action": {
+        "action_id": "send_test",
+        "summary": "send message",
+        "risk_level": "L3",
+        "scopes": [
+          "send"
+        ],
+        "side_effect": true
+      },
+      "side_effect": false,
+      "would_execute": "send_test"
+    },
+    "trace": {
+      "status": "trace_recorded",
+      "action": {
+        "action_id": "send_test",
+        "summary": "send message",
+        "risk_level": "L3",
+        "scopes": [
+          "send"
+        ],
+        "side_effect": true
+      },
+      "outcome": {
+        "status": "dry_run_ready",
+        "action": {
+          "action_id": "send_test",
+          "summary": "send message",
+          "risk_level": "L3",
+          "scopes": [
+            "send"
+          ],
+          "side_effect": true
+        },
+        "side_effect": false,
+        "would_execute": "send_test"
+      },
+      "created_at": "2026-04-26T09:49:41.537082Z"
+    },
+    "real_side_effect": false
+  },
+  "no_real_side_effect_without_confirmation": true
+}

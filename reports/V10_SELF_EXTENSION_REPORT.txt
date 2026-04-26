@@ -1,0 +1,76 @@
+{
+  "status": "extension_plan_ready",
+  "gap": {
+    "gap_id": "gap_external_research",
+    "description": "missing capability: external research",
+    "required_for_goal": "solution_search",
+    "severity": "medium",
+    "existing_options_checked": []
+  },
+  "auto_mode": true,
+  "search_plan": {
+    "status": "search_plan_ready",
+    "gap": "missing capability: external research",
+    "search_order": [
+      "local_skill_registry",
+      "local_docs_and_reports",
+      "trusted_connectors_or_mcp_catalog",
+      "official_api_docs",
+      "trusted_package_sources",
+      "general_web_search_last"
+    ],
+    "stop_condition": "candidate_passes_risk_and_minimal_test"
+  },
+  "candidates": [
+    {
+      "source": "local_registry",
+      "title": "reuse_existing_skill_for_solution_search",
+      "confidence": 0.55,
+      "action": "reuse_or_wrap_existing_skill",
+      "requires_network": false,
+      "requires_install": false
+    },
+    {
+      "source": "mcp_connector",
+      "title": "connect_mcp_for_solution_search",
+      "confidence": 0.72,
+      "action": "register_external_connector",
+      "requires_network": true,
+      "requires_install": false
+    },
+    {
+      "source": "trusted_skill_catalog",
+      "title": "install_sandboxed_skill_for_solution_search",
+      "confidence": 0.66,
+      "action": "sandbox_install_then_evaluate",
+      "requires_network": true,
+      "requires_install": true
+    }
+  ],
+  "safety_policy": {
+    "no_untrusted_direct_install": true,
+    "sandbox_required": true,
+    "rollback_required": true,
+    "approval_required_for_executable_code": true,
+    "promote_only_after_minimal_tests": true
+  },
+  "bus_registration": {
+    "status": "registered_candidate",
+    "capability": {
+      "capability_id": "gap_external_research_candidate",
+      "kind": "mcp_or_connector",
+      "endpoint": null,
+      "status": "candidate",
+      "risk_level": "L2",
+      "requires_approval": false,
+      "metadata": {
+        "source": "mcp_connector",
+        "title": "connect_mcp_for_solution_search",
+        "confidence": 0.72,
+        "action": "register_external_connector",
+        "requires_network": true,
+        "requires_install": false
+      }
+    }
+  }
+}

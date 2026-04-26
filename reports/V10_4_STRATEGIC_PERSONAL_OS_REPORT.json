@@ -1,0 +1,158 @@
+{
+  "status": "strategic_os_plan_ready",
+  "shape": "Strategic Autonomous Personal OS Agent",
+  "strategic": {
+    "status": "strategy_ready",
+    "strategy": {
+      "strategy": "strict_instruction_following",
+      "reason": "user_dislikes_ambiguous_execution"
+    },
+    "evaluation": {
+      "risk_level": "L1",
+      "value_score": 55,
+      "reversibility": "high",
+      "learning_value": "high",
+      "decision": "consider"
+    },
+    "policy_simulation": {
+      "status": "simulated",
+      "policy_outcome": "allowed_under_policy",
+      "requires_confirmation": false,
+      "must_have": [
+        "audit",
+        "rollback",
+        "verification"
+      ]
+    },
+    "next_mode": "mission_orchestration",
+    "not_a_dumb_executor": true
+  },
+  "intent": {
+    "raw": "一句话完成目标，能接外部能力，越用越像我，不要猜，给我完整结果",
+    "wants_autonomy": true,
+    "wants_artifact": false,
+    "dislikes_guessing": true
+  },
+  "environment": {
+    "connected_runtime": false,
+    "authorized_connectors": [],
+    "missing_authorizations": [
+      "external_connectors"
+    ]
+  },
+  "user_context_graph": {
+    "status": "graph_ready",
+    "nodes": [],
+    "edges": [],
+    "privacy": "local_only",
+    "no_external_share": true
+  },
+  "portfolio": {
+    "goals": [
+      {
+        "goal_id": "goal_1",
+        "goal": "一句话完成目标，能接外部能力，越用越像我，不要猜，给我完整结果",
+        "horizon": "short",
+        "risk_level": "L1",
+        "status": "planned"
+      }
+    ],
+    "tasks": [
+      {
+        "task_id": "task_1",
+        "title": "一句话完成目标，能接外部能力，越用越像我，不要猜，给我完整结果",
+        "priority": 50,
+        "risk_level": "L1",
+        "status": "planned"
+      }
+    ],
+    "progress": {
+      "status": "evaluated",
+      "total_goals": 1,
+      "done_goals": 0,
+      "progress_ratio": 0.0,
+      "needs_attention": []
+    }
+  },
+  "execution_contract": {
+    "status": "contract_ready",
+    "mission_id": "goal_1",
+    "risk_level": "L1",
+    "side_effect_budget": {
+      "risk_level": "L1",
+      "budget": {
+        "external_write": 0,
+        "device_action": 0,
+        "money": 0
+      }
+    },
+    "confirmation": null,
+    "audit_required": true,
+    "rollback_required": true,
+    "verification_required": true,
+    "can_execute_without_confirmation": true
+  },
+  "readiness": {
+    "status": "ready",
+    "reason": "contract_satisfied"
+  },
+  "connector_blueprints": [
+    {
+      "type": "api",
+      "name": "generic_api",
+      "scopes": [
+        "read",
+        "search"
+      ],
+      "auth_required": true,
+      "least_privilege": true,
+      "status": "blueprint"
+    },
+    {
+      "type": "mcp",
+      "name": "generic_mcp",
+      "tools": [
+        "search",
+        "read",
+        "plan"
+      ],
+      "sandbox_first": true,
+      "status": "blueprint"
+    },
+    {
+      "type": "device",
+      "name": "xiaoyi_device",
+      "actions": [
+        "read",
+        "probe"
+      ],
+      "high_risk_actions": [],
+      "strong_confirm_required": false,
+      "status": "blueprint"
+    },
+    {
+      "type": "database",
+      "name": "local_memory_db",
+      "readonly": true,
+      "write_requires_approval": false,
+      "status": "blueprint"
+    }
+  ],
+  "reflection": {
+    "status": "reflected",
+    "failure_analysis": {
+      "status": "analyzed",
+      "failure_count": 0,
+      "patterns": []
+    },
+    "success_promotion": {
+      "status": "promoted",
+      "success_count": 1,
+      "candidate_patterns": [
+        "reuse_success_path"
+      ]
+    },
+    "next_run_policy": "reuse_success_and_precheck_failures"
+  },
+  "execution_allowed_now": true
+}

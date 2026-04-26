@@ -1,0 +1,19 @@
+{
+  "package_name": "pigeon_king_v10.4.0_strategic_autonomous_personal_os_clean_full.zip",
+  "created_at": "2026-04-26T08:11:00.041708",
+  "base": "pigeon_king_v10.3.0_cleaned.zip",
+  "shape": "Strategic Autonomous Personal OS Agent",
+  "file_count": 3820,
+  "missing_required_files": [],
+  "remaining_pollution_count": 0,
+  "remaining_pollution_sample": [],
+  "validation": {
+    "direct_v10_4_import": {
+      "status": "strategic_os_plan_ready",
+      "shape": "Strategic Autonomous Personal OS Agent",
+      "connector_blueprints": 4,
+      "readiness": "ready"
+    }
+  },
+  "note": "Run full pytest in target runtime after replacement."
+}

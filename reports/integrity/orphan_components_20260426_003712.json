@@ -1,0 +1,217 @@
+{
+  "timestamp": "2026-04-26T00:37:12.218333",
+  "orphans": {
+    "modules": [],
+    "capabilities": [],
+    "configs": [
+      {
+        "name": "default_skill_config",
+        "path": "/home/sandbox/.openclaw/workspace/config/default_skill_config.py",
+        "reason": "未被任何代码引用"
+      }
+    ],
+    "scripts": [
+      {
+        "name": "check_route_registry",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/check_route_registry.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "check_connected_permissions",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/check_connected_permissions.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "create_utility_skills",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/create_utility_skills.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "e2e_route_scenarios",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/e2e_route_scenarios.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "unify_route_risk_levels",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/unify_route_risk_levels.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "activate_routes_smoke",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/activate_routes_smoke.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "simulate_task_progress_timeout",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/simulate_task_progress_timeout.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "simulate_l0_auto_recovery",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/simulate_l0_auto_recovery.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "visual_probe_smoke",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/visual_probe_smoke.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "connected_route_smoke",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/connected_route_smoke.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "verify_routes_static",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/verify_routes_static.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "run_fault_injection_tests",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/run_fault_injection_tests.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "export_route_audit",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/export_route_audit.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "probe_connected_runtime",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/probe_connected_runtime.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "check_runtime_mode",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/check_runtime_mode.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "export_connected_runtime_audit",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/export_connected_runtime_audit.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "create_clean_package",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/create_clean_package.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "fix_route_registry_v2",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/fix_route_registry_v2.py",
+        "reason": "未注册到 script_registry.json"
+      },
+      {
+        "name": "auto_register_routes",
+        "path": "/home/sandbox/.openclaw/workspace/scripts/auto_register_routes.py",
+        "reason": "未注册到 script_registry.json"
+      }
+    ],
+    "documents": [
+      {
+        "name": "CONNECTED_RUNTIME_AUDIT_REPORT",
+        "path": "/home/sandbox/.openclaw/workspace/docs/CONNECTED_RUNTIME_AUDIT_REPORT.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "CONNECTED_RUNTIME_SECURITY_REPORT",
+        "path": "/home/sandbox/.openclaw/workspace/docs/CONNECTED_RUNTIME_SECURITY_REPORT.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "ROUTE_ACTIVE_MATRIX_V3",
+        "path": "/home/sandbox/.openclaw/workspace/docs/ROUTE_ACTIVE_MATRIX_V3.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "NOTIFICATION_AUTH_GUIDE",
+        "path": "/home/sandbox/.openclaw/workspace/docs/NOTIFICATION_AUTH_GUIDE.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "SCENARIO_TEMPLATE_PACK",
+        "path": "/home/sandbox/.openclaw/workspace/docs/SCENARIO_TEMPLATE_PACK.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "RELEASE_READINESS",
+        "path": "/home/sandbox/.openclaw/workspace/docs/RELEASE_READINESS.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "RESULT_UNCERTAIN_HANDLING",
+        "path": "/home/sandbox/.openclaw/workspace/docs/RESULT_UNCERTAIN_HANDLING.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "WORKFLOW_ENHANCEMENT_PLAN",
+        "path": "/home/sandbox/.openclaw/workspace/docs/WORKFLOW_ENHANCEMENT_PLAN.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "DEMO_QUICKSTART",
+        "path": "/home/sandbox/.openclaw/workspace/docs/DEMO_QUICKSTART.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "SAFETY_CONTROLS",
+        "path": "/home/sandbox/.openclaw/workspace/docs/SAFETY_CONTROLS.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "ROUTE_ACTIVE_MATRIX",
+        "path": "/home/sandbox/.openclaw/workspace/docs/ROUTE_ACTIVE_MATRIX.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "USER_RESULT_MESSAGE_MATRIX",
+        "path": "/home/sandbox/.openclaw/workspace/docs/USER_RESULT_MESSAGE_MATRIX.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "CAPABILITY_PERFORMANCE_REPORT",
+        "path": "/home/sandbox/.openclaw/workspace/docs/CAPABILITY_PERFORMANCE_REPORT.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "CAPABILITY_CLOSED_LOOP_MATRIX",
+        "path": "/home/sandbox/.openclaw/workspace/docs/CAPABILITY_CLOSED_LOOP_MATRIX.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "MANUAL_CONFIRMATION_PLAYBOOK",
+        "path": "/home/sandbox/.openclaw/workspace/docs/MANUAL_CONFIRMATION_PLAYBOOK.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "ROUTE_ACTIVE_MATRIX_V2",
+        "path": "/home/sandbox/.openclaw/workspace/docs/ROUTE_ACTIVE_MATRIX_V2.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "CONNECTED_RUNTIME_ROUTE_MATRIX",
+        "path": "/home/sandbox/.openclaw/workspace/docs/CONNECTED_RUNTIME_ROUTE_MATRIX.md",
+        "reason": "未在文档索引中"
+      },
+      {
+        "name": "ROUTE_AUDIT_REPORT",
+        "path": "/home/sandbox/.openclaw/workspace/docs/ROUTE_AUDIT_REPORT.md",
+        "reason": "未在文档索引中"
+      }
+    ],
+    "tests": [],
+    "tables": []
+  },
+  "summary": {
+    "total": 38,
+    "by_category": {
+      "modules": 0,
+      "capabilities": 0,
+      "configs": 1,
+      "scripts": 19,
+      "documents": 18,
+      "tests": 0,
+      "tables": 0
+    }
+  }
+}

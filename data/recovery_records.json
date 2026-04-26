@@ -1,0 +1,88 @@
+{
+  "records": [
+    {
+      "record_id": "test_instance_test_step_20260426135958463314",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "error_type": "transient",
+      "error_message": "Test error",
+      "recovery_action": "retry",
+      "timestamp": "2026-04-26T13:59:58.463336",
+      "retry_count": 0,
+      "max_retries": 3,
+      "resolved": false,
+      "resolved_at": null,
+      "metadata": {}
+    },
+    {
+      "record_id": "test_instance_test_step_20260426143251755140",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "error_type": "transient",
+      "error_message": "Test error",
+      "recovery_action": "retry",
+      "timestamp": "2026-04-26T14:32:51.755156",
+      "retry_count": 0,
+      "max_retries": 3,
+      "resolved": false,
+      "resolved_at": null,
+      "metadata": {}
+    },
+    {
+      "record_id": "test_instance_test_step_20260426160021152418",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "error_type": "transient",
+      "error_message": "Test error",
+      "recovery_action": "retry",
+      "timestamp": "2026-04-26T16:00:21.152438",
+      "retry_count": 0,
+      "max_retries": 3,
+      "resolved": false,
+      "resolved_at": null,
+      "metadata": {}
+    },
+    {
+      "record_id": "test_instance_test_step_20260426172224623650",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "error_type": "transient",
+      "error_message": "Test error",
+      "recovery_action": "retry",
+      "timestamp": "2026-04-26T17:22:24.623671",
+      "retry_count": 0,
+      "max_retries": 3,
+      "resolved": false,
+      "resolved_at": null,
+      "metadata": {}
+    },
+    {
+      "record_id": "test_instance_test_step_20260426173614193174",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "error_type": "transient",
+      "error_message": "Test error",
+      "recovery_action": "retry",
+      "timestamp": "2026-04-26T17:36:14.193212",
+      "retry_count": 0,
+      "max_retries": 3,
+      "resolved": false,
+      "resolved_at": null,
+      "metadata": {}
+    },
+    {
+      "record_id": "test_instance_test_step_20260426175317860921",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "error_type": "transient",
+      "error_message": "Test error",
+      "recovery_action": "retry",
+      "timestamp": "2026-04-26T17:53:17.860952",
+      "retry_count": 0,
+      "max_retries": 3,
+      "resolved": false,
+      "resolved_at": null,
+      "metadata": {}
+    }
+  ]
+}

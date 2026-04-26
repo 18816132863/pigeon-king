@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "candidate_count": 3,
+  "gate": {
+    "status": "promote_to_experimental",
+    "can_be_active": false,
+    "requires_user_approval_for_active": true
+  },
+  "direct_install_allowed": false
+}
