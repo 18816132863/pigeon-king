@@ -1,0 +1,39 @@
+{
+  "name": "pigeon_king_v10_9_to_v23_0_full_merged_release",
+  "kind": "full_merged_release",
+  "included_version_range": "V10.9.0 -> V23.0",
+  "baseline": "pigeon_king_v10.9.0_final(1).zip",
+  "overlay_order": [
+    "pigeon_king_v10.9.0_final(1).zip",
+    "pigeon_king_v11_0_stable_execution.zip",
+    "pigeon_king_v11_1_to_v11_5_advance_pack.zip",
+    "pigeon_king_v11_6_to_v12_0_advance_pack.zip",
+    "pigeon_king_v12_1_to_v12_5_advance_pack.zip",
+    "pigeon_king_v12_6_to_v13_0_advance_pack.zip",
+    "pigeon_king_v14_0_to_v23_0_advance_pack.zip"
+  ],
+  "root_dir": "pigeon_king_v10_9",
+  "source_file_counts_after_filter": {
+    "pigeon_king_v10.9.0_final(1).zip": 3960,
+    "pigeon_king_v11_0_stable_execution.zip": 117,
+    "pigeon_king_v11_1_to_v11_5_advance_pack.zip": 130,
+    "pigeon_king_v11_6_to_v12_0_advance_pack.zip": 144,
+    "pigeon_king_v12_1_to_v12_5_advance_pack.zip": 157,
+    "pigeon_king_v12_6_to_v13_0_advance_pack.zip": 170,
+    "pigeon_king_v14_0_to_v23_0_advance_pack.zip": 196
+  },
+  "merged_file_count_before_generated_files": 4044,
+  "merged_dir_count": 776,
+  "required_path_check": {
+    "passed": true,
+    "missing": []
+  },
+  "main_commands": [
+    "unzip pigeon_king_v10_9_to_v23_0_full_merged_release.zip",
+    "cd pigeon_king_v10_9",
+    "/usr/bin/python3 scripts/v10_9_to_v23_0_full_gate.py",
+    "/usr/bin/python3 scripts/v14_0_to_v23_0_all_smoke.py"
+  ],
+  "note": "This is a full merged release assembled from repaired V10.9 baseline plus all V11-V23 overlay packages available in the workspace. Cache artifacts were filtered during assembly.",
+  "generated_at_epoch": 1777213146
+}

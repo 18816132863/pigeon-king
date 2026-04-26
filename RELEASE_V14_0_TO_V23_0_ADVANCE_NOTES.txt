@@ -1,0 +1,9 @@
+Pigeon King V14.0 -> V23.0 advance pack
+
+This is an incremental advance pack on top of the V13 substrate. It adds 10 major autonomous-agent organs:
+V14 Goal Compiler; V15 Task Graph; V16 Memory Kernel; V17 Unified Judge; V18 World Interface; V19 Capability Extension; V20 Handoff; V21 Persona; V22 Autonomous Loop; V23 Meta Governance.
+
+Run:
+/usr/bin/python3 scripts/v14_0_to_v23_0_all_smoke.py
+
+Not a V10.9 full clean merge package.

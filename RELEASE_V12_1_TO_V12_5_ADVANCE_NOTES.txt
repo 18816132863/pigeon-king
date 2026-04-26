@@ -1,0 +1,13 @@
+V12.1 -> V12.5 advance pack
+
+Run:
+/usr/bin/python3 scripts/v12_1_to_v12_5_all_smoke.py
+
+Single checks:
+/usr/bin/python3 scripts/v12_1_trace_smoke.py
+/usr/bin/python3 scripts/v12_2_replay_smoke.py
+/usr/bin/python3 scripts/v12_3_snapshot_smoke.py
+/usr/bin/python3 scripts/v12_4_slo_smoke.py
+/usr/bin/python3 scripts/v12_5_upgrade_gate.py
+
+If a check fails, only repair the failing module/script. Do not redesign the six-layer architecture.

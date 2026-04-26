@@ -2834,56 +2834,6 @@
       "documented_in": [
         "reports/V10_9_EXECUTIVE_PERSONAL_OS_SYSTEM_REPORT.md"
       ]
-    },
-    "application": {
-      "name": "Application Services",
-      "layer": "L3",
-      "layer_name": "Orchestration",
-      "description": "应用服务层，响应服务、任务服务",
-      "path": "application/",
-      "entry_points": [
-        "response_service/",
-        "task_service/"
-      ],
-      "dependencies": [],
-      "status": "active",
-      "created_at": "2026-04-26",
-      "fused_at": "2026-04-26"
-    },
-    "capabilities": {
-      "name": "Capabilities Collection",
-      "layer": "L4",
-      "layer_name": "Execution",
-      "description": "能力集合，50+ 设备能力",
-      "path": "capabilities/",
-      "entry_points": [
-        "registry.py",
-        "self_repair.py",
-        "diagnostics.py"
-      ],
-      "dependencies": [
-        "device_capability_bus",
-        "platform_adapter"
-      ],
-      "status": "active",
-      "created_at": "2026-04-26",
-      "fused_at": "2026-04-26"
-    },
-    "platform_adapter": {
-      "name": "Platform Adapter",
-      "layer": "L6",
-      "layer_name": "Infrastructure",
-      "description": "平台适配器，小艺适配器、调用守卫、结果标准化",
-      "path": "platform_adapter/",
-      "entry_points": [
-        "xiaoyi_adapter.py",
-        "invoke_guard.py",
-        "result_normalizer.py"
-      ],
-      "dependencies": [],
-      "status": "active",
-      "created_at": "2026-04-26",
-      "fused_at": "2026-04-26"
     }
   },
   "stats": {

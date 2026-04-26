@@ -1,0 +1,96 @@
+{
+  "v14_to_v23_all_smoke": "pass",
+  "count": 10,
+  "results": [
+    {
+      "check": "v14_0_goal_kernel",
+      "status": "pass",
+      "detail": {
+        "goal_id": "goal_a54430b033509005"
+      }
+    },
+    {
+      "check": "v15_0_task_graph",
+      "status": "pass",
+      "detail": {
+        "graph_id": "graph_3c17c0ae8dd19e34",
+        "goal_id": "goal_3c17c0ae8dd19e34",
+        "statuses": {
+          "completed": 2
+        },
+        "terminal": true,
+        "success": true
+      }
+    },
+    {
+      "check": "v16_0_memory_kernel",
+      "status": "pass",
+      "detail": {
+        "hits": 1,
+        "writeback": [
+          "episodic_goal_demo",
+          "procedural_success_goal_demo"
+        ]
+      }
+    },
+    {
+      "check": "v17_0_unified_judge",
+      "status": "pass",
+      "detail": {
+        "decisions": [
+          "require_approval",
+          "allow",
+          "block"
+        ]
+      }
+    },
+    {
+      "check": "v18_0_world_interface",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "check": "v19_0_capability_extension",
+      "status": "pass",
+      "detail": {
+        "promoted": "calendar_connector"
+      }
+    },
+    {
+      "check": "v20_0_handoff",
+      "status": "pass",
+      "detail": {
+        "trace_len": 1
+      }
+    },
+    {
+      "check": "v21_0_persona",
+      "status": "pass",
+      "detail": {
+        "no_auto_external_send": true,
+        "autonomy_level": "controlled_autonomy",
+        "response_style": "direct_actionable"
+      }
+    },
+    {
+      "check": "v22_0_autonomous_loop",
+      "status": "pass",
+      "detail": {
+        "graph_id": "graph_8a2ff34d58316e01",
+        "goal_id": "goal_8a2ff34d58316e01",
+        "statuses": {
+          "completed": 1
+        },
+        "terminal": true,
+        "success": true
+      }
+    },
+    {
+      "check": "v23_0_meta_governance",
+      "status": "pass",
+      "detail": {
+        "report": "/tmp/xy_channel/pigeon_king_v10_9/V23_0_META_GOVERNANCE_REPORT.json"
+      }
+    }
+  ]
+}

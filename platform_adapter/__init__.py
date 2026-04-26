@@ -1,14 +1,14 @@
 """
 Platform Adapter Layer - 平台适配层
-提供平台能力探测和适配
+提供平台能力探测、连接状态判断、自动降级策略。
 """
 
 from .base import PlatformAdapter, PlatformCapability
 from .null_adapter import NullAdapter
 from .runtime_probe import RuntimeProbe
 from .xiaoyi_adapter import XiaoyiAdapter
+from .connection_state import DeviceConnectionState, probe_device_connection
 
-# 引用配置（确保配置被加载）
 try:
     from config import (
         load_capability_timeouts,
@@ -18,7 +18,6 @@ try:
     )
     CAPABILITY_TIMEOUTS = load_capability_timeouts()
     DUAL_PUSH_CONFIG = load_dual_push_config()
-    # 实例化配置类以确保被引用
     _default_skill_cfg = DefaultSkillConfig() if DefaultSkillConfig else None
     _feature_flags = FeatureFlags() if FeatureFlags else None
 except ImportError:
@@ -30,5 +29,6 @@ except ImportError:
 __all__ = [
     'PlatformAdapter', 'PlatformCapability',
     'NullAdapter', 'RuntimeProbe', 'XiaoyiAdapter',
+    'DeviceConnectionState', 'probe_device_connection',
     'CAPABILITY_TIMEOUTS', 'DUAL_PUSH_CONFIG',
 ]

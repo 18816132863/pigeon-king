@@ -1,0 +1,23 @@
+V12.6 -> V13.0 advance pack
+
+New modules:
+- platform_adapter/self_healing_supervisor.py
+- governance/audit/execution_audit_ledger.py
+- governance/policy/risk_tier_matrix.py
+- infrastructure/long_run_soak.py
+- infrastructure/production_gate.py
+
+New smoke scripts:
+- scripts/v12_6_self_healing_smoke.py
+- scripts/v12_7_audit_ledger_smoke.py
+- scripts/v12_8_risk_matrix_smoke.py
+- scripts/v12_9_long_run_soak_smoke.py
+- scripts/v13_0_production_gate.py
+- scripts/v12_6_to_v13_0_all_smoke.py
+
+Recommended command:
+/usr/bin/python3 scripts/v12_6_to_v13_0_all_smoke.py
+
+Version goal:
+Move from upgrade readiness to local production readiness: self-healing, execution audit,
+deterministic risk tiers, long-run soak, and final production gate.

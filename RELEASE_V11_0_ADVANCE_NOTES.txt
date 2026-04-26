@@ -1,0 +1,35 @@
+Pigeon King V11.0 推进说明
+===========================
+
+本包基于 v10.9.0_final 继续推进，不再回滚修旧包，新增“稳态执行层”。
+
+一、这版解决什么
+1. 设备端未真实接通时，不再让任务直接失败，也不需要默认人工介入；系统会自动切换为 queued_for_delivery / local_fallback。
+2. 对发送消息、创建日程、通知等副作用动作，默认进入确认或强确认；这不是默认禁止，确认后可继续执行或入队。
+3. 超时和 result_uncertain 不再自动重试副作用动作，避免短信/日程/通知重复执行。
+4. 修复幂等缓存命中时 call_coro 已创建但未 await 的潜在 ResourceWarning 问题。
+5. 补齐 scripts/check_connected_adapter.py 依赖的 infrastructure.connected_adapter_bootstrap。
+
+二、新增/改动文件
+- platform_adapter/connection_state.py
+- infrastructure/connected_adapter_bootstrap.py
+- governance/policy/adaptive_execution_policy.py
+- governance/security/strong_confirmation.py
+- scripts/v11_stable_execution_smoke.py
+- platform_adapter/invoke_guard.py
+- platform_adapter/result_normalizer.py
+- platform_adapter/xiaoyi_adapter.py
+- platform_adapter/runtime_probe.py
+- platform_adapter/__init__.py
+- governance/policy/runtime_policy_enforcer.py
+
+三、执行验证
+在项目根目录执行：
+/usr/bin/python3 scripts/check_connected_adapter.py
+/usr/bin/python3 scripts/v11_stable_execution_smoke.py
+
+四、预期结果
+1. check_connected_adapter.py 会生成 reports/CONNECTED_ADAPTER_BOOTSTRAP_REPORT.txt。
+2. v11_stable_execution_smoke.py 会生成 reports/v11_stable_execution_smoke.json。
+3. 在没有端侧 tools/call_device_tool 的环境下，状态应为 probe_only/offline，但策略应 auto_adjusted=true，不应要求人工手动改策略。
+4. 副作用任务在端侧未接通时应返回 queued_for_delivery/fallback，而不是硬失败。

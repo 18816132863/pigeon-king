@@ -1,0 +1,10 @@
+{
+  "release": "V10.9_to_V23.0_full_merged",
+  "root": "/tmp/xy_channel/pigeon_king_v10_9",
+  "required_paths_passed": true,
+  "missing": [],
+  "cache_check_passed": true,
+  "cache_hits_sample": [],
+  "next_command": "/usr/bin/python3 scripts/v14_0_to_v23_0_all_smoke.py",
+  "overall": "pass"
+}

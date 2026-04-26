@@ -1,5 +1,5 @@
 {
-  "version": "10.9.0",
+  "version": "9.1.0",
   "updated": "2026-04-26",
   "layers": {
     "L1": {
@@ -9,38 +9,23 @@
         "query": {
           "description": "查询处理模块",
           "source": "llm-memory-integration",
-          "files": [
-            "understand.py",
-            "rewriter.py",
-            "langdetect.py"
-          ]
+          "files": ["understand.py", "rewriter.py", "langdetect.py"]
         },
         "llm": {
           "description": "LLM 客户端",
           "source": "llm-memory-integration",
-          "files": [
-            "llm.py",
-            "llm_client.py"
-          ]
+          "files": ["llm.py", "llm_client.py"]
         },
         "monitoring": {
           "description": "性能监控模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "performance_monitor.py",
-            "health_monitor.py",
-            "cli_tool.py"
-          ],
+          "files": ["performance_monitor.py", "health_monitor.py", "cli_tool.py"],
           "upgrade_effect": "监控效率 ↑ 200%"
         },
         "persona": {
           "description": "Persona身份管理模块 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "auto_update_persona.py",
-            "update_persona.py",
-            "update_l3_profile.py"
-          ],
+          "files": ["auto_update_persona.py", "update_persona.py", "update_l3_profile.py"],
           "upgrade_effect": "身份自适应 ↑ 100%"
         }
       }
@@ -52,55 +37,36 @@
         "vector": {
           "description": "向量处理模块",
           "source": "llm-memory-integration",
-          "files": [
-            "embedding.py",
-            "cache.py",
-            "history.py"
-          ]
+          "files": ["embedding.py", "cache.py", "history.py"]
         },
         "multimodal": {
           "description": "多模态搜索模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "multimodal_search.py"
-          ],
+          "files": ["multimodal_search.py"],
           "upgrade_effect": "搜索维度 ↑ 3x"
         },
         "cross_lingual": {
           "description": "跨语言搜索模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "cross_lingual.py"
-          ],
+          "files": ["cross_lingual.py"],
           "upgrade_effect": "语言支持 ↑ 10+"
         },
         "maintenance": {
           "description": "智能维护系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "run_maintenance.py",
-            "check_coverage.py",
-            "vector_system_optimizer.py",
-            "rebuild_fts.py"
-          ],
+          "files": ["run_maintenance.py", "check_coverage.py", "vector_system_optimizer.py", "rebuild_fts.py"],
           "upgrade_effect": "维护效率 ↑ 90%"
         },
         "vector_ops": {
           "description": "向量操作与优化模块 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "backfill_l0_vectors.py",
-            "smart_memory_update.py",
-            "smart_memory_upgrade.py"
-          ],
+          "files": ["backfill_l0_vectors.py", "smart_memory_update.py", "smart_memory_upgrade.py"],
           "upgrade_effect": "向量填充效率 ↑ 50%"
         },
         "coverage": {
           "description": "向量覆盖率监控模块 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "vector_coverage_monitor.py"
-          ],
+          "files": ["vector_coverage_monitor.py"],
           "upgrade_effect": "覆盖率可见性 ↑ 100%"
         }
       }
@@ -112,45 +78,26 @@
         "router": {
           "description": "路由模块",
           "source": "llm-memory-integration",
-          "files": [
-            "router.py",
-            "weights.py",
-            "rrf.py"
-          ]
+          "files": ["router.py", "weights.py", "rrf.py"]
         },
         "model_router": {
           "description": "多模型路由模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
           "path": "router",
-          "files": [
-            "model_router.py"
-          ],
+          "files": ["model_router.py"],
           "upgrade_effect": "成本 ↓ 40%"
         },
         "streaming": {
           "description": "LLM流式输出模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "llm_streaming.py"
-          ],
+          "files": ["llm_streaming.py"],
           "upgrade_effect": "首字延迟 ↓ 80%"
         },
         "conversation": {
           "description": "多轮对话管理模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "conversation.py"
-          ],
+          "files": ["conversation.py"],
           "upgrade_effect": "上下文理解 ↑ 50%"
-        },
-        "application": {
-          "description": "应用服务模块",
-          "source": "pigeon_king_v10.9.0",
-          "files": [
-            "response_service/",
-            "task_service/"
-          ],
-          "upgrade_effect": "服务响应 ↑ 100%"
         }
       }
     },
@@ -161,78 +108,45 @@
         "search": {
           "description": "搜索模块",
           "source": "llm-memory-integration",
-          "files": [
-            "search.py",
-            "search_optimized.py",
-            "dedup.py"
-          ]
+          "files": ["search.py", "search_optimized.py", "dedup.py"]
         },
         "search_enhanced": {
           "description": "搜索增强模块 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "cached_search.py",
-            "fast_search.py",
-            "full_opt_search.py",
-            "opt_search.py",
-            "search_v2.py"
-          ],
+          "files": ["cached_search.py", "fast_search.py", "full_opt_search.py", "opt_search.py", "search_v2.py"],
           "upgrade_effect": "搜索灵活性 ↑ 200%"
         },
         "failover": {
           "description": "故障转移系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "failover.py"
-          ],
+          "files": ["failover.py"],
           "upgrade_effect": "系统可用性 ↑ 99.9%"
         },
         "auto_tuner": {
           "description": "自动调优系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
           "path": "optimizer",
-          "files": [
-            "auto_tuner.py"
-          ],
+          "files": ["auto_tuner.py"],
           "upgrade_effect": "性能 ↑ 30%"
         },
         "quantization": {
           "description": "向量量化系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "quantization.py",
-            "opq_quantization.py"
-          ],
+          "files": ["quantization.py", "opq_quantization.py"],
           "upgrade_effect": "内存 ↓ 75%, 速度 ↑ 4x"
         },
         "rag_optimizer": {
           "description": "RAG优化器 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
           "path": "rag",
-          "files": [
-            "rag_optimizer.py",
-            "query_rewriter.py"
-          ],
+          "files": ["rag_optimizer.py", "query_rewriter.py"],
           "upgrade_effect": "检索相关性 ↑ 40%"
         },
         "vector_ops": {
           "description": "向量操作模块 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "vector_ops.py",
-            "ann.py"
-          ],
+          "files": ["vector_ops.py", "ann.py"],
           "upgrade_effect": "向量计算性能 ↑ 3x"
-        },
-        "capabilities": {
-          "description": "能力集合模块",
-          "source": "pigeon_king_v10.9.0",
-          "files": [
-            "self_repair.py",
-            "explain_invocation_status.py",
-            "diagnostics.py"
-          ],
-          "upgrade_effect": "能力完整性 ↑ 100%"
         }
       }
     },
@@ -243,28 +157,19 @@
         "audit": {
           "description": "审计模块",
           "source": "llm-memory-integration",
-          "files": [
-            "feedback.py",
-            "explainer.py",
-            "summarizer.py"
-          ]
+          "files": ["feedback.py", "explainer.py", "summarizer.py"]
         },
         "security": {
           "description": "安全模块",
           "modules": {
             "vmp-protect": {
               "description": "VMP 代码保护",
-              "files": [
-                "SKILL.md",
-                "vmp_protect.py"
-              ]
+              "files": ["SKILL.md", "vmp_protect.py"]
             },
             "security_confirmation": {
               "description": "安全确认系统 (V9新增)",
               "source": "llm-memory-integration v9.0.1",
-              "files": [
-                "security_confirmation.py"
-              ],
+              "files": ["security_confirmation.py"],
               "upgrade_effect": "误操作 ↓ 99%"
             }
           }
@@ -272,18 +177,13 @@
         "scheduler": {
           "description": "实时调度系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "realtime_scheduler.py"
-          ],
+          "files": ["realtime_scheduler.py"],
           "upgrade_effect": "延迟抖动 ↓ 80%"
         },
         "access_control": {
           "description": "访问控制系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "access_control.py",
-            "permission_manager.py"
-          ],
+          "files": ["access_control.py", "permission_manager.py"],
           "upgrade_effect": "安全性 ↑ 100%"
         }
       }
@@ -297,111 +197,58 @@
           "modules": {
             "avx512": {
               "description": "AVX-512 指令集优化",
-              "files": [
-                "SKILL.md",
-                "avx512.hpp"
-              ]
+              "files": ["SKILL.md", "avx512.hpp"]
             }
           }
         },
         "vector_engines": {
           "description": "三引擎向量架构 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "three_engine_manager.py"
-          ],
+          "files": ["three_engine_manager.py"],
           "upgrade_effect": "性能 ↑ 3x, 可用性 ↑ 99.99%",
-          "engines": [
-            "sqlite-vec (主)",
-            "Qdrant (副)",
-            "TF-IDF (备份)"
-          ]
+          "engines": ["sqlite-vec (主)", "Qdrant (副)", "TF-IDF (备份)"]
         },
         "cache": {
           "description": "缓存优化系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "cache_optimizer.py",
-            "query_cache.py",
-            "rag_cache.py"
-          ],
+          "files": ["cache_optimizer.py", "query_cache.py", "rag_cache.py"],
           "upgrade_effect": "命中率 ↑ 85%"
         },
         "hardware": {
           "description": "硬件优化系统 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "cpu_optimizer.py",
-            "gpu_ops.py",
-            "numa_optimizer.py"
-          ],
+          "files": ["cpu_optimizer.py", "gpu_ops.py", "numa_optimizer.py"],
           "upgrade_effect": "CPU利用率 ↑ 40%"
         },
         "pool": {
           "description": "连接池管理 (V9新增)",
           "source": "llm-memory-integration v9.0.1",
-          "files": [
-            "connection_pool.py"
-          ],
+          "files": ["connection_pool.py"],
           "upgrade_effect": "并发能力 ↑ 5x"
         },
         "setup_tools": {
           "description": "一键配置工具集 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "one_click_optimize.py",
-            "one_click_optimize_v4.1.py",
-            "one_click_optimize_v4.2.py",
-            "one_click_setup.py",
-            "one_click_vector_setup.py",
-            "progressive_setup.py",
-            "setup_maintenance.py"
-          ],
+          "files": ["one_click_optimize.py", "one_click_optimize_v4.1.py", "one_click_optimize_v4.2.py", "one_click_setup.py", "one_click_vector_setup.py", "progressive_setup.py", "setup_maintenance.py"],
           "upgrade_effect": "部署效率 ↑ 500%"
         },
         "validators": {
           "description": "配置验证工具集 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "config_validator.py",
-            "export_config.py",
-            "pre_publish_check.py",
-            "verify_extension_security.py",
-            "verify_metadata_consistency.py"
-          ],
+          "files": ["config_validator.py", "export_config.py", "pre_publish_check.py", "verify_extension_security.py", "verify_metadata_consistency.py"],
           "upgrade_effect": "配置安全性 ↑ 100%"
         },
         "async_support": {
           "description": "异步并发支持模块 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "async_support.py",
-            "batch_operations.py"
-          ],
+          "files": ["async_support.py", "batch_operations.py"],
           "upgrade_effect": "并发处理能力 ↑ 3x"
         },
         "utilities": {
           "description": "基础工具模块 (V9.1新增)",
           "source": "llm-memory-integration",
-          "files": [
-            "paths.py",
-            "safe_db.py",
-            "safe_extension_loader.py",
-            "unified_logger.py",
-            "unified_maintenance.py",
-            "benchmark.py"
-          ],
+          "files": ["paths.py", "safe_db.py", "safe_extension_loader.py", "unified_logger.py", "unified_maintenance.py", "benchmark.py"],
           "upgrade_effect": "工具链完整性 ↑ 100%"
-        },
-        "platform_adapter": {
-          "description": "平台适配器模块",
-          "source": "pigeon_king_v10.9.0",
-          "files": [
-            "xiaoyi_adapter.py",
-            "invoke_guard.py",
-            "result_normalizer.py"
-          ],
-          "upgrade_effect": "平台兼容性 ↑ 100%"
         }
       }
     }
