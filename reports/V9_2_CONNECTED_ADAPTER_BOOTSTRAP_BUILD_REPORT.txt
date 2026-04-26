@@ -1,0 +1,73 @@
+# V9.2 Connected Adapter Bootstrap Build Report
+
+Base: Pigeon King / 小艺 Claw V9.1.0 Clean Full 稳定基线版
+Target: V9.2.0 Connected Adapter Bootstrap Clean Full 候选版
+
+## 新增内容
+
+- infrastructure/connected_adapter_bootstrap.py
+- scripts/check_connected_adapter.py
+- scripts/connected_adapter_smoke.py
+- tests/test_connected_adapter_bootstrap.py
+- reports/CONNECTED_ADAPTER_BOOTSTRAP_REPORT.txt
+- reports/CONNECTED_SMALL_TRAFFIC_REPORT_V9.2.txt
+- reports/L0_TIMEOUT_RECOVERY_REPORT_V9.2.txt
+- reports/CONNECTED_ADAPTER_AUDIT_REPORT.txt
+
+## 解决的问题
+
+针对真实小艺连接端出现的情况：
+
+- runtime_available = true
+- call_device_tool_available = true
+- adapter_loaded = false
+- L0 route 全部 timeout
+
+V9.2 新增 adapter bootstrap 前置门：
+
+session_connected=true
+→ runtime_bridge_ready 检查
+→ adapter_bootstrap
+→ adapter_loaded=true/partial/failed
+→ probe_minimal_service
+→ safe_route_test
+
+如果 adapter_loaded=false，不再直接跑 L0 route，而是进入恢复链：
+
+reload_adapter
+→ rebind_call_device_tool
+→ probe_minimal_service
+→ switch_to_direct_tool_bridge
+→ service_specific_probe
+→ human_action_required
+
+## 已执行验证
+
+已通过：
+
+- python scripts/check_connected_adapter.py
+- python scripts/connected_adapter_smoke.py --probe-only
+- python scripts/connected_adapter_smoke.py --safe-routes
+- python -m pytest tests/test_connected_adapter_bootstrap.py -q
+- python -m pytest tests/test_architecture.py -q
+- python scripts/check_route_registry.py
+- python scripts/system_integrity_check.py
+- python scripts/find_orphan_components.py
+
+关键结果：
+
+- check_route_registry: 0 error / 0 warning
+- system_integrity_check: 0 error / 0 warning
+- find_orphan_components: 0 orphan
+- connected_adapter_bootstrap tests: 5 passed
+- architecture tests: 7 passed
+
+## 注意
+
+我在当前执行环境尝试跑 `python -m pytest -q` 全量测试时，执行环境出现超时/中断，未能完整跑完。因此本包没有伪造全量 pytest 结果。
+
+恢复到小艺/大龙虾实际工作区后，必须重新执行：
+
+python -m pytest -q
+
+如果全量通过，再 commit / push。

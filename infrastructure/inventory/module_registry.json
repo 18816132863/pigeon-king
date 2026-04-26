@@ -1,0 +1,641 @@
+{
+  "version": "9.2.0",
+  "updated": "2026-04-26",
+  "modules": {
+    "device_capability_bus": {
+      "name": "Device Capability Bus",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "设备能力总线，统一管理设备能力的注册、发现和执行",
+      "path": "device_capability_bus/",
+      "entry_points": [
+        "__init__.py",
+        "capability_registry.py",
+        "capability_executor.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "safety_governor": {
+      "name": "Safety Governor",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "安全治理器，策略引擎、审批门、风险等级管理",
+      "path": "safety_governor/",
+      "entry_points": [
+        "__init__.py",
+        "policy_engine.py",
+        "approval_gate.py"
+      ],
+      "dependencies": [
+        "device_capability_bus"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "learning_loop": {
+      "name": "Learning Loop",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "学习闭环，执行记忆、计划优化、模式提取",
+      "path": "learning_loop/",
+      "entry_points": [
+        "__init__.py",
+        "execution_memory.py",
+        "plan_optimizer.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "skill_asset_registry": {
+      "name": "Skill Asset Registry",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "技能资产库，扫描器、注册表、资产定义",
+      "path": "skill_asset_registry/",
+      "entry_points": [
+        "__init__.py",
+        "skill_scanner.py",
+        "skill_registry.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "autonomous_planner": {
+      "name": "Autonomous Planner",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "自主规划器，目标解析、任务分解、规划引擎",
+      "path": "autonomous_planner/",
+      "entry_points": [
+        "__init__.py",
+        "goal_parser.py",
+        "task_decomposer.py"
+      ],
+      "dependencies": [
+        "device_capability_bus",
+        "skill_asset_registry"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "visual_operation_agent": {
+      "name": "Visual Operation Agent",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "视觉操作代理，屏幕观察、UI接地、动作执行",
+      "path": "visual_operation_agent/",
+      "entry_points": [
+        "__init__.py",
+        "screen_observer.py",
+        "ui_grounding.py"
+      ],
+      "dependencies": [
+        "device_capability_bus"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "closed_loop_verifier": {
+      "name": "Closed Loop Verifier",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "闭环验证器，结果检查、审计写入、恢复管理",
+      "path": "closed_loop_verifier/",
+      "entry_points": [
+        "__init__.py",
+        "result_checker.py",
+        "audit_writer.py"
+      ],
+      "dependencies": [
+        "device_capability_bus",
+        "learning_loop"
+      ],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "domain": {
+      "name": "Domain",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "领域层，任务规格和状态机",
+      "path": "domain/",
+      "entry_points": [
+        "__init__.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "skill_entry": {
+      "name": "Skill Entry",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "技能入口，输入路由、响应格式化、验证器",
+      "path": "skill_entry/",
+      "entry_points": [
+        "__init__.py",
+        "input_router.py",
+        "response_formatter.py",
+        "validators.py",
+        "error_codes.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-24",
+      "fused_at": "2026-04-24"
+    },
+    "speculative_decoding": {
+      "name": "Speculative Decoding",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "Draft-target speculative decoding framework - V9 正式功能",
+      "path": "execution/speculative_decoding.py",
+      "responsibility": "使用草稿模型生成候选token，目标模型验证，实现推理加速",
+      "entry_points": [
+        "speculative_decoding.py"
+      ],
+      "exports": [
+        "DraftModel",
+        "TargetModel",
+        "SpeculativeDecoder",
+        "SpeculativeDecodingConfig",
+        "SpeculativeDecodeConfig",
+        "SpeculativeResult",
+        "SpeculativeDecodeResult"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_speculative_decoding.py",
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "failover": {
+      "name": "Failover",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "故障转移系统 - V9 新增",
+      "path": "execution/failover/",
+      "responsibility": "健康检查、负载均衡、自动切换",
+      "entry_points": [
+        "failover.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "auto_tuner": {
+      "name": "Auto Tuner",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "自动调优系统 - V9 新增",
+      "path": "execution/optimizer/",
+      "responsibility": "性能参数自动调优",
+      "entry_points": [
+        "auto_tuner.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "quantization": {
+      "name": "Quantization",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "向量量化系统 - V9 新增",
+      "path": "execution/quantization/",
+      "responsibility": "INT8/OPQ量化，内存优化",
+      "entry_points": [
+        "quantization.py",
+        "opq_quantization.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "rag_optimizer": {
+      "name": "RAG Optimizer",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "RAG优化器 - V9 新增",
+      "path": "execution/rag/",
+      "responsibility": "HyDE查询重写、检索增强",
+      "entry_points": [
+        "rag_optimizer.py",
+        "query_rewriter.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "vector_ops": {
+      "name": "Vector Ops",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "向量操作模块 - V9 新增",
+      "path": "execution/vector_ops/",
+      "responsibility": "向量计算、ANN索引",
+      "entry_points": [
+        "vector_ops.py",
+        "ann.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "realtime_scheduler": {
+      "name": "Realtime Scheduler",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "实时调度系统 - V9 新增",
+      "path": "governance/scheduler/",
+      "responsibility": "低延迟任务调度",
+      "entry_points": [
+        "realtime_scheduler.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "access_control": {
+      "name": "Access Control",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "访问控制系统 - V9 新增",
+      "path": "governance/access_control/",
+      "responsibility": "权限管理、访问控制",
+      "entry_points": [
+        "access_control.py",
+        "permission_manager.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "security_confirmation": {
+      "name": "Security Confirmation",
+      "layer": "L5",
+      "layer_name": "Governance",
+      "description": "安全确认系统 - V9 新增",
+      "path": "governance/security/",
+      "responsibility": "敏感操作确认",
+      "entry_points": [
+        "security_confirmation.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "three_engine_manager": {
+      "name": "Three Engine Manager",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "三引擎向量架构 - V9 新增",
+      "path": "infrastructure/vector_engines/",
+      "responsibility": "sqlite-vec/Qdrant/TF-IDF三引擎管理",
+      "entry_points": [
+        "three_engine_manager.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "cache_optimizer": {
+      "name": "Cache Optimizer",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "缓存优化系统 - V9 新增",
+      "path": "infrastructure/cache/",
+      "responsibility": "查询缓存、RAG缓存优化",
+      "entry_points": [
+        "cache_optimizer.py",
+        "query_cache.py",
+        "rag_cache.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "hardware_optimizer": {
+      "name": "Hardware Optimizer",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "硬件优化系统 - V9 新增",
+      "path": "infrastructure/hardware/",
+      "responsibility": "CPU/GPU/NUMA优化",
+      "entry_points": [
+        "cpu_optimizer.py",
+        "gpu_ops.py",
+        "numa_optimizer.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "connection_pool": {
+      "name": "Connection Pool",
+      "layer": "L6",
+      "layer_name": "Infrastructure",
+      "description": "连接池管理 - V9 新增",
+      "path": "infrastructure/pool/",
+      "responsibility": "数据库连接池管理",
+      "entry_points": [
+        "connection_pool.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "model_router": {
+      "name": "Model Router",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "多模型路由 - V9 新增",
+      "path": "orchestration/router/",
+      "responsibility": "模型选择、成本优化",
+      "entry_points": [
+        "model_router.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "llm_streaming": {
+      "name": "LLM Streaming",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "LLM流式输出 - V9 新增",
+      "path": "orchestration/streaming/",
+      "responsibility": "流式输出、首字延迟优化",
+      "entry_points": [
+        "llm_streaming.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "conversation": {
+      "name": "Conversation",
+      "layer": "L3",
+      "layer_name": "Orchestration",
+      "description": "多轮对话管理 - V9 新增",
+      "path": "orchestration/conversation/",
+      "responsibility": "上下文管理、对话状态",
+      "entry_points": [
+        "conversation.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "multimodal_search": {
+      "name": "Multimodal Search",
+      "layer": "L2",
+      "layer_name": "Memory Context",
+      "description": "多模态搜索 - V9 新增",
+      "path": "memory_context/multimodal/",
+      "responsibility": "图文音视频多模态检索",
+      "entry_points": [
+        "multimodal_search.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "cross_lingual": {
+      "name": "Cross Lingual",
+      "layer": "L2",
+      "layer_name": "Memory Context",
+      "description": "跨语言搜索 - V9 新增",
+      "path": "memory_context/cross_lingual/",
+      "responsibility": "多语言支持、跨语言检索",
+      "entry_points": [
+        "cross_lingual.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "maintenance": {
+      "name": "Maintenance",
+      "layer": "L2",
+      "layer_name": "Memory Context",
+      "description": "智能维护系统 - V9 新增",
+      "path": "memory_context/maintenance/",
+      "responsibility": "向量维护、覆盖率检查",
+      "entry_points": [
+        "run_maintenance.py",
+        "check_coverage.py",
+        "vector_system_optimizer.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "monitoring": {
+      "name": "Monitoring",
+      "layer": "L1",
+      "layer_name": "Core",
+      "description": "性能监控面板 - V9 新增",
+      "path": "core/monitoring/",
+      "responsibility": "性能监控、健康检查",
+      "entry_points": [
+        "performance_monitor.py",
+        "health_monitor.py",
+        "cli_tool.py"
+      ],
+      "dependencies": [],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "created_by": "v9_upgrade",
+      "tested_by": [
+        "tests/test_v9_modules.py"
+      ],
+      "documented_in": [
+        "ARCHITECTURE_UPGRADE_V9.md"
+      ]
+    },
+    "connected_adapter_bootstrap": {
+      "name": "Connected Adapter Bootstrap",
+      "layer": "L4",
+      "layer_name": "Execution",
+      "description": "真实小艺连接端 adapter 自举、probe-only 探测和 L0/L1 小流量 smoke 前置门",
+      "path": "infrastructure/connected_adapter_bootstrap.py",
+      "entry_points": [
+        "connected_adapter_bootstrap.py",
+        "../scripts/check_connected_adapter.py",
+        "../scripts/connected_adapter_smoke.py"
+      ],
+      "dependencies": [
+        "device_runtime_state",
+        "device_capability_bus",
+        "connected_runtime_recovery_policy"
+      ],
+      "status": "active",
+      "created_at": "2026-04-26",
+      "tested_by": [
+        "tests/test_connected_adapter_bootstrap.py"
+      ],
+      "documented_in": [
+        "reports/CONNECTED_ADAPTER_BOOTSTRAP_REPORT.txt"
+      ]
+    }
+  },
+  "stats": {
+    "total": 30,
+    "by_status": {
+      "active": 30
+    },
+    "by_layer": {
+      "L4": 12,
+      "L5": 5,
+      "L6": 5,
+      "L3": 4,
+      "L2": 3,
+      "L1": 1
+    }
+  }
+}
