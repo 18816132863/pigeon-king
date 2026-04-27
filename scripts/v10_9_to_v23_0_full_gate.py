@@ -31,6 +31,10 @@ REQUIRED = [
     "agent_kernel/persona_kernel.py",
     "agent_kernel/autonomous_loop.py",
     "scripts/v14_0_to_v23_0_all_smoke.py",
+    "infrastructure/context_resume.py",
+    "scripts/resume_current_task.py",
+    "scripts/context_resume_smoke.py",
+    "docs/v23_context_resume/CONTEXT_RESUME_GUIDE.md",
 ]
 
 def main() -> int:
@@ -43,13 +47,13 @@ def main() -> int:
                 break
 
     report = {
-        "release": "V10.9_to_V23.0_full_merged",
+        "release": "V10.9_to_V23.1_context_resume_full_merged",
         "root": str(ROOT),
         "required_paths_passed": not missing,
         "missing": missing,
         "cache_check_passed": not cache_hits,
         "cache_hits_sample": cache_hits,
-        "next_command": "/usr/bin/python3 scripts/v14_0_to_v23_0_all_smoke.py",
+        "next_command": "/usr/bin/python3 scripts/context_resume_smoke.py && /usr/bin/python3 scripts/v14_0_to_v23_0_all_smoke.py",
         "overall": "pass" if (not missing and not cache_hits) else "fail",
     }
     out = ROOT / "V10_9_TO_V23_0_FULL_GATE_REPORT.json"

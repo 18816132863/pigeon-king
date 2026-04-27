@@ -1,0 +1,14 @@
+{
+  "v55_0_autonomous_os_governance_gate": "pass",
+  "missing": [],
+  "rules": {
+    "six_layer_architecture_preserved": true,
+    "agent_kernel_belongs_to_l3_orchestration": true,
+    "no_l7_agent_kernel": true,
+    "all_multi_device_actions_must_use_global_serial_lane": true,
+    "action_timeout_is_not_device_offline": true,
+    "memory_write_requires_guarded_candidates": true,
+    "extension_requires_trusted_candidate_sandbox_and_rollback": true,
+    "human_approval_interrupt_required_for_high_risk": true
+  }
+}

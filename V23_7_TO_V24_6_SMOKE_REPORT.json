@@ -1,0 +1,22 @@
+{
+  "alarm_policy": "pass",
+  "failure_remediation": "verify_then_continue",
+  "heartbeat": "pass",
+  "idempotency": "pass",
+  "manifest_versions": [
+    "V23.7",
+    "V23.8",
+    "V23.9",
+    "V24.0",
+    "V24.1",
+    "V24.2",
+    "V24.3",
+    "V24.4",
+    "V24.5",
+    "V24.6"
+  ],
+  "receipt_reconcile": "success_with_timeout_receipt",
+  "transaction": "success",
+  "v23_7_to_v24_6_all_smoke": "pass",
+  "workflow_contract": "serial"
+}

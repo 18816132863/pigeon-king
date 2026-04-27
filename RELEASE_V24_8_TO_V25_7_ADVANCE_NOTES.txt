@@ -1,0 +1,10 @@
+V24.8-V25.7 advance pack.
+
+Purpose:
+1. Close the small issues: global device seriality, dependency barrier, timeout receipt verification, six-layer boundary.
+2. Continue toward the Self-Evolving Personal Operating Agent plan: goal contract, durable task graph, memory guard, world interface resolver, capability extension gate, personal operating loop.
+
+This is not a clean merge package. Overlay on current V24.7 project.
+Run:
+/usr/bin/python3 scripts/v24_8_to_v25_7_all_smoke.py
+/usr/bin/python3 scripts/v25_7_personal_operating_agent_gate.py

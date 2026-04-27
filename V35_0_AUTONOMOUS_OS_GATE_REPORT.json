@@ -1,0 +1,347 @@
+{
+  "autonomous_os_gate": "pass",
+  "checks": {
+    "contract": true,
+    "graph_serial": true,
+    "judge_controls_device_serial": true,
+    "memory_guarded": true,
+    "world_resolved": true,
+    "extension_controlled": true,
+    "persona_stable": true,
+    "eval_pass": true
+  },
+  "contract": {
+    "contract_id": "goal_52c33363ec485b6c",
+    "raw_goal": "明天早上8点提醒我吃饭，端侧多动作必须串行，并把经验写回。",
+    "objectives": [
+      {
+        "name": "device_reminder_goal",
+        "description": "明天早上8点提醒我吃饭，端侧多动作必须串行，并把经验写回。",
+        "priority": 50,
+        "deadline": null,
+        "done_definition": [
+          "目标被拆成任务图",
+          "高风险动作经过裁判",
+          "端侧动作串行执行并核验",
+          "结果和经验按守卫规则写回"
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "architecture",
+        "value": "six_layer_only_no_L7",
+        "hard": true
+      },
+      {
+        "kind": "device_execution",
+        "value": "global_serial_for_multi_device_actions",
+        "hard": true
+      },
+      {
+        "kind": "state",
+        "value": "durable_state_required",
+        "hard": true
+      }
+    ],
+    "risk_boundary": "L2",
+    "information_sources": [
+      "conversation_context",
+      "device_capability_bus"
+    ],
+    "approval_points": [
+      {
+        "action_kind": "device_side_effect",
+        "reason": "端侧副作用动作需要可验证回执或 pending_verify",
+        "required": true
+      }
+    ],
+    "created_at": "2026-04-27T15:00:41.703849+00:00",
+    "owner": "user"
+  },
+  "graph": {
+    "graph_id": "graph_22d79132c278",
+    "contract_id": "goal_52c33363ec485b6c",
+    "cursor": null,
+    "version": "v3",
+    "nodes": [
+      {
+        "node_id": "n1_goal_review",
+        "name": "review_goal_contract",
+        "action_kind": "internal_review",
+        "layer_owner": "L3",
+        "depends_on": [],
+        "device_side_effect": false,
+        "reversible": true,
+        "timeout_profile": "default",
+        "verification_policy": "contract_schema",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n2_device_capability_probe",
+        "name": "probe_device_capability",
+        "action_kind": "device_probe",
+        "layer_owner": "L4",
+        "depends_on": [
+          "n1_goal_review"
+        ],
+        "device_side_effect": true,
+        "reversible": true,
+        "timeout_profile": "device_safe",
+        "verification_policy": "device_probe",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n3_device_prepare",
+        "name": "prepare_device_action",
+        "action_kind": "device_prepare",
+        "layer_owner": "L4",
+        "depends_on": [
+          "n2_device_capability_probe"
+        ],
+        "device_side_effect": true,
+        "reversible": true,
+        "timeout_profile": "device_safe",
+        "verification_policy": "device_prepare",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n4_device_execute",
+        "name": "execute_device_action",
+        "action_kind": "device_action",
+        "layer_owner": "L4",
+        "depends_on": [
+          "n3_device_prepare"
+        ],
+        "device_side_effect": true,
+        "reversible": false,
+        "timeout_profile": "device_safe",
+        "verification_policy": "device_receipt_or_pending_verify",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n5_device_verify",
+        "name": "verify_device_result",
+        "action_kind": "device_verify",
+        "layer_owner": "L4",
+        "depends_on": [
+          "n4_device_execute"
+        ],
+        "device_side_effect": true,
+        "reversible": true,
+        "timeout_profile": "device_safe",
+        "verification_policy": "two_phase_verify",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n6_judge_gate",
+        "name": "unified_judge_gate",
+        "action_kind": "governance_check",
+        "layer_owner": "L5",
+        "depends_on": [
+          "n5_device_verify"
+        ],
+        "device_side_effect": false,
+        "reversible": true,
+        "timeout_profile": "default",
+        "verification_policy": "judge_decision",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n7_memory_writeback",
+        "name": "guarded_memory_writeback",
+        "action_kind": "memory_write",
+        "layer_owner": "L2",
+        "depends_on": [
+          "n6_judge_gate"
+        ],
+        "device_side_effect": false,
+        "reversible": true,
+        "timeout_profile": "default",
+        "verification_policy": "memory_guard",
+        "status": "queued",
+        "metadata": {}
+      },
+      {
+        "node_id": "n8_completion_report",
+        "name": "completion_report",
+        "action_kind": "report",
+        "layer_owner": "L3",
+        "depends_on": [
+          "n7_memory_writeback"
+        ],
+        "device_side_effect": false,
+        "reversible": true,
+        "timeout_profile": "default",
+        "verification_policy": "done_definition",
+        "status": "queued",
+        "metadata": {}
+      }
+    ]
+  },
+  "judge": {
+    "decision": "allow",
+    "risk_tier": "L2",
+    "reason": "side effect allowed with controls",
+    "required_controls": [
+      "idempotency_key",
+      "receipt",
+      "verification_policy",
+      "audit",
+      "global_device_serial_lane"
+    ]
+  },
+  "memory": {
+    "status": "written",
+    "memory_id": "mem_3e9569a730aca159",
+    "record": {
+      "memory_id": "mem_3e9569a730aca159",
+      "memory_type": "procedural",
+      "content": "端侧多动作必须走全局串行队列，超时后先二次验证，不直接判离线。",
+      "confidence": 0.95,
+      "source": "task_verified",
+      "tags": [
+        "device",
+        "serial",
+        "timeout_verify"
+      ],
+      "created_at": "2026-04-27T15:00:41.703979+00:00",
+      "status": "active"
+    }
+  },
+  "world": {
+    "status": "resolved",
+    "endpoint": {
+      "name": "device_alarm_modify",
+      "endpoint_type": "device",
+      "trust_level": "trusted",
+      "requires_approval": false,
+      "side_effect": true,
+      "device_side_effect": true,
+      "status": "active"
+    },
+    "controls": [
+      "trace",
+      "audit",
+      "idempotency",
+      "global_device_serial"
+    ]
+  },
+  "extension": {
+    "decision": "candidate_ok",
+    "controls": [
+      "sandbox_test",
+      "min_smoke",
+      "audit"
+    ],
+    "candidate": {
+      "name": "new_safe_connector",
+      "source": "reviewed_connector",
+      "trust_level": "reviewed",
+      "requires_code_execution": false,
+      "hash_pinned": false,
+      "rollback_ready": true
+    }
+  },
+  "persona": {
+    "pass": true,
+    "violations": [],
+    "rules": [
+      {
+        "name": "direct_delivery",
+        "instruction": "优先给可执行包、命令和验收标准，不要来回追问。",
+        "severity": "high"
+      },
+      {
+        "name": "six_layer_discipline",
+        "instruction": "agent_kernel 属于 L3，不允许新增 L7。",
+        "severity": "high"
+      },
+      {
+        "name": "safe_autonomy",
+        "instruction": "自治必须经过规则、审计、审批、回滚边界。",
+        "severity": "high"
+      },
+      {
+        "name": "state_first",
+        "instruction": "长任务必须先写状态，再推进。",
+        "severity": "medium"
+      }
+    ]
+  },
+  "evaluation": {
+    "pass": true,
+    "passed": 5,
+    "total": 5,
+    "details": [
+      {
+        "scenario": {
+          "scenario_id": "goal_contract",
+          "name": "one sentence to governed contract",
+          "required_signals": [
+            "contract_id",
+            "risk_boundary",
+            "done_definition"
+          ]
+        },
+        "pass": true,
+        "missing": []
+      },
+      {
+        "scenario": {
+          "scenario_id": "device_serial",
+          "name": "multi device actions are globally serialized",
+          "required_signals": [
+            "global_device_serial",
+            "pending_verify_blocks_dependent"
+          ]
+        },
+        "pass": true,
+        "missing": []
+      },
+      {
+        "scenario": {
+          "scenario_id": "judge_guard",
+          "name": "each side effect receives judge decision",
+          "required_signals": [
+            "judge_decision",
+            "required_controls"
+          ]
+        },
+        "pass": true,
+        "missing": []
+      },
+      {
+        "scenario": {
+          "scenario_id": "memory_guard",
+          "name": "memory writeback is guarded",
+          "required_signals": [
+            "memory_status",
+            "pollution_prevented"
+          ]
+        },
+        "pass": true,
+        "missing": []
+      },
+      {
+        "scenario": {
+          "scenario_id": "extension_gate",
+          "name": "capability extension is sandbox gated",
+          "required_signals": [
+            "gap_detected",
+            "sandbox_required",
+            "rollback_required"
+          ]
+        },
+        "pass": true,
+        "missing": []
+      }
+    ]
+  }
+}

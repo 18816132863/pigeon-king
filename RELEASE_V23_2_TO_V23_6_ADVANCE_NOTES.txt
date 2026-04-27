@@ -1,0 +1,14 @@
+V23.2 -> V23.6 Advance Pack
+
+Overlay this pack on top of the current V23.1 workspace.
+Do not treat it as a clean full release.
+
+Run:
+/usr/bin/python3 scripts/v23_2_to_v23_6_all_smoke.py
+
+Main fixes:
+- agent_kernel is L3 Orchestration autonomous hub, not L7.
+- agent_kernel dispatches; it does not replace governance, execution, memory, or recovery.
+- device action timeout is not device offline.
+- alarm modify timeout requires two-phase verification before retry/fallback.
+- context compaction recovery must use pending_steps, not chat history.

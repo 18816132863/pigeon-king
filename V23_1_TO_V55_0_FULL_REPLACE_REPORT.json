@@ -1,0 +1,13 @@
+{
+  "v23_1_to_v55_0_full_replace_gate": "pass",
+  "missing": [],
+  "rules": {
+    "v23_1_to_v55_full_replace_not_incremental": true,
+    "contains_v35_gate_marker": true,
+    "contains_v45_gate_marker": true,
+    "contains_v55_gate_marker": true,
+    "no_l7_agent_kernel_policy": true,
+    "device_multi_action_global_serial_required": true
+  },
+  "root": "/home/sandbox/.openclaw/workspace/pigeon_king_v10_9"
+}
