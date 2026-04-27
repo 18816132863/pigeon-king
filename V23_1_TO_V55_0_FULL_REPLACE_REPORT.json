@@ -1,13 +1,11 @@
 {
-  "v23_1_to_v55_0_full_replace_gate": "pass",
-  "missing": [],
-  "rules": {
-    "v23_1_to_v55_full_replace_not_incremental": true,
-    "contains_v35_gate_marker": true,
-    "contains_v45_gate_marker": true,
-    "contains_v55_gate_marker": true,
-    "no_l7_agent_kernel_policy": true,
-    "device_multi_action_global_serial_required": true
-  },
-  "root": "/home/sandbox/.openclaw/workspace/pigeon_king_v10_9"
+  "release": "V23.1_TO_V55.0_FULL_REPLACE",
+  "status": "built",
+  "base": "pigeon_king_v23_1_to_v45_0_full_replace_release.zip",
+  "included_new_versions": ["V46.0", "V47.0", "V48.0", "V49.0", "V50.0", "V51.0", "V52.0", "V53.0", "V54.0", "V55.0"],
+  "run_commands": [
+    "/usr/bin/python3 scripts/v23_1_to_v55_0_full_replace_gate.py",
+    "/usr/bin/python3 scripts/v46_0_to_v55_0_all_smoke.py",
+    "/usr/bin/python3 scripts/v55_0_autonomous_os_governance_gate.py"
+  ]
 }
