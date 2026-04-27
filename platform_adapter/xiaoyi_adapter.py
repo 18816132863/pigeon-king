@@ -1,10 +1,13 @@
 """
 Xiaoyi Adapter - V11.0 稳态执行版
 
+V75.1 修复：集成 DeviceSerialLane，确保所有端侧调用串行化
+
 目标：
 - 设备端没连时不硬失败，自动进入 queued_for_delivery / fallback。
 - 有副作用动作走幂等 + 强确认策略，不做静默重复执行。
 - 运行前基于 connection_state 自动调整能力状态。
+- 所有端侧调用必须经过 DeviceSerialLane 串行化。
 """
 
 from __future__ import annotations
@@ -17,6 +20,13 @@ from .invoke_guard import guarded_platform_call, create_fallback_result, InvokeR
 from .invocation_ledger import record_invocation
 from .result_normalizer import NormalizedStatus
 from governance.policy.adaptive_execution_policy import select_execution_strategy
+
+# V75.1: 导入端侧串行化器
+try:
+    from orchestration.end_side_serial_lanes_v3 import EndSideSerialLaneV3, DeviceAction
+    _serial_lane = EndSideSerialLaneV3()
+except ImportError:
+    _serial_lane = None
 
 
 class XiaoyiAdapter(PlatformAdapter):
@@ -168,13 +178,33 @@ class XiaoyiAdapter(PlatformAdapter):
 
         async def _call():
             try:
-                from tools import call_device_tool
-                return await call_device_tool(
-                    toolName="send_message",
-                    arguments={"phoneNumber": params.get("phone_number"), "content": params.get("message")},
-                )
+                # V75.1: 所有端侧调用必须经过 DeviceSerialLane
+                if _serial_lane is not None:
+                    action = DeviceAction(
+                        device_id="xiaoyi",
+                        action_type="send_message",
+                        idempotency_key=idempotency_key,
+                        payload={"phoneNumber": params.get("phone_number"), "content": params.get("message")}
+                    )
+                    receipt = _serial_lane.execute(action, lambda a: _call_device_tool_direct("send_message", a.payload))
+                    if receipt.status == "action_timeout":
+                        # 超时后二次验证
+                        return {"status": "action_timeout", "receipt": receipt.to_dict(), "needs_verify": True}
+                    return receipt.result if hasattr(receipt, 'result') else {"status": receipt.status}
+                else:
+                    # fallback: 直接调用
+                    from tools import call_device_tool
+                    return await call_device_tool(
+                        toolName="send_message",
+                        arguments={"phoneNumber": params.get("phone_number"), "content": params.get("message")},
+                    )
             except ImportError:
                 return {"status": "queued", "error": "call_device_tool not importable", "queued": True}
+        
+        async def _call_device_tool_direct(tool_name, args):
+            """直接调用设备工具（供串行化器回调）"""
+            from tools import call_device_tool
+            return await call_device_tool(toolName=tool_name, arguments=args)
 
         result = await guarded_platform_call(
             capability="MESSAGE_SENDING",
