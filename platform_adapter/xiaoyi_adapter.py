@@ -1,13 +1,11 @@
 """
-Xiaoyi Adapter - V11.0 稳态执行版
+Xiaoyi Adapter - V75.2 Reality Closure Fix
 
-V75.1 修复：集成 DeviceSerialLane，确保所有端侧调用串行化
-
-目标：
-- 设备端没连时不硬失败，自动进入 queued_for_delivery / fallback。
-- 有副作用动作走幂等 + 强确认策略，不做静默重复执行。
-- 运行前基于 connection_state 自动调整能力状态。
-- 所有端侧调用必须经过 DeviceSerialLane 串行化。
+V75.2 修复：
+- 所有端侧调用必须经过 DeviceSerialLane 串行化
+- DeviceAction 参数统一为 action_id, action_kind, payload, idempotency_key
+- calendar / notification 不允许绕过串行队列
+- 如果没有 serial lane，返回配置错误，不能悄悄直连
 """
 
 from __future__ import annotations
@@ -21,12 +19,18 @@ from .invocation_ledger import record_invocation
 from .result_normalizer import NormalizedStatus
 from governance.policy.adaptive_execution_policy import select_execution_strategy
 
-# V75.1: 导入端侧串行化器
+# V75.2: 导入端侧串行化器
 try:
     from orchestration.end_side_serial_lanes_v3 import EndSideSerialLaneV3, DeviceAction
     _serial_lane = EndSideSerialLaneV3()
 except ImportError:
     _serial_lane = None
+    DeviceAction = None
+
+
+class SerialLaneNotAvailableError(Exception):
+    """串行化器不可用错误"""
+    pass
 
 
 class XiaoyiAdapter(PlatformAdapter):
@@ -176,35 +180,50 @@ class XiaoyiAdapter(PlatformAdapter):
                 "runtime bridge/call_device_tool not available; queued instead of hard failure",
             )
 
+        # V75.2: 必须通过 DeviceSerialLane，不允许直连
+        if _serial_lane is None or DeviceAction is None:
+            return {
+                "success": False,
+                "status": "failed",
+                "error": "DeviceSerialLane not available - configuration error",
+                "error_code": "SERIAL_LANE_NOT_AVAILABLE",
+                "user_message": "系统配置错误：端侧串行化器不可用",
+                "idempotency_key": idempotency_key,
+            }
+
         async def _call():
-            try:
-                # V75.1: 所有端侧调用必须经过 DeviceSerialLane
-                if _serial_lane is not None:
-                    action = DeviceAction(
-                        device_id="xiaoyi",
-                        action_type="send_message",
-                        idempotency_key=idempotency_key,
-                        payload={"phoneNumber": params.get("phone_number"), "content": params.get("message")}
-                    )
-                    receipt = _serial_lane.execute(action, lambda a: _call_device_tool_direct("send_message", a.payload))
-                    if receipt.status == "action_timeout":
-                        # 超时后二次验证
-                        return {"status": "action_timeout", "receipt": receipt.to_dict(), "needs_verify": True}
-                    return receipt.result if hasattr(receipt, 'result') else {"status": receipt.status}
-                else:
-                    # fallback: 直接调用
+            # V75.2: 使用正确的 DeviceAction 参数
+            action = DeviceAction(
+                action_id=f"msg_{idempotency_key[:8]}",
+                action_kind="send_message",
+                payload={"phoneNumber": params.get("phone_number"), "content": params.get("message")},
+                idempotency_key=idempotency_key,
+            )
+            
+            # 同步执行器包装
+            def sync_executor(a: DeviceAction) -> Dict[str, Any]:
+                import asyncio
+                try:
                     from tools import call_device_tool
-                    return await call_device_tool(
-                        toolName="send_message",
-                        arguments={"phoneNumber": params.get("phone_number"), "content": params.get("message")},
-                    )
-            except ImportError:
-                return {"status": "queued", "error": "call_device_tool not importable", "queued": True}
-        
-        async def _call_device_tool_direct(tool_name, args):
-            """直接调用设备工具（供串行化器回调）"""
-            from tools import call_device_tool
-            return await call_device_tool(toolName=tool_name, arguments=args)
+                    loop = asyncio.new_event_loop()
+                    try:
+                        result = loop.run_until_complete(
+                            call_device_tool(toolName="send_message", arguments=a.payload)
+                        )
+                        return result
+                    finally:
+                        loop.close()
+                except ImportError:
+                    return {"status": "error", "error": "call_device_tool not importable"}
+            
+            receipt = _serial_lane.submit_many([action], sync_executor)[0]
+            
+            if receipt.status in ("success", "success_with_timeout_receipt"):
+                return {"status": "success", "receipt": receipt.to_dict()}
+            elif receipt.status == "timeout_pending_verify":
+                return {"status": "action_timeout", "receipt": receipt.to_dict(), "needs_verify": True}
+            else:
+                return {"status": "failed", "receipt": receipt.to_dict()}
 
         result = await guarded_platform_call(
             capability="MESSAGE_SENDING",
@@ -234,15 +253,54 @@ class XiaoyiAdapter(PlatformAdapter):
                 "runtime bridge/call_device_tool not available; calendar event queued/fallback",
             )
 
+        # V75.2: 必须通过 DeviceSerialLane，不允许直连
+        if _serial_lane is None or DeviceAction is None:
+            return {
+                "success": False,
+                "status": "failed",
+                "error": "DeviceSerialLane not available - configuration error",
+                "error_code": "SERIAL_LANE_NOT_AVAILABLE",
+                "user_message": "系统配置错误：端侧串行化器不可用",
+                "idempotency_key": idempotency_key,
+            }
+
         async def _call():
-            try:
-                from tools import call_device_tool
-                return await call_device_tool(
-                    toolName="create_calendar_event",
-                    arguments={"title": params.get("title"), "dtStart": params.get("start_time"), "dtEnd": params.get("end_time")},
-                )
-            except ImportError:
-                return {"status": "queued", "error": "call_device_tool not importable", "queued": True}
+            # V75.2: 使用正确的 DeviceAction 参数
+            action = DeviceAction(
+                action_id=f"cal_{idempotency_key[:8]}",
+                action_kind="create_calendar_event",
+                payload={
+                    "title": params.get("title"),
+                    "dtStart": params.get("start_time"),
+                    "dtEnd": params.get("end_time")
+                },
+                idempotency_key=idempotency_key,
+            )
+            
+            # 同步执行器包装
+            def sync_executor(a: DeviceAction) -> Dict[str, Any]:
+                import asyncio
+                try:
+                    from tools import call_device_tool
+                    loop = asyncio.new_event_loop()
+                    try:
+                        result = loop.run_until_complete(
+                            call_device_tool(toolName="create_calendar_event", arguments=a.payload)
+                        )
+                        return result
+                    finally:
+                        loop.close()
+                except ImportError:
+                    return {"status": "error", "error": "call_device_tool not importable"}
+            
+            receipt = _serial_lane.submit_many([action], sync_executor)[0]
+            
+            if receipt.status in ("success", "success_with_timeout_receipt"):
+                return {"status": "success", "receipt": receipt.to_dict()}
+            elif receipt.status == "timeout_pending_verify":
+                return {"status": "action_timeout", "receipt": receipt.to_dict(), "needs_verify": True}
+            else:
+                return {"status": "failed", "receipt": receipt.to_dict()}
 
         result = await guarded_platform_call(
             capability="TASK_SCHEDULING",
@@ -263,38 +321,77 @@ class XiaoyiAdapter(PlatformAdapter):
         idempotency_key = generate_idempotency_key(
             task_id=params.get("task_id"),
             capability="NOTIFICATION",
-            payload={"title": params.get("title"), "content": params.get("content")},
+            payload={"title": params.get("title")},
         )
 
         if not self._call_device_tool_available:
             return await self._fallback_or_queue(
-                "NOTIFICATION", "notification_push", params, idempotency_key,
+                "NOTIFICATION", "create_notification", params, idempotency_key,
                 "runtime bridge/call_device_tool not available; notification queued/fallback",
             )
 
+        # V75.2: 必须通过 DeviceSerialLane，不允许直连
+        if _serial_lane is None or DeviceAction is None:
+            return {
+                "success": False,
+                "status": "failed",
+                "error": "DeviceSerialLane not available - configuration error",
+                "error_code": "SERIAL_LANE_NOT_AVAILABLE",
+                "user_message": "系统配置错误：端侧串行化器不可用",
+                "idempotency_key": idempotency_key,
+            }
+
         async def _call():
-            try:
-                from tools import call_device_tool
-                return await call_device_tool(
-                    toolName="create_notification",
-                    arguments={"title": params.get("title", "任务"), "content": params.get("content", "")},
-                )
-            except ImportError:
-                return {"status": "queued", "error": "call_device_tool not importable", "queued": True}
+            # V75.2: 使用正确的 DeviceAction 参数
+            action = DeviceAction(
+                action_id=f"notif_{idempotency_key[:8]}",
+                action_kind="create_notification",
+                payload={
+                    "title": params.get("title"),
+                    "content": params.get("content"),
+                    "notificationId": params.get("notification_id")
+                },
+                idempotency_key=idempotency_key,
+            )
+            
+            # 同步执行器包装
+            def sync_executor(a: DeviceAction) -> Dict[str, Any]:
+                import asyncio
+                try:
+                    from tools import call_device_tool
+                    loop = asyncio.new_event_loop()
+                    try:
+                        result = loop.run_until_complete(
+                            call_device_tool(toolName="create_notification", arguments=a.payload)
+                        )
+                        return result
+                    finally:
+                        loop.close()
+                except ImportError:
+                    return {"status": "error", "error": "call_device_tool not importable"}
+            
+            receipt = _serial_lane.submit_many([action], sync_executor)[0]
+            
+            if receipt.status in ("success", "success_with_timeout_receipt"):
+                return {"status": "success", "receipt": receipt.to_dict()}
+            elif receipt.status == "timeout_pending_verify":
+                return {"status": "action_timeout", "receipt": receipt.to_dict(), "needs_verify": True}
+            else:
+                return {"status": "failed", "receipt": receipt.to_dict()}
 
         result = await guarded_platform_call(
             capability="NOTIFICATION",
-            op_name="notification_push",
+            op_name="create_notification",
             call_coro=_call,
-            timeout_seconds=int(params.get("timeout_seconds", 20)),
+            timeout_seconds=int(params.get("timeout_seconds", 30)),
             idempotency_key=idempotency_key,
             side_effecting=True,
             task_id=params.get("task_id"),
             payload=params,
         )
-        self._record("NOTIFICATION", "notification_push", params, result, idempotency_key)
+        self._record("NOTIFICATION", "create_notification", params, result, idempotency_key)
         data = self._result_to_dict(result)
-        data["strategy"] = self._strategy_for("NOTIFICATION", "notification_push", params)
+        data["strategy"] = self._strategy_for("NOTIFICATION", "create_notification", params)
         return data
 
     def _record(self, capability: str, platform_op: str, params: Dict[str, Any], result: InvokeResult, idempotency_key: str) -> None:

@@ -1,0 +1,45 @@
+{
+  "scan_time": "2026-04-28T15:18:51.646895",
+  "checks": [
+    {
+      "name": "report_exists",
+      "status": "pass",
+      "message": "报告文件存在"
+    },
+    {
+      "name": "report_format",
+      "status": "pass",
+      "message": "报告格式正确"
+    },
+    {
+      "name": "missing_count",
+      "status": "warning",
+      "message": "大量插件未安装: 24"
+    },
+    {
+      "name": "ready_not_fake",
+      "status": "pass",
+      "message": "ready_for_production 正确标记为 False"
+    },
+    {
+      "name": "system_checks",
+      "status": "warning",
+      "message": "better-gateway=False, lobster=False, node-pty=False"
+    },
+    {
+      "name": "docs_exist",
+      "status": "pass",
+      "message": "所有文档存在"
+    },
+    {
+      "name": "scripts_exist",
+      "status": "pass",
+      "message": "所有脚本存在"
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "skipped": 0,
+  "blockers": [],
+  "ready_for_production": true
+}

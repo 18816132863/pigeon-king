@@ -1,4 +1,4 @@
-"""查询图库照片能力"""
+"""查询图库照片能力 - V75.3 修复：必须通过串行化器"""
 
 from typing import Optional, Dict, Any, List
 
@@ -19,17 +19,20 @@ def query_photo(
     Returns:
         照片信息
     """
-    # 调用端侧图库能力
+    # V75.3: 调用端侧图库能力必须通过串行化器
     try:
-        from platform_adapter.device_tool_adapter import call_device_tool
+        from orchestration.device_serial_call import serial_call_device_tool_sync
         
-        result = call_device_tool("photo", "query", {
+        result = serial_call_device_tool_sync("photo", "query", {
             "photo_id": photo_id,
             "album_id": album_id,
             "date": date
         })
         
-        return result
+        if result.success:
+            return result.data or {"success": True, "photos": []}
+        else:
+            return {"success": False, "error": result.error, "photos": []}
     except Exception as e:
         return {
             "success": False,
@@ -55,15 +58,18 @@ def list_photos(
         照片列表
     """
     try:
-        from platform_adapter.device_tool_adapter import call_device_tool
+        from orchestration.device_serial_call import serial_call_device_tool_sync
         
-        result = call_device_tool("photo", "list", {
+        result = serial_call_device_tool_sync("photo", "list", {
             "limit": limit,
             "offset": offset,
             "album_id": album_id
         })
         
-        return result
+        if result.success:
+            return result.data or {"success": True, "photos": []}
+        else:
+            return {"success": False, "error": result.error, "photos": []}
     except Exception as e:
         return {
             "success": False,
@@ -87,14 +93,17 @@ def search_photos(
         搜索结果
     """
     try:
-        from platform_adapter.device_tool_adapter import call_device_tool
+        from orchestration.device_serial_call import serial_call_device_tool_sync
         
-        result = call_device_tool("photo", "search", {
+        result = serial_call_device_tool_sync("photo", "search", {
             "keyword": keyword,
             "limit": limit
         })
         
-        return result
+        if result.success:
+            return result.data or {"success": True, "keyword": keyword, "photos": []}
+        else:
+            return {"success": False, "error": result.error, "keyword": keyword, "photos": []}
     except Exception as e:
         return {
             "success": False,

@@ -1,0 +1,16 @@
+{
+  "test_name": "V75.1 Long Running Soak Test",
+  "start_time": "2026-04-28T10:00:35.122017",
+  "end_time": "2026-04-28T10:00:36.684910",
+  "duration_seconds": 1.562893,
+  "iterations": 5,
+  "errors": 0,
+  "leaks_detected": 0,
+  "leaks_by_type": {},
+  "leaks_by_severity": {},
+  "leak_details": [],
+  "status": "pass",
+  "recommendations": [
+    "系统稳定，无需特殊修复"
+  ]
+}

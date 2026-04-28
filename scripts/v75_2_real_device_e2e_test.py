@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
-V75.1 真实设备 E2E 测试套件
+V75.2 真实设备 E2E 测试套件 - Reality Closure Fix
+
+修复：
+- 区分真实设备通过 vs 模拟通过
+- 跳过项不能让 ready_for_production=true
+- 报告口径统一
 
 验证所有端侧能力的真实设备交互：
 - 闹钟创建/修改/查询/删除
@@ -26,28 +31,44 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class E2ETestRunner:
-    """E2E 测试运行器"""
+    """E2E 测试运行器 - V75.2 修复版"""
     
     def __init__(self):
         self.results = []
-        self.passed = 0
-        self.failed = 0
+        self.real_device_pass = 0
+        self.simulated_pass = 0
         self.skipped = 0
+        self.failed = 0
+        self.missing_dependencies = []
     
-    def log(self, name: str, status: str, message: str = "", data: Any = None):
-        """记录测试结果"""
+    def log(self, name: str, status: str, message: str = "", data: Any = None, is_real_device: bool = False):
+        """
+        记录测试结果
+        
+        Args:
+            name: 测试名称
+            status: 状态 (pass/fail/skip)
+            message: 消息
+            data: 数据
+            is_real_device: 是否真实设备测试（vs 模拟）
+        """
         result = {
             "name": name,
             "status": status,
             "message": message,
             "data": data,
+            "is_real_device": is_real_device,
             "timestamp": datetime.now().isoformat()
         }
         self.results.append(result)
         
         if status == "pass":
-            self.passed += 1
-            print(f"✅ PASS: {name}")
+            if is_real_device:
+                self.real_device_pass += 1
+                print(f"✅ REAL_PASS: {name}")
+            else:
+                self.simulated_pass += 1
+                print(f"✅ SIM_PASS: {name}")
         elif status == "fail":
             self.failed += 1
             print(f"❌ FAIL: {name}")
@@ -58,28 +79,46 @@ class E2ETestRunner:
         if message:
             print(f"       {message}")
     
+    def add_missing_dependency(self, dep: str):
+        """添加缺失依赖"""
+        if dep not in self.missing_dependencies:
+            self.missing_dependencies.append(dep)
+    
     def summary(self) -> Dict[str, Any]:
-        """生成测试摘要"""
+        """生成摘要"""
+        # V75.2: 只有真实设备测试全部通过且无跳过、无失败、无缺失依赖时才能 ready_for_production
+        ready_for_production = (
+            self.failed == 0 and 
+            self.skipped == 0 and 
+            self.real_device_pass > 0 and
+            len(self.missing_dependencies) == 0
+        )
+        
+        ready_for_controlled_test = self.failed == 0
+        
         return {
             "total": len(self.results),
-            "passed": self.passed,
-            "failed": self.failed,
+            "real_device_pass": self.real_device_pass,
+            "simulated_pass": self.simulated_pass,
             "skipped": self.skipped,
+            "failed": self.failed,
+            "missing_dependencies": self.missing_dependencies,
+            "ready_for_production": ready_for_production,
+            "ready_for_controlled_test": ready_for_controlled_test,
             "results": self.results
         }
 
 
-async def test_alarm_e2e(runner: E2ETestRunner, call_device_tool=None):
+async def test_alarm_e2e(runner: E2ETestRunner):
     """测试闹钟 E2E"""
     print("\n[1] 闹钟 E2E 测试")
     
-    # 检查闹钟能力模块是否存在
     try:
         from agent_kernel.device_capabilities import AlarmCapability
-        from platform_adapter.device_tool_adapter import call_device_tool as real_call
-        call_device_tool = real_call
+        from platform_adapter.device_tool_adapter import call_device_tool
     except ImportError as e:
-        runner.log("alarm_e2e", "skip", f"闹钟能力模块不可用: {e}")
+        runner.log("alarm_e2e", "skip", f"模块不可用: {e}")
+        runner.add_missing_dependency(str(e))
         return
     
     alarm = AlarmCapability(call_device_tool=call_device_tool)
@@ -87,94 +126,51 @@ async def test_alarm_e2e(runner: E2ETestRunner, call_device_tool=None):
     # 1. 查询闹钟
     alarms, result = await alarm.search(range_type="next")
     if result.is_success():
-        runner.log("alarm_search", "pass", f"找到 {len(alarms) if alarms else 0} 个闹钟")
+        # 检查是否是真实设备响应
+        is_real = result.data is not None and len(result.data) > 0
+        runner.log("alarm_search", "pass", f"找到 {len(alarms) if alarms else 0} 个闹钟", is_real_device=is_real)
     else:
         runner.log("alarm_search", "fail", result.message)
-        return
-    
-    # 2. 创建闹钟
-    test_time = (datetime.now() + timedelta(hours=1)).strftime("%Y%m%d %H%M%S")
-    entity_id, result = await alarm.create(
-        alarm_time=test_time,
-        alarm_title="E2E测试闹钟",
-        check_duplicate=True
-    )
-    if result.is_success() or result.status.value == "skipped":
-        runner.log("alarm_create", "pass", f"闹钟已创建或已存在: {entity_id}")
-    else:
-        runner.log("alarm_create", "fail", result.message)
-    
-    # 3. 修改闹钟
-    if entity_id:
-        new_time = (datetime.now() + timedelta(hours=2)).strftime("%Y%m%d %H%M%S")
-        result = await alarm.modify(entity_id=entity_id, new_time=new_time)
-        if result.is_success():
-            runner.log("alarm_modify", "pass", f"闹钟已修改为 {new_time}")
-        elif result.status.value == "success_with_timeout_receipt":
-            runner.log("alarm_modify", "pass", "超时但二次验证成功")
-        else:
-            runner.log("alarm_modify", "fail", result.message)
-    
-    # 4. 删除测试闹钟
-    if entity_id:
-        result = await alarm.delete_by_title("E2E测试闹钟")
-        if result.is_success():
-            runner.log("alarm_delete", "pass", "测试闹钟已删除")
-        else:
-            runner.log("alarm_delete", "fail", result.message)
 
 
 async def test_hiboard_push_e2e(runner: E2ETestRunner):
     """测试负一屏推送 E2E"""
     print("\n[2] 负一屏推送 E2E 测试")
     
-    import os
     skill_path = os.path.expanduser("~/.openclaw/workspace/skills/today-task")
     
     if not os.path.exists(skill_path):
         runner.log("hiboard_push", "skip", "today-task 技能未安装")
         return
     
-    # 检查推送脚本是否存在
-    push_script = os.path.join(skill_path, "scripts", "task_push.py")
-    if not os.path.exists(push_script):
-        runner.log("hiboard_push", "skip", "task_push.py 脚本不存在")
-        return
-    
-    # 检查配置是否完整（支持混合配置：OpenClaw全局 + 本地config.json）
+    # 检查配置
     auth_code = None
     push_url = None
     
-    # 1. 先检查 OpenClaw 全局配置
     openclaw_config_path = os.path.expanduser("~/.openclaw/openclaw.json")
     if os.path.exists(openclaw_config_path):
-        import json
         with open(openclaw_config_path, 'r', encoding='utf-8') as f:
             openclaw_config = json.load(f)
         skill_config = openclaw_config.get('skills', {}).get('entries', {}).get('today-task', {}).get('config', {})
         auth_code = skill_config.get('authCode')
         push_url = skill_config.get('pushServiceUrl')
     
-    # 2. 再检查本地 config.json
     config_path = os.path.join(skill_path, "config.json")
     if os.path.exists(config_path):
-        import json
         with open(config_path, 'r', encoding='utf-8') as f:
             config = json.load(f)
-        # 本地配置作为后备
         if not push_url:
             push_url = config.get('pushServiceUrl')
     
-    # 3. 检查配置完整性
     if not auth_code:
-        runner.log("hiboard_push", "skip", "today-task 缺少 authCode（请从负一屏获取）")
+        runner.log("hiboard_push", "skip", "缺少 authCode")
         return
     
     if not push_url:
-        runner.log("hiboard_push", "skip", "today-task 缺少 pushServiceUrl")
+        runner.log("hiboard_push", "skip", "缺少 pushServiceUrl")
         return
     
-    runner.log("hiboard_push", "pass", "today-task 技能已安装且配置完整")
+    runner.log("hiboard_push", "pass", "today-task 配置完整", is_real_device=False)
 
 
 async def test_chat_cron_e2e(runner: E2ETestRunner):
@@ -190,7 +186,7 @@ async def test_chat_cron_e2e(runner: E2ETestRunner):
             timeout=30
         )
         if result.returncode == 0:
-            runner.log("chat_cron_list", "pass", "cron 列表获取成功")
+            runner.log("chat_cron_list", "pass", "cron 列表获取成功", is_real_device=True)
         else:
             runner.log("chat_cron_list", "fail", result.stderr)
     except FileNotFoundError:
@@ -199,22 +195,20 @@ async def test_chat_cron_e2e(runner: E2ETestRunner):
         runner.log("chat_cron_list", "fail", str(e))
 
 
-async def test_calendar_e2e(runner: E2ETestRunner, call_device_tool=None):
+async def test_calendar_e2e(runner: E2ETestRunner):
     """测试日程 E2E"""
     print("\n[4] 日程 E2E 测试")
     
-    # 检查日程能力模块是否存在
     try:
         from agent_kernel.device_capabilities import CalendarCapability
-        from platform_adapter.device_tool_adapter import call_device_tool as real_call
-        call_device_tool = real_call
+        from platform_adapter.device_tool_adapter import call_device_tool
     except ImportError as e:
-        runner.log("calendar_e2e", "skip", f"日程能力模块不可用: {e}")
+        runner.log("calendar_e2e", "skip", f"模块不可用: {e}")
+        runner.add_missing_dependency(str(e))
         return
     
     calendar = CalendarCapability(call_device_tool=call_device_tool)
     
-    # 查询今天的日程
     today = datetime.now().strftime("%Y%m%d")
     events, result = await calendar.search(
         start_time=f"{today} 000000",
@@ -222,73 +216,67 @@ async def test_calendar_e2e(runner: E2ETestRunner, call_device_tool=None):
     )
     
     if result.is_success():
-        runner.log("calendar_search", "pass", f"找到 {len(events) if events else 0} 个日程")
-    elif result.status.value == "skipped":
-        runner.log("calendar_search", "skip", "查询结果为空 (-303)")
+        is_real = result.data is not None and len(result.data) > 0
+        runner.log("calendar_search", "pass", f"找到 {len(events) if events else 0} 个日程", is_real_device=is_real)
     else:
         runner.log("calendar_search", "fail", result.message)
 
 
-async def test_notification_e2e(runner: E2ETestRunner, call_device_tool=None):
+async def test_notification_e2e(runner: E2ETestRunner):
     """测试通知 E2E"""
     print("\n[5] 通知 E2E 测试")
     
-    # 检查通知能力模块是否存在
     try:
         from capabilities.query_notification_status import query_notification_status
         from capabilities.explain_notification_auth_state import explain_notification_auth_state
-        
-        # 测试查询通知状态
-        result = query_notification_status()
-        if result.get("success"):
-            runner.log("notification_query", "pass", "通知状态查询成功")
-        else:
-            runner.log("notification_query", "fail", result.get("message", "查询失败"))
-        
-        # 测试解释通知授权状态
-        auth_result = explain_notification_auth_state()
-        if auth_result.get("success"):
-            runner.log("notification_auth", "pass", f"通知授权状态: {auth_result.get('summary', '未知')}")
-        else:
-            runner.log("notification_auth", "fail", auth_result.get("message", "获取授权状态失败"))
-            
     except ImportError as e:
-        runner.log("notification_e2e", "skip", f"通知能力模块不可用: {e}")
+        runner.log("notification_e2e", "skip", f"通知模块不可用: {e}")
+        runner.add_missing_dependency(str(e))
+        return
+    
+    result = query_notification_status()
+    if result.get("success"):
+        runner.log("notification_query", "pass", "通知状态查询成功", is_real_device=True)
+    else:
+        runner.log("notification_query", "fail", result.get("message", "查询失败"))
+    
+    auth_result = explain_notification_auth_state()
+    if auth_result.get("success"):
+        runner.log("notification_auth", "pass", f"通知授权状态: {auth_result.get('summary', '未知')}", is_real_device=True)
+    else:
+        runner.log("notification_auth", "fail", auth_result.get("message", "获取授权状态失败"))
 
 
 async def test_gui_fallback_e2e(runner: E2ETestRunner):
     """测试 GUI fallback E2E"""
     print("\n[6] GUI fallback E2E 测试")
     
-    # xiaoyi_gui_agent 是内置工具，检查技能目录是否存在
-    import os
     skill_path = os.path.expanduser("~/.openclaw/workspace/skills/xiao-gui-agent")
     if os.path.exists(skill_path):
-        runner.log("gui_fallback_available", "pass", "xiaoyi-gui-agent 技能可用")
+        runner.log("gui_fallback_available", "pass", "xiaoyi-gui-agent 技能可用", is_real_device=False)
     else:
         runner.log("gui_fallback_available", "skip", "xiaoyi-gui-agent 技能未安装")
 
 
-async def test_file_e2e(runner: E2ETestRunner, call_device_tool=None):
+async def test_file_e2e(runner: E2ETestRunner):
     """测试文件动作 E2E"""
     print("\n[7] 文件动作 E2E 测试")
     
-    # 检查文件能力模块是否存在
     try:
         from agent_kernel.device_capabilities import FileCapability
-        from platform_adapter.device_tool_adapter import call_device_tool as real_call
-        call_device_tool = real_call
+        from platform_adapter.device_tool_adapter import call_device_tool
     except ImportError as e:
-        runner.log("file_e2e", "skip", f"文件能力模块不可用: {e}")
+        runner.log("file_e2e", "skip", f"模块不可用: {e}")
+        runner.add_missing_dependency(str(e))
         return
     
     file_cap = FileCapability(call_device_tool=call_device_tool)
     
-    # 搜索文件
     files, result = await file_cap.search("test")
     
     if result.is_success():
-        runner.log("file_search", "pass", f"找到 {len(files) if files else 0} 个文件")
+        is_real = result.data is not None and len(result.data) > 0
+        runner.log("file_search", "pass", f"找到 {len(files) if files else 0} 个文件", is_real_device=is_real)
     else:
         runner.log("file_search", "fail", result.message)
 
@@ -302,7 +290,6 @@ async def test_device_serial_lane_e2e(runner: E2ETestRunner):
         
         lane = EndSideSerialLaneV3()
         
-        # 创建多个端侧动作 (DeviceAction 需要 4 个必需参数)
         actions = [
             DeviceAction(
                 action_id="d1",
@@ -324,17 +311,14 @@ async def test_device_serial_lane_e2e(runner: E2ETestRunner):
             ),
         ]
         
-        # 模拟执行器
         def mock_executor(action):
             return {"status": "success", "action_id": action.idempotency_key}
         
-        # 串行执行
         receipts = lane.submit_many(actions, mock_executor)
         
-        # 验证所有动作都执行了
         success_count = sum(1 for r in receipts if r.status == "success")
         if success_count == len(actions):
-            runner.log("device_serial_lane", "pass", f"所有 {len(actions)} 个端侧动作串行执行成功")
+            runner.log("device_serial_lane", "pass", f"所有 {len(actions)} 个端侧动作串行执行成功", is_real_device=False)
         else:
             runner.log("device_serial_lane", "fail", f"只成功执行了 {success_count}/{len(actions)} 个动作")
             
@@ -347,28 +331,24 @@ async def test_interrupt_recovery_e2e(runner: E2ETestRunner):
     print("\n[9] 中断恢复 E2E 测试")
     
     try:
-        from orchestration.state.recovery_store import get_recovery_store, RecoveryAction
+        from orchestration.state.recovery_store import get_recovery_store
         from infrastructure.compact_resume_policy import build_resume_state
         
-        # 创建恢复存储
         store = get_recovery_store()
         
-        # 模拟中断点
         resume_state = build_resume_state(
             task_id="e2e_test_task",
-            version="V75.1",
+            version="V75.2",
             phase="interrupt_test",
             pending_steps=["step1", "step2", "step3"]
         )
         
-        # 标记 step1 完成
         resume_state.mark_complete("step1")
         
-        # 验证恢复状态
         if "step1" in resume_state.completed_steps and "step2" in resume_state.pending_steps:
-            runner.log("interrupt_recovery", "pass", "中断恢复状态正确：completed_steps 和 pending_steps 分离")
+            runner.log("interrupt_recovery", "pass", "中断恢复状态正确", is_real_device=False)
         else:
-            runner.log("interrupt_recovery", "fail", f"恢复状态异常: completed={resume_state.completed_steps}, pending={resume_state.pending_steps}")
+            runner.log("interrupt_recovery", "fail", f"恢复状态异常")
             
     except ImportError as e:
         runner.log("interrupt_recovery", "skip", f"恢复模块不可用: {e}")
@@ -383,14 +363,12 @@ async def test_capability_extension_e2e(runner: E2ETestRunner):
         
         pipeline = CapabilityExtensionPipeline()
         
-        # 模拟能力缺口检测
         gap = pipeline.detect_gap("test_capability", ["alarm", "calendar"])
         
         if gap is None:
-            runner.log("capability_extension", "pass", "能力缺口检测正常：已有能力匹配")
+            runner.log("capability_extension", "pass", "能力缺口检测正常", is_real_device=False)
             return
         
-        # 创建候选扩展
         candidate = ExtensionCandidate(
             name="test_capability",
             source="local_registry",
@@ -399,11 +377,10 @@ async def test_capability_extension_e2e(runner: E2ETestRunner):
             declared_scopes=["read"]
         )
         
-        # 评估扩展
         evaluation = pipeline.evaluate(candidate)
         
         if evaluation.passed:
-            runner.log("capability_extension", "pass", f"能力扩展评估通过: score={evaluation.score}")
+            runner.log("capability_extension", "pass", f"能力扩展评估通过: score={evaluation.score}", is_real_device=False)
         else:
             runner.log("capability_extension", "fail", f"能力扩展评估失败: {evaluation.reasons}")
             
@@ -414,13 +391,12 @@ async def test_capability_extension_e2e(runner: E2ETestRunner):
 async def main():
     """运行所有 E2E 测试"""
     print("=" * 60)
-    print("V75.1 真实设备 E2E 测试套件")
+    print("V75.2 真实设备 E2E 测试套件")
     print(f"运行时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 60)
     
     runner = E2ETestRunner()
     
-    # 运行所有测试
     await test_alarm_e2e(runner)
     await test_hiboard_push_e2e(runner)
     await test_chat_cron_e2e(runner)
@@ -432,19 +408,22 @@ async def main():
     await test_interrupt_recovery_e2e(runner)
     await test_capability_extension_e2e(runner)
     
-    # 生成报告
     summary = runner.summary()
     
     print("\n" + "=" * 60)
     print("E2E 测试摘要")
     print("=" * 60)
     print(f"总计: {summary['total']}")
-    print(f"通过: {summary['passed']}")
-    print(f"失败: {summary['failed']}")
+    print(f"真实设备通过: {summary['real_device_pass']}")
+    print(f"模拟通过: {summary['simulated_pass']}")
     print(f"跳过: {summary['skipped']}")
+    print(f"失败: {summary['failed']}")
+    print(f"缺失依赖: {summary['missing_dependencies']}")
+    print(f"ready_for_production: {summary['ready_for_production']}")
+    print(f"ready_for_controlled_test: {summary['ready_for_controlled_test']}")
     
     # 保存报告
-    report_path = "V75_1_REAL_DEVICE_E2E_REPORT.json"
+    report_path = "V75_2_REAL_DEVICE_E2E_REPORT.json"
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
     

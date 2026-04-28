@@ -1,0 +1,62 @@
+{
+  "gate_name": "V75.2 Reality Closure Gate",
+  "timestamp": "2026-04-28T10:00:50.180420",
+  "total_checks": 7,
+  "passed": 7,
+  "failed": 0,
+  "skipped": 0,
+  "blockers": [],
+  "ready_for_production": true,
+  "ready_for_controlled_test": true,
+  "checks": [
+    {
+      "name": "entry_bypass_scan",
+      "status": "pass",
+      "message": "无端侧串行绕过",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:34.531067"
+    },
+    {
+      "name": "device_action_params",
+      "status": "pass",
+      "message": "DeviceAction 参数一致",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:34.531315"
+    },
+    {
+      "name": "serial_lane_xiaoyi_adapter",
+      "status": "pass",
+      "message": "xiaoyi_adapter 正确使用串行化器",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:34.531466"
+    },
+    {
+      "name": "serial_lane_base_device_capability",
+      "status": "pass",
+      "message": "base_device_capability 正确使用串行化器",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:34.531576"
+    },
+    {
+      "name": "e2e_report_format",
+      "status": "pass",
+      "message": "E2E 报告格式正确",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:34.531709"
+    },
+    {
+      "name": "soak_test_stability",
+      "status": "pass",
+      "message": "压测稳定退出",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:36.709228"
+    },
+    {
+      "name": "production_readiness",
+      "status": "pass",
+      "message": "真实设备通过: 3, 模拟通过: 8",
+      "is_blocker": false,
+      "timestamp": "2026-04-28T10:00:50.180396"
+    }
+  ]
+}

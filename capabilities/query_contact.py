@@ -1,4 +1,4 @@
-"""查询联系人能力"""
+"""查询联系人能力 - V75.3 修复：必须通过串行化器"""
 
 from typing import Optional, Dict, Any, List
 
@@ -111,9 +111,19 @@ def search_contacts(
 
 
 def _call_xiaoyi_contact(action: str, params: dict) -> dict:
-    """调用小艺联系人能力"""
-    from platform_adapter.device_tool_adapter import call_device_tool
-    return call_device_tool("contact", action, params)
+    """
+    调用小艺联系人能力 - V75.3: 必须通过串行化器
+    
+    不允许直接调用 call_device_tool
+    """
+    # V75.3: 使用统一端侧调用入口
+    from orchestration.device_serial_call import serial_call_device_tool_sync
+    result = serial_call_device_tool_sync("contact", action, params)
+    
+    if result.success:
+        return result.data or {}
+    else:
+        return {"success": False, "error": result.error}
 
 
 def run(**kwargs):
