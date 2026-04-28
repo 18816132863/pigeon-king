@@ -1,0 +1,19 @@
+
+# 大文件和缓存
+*.pyc
+__pycache__/
+*.egg-info/
+.eggs/
+dist/
+build/
+*.tar.gz
+*.zip
+node_modules/
+.venv/
+venv/
+
+# 大型资源文件
+skills/darwin-skill/assets/hero.gif
+skills/gtht-realtimemarketdata-skill/skill-entry.js
+skills/gtht-ranklist-skill/skill-entry.js
+skills/alphaear-predictor/scripts/predictor/exports/models/*.pt
