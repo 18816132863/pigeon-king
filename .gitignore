@@ -17,3 +17,7 @@ skills/darwin-skill/assets/hero.gif
 skills/gtht-realtimemarketdata-skill/skill-entry.js
 skills/gtht-ranklist-skill/skill-entry.js
 skills/alphaear-predictor/scripts/predictor/exports/models/*.pt
+
+# 保留 releases 目录
+!releases/
+!releases/*.tar.gz
