@@ -1,0 +1,14 @@
+{
+  "scan_time": "2026-04-28T20:24:51.393339",
+  "checks": {
+    "scripts_directory": true,
+    "install_check_report": true,
+    "no_false_positives": true,
+    "plugin_binaries_status": true,
+    "version_label": true
+  },
+  "passed_count": 5,
+  "failed_count": 0,
+  "blockers": [],
+  "ready_for_production": true
+}
