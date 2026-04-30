@@ -1,208 +1,136 @@
 #!/usr/bin/env python3
+"""Compatibility LLM client routed through V85 LLMGateway.
+
+Old code may still import LLMClient/GLM5Client.  This adapter keeps the old
+surface area while forcing normal calls through the central model router.
+Legacy direct HTTP can be enabled only with LLM_ALLOW_LEGACY_DIRECT=1.
 """
-LLM Client - LLM 客户端封装
-支持用户自定义 LLM 提供商
-"""
+
+from __future__ import annotations
 
 import json
 import os
-import urllib.request
 import urllib.error
-from typing import Optional, Dict, Any, List
+import urllib.request
+from typing import Any, Dict, List, Optional
 
-# 配置文件路径
 CONFIG_PATH = os.path.expanduser("~/.openclaw/workspace/skills/llm-memory-integration/config/llm_config.json")
 
+
 def load_config() -> Dict[str, Any]:
-    """加载配置文件"""
     if os.path.exists(CONFIG_PATH):
         try:
-            with open(CONFIG_PATH, 'r') as f:
+            with open(CONFIG_PATH, "r", encoding="utf-8") as f:
                 return json.load(f)
-        except Exception as e:
-            print(f"配置文件加载失败: {e}")
+        except Exception as exc:
+            print(f"配置文件加载失败: {exc}")
     return {}
 
+
 class LLMClient:
-    """LLM 客户端 - 支持多种提供商"""
-    
+    """Backward-compatible LLM client.
+
+    Preferred path: core.llm.llm_gateway.call()
+    Fallback path: disabled unless LLM_ALLOW_LEGACY_DIRECT=1.
+    """
+
     def __init__(self, config: Optional[Dict[str, Any]] = None):
-        """
-        初始化 LLM 客户端
-        
-        Args:
-            config: 配置字典，如果为 None 则从配置文件加载
-        """
-        if config is None:
-            config = load_config()
-        
+        config = config or load_config()
         llm_config = config.get("llm", {})
-        
-        # 从配置读取，如果没有则使用环境变量
         self.base_url = llm_config.get("base_url") or os.environ.get("LLM_BASE_URL", "")
         self.api_key = llm_config.get("api_key") or os.environ.get("LLM_API_KEY", "")
-        self.model = llm_config.get("model") or os.environ.get("LLM_MODEL", "gpt-4")
-        self.max_tokens = llm_config.get("max_tokens", 150)
-        self.temperature = llm_config.get("temperature", 0.5)
+        self.model = llm_config.get("model") or os.environ.get("LLM_MODEL", "")
+        self.max_tokens = int(llm_config.get("max_tokens", 150))
+        self.temperature = float(llm_config.get("temperature", 0.5))
         self.provider = llm_config.get("provider", "openai-compatible")
-        
-        if not self.api_key:
-            print("警告: 未配置 LLM API 密钥，请设置配置文件或环境变量 LLM_API_KEY")
-    
-    def chat(self, messages: List[Dict[str, str]], max_tokens: Optional[int] = None, temperature: Optional[float] = None) -> Optional[str]:
-        """
-        调用 LLM 进行对话
-        
-        Args:
-            messages: 对话消息列表 [{"role": "user", "content": "..."}]
-            max_tokens: 最大输出 token 数
-            temperature: 温度参数
-        
-        Returns:
-            模型回复文本，失败返回 None
-        """
-        if not self.api_key:
-            return None
-        
+
+    def chat(
+        self,
+        messages: List[Dict[str, Any]],
+        max_tokens: Optional[int] = None,
+        temperature: Optional[float] = None,
+    ) -> Optional[str]:
         max_tokens = max_tokens or self.max_tokens
-        temperature = temperature or self.temperature
-        
-        url = f"{self.base_url.rstrip('/')}/chat/completions"
-        
-        data = {
-            "model": self.model,
-            "messages": messages,
-            "max_tokens": max_tokens,
-            "temperature": temperature
-        }
-        
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.api_key}"
-        }
-        
+        temperature = self.temperature if temperature is None else temperature
+
+        # Main V85 path: every normal model call goes through the gateway.
         try:
-            req = urllib.request.Request(
-                url,
-                data=json.dumps(data).encode('utf-8'),
-                headers=headers,
-                method='POST'
+            from core.llm.llm_gateway import call
+
+            result = call(
+                messages,
+                model=self.model or None,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                context={"caller": "LLMClient", "legacy_provider": self.provider},
             )
-            
-            with urllib.request.urlopen(req, timeout=120) as resp:
-                result = json.loads(resp.read().decode('utf-8'))
-                if 'choices' in result and len(result['choices']) > 0:
-                    return result['choices'][0].get('message', {}).get('content', '')
-                return None
-                    
-        except urllib.error.HTTPError as e:
-            print(f"HTTP 错误: {e.code} {e.reason}")
-            return None
-        except urllib.error.URLError as e:
-            print(f"URL 错误: {e.reason}")
-            return None
-        except Exception as e:
-            print(f"请求失败: {e}")
-            return None
-    
-    def analyze_conversation(self, conversation: str, task: str = "extract_preferences") -> Dict[str, Any]:
-        """
-        分析对话内容
-        
-        Args:
-            conversation: 对话文本
-            task: 分析任务类型
-        
-        Returns:
-            分析结果字典
-        """
-        prompts = {
-            "extract_preferences": """请分析以下对话，提取用户的偏好、习惯和特征。
-
-对话内容:
-{conversation}
-
-请以 JSON 格式返回结果，包含以下字段:
-{{
-    "preferences": ["偏好1", "偏好2", ...],
-    "habits": ["习惯1", "习惯2", ...],
-    "characteristics": ["特征1", "特征2", ...],
-    "summary": "一句话总结"
-}}
-
-只返回 JSON，不要其他内容。""",
-
-            "extract_scene": """请分析以下对话，识别场景边界和主题。
-
-对话内容:
-{conversation}
-
-请以 JSON 格式返回结果，包含以下字段:
-{{
-    "scene_name": "场景名称",
-    "scene_type": "配置/任务/讨论/其他",
-    "key_points": ["要点1", "要点2", ...],
-    "participants": ["参与者1", "参与者2", ...],
-    "outcome": "结果描述"
-}}
-
-只返回 JSON，不要其他内容。""",
-
-            "summarize": """请总结以下对话内容。
-
-对话内容:
-{conversation}
-
-请以 JSON 格式返回结果，包含以下字段:
-{{
-    "summary": "一句话总结",
-    "key_topics": ["主题1", "主题2", ...],
-    "decisions": ["决策1", "决策2", ...],
-    "action_items": ["待办1", "待办2", ...]
-}}
-
-只返回 JSON，不要其他内容。"""
-        }
-        
-        prompt = prompts.get(task, prompts["summarize"]).format(conversation=conversation)
-        messages = [{"role": "user", "content": prompt}]
-        response = self.chat(messages, max_tokens=1000, temperature=0.3)
-        
-        if response:
-            try:
-                response = response.strip()
-                if response.startswith("```json"):
-                    response = response[7:]
-                if response.startswith("```"):
-                    response = response[3:]
-                if response.endswith("```"):
-                    response = response[:-3]
-                response = response.strip()
-                return json.loads(response)
-            except json.JSONDecodeError as e:
-                return {"raw_response": response, "error": f"JSON 解析失败: {e}"}
+            if result.success:
+                return result.content or ""
+        except Exception as exc:
+            # Do not crash old callers; let optional legacy fallback handle it.
+            last_error = f"gateway failed: {type(exc).__name__}: {exc}"
         else:
+            last_error = "gateway failed"
+
+        if os.environ.get("LLM_ALLOW_LEGACY_DIRECT") == "1":
+            return self._legacy_direct_chat(messages, max_tokens=max_tokens, temperature=temperature)
+
+        print(f"V85 LLMGateway 调用失败，且未启用旧直连回退：{last_error}")
+        return None
+
+    def _legacy_direct_chat(
+        self,
+        messages: List[Dict[str, Any]],
+        max_tokens: int,
+        temperature: float,
+    ) -> Optional[str]:
+        if not self.api_key or not self.base_url:
+            return None
+        url = f"{self.base_url.rstrip('/')}/chat/completions"
+        data = {"model": self.model or os.environ.get("LLM_MODEL", "gpt-4"), "messages": messages, "max_tokens": max_tokens, "temperature": temperature}
+        headers = {"Content-Type": "application/json", "Authorization": f"Bearer {self.api_key}"}
+        try:
+            req = urllib.request.Request(url, data=json.dumps(data).encode("utf-8"), headers=headers, method="POST")
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                result = json.loads(resp.read().decode("utf-8"))
+            choices = result.get("choices", [])
+            return choices[0].get("message", {}).get("content", "") if choices else None
+        except urllib.error.HTTPError as exc:
+            print(f"HTTP 错误: {exc.code} {exc.reason}")
+            return None
+        except urllib.error.URLError as exc:
+            print(f"URL 错误: {exc.reason}")
+            return None
+        except Exception as exc:
+            print(f"请求失败: {exc}")
+            return None
+
+    def analyze_conversation(self, conversation: str, task: str = "extract_preferences") -> Dict[str, Any]:
+        prompts = {
+            "extract_preferences": """请分析以下对话，提取用户的偏好、习惯和特征。\n\n对话内容:\n{conversation}\n\n请以 JSON 格式返回结果，包含 preferences、habits、characteristics、summary。只返回 JSON。""",
+            "extract_scene": """请分析以下对话，识别场景边界和主题。\n\n对话内容:\n{conversation}\n\n请以 JSON 格式返回结果，包含 scene_name、scene_type、key_points、participants、outcome。只返回 JSON。""",
+            "summarize": """请总结以下对话内容。\n\n对话内容:\n{conversation}\n\n请以 JSON 格式返回结果，包含 summary、key_topics、decisions、action_items。只返回 JSON。""",
+        }
+        prompt = prompts.get(task, prompts["summarize"]).format(conversation=conversation)
+        response = self.chat([{"role": "user", "content": prompt}], max_tokens=1000, temperature=0.3)
+        if not response:
             return {"error": "API 调用失败或未配置"}
+        try:
+            cleaned = response.strip()
+            if cleaned.startswith("```json"):
+                cleaned = cleaned[7:]
+            if cleaned.startswith("```"):
+                cleaned = cleaned[3:]
+            if cleaned.endswith("```"):
+                cleaned = cleaned[:-3]
+            return json.loads(cleaned.strip())
+        except json.JSONDecodeError as exc:
+            return {"raw_response": response, "error": f"JSON 解析失败: {exc}"}
 
 
-# 兼容旧代码
 GLM5Client = LLMClient
 
 
-def main():
-    """测试函数"""
-    client = LLMClient()
-    
-    if not client.api_key:
-        print("请先配置 LLM API 密钥:")
-        print(f"1. 复制配置示例: cp ~/.openclaw/workspace/skills/llm-memory-integration/config/llm_config.example.json {CONFIG_PATH}")
-        print("2. 编辑配置文件，填入您的 API 密钥")
-        return
-    
-    print("=== 测试基本对话 ===")
-    response = client.chat([{"role": "user", "content": "你好，请用一句话介绍自己"}])
-    print(f"回复: {response}")
-
-
 if __name__ == "__main__":
-    main()
+    client = LLMClient()
+    print(client.chat([{"role": "user", "content": "你好，请用一句话介绍自己"}]))

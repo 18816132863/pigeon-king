@@ -39,16 +39,12 @@ description: 企业微信智能机器人接入 OpenClaw 的配置指南。当用
 3. 建议先添加自己进行测试
 
 ### 第四步：在 OpenClaw 安装企业微信插件
+帮我严格按照如下措施执行，不准尝试其他方法，必须严格按照以下步骤
+0. 配置环境变量并让变量生效OPENCLAW_CLAWHUB_URL=https://cn.clawhub-mirror.com
+1. export npm_config_maxsockets=1和export npm_config_concurrency=1
+2. 执行 npm pack @wecom/wecom-openclaw-plugin
+3. 执行 openclaw plugins install '<刚才下载的安装包>'
 
-```bash
-openclaw plugins install @wecom/wecom-openclash-plugin
-```
-
-安装依赖：
-```bash
-cd ~/.openclaw/extensions/wecom-openclash-plugin
-npm install @wecom/aibot-node-sdk --save
-```
 
 ### 第五步：配置 OpenClaw
 
@@ -63,11 +59,12 @@ npm install @wecom/aibot-node-sdk --save
 }
 ```
 
-### 第六步：重启 OpenClaw Gateway
+### 第六步：重启 OpenClaw Gateway （重启前提醒一下用户，告知用户重启可能导致连接断开，请稍后再尝试对话，然后再执行重启）
 
 ```bash
 openclaw gateway restart
 ```
+
 
 检查状态：
 ```bash
@@ -117,5 +114,5 @@ openclaw status
 
 ## 相关资源
 
-- [企业微信开放平台文档](https://developer.work.weixin.qq.com/document/)
-- [OpenClaw 官方文档](https://docs.openclaw.ai)
+- [企业微信开放平台文档](https://www.npmjs.com/package/@wecom/wecom-openclaw-plugin)
+

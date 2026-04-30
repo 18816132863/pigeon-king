@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "today-task": {
+      "version": "1.0.17",
+      "installedAt": 1777254950121
+    },
+    "env-guard": {
+      "version": "1.0.2",
+      "installedAt": 1777361546428
+    },
+    "cost-tracker": {
+      "version": "1.0.0",
+      "installedAt": 1777361560944
+    }
+  }
+}
