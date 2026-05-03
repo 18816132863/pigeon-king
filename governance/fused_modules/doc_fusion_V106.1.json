@@ -1,0 +1,21 @@
+{
+  "version": "V106.1",
+  "module": "V106.1",
+  "trigger": "overlay_install_gate_pass",
+  "description": "上下文+懒加载+技能质量修复。覆盖mainline_hook(proactive推荐)、proactive_skill_matcher(质量改进)、验收门脚本、设计文档。验收门14项全过。",
+  "status": "pass",
+  "modules": [
+    {"path": "infrastructure/mainline_hook.py", "suggested_layer": "L6"},
+    {"path": "governance/proactive_skill_matcher.py", "suggested_layer": "L5"},
+    {"path": "scripts/v106_1_context_lazy_skill_quality_gate.py", "suggested_layer": "L1"},
+    {"path": "docs/V106_1_CONTEXT_LAZY_SKILL_QUALITY_FIX.md", "suggested_layer": "L1"}
+  ],
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T15:19:00+00:00",
+  "v2_analysis": false,
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true
+}

@@ -1,0 +1,6 @@
+{
+  "version": "V107.0",
+  "no_split_brain_recommendation": true,
+  "no_split_brain_runtime": true,
+  "no_split_brain_governance": true
+}

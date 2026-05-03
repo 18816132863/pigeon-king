@@ -19,6 +19,14 @@ embedding 模式:
 
 from __future__ import annotations
 
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("memory_context.vector.qdrant_store.py")
+except Exception:
+    pass
+
+
 import json
 import hashlib
 from pathlib import Path

@@ -1,3 +1,11 @@
+
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("memory_context.vector.embedding.py")
+except Exception:
+    pass
+
 from typing import Optional, List
 """Embedding 引擎 - 支持预计算和批量"""
 import json

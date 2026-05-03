@@ -1,3 +1,11 @@
+
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("infrastructure.auto_backup_uploader.py")
+except Exception:
+    pass
+
 #!/usr/bin/env python3
 """
 自动备份上传器 - V1.0.0

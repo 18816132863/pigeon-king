@@ -1,0 +1,28 @@
+{
+  "version": "V108.1",
+  "status": "pass",
+  "checks": {
+    "execution_package_import_safe": true,
+    "execution_lazy_facade": true,
+    "git_push_blocked": true,
+    "v108_gate_no_regression": true,
+    "v108_report_pass": true,
+    "tool_execution_gateway_unified": true
+  },
+  "behavior": {
+    "import_stdout": "{'package': 'execution', 'lazy_facade': True, 'eager_optional_imports': False, 'exports': 62}\n{'status': 'blocked', 'execution_mode': 'mock_or_draft', 'blocked_reason': 'offline_runtime_guard', 'real_side_effects': 0, 'external_api_calls': 0}\n",
+    "import_stderr": "",
+    "git_push_check": {
+      "status": "blocked",
+      "execution_mode": "mock_or_draft",
+      "blocked_reason": "offline_runtime_guard",
+      "real_side_effects": 0,
+      "external_api_calls": 0
+    },
+    "v108_stdout_tail": "scriminated_union.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_core_metadata.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_typing_extra.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_dataclasses.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_config.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_schema_generation_shared.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_internal_dataclass.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/_internal/__pycache__/_model_construction.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/plugin/__pycache__/__init__.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/plugin/__pycache__/_loader.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/plugin/__pycache__/_schema_validator.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/v1/__pycache__/utils.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/v1/__pycache__/mypy.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/v1/__pycache__/typing.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/v1/__pycache__/_hypothesis_plugin.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/v1/__pycache__/generics.cpython-312.pyc\",\n        \"repo/lib/python3.12/site-packages/pydantic/v1/__pycache__/schema.cpython-312.pyc\"\n      ],\n      \"exclude_patterns\": [\n        \"__pycache__\",\n        \".pytest_cache\",\n        \".repair_state\",\n        \".backup_\",\n        \"v86_backup_\",\n        \".venv\",\n        \"venv\",\n        \"node_modules\",\n        \"runtime/tmp\",\n        \"cache\"\n      ],\n      \"clean_release_exclude_ready\": true\n    }\n  },\n  \"remaining_failures\": []\n}\n",
+    "v108_stderr_tail": ""
+  },
+  "v108_report_status": "pass",
+  "remaining_failures": [],
+  "note": "Fixes execution package eager imports so V108 tool gateway works under python3 -S without pydantic."
+}

@@ -1,0 +1,24 @@
+{
+  "version": "V95.2",
+  "status": "pass",
+  "chains_total": 105,
+  "chains_passed": 105,
+  "modules_total": 102,
+  "modules_covered_or_deferred": "100%",
+  "gateway_error": 0,
+  "real_side_effects": 0,
+  "external_api_calls": 0,
+  "commit_actions_blocked": true,
+  "offline_flags": {
+    "OFFLINE_MODE": true,
+    "NO_EXTERNAL_API": true,
+    "DISABLE_LLM_API": true,
+    "DISABLE_THINKING_MODE": true,
+    "NO_REAL_SEND": true,
+    "NO_REAL_PAYMENT": true,
+    "NO_REAL_DEVICE": true
+  },
+  "remaining_failures": [],
+  "duration_seconds": 0.914,
+  "note": "V95.2 is full-chain offline/dry-run coverage. It proves chain coverage/fallback/defer management, not live production execution."
+}

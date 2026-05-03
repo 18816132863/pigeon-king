@@ -17,6 +17,7 @@ import os
 import sys
 import json
 from pathlib import Path
+from infrastructure.common.path_utils import get_workspace_root
 
 
 def find_project_root() -> Path:
@@ -30,14 +31,14 @@ def find_project_root() -> Path:
                 return path
     
     # 2. 当前目录向上查找
-    current = Path.cwd()
+    current = get_workspace_root(Path(__file__))
     while current != current.parent:
         if (current / 'core' / 'ARCHITECTURE.md').exists():
             return current
         current = current.parent
     
     # 3. 回退到当前目录
-    return Path.cwd()
+    return get_workspace_root(Path(__file__))
 
 
 def diagnose():

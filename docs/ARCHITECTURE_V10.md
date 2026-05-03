@@ -71,6 +71,7 @@ Self-Evolving Personal OS Agent
 | `memory_context/learning_loop/` | **学习循环** — 审计回放、元学习、模式提取、成功路径存储 |
 | `memory_context/persona/` | **V102+V103+V103.1: 人格连续性层 + 持续意识流(已降级为隐喻)** — 状态机、关系记忆、情绪标签记忆、反思日志、连续性摘要、语气渲染、一致性校验器、语气稳定器、**持续意识流引擎(降级为simulated_by_context_capsule)**（见下文详细说明） |
 | `memory_context/context/` | **V103: 上下文重载层** — 上下文胶囊、会话交接包、记忆启动召回器、优先级路由（见下文详细说明） |
+| `memory_context/unified_continuity_engine.py` | **V107: 统一连续性引擎** — 人格连续性+上下文重载+记忆召回的统一入口 |
 
 **使用示例：**
 
@@ -98,7 +99,7 @@ bridge.write("低置信度的内容", confidence=0.5)  # → rejected
 
 **存储位置：** `~/.openclaw/memory/qdrant/`
 
-### L3 Orchestration — 编排层 (130 .py 文件)
+### L3 Orchestration — 编排层 (132 .py 文件)
 
 | 目录 | 功能 |
 |------|------|
@@ -116,9 +117,11 @@ bridge.write("低置信度的内容", confidence=0.5)  # → rejected
 | `orchestration/durable_task_graph_engine_v6.py` | Durable 任务图引擎 |
 | `orchestration/device_serial_call.py` | 设备串行调用 |
 | `orchestration/runtime_bus.py` | **V104.3: 运行时总线** — 各运行时组件之间的协调消息通道，commit barrier 桥接 |
-| `orchestration/single_runtime_entrypoint.py` | **V104.1: 单运行时入口** — 统一运行时调度入口，V104.3 追加 commit barrier / runtime bus 引用 |
+| `orchestration/single_runtime_entrypoint.py` | **V104.1: 单运行时入口/ V107: 统一子系统融合总线** — 统一运行时调度入口，V104.3 追加 commit barrier / runtime bus 引用；V107 整合为10子系统总线端点 |
+| `orchestration/unified_task_lifecycle_engine.py` | **V107: 统一任务生命周期引擎** — 所有任务的生命周期统一管理 |
+| `orchestration/unified_system_bus.py` | **V107: 统一系统总线** — 10子系统协调消息通道，融合运行时/治理/连续性/连接器/能力进化/上下文加载/审计/任务生命周期/动作适配 |
 
-### L4 Execution — 执行层 (94 .py 文件)
+### L4 Execution — 执行层 (95 .py 文件)
 
 | 目录 | 功能 |
 |------|------|
@@ -131,6 +134,9 @@ bridge.write("低置信度的内容", confidence=0.5)  # → rejected
 | `execution/quantization/` | INT8 量化 |
 | `execution/rag/` | RAG 优化器 |
 | `execution/vector_ops/` | 向量运算 |
+| `execution/unified_action_adapter_engine.py` | **V107: 统一动作适配器引擎** — 所有外部动作通过统一适配器，阻断真实副作用 |
+| `execution/unified_tool_execution_gateway.py` | **V108: 统一工具执行网关** — 工具调用的统一入口，git push/外部命令阻断 |
+| `execution/__init__.py` | **V108.1: 懒加载外观层** — 执行包安全导入，python3 -S 下无 pydantic 依赖 |
 
 ### L5 Governance — 安全治理层 (88 .py 文件)
 
@@ -150,7 +156,16 @@ bridge.write("低置信度的内容", confidence=0.5)  # → rejected
 | `governance/persona/` | **V102: 类人行为策略** — 16条行为规则（5条红线），人格层不覆盖治理层的铁律（见下文） |
 | `governance/context/` | **V103: 防上下文失忆守卫** — 检测 handoff/capsule 可用性，触发时读取不瞎猜（见下文） |
 | `governance/runtime_commit_barrier_bridge.py` | **V104.3: 提交屏障桥** — runtime_bus 和 V90 commit barrier 之间的协调桥梁 |
+| `governance/unified_governance_gate.py` | **V107: 统一治理门** — 治理层单入口，统一规则评估/安全过滤/审批路由 |
+| `governance/skill_intelligence_engine.py` | **V107: 统一技能智能引擎** — 所有技能推荐、主动联想、规则判断、优先级排序的统一入口 |
+| `governance/proactive_skill_matcher.py` | **V105/V107: 兼容层** — V107 重构为统一引擎委派层 |
+| `governance/skill_profile_generator.py` | **V107: 技能画像生成器** — 从 registry/manifest 生成标准化画像 |
+| `governance/skill_priority_scorer.py` | **V107: 技能优先级评分器** — 领域/意图/专用性加权评分 |
+| `governance/skill_rule_engine.py` | **V107: 技能规则引擎** — 风险检测、安全过滤、commit阻断 |
+| `governance/skill_registration_pipeline.py` | **V107: 新技能注册流水线** — 自动生成 profile+registry+ledger |
+| `governance/skill_usage_feedback.py` | **V107: 技能使用反馈引擎** — 反馈收集、频次分析、质量评分 |
 | `governance/fused_modules/` | **融合引擎** — V1~V2 融合模块，包括 `doc_fusion_V10*.json` 等版本注册 |
+| `governance/unified_authorization_privacy_gate.py` | **V108: 统一授权隐私门** — 授权审批/隐私保护/secret阻断的统一入口 |
 
 ### L6 Infrastructure — 基础设施层 (323 .py 文件)
 
@@ -172,6 +187,16 @@ bridge.write("低置信度的内容", confidence=0.5)  # → rejected
 | `infrastructure/portfolio/` | **投资组合评估** — `daily_assessment_generate.py` 每日评估生成 |
 | `infrastructure/offline_runtime_guard.py` | **V104.2: 离线运行时守卫** — 阻断 urllib/requests/httpx/subprocess 等外部调用；覆盖 `run_as_user_script` 执行路径 |
 | `infrastructure/skill_policy_gate.py` | **V104.3: Skill 策略门禁** — 所有 skill 调用必须先过 external API / offline / approval 策略判断 |
+| `infrastructure/unified_observability_ledger.py` | **V107: 统一可观测账本** — 审计账本、调用监控、性能指标的統一入口 |
+| `infrastructure/unified_connector_gateway.py` | **V107: 统一连接器网关** — 所有外部连接器通过统一网关，无真实外部调用 |
+| `infrastructure/capability_evolution_engine.py` | **V107: 能力进化引擎** — 统一能力进化检测和注册入口 |
+| `infrastructure/context_loading_engine.py` | **V107: 上下文加载引擎** — 上下文加载策略的统一入口，整合lazy/persona/context |
+| `infrastructure/unified_runtime_config.py` | **V108: 统一运行时配置** — 运行时环境配置、隔离策略、上下文预算控制的统一入口 |
+| `infrastructure/unified_artifact_router.py` | **V108: 统一工件路由** — 按扩展名/场景路由工件的统一入口 |
+| `infrastructure/unified_model_gateway.py` | **V108: 统一模型网关** — 外部模型调用的统一网关，离线模式自动阻断 |
+| `infrastructure/unified_monitoring_health.py` | **V108: 统一监控健康检查** — 系统健康监控、就绪探针的统一入口 |
+| `infrastructure/unified_release_packaging_manager.py` | **V108: 统一发布包管理** — 发布打包/排除规则/清理模式的统一入口 |
+| `infrastructure/common/` | **V108.2: 通用工具模块** — path_utils/json_utils 轻量工具函数，无需依赖 |
 
 ---
 
@@ -498,6 +523,11 @@ scripts/unified_inspector_v10.py
 | V105.4 | 2026-05-03 | proactive_skill_matcher — 根据用户上下文/场景主动推荐技能候选，不走纯关键词触发 — Gate全过 |
 
 | V106 | 2026-05-03 | 统一懒加载 — infrastructure/lazy/ 策略+加载器+桥接，v106验收门(14项全过) — Gate全过 |
+| V106.1 | 2026-05-03 | 上下文+懒加载+技能质量修复 — mainline_hook proactive推荐/主动技能联想器质量改进/验收门V106.1 — 14项全过 — Gate全过 |
+| V107 | 2026-05-04 | 统一子系统融合总线 — 技能/运行时/治理/连续性/连接器/能力进化/上下文加载/审计/任务生命周期/动作适配 10个子系统统一到单入口/总线 — 验收门18项全过 — Gate全过 |
+| V108 | 2026-05-04 | 剩余系统统一化 — 运行时配置/工件路由/模型网关/工具执行网关/授权隐私门/监控健康/发布包管理 7个子系统统一到单入口/总线 — 验收门14项全过 — Gate全过 |
+| V108.1 | 2026-05-04 | 执行层懒加载 — execution/__init__.py 懒加载外观层，python3 -S 安全导入无 pydantic，V108工具网关阻断验证 — 验收门6项全过 — Gate全过 |
+| V108.2 | 2026-05-04 | 路径直接守卫 — infrastructure/common/ 工具函数+offline_runtime_guard加固+统一模型网关阻断+执行层懒加载兼容+报告索引修复 — 验收门全过 — Gate全过 |
 
 | V9.2.0 | 2026-04-29 | Connected Adapter Bootstrap. 连接适配器启动探针、设备状态检测 |
 | V9.0.0 | 2026-04-29 | 全功能具身待接入态. 18个新模块、提交屏障、宪法运行时 |

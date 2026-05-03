@@ -41,7 +41,7 @@
       "no_real_payment": true,
       "no_real_send": true,
       "no_real_device": true,
-      "ts": 1777739609.2179499
+      "ts": 1777821476.5553224
     },
     "mainline_hook": {
       "context": {
@@ -61,7 +61,7 @@
         "commit_barrier_active": true,
         "note": "V90/V92 gates active"
       },
-      "duration_ms": 2,
+      "duration_ms": 10,
       "timeout_warning": false,
       "warning": null,
       "persona_state": {
@@ -72,11 +72,11 @@
         "confidence": 70,
         "uncertainty": 10,
         "current_mode": "creator",
-        "last_updated_at": 1777739609.21858
+        "last_updated_at": 1777821476.5558803
       },
       "continuity_summary": {
         "who_am_i": "九尾赛博狐狸 AI 助手 · 鸽子王 🦊",
-        "who_is_user": "交互 9 次，风险偏好保守",
+        "who_is_user": "交互 19 次，风险偏好保守",
         "what_we_were_doing": "analyze local package and write dry run report",
         "last_blocker_or_failure": null,
         "current_most_important_goal": "进行图文/视频/内容创作",
@@ -94,10 +94,10 @@
           "energy": 80,
           "mode": "creator",
           "trust_level": 50,
-          "interaction_count": 9
+          "interaction_count": 19
         },
-        "generated_at": "2026-05-03T00:33:29.219243",
-        "signature": "16008ac31c01bd11"
+        "generated_at": "2026-05-03T23:17:56.556184",
+        "signature": "b0e943b1d3c1ae52"
       },
       "voice_guidance": "语气开放包容 | 鼓励创意探索 | 可以给多个选项",
       "humanlike_policy_ok": true,
@@ -108,7 +108,19 @@
         "persona_consistency_status": "consistent",
         "anti_amnesia_status": "monitored",
         "voice_guidance": "直接回答问题，不多余铺垫 | 用自然的、有判断的语气 | 不带客服腔",
-        "next_best_action": ""
+        "next_best_action": "",
+        "proactive_skill_suggestions": {
+          "status": "ok",
+          "mode": "proactive_skill_suggestion",
+          "message": "analyze local package and write dry run report",
+          "domains": [],
+          "suggestions": [],
+          "suggestion_count": 0,
+          "commit_context": false,
+          "no_external_api": true,
+          "real_execution": false,
+          "note": "仅推荐候选技能，不自动执行。高风险/外部能力必须走 V90/V92/V100 网关。"
+        }
       },
       "capability_truth_summary": {
         "persona_metaphor_mode": true,
@@ -126,6 +138,18 @@
       "mode": "runtime_bus",
       "fail_soft": true,
       "heavy_chain_triggered": false,
+      "proactive_skill_suggestions": {
+        "status": "ok",
+        "mode": "proactive_skill_suggestion",
+        "message": "{'x': 1}",
+        "domains": [],
+        "suggestions": [],
+        "suggestion_count": 0,
+        "commit_context": false,
+        "no_external_api": true,
+        "real_execution": false,
+        "note": "仅推荐候选技能，不自动执行。高风险/外部能力必须走 V90/V92/V100 网关。"
+      },
       "runtime_fusion_summary": {
         "runtime_bus_linked": true,
         "skill_policy_linked": true,
@@ -154,7 +178,7 @@
       },
       "must_pass_gateway": true,
       "real_side_effects": false,
-      "ts": 1777739609.2212582,
+      "ts": 1777821476.573666,
       "runtime_bus_linked": true,
       "commit_barrier_bridge_linked": true,
       "skill_policy_linked": true,
@@ -209,7 +233,7 @@
       "no_real_payment": true,
       "no_real_send": true,
       "no_real_device": true,
-      "ts": 1777739609.2214875
+      "ts": 1777821476.5738807
     },
     "side_effects": false,
     "external_api_calls": 0,
@@ -218,7 +242,7 @@
   "summary": {
     "status": "ok",
     "audit_path": "/home/sandbox/.openclaw/workspace/governance/audit/runtime_bus.jsonl",
-    "recent_events": 3,
+    "recent_events": 13,
     "runtime_bus_linked": true,
     "no_external_api": true,
     "no_real_payment": true,

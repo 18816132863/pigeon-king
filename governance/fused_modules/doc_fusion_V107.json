@@ -1,0 +1,97 @@
+{
+  "version": "V107",
+  "module": "V107",
+  "trigger": "overlay_install_gate_pass",
+  "description": "统一子系统融合总线 — 技能/运行时/治理/连续性/连接器/能力进化/上下文加载/审计/任务生命周期/动作适配 10个子系统统一到单入口/总线。验收门18项全过。",
+  "status": "pass",
+  "modules": [
+    {
+      "path": "governance/unified_governance_gate.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/skill_intelligence_engine.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/proactive_skill_matcher.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/skill_profile_generator.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/skill_priority_scorer.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/skill_rule_engine.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/skill_registration_pipeline.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "governance/skill_usage_feedback.py",
+      "suggested_layer": "L5"
+    },
+    {
+      "path": "orchestration/unified_task_lifecycle_engine.py",
+      "suggested_layer": "L3"
+    },
+    {
+      "path": "orchestration/unified_system_bus.py",
+      "suggested_layer": "L3"
+    },
+    {
+      "path": "orchestration/single_runtime_entrypoint.py",
+      "suggested_layer": "L3"
+    },
+    {
+      "path": "memory_context/unified_continuity_engine.py",
+      "suggested_layer": "L2"
+    },
+    {
+      "path": "infrastructure/unified_observability_ledger.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/unified_connector_gateway.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/capability_evolution_engine.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/context_loading_engine.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/mainline_hook.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "execution/unified_action_adapter_engine.py",
+      "suggested_layer": "L4"
+    },
+    {
+      "path": "scripts/v107_unified_subsystem_fusion_gate.py",
+      "suggested_layer": "L1"
+    },
+    {
+      "path": "docs/V107_UNIFIED_SUBSYSTEM_FUSION.md",
+      "suggested_layer": "L1"
+    }
+  ],
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T16:25:00+00:00",
+  "v2_analysis": false,
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checks": {
+    "workspace_root_exists": true,
+    "reports_ready": true,
+    "offline_reports_index_present": true,
+    "external_alerts_draft_only": true
+  },
+  "ts": 1777829067.4033988
+}

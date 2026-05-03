@@ -1,3 +1,11 @@
+
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("infrastructure.legacy.llm.py")
+except Exception:
+    pass
+
 from typing import Optional, List
 """LLM 引擎 - 支持响应缓存"""
 import json

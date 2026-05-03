@@ -1,0 +1,26 @@
+{
+  "module": "doc_fusion_engine",
+  "mode": "auto",
+  "status": "partial",
+  "results": {
+    "should_fuse": true,
+    "reason": "architecture_related",
+    "arch_updated": false,
+    "changelog_updated": false,
+    "fused_registered": false,
+    "v2_analysis_available": true,
+    "status": "partial"
+  },
+  "payload": {
+    "version": "V106",
+    "trigger": "new_module",
+    "category": "统一懒加载",
+    "description": "V106 统一懒加载 — infrastructure/lazy/ 三模块 + v106 验收门",
+    "architecture_related": true,
+    "user_visible": true,
+    "security_changed": false,
+    "gate_passed": true,
+    "remaining_failures": []
+  },
+  "timestamp": "2026-05-03T14:40:50.184993+00:00"
+}

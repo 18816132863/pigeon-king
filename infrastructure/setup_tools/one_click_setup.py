@@ -1,3 +1,11 @@
+
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("infrastructure.setup_tools.one_click_setup.py")
+except Exception:
+    pass
+
 #!/usr/bin/env python3
 """
 One-Click Setup - 交互式一键启用配置

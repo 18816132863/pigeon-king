@@ -1,6 +1,17 @@
 {
-  "version": "V104.2",
-  "note": "reports/vintage/, reports/integrity/, reports/current/ 已清理 (2026-05-03)",
-  "current_reports_dir": "reports/ops",
-  "release_status_source": "reports/ops"
+  "version": "V108.2",
+  "current_reports": [
+    "V95_2_ALL_CHAIN_COVERAGE_GATE.json",
+    "V96_FAILURE_RECOVERY_AND_STABILITY_GATE.json",
+    "V97_LONG_RUN_STABILITY_GATE.json",
+    "V98_1_MAINLINE_HOOK_RUNTIME_GATE.json",
+    "V104_3_RUNTIME_FUSION_COORDINATION_GATE.json",
+    "V107_UNIFIED_SUBSYSTEM_FUSION_GATE.json",
+    "V108_REMAINING_UNIFIED_SYSTEMS_GATE.json",
+    "V108_1_EXECUTION_IMPORT_SAFETY_GATE.json"
+  ],
+  "vintage_candidates": [
+    "DOC_FUSION_ENGINE_REPORT.json"
+  ],
+  "status_source": "reports/current + CURRENT_RELEASE_INDEX"
 }

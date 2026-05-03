@@ -1,108 +1,98 @@
-"""Execution Layer (L4) - 能力执行网关
+"""Execution Layer (L4) - lazy facade.
 
-六层架构第四层：管理所有设备能力的注册、发现、执行、故障转移。
+V108.1/V108.2: keep the execution package import-safe under ``python3 -S``.
+Heavy execution modules (numpy/pydantic/GPU/vector/visual backends) are loaded only
+when their exported symbols are requested. Lightweight gateways may import
+``execution`` without waking optional dependencies.
 """
-
 from __future__ import annotations
 
-# ── 核心执行 ──
-from .speculative_decoding import SpeculativeDecoder, DraftModel, TargetModel
-from .capabilities.registry import (
-    CapabilityRegistry,
-    CapabilityInfo,
-    CapabilityStatus,
-    get_registry,
-    register_capability,
-)
+import importlib
+from typing import Any
 
-# ── 搜索引擎 ──
-from .search.search import SearchEngine
-from .search.dedup import Deduplicator
-from .distributed_search import VectorSharder, DistributedSearcher
-
-# ── RAG 引擎 ──
-from .rag.rag_optimizer import (
-    RAGQueryOptimizer,
-    HyDEQueryRewriter,
-    SubQueryDecomposer,
-    QueryExpander,
-    MultiQueryFusion,
-)
-from .rag.query_rewriter import QueryRewriter, QueryOptimizer
-
-# ── 量化引擎 ──
-from .quantization.quantization import (
-    FP16Quantizer,
-    INT8Quantizer,
-    ScalarQuantizer,
-    ProductQuantizer,
-    BinaryQuantizer,
-    create_quantizer,
-)
-from .quantization.opq_quantization import OPQQuantizer
-
-# ── 向量引擎 ──
-from .vector_ops.vector_ops import VectorOps, AVX512VectorOps, get_vector_ops
-from .vector_ops.ann import (
-    ANNIndex,
-    BruteForceANN,
-    IVFIndex,
-    LSHIndex,
-    HNSWIndex,
-    create_ann_index,
-)
-
-# ── 优化引擎 ──
-from .optimizer.auto_tuner import AutoTuner, PerformanceBenchmark, ABTestFramework
-
-# ── 故障转移 ──
-from .failover.failover import FailoverManager, Node, HealthChecker, NodeStatus
-
-# ── 设备操作 ──
-from .device_dependency_barrier import DeviceDependencyBarrier, ActionState
-from .device_receipt_reconciler import DeviceReceiptReconciler, ReconcileResult, reconcile_device_action
-from .action_idempotency_guard import IdempotencyGuard, ActionRecord, stable_action_key
-from .device_action_timeout_verifier import DeviceActionTimeoutVerifier, TimeoutVerificationResult, DeviceActionState
-
-# ── Visual Operation Agent ──
-from .visual_operation_agent import (
-    ScreenObserver,
-    ActionExecutor,
-    VisualPlanner,
-    UIGrounding,
-)
-from .visual_task_executor import VisualTaskExecutor, VisualTaskResult
-
-__all__ = [
+_EXPORTS = {
     # Core execution
-    "SpeculativeDecoder", "DraftModel", "TargetModel",
-    "CapabilityRegistry", "CapabilityInfo", "CapabilityStatus",
-    "get_registry", "register_capability",
+    "SpeculativeDecoder": "execution.speculative_decoding",
+    "DraftModel": "execution.speculative_decoding",
+    "TargetModel": "execution.speculative_decoding",
+    "CapabilityRegistry": "execution.capabilities.registry",
+    "CapabilityInfo": "execution.capabilities.registry",
+    "CapabilityStatus": "execution.capabilities.registry",
+    "get_registry": "execution.capabilities.registry",
+    "register_capability": "execution.capabilities.registry",
     # Search
-    "SearchEngine", "Deduplicator",
-    "VectorSharder", "DistributedSearcher",
+    "SearchEngine": "execution.search.search",
+    "Deduplicator": "execution.search.dedup",
+    "VectorSharder": "execution.distributed_search",
+    "DistributedSearcher": "execution.distributed_search",
     # RAG
-    "RAGQueryOptimizer", "HyDEQueryRewriter", "SubQueryDecomposer",
-    "QueryExpander", "MultiQueryFusion",
-    "QueryRewriter", "QueryOptimizer",
-    # Quantization
-    "FP16Quantizer", "INT8Quantizer", "ScalarQuantizer",
-    "ProductQuantizer", "BinaryQuantizer", "OPQQuantizer",
-    "create_quantizer",
-    # Vector
-    "VectorOps", "AVX512VectorOps", "get_vector_ops",
-    "ANNIndex", "BruteForceANN", "IVFIndex", "LSHIndex", "HNSWIndex",
-    "create_ann_index",
-    # Optimization
-    "AutoTuner", "PerformanceBenchmark", "ABTestFramework",
-    # Failover
-    "FailoverManager", "Node", "HealthChecker", "NodeStatus",
-    # Device
-    "DeviceDependencyBarrier", "ActionState",
-    "DeviceReceiptReconciler", "ReconcileResult", "reconcile_device_action",
-    "IdempotencyGuard", "ActionRecord", "stable_action_key",
-    "DeviceActionTimeoutVerifier", "TimeoutVerificationResult", "DeviceActionState",
-    # Visual Agent
-    "ScreenObserver", "ActionExecutor", "VisualPlanner", "UIGrounding",
-    "VisualTaskExecutor", "VisualTaskResult",
-]
+    "RAGQueryOptimizer": "execution.rag.rag_optimizer",
+    "HyDEQueryRewriter": "execution.rag.rag_optimizer",
+    "SubQueryDecomposer": "execution.rag.rag_optimizer",
+    "QueryExpander": "execution.rag.rag_optimizer",
+    "MultiQueryFusion": "execution.rag.rag_optimizer",
+    "QueryRewriter": "execution.rag.query_rewriter",
+    "QueryOptimizer": "execution.rag.query_rewriter",
+    # Quantization / vector / optimization
+    "FP16Quantizer": "execution.quantization.quantization",
+    "INT8Quantizer": "execution.quantization.quantization",
+    "ScalarQuantizer": "execution.quantization.quantization",
+    "ProductQuantizer": "execution.quantization.quantization",
+    "BinaryQuantizer": "execution.quantization.quantization",
+    "create_quantizer": "execution.quantization.quantization",
+    "OPQQuantizer": "execution.quantization.opq_quantization",
+    "VectorOps": "execution.vector_ops.vector_ops",
+    "AVX512VectorOps": "execution.vector_ops.vector_ops",
+    "get_vector_ops": "execution.vector_ops.vector_ops",
+    "ANNIndex": "execution.vector_ops.ann",
+    "BruteForceANN": "execution.vector_ops.ann",
+    "IVFIndex": "execution.vector_ops.ann",
+    "LSHIndex": "execution.vector_ops.ann",
+    "HNSWIndex": "execution.vector_ops.ann",
+    "create_ann_index": "execution.vector_ops.ann",
+    "AutoTuner": "execution.optimizer.auto_tuner",
+    "PerformanceBenchmark": "execution.optimizer.auto_tuner",
+    "ABTestFramework": "execution.optimizer.auto_tuner",
+    "FailoverManager": "execution.failover.failover",
+    "Node": "execution.failover.failover",
+    "HealthChecker": "execution.failover.failover",
+    "NodeStatus": "execution.failover.failover",
+    # Device / visual
+    "DeviceDependencyBarrier": "execution.device_dependency_barrier",
+    "ActionState": "execution.device_dependency_barrier",
+    "DeviceReceiptReconciler": "execution.device_receipt_reconciler",
+    "ReconcileResult": "execution.device_receipt_reconciler",
+    "reconcile_device_action": "execution.device_receipt_reconciler",
+    "IdempotencyGuard": "execution.action_idempotency_guard",
+    "ActionRecord": "execution.action_idempotency_guard",
+    "stable_action_key": "execution.action_idempotency_guard",
+    "DeviceActionTimeoutVerifier": "execution.device_action_timeout_verifier",
+    "TimeoutVerificationResult": "execution.device_action_timeout_verifier",
+    "DeviceActionState": "execution.device_action_timeout_verifier",
+    "ScreenObserver": "execution.visual_operation_agent",
+    "ActionExecutor": "execution.visual_operation_agent",
+    "VisualPlanner": "execution.visual_operation_agent",
+    "UIGrounding": "execution.visual_operation_agent",
+    "VisualTaskExecutor": "execution.visual_task_executor",
+    "VisualTaskResult": "execution.visual_task_executor",
+}
+
+__all__ = sorted(_EXPORTS)
+
+
+def __getattr__(name: str) -> Any:
+    module_name = _EXPORTS.get(name)
+    if not module_name:
+        raise AttributeError(name)
+    module = importlib.import_module(module_name)
+    value = getattr(module, name)
+    globals()[name] = value
+    return value
+
+
+def lazy_status() -> dict[str, Any]:
+    return {"status": "lazy_facade_active", "exports": len(_EXPORTS), "heavy_modules_preloaded": False}
+
+# V108.1 兼容旧接口名
+def optional_status() -> dict[str, Any]:
+    return {"lazy_facade": True, "status": "ok", "exports": len(_EXPORTS), "eager_optional_imports": False}

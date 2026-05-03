@@ -1,0 +1,33 @@
+{
+  "model_gateway": {
+    "status": "blocked",
+    "mode": "offline_mock",
+    "model": "deep-thinking",
+    "purpose": "reasoning",
+    "external_api_calls": 0,
+    "real_side_effects": 0,
+    "requires_api": false,
+    "blocked_reason": "NO_EXTERNAL_API_or_DISABLE_LLM_API_or_DISABLE_THINKING_MODE",
+    "result": {
+      "summary": "external model call blocked; use local reasoning/context only"
+    }
+  },
+  "tool_gateway_git_push": {
+    "status": "blocked",
+    "execution_mode": "mock_or_draft",
+    "blocked_reason": "offline_runtime_guard_or_no_real_send",
+    "real_side_effects": 0,
+    "external_api_calls": 0,
+    "side_effects": false
+  },
+  "auth_privacy": {
+    "status": "blocked",
+    "secret_detected": true,
+    "commit_context": true,
+    "recommendation_mode": "blocked",
+    "blocked_reason": "secret_or_commit_context",
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true
+  }
+}

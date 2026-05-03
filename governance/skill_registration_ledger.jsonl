@@ -1,0 +1,2 @@
+{"action": "register", "skill_id": "_test_new_skill", "name": " Test New Skill", "path": "/home/sandbox/.openclaw/workspace/_test_new_skill", "has_external_api": false, "risk_class": "low", "execution_mode": "direct", "timestamp": "2026-05-04T00:05:39.973381"}
+{"action": "register", "skill_id": "_test_new_skill", "name": " Test New Skill", "path": "/home/sandbox/.openclaw/workspace/_test_new_skill", "has_external_api": false, "risk_class": "low", "execution_mode": "direct", "timestamp": "2026-05-04T00:06:02.806295"}

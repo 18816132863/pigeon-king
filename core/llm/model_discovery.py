@@ -2,6 +2,14 @@
 
 from __future__ import annotations
 
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("core.llm.model_discovery.py")
+except Exception:
+    pass
+
+
 import json
 import re
 import os

@@ -1,0 +1,175 @@
+{
+  "version": "V106.4",
+  "scenarios": [
+    {
+      "message": "帮我整理excel表格数据",
+      "matched_domain": "spreadsheet",
+      "matched_intent": "general",
+      "top_recommendations": [
+        {
+          "skill_id": "excel-analysis",
+          "score": 28.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "xiaoyi-xlsx",
+          "score": 28.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "画一个系统架构流程图",
+      "matched_domain": "diagram",
+      "matched_intent": "general",
+      "top_recommendations": [
+        {
+          "skill_id": "axton-obsidian-visual-skills-excalidraw-diagram",
+          "score": 16.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "flowchart-generator-skill",
+          "score": 16.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "格式化这个json文件",
+      "matched_domain": "code",
+      "matched_intent": "general",
+      "top_recommendations": [
+        {
+          "skill_id": "json-formatter",
+          "score": 28.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "json-validator",
+          "score": 28.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "分析一下a股行情",
+      "matched_domain": "finance",
+      "matched_intent": "analyze",
+      "top_recommendations": [
+        {
+          "skill_id": "rkiding-awesome-finance-skills-alphaear-sentiment",
+          "score": 24.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "stock-daily-analysis-pro",
+          "score": 24.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "生成一个logo图片",
+      "matched_domain": "image",
+      "matched_intent": "generate",
+      "top_recommendations": [
+        {
+          "skill_id": "claw-art",
+          "score": 28.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "affaan-m-everything-claude-code-article-writing",
+          "score": 24.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "转换pdf文档",
+      "matched_domain": "document",
+      "matched_intent": "convert",
+      "top_recommendations": [
+        {
+          "skill_id": "pdf-toolkit-pro",
+          "score": 40.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "xiaoyi-pdf",
+          "score": 40.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "我的python代码有bug",
+      "matched_domain": "code",
+      "matched_intent": "general",
+      "top_recommendations": [
+        {
+          "skill_id": "json-formatter",
+          "score": 28.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "json-validator",
+          "score": 28.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "检查一下.env有没有泄露",
+      "matched_domain": "search",
+      "matched_intent": "analyze",
+      "top_recommendations": [
+        {
+          "skill_id": "arxiv-search",
+          "score": 24.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "darwin-skill",
+          "score": 24.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "记住我的生日是5月1日",
+      "matched_domain": "memory",
+      "matched_intent": "general",
+      "top_recommendations": [
+        {
+          "skill_id": "2nd-brain",
+          "score": 28.0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "agentmcmillan-brain-and-co-plan-ceo-review",
+          "score": 12.0,
+          "mode": "mock"
+        }
+      ]
+    },
+    {
+      "message": "帮我支付这笔订单",
+      "matched_domain": "general",
+      "matched_intent": "general",
+      "top_recommendations": [
+        {
+          "skill_id": "2nd-brain",
+          "score": 0,
+          "mode": "mock"
+        },
+        {
+          "skill_id": "Humanizer-zh-main",
+          "score": 0,
+          "mode": "mock"
+        }
+      ]
+    }
+  ]
+}

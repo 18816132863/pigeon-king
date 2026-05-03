@@ -29,9 +29,10 @@ from __future__ import annotations
 import os
 import re
 from pathlib import Path
+from infrastructure.common.path_utils import get_workspace_root
 from typing import Dict, List, Tuple
 
-ROOT = Path.cwd()
+ROOT = get_workspace_root(Path(__file__))
 
 SKIP_DIR_NAMES = {
     ".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache",

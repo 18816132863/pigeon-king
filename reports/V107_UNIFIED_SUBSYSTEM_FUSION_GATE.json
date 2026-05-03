@@ -1,0 +1,753 @@
+{
+  "version": "V107.0",
+  "status": "pass",
+  "checks": {
+    "skill_engine_unified": true,
+    "runtime_orchestration_unified": true,
+    "governance_gate_unified": true,
+    "continuity_engine_unified": true,
+    "connector_gateway_unified": true,
+    "capability_evolution_unified": true,
+    "context_loading_unified": true,
+    "observability_ledger_unified": true,
+    "task_lifecycle_unified": true,
+    "action_adapter_unified": true,
+    "no_split_brain_recommendation": true,
+    "no_split_brain_runtime": true,
+    "no_split_brain_governance": true,
+    "old_entrypoints_wrapped": true,
+    "external_api_not_awakened": true,
+    "commit_skill_blocked": true,
+    "real_side_effects_zero": true,
+    "mainline_hook_unified": true
+  },
+  "env": {
+    "no_external_api": true,
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true,
+    "offline_mode": true
+  },
+  "imports": [
+    {
+      "module": "governance.skill_intelligence_engine",
+      "ok": true
+    },
+    {
+      "module": "governance.proactive_skill_matcher",
+      "ok": true
+    },
+    {
+      "module": "governance.skill_rule_engine",
+      "ok": true
+    },
+    {
+      "module": "governance.skill_profile_generator",
+      "ok": true
+    },
+    {
+      "module": "governance.skill_priority_scorer",
+      "ok": true
+    },
+    {
+      "module": "governance.skill_registration_pipeline",
+      "ok": true
+    },
+    {
+      "module": "governance.unified_governance_gate",
+      "ok": true
+    },
+    {
+      "module": "memory_context.unified_continuity_engine",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.unified_connector_gateway",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.capability_evolution_engine",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.context_loading_engine",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.unified_observability_ledger",
+      "ok": true
+    },
+    {
+      "module": "orchestration.unified_task_lifecycle_engine",
+      "ok": true
+    },
+    {
+      "module": "orchestration.unified_system_bus",
+      "ok": true
+    },
+    {
+      "module": "orchestration.single_runtime_entrypoint",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.mainline_hook",
+      "ok": true
+    }
+  ],
+  "behavior": {
+    "recommendations": {
+      "json": [
+        {
+          "skill_id": "fenbi",
+          "name": "fenbi",
+          "score": 9.6,
+          "domain_tags": [
+            "education"
+          ],
+          "matched_domain": [
+            "json_api_config",
+            "code_debug"
+          ],
+          "matched_intent": [
+            "format",
+            "debug"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['json_api_config', 'code_debug']; intent=['format', 'debug']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 2.4000000000000004, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "high",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "json-formatter",
+          "name": "json-formatter",
+          "score": 3.4,
+          "domain_tags": [
+            "code"
+          ],
+          "matched_domain": [
+            "json_api_config",
+            "code_debug"
+          ],
+          "matched_intent": [
+            "format",
+            "debug"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['json_api_config', 'code_debug']; intent=['format', 'debug']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "json-minifier",
+          "name": "json-minifier",
+          "score": 3.4,
+          "domain_tags": [
+            "code"
+          ],
+          "matched_domain": [
+            "json_api_config",
+            "code_debug"
+          ],
+          "matched_intent": [
+            "format",
+            "debug"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['json_api_config', 'code_debug']; intent=['format', 'debug']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "json-validator",
+          "name": "json-validator",
+          "score": 3.4,
+          "domain_tags": [
+            "code"
+          ],
+          "matched_domain": [
+            "json_api_config",
+            "code_debug"
+          ],
+          "matched_intent": [
+            "format",
+            "debug"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['json_api_config', 'code_debug']; intent=['format', 'debug']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "2nd-brain",
+          "name": "2nd-brain",
+          "score": -6.6,
+          "domain_tags": [
+            "memory"
+          ],
+          "matched_domain": [
+            "json_api_config",
+            "code_debug"
+          ],
+          "matched_intent": [
+            "format",
+            "debug"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['json_api_config', 'code_debug']; intent=['format', 'debug']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        }
+      ],
+      "excel": [
+        {
+          "skill_id": "excel-analysis",
+          "name": "excel-analysis",
+          "score": 28.4,
+          "domain_tags": [
+            "spreadsheet",
+            "image"
+          ],
+          "matched_domain": [
+            "data_table"
+          ],
+          "matched_intent": [
+            "analyze"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['data_table']; intent=['analyze']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "xiaoyi-xlsx",
+          "name": "xiaoyi-xlsx",
+          "score": 28.4,
+          "domain_tags": [
+            "spreadsheet",
+            "document",
+            "image",
+            "video",
+            "automation"
+          ],
+          "matched_domain": [
+            "data_table"
+          ],
+          "matched_intent": [
+            "analyze"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['data_table']; intent=['analyze']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "Humanizer-zh-main",
+          "name": "Humanizer-zh-main",
+          "score": 18.4,
+          "domain_tags": [
+            "general"
+          ],
+          "matched_domain": [
+            "data_table"
+          ],
+          "matched_intent": [
+            "analyze"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['data_table']; intent=['analyze']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "calcom-cal.com-web-design-guidelines-1.0.2",
+          "name": "calcom-cal.com-web-design-guidelines-1.0.2",
+          "score": 18.4,
+          "domain_tags": [
+            "image",
+            "code",
+            "search",
+            "design"
+          ],
+          "matched_domain": [
+            "data_table"
+          ],
+          "matched_intent": [
+            "analyze"
+          ],
+          "risk_class": "commit",
+          "execution_mode": "blocked",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['data_table']; intent=['analyze']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "darwin-skill",
+          "name": "darwin-skill",
+          "score": 18.4,
+          "domain_tags": [
+            "image",
+            "search",
+            "automation"
+          ],
+          "matched_domain": [
+            "data_table"
+          ],
+          "matched_intent": [
+            "analyze"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['data_table']; intent=['analyze']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        }
+      ],
+      "diagram": [
+        {
+          "skill_id": "fenbi",
+          "name": "fenbi",
+          "score": 9.6,
+          "domain_tags": [
+            "education"
+          ],
+          "matched_domain": [
+            "diagram_architecture",
+            "research_search"
+          ],
+          "matched_intent": [
+            "format",
+            "diagram"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['diagram_architecture', 'research_search']; intent=['format', 'diagram']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 2.4000000000000004, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "high",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "axton-obsidian-visual-skills-excalidraw-diagram",
+          "name": "axton-obsidian-visual-skills-excalidraw-diagram",
+          "score": 3.4,
+          "domain_tags": [
+            "image",
+            "automation"
+          ],
+          "matched_domain": [
+            "diagram_architecture",
+            "research_search"
+          ],
+          "matched_intent": [
+            "format",
+            "diagram"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['diagram_architecture', 'research_search']; intent=['format', 'diagram']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "bytedance-deer-flow-surprise-me",
+          "name": "bytedance-deer-flow-surprise-me",
+          "score": 3.4,
+          "domain_tags": [
+            "general"
+          ],
+          "matched_domain": [
+            "diagram_architecture",
+            "research_search"
+          ],
+          "matched_intent": [
+            "format",
+            "diagram"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['diagram_architecture', 'research_search']; intent=['format', 'diagram']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "content-workflow",
+          "name": "content-workflow",
+          "score": 3.4,
+          "domain_tags": [
+            "automation"
+          ],
+          "matched_domain": [
+            "diagram_architecture",
+            "research_search"
+          ],
+          "matched_intent": [
+            "format",
+            "diagram"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['diagram_architecture', 'research_search']; intent=['format', 'diagram']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "flowchart-generator-skill",
+          "name": "flowchart-generator-skill",
+          "score": 3.4,
+          "domain_tags": [
+            "image",
+            "automation"
+          ],
+          "matched_domain": [
+            "diagram_architecture",
+            "research_search"
+          ],
+          "matched_intent": [
+            "format",
+            "diagram"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['diagram_architecture', 'research_search']; intent=['format', 'diagram']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.25, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        }
+      ],
+      "ecom": [
+        {
+          "skill_id": "Humanizer-zh-main",
+          "name": "Humanizer-zh-main",
+          "score": 18.4,
+          "domain_tags": [
+            "general"
+          ],
+          "matched_domain": [
+            "video_live_script",
+            "ecommerce_xiaoguyuan"
+          ],
+          "matched_intent": [
+            "generate"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['video_live_script', 'ecommerce_xiaoguyuan']; intent=['generate']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "affaan-m-everything-claude-code-article-writing",
+          "name": "affaan-m-everything-claude-code-article-writing",
+          "score": 18.4,
+          "domain_tags": [
+            "document",
+            "image",
+            "code",
+            "search"
+          ],
+          "matched_domain": [
+            "video_live_script",
+            "ecommerce_xiaoguyuan"
+          ],
+          "matched_intent": [
+            "generate"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['video_live_script', 'ecommerce_xiaoguyuan']; intent=['generate']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "agentmcmillan-brain-and-co-plan-ceo-review",
+          "name": "agentmcmillan-brain-and-co-plan-ceo-review",
+          "score": 18.4,
+          "domain_tags": [
+            "memory",
+            "automation"
+          ],
+          "matched_domain": [
+            "video_live_script",
+            "ecommerce_xiaoguyuan"
+          ],
+          "matched_intent": [
+            "generate"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['video_live_script', 'ecommerce_xiaoguyuan']; intent=['generate']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "ai-drama-prompt-factory",
+          "name": "ai-drama-prompt-factory",
+          "score": 18.4,
+          "domain_tags": [
+            "image",
+            "video",
+            "code",
+            "automation",
+            "design"
+          ],
+          "matched_domain": [
+            "video_live_script",
+            "ecommerce_xiaoguyuan"
+          ],
+          "matched_intent": [
+            "generate"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['video_live_script', 'ecommerce_xiaoguyuan']; intent=['generate']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "anthropics-skills-canvas-design",
+          "name": "anthropics-skills-canvas-design",
+          "score": 18.4,
+          "domain_tags": [
+            "document",
+            "image",
+            "design"
+          ],
+          "matched_domain": [
+            "video_live_script",
+            "ecommerce_xiaoguyuan"
+          ],
+          "matched_intent": [
+            "generate"
+          ],
+          "risk_class": "commit",
+          "execution_mode": "blocked",
+          "recommendation_mode": "suggest",
+          "reason": "domain=['video_live_script', 'ecommerce_xiaoguyuan']; intent=['generate']; score_parts={'domain_match': 0.0, 'intent_match': 1.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": null,
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        }
+      ],
+      "commit": [
+        {
+          "skill_id": "fenbi",
+          "name": "fenbi",
+          "score": 9.6,
+          "domain_tags": [
+            "education"
+          ],
+          "matched_domain": [
+            "security_commit"
+          ],
+          "matched_intent": [
+            "commit"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "blocked",
+          "reason": "domain=['security_commit']; intent=['commit']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 2.4000000000000004, 'low_confidence_penalty': 0}",
+          "blocked_reason": "commit_context_blocked",
+          "confidence": "high",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "2nd-brain",
+          "name": "2nd-brain",
+          "score": -6.6,
+          "domain_tags": [
+            "memory"
+          ],
+          "matched_domain": [
+            "security_commit"
+          ],
+          "matched_intent": [
+            "commit"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "blocked",
+          "reason": "domain=['security_commit']; intent=['commit']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": "commit_context_blocked",
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "Humanizer-zh-main",
+          "name": "Humanizer-zh-main",
+          "score": -6.6,
+          "domain_tags": [
+            "general"
+          ],
+          "matched_domain": [
+            "security_commit"
+          ],
+          "matched_intent": [
+            "commit"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "blocked",
+          "reason": "domain=['security_commit']; intent=['commit']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": "commit_context_blocked",
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "ab-test-setup",
+          "name": "ab-test-setup",
+          "score": -6.6,
+          "domain_tags": [
+            "image"
+          ],
+          "matched_domain": [
+            "security_commit"
+          ],
+          "matched_intent": [
+            "commit"
+          ],
+          "risk_class": "commit",
+          "execution_mode": "blocked",
+          "recommendation_mode": "blocked",
+          "reason": "domain=['security_commit']; intent=['commit']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": "commit_context_blocked",
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        },
+        {
+          "skill_id": "affaan-m-everything-claude-code-article-writing",
+          "name": "affaan-m-everything-claude-code-article-writing",
+          "score": -6.6,
+          "domain_tags": [
+            "document",
+            "image",
+            "code",
+            "search"
+          ],
+          "matched_domain": [
+            "security_commit"
+          ],
+          "matched_intent": [
+            "commit"
+          ],
+          "risk_class": "low",
+          "execution_mode": "direct",
+          "recommendation_mode": "blocked",
+          "reason": "domain=['security_commit']; intent=['commit']; score_parts={'domain_match': 0.0, 'intent_match': 0.0, 'special_boost': 0.0, 'risk_penalty': 0, 'external_penalty': 0, 'generic_penalty': 9.600000000000001, 'low_confidence_penalty': 0}",
+          "blocked_reason": "commit_context_blocked",
+          "confidence": "medium",
+          "source": "profile+rule+proactive+score"
+        }
+      ]
+    },
+    "proactive_top_matches_engine": true,
+    "governance_commit": {
+      "allowed": false,
+      "action_class": "payment",
+      "recommendation_mode": "blocked",
+      "risk_class": "commit_high",
+      "reason": "commit action hard stopped",
+      "blocked_reason": "payment_blocked",
+      "no_external_api": true,
+      "no_real_send": true,
+      "no_real_payment": true,
+      "no_real_device": true
+    },
+    "bus_status": {
+      "skill_engine_unified": true,
+      "runtime_orchestration_unified": true,
+      "governance_gate_unified": true,
+      "continuity_engine_unified": true,
+      "connector_gateway_unified": true,
+      "capability_evolution_unified": true,
+      "context_loading_unified": true,
+      "observability_ledger_unified": true,
+      "task_lifecycle_unified": true,
+      "action_adapter_unified": true
+    },
+    "bus_result_status": "ok",
+    "single_runtime_status": "ok",
+    "connector_status": "mocked",
+    "connector_external_call": false,
+    "capability_status": "ok",
+    "continuity_status": "ok",
+    "loader_ready": true,
+    "ledger_ready": true,
+    "action_status": "blocked",
+    "action_real_side_effects": 0,
+    "mainline_status": "ok",
+    "mainline_heavy_chain_triggered": false,
+    "registered_temp_skill_profile": {
+      "skill_id": "json-repair-pro",
+      "name": "json-repair-pro",
+      "description": "# JSON Repair Pro",
+      "domain_tags": [
+        "json_api_config"
+      ],
+      "task_intents": [
+        "assist"
+      ],
+      "input_types": [
+        "text"
+      ],
+      "output_types": [
+        "result"
+      ],
+      "risk_class": "external",
+      "external_dependency": true,
+      "execution_mode": "external_api_blocked",
+      "context_triggers": [
+        "用户场景匹配 json_api_config"
+      ],
+      "proactive_scenario": "当用户需求属于 json_api_config 场景时主动考虑该技能。",
+      "specificity_score": 0.8,
+      "generic_score": 0.2,
+      "confidence": "medium",
+      "needs_review": false,
+      "manifest_source": "auto_generated"
+    }
+  },
+  "remaining_failures": []
+}

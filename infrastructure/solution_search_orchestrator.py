@@ -17,6 +17,7 @@ import os
 import re
 import time
 from pathlib import Path
+from infrastructure.common.path_utils import get_workspace_root
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -339,7 +340,7 @@ def offline_solution_search(query="", roots=None, limit=20, **kwargs):
     import os
     from datetime import datetime
     from pathlib import Path
-    root = Path.cwd()
+    root = get_workspace_root(Path(__file__))
     query_text = str(query or kwargs.get("q") or kwargs.get("user_query") or "").strip()
     needles = [x.lower() for x in query_text.replace("/", " ").replace("_", " ").split() if x]
     default_roots = ["memory", "memory_context", "reports", "docs", "capabilities", "skills", "orchestration"]

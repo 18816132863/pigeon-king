@@ -1,0 +1,13 @@
+{
+  "version": "V106.4",
+  "profiles_generated": 195,
+  "registry_size": 195,
+  "new_registration_pipeline_ready": true,
+  "sample_profiles": [
+    "2nd-brain",
+    "Humanizer-zh-main",
+    "ab-test-setup",
+    "affaan-m-everything-claude-code-article-writing",
+    "agent_reach"
+  ]
+}

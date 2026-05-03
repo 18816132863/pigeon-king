@@ -13,9 +13,10 @@ from __future__ import annotations
 import json
 import time
 from pathlib import Path
+from infrastructure.common.path_utils import get_workspace_root
 from typing import Dict, List, Optional, Any
 
-ROOT = Path.cwd()
+ROOT = get_workspace_root(Path(__file__))
 
 
 def generate_manifest(

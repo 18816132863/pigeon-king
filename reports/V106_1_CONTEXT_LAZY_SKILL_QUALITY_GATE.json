@@ -1,0 +1,49 @@
+{
+  "version": "V106.1",
+  "status": "pass",
+  "checks": {
+    "mainline_hook_importable": true,
+    "mainline_hook_run_ok": true,
+    "mainline_hook_has_proactive_suggestions": true,
+    "heavy_chain_not_triggered": true,
+    "runtime_fusion_summary_ready": true,
+    "v98_1_no_regression": true,
+    "v104_3_no_regression": true,
+    "proactive_skill_quality": {
+      "json": {
+        "names": [
+          "json-formatter",
+          "json-validator",
+          "json-minifier",
+          "number-formatter",
+          "percentage-calculator"
+        ],
+        "expected": "json-formatter",
+        "ok": true
+      },
+      "excel": {
+        "names": [
+          "aiskillstore-marketplace-test-case-generator",
+          "excel-analysis",
+          "xiaoyi-doc-convert",
+          "xiaoyi-xlsx"
+        ],
+        "expected": "excel-analysis",
+        "ok": true
+      },
+      "diagram": {
+        "names": [
+          "axton-obsidian-visual-skills-excalidraw-diagram",
+          "flowchart-generator-skill"
+        ],
+        "expected": "excalidraw",
+        "ok": true
+      }
+    }
+  },
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true,
+  "remaining_failures": []
+}

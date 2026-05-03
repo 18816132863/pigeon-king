@@ -1,0 +1,67 @@
+{
+  "version": "V106.4",
+  "status": "pass",
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true,
+  "checks": {
+    "unified_engine_ready": {
+      "ok": true,
+      "detail": "Loaded 195 profiles"
+    },
+    "proactive_matcher_uses_unified_engine": {
+      "ok": true,
+      "detail": "version=V106.4"
+    },
+    "skill_rule_engine_integrated": {
+      "ok": true,
+      "detail": "risk=commit blocked=True"
+    },
+    "skill_profile_generator_integrated": {
+      "ok": true,
+      "detail": "195 profiles loaded, test_gen=True"
+    },
+    "priority_scorer_integrated": {
+      "ok": true,
+      "detail": "score=54.0 reason=domain:spreadsheet+high_specificity+intent:analyze+specialty"
+    },
+    "new_skill_auto_profile_ready": {
+      "ok": true,
+      "detail": "register_status=ok"
+    },
+    "no_split_brain_recommendation": {
+      "ok": true,
+      "detail": "ue_top=['excel-analysis'] pm_top=['excel-analysis']"
+    },
+    "specialized_skill_beats_generic": {
+      "ok": true,
+      "detail": "excel_pos=0 brain_pos=None"
+    },
+    "external_api_not_awakened": {
+      "ok": true,
+      "detail": "Any external skills executed: False"
+    },
+    "commit_skill_blocked": {
+      "ok": true,
+      "detail": "Commit skills not blocked: False"
+    },
+    "no_external_api": {
+      "ok": true,
+      "detail": "NO_EXTERNAL_API=True"
+    },
+    "no_real_payment": {
+      "ok": true,
+      "detail": "NO_REAL_PAYMENT=True"
+    },
+    "no_real_send": {
+      "ok": true,
+      "detail": "NO_REAL_SEND=True"
+    },
+    "no_real_device": {
+      "ok": true,
+      "detail": "NO_REAL_DEVICE=True"
+    }
+  },
+  "remaining_failures": []
+}

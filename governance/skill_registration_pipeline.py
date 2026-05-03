@@ -1,0 +1,1 @@
+from governance.skill_intelligence_engine import register_skill

@@ -1,0 +1,83 @@
+{
+  "version": "V108.2",
+  "status": "pass",
+  "changes": [
+    {
+      "path": "core/llm/provider_guard.py",
+      "status": "patched"
+    },
+    {
+      "path": "infrastructure/solution_search_orchestrator.py",
+      "status": "patched"
+    },
+    {
+      "path": "infrastructure/packaging/__init__.py",
+      "status": "patched"
+    },
+    {
+      "path": "infrastructure/diagnose_embedding.py",
+      "status": "patched"
+    },
+    {
+      "path": "core/llm/llm.py",
+      "status": "patched"
+    },
+    {
+      "path": "core/llm/llm_client.py",
+      "status": "patched"
+    },
+    {
+      "path": "core/llm/llm_gateway.py",
+      "status": "patched"
+    },
+    {
+      "path": "core/llm/model_discovery.py",
+      "status": "patched"
+    },
+    {
+      "path": "infrastructure/legacy/llm.py",
+      "status": "patched"
+    },
+    {
+      "path": "infrastructure/setup_tools/one_click_setup.py",
+      "status": "patched"
+    },
+    {
+      "path": "infrastructure/auto_backup_uploader.py",
+      "status": "patched"
+    },
+    {
+      "path": "core/real_connector_execution/connectors.py",
+      "status": "patched"
+    },
+    {
+      "path": "memory_context/vector/qdrant_store.py",
+      "status": "patched"
+    },
+    {
+      "path": "memory_context/vector/embedding.py",
+      "status": "patched"
+    }
+  ],
+  "current_release_index": {
+    "version": "V108.2",
+    "current_reports": [
+      "V95_2_ALL_CHAIN_COVERAGE_GATE.json",
+      "V96_FAILURE_RECOVERY_AND_STABILITY_GATE.json",
+      "V97_LONG_RUN_STABILITY_GATE.json",
+      "V98_1_MAINLINE_HOOK_RUNTIME_GATE.json",
+      "V104_3_RUNTIME_FUSION_COORDINATION_GATE.json",
+      "V107_UNIFIED_SUBSYSTEM_FUSION_GATE.json",
+      "V108_REMAINING_UNIFIED_SYSTEMS_GATE.json",
+      "V108_1_EXECUTION_IMPORT_SAFETY_GATE.json"
+    ],
+    "vintage_candidates": [
+      "DOC_FUSION_ENGINE_REPORT.json"
+    ],
+    "status_source": "reports/current + CURRENT_RELEASE_INDEX"
+  },
+  "no_external_api": true,
+  "no_real_send": true,
+  "no_real_payment": true,
+  "no_real_device": true
+}

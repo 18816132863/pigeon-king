@@ -1,0 +1,138 @@
+{
+  "version": "V108.2",
+  "status": "pass",
+  "env": {
+    "OFFLINE_MODE": true,
+    "NO_EXTERNAL_API": true,
+    "DISABLE_LLM_API": true,
+    "DISABLE_THINKING_MODE": true,
+    "NO_REAL_SEND": true,
+    "NO_REAL_PAYMENT": true,
+    "NO_REAL_DEVICE": true
+  },
+  "imports": [
+    {
+      "module": "execution",
+      "status": "pass"
+    },
+    {
+      "module": "execution.unified_tool_execution_gateway",
+      "status": "pass"
+    },
+    {
+      "module": "infrastructure.unified_model_gateway",
+      "status": "pass"
+    },
+    {
+      "module": "infrastructure.offline_runtime_guard",
+      "status": "pass"
+    },
+    {
+      "module": "infrastructure.common.path_utils",
+      "status": "pass"
+    }
+  ],
+  "runtime_guard": {
+    "activate": {
+      "status": "active",
+      "reason": "v108_2_gate",
+      "patched": {
+        "urllib": true,
+        "requests": true,
+        "httpx": false,
+        "subprocess_outbound": true,
+        "os_system_outbound": true
+      },
+      "side_effects": false,
+      "external_api_blocked": true,
+      "real_send_blocked": true
+    },
+    "status": {
+      "active": true,
+      "offline_enabled": true,
+      "originals_saved": [
+        "os.system",
+        "requests.sessions.Session.request",
+        "subprocess.Popen",
+        "subprocess.call",
+        "subprocess.check_call",
+        "subprocess.check_output",
+        "subprocess.run",
+        "urllib.request.urlopen",
+        "urllib.request.urlretrieve"
+      ]
+    },
+    "urllib_blocked": true,
+    "urllib_error": "urllib.request.urlopen blocked by offline runtime guard: NO_EXTERNAL_API=true",
+    "git_push_blocked": true,
+    "git_push_error": "subprocess.run blocked by offline runtime guard: outbound command blocked: git push",
+    "os_system_git_push_blocked": true,
+    "os_system_git_push_error": "os.system blocked by offline runtime guard: outbound command blocked: git push"
+  },
+  "path_stability": {
+    "status": "pass",
+    "resolved": "/home/sandbox/.openclaw/workspace",
+    "expected": "/home/sandbox/.openclaw/workspace"
+  },
+  "file_text_check": {
+    "cwd_remaining": [],
+    "missing_guard_activation": []
+  },
+  "gateway_checks": {
+    "model_blocked": true,
+    "embedding_offline": true,
+    "git_push_tool_blocked": true,
+    "model": {
+      "status": "blocked",
+      "mode": "offline_mock",
+      "model": "any",
+      "purpose": "reasoning",
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "requires_api": false,
+      "blocked_reason": "NO_EXTERNAL_API_or_DISABLE_LLM_API_or_DISABLE_THINKING_MODE",
+      "result": {
+        "summary": "external model call blocked; use local reasoning/context only"
+      }
+    },
+    "embedding": {
+      "status": "ok",
+      "mode": "offline_mock_embedding",
+      "external_api_calls": 0,
+      "requires_api": false
+    },
+    "tool": {
+      "status": "blocked",
+      "execution_mode": "mock_or_draft",
+      "blocked_reason": "offline_runtime_guard_or_no_real_send",
+      "real_side_effects": 0,
+      "external_api_calls": 0,
+      "side_effects": false
+    }
+  },
+  "optional_gates": [
+    {
+      "script": "v108_1_execution_import_safety_gate.py",
+      "returncode": 0,
+      "status": "pass",
+      "report_status": "pass",
+      "stderr_tail": ""
+    },
+    {
+      "script": "v108_remaining_unified_systems_gate.py",
+      "returncode": 0,
+      "status": "pass",
+      "report_status": "pass",
+      "stderr_tail": ""
+    }
+  ],
+  "llm_direct_call_guarded": true,
+  "path_root_stable": true,
+  "tool_direct_call_guarded": true,
+  "report_index_ready": true,
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true,
+  "remaining_failures": []
+}

@@ -1,0 +1,13 @@
+{
+  "version": "V108.0",
+  "subsystems": [
+    "runtime_config",
+    "artifact_router",
+    "model_gateway",
+    "tool_execution_gateway",
+    "authorization_privacy_gate",
+    "monitoring_health",
+    "release_packaging_manager"
+  ],
+  "all_linked": true
+}

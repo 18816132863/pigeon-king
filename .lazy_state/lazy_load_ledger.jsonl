@@ -67,3 +67,35 @@
 {"timestamp": "2026-05-03T14:38:01.579328+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 1.9, "detail": ""}
 {"timestamp": "2026-05-03T14:38:01.581908+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 2.29, "detail": ""}
 {"timestamp": "2026-05-03T14:38:01.582083+00:00", "component": "skill:weather", "action": "load_full_skill", "status": "loaded", "duration_ms": 2.57, "detail": ""}
+{"ts": 1777825457.738444, "level": "P0", "item": "commit_barrier", "action": "preload"}
+{"ts": 1777825457.7384777, "level": "P0", "item": "offline_runtime_guard", "action": "preload"}
+{"ts": 1777825457.7385, "level": "P0", "item": "mainline_hook", "action": "preload"}
+{"ts": 1777825457.738519, "level": "P0", "item": "AGENTS.md", "action": "preload"}
+{"ts": 1777825457.7385466, "level": "P0", "item": "IDENTITY.md", "action": "preload"}
+{"ts": 1777825457.7385662, "level": "P0", "item": "MEMORY.md", "action": "preload"}
+{"ts": 1777825457.7385848, "level": "P0", "item": "context_capsule", "action": "preload"}
+{"ts": 1777825457.738603, "level": "P0", "item": "session_handoff", "action": "preload"}
+{"ts": 1777825457.73862, "level": "P0", "item": "CURRENT_RELEASE_INDEX", "action": "preload"}
+{"ts": 1777825457.7386384, "level": "P0", "item": "skill_policy_gate", "action": "preload"}
+{"ts": 1777825457.7386577, "level": "P1", "item": "skill_trigger_registry", "action": "warm"}
+{"ts": 1777825457.7386756, "level": "P1", "item": "skill_profiles", "action": "warm"}
+{"ts": 1777825457.7386937, "level": "P1", "item": "proactive_skill_matcher", "action": "warm"}
+{"ts": 1777825457.738716, "level": "P1", "item": "current_reports_summary", "action": "warm"}
+{"ts": 1777825457.7387342, "level": "P1", "item": "relationship_memory_summary", "action": "warm"}
+{"ts": 1777825457.738753, "level": "P2", "item": "full_skill_demo", "action": "lazy_load"}
+{"ts": 1777825457.738772, "level": "P3", "item": "webhook", "action": "block_or_mock"}
+{"ts": 1777825457.739013, "level": "P0", "item": "commit_barrier", "action": "preload"}
+{"ts": 1777825457.7390366, "level": "P0", "item": "offline_runtime_guard", "action": "preload"}
+{"ts": 1777825457.7390573, "level": "P0", "item": "mainline_hook", "action": "preload"}
+{"ts": 1777825457.7390752, "level": "P0", "item": "AGENTS.md", "action": "preload"}
+{"ts": 1777825457.7390926, "level": "P0", "item": "IDENTITY.md", "action": "preload"}
+{"ts": 1777825457.73911, "level": "P0", "item": "MEMORY.md", "action": "preload"}
+{"ts": 1777825457.7391274, "level": "P0", "item": "context_capsule", "action": "preload"}
+{"ts": 1777825457.739145, "level": "P0", "item": "session_handoff", "action": "preload"}
+{"ts": 1777825457.7391624, "level": "P0", "item": "CURRENT_RELEASE_INDEX", "action": "preload"}
+{"ts": 1777825457.7391803, "level": "P0", "item": "skill_policy_gate", "action": "preload"}
+{"ts": 1777825457.7391996, "level": "P1", "item": "skill_trigger_registry", "action": "warm"}
+{"ts": 1777825457.7392166, "level": "P1", "item": "skill_profiles", "action": "warm"}
+{"ts": 1777825457.7392342, "level": "P1", "item": "proactive_skill_matcher", "action": "warm"}
+{"ts": 1777825457.7392516, "level": "P1", "item": "current_reports_summary", "action": "warm"}
+{"ts": 1777825457.739269, "level": "P1", "item": "relationship_memory_summary", "action": "warm"}

@@ -1,0 +1,9 @@
+{
+  "version": "V107.0",
+  "entrypoints": [
+    "orchestration.unified_system_bus.handle_message",
+    "orchestration.single_runtime_entrypoint.run_task",
+    "governance.skill_intelligence_engine.recommend_skills",
+    "governance.unified_governance_gate.check_action"
+  ]
+}

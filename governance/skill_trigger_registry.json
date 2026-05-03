@@ -3478,5 +3478,30 @@
       "用户需要生成漫画/插画"
     ],
     "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "_test_new_skill": {
+    "name": " Test New Skill",
+    "description": "测试新技能自动注册",
+    "category": "general",
+    "trigger_keywords": [
+      "_test_new_skill"
+    ],
+    "context_triggers": [],
+    "requires_external_api": false,
+    "proactive_scenario": ""
+  },
+  "json-repair-pro": {
+    "trigger_keywords": [
+      "assist"
+    ],
+    "context_triggers": [
+      "用户场景匹配 json_api_config"
+    ],
+    "proactive_scenario": "当用户需求属于 json_api_config 场景时主动考虑该技能。",
+    "domain_tags": [
+      "json_api_config"
+    ],
+    "risk_class": "external",
+    "execution_mode": "external_api_blocked"
   }
 }

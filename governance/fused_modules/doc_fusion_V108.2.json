@@ -1,0 +1,53 @@
+{
+  "version": "V108.2",
+  "module": "V108.2",
+  "trigger": "overlay_install_gate_pass",
+  "description": "V108.2 路径直接守卫 — common/工具函数+offline_runtime_guard加固+unified_model_gateway阻断+execution懒加载兼容层+报告索引修复。验收门全过。",
+  "status": "pass",
+  "modules": [
+    {
+      "path": "scripts/v108_2_path_direct_guard_apply.py",
+      "suggested_layer": "L1"
+    },
+    {
+      "path": "scripts/v108_2_path_direct_guard_gate.py",
+      "suggested_layer": "L1"
+    },
+    {
+      "path": "infrastructure/common/__init__.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/common/path_utils.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/common/json_utils.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/offline_runtime_guard.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "infrastructure/unified_model_gateway.py",
+      "suggested_layer": "L6"
+    },
+    {
+      "path": "execution/__init__.py",
+      "suggested_layer": "L4"
+    },
+    {
+      "path": "execution/unified_tool_execution_gateway.py",
+      "suggested_layer": "L4"
+    }
+  ],
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T17:22:00+00:00",
+  "v2_analysis": false,
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true
+}

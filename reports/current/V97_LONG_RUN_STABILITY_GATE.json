@@ -1,0 +1,13 @@
+{
+  "version": "V97.0",
+  "status": "pass",
+  "v95_2_pass_rounds": 5,
+  "v96_pass_rounds": 5,
+  "gateway_error": 0,
+  "external_api_calls": 0,
+  "real_side_effects": 0,
+  "memory_pollution_detected": false,
+  "state_drift_detected": false,
+  "audit_written": true,
+  "remaining_failures": []
+}

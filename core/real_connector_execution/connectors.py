@@ -1,9 +1,18 @@
 from __future__ import annotations
 
+# _v1082_offline_guard_activation
+try:
+    from infrastructure.offline_runtime_guard import activate as _v1082_activate_offline_guard
+    _v1082_activate_offline_guard("real_connector_execution")
+except Exception:
+    pass
+
+
 import hashlib
 import json
 import subprocess
 import sys
+from execution.unified_tool_execution_gateway import check_tool_call
 from pathlib import Path
 
 from .schemas import ConnectorMode, ConnectorStatus, new_id
@@ -87,6 +96,9 @@ class SafeScriptConnector(BaseConnector):
             }, ""
         cmd = [sys.executable, "-V"]
         try:
+            gate = check_tool_call(" ".join(cmd), {"source": "SafeScriptConnector"})
+            if gate.get("status") == "blocked":
+                return ConnectorStatus.BLOCKED, {"script_executed": False, "gateway": gate}, ""
             res = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
             return ConnectorStatus.EXECUTED, {
                 "script_executed": True,

@@ -1,0 +1,23 @@
+{
+  "version": "V107.0",
+  "subsystems": {
+    "skill_engine_unified": true,
+    "runtime_orchestration_unified": true,
+    "governance_gate_unified": true,
+    "continuity_engine_unified": true,
+    "connector_gateway_unified": true,
+    "capability_evolution_unified": true,
+    "context_loading_unified": true,
+    "observability_ledger_unified": true,
+    "task_lifecycle_unified": true,
+    "action_adapter_unified": true,
+    "no_split_brain_recommendation": true,
+    "no_split_brain_runtime": true,
+    "no_split_brain_governance": true,
+    "old_entrypoints_wrapped": true,
+    "external_api_not_awakened": true,
+    "commit_skill_blocked": true,
+    "real_side_effects_zero": true,
+    "mainline_hook_unified": true
+  }
+}
