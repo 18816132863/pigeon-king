@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import asyncio
 
-from execution import SpeculativeDecoder
 from execution.speculative_decoding import (
+    SpeculativeDecoder,
     DraftModel,
     TargetModel,
     SpeculativeDecodingConfig,
@@ -11,6 +11,7 @@ from execution.speculative_decoding import (
     SpeculativeResult,
     SpeculativeDecodeResult,
 )
+from execution.speculative_decoding import SpeculativeDecoder as _SDExportCheck
 
 
 def test_speculative_decoder_import_and_instantiate() -> None:
@@ -62,7 +63,7 @@ def test_dry_run_requires_no_external_api_key(monkeypatch) -> None:
 
 
 def test_execution_package_exports_decoder() -> None:
-    from execution import SpeculativeDecoder as ExportedDecoder
+    from execution.speculative_decoding import SpeculativeDecoder as ExportedDecoder
 
     draft = DraftModel()
     target = TargetModel()

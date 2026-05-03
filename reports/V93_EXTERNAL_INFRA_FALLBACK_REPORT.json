@@ -1,0 +1,78 @@
+{
+  "version": "V93.0",
+  "status": "pass",
+  "items": [
+    {
+      "infra": "celery",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "postgresql",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "redis",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "mesh",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "monitoring",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "alerting",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "hardware",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "connectors",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "connector_factory",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "connection_pool",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "langgraph",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    },
+    {
+      "infra": "openapi",
+      "mode": "local_fallback_or_mock_contract",
+      "fatal": false,
+      "real_external_call": false
+    }
+  ]
+}

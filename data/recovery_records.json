@@ -1,88 +1,56 @@
 {
   "records": [
     {
-      "record_id": "test_instance_test_step_20260426135958463314",
-      "instance_id": "test_instance",
-      "step_id": "test_step",
-      "error_type": "transient",
-      "error_message": "Test error",
+      "record_id": "retry_v86_parallel_basic_0",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "error_type": "exception",
+      "error_message": "No handler for action 'safe_sleep_b'",
       "recovery_action": "retry",
-      "timestamp": "2026-04-26T13:59:58.463336",
+      "timestamp": "2026-05-02T01:43:02.005847",
       "retry_count": 0,
       "max_retries": 3,
       "resolved": false,
       "resolved_at": null,
-      "metadata": {}
+      "metadata": {
+        "type": "retry",
+        "attempt": 0,
+        "original_error_type": "ErrorType.EXCEPTION"
+      }
     },
     {
-      "record_id": "test_instance_test_step_20260426143251755140",
-      "instance_id": "test_instance",
-      "step_id": "test_step",
-      "error_type": "transient",
-      "error_message": "Test error",
-      "recovery_action": "retry",
-      "timestamp": "2026-04-26T14:32:51.755156",
+      "record_id": "rollback_v86_parallel_basic_20260502014302007811",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "error_type": "rollback_condition",
+      "error_message": "Rollback to unknown",
+      "recovery_action": "rollback",
+      "timestamp": "2026-05-02T01:43:02.007819",
       "retry_count": 0,
       "max_retries": 3,
       "resolved": false,
       "resolved_at": null,
-      "metadata": {}
+      "metadata": {
+        "type": "rollback",
+        "rollback_point_id": "unknown"
+      }
     },
     {
-      "record_id": "test_instance_test_step_20260426160021152418",
-      "instance_id": "test_instance",
-      "step_id": "test_step",
-      "error_type": "transient",
-      "error_message": "Test error",
-      "recovery_action": "retry",
-      "timestamp": "2026-04-26T16:00:21.152438",
+      "record_id": "rollback_v86_parallel_basic_20260502014302009857",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "error_type": "rollback_condition",
+      "error_message": "Rollback to unknown",
+      "recovery_action": "rollback",
+      "timestamp": "2026-05-02T01:43:02.009864",
       "retry_count": 0,
       "max_retries": 3,
       "resolved": false,
       "resolved_at": null,
-      "metadata": {}
-    },
-    {
-      "record_id": "test_instance_test_step_20260426172224623650",
-      "instance_id": "test_instance",
-      "step_id": "test_step",
-      "error_type": "transient",
-      "error_message": "Test error",
-      "recovery_action": "retry",
-      "timestamp": "2026-04-26T17:22:24.623671",
-      "retry_count": 0,
-      "max_retries": 3,
-      "resolved": false,
-      "resolved_at": null,
-      "metadata": {}
-    },
-    {
-      "record_id": "test_instance_test_step_20260426173614193174",
-      "instance_id": "test_instance",
-      "step_id": "test_step",
-      "error_type": "transient",
-      "error_message": "Test error",
-      "recovery_action": "retry",
-      "timestamp": "2026-04-26T17:36:14.193212",
-      "retry_count": 0,
-      "max_retries": 3,
-      "resolved": false,
-      "resolved_at": null,
-      "metadata": {}
-    },
-    {
-      "record_id": "test_instance_test_step_20260426175317860921",
-      "instance_id": "test_instance",
-      "step_id": "test_step",
-      "error_type": "transient",
-      "error_message": "Test error",
-      "recovery_action": "retry",
-      "timestamp": "2026-04-26T17:53:17.860952",
-      "retry_count": 0,
-      "max_retries": 3,
-      "resolved": false,
-      "resolved_at": null,
-      "metadata": {}
+      "metadata": {
+        "type": "rollback",
+        "rollback_point_id": "unknown"
+      }
     }
   ]
 }

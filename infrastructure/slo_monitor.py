@@ -3,8 +3,8 @@ from __future__ import annotations
 from contextlib import closing
 from pathlib import Path
 from typing import Dict, Optional
-from platform_adapter.runtime_state_store import connect, summarize_runtime, _now_ms
-from platform_adapter.delivery_outbox import init_outbox_tables, outbox_summary
+from infrastructure.platform_adapter.runtime_state_store import connect, summarize_runtime, _now_ms
+from infrastructure.platform_adapter.delivery_outbox import init_outbox_tables, outbox_summary
 
 def _scalar(conn, sql, params=()):
     row=conn.execute(sql, params).fetchone(); return int(row[0] or 0) if row else 0

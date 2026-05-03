@@ -1,0 +1,100 @@
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777613387.030789, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777613387.0310574, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777613387.0312068, "type": "edge"}
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777613429.5125484, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777613429.512675, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777613429.5127559, "type": "edge"}
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777614139.9671898, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777614139.9673002, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777614139.967393, "type": "edge"}
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777614557.5721228, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777614557.5722423, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777614557.5723155, "type": "edge"}
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777615056.1510444, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777615056.1511636, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777615056.151239, "type": "edge"}
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777615091.6616094, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777615091.6617267, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777615091.6618352, "type": "edge"}
+{"node_id": "test_1", "kind": "semantic", "text": "test memory", "confidence": 0.9, "source": "system", "ts": 1777616692.1391025, "type": "node"}
+{"node_id": "test_2", "kind": "episodic", "text": "related memory", "confidence": 0.8, "source": "system", "ts": 1777616692.1392303, "type": "node"}
+{"source": "test_1", "relation": "related_to", "target": "test_2", "ts": 1777616692.139314, "type": "edge"}
+{"node_id": "v94_trigger_pkg_1", "kind": "preference", "text": "用户偏好直接可执行命令", "confidence": 0.85, "source": "system", "ts": 1777627430.2954333, "type": "node"}
+{"node_id": "v94_trigger_pkg_2", "kind": "procedural", "text": "离线模式无需外部API", "confidence": 0.9, "source": "system", "ts": 1777627430.2954352, "type": "node"}
+{"source": "v94_trigger_pkg_1", "relation": "related_to", "target": "v94_trigger_pkg_2", "ts": 1777627430.2957237, "type": "edge"}
+{"node_id": "v94_trigger_pkg_1", "kind": "preference", "text": "用户偏好直接可执行命令", "confidence": 0.85, "source": "system", "ts": 1777627609.3621478, "type": "node"}
+{"node_id": "v94_trigger_pkg_2", "kind": "procedural", "text": "离线模式无需外部API", "confidence": 0.9, "source": "system", "ts": 1777627609.3621492, "type": "node"}
+{"source": "v94_trigger_pkg_1", "relation": "related_to", "target": "v94_trigger_pkg_2", "ts": 1777627609.3623214, "type": "edge"}
+{"node_id": "v94_trigger_pkg_1", "kind": "preference", "text": "用户偏好直接可执行命令", "confidence": 0.85, "source": "system", "ts": 1777627691.8979974, "type": "node"}
+{"node_id": "v94_trigger_pkg_2", "kind": "procedural", "text": "离线模式无需外部API", "confidence": 0.9, "source": "system", "ts": 1777627691.897999, "type": "node"}
+{"source": "v94_trigger_pkg_1", "relation": "related_to", "target": "v94_trigger_pkg_2", "ts": 1777627691.8981795, "type": "edge"}
+{"node_id": "v94_trigger_pkg_1", "kind": "preference", "text": "用户偏好直接可执行命令", "confidence": 0.85, "source": "system", "ts": 1777627752.2035391, "type": "node"}
+{"node_id": "v94_trigger_pkg_2", "kind": "procedural", "text": "离线模式无需外部API", "confidence": 0.9, "source": "system", "ts": 1777627752.2035408, "type": "node"}
+{"source": "v94_trigger_pkg_1", "relation": "related_to", "target": "v94_trigger_pkg_2", "ts": 1777627752.203759, "type": "edge"}
+{"node_id": "v95_pref_direct_cmd", "kind": "preference", "text": "用户偏好直接可执行命令不绕弯子", "confidence": 0.88, "source": "system", "ts": 1777628472.1133082, "type": "node"}
+{"node_id": "v95_pref_offline", "kind": "preference", "text": "离线模式无需外部API", "confidence": 0.92, "source": "system", "ts": 1777628472.1133094, "type": "node"}
+{"source": "v95_pref_direct_cmd", "relation": "related_to", "target": "v95_pref_offline", "ts": 1777628472.1134877, "type": "edge"}
+{"node_id": "v95_solution_test", "kind": "procedural", "text": "V95 方案搜索闭环测试", "confidence": 0.8, "source": "system", "ts": 1777628472.1584444, "type": "node"}
+{"node_id": "v95_daily_20260501", "kind": "episodic", "text": "V95 每日评估完成: 2025-05-01", "confidence": 0.85, "source": "system", "ts": 1777628472.1635113, "type": "node"}
+{"node_id": "v95_pref_direct_cmd", "kind": "preference", "text": "用户偏好直接可执行命令不绕弯子", "confidence": 0.88, "source": "system", "ts": 1777628507.6663249, "type": "node"}
+{"node_id": "v95_pref_offline", "kind": "preference", "text": "离线模式无需外部API", "confidence": 0.92, "source": "system", "ts": 1777628507.666326, "type": "node"}
+{"source": "v95_pref_direct_cmd", "relation": "related_to", "target": "v95_pref_offline", "ts": 1777628507.6665256, "type": "edge"}
+{"node_id": "v95_solution_test", "kind": "procedural", "text": "V95 方案搜索闭环测试", "confidence": 0.8, "source": "system", "ts": 1777628507.699979, "type": "node"}
+{"node_id": "v95_daily_20260501", "kind": "episodic", "text": "V95 每日评估完成: 2025-05-01", "confidence": 0.85, "source": "system", "ts": 1777628507.7050576, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777633260.1023033, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777633374.4460688, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777633438.4104874, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634254.4632525, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634254.5524957, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634254.6416554, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634254.7302473, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634254.8301144, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634513.4731674, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634513.5629768, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634513.652184, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634513.7411988, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634513.8309596, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634688.5251024, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634688.6146235, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634688.7050037, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634688.7937713, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634688.8830268, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634697.2463048, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634718.6599686, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634732.4544988, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634781.1764994, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634822.1626456, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634832.7141333, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634983.7135482, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634983.8059425, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634983.898127, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634983.990458, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777634984.086315, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635082.1847088, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635082.27953, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635082.3748612, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635082.4672415, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635082.5597463, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635184.4379876, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635184.5336533, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635184.6306815, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635184.7247376, "type": "node"}
+{"node_id": "v96_after_import_fail", "kind": "episodic", "text": "import failure test survived", "confidence": 0.8, "source": "system", "ts": 1777635184.8281603, "type": "node"}
+{"node_id": "main_330a", "kind": "mainline", "text": "今天天气怎么样", "confidence": 0.8, "source": "system", "ts": 1777641275.073893, "type": "node"}
+{"node_id": "main_f47b", "kind": "mainline", "text": "提醒我30分钟后开会", "confidence": 0.8, "source": "system", "ts": 1777641275.102849, "type": "node"}
+{"node_id": "main_4389", "kind": "mainline", "text": "导出昨天的聊天记录", "confidence": 0.8, "source": "system", "ts": 1777641275.1062589, "type": "node"}
+{"node_id": "main_f4ca", "kind": "mainline", "text": "搜索之前关于Python的项目", "confidence": 0.8, "source": "system", "ts": 1777641275.1096349, "type": "node"}
+{"node_id": "main_3a1f", "kind": "mainline", "text": "我更喜欢简洁的回答", "confidence": 0.8, "source": "system", "ts": 1777641275.113047, "type": "node"}
+{"node_id": "main_e483", "kind": "mainline", "text": "每日报告生成", "confidence": 0.8, "source": "system", "ts": 1777641275.1164975, "type": "node"}
+{"node_id": "main_e210", "kind": "mainline", "text": "发送密码 abc123 给张三", "confidence": 0.8, "source": "system", "ts": 1777641275.1198897, "type": "node"}
+{"node_id": "main_0000", "kind": "mainline", "text": "(empty)", "confidence": 0.8, "source": "system", "ts": 1777641275.1233215, "type": "node"}
+{"node_id": "main_6f11", "kind": "mainline", "text": "处理批量消息", "confidence": 0.8, "source": "system", "ts": 1777641275.1268823, "type": "node"}
+{"node_id": "main_fb06", "kind": "mainline", "text": "第一件事", "confidence": 0.8, "source": "system", "ts": 1777641275.130391, "type": "node"}
+{"node_id": "main_2b7f", "kind": "mainline", "text": "第二件事需要处理", "confidence": 0.8, "source": "system", "ts": 1777641275.1338904, "type": "node"}
+{"node_id": "main_119a", "kind": "mainline", "text": "第三件事很重要", "confidence": 0.8, "source": "system", "ts": 1777641275.137679, "type": "node"}
+{"node_id": "main_b5b6", "kind": "mainline", "text": "第四件事明天做", "confidence": 0.8, "source": "system", "ts": 1777641275.1412005, "type": "node"}
+{"node_id": "pkg_test_1", "kind": "preference", "text": "用户喜欢直接可执行命令", "confidence": 0.9, "source": "system", "ts": 1777643870.3607216, "type": "node"}
+{"node_id": "pkg_test_2", "kind": "topic", "text": "DeepSeek V4 Pro 推理", "confidence": 0.85, "source": "system", "ts": 1777643870.3607233, "type": "node"}
+{"node_id": "pkg_test_3", "kind": "preference", "text": "离线优先模式", "confidence": 0.88, "source": "system", "ts": 1777643870.3607242, "type": "node"}
+{"source": "pkg_test_1", "relation": "related_to", "target": "pkg_test_2", "ts": 1777643870.3609576, "type": "edge"}
+{"source": "pkg_test_3", "relation": "supports", "target": "pkg_test_1", "ts": 1777643870.3609846, "type": "edge"}

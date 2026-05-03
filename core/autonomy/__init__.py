@@ -53,3 +53,5 @@ __all__ = [
     "run_autonomy_cycle",
     "init_autonomy_system",
 ]
+from .goal_strategy_kernel import GoalStrategyKernel
+from .task_graph_compiler import TaskGraphCompiler

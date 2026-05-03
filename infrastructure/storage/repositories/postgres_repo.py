@@ -20,7 +20,7 @@ try:
 except ImportError:
     HAS_ASYNCPG = False
 
-from domain.tasks import TaskSpec, TaskStatus, ScheduleType, EventType
+from core.domain.tasks.specs import TaskSpec, TaskStatus, ScheduleType, EventType
 
 
 def get_project_root() -> Path:
@@ -183,7 +183,7 @@ class PostgresTaskRepository:
     
     def _row_to_task(self, row) -> TaskSpec:
         """将数据库行转换为 TaskSpec"""
-        from domain.tasks import ScheduleSpec, RetryPolicy, TimeoutPolicy, StepSpec
+        from core.domain.tasks.specs import ScheduleSpec, RetryPolicy, TimeoutPolicy, StepSpec
         
         schedule = None
         if row["schedule_type"]:

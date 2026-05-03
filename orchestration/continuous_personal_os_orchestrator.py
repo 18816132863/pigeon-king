@@ -8,7 +8,7 @@ from core.knowledge import KnowledgeRefinery
 from core.privacy import PrivacyBoundaryEngine
 from infrastructure.ops import OpsHealthSupervisor
 from infrastructure.capability_lifecycle import CapabilityPromotionEngine, CapabilityRetirementPolicy
-from learning_loop.meta_learning import MetaLearningEngine
+from memory_context.learning_loop.meta_learning import MetaLearningEngine
 
 
 class ContinuousPersonalOSOrchestrator:

@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import json
 
-from domain.tasks import TaskSpec, TaskStatus, TriggerMode
+from core.domain.tasks.specs import TaskSpec, TaskStatus, TriggerMode
 from infrastructure.storage.repositories import SQLiteTaskRepository
 
 

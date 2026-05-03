@@ -1,0 +1,1129 @@
+{"ts": 1777613387.0268395, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777613387.026999, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777613387.0270605, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613387.0309153, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777613387.0311282, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777613387.0313458, "level": "WARN", "module": "PersonalKnowledgeGraphV5", "message": "writeback_skipped_no_kernel", "detail": {"node_id": "test_1"}}
+{"ts": 1777613387.0387135, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.2}}
+{"ts": 1777613387.0389707, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777613387.0392299, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.25}}
+{"ts": 1777613387.040111, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.05}}
+{"ts": 1777613387.0403235, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777613387.0405283, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777613387.0407631, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.25}}
+{"ts": 1777613387.0602484, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_0d6a3e8eb541", "dry_run_no": 1}}
+{"ts": 1777613387.0655746, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613387.065682, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0657272, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777613387.065785, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0658205, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777613387.065866, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0659091, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777613387.0659437, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0659761, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777613387.066108, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777613387.0661767, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777613387.0662189, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0662723, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777613387066", "name": "test_task"}}
+{"ts": 1777613387.0663152, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0665944, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777613387.066702, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0667412, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777613387066", "name": "celery_test"}}
+{"ts": 1777613387.0667813, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777613387.0668206, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777613387.0669312, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777613387066", "channel": "unknown"}}
+{"ts": 1777613387.066978, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777613387.0670202, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777613387.0671716, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_132947.json"}}
+{"ts": 1777613387.0710497, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777613387.0712664, "level": "WARN", "module": "self_evolution", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613387.0713093, "level": "ERROR", "module": "self_evolution", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613387.0713835, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "self_evolution.run_cycle", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613387.0714717, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613387.071507, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613387.07154, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.knowledge_graph", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613387.0716116, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613387.0716438, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613387.0716765, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.preference_evolution", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613387.0717444, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613387.0717773, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613387.0718095, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.writeback_guard", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613387.0718818, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777613387.0721, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_132947.json"}}
+{"ts": 1777613387.0721874, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777613387.072264, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613387.072298, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777613387.0724108, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777613387.0724478, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777613387.0725188, "level": "WARN", "module": "orchestration", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613387.0725524, "level": "ERROR", "module": "orchestration", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613387.0725865, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "orchestration.solution_search", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613387.0726955, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777613387072", "channel": "system"}}
+{"ts": 1777613387.0727808, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777613387.0728993, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777613387072", "name": "offline_task"}}
+{"ts": 1777613387.072974, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777613387.0731804, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777613429.5104759, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777613429.510601, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777613429.5106602, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613429.5124798, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 1}}
+{"ts": 1777613429.512601, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777613429.5127156, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777613429.512832, "level": "WARN", "module": "PersonalKnowledgeGraphV5", "message": "writeback_skipped_no_kernel", "detail": {"node_id": "test_1"}}
+{"ts": 1777613429.5150242, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 2}}
+{"ts": 1777613429.5153375, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.45}}
+{"ts": 1777613429.5154924, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777613429.5160253, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.5}}
+{"ts": 1777613429.5164368, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.3}}
+{"ts": 1777613429.5165434, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777613429.5166254, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777613429.5168157, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.5}}
+{"ts": 1777613429.5171962, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "confidence_key", "confidence": 0.8}}
+{"ts": 1777613429.5194352, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777613429.5374722, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_a8765101ce83", "dry_run_no": 1}}
+{"ts": 1777613429.5406804, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5408068, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5408614, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5409257, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5409691, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777613429.5410137, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5410538, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777613429.5410943, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5411313, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777613429.5412552, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777613429.541348, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777613429.5414166, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5414793, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777613429541", "name": "test_task"}}
+{"ts": 1777613429.5415294, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777613429.543211, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777613429.543347, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5434124, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777613429543", "name": "celery_test"}}
+{"ts": 1777613429.5434666, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777613429.5435252, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777613429.5436559, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777613429543", "channel": "unknown"}}
+{"ts": 1777613429.543713, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777613429.5437672, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777613429.5439606, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_133029.json"}}
+{"ts": 1777613429.545384, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777613429.5455983, "level": "WARN", "module": "self_evolution", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613429.5456474, "level": "ERROR", "module": "self_evolution", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613429.5456967, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "self_evolution.run_cycle", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613429.5457907, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613429.54584, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613429.5458817, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.knowledge_graph", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613429.5459669, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613429.546006, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613429.5460443, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.preference_evolution", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613429.546128, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613429.546167, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613429.5462053, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.writeback_guard", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613429.5463037, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777613429.546587, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_133029.json"}}
+{"ts": 1777613429.5466907, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777613429.5467823, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777613429.546825, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777613429.5469127, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777613429.5469525, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777613429.5470362, "level": "WARN", "module": "orchestration", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777613429.5470746, "level": "ERROR", "module": "orchestration", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777613429.5471156, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "orchestration.solution_search", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777613429.5472462, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777613429547", "channel": "system"}}
+{"ts": 1777613429.547348, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777613429.5475037, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777613429547", "name": "offline_task"}}
+{"ts": 1777613429.547584, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777613429.5478132, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777614139.965325, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777614139.965453, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777614139.9655194, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614139.9671197, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 2}}
+{"ts": 1777614139.9672356, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777614139.9673352, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777614139.967477, "level": "WARN", "module": "PersonalKnowledgeGraphV5", "message": "writeback_skipped_no_kernel", "detail": {"node_id": "test_1"}}
+{"ts": 1777614139.9693966, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777614139.9696724, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.7}}
+{"ts": 1777614139.9697702, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777614139.9705641, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.75}}
+{"ts": 1777614139.970972, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.55}}
+{"ts": 1777614139.9710646, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777614139.9711401, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777614139.9713726, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.75}}
+{"ts": 1777614139.9717968, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "confidence_key", "confidence": 1.0}}
+{"ts": 1777614139.97364, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7699999999999999}}
+{"ts": 1777614139.988744, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_183caca6fc41", "dry_run_no": 1}}
+{"ts": 1777614139.9889212, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_35afee41837a", "dry_run_no": 2}}
+{"ts": 1777614139.9900239, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9901016, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9901438, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777614139.990195, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9902296, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777614139.9902644, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9902961, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777614139.9903283, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9903708, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777614139.9904714, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777614139.990535, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777614139.9905844, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9906404, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777614139990", "name": "test_task"}}
+{"ts": 1777614139.9906833, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777614139.992131, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777614139.9922204, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9922585, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777614139992", "name": "celery_test"}}
+{"ts": 1777614139.992297, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777614139.9923341, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777614139.992454, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777614139992", "channel": "unknown"}}
+{"ts": 1777614139.9925034, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777614139.9925442, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777614139.99269, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_134219.json"}}
+{"ts": 1777614139.9936945, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777614139.9938564, "level": "WARN", "module": "self_evolution", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614139.9938974, "level": "ERROR", "module": "self_evolution", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614139.9939394, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "self_evolution.run_cycle", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614139.9940186, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614139.9940524, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614139.9940858, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.knowledge_graph", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614139.9941573, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614139.9941914, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614139.994224, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.preference_evolution", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614139.9942923, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614139.9943242, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614139.994357, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.writeback_guard", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614139.9944448, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777614139.9946535, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_134219.json"}}
+{"ts": 1777614139.9947407, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777614139.9948208, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9948547, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777614139.994925, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777614139.9949572, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777614139.995032, "level": "WARN", "module": "orchestration", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614139.9950645, "level": "ERROR", "module": "orchestration", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614139.9950979, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "orchestration.solution_search", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614139.9952078, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777614139995", "channel": "system"}}
+{"ts": 1777614139.995279, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777614139.995412, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777614139995", "name": "offline_task"}}
+{"ts": 1777614139.9954863, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777614139.9957116, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777614557.5703158, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777614557.5704324, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777614557.570493, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614557.5720656, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 3}}
+{"ts": 1777614557.5721679, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777614557.5722785, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777614557.572404, "level": "WARN", "module": "PersonalKnowledgeGraphV5", "message": "writeback_skipped_no_kernel", "detail": {"node_id": "test_1"}}
+{"ts": 1777614557.5743098, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777614557.5746083, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 0.95}}
+{"ts": 1777614557.5747051, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777614557.5758111, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777614557.575867, "level": "WARN", "module": "PreferenceEvolutionModel", "message": "blocked_for_review", "detail": {"key": "risk_style"}}
+{"ts": 1777614557.5759473, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777614557.5760174, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777614557.5761929, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 0.95}}
+{"ts": 1777614557.576549, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "confidence_key", "confidence": 1.0}}
+{"ts": 1777614557.5901468, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_4a0b19e75749", "dry_run_no": 1}}
+{"ts": 1777614557.590331, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_a7115ce36c6c", "dry_run_no": 2}}
+{"ts": 1777614557.5913966, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614557.591477, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5915205, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777614557.591572, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5916064, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777614557.5916424, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614557.591674, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777614557.5917072, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5917377, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777614557.5918384, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777614557.5918999, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777614557.5919404, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614557.591987, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777614557591", "name": "test_task"}}
+{"ts": 1777614557.5920274, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5934958, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777614557.593587, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5936236, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777614557593", "name": "celery_test"}}
+{"ts": 1777614557.5936606, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777614557.5936966, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777614557.5937884, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777614557593", "channel": "unknown"}}
+{"ts": 1777614557.5938368, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777614557.5938773, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777614557.5940075, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_134917.json"}}
+{"ts": 1777614557.5950482, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777614557.5952418, "level": "WARN", "module": "self_evolution", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614557.5952916, "level": "ERROR", "module": "self_evolution", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614557.5953376, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "self_evolution.run_cycle", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614557.5954335, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614557.595468, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614557.595502, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.knowledge_graph", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614557.5955727, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614557.595606, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614557.5956385, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.preference_evolution", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614557.5957057, "level": "WARN", "module": "memory", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614557.595738, "level": "ERROR", "module": "memory", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614557.5957696, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "memory.writeback_guard", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614557.5958405, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777614557.5960345, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_134917.json"}}
+{"ts": 1777614557.5961199, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777614557.596196, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5962422, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777614557.5963144, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777614557.5963466, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777614557.596455, "level": "WARN", "module": "orchestration", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777614557.5964885, "level": "ERROR", "module": "orchestration", "message": "fallback_failed", "detail": {"error": "'str' object is not callable"}}
+{"ts": 1777614557.596522, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "orchestration.solution_search", "error": "'MockResult' object is not iterable"}}
+{"ts": 1777614557.5966308, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777614557596", "channel": "system"}}
+{"ts": 1777614557.5967047, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777614557.5968215, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777614557596", "name": "offline_task"}}
+{"ts": 1777614557.5968938, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777614557.5971026, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777615056.142159, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777615056.1422656, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777615056.1423206, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777615056.146263, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 4}}
+{"ts": 1777615056.1509638, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777615056.1510937, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777615056.1512008, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777615056.1513243, "level": "WARN", "module": "PersonalKnowledgeGraphV5", "message": "writeback_failed", "detail": {"node_id": "test_1", "error": "PersonalMemoryKernelV4.write() missing 1 required positional argument: 'content'"}}
+{"ts": 1777615056.1566591, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777615056.1735675, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777615056.1736283, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777615056.1737943, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777615056.173892, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777615056.1744282, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777615056.1744819, "level": "WARN", "module": "PreferenceEvolutionModel", "message": "blocked_for_review", "detail": {"key": "risk_style"}}
+{"ts": 1777615056.1745613, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777615056.1746302, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777615056.174826, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 1.0}}
+{"ts": 1777615056.1751916, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "confidence_key", "confidence": 1.0}}
+{"ts": 1777615056.1890264, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777615056.1890807, "level": "INFO", "module": "SelfImprovementLoop", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777615056.1891215, "level": "INFO", "module": "SelfImprovementLoop", "message": "agent_kernel_auto_attached", "detail": {}}
+{"ts": 1777615056.1892142, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_8ab882f410a5", "dry_run_no": 1}}
+{"ts": 1777615056.1893559, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_d195b54fc1d5", "dry_run_no": 2}}
+{"ts": 1777615056.1904004, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1904807, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1905253, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1905782, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1906195, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777615056.1906571, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615056.190689, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777615056.1907227, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777615056.190753, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777615056.1908631, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777615056.1909232, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777615056.1909633, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615056.191013, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777615056191", "name": "test_task"}}
+{"ts": 1777615056.1910548, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1916497, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777615056.1917393, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777615056.191777, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777615056191", "name": "celery_test"}}
+{"ts": 1777615056.1918275, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777615056.1918652, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777615056.191968, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777615056191", "channel": "unknown"}}
+{"ts": 1777615056.192015, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777615056.1920562, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777615056.1921842, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_135736.json"}}
+{"ts": 1777615056.1957085, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777615056.1961157, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777615056.1963181, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_135736.json"}}
+{"ts": 1777615056.1964366, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777615056.1965137, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1965473, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777615056.1966188, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777615056.1966584, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777615056.1967382, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "orchestration.solution_search", "error": "OfflineCapabilityMarketplace.search() takes 2 positional arguments but 3 were given"}}
+{"ts": 1777615056.1968744, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777615056196", "channel": "system"}}
+{"ts": 1777615056.1969476, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777615056.1970649, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777615056197", "name": "offline_task"}}
+{"ts": 1777615056.1971388, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777615056.1973488, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777615091.6551752, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777615091.655271, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777615091.6553257, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777615091.6593237, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 5}}
+{"ts": 1777615091.661529, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777615091.661658, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777615091.661774, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777615091.661933, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "writeback_done", "detail": {"node_id": "test_1", "result": "{'status': 'rejected', 'allow': False, 'reason': 'untrusted_source'}"}}
+{"ts": 1777615091.663715, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777615091.679308, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777615091.6793857, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777615091.6795602, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777615091.679653, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777615091.6806273, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777615091.6806848, "level": "WARN", "module": "PreferenceEvolutionModel", "message": "blocked_for_review", "detail": {"key": "risk_style"}}
+{"ts": 1777615091.6807644, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777615091.680845, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777615091.68101, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 1.0}}
+{"ts": 1777615091.6813803, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "confidence_key", "confidence": 1.0}}
+{"ts": 1777615091.6923125, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777615091.692398, "level": "INFO", "module": "SelfImprovementLoop", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777615091.6924486, "level": "INFO", "module": "SelfImprovementLoop", "message": "agent_kernel_auto_attached", "detail": {}}
+{"ts": 1777615091.6925569, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2b423879f517", "dry_run_no": 1}}
+{"ts": 1777615091.6927025, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ee6aab9e5a30", "dry_run_no": 2}}
+{"ts": 1777615091.6938581, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615091.693939, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615091.6939833, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777615091.6940393, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615091.6940753, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777615091.6941123, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615091.6941438, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777615091.694177, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777615091.6942074, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777615091.6943066, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777615091.69438, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777615091.694425, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615091.694475, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777615091694", "name": "test_task"}}
+{"ts": 1777615091.6945171, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777615091.7029123, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777615091.703015, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777615091.703062, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777615091703", "name": "celery_test"}}
+{"ts": 1777615091.7031019, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777615091.70314, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777615091.7032359, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777615091703", "channel": "unknown"}}
+{"ts": 1777615091.703282, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777615091.7033224, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777615091.7034795, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_135811.json"}}
+{"ts": 1777615091.7045958, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777615091.7049637, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777615091.705163, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_135811.json"}}
+{"ts": 1777615091.7052777, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777615091.7053769, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777615091.7054331, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777615091.7055242, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777615091.7055662, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777615091.7056448, "level": "ERROR", "module": "V90FinalAccessGateway", "message": "gateway_exception", "detail": {"capability": "orchestration.solution_search", "error": "OfflineCapabilityMarketplace.search() takes 2 positional arguments but 3 were given"}}
+{"ts": 1777615091.7057624, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777615091705", "channel": "system"}}
+{"ts": 1777615091.7058477, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777615091.7059662, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777615091705", "name": "offline_task"}}
+{"ts": 1777615091.7060428, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777615091.706247, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777616443.3203998, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777616443.5675666, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777616443.5677314, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777616443567", "channel": "system"}}
+{"ts": 1777616463.2449353, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777616463.4970658, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777616463.4972398, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777616463497", "channel": "system"}}
+{"ts": 1777616692.1343908, "level": "INFO", "module": "v91_gate_test", "message": "test_audit_info", "detail": {}}
+{"ts": 1777616692.1345313, "level": "WARN", "module": "v91_gate_test", "message": "test_audit_warning", "detail": {}}
+{"ts": 1777616692.1345873, "level": "WARN", "module": "test_module", "message": "external_api_unavailable_in_offline_mode", "detail": {}}
+{"ts": 1777616692.136389, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 6}}
+{"ts": 1777616692.139009, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777616692.139155, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_1", "kind": "semantic", "confidence": 0.9}}
+{"ts": 1777616692.139276, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "test_2", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777616692.1394317, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "writeback_done", "detail": {"node_id": "test_1", "result": "{'status': 'rejected', 'allow': False, 'reason': 'untrusted_source'}"}}
+{"ts": 1777616692.1413019, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777616692.1631093, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777616692.1631908, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777616692.163389, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777616692.1635044, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "delivery_style"}}
+{"ts": 1777616692.1638186, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "delivery_style", "confidence": 1.0}}
+{"ts": 1777616692.1638758, "level": "WARN", "module": "PreferenceEvolutionModel", "message": "blocked_for_review", "detail": {"key": "risk_style"}}
+{"ts": 1777616692.1639707, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "task_001"}}
+{"ts": 1777616692.164065, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user_correction", "key": "risk_style"}}
+{"ts": 1777616692.1644273, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "risk_style", "confidence": 1.0}}
+{"ts": 1777616692.1651697, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "confidence_key", "confidence": 1.0}}
+{"ts": 1777616692.17879, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777616692.1788592, "level": "INFO", "module": "SelfImprovementLoop", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777616692.178902, "level": "INFO", "module": "SelfImprovementLoop", "message": "agent_kernel_auto_attached", "detail": {}}
+{"ts": 1777616692.1790152, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_4d32026ca8fb", "dry_run_no": 1}}
+{"ts": 1777616692.179176, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_23307032aae0", "dry_run_no": 2}}
+{"ts": 1777616692.1803544, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1804583, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1805024, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777616692.180558, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777616692.180594, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777616692.180633, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1806655, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777616692.1806986, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1807306, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777616692.1808364, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "test"}}
+{"ts": 1777616692.180902, "level": "WARN", "module": "IdentityDriftGuard", "message": "drift_detected", "detail": {"violations": ["I am the user"]}}
+{"ts": 1777616692.181067, "level": "INFO", "module": "OfflineMultimodalSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1811235, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777616692181", "name": "test_task"}}
+{"ts": 1777616692.1811671, "level": "INFO", "module": "MemoryRedis", "message": "initialized", "detail": {}}
+{"ts": 1777616692.18227, "level": "INFO", "module": "SQLiteRepo", "message": "initialized", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/sqlite_repo.jsonl"}}
+{"ts": 1777616692.18238, "level": "INFO", "module": "MockCeleryApp", "message": "initialized", "detail": {}}
+{"ts": 1777616692.182422, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777616692182", "name": "celery_test"}}
+{"ts": 1777616692.1824672, "level": "INFO", "module": "LocalWorkflowExecutor", "message": "run", "detail": {"nodes": 3}}
+{"ts": 1777616692.1825066, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "web_search"}}
+{"ts": 1777616692.1826153, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777616692182", "channel": "unknown"}}
+{"ts": 1777616692.1826625, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 4}}
+{"ts": 1777616692.182708, "level": "WARN", "module": "MockAutoGit", "message": "push_blocked_in_offline_mode", "detail": {}}
+{"ts": 1777616692.182865, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_142452.json"}}
+{"ts": 1777616692.183996, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777616692.1843705, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777616692.184599, "level": "INFO", "module": "MockAutoBackup", "message": "backup_created", "detail": {"path": "/home/sandbox/.openclaw/workspace/.offline_state/local_backups/backup_20260501_142452.json"}}
+{"ts": 1777616692.1846926, "level": "WARN", "module": "multimodal_search", "message": "image_search_unavailable_offline", "detail": {}}
+{"ts": 1777616692.1847718, "level": "INFO", "module": "OfflineCrossLingualSearcher", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1848063, "level": "WARN", "module": "cross_lingual_search", "message": "cross_lingual_search_unavailable_offline", "detail": {}}
+{"ts": 1777616692.1848786, "level": "INFO", "module": "OfflineVisualAgent", "message": "initialized", "detail": {}}
+{"ts": 1777616692.1849117, "level": "WARN", "module": "visual_operation_agent", "message": "visual_agent_unavailable_offline", "detail": {}}
+{"ts": 1777616692.1936173, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777616692193", "channel": "system"}}
+{"ts": 1777616692.1937068, "level": "INFO", "module": "OfflineSandboxGate", "message": "allow_in_offline", "detail": {"name": "unknown"}}
+{"ts": 1777616692.1938353, "level": "INFO", "module": "InProcessQueue", "message": "task_enqueued", "detail": {"task_id": "ipq_1777616692193", "name": "offline_task"}}
+{"ts": 1777616692.1939123, "level": "INFO", "module": "MockConnectorFactory", "message": "create", "detail": {"type": "generic"}}
+{"ts": 1777616692.1941555, "level": "WARN", "module": "V90FinalAccessGateway", "message": "route_not_found", "detail": {"capability": "nonexistent.capability"}}
+{"ts": 1777616696.8279123, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777616697.059729, "level": "INFO", "module": "MockTTS", "message": "synthesize", "detail": {"text_len": 0}}
+{"ts": 1777616697.0598817, "level": "INFO", "module": "AlertDraft", "message": "drafted", "detail": {"id": "alert_1777616697059", "channel": "system"}}
+{"ts": 1777616708.1982052, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777616714.7470138, "level": "INFO", "module": "V90FinalAccessGateway", "message": "initialized", "detail": {"offline_mode": true}}
+{"ts": 1777618566.7926774, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777618566.8022153, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777618566.8057003, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777618566.8347652, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777618566.8348525, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777618930.9730468, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777618930.9749055, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777618930.9795935, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777618930.997102, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777618930.997159, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777618931.1073313, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777618931.109613, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777618931.1116567, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777618931.1275778, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777618931.1276352, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777619324.8317816, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777619324.8358567, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777619324.8393083, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777619324.8711386, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777619324.871242, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777619678.2308557, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777619678.233115, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777619678.2351682, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777619678.2509766, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777619678.2510347, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777620457.3119538, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777620457.314271, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777620457.3163068, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777620457.3324225, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777620457.33249, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777620694.149199, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777620694.1515148, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777620694.15355, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777620694.1693938, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777620694.1694613, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777620741.2927442, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777620741.2950525, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777620741.2970924, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777620741.3129408, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777620741.3130004, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777620834.7248063, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777620834.7271166, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777620834.729148, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777620834.7449296, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777620834.7449865, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777620834.7553117, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c6c534de7118", "dry_run_no": 1}}
+{"ts": 1777621210.5150445, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777621210.5173335, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777621210.5193682, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777621210.5351465, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777621210.5352044, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777621210.5454361, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_32b53ac77d4a", "dry_run_no": 1}}
+{"ts": 1777621252.8324904, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_a6be8a0379a0", "dry_run_no": 1}}
+{"ts": 1777621281.2190876, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c8b28942a158", "dry_run_no": 1}}
+{"ts": 1777621316.432959, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777621316.4352713, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777621316.4372761, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777621316.4530146, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777621316.4530716, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777621316.4633708, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_8311f257b003", "dry_run_no": 1}}
+{"ts": 1777621699.5895352, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777621699.5935473, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777621699.596009, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777621699.6116507, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777621699.6117084, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777621699.6219177, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_f13749731d9d", "dry_run_no": 1}}
+{"ts": 1777622878.34841, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777622878.3525097, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777622878.3553882, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777622878.3722997, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777622878.3723812, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777622878.38291, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_28eacf454b06", "dry_run_no": 1}}
+{"ts": 1777627269.573388, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777627269.5773132, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777627279.1894343, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777627279.1930985, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777627430.2905383, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 2, "edges": 7}}
+{"ts": 1777627430.295264, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777627430.2955205, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_1", "kind": "preference", "confidence": 0.85}}
+{"ts": 1777627430.2956402, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_2", "kind": "procedural", "confidence": 0.9}}
+{"ts": 1777627430.2997313, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777627430.325109, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627430.325186, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777627430.3433323, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_de5fadf5474c", "dry_run_no": 1}}
+{"ts": 1777627430.3436856, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627609.3583508, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 4, "edges": 8}}
+{"ts": 1777627609.3620641, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777627609.3622034, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_1", "kind": "preference", "confidence": 0.85}}
+{"ts": 1777627609.3622835, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_2", "kind": "procedural", "confidence": 0.9}}
+{"ts": 1777627609.365051, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 3}}
+{"ts": 1777627609.382661, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627609.382736, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777627609.382841, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "direct_command_preferred"}}
+{"ts": 1777627609.382919, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "offline_mode_ok"}}
+{"ts": 1777627609.383065, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "duration_s", "confidence": 0.05}}
+{"ts": 1777627609.3831725, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "test_task"}}
+{"ts": 1777627609.3948853, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_23479cb03a90", "dry_run_no": 1}}
+{"ts": 1777627609.3951342, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627658.5066555, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627691.8955228, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 4, "edges": 9}}
+{"ts": 1777627691.8979163, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777627691.8980515, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_1", "kind": "preference", "confidence": 0.85}}
+{"ts": 1777627691.8981383, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_2", "kind": "procedural", "confidence": 0.9}}
+{"ts": 1777627691.900355, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777627691.9162765, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627691.916333, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777627691.9164326, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "direct_command_preferred"}}
+{"ts": 1777627691.9165058, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "offline_mode_ok"}}
+{"ts": 1777627691.9166505, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "duration_s", "confidence": 0.1}}
+{"ts": 1777627691.9167364, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "test_task"}}
+{"ts": 1777627691.92707, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_4983f687f9b5", "dry_run_no": 1}}
+{"ts": 1777627691.927323, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627721.232606, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627752.1994286, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 4, "edges": 10}}
+{"ts": 1777627752.2034552, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777627752.2035928, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_1", "kind": "preference", "confidence": 0.85}}
+{"ts": 1777627752.2036693, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v94_trigger_pkg_2", "kind": "procedural", "confidence": 0.9}}
+{"ts": 1777627752.206753, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777627752.2267172, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777627752.226806, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777627752.226936, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "direct_command_preferred"}}
+{"ts": 1777627752.2270098, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "offline_mode_ok"}}
+{"ts": 1777627752.227236, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "applied", "detail": {"key": "duration_s", "confidence": 0.15000000000000002}}
+{"ts": 1777627752.2273378, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "task_result", "key": "test_task"}}
+{"ts": 1777627752.242877, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_76ca4d3ff5ef", "dry_run_no": 1}}
+{"ts": 1777627752.2432353, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.83}}
+{"ts": 1777628472.1075628, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7699999999999999}}
+{"ts": 1777628472.1110547, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 4, "edges": 11}}
+{"ts": 1777628472.113231, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777628472.1133707, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_pref_direct_cmd", "kind": "preference", "confidence": 0.88}}
+{"ts": 1777628472.1134508, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_pref_offline", "kind": "preference", "confidence": 0.92}}
+{"ts": 1777628472.1203308, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777628472.137562, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7699999999999999}}
+{"ts": 1777628472.1376202, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777628472.1377017, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "direct_commands"}}
+{"ts": 1777628472.137779, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "offline_ok"}}
+{"ts": 1777628472.1583385, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 6, "edges": 12}}
+{"ts": 1777628472.158405, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777628472.1584823, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_solution_test", "kind": "procedural", "confidence": 0.8}}
+{"ts": 1777628472.158598, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777628472.1588953, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7699999999999999}}
+{"ts": 1777628472.158936, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777628472.1590068, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "solution_quality"}}
+{"ts": 1777628472.159643, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ca4ad60b883d", "dry_run_no": 1}}
+{"ts": 1777628472.16251, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777628472.1628256, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7699999999999999}}
+{"ts": 1777628472.1628718, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777628472.1629431, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "system", "key": "daily_assessment_triggered"}}
+{"ts": 1777628472.1634128, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 7, "edges": 12}}
+{"ts": 1777628472.1634738, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777628472.1635478, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_daily_20260501", "kind": "episodic", "confidence": 0.85}}
+{"ts": 1777628472.1640117, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7699999999999999}}
+{"ts": 1777628507.661667, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7299999999999999}}
+{"ts": 1777628507.6639092, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 8, "edges": 12}}
+{"ts": 1777628507.6662452, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777628507.6664033, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_pref_direct_cmd", "kind": "preference", "confidence": 0.88}}
+{"ts": 1777628507.6664877, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_pref_offline", "kind": "preference", "confidence": 0.92}}
+{"ts": 1777628507.6684887, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777628507.682545, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7299999999999999}}
+{"ts": 1777628507.6826031, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777628507.6826856, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "direct_commands"}}
+{"ts": 1777628507.682755, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "offline_ok"}}
+{"ts": 1777628507.699883, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 8, "edges": 13}}
+{"ts": 1777628507.6999395, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777628507.7000175, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_solution_test", "kind": "procedural", "confidence": 0.8}}
+{"ts": 1777628507.700138, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777628507.7004786, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7299999999999999}}
+{"ts": 1777628507.7005224, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777628507.7005942, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "solution_quality"}}
+{"ts": 1777628507.7012346, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_a16f06c98c0e", "dry_run_no": 1}}
+{"ts": 1777628507.7039733, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777628507.7043085, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7299999999999999}}
+{"ts": 1777628507.704357, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777628507.7044735, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "system", "key": "daily_assessment_triggered"}}
+{"ts": 1777628507.7049677, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 8, "edges": 13}}
+{"ts": 1777628507.7050145, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777628507.7050948, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v95_daily_20260501", "kind": "episodic", "confidence": 0.85}}
+{"ts": 1777628507.705624, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.7299999999999999}}
+{"ts": 1777633260.0996068, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 8, "edges": 13}}
+{"ts": 1777633260.1022205, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777633260.102352, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777633260.1150186, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777633260.1158578, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777633260.1159117, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777633260.121756, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_109da67bbc6a", "dry_run_no": 1}}
+{"ts": 1777633260.1222908, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777633374.443663, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777633374.4459865, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777633374.4461226, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777633374.458525, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777633374.4593933, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777633374.4594483, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777633374.4657881, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_aeef0a8e08cc", "dry_run_no": 1}}
+{"ts": 1777633374.4663339, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777633438.4080696, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777633438.4104042, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777633438.4105408, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777633438.4229784, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777633438.42386, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777633438.4239109, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777633438.429774, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_d8c3e896d2d3", "dry_run_no": 1}}
+{"ts": 1777633438.4303224, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.4608402, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.4631603, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.4633055, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634254.4758248, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.4766967, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.4767494, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.4825158, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ca59e3a080d2", "dry_run_no": 1}}
+{"ts": 1777634254.4830513, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.5500944, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.5524132, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.5525434, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634254.5649679, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.565828, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.5658815, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.5716364, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_51d7db203771", "dry_run_no": 1}}
+{"ts": 1777634254.5721824, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.6393838, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.641572, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.6417046, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634254.6540987, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.6549659, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.6550236, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.6609952, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_7ba5790824ca", "dry_run_no": 1}}
+{"ts": 1777634254.661553, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.728008, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.7301543, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.7302942, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634254.7426329, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.743498, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.7435548, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.749297, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_b3221291242f", "dry_run_no": 1}}
+{"ts": 1777634254.74987, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.8271742, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.8300211, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.830181, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634254.8491733, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634254.8505168, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634254.8505986, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634254.860423, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_16fb6cad78bd", "dry_run_no": 1}}
+{"ts": 1777634254.8612869, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.4707704, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.4730773, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.4732196, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634513.4856656, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.486584, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.4866433, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.4924786, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_cae49ddb1360", "dry_run_no": 1}}
+{"ts": 1777634513.493023, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.560634, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.5628958, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.563031, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634513.5754359, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.5763106, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.5763743, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.5820758, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_17189fa56e8d", "dry_run_no": 1}}
+{"ts": 1777634513.582657, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.6498919, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.6520946, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.6522326, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634513.6646047, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.6655135, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.6655672, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.67126, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_acbf4eff6e10", "dry_run_no": 1}}
+{"ts": 1777634513.6718137, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.738875, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.7411072, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.7412484, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634513.7535245, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.7544305, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.754489, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.7602227, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2a790f419d35", "dry_run_no": 1}}
+{"ts": 1777634513.760793, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.828634, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.8308787, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.8310063, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634513.8433452, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634513.84428, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634513.844332, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634513.8500483, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_a456f90118b7", "dry_run_no": 1}}
+{"ts": 1777634513.8506448, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.5227184, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.5250201, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.5251667, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634688.5375068, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.5384753, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.5385318, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.5442765, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_913e683f3722", "dry_run_no": 1}}
+{"ts": 1777634688.5448506, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.6123052, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.6145422, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.614672, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634688.626972, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.6279225, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.6279738, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.6337457, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_a1a7c3863dd6", "dry_run_no": 1}}
+{"ts": 1777634688.6342962, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.702685, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.7049224, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.705065, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634688.7174814, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.7183979, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.718452, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.7242148, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_87595f1c0d53", "dry_run_no": 1}}
+{"ts": 1777634688.7247703, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.7915072, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.7936907, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.7938209, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634688.8069308, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.807883, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.8079343, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.8137503, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_657e5cd2270e", "dry_run_no": 1}}
+{"ts": 1777634688.814303, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.8807836, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.882948, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.8830764, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634688.8956342, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634688.8966, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634688.8966613, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634688.90238, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ff2d090ebfcf", "dry_run_no": 1}}
+{"ts": 1777634688.902913, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634697.2438958, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634697.2462213, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634697.2463539, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634697.2590208, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634697.2600424, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634697.2600942, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634697.2660394, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2a1717479553", "dry_run_no": 1}}
+{"ts": 1777634697.266613, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634718.657577, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634718.6598856, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634718.6600206, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634718.6725602, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634718.673568, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634718.6736243, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634718.679571, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_00e67be884a8", "dry_run_no": 1}}
+{"ts": 1777634718.6801317, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634732.4520507, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634732.4544137, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634732.4545503, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634732.4670827, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634732.4680982, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634732.4681609, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634732.474122, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c72afa297a87", "dry_run_no": 1}}
+{"ts": 1777634732.4746838, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634781.1741073, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634781.1764178, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634781.1765509, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634781.189035, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634781.1900485, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634781.190112, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634781.196049, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_74f492a8b195", "dry_run_no": 1}}
+{"ts": 1777634781.19662, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634822.1602476, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634822.162563, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634822.1626961, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634822.1751966, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634822.1762393, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634822.176293, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634822.1822164, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ed36eeace6a1", "dry_run_no": 1}}
+{"ts": 1777634822.1827717, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634832.711733, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634832.7140465, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634832.7141843, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634832.7266972, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634832.7277544, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634832.7278094, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634832.7336826, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_057a83552477", "dry_run_no": 1}}
+{"ts": 1777634832.7342308, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.7111459, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.7134671, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.713601, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634983.7262874, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.7273948, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.7274656, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.7334557, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_f2acf2112ae8", "dry_run_no": 1}}
+{"ts": 1777634983.7340128, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.8035684, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.8058596, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.8059916, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634983.8183775, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.8194225, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.8194857, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.8253152, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_b8e616366483", "dry_run_no": 1}}
+{"ts": 1777634983.825887, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.8957515, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.8980439, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.898177, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634983.9107087, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.9117882, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.911853, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.9176545, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_51a23011b25c", "dry_run_no": 1}}
+{"ts": 1777634983.918211, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634983.9880755, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634983.9903753, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634983.990508, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634984.0030053, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634984.0040977, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634984.004153, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634984.0100083, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_1d876223062b", "dry_run_no": 1}}
+{"ts": 1777634984.0105662, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634984.0839267, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634984.0862334, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634984.0863793, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777634984.0989337, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777634984.100014, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777634984.1000674, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777634984.105945, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_6edbb4974c8e", "dry_run_no": 1}}
+{"ts": 1777634984.1065023, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.1822343, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.1846263, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.184761, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635082.1976342, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.1987274, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.1987844, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.2049267, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_6635525ace9c", "dry_run_no": 1}}
+{"ts": 1777635082.2056122, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.2770553, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.279435, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.2795815, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635082.292451, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.2936006, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.2936587, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.299647, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2ffdd7729970", "dry_run_no": 1}}
+{"ts": 1777635082.300212, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.372457, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.374779, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.3749108, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635082.3874316, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.3885772, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.3886342, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.3945544, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_917d84161797", "dry_run_no": 1}}
+{"ts": 1777635082.3951044, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.464828, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.4671595, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.4672987, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635082.479823, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.4809663, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.4810185, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.4870045, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_e9f1008308dc", "dry_run_no": 1}}
+{"ts": 1777635082.487578, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.5572934, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.559664, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.5597947, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635082.5727367, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635082.5738611, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635082.5739157, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635082.5797956, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_f54229712024", "dry_run_no": 1}}
+{"ts": 1777635082.5803347, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.4354975, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.4378986, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.4380403, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635184.4509418, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.4521406, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.452196, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.4582245, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_bc09461bbbb3", "dry_run_no": 1}}
+{"ts": 1777635184.4588256, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.5311437, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.5335622, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.5337048, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635184.54785, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.5491233, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.5491822, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.5556734, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_8de28642e382", "dry_run_no": 1}}
+{"ts": 1777635184.5562928, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.6282334, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.6305976, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.6307309, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635184.6432629, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.6444497, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.6445124, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.6504018, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_d0b0f5146a8e", "dry_run_no": 1}}
+{"ts": 1777635184.6509645, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.7223012, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.7246537, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.7247884, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635184.7374725, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.73864, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.7386978, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.744668, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_132ebbb3c60b", "dry_run_no": 1}}
+{"ts": 1777635184.7452264, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.82461, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.8280532, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.8282309, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "v96_after_import_fail", "kind": "episodic", "confidence": 0.8}}
+{"ts": 1777635184.8480313, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635184.849996, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777635184.8500984, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777635184.8596663, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_e6bd63782f3e", "dry_run_no": 1}}
+{"ts": 1777635184.8605263, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777635919.0959651, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_bd1da00c6468", "dry_run_no": 1}}
+{"ts": 1777635919.0961602, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_353523e101ef", "dry_run_no": 2}}
+{"ts": 1777635948.5369287, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_4056b45025a2", "dry_run_no": 1}}
+{"ts": 1777635948.5371256, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_067b52662268", "dry_run_no": 2}}
+{"ts": 1777636034.794343, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2786fc7181b7", "dry_run_no": 1}}
+{"ts": 1777636034.794572, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_01b4e8d6016a", "dry_run_no": 2}}
+{"ts": 1777636261.0892951, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_f232b76897e1", "dry_run_no": 1}}
+{"ts": 1777636261.08952, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_90d0310bee10", "dry_run_no": 2}}
+{"ts": 1777636293.2487333, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ecc694b819aa", "dry_run_no": 1}}
+{"ts": 1777636293.2489398, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ee4957026b85", "dry_run_no": 2}}
+{"ts": 1777636506.600119, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_492f148a72c1", "dry_run_no": 1}}
+{"ts": 1777636506.600313, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_8abcb16679ef", "dry_run_no": 2}}
+{"ts": 1777636908.5379603, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_8e13a0a3e842", "dry_run_no": 1}}
+{"ts": 1777636908.5381596, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ea43e5726390", "dry_run_no": 2}}
+{"ts": 1777636940.4467847, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_e04ad59fd506", "dry_run_no": 1}}
+{"ts": 1777636940.446992, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_efcedf84277c", "dry_run_no": 2}}
+{"ts": 1777636990.9288015, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_3ac71a68c725", "dry_run_no": 1}}
+{"ts": 1777636990.9290135, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_e25f438787c7", "dry_run_no": 2}}
+{"ts": 1777637008.4550135, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5be35a8ca991", "dry_run_no": 1}}
+{"ts": 1777637008.4552076, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_8b4d64cd102b", "dry_run_no": 2}}
+{"ts": 1777637025.8888128, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_47b87372657f", "dry_run_no": 1}}
+{"ts": 1777637025.8890128, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5475c96c846c", "dry_run_no": 2}}
+{"ts": 1777637043.287107, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_784bc6b30c33", "dry_run_no": 1}}
+{"ts": 1777637043.2873049, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_00d3ab5b57e2", "dry_run_no": 2}}
+{"ts": 1777637215.5258317, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_891d6d59ad78", "dry_run_no": 1}}
+{"ts": 1777637215.5260253, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_b04bb21fe281", "dry_run_no": 2}}
+{"ts": 1777637237.6160862, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5477ba3e8f3a", "dry_run_no": 1}}
+{"ts": 1777637237.6162877, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c62601ab1f3d", "dry_run_no": 2}}
+{"ts": 1777637861.3297231, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c49c8c94434b", "dry_run_no": 1}}
+{"ts": 1777637861.3299356, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_656d87f52403", "dry_run_no": 2}}
+{"ts": 1777637923.433224, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2dc97a520581", "dry_run_no": 1}}
+{"ts": 1777637923.4334319, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_876d902d0281", "dry_run_no": 2}}
+{"ts": 1777638238.468208, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_57453c3329d1", "dry_run_no": 1}}
+{"ts": 1777638369.5770788, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_9a4063c04b33", "dry_run_no": 1}}
+{"ts": 1777638369.5774271, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_f9867052fc50", "dry_run_no": 2}}
+{"ts": 1777638517.867849, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_ccf57ef0a1f9", "dry_run_no": 1}}
+{"ts": 1777638517.8680694, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_95cbb96c7c1f", "dry_run_no": 2}}
+{"ts": 1777639901.515253, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_3f4e8a75084c", "dry_run_no": 1}}
+{"ts": 1777639901.5155046, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_bbcc4a8f7c50", "dry_run_no": 2}}
+{"ts": 1777640015.6477256, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_0c909a88fad6", "dry_run_no": 1}}
+{"ts": 1777640015.6479673, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5e394a2af532", "dry_run_no": 2}}
+{"ts": 1777640314.295328, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_188bdf726f5a", "dry_run_no": 1}}
+{"ts": 1777640314.2955756, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_03fcd3cc921b", "dry_run_no": 2}}
+{"ts": 1777640556.493233, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5632a0e6b920", "dry_run_no": 1}}
+{"ts": 1777640556.4934847, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5c57a3a3e124", "dry_run_no": 2}}
+{"ts": 1777641016.1524787, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777641016.1549478, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641016.1569114, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641016.158736, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641016.173056, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641016.1731203, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.0671544, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_e344beade529", "dry_run_no": 1}}
+{"ts": 1777641275.0704527, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 9, "edges": 13}}
+{"ts": 1777641275.0737896, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.0739672, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_330a", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.0767958, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.0796947, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1005104, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.100589, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1006985, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1016126, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_f770f43cd573", "dry_run_no": 2}}
+{"ts": 1777641275.1026785, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 10, "edges": 13}}
+{"ts": 1777641275.102774, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1029093, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_f47b", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1031346, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1033762, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.104001, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.104068, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1041806, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1050246, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_9618867447ac", "dry_run_no": 3}}
+{"ts": 1777641275.1061046, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 11, "edges": 13}}
+{"ts": 1777641275.1061962, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.106314, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_4389", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1065588, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1067936, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1073744, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.107442, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1075535, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1083896, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_d240426c5b9f", "dry_run_no": 4}}
+{"ts": 1777641275.109489, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 12, "edges": 13}}
+{"ts": 1777641275.1095736, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1096904, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_f4ca", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1099212, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1101441, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1107507, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.110824, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1109388, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1117852, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c66e72ff7c9e", "dry_run_no": 5}}
+{"ts": 1777641275.1129014, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 13, "edges": 13}}
+{"ts": 1777641275.1129878, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1131012, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_3a1f", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.113317, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1135597, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1141918, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1142557, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1143806, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1152213, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_5fe5288c3148", "dry_run_no": 6}}
+{"ts": 1777641275.116332, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 14, "edges": 13}}
+{"ts": 1777641275.116434, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1165502, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_e483", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1167636, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.116986, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1175919, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1176553, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1177578, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1186078, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_94a80ca9fe8a", "dry_run_no": 7}}
+{"ts": 1777641275.1197355, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 15, "edges": 13}}
+{"ts": 1777641275.119827, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1199434, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_e210", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1201625, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.120395, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1210227, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.121084, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1211936, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.122052, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_32282c280232", "dry_run_no": 8}}
+{"ts": 1777641275.1231804, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 16, "edges": 13}}
+{"ts": 1777641275.1232622, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.123391, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_0000", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1236124, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.123879, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1245363, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.124601, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.124708, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1256003, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_89bbb7d3fa67", "dry_run_no": 9}}
+{"ts": 1777641275.1267273, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 17, "edges": 13}}
+{"ts": 1777641275.12682, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1269367, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_6f11", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1271567, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1273866, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.128022, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1280835, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.128194, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1290855, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_9ed75655fe1a", "dry_run_no": 10}}
+{"ts": 1777641275.1302276, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 18, "edges": 13}}
+{"ts": 1777641275.1303117, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1304483, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_fb06", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1306713, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.130898, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1315517, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1316192, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.131732, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1325629, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_c63c939cd329", "dry_run_no": 11}}
+{"ts": 1777641275.1336992, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 19, "edges": 13}}
+{"ts": 1777641275.133818, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1339438, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_2b7f", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1341584, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1343782, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.135031, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1350954, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.1352587, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1363258, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_2d91a2161cbf", "dry_run_no": 12}}
+{"ts": 1777641275.1375327, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 20, "edges": 13}}
+{"ts": 1777641275.1376185, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1377347, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_119a", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1379685, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1381936, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1388607, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1389241, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.139029, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777641275.1398878, "level": "INFO", "module": "SelfImprovementLoop", "message": "dry_run_cycle", "detail": {"run_id": "sevo_6cb321ea8ea9", "dry_run_no": 13}}
+{"ts": 1777641275.1410573, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 21, "edges": 13}}
+{"ts": 1777641275.1411407, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777641275.1412532, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "main_b5b6", "kind": "mainline", "confidence": 0.8}}
+{"ts": 1777641275.1414897, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1417134, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "state_loaded", "detail": {"keys": 4}}
+{"ts": 1777641275.1423857, "level": "INFO", "module": "MemoryWritebackGuardV2", "message": "state_loaded", "detail": {"ratio": 0.6899999999999998}}
+{"ts": 1777641275.1424537, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "operating_loop_auto_attached", "detail": {}}
+{"ts": 1777641275.142566, "level": "INFO", "module": "PreferenceEvolutionModel", "message": "feedback_recorded", "detail": {"source": "user", "key": "mainline_hook"}}
+{"ts": 1777643870.3576252, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "state_loaded", "detail": {"nodes": 22, "edges": 13}}
+{"ts": 1777643870.3606284, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "memory_kernel_auto_attached", "detail": {}}
+{"ts": 1777643870.3607795, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "pkg_test_1", "kind": "preference", "confidence": 0.9}}
+{"ts": 1777643870.3608587, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "pkg_test_2", "kind": "topic", "confidence": 0.85}}
+{"ts": 1777643870.360923, "level": "INFO", "module": "PersonalKnowledgeGraphV5", "message": "node_added", "detail": {"node_id": "pkg_test_3", "kind": "preference", "confidence": 0.88}}

@@ -5,9 +5,9 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 from governance.policy.adaptive_execution_policy import select_execution_strategy
 from governance.security.strong_confirmation import require_strong_confirmation
-from platform_adapter.capability_registry import get_capability, register_default_capabilities
-from platform_adapter.runtime_state_store import enqueue_action, register_action, transition_action
-from platform_adapter.timeout_circuit import CircuitBreaker
+from infrastructure.platform_adapter.capability_registry import get_capability, register_default_capabilities
+from infrastructure.platform_adapter.runtime_state_store import enqueue_action, register_action, transition_action
+from infrastructure.platform_adapter.timeout_circuit import CircuitBreaker
 @dataclass
 class AutopilotDecision:
     status: str; mode: str; action_id: str; idempotency_key: str; requires_confirmation: bool; queued: bool; direct_allowed: bool; reason: str; next_action: str; strategy: Dict[str, Any]; capability: Dict[str, Any]; confirmation: Dict[str, Any]; circuit: Dict[str, Any]

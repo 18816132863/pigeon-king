@@ -6,7 +6,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from platform_adapter.runtime_state_store import connect, init_runtime_tables, get_action, transition_action, _now_ms, _json
+from infrastructure.platform_adapter.runtime_state_store import connect, init_runtime_tables, get_action, transition_action, _now_ms, _json
 from governance.audit.execution_audit_ledger import audit_event, init_audit_tables
 
 TIER_ORDER = {'L0': 0, 'L1': 1, 'L2': 2, 'L3': 3, 'L4': 4}

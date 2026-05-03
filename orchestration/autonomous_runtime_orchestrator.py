@@ -5,7 +5,7 @@ from typing import Any
 from core.runtime import AutonomousRuntimeKernel
 from governance.policy import RuntimePolicyEnforcer
 from infrastructure.acquisition import SolutionAcquisitionPipeline
-from learning_loop.personal_model import PreferenceEvolution, DecisionStyleModel
+from memory_context.learning_loop.personal_model import PreferenceEvolution, DecisionStyleModel
 
 
 class AutonomousRuntimeOrchestrator:

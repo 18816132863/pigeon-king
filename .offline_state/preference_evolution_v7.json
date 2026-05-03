@@ -1,0 +1,15 @@
+{
+  "values": {
+    "delivery_style": "one_shot",
+    "risk_style": "approval_for_high_risk",
+    "confidence_key": "high_conf_value",
+    "duration_s": 0.5
+  },
+  "confidence": {
+    "delivery_style": 1.0,
+    "risk_style": 1.0,
+    "confidence_key": 1.0,
+    "duration_s": 0.15000000000000002
+  },
+  "ts": 1777627752.2270603
+}

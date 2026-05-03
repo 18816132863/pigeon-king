@@ -1,45 +1,44 @@
 # Clean Package Excludes - V4 最终版
-# 运行时日志
-logs/
-*.log
-
+# IDE
+# OpenClaw 运行时
+# 临时文件
+# 备份文件
+# 外部依赖
+# 数据库
+# 缓存
 # 运行时 jsonl
-reports/ops/*.jsonl
-reports/observability/*.jsonl
+# 运行时日志
+*.backup
+*.bak
+*.db
+*.log
+*.pyc
+*.swp
+*.tar.gz
+*.temp
+*.tmp
+*.zip
+*~
+.backup_*
+.cache/
+.idea/
+.local/
+.openclaw/
+.pytest_cache
+.pytest_cache/
+.repair_state
+.vscode/
+__pycache__
+__pycache__/
+bin/
+cache
+lib/
+logs/
+repo/
 reports/alerts/runtime*
 reports/dashboard/runtime*
-
-# 数据库
-*.db
-
-# 缓存
-__pycache__/
-.pytest_cache/
-.cache/
-
-# OpenClaw 运行时
-.openclaw/
-.local/
-
-# 外部依赖
-repo/
-bin/
-lib/
+reports/observability/*.jsonl
+reports/ops/*.jsonl
+runtime/tmp
 site-packages/
-
-# 临时文件
-*.tmp
-*.temp
-*.swp
-*~
-
-# 备份文件
-*.bak
-*.backup
-*.tar.gz
-*.zip
-
-# IDE
-.vscode/
-.idea/
-*.pyc
+v86_backup_*

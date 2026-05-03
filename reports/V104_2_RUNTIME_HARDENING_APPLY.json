@@ -1,0 +1,1104 @@
+{
+  "version": "V104.2",
+  "mainline_hook_patch": {
+    "path": "infrastructure/mainline_hook.py",
+    "exists": true,
+    "changed": true
+  },
+  "mainline_run_wrapper": {
+    "path": "infrastructure/mainline_hook.py",
+    "exists": true,
+    "changed": true,
+    "run_ready": true
+  },
+  "single_runtime_patch": {
+    "path": "orchestration/single_runtime_entrypoint.py",
+    "exists": true,
+    "changed": true
+  },
+  "direct_external_call_audit": {
+    "version": "V104.2",
+    "direct_external_call_files": 145,
+    "items": [
+      {
+        "path": "infrastructure/auto_backup_uploader.py",
+        "markers": [
+          "git_push"
+        ]
+      },
+      {
+        "path": "infrastructure/offline_runtime_guard.py",
+        "markers": [
+          "requests",
+          "urllib_urlopen",
+          "httpx",
+          "git_push"
+        ]
+      },
+      {
+        "path": "execution/parallel_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "execution/ultimate_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "execution/hybrid_memory_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "scripts/v75_6_plugin_install_check.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "scripts/v95_2_all_chain_coverage_gate.py",
+        "markers": [
+          "git_push"
+        ]
+      },
+      {
+        "path": "scripts/v91_offline_integration_gate.py",
+        "markers": [
+          "git_push"
+        ]
+      },
+      {
+        "path": "scripts/v104_1_final_consistency_enforcement_gate.py",
+        "markers": [
+          "openai_like",
+          "git_push"
+        ]
+      },
+      {
+        "path": "scripts/v104_2_runtime_hardening_gate.py",
+        "markers": [
+          "requests",
+          "urllib_urlopen",
+          "git_push"
+        ]
+      },
+      {
+        "path": "scripts/v104_final_consistency_conflict_cleanup_gate.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "orchestration/collaboration/org_orchestrator.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/trading-quant/scripts/quant.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/hithink-iwencai/scripts/news_search.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/hithink-iwencai/scripts/api_client.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/hithink-iwencai/scripts/announcement_search.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/hithink-iwencai/scripts/test_basic.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-image-translation/scripts/image_translation.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/aminer-data-search/scripts/aminer_client.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-podcast-gen/scripts/podcast_client.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/natural-language-planner/scripts/dashboard_server.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/seedream-image-gen/scripts/generate_seedream.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/ai-ppt-generator/scripts/ppt_theme_list.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/ai-ppt-generator/scripts/generate_ppt.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/alphaear-news/scripts/content_extractor.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/alphaear-news/scripts/news_tools.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-ppt/scripts/generate_ppt.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-ppt/scripts/upload_file.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/eastmoney-mx-skills-suite/scripts/mx_select_stock.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/eastmoney-mx-skills-suite/scripts/mx_data.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/eastmoney-mx-skills-suite/scripts/mx_search.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/eastmoney-mx-skills-suite/scripts/mx_stock_simulator.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/eastmoney-mx-skills-suite/scripts/mx_self_select.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-web-deploy/scripts/baas.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-web-deploy/scripts/upload_file.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/seedance-video-gen/scripts/generate_video.py",
+        "markers": [
+          "requests",
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/content_extractor.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/sentiment_tools.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/stock_tools.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/news_tools.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/search_tools.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/llm/router.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/llm/factory.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/meituan-coupon-traffic-huawei/scripts/auth.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/meituan-coupon-traffic-huawei/scripts/query.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/meituan-coupon-traffic-huawei/scripts/issue.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/recipe-to-list/scripts/recipe_to_list.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/ppt-generator-skill/scripts/generate_grand.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/ppt-generator-skill/scripts/generate_full.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/find-skills/scripts/search.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/find-skills/scripts/install.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/parallel_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/optimize_vector_system.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/one_click_setup.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/llm_client.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/backfill_l0_vectors.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/opt_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/ultimate_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/hybrid_memory_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/core/vector_ops.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/parallel_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/optimize_vector_system.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/one_click_setup.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/llm_client.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/backfill_l0_vectors.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/opt_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/ultimate_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/model_performance.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/channel_health.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/full_vector_recovery.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/fix_vectorization.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/hybrid_memory_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/core/summarizer.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/core/embedding.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/core/llm.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/src/scripts/core/explainer.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/core/summarizer.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/core/embedding.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/core/llm.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/llm-memory-integration/scripts/core/explainer.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/today-task/scripts/hiboards_client.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/scripts/sentiment_tools.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/scripts/llm/router.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/scripts/llm/factory.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-image-understanding/scripts/file_upload.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-image-understanding/scripts/image_understanding.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-tts/scripts/ttsList.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-tts/scripts/tts.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/meituan-coupon-get-tool/scripts/auth.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/meituan-coupon-get-tool/scripts/query.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/meituan-coupon-get-tool/scripts/issue.py",
+        "markers": [
+          "httpx"
+        ]
+      },
+      {
+        "path": "skills/ai-picture-book/scripts/ai_picture_book_task_query.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/ai-picture-book/scripts/ai_picture_book_task_create.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/ai-picture-book/scripts/ai_picture_book_poll.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/news-extractor/scripts/crawlers/naver.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/news-extractor/scripts/crawlers/twitter_client.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/news-extractor/scripts/crawlers/fetchers.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/alphaear-predictor/scripts/utils/stock_tools.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/alphaear-predictor/scripts/utils/search_tools.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/alphaear-predictor/scripts/utils/llm/router.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/alphaear-predictor/scripts/utils/llm/factory.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/huawei-drive/scripts/huawei_drive.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/minimax-music-gen/scripts/generate_lyrics.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/minimax-music-gen/scripts/generate_music.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/scientific-slides/scientific-slides/scripts/generate_slide_image_ai.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/jdjr/scripts/query_stock.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/jdjr/scripts/query_gold.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/jdjr/scripts/query_news.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "skills/markitdown/scripts/convert_with_ai.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "skills/dknowc-official-doc-writer/dknowc-official-doc-writer-public-channel/scripts/dkag_search.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "skills/xiaoyi-cloud-database/scripts/baas.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "infrastructure/inventory/violation_test_suite.py",
+        "markers": [
+          "requests",
+          "httpx"
+        ]
+      },
+      {
+        "path": "infrastructure/inventory/skill_access_checker.py",
+        "markers": [
+          "requests",
+          "httpx"
+        ]
+      },
+      {
+        "path": "infrastructure/legacy/llm.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "infrastructure/setup_tools/one_click_setup.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "infrastructure/alerting/channels/feishu_webhook.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "infrastructure/alerting/channels/webhook.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "execution/vector_ops/vector_ops.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "execution/search_enhanced/opt_search.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "governance/audit/summarizer.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "governance/audit/explainer.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/dependency_manager.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/check_ai_apis.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/check_skill_security.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/auto_classify_skills.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/gates/v75_7_plugin_install_check.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/gates/v85_scan_direct_model_calls.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/gates/v75_7_better_gateway_probe.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "archive/scripts/vintage/test_smokes/v75_4_plugin_reality_check.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": ".v104_1_backup/20260503_000144/infrastructure/auto_backup_uploader.py",
+        "markers": [
+          "git_push"
+        ]
+      },
+      {
+        "path": ".v104_1_backup/20260503_000144/infrastructure/alerting/channels/feishu_webhook.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": ".v104_1_backup/20260503_000144/infrastructure/alerting/channels/webhook.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "core/real_work_entry/message_entry.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "core/llm/model_discovery.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/llm/llm_client.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/llm/model_router.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/llm/llm.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "core/llm/llm_gateway.py",
+        "markers": [
+          "urllib_urlopen",
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/llm/schemas.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/llm/provider_guard.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/llm/model_registry.py",
+        "markers": [
+          "openai_like"
+        ]
+      },
+      {
+        "path": "core/runtime_activation/api_facade.py",
+        "markers": [
+          "requests"
+        ]
+      },
+      {
+        "path": "memory_context/vector/embedding.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": "memory_context/vector/qdrant_store.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      },
+      {
+        "path": ".backup_20260501_0102/memory_context/vector_ops/backfill_l0_vectors.py",
+        "markers": [
+          "urllib_urlopen"
+        ]
+      }
+    ],
+    "note": "Files may contain direct external calls. V104.2 adds runtime guard enforcement; future cleanup may patch individual modules when they become active."
+  },
+  "runtime_artifact_cleanup": {
+    "version": "V104.2",
+    "removed": [
+      ".pytest_cache",
+      "__pycache__",
+      "orchestration/__pycache__",
+      "infrastructure/__pycache__",
+      "execution/__pycache__",
+      "governance/__pycache__",
+      "tests/__pycache__",
+      "core/__pycache__",
+      "memory_context/__pycache__",
+      "scripts/__pycache__",
+      "orchestration/embodied_pending_os/__pycache__",
+      "orchestration/templates/__pycache__",
+      "orchestration/planner/__pycache__",
+      "orchestration/state/__pycache__",
+      "orchestration/release_assurance/__pycache__",
+      "orchestration/execution_control/__pycache__",
+      "orchestration/workflow/__pycache__",
+      "orchestration/conversation/__pycache__",
+      "orchestration/self_evolving_pending_os/__pycache__",
+      "orchestration/router/__pycache__",
+      "orchestration/workflows/__pycache__",
+      "orchestration/validators/__pycache__",
+      "orchestration/streaming/__pycache__",
+      "orchestration/mission_control/__pycache__",
+      "orchestration/autonomous_task_runtime/__pycache__",
+      "orchestration/final_pending_release/__pycache__",
+      "orchestration/agent_kernel/__pycache__",
+      "skills/registry/__pycache__",
+      "skills/runtime/__pycache__",
+      "skills/lifecycle/__pycache__",
+      "skills/xiaoyi-ppt/scripts/__pycache__",
+      "skills/headed-browser-open-v3/scripts/__pycache__",
+      "infrastructure/capability_extension/__pycache__",
+      "infrastructure/pool/__pycache__",
+      "infrastructure/cache/__pycache__",
+      "infrastructure/monitoring/__pycache__",
+      "infrastructure/inventory/__pycache__",
+      "infrastructure/capability_lifecycle/__pycache__",
+      "infrastructure/guards/__pycache__",
+      "infrastructure/openapi/__pycache__",
+      "infrastructure/connectors/__pycache__",
+      "infrastructure/scheduler/__pycache__",
+      "infrastructure/langgraph/__pycache__",
+      "infrastructure/fusion/__pycache__",
+      "infrastructure/vector_engines/__pycache__",
+      "infrastructure/audit_governance/__pycache__",
+      "infrastructure/tool_adapters/__pycache__",
+      "infrastructure/ops/__pycache__",
+      "infrastructure/capability_acquisition/__pycache__",
+      "infrastructure/device_capability_bus/__pycache__",
+      "infrastructure/rollback_governance/__pycache__",
+      "infrastructure/packaging/__pycache__",
+      "infrastructure/shared/__pycache__",
+      "infrastructure/platform_adapter/__pycache__",
+      "infrastructure/celery/__pycache__",
+      "infrastructure/fusion_engine_v2/__pycache__",
+      "infrastructure/connector_factory/__pycache__",
+      "infrastructure/setup_tools/__pycache__",
+      "infrastructure/execution_runtime/__pycache__",
+      "infrastructure/tool_negotiation/__pycache__",
+      "infrastructure/capability_evolution/__pycache__",
+      "infrastructure/upgrade_governance/__pycache__",
+      "infrastructure/fault_injection/__pycache__",
+      "infrastructure/config/__pycache__",
+      "infrastructure/hardware/__pycache__",
+      "infrastructure/workers/__pycache__",
+      "infrastructure/storage/__pycache__",
+      "infrastructure/runtime_fabric/__pycache__",
+      "infrastructure/mesh/__pycache__",
+      "infrastructure/acquisition/__pycache__",
+      "infrastructure/world_interface/__pycache__",
+      "infrastructure/portfolio/assessment/__pycache__",
+      "infrastructure/storage/repositories/__pycache__",
+      "execution/failover/__pycache__",
+      "execution/search/__pycache__",
+      "execution/vector_ops/__pycache__",
+      "execution/speculative_decoding_v1/__pycache__",
+      "execution/optimizer/__pycache__",
+      "execution/capabilities/__pycache__",
+      "execution/visual_operation_agent/__pycache__",
+      "execution/quantization/__pycache__",
+      "execution/rag/__pycache__",
+      "governance/access_control/__pycache__",
+      "governance/security/__pycache__",
+      "governance/closed_loop_verifier/__pycache__",
+      "governance/evolution_safety/__pycache__",
+      "governance/scheduler/__pycache__",
+      "governance/red_team_safety/__pycache__",
+      "governance/ops/__pycache__",
+      "governance/safety_governor/__pycache__",
+      "governance/policy/__pycache__",
+      "governance/gate_kernel/__pycache__",
+      "governance/evaluation/__pycache__",
+      "governance/codex/__pycache__",
+      "governance/constitutional_runtime/__pycache__",
+      "governance/context/__pycache__",
+      "governance/persona/__pycache__",
+      "governance/embodied_pending_state/__pycache__",
+      "tests/integration/__pycache__",
+      "tests/e2e/__pycache__",
+      "tests/regression/__pycache__",
+      "tests/unit/__pycache__",
+      "core/real_work_entry/__pycache__",
+      "core/executive_os/__pycache__",
+      "core/real_tool_binding/__pycache__",
+      "core/simulation/__pycache__",
+      "core/meta_autonomy_platform/__pycache__",
+      "core/monitoring/__pycache__",
+      "core/real_connector_execution/__pycache__",
+      "core/execution_contract/__pycache__",
+      "core/runtime/__pycache__",
+      "core/ai_shape_core/__pycache__",
+      "core/device_timeout_resilience/__pycache__",
+      "core/self_test/__pycache__",
+      "core/operations_intelligence/__pycache__",
+      "core/self_evolution_ops/__pycache__",
+      "core/production_control_plane/__pycache__",
+      "core/digital_twin/__pycache__",
+      "core/strategy/__pycache__",
+      "core/multi_agent/__pycache__",
+      "core/autonomy/__pycache__",
+      "core/operating_agent/__pycache__",
+      "core/project_autonomy/__pycache__",
+      "core/authorization/__pycache__",
+      "core/llm/__pycache__",
+      "core/autonomous_runtime_fabric/__pycache__",
+      "core/continuous/__pycache__",
+      "core/release_hardening/__pycache__",
+      "core/world_model/__pycache__",
+      "core/self_governance/__pycache__",
+      "core/knowledge/__pycache__",
+      "core/personal_agent/__pycache__",
+      "core/skill_entry/__pycache__",
+      "core/personalization/__pycache__",
+      "core/personality/__pycache__",
+      "core/reality/__pycache__",
+      "core/domain/__pycache__",
+      "core/action_bridge/__pycache__",
+      "core/operating_spine/__pycache__",
+      "core/collaboration/__pycache__",
+      "core/verification/__pycache__",
+      "core/runtime_activation/__pycache__",
+      "core/portfolio/__pycache__",
+      "core/mission/__pycache__",
+      "core/privacy/__pycache__",
+      "core/skill_asset_registry/__pycache__",
+      "core/top_ai_operator/__pycache__",
+      "core/llm/telemetry/__pycache__",
+      "memory_context/multimodal/__pycache__",
+      "memory_context/learning_loop/__pycache__",
+      "memory_context/vector/__pycache__",
+      "memory_context/cross_lingual/__pycache__",
+      "memory_context/personalization/__pycache__",
+      "memory_context/context/__pycache__",
+      "memory_context/maintenance/__pycache__",
+      "memory_context/persona/__pycache__",
+      "memory_context/learning_loop/personal_evolution/__pycache__",
+      "memory_context/learning_loop/audit_replay/__pycache__",
+      "memory_context/learning_loop/reflection/__pycache__",
+      "memory_context/learning_loop/personal_model/__pycache__",
+      "memory_context/learning_loop/identity_evolution/__pycache__",
+      "memory_context/learning_loop/meta_learning/__pycache__"
+    ],
+    "moved": [
+      {
+        "old": ".backup_20260501_0102",
+        "new": "archive/runtime_backups/.backup_20260501_0102"
+      },
+      {
+        "old": ".repair_state",
+        "new": "archive/runtime_backups/.repair_state"
+      },
+      {
+        "old": "v86_backup_20260502_011506",
+        "new": "archive/runtime_backups/v86_backup_20260502_011506"
+      },
+      {
+        "old": "v86_backup_20260502_011529",
+        "new": "archive/runtime_backups/v86_backup_20260502_011529"
+      },
+      {
+        "old": ".v104_1_backup",
+        "new": "archive/runtime_backups/.v104_1_backup"
+      }
+    ],
+    "cleaned": true
+  },
+  "status": "pass"
+}

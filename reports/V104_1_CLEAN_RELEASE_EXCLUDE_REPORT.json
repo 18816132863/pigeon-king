@@ -1,0 +1,15 @@
+{
+  "version": "V104.1",
+  "clean_release_exclude_ready": true,
+  "exclude_patterns": [
+    "__pycache__",
+    ".pytest_cache",
+    ".repair_state",
+    ".backup_*",
+    "v86_backup_*",
+    "*.zip",
+    "*.tar.gz",
+    "runtime/tmp",
+    "cache"
+  ]
+}

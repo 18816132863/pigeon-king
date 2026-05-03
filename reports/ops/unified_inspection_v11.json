@@ -1,0 +1,60 @@
+{
+  "version": "V11.2.0",
+  "timestamp": "2026-05-03T22:21:30.112222",
+  "system_stats": {
+    "cpu_percent": 1.5,
+    "memory_percent": 40.9,
+    "disk_percent": 69.5
+  },
+  "errors": [],
+  "warnings": [
+    "archive/scripts/vintage/ 目录不存在"
+  ],
+  "info": [],
+  "checks": [
+    {
+      "name": "系统状态",
+      "passed": true
+    },
+    {
+      "name": "六层架构",
+      "passed": true
+    },
+    {
+      "name": "V99 目录融合",
+      "passed": true
+    },
+    {
+      "name": "基础设施模块",
+      "passed": true
+    },
+    {
+      "name": "V76-V85 模块",
+      "passed": true
+    },
+    {
+      "name": "知识图谱",
+      "passed": true
+    },
+    {
+      "name": "V90-V99 报告",
+      "passed": true
+    },
+    {
+      "name": "LLM 引擎",
+      "passed": true
+    },
+    {
+      "name": "重复/冗余文件",
+      "passed": true
+    },
+    {
+      "name": "Commit Barrier 探针",
+      "passed": true
+    },
+    {
+      "name": "人格真实性一致性",
+      "passed": true
+    }
+  ]
+}

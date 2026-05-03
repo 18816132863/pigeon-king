@@ -1,0 +1,20 @@
+{
+  "point_id": "rb_df2c33ae",
+  "step_id": "b",
+  "timestamp": "2026-05-02T01:37:54.709803",
+  "state": {
+    "instance_id": "v86_parallel_basic",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "none"
+      }
+    },
+    "completed_steps": [],
+    "step_results": {}
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

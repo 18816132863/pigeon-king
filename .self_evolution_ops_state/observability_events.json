@@ -1,0 +1,435 @@
+[
+  {
+    "run_id": "sevo_0ba51457ff41",
+    "success": true,
+    "quality": 0.9,
+    "budget_violation": false,
+    "privacy_level": "public",
+    "circuit_status": "closed"
+  },
+  {
+    "run_id": "sevo_d281754626e3",
+    "success": true,
+    "quality": 0.9,
+    "budget_violation": false,
+    "privacy_level": "public",
+    "circuit_status": "closed"
+  },
+  {
+    "run_id": "sevo_60006e66d401",
+    "success": true,
+    "quality": 0.9,
+    "budget_violation": false,
+    "privacy_level": "public",
+    "circuit_status": "closed"
+  },
+  {
+    "kind": "trigger",
+    "source": "v94",
+    "detail": "test"
+  },
+  {
+    "kind": "trigger",
+    "source": "v94",
+    "detail": "mainline_trigger_test"
+  },
+  {
+    "kind": "trigger",
+    "source": "v94",
+    "detail": "mainline_trigger_test"
+  },
+  {
+    "kind": "memory_write_chain",
+    "source": "v95",
+    "detail": "completed memory write closure"
+  },
+  {
+    "kind": "solution_search_chain",
+    "source": "v95",
+    "detail": "completed solution search closure"
+  },
+  {
+    "kind": "self_improvement_chain",
+    "source": "v95",
+    "detail": "completed self improvement closure"
+  },
+  {
+    "kind": "daily_assessment_chain",
+    "source": "v95",
+    "detail": "completed daily assessment closure"
+  },
+  {
+    "kind": "security_intercept_chain",
+    "source": "v95",
+    "detail": "completed security intercept closure",
+    "blocked_payment": true,
+    "blocked_send": true,
+    "blocked_device": true
+  },
+  {
+    "kind": "memory_write_chain",
+    "source": "v95",
+    "detail": "completed memory write closure"
+  },
+  {
+    "kind": "solution_search_chain",
+    "source": "v95",
+    "detail": "completed solution search closure"
+  },
+  {
+    "kind": "self_improvement_chain",
+    "source": "v95",
+    "detail": "completed self improvement closure"
+  },
+  {
+    "kind": "daily_assessment_chain",
+    "source": "v95",
+    "detail": "completed daily assessment closure"
+  },
+  {
+    "kind": "security_intercept_chain",
+    "source": "v95",
+    "detail": "completed security intercept closure",
+    "blocked_payment": true,
+    "blocked_send": true,
+    "blocked_device": true
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "memory_rejection_test",
+    "source": "v96",
+    "secret_blocked": true,
+    "low_conf_blocked": true,
+    "good_allowed": false
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  },
+  {
+    "kind": "mainline_hook",
+    "source": "v99",
+    "detail": "mainline_triggered"
+  }
+]

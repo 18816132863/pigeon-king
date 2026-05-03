@@ -1,0 +1,185 @@
+{
+  "version": "V92.0",
+  "status": "pass",
+  "checked_at": "2026-05-01T08:07:59Z",
+  "checks": {
+    "offline_env_enabled": true,
+    "core_files_exist": true,
+    "core_files_non_empty": true,
+    "local_state_ready": true,
+    "integration_registry_ready": true,
+    "tool_registry_ready": true,
+    "external_infra_fallback_ready": true,
+    "solution_search_ok": true,
+    "no_real_payment_send_device": true,
+    "apply_script_no_failures": true
+  },
+  "env_status": {
+    "OFFLINE_MODE": true,
+    "NO_EXTERNAL_API": true,
+    "NO_REAL_SEND": true,
+    "NO_REAL_PAYMENT": true,
+    "NO_REAL_DEVICE": true
+  },
+  "apply_report": {
+    "status": "ok",
+    "returncode": 0,
+    "stdout_tail": "2_valid_long_term_memory_fallback\"\n    ],\n    \"mwg_secret\": [\n      false,\n      \"not_valid_long_term_or_sensitive\"\n    ],\n    \"solution_search\": {\n      \"status\": \"ok\",\n      \"route\": \"orchestration.solution_search\",\n      \"mode\": \"offline\",\n      \"action_semantic\": \"analyze\",\n      \"side_effects\": false,\n      \"requires_api\": false,\n      \"result\": [\n        {\n          \"path\": \"memory_context/preference_evolution_model_v7.py\",\n          \"score\": 1,\n          \"snippet\": \"\\\"\\\"\\\"\\nV91 Preference Evolution Model — 离线增强版。\\n\\n- 本地 feedback log / task result / user correction 驱动偏好演化\\n- 挂接 personal_operating_loop_v2（通过回调接口）\\n- JSONL 持久化，不依赖外部 API\\n\\\"\\\"\\\"\\nfrom __future__ import annotations\\nimport json\\nimport os\\nimport time\\nimport threading\\nfrom dataclasses import dataclass, field\\nfrom \",\n          \"source\": \"local_file\"\n        },\n        {\n          \"path\": \"memory_context/personal_knowledge_graph_v5.py\",\n          \"score\": 1,\n          \"snippet\": \"\\\"\\\"\\\"\\nV91 Personal Knowledge Graph V5 — 离线增强版。\\n\\n- 本地 JSONL 持久化存储（不依赖外部图数据库）\\n- 挂接 personal_memory_kernel_v4 进行记忆回写\\n- 支持写入审计日志\\n\\\"\\\"\\\"\\nfrom __future__ import annotations\\nimport json\\nimport os\\nimport time\\nimport threading\\nfrom dataclasses import dataclass, asdict, field\\nfrom pathlib import Path\\nfrom typing i\",\n          \"source\": \"local_file\"\n        },\n        {\n          \"path\": \"memory_context/memory_writeback_guard_v2.py\",\n          \"score\": 1,\n          \"snippet\": \"\\\"\\\"\\\"\\nV91 Memory Writeback Guard V2 — 离线增强版。\\n\\n- 保留现有使用点\\n- 新增 feedback tuner：ratio 0.85 可根据压实失败率、污染拦截率、用户纠错率自动微调\\n- JSONL 审计持久化\\n\\\"\\\"\\\"\\nfrom __future__ import annotations\\nimport json\\nimport os\\nimport time\\nfrom dataclasses import dataclass, field\\nfrom pathlib import Path\\nfrom typing import Dict, List, Option\",\n          \"source\": \"local_file\"\n        }\n      ],\n      \"warnings\": [],\n      \"query\": \"V91\",\n      \"checked_at\": \"2026-05-01T08:07:58.387018Z\"\n    }\n  },\n  \"remaining_failures\": [],\n  \"finished_at\": \"2026-05-01T08:07:58Z\"\n}\n",
+    "stderr_tail": ""
+  },
+  "core": {
+    "PersonalKnowledgeGraphV5": {
+      "path": "memory_context/personal_knowledge_graph_v5.py",
+      "exists": true,
+      "size": 9966,
+      "looks_non_empty": true,
+      "has_v92_hook_or_local_impl": true
+    },
+    "PreferenceEvolutionModel": {
+      "path": "memory_context/preference_evolution_model_v7.py",
+      "exists": true,
+      "size": 11507,
+      "looks_non_empty": true,
+      "has_v92_hook_or_local_impl": true
+    },
+    "SelfImprovementLoop": {
+      "path": "core/self_evolution_ops/self_improvement_loop.py",
+      "exists": true,
+      "size": 17536,
+      "looks_non_empty": true,
+      "has_v92_hook_or_local_impl": true
+    },
+    "MemoryWritebackGuardV2": {
+      "path": "memory_context/memory_writeback_guard_v2.py",
+      "exists": true,
+      "size": 11092,
+      "looks_non_empty": true,
+      "has_v92_hook_or_local_impl": true
+    }
+  },
+  "state": {
+    "knowledge_graph_state_non_empty": true,
+    "preference_feedback_non_empty": true,
+    "v92_audit_exists": true
+  },
+  "registry_counts": {
+    "integration_modules": 20,
+    "tool_modules": 21,
+    "external_infra": 12
+  },
+  "import_samples": [
+    {
+      "module": "memory_context.multimodal.multimodal_search",
+      "status": "importable"
+    },
+    {
+      "module": "memory_context.cross_lingual.cross_lingual",
+      "status": "importable"
+    },
+    {
+      "module": "execution.visual_operation_agent.visual_planner",
+      "status": "importable"
+    },
+    {
+      "module": "execution.visual_operation_agent.action_executor",
+      "status": "importable"
+    },
+    {
+      "module": "execution.visual_operation_agent.screen_observer",
+      "status": "importable"
+    },
+    {
+      "module": "execution.visual_operation_agent.ui_grounding",
+      "status": "importable"
+    },
+    {
+      "module": "core.digital_twin.identity_drift_guard",
+      "status": "importable"
+    },
+    {
+      "module": "core.self_evolution_ops.observability_report",
+      "status": "importable"
+    },
+    {
+      "module": "ops.autonomous_os_mission_control_v4",
+      "status": "importable"
+    },
+    {
+      "module": "ops.mission_control_dashboard_v5",
+      "status": "importable"
+    },
+    {
+      "module": "infrastructure.portfolio.assessment.daily_assessment_generate",
+      "status": "importable"
+    },
+    {
+      "module": "infrastructure.solution_search_orchestrator",
+      "status": "importable"
+    },
+    {
+      "module": "execution.speculative_decoding_v1.speculative_decoder",
+      "status": "importable"
+    },
+    {
+      "module": "execution.speculative_decoding_v1.nvidia_adapter",
+      "status": "importable"
+    },
+    {
+      "module": "evaluation.autonomy_regression_matrix_v4",
+      "status": "importable"
+    },
+    {
+      "module": "evaluation.continuous_learning_evaluator_v5",
+      "status": "importable"
+    },
+    {
+      "module": "infrastructure.fusion.module_fusion_engine",
+      "status": "importable"
+    },
+    {
+      "module": "infrastructure.fusion.skill_fusion_engine",
+      "status": "importable"
+    },
+    {
+      "module": "infrastructure.capability_extension_sandbox_gate_v2",
+      "status": "importable"
+    },
+    {
+      "module": "infrastructure.capability_marketplace_v5",
+      "status": "importable"
+    }
+  ],
+  "solution_search": {
+    "status": "ok",
+    "route": "orchestration.solution_search",
+    "mode": "offline",
+    "action_semantic": "analyze",
+    "side_effects": false,
+    "requires_api": false,
+    "result": [
+      {
+        "path": "memory_context/preference_evolution_model_v7.py",
+        "score": 1,
+        "snippet": "\"\"\"\nV91 Preference Evolution Model — 离线增强版。\n\n- 本地 feedback log / task result / user correction 驱动偏好演化\n- 挂接 personal_operating_loop_v2（通过回调接口）\n- JSONL 持久化，不依赖外部 API\n\"\"\"\nfrom __future__ import annotations\nimport json\nimport os\nimport time\nimport threading\nfrom dataclasses import dataclass, field\nfrom ",
+        "source": "local_file"
+      },
+      {
+        "path": "memory_context/personal_knowledge_graph_v5.py",
+        "score": 1,
+        "snippet": "\"\"\"\nV91 Personal Knowledge Graph V5 — 离线增强版。\n\n- 本地 JSONL 持久化存储（不依赖外部图数据库）\n- 挂接 personal_memory_kernel_v4 进行记忆回写\n- 支持写入审计日志\n\"\"\"\nfrom __future__ import annotations\nimport json\nimport os\nimport time\nimport threading\nfrom dataclasses import dataclass, asdict, field\nfrom pathlib import Path\nfrom typing i",
+        "source": "local_file"
+      },
+      {
+        "path": "memory_context/memory_writeback_guard_v2.py",
+        "score": 1,
+        "snippet": "\"\"\"\nV91 Memory Writeback Guard V2 — 离线增强版。\n\n- 保留现有使用点\n- 新增 feedback tuner：ratio 0.85 可根据压实失败率、污染拦截率、用户纠错率自动微调\n- JSONL 审计持久化\n\"\"\"\nfrom __future__ import annotations\nimport json\nimport os\nimport time\nfrom dataclasses import dataclass, field\nfrom pathlib import Path\nfrom typing import Dict, List, Option",
+        "source": "local_file"
+      }
+    ],
+    "warnings": [],
+    "query": "V92 offline",
+    "checked_at": "2026-05-01T08:07:59.287627Z"
+  },
+  "remaining_failures": [],
+  "note": "This gate runs fully offline. It does not call external APIs and does not enable real payment/send/device actions."
+}

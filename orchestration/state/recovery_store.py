@@ -34,6 +34,7 @@ class ErrorType(Enum):
     PERMISSION = "permission"        # 权限错误
     UNKNOWN = "unknown"              # 未知错误
     EXCEPTION = "exception"          # 异常错误
+    ROLLBACK_CONDITION = "rollback_condition"  # 回滚条件触发
 
 
 class RecoveryAction(Enum):
@@ -225,6 +226,61 @@ class RecoveryStore:
             
             if to_remove:
                 self._save()
+
+    def record_retry(self, step_id: str, attempt: Optional[int] = None, error: Optional[str] = None, **kwargs):
+        """记录重试 (V86 compatibility)"""
+        with self._lock:
+            step = kwargs.get("instance_id", step_id)
+            att = attempt or kwargs.get("attempt", 0)
+            err_msg = error or kwargs.get("error_message", str(kwargs.get("error", "")))
+            key = f"retry_{step}_{att}"
+            self._records[key] = RecoveryRecord(
+                record_id=key,
+                instance_id=step,
+                step_id=step_id,
+                error_type=ErrorType.get_error_type(err_msg) if hasattr(ErrorType, 'get_error_type') else ErrorType.EXCEPTION,
+                error_message=err_msg[:200],
+                recovery_action=RecoveryAction.RETRY,
+                timestamp=datetime.now().isoformat(),
+                metadata={"type": "retry", "attempt": att, "original_error_type": str(kwargs.get("error_type", ""))}
+            )
+            self._save()
+
+    def record_fallback(self, step_id: str, error: Optional[str] = None, **kwargs):
+        """记录降级 (V86 compatibility)"""
+        with self._lock:
+            instance = kwargs.get("instance_id", step_id)
+            err_msg = error or kwargs.get("error_message", str(kwargs.get("error", "")))
+            key = f"fallback_{instance}_{datetime.now().strftime('%Y%m%d%H%M%S%f')}"
+            self._records[key] = RecoveryRecord(
+                record_id=key,
+                instance_id=instance,
+                step_id=step_id,
+                error_type=ErrorType.EXCEPTION,
+                error_message=err_msg[:200],
+                recovery_action=RecoveryAction.FALLBACK,
+                timestamp=datetime.now().isoformat(),
+                metadata={"type": "fallback"}
+            )
+            self._save()
+
+    def record_rollback(self, step_id: str, rollback_point_id: Optional[str] = None, **kwargs):
+        """记录回滚 (V86 compatibility)"""
+        with self._lock:
+            instance = kwargs.get("instance_id", step_id)
+            rb_id = rollback_point_id or kwargs.get("rollback_point_id", "unknown")
+            key = f"rollback_{instance}_{datetime.now().strftime('%Y%m%d%H%M%S%f')}"
+            self._records[key] = RecoveryRecord(
+                record_id=key,
+                instance_id=instance,
+                step_id=step_id,
+                error_type=ErrorType.ROLLBACK_CONDITION,
+                error_message=f"Rollback to {rb_id}",
+                recovery_action=RecoveryAction.ROLLBACK,
+                timestamp=datetime.now().isoformat(),
+                metadata={"type": "rollback", "rollback_point_id": rb_id}
+            )
+            self._save()
 
 
 # 单例实例

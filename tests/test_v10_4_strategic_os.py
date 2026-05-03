@@ -5,7 +5,7 @@ from core.execution_contract import ExecutionContract, ExecutionReadinessGate, S
 from core.portfolio import GoalPortfolioManager
 from core.world_model import IntentState, EnvironmentState, UserContextGraph
 from infrastructure.connector_factory import ConnectorBlueprintFactory
-from learning_loop.reflection import ReflectionEngine
+from memory_context.learning_loop.reflection import ReflectionEngine
 from orchestration.strategic_personal_os_orchestrator import StrategicPersonalOSOrchestrator
 
 

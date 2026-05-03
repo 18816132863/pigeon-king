@@ -96,7 +96,8 @@ class CheckpointStore:
     def save(self, instance_id: str, step_id: str,
              state_data: Optional[Dict[str, Any]] = None,
              context: Optional[Dict[str, Any]] = None,
-             metadata: Optional[Dict[str, Any]] = None) -> Checkpoint:
+             metadata: Optional[Dict[str, Any]] = None,
+             **kwargs) -> Checkpoint:
         """保存检查点"""
         checkpoint_id = f"{instance_id}_{step_id}_{datetime.now().strftime('%Y%m%d%H%M%S%f')}"
         checkpoint = Checkpoint(

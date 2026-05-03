@@ -9,6 +9,8 @@ from typing import Dict, List, Optional, Any, Callable
 from enum import Enum
 import asyncio
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from copy import copy
 
 from orchestration.workflow.workflow_registry import (
     WorkflowTemplate,
@@ -25,6 +27,8 @@ from orchestration.workflow.dependency_resolver import (
     DependencyResolver,
     get_dependency_resolver
 )
+from orchestration.workflow.parallel_policy import ParallelClass, ParallelDecision, ParallelPolicy
+from orchestration.workflow.parallel_executor import ParallelExecutor
 from orchestration.validators.workflow_contract_validator import (
     get_workflow_contract_validator
 )
@@ -193,6 +197,8 @@ class WorkflowEngine:
         self._recovery_store = get_recovery_store()
         self._state_machine = get_workflow_state_machine()
         self._dependency_resolver = get_dependency_resolver()
+        self._parallel_policy = ParallelPolicy()
+        self._parallel_executor = ParallelExecutor(self._parallel_policy, self.max_parallel_steps)
         
         # 动作处理器
         self._action_handlers: Dict[str, Callable] = {}
@@ -331,8 +337,12 @@ class WorkflowEngine:
         self._state_machine.transition_workflow(instance.instance_id, WorkflowState.RUNNING)
         self._instance_store.update(instance.instance_id, status=InstanceStatus.RUNNING)
         
-        # 6. 生成执行顺序
-        execution_order = self._dependency_resolver.resolve(template.steps)
+        # 6. 生成执行顺序与并行层级
+        resolution = self._dependency_resolver.resolve_with_details(template.steps)
+        if resolution.has_cycle:
+            raise ValueError(f"Circular dependency detected: {resolution.cycle_path}")
+        execution_order = resolution.execution_order
+        parallel_groups = resolution.parallel_groups
         
         # 7. 初始化结果
         result = WorkflowResult(
@@ -349,6 +359,7 @@ class WorkflowEngine:
             self._execute_steps(
                 template=template,
                 execution_order=execution_order,
+                parallel_groups=parallel_groups,
                 result=result,
                 context=context_bundle or {},
                 control_decision=control_decision
@@ -390,10 +401,13 @@ class WorkflowEngine:
             )
         
         # 9. 计算时长
-        if result.completed_at:
-            start = datetime.fromisoformat(result.started_at)
-            end = datetime.fromisoformat(result.completed_at)
-            result.total_duration_ms = int((end - start).total_seconds() * 1000)
+        if result.completed_at and result.started_at:
+            try:
+                start = datetime.fromisoformat(result.started_at) if isinstance(result.started_at, str) else result.started_at
+                end = datetime.fromisoformat(result.completed_at) if isinstance(result.completed_at, str) else result.completed_at
+                result.total_duration_ms = int((end - start).total_seconds() * 1000)
+            except (TypeError, ValueError):
+                pass
         
         # 10. 汇总恢复信息
         for step_result in result.step_results.values():
@@ -411,64 +425,307 @@ class WorkflowEngine:
         execution_order: List[str],
         result: WorkflowResult,
         context: Dict,
-        control_decision: Dict = None
+        control_decision: Dict = None,
+        parallel_groups: Optional[List[List[str]]] = None,
     ):
-        """执行步骤序列"""
+        """
+        执行步骤序列（V86 受控并行版）。
+
+        规则：
+        - dependency_resolver 产出的同层 parallel_group 代表依赖上可并行。
+        - parallel_policy 再做安全分流：safe_parallel 才进入线程池。
+        - serial_required / approval_required / blocked 永远不进入并行池。
+        - 所有真实执行仍复用 _execute_step，保留 retry/fallback/rollback/checkpoint/audit。
+        """
         step_map = {s.step_id: s for s in template.steps}
         blocked_capabilities = control_decision.get("blocked_capabilities", []) if control_decision else []
         degradation_mode = control_decision.get("degradation_mode") if control_decision else None
-        
-        for step_id in execution_order:
-            step = step_map.get(step_id)
-            if not step:
+        fail_fast = bool((control_decision or {}).get("fail_fast", True))
+
+        if not parallel_groups:
+            parallel_groups = [[sid] for sid in execution_order]
+
+        execution_position = {sid: i for i, sid in enumerate(execution_order)}
+
+        for group_index, group in enumerate(parallel_groups):
+            group_step_ids = [sid for sid in group if sid in step_map]
+            group_step_ids.sort(key=lambda sid: execution_position.get(sid, 10**9))
+            if not group_step_ids:
                 continue
-            
-            # 检查能力是否被阻止
-            if any(cap in blocked_capabilities for cap in step.required_capabilities):
+
+            self._event_store.record(
+                instance_id=result.instance_id,
+                event_type=WorkflowEventType.PARALLEL_GROUP_STARTED,
+                payload={"group_index": group_index, "step_ids": group_step_ids},
+            )
+
+            executable_steps = []
+            for step_id in group_step_ids:
+                step = step_map[step_id]
+
+                missing_deps = [dep for dep in step.depends_on if dep in step_map and dep not in result.step_results]
+                failed_deps = [dep for dep in step.depends_on if dep in result.step_results and result.step_results[dep].status == StepState.FAILED]
+                if missing_deps or failed_deps:
+                    reason = f"Dependency not satisfied. missing={missing_deps}, failed={failed_deps}"
+                    skipped = self._make_skipped_step_result(step_id, reason)
+                    result.step_results[step_id] = skipped
+                    self._record_step_skipped(result.instance_id, step_id, reason, {"missing_deps": missing_deps, "failed_deps": failed_deps})
+                    continue
+
+                precheck_result = self._precheck_step(
+                    step=step,
+                    result=result,
+                    blocked_capabilities=blocked_capabilities,
+                    degradation_mode=degradation_mode,
+                )
+                if precheck_result:
+                    result.step_results[step_id] = precheck_result
+                    continue
+
+                executable_steps.append(step)
+
+            if not executable_steps:
                 self._event_store.record(
                     instance_id=result.instance_id,
-                    event_type=WorkflowEventType.CAPABILITY_BLOCKED,
-                    step_id=step_id,
-                    data={"blocked_capabilities": step.required_capabilities}
+                    event_type=WorkflowEventType.PARALLEL_GROUP_COMPLETED,
+                    payload={"group_index": group_index, "step_ids": group_step_ids, "executed": []},
                 )
-                
-                step_result = StepResult(
-                    step_id=step_id,
-                    status=StepState.SKIPPED,
-                    started_at=datetime.now().isoformat(),
-                    completed_at=datetime.now().isoformat(),
-                    error="Capability blocked by control decision"
-                )
-                result.step_results[step_id] = step_result
                 continue
-            
-            # 检查 safe mode
-            if degradation_mode in ["safe", "restricted"] and step.is_high_risk:
-                if not step.safe_mode_supported:
-                    step_result = StepResult(
-                        step_id=step_id,
-                        status=StepState.SKIPPED,
-                        started_at=datetime.now().isoformat(),
-                        completed_at=datetime.now().isoformat(),
-                        error="High risk step skipped in safe mode"
+
+            plan = self._parallel_executor.plan_group(
+                executable_steps,
+                group_index=group_index,
+                control_decision=control_decision,
+            )
+
+            # blocked 永远不执行。
+            for step in plan.blocked:
+                decision = plan.decisions[step.step_id]
+                skipped = self._make_skipped_step_result(step.step_id, f"Blocked by parallel policy: {decision.reason}", decision)
+                result.step_results[step.step_id] = skipped
+                self._record_step_skipped(result.instance_id, step.step_id, skipped.error or "blocked", decision.to_dict())
+
+            # approval_required 默认停在提交屏障；显式批准后才改为串行。
+            serial_steps = list(plan.serial_required)
+            for step in plan.approval_required:
+                decision = plan.decisions[step.step_id]
+                if self._approval_granted(step, control_decision):
+                    serial_steps.append(step)
+                    self._event_store.record(
+                        instance_id=result.instance_id,
+                        event_type=WorkflowEventType.SERIAL_LANE_SELECTED,
+                        step_id=step.step_id,
+                        payload={"reason": "approval granted; force serial", "decision": decision.to_dict()},
                     )
-                    result.step_results[step_id] = step_result
-                    continue
-            
-            # 执行步骤
-            step_result = self._execute_step(
-                step=step,
+                else:
+                    skipped = self._make_skipped_step_result(step.step_id, f"Commit barrier: {decision.reason}", decision)
+                    result.step_results[step.step_id] = skipped
+                    self._event_store.record(
+                        instance_id=result.instance_id,
+                        event_type=WorkflowEventType.COMMIT_BARRIER_BLOCKED,
+                        step_id=step.step_id,
+                        payload={"reason": skipped.error, "decision": decision.to_dict()},
+                    )
+                    self._record_step_skipped(result.instance_id, step.step_id, skipped.error or "approval required", decision.to_dict())
+
+            # safe_parallel 才进入并行池。
+            safe_results = self._execute_safe_steps_parallel(
+                steps=plan.safe_parallel,
                 result=result,
                 context=context,
-                template=template
+                template=template,
+                execution_position=execution_position,
             )
-            result.step_results[step_id] = step_result
-            
-            # 处理失败
-            if step_result.status == StepState.FAILED:
-                result.failed_step_id = step_id
-                raise RuntimeError(f"Step {step_id} failed: {step_result.error}")
-    
+            for step_id in sorted(safe_results.keys(), key=lambda sid: execution_position.get(sid, 10**9)):
+                step_result = safe_results[step_id]
+                result.step_results[step_id] = step_result
+                if step_result.status == StepState.FAILED:
+                    result.failed_step_id = step_id
+                    if fail_fast:
+                        raise RuntimeError(f"Step {step_id} failed: {step_result.error}")
+
+            # 串行动作逐个执行，不能进入并行池。
+            serial_steps.sort(key=lambda s: execution_position.get(s.step_id, 10**9))
+            for step in serial_steps:
+                decision = plan.decisions.get(step.step_id)
+                self._event_store.record(
+                    instance_id=result.instance_id,
+                    event_type=WorkflowEventType.SERIAL_LANE_SELECTED,
+                    step_id=step.step_id,
+                    payload={"reason": decision.reason if decision else "serial required", "decision": decision.to_dict() if decision else {}},
+                )
+                step_result = self._execute_step(
+                    step=step,
+                    result=result,
+                    context=context,
+                    template=template,
+                )
+                result.step_results[step.step_id] = step_result
+                if step_result.status == StepState.FAILED:
+                    result.failed_step_id = step.step_id
+                    raise RuntimeError(f"Step {step.step_id} failed: {step_result.error}")
+
+            self._event_store.record(
+                instance_id=result.instance_id,
+                event_type=WorkflowEventType.PARALLEL_GROUP_COMPLETED,
+                payload={
+                    "group_index": group_index,
+                    "step_ids": group_step_ids,
+                    "plan": plan.to_dict(),
+                    "completed": [sid for sid in group_step_ids if sid in result.step_results],
+                },
+            )
+
+    def _precheck_step(
+        self,
+        step: WorkflowStep,
+        result: WorkflowResult,
+        blocked_capabilities: List[str],
+        degradation_mode: Optional[str],
+    ) -> Optional[StepResult]:
+        """执行并行策略之前的原有能力/safe-mode 预检查。"""
+        if any(cap in blocked_capabilities for cap in step.required_capabilities):
+            self._event_store.record(
+                instance_id=result.instance_id,
+                event_type=WorkflowEventType.CAPABILITY_BLOCKED,
+                step_id=step.step_id,
+                payload={"blocked_capabilities": step.required_capabilities},
+            )
+            skipped = self._make_skipped_step_result(step.step_id, "Capability blocked by control decision")
+            self._record_step_skipped(result.instance_id, step.step_id, skipped.error or "capability blocked", {"blocked_capabilities": step.required_capabilities})
+            return skipped
+
+        if degradation_mode in ["safe", "restricted"] and step.is_high_risk and not step.safe_mode_supported:
+            skipped = self._make_skipped_step_result(step.step_id, "High risk step skipped in safe mode")
+            self._record_step_skipped(result.instance_id, step.step_id, skipped.error or "safe mode", {"degradation_mode": degradation_mode})
+            return skipped
+
+        return None
+
+    def _execute_safe_steps_parallel(
+        self,
+        steps: List[WorkflowStep],
+        result: WorkflowResult,
+        context: Dict,
+        template: WorkflowTemplate,
+        execution_position: Dict[str, int],
+    ) -> Dict[str, StepResult]:
+        """并行执行安全步骤，并按 step_id/拓扑顺序稳定回写。"""
+        if not steps:
+            return {}
+
+        steps = sorted(steps, key=lambda s: execution_position.get(s.step_id, 10**9))
+        max_workers = max(1, min(self.max_parallel_steps, len(steps)))
+        results: Dict[str, StepResult] = {}
+
+        with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="workflow-safe-parallel") as pool:
+            future_map = {}
+            for step in steps:
+                partial_result = self._clone_result_for_parallel_step(result)
+                future = pool.submit(self._execute_step, step, partial_result, context, template)
+                future_map[future] = (step, partial_result)
+
+            for future in as_completed(future_map):
+                step, partial_result = future_map[future]
+                try:
+                    step_result = future.result()
+                    self._merge_parallel_result_metadata(result, partial_result, step_result)
+                except Exception as exc:
+                    step_result = StepResult(
+                        step_id=step.step_id,
+                        status=StepState.FAILED,
+                        started_at=datetime.now().isoformat(),
+                        completed_at=datetime.now().isoformat(),
+                        error=str(exc),
+                    )
+                results[step.step_id] = step_result
+
+        return results
+
+    def _clone_result_for_parallel_step(self, result: WorkflowResult) -> WorkflowResult:
+        """为并行 step 创建轻量快照，避免多个线程直接竞争写 result.step_results。"""
+        cloned = WorkflowResult(
+            instance_id=result.instance_id,
+            workflow_id=result.workflow_id,
+            version=result.version,
+            status=result.status,
+            started_at=result.started_at,
+            completed_at=result.completed_at,
+            step_results=dict(result.step_results),
+            final_output=dict(result.final_output),
+            error=result.error,
+            total_duration_ms=result.total_duration_ms,
+            failed_step_id=result.failed_step_id,
+            total_retry_count=result.total_retry_count,
+            fallback_used=result.fallback_used,
+            rollback_used=result.rollback_used,
+            checkpoint_id=result.checkpoint_id,
+            control_decision_id=result.control_decision_id,
+            rollback_to_step=result.rollback_to_step,
+            rollback_point_id=result.rollback_point_id,
+        )
+        return cloned
+
+    def _merge_parallel_result_metadata(self, result: WorkflowResult, partial_result: WorkflowResult, step_result: StepResult):
+        """把并行 step 中产生的关键恢复元数据合并回主 result。"""
+        if step_result.checkpoint_id:
+            result.checkpoint_id = step_result.checkpoint_id
+        if partial_result.fallback_used or step_result.fallback_used:
+            result.fallback_used = True
+        if partial_result.rollback_used or step_result.rollback_used:
+            result.rollback_used = True
+        if partial_result.rollback_point_id:
+            result.rollback_point_id = partial_result.rollback_point_id
+        if partial_result.rollback_to_step:
+            result.rollback_to_step = partial_result.rollback_to_step
+
+    def _approval_granted(self, step: WorkflowStep, control_decision: Optional[Dict]) -> bool:
+        """判断提交屏障类步骤是否已被显式批准。"""
+        if not control_decision:
+            return False
+        if control_decision.get("allow_approval_required") is True:
+            return True
+        approved_step_ids = set(control_decision.get("approved_step_ids", []) or [])
+        approved_actions = set(control_decision.get("approved_actions", []) or [])
+        return step.step_id in approved_step_ids or step.action in approved_actions
+
+    def _make_skipped_step_result(
+        self,
+        step_id: str,
+        reason: str,
+        decision: Optional[ParallelDecision] = None,
+    ) -> StepResult:
+        now = datetime.now().isoformat()
+        output = {"skipped": True, "reason": reason}
+        if decision:
+            output["parallel_decision"] = decision.to_dict()
+        return StepResult(
+            step_id=step_id,
+            status=StepState.SKIPPED,
+            started_at=now,
+            completed_at=now,
+            output=output,
+            error=reason,
+        )
+
+    def _record_step_skipped(self, instance_id: str, step_id: str, reason: str, metadata: Optional[Dict] = None):
+        if hasattr(self._event_store, "record_step_skipped"):
+            self._event_store.record_step_skipped(
+                instance_id=instance_id,
+                step_id=step_id,
+                reason=reason,
+                **(metadata or {}),
+            )
+        else:
+            self._event_store.record(
+                instance_id=instance_id,
+                event_type=WorkflowEventType.STEP_SKIPPED,
+                step_id=step_id,
+                payload={"reason": reason},
+                metadata=metadata or {},
+            )
+        self._state_machine.transition_step(instance_id, step_id, StepState.SKIPPED, reason=reason)
+
     def _execute_step(
         self,
         step: WorkflowStep,
@@ -509,16 +766,17 @@ class WorkflowEngine:
 
         # ========== 第一组：step 开始前保存 checkpoint ==========
         checkpoint = self.checkpoint_store.save(
-            workflow_id=result.workflow_id,
+            instance_id=result.instance_id,
             step_id=step.step_id,
-            state={
+            state_data={
                 "instance_id": result.instance_id,
                 "step_input": step_input,
-                "step_results": {k: v.to_dict() for k, v in result.step_results.items()}
-            },
-            completed_steps=completed_steps,
-            pending_steps=[step.step_id] + pending_steps,
-            metadata={"phase": "before_step", "attempt": 0}
+                "step_results": {k: v.to_dict() for k, v in result.step_results.items()},
+                "completed_steps": completed_steps,
+                "pending_steps": [step.step_id] + pending_steps,
+                "phase": "before_step",
+                "attempt": 0
+            }
         )
         step_result.checkpoint_id = checkpoint.checkpoint_id
 
@@ -562,17 +820,18 @@ class WorkflowEngine:
 
                 # ========== 第一组：step 失败后保存 checkpoint ==========
                 checkpoint = self.checkpoint_store.save(
-                    workflow_id=result.workflow_id,
+                    instance_id=result.instance_id,
                     step_id=step.step_id,
-                    state={
+                    state_data={
                         "instance_id": result.instance_id,
                         "error": str(e),
                         "attempt": attempt,
-                        "step_results": {k: v.to_dict() for k, v in result.step_results.items()}
-                    },
-                    completed_steps=completed_steps,
-                    pending_steps=[step.step_id] + pending_steps,
-                    metadata={"phase": "on_error", "attempt": attempt}
+                        "step_results": {k: v.to_dict() for k, v in result.step_results.items()},
+                        "completed_steps": completed_steps,
+                        "pending_steps": [step.step_id] + pending_steps,
+                        "phase": "on_error",
+                        "attempt_meta": attempt
+                    }
                 )
                 step_result.checkpoint_id = checkpoint.checkpoint_id
 
@@ -653,17 +912,17 @@ class WorkflowEngine:
 
                             # ========== 第一组：fallback 成功后保存 checkpoint ==========
                             checkpoint = self.checkpoint_store.save(
-                                workflow_id=result.workflow_id,
+                                instance_id=result.instance_id,
                                 step_id=step.step_id,
-                                state={
+                                state_data={
                                     "instance_id": result.instance_id,
                                     "output": output,
                                     "fallback_used": True,
-                                    "step_results": {k: v.to_dict() for k, v in result.step_results.items()}
-                                },
-                                completed_steps=completed_steps + [step.step_id],
-                                pending_steps=pending_steps,
-                                metadata={"phase": "after_fallback"}
+                                    "step_results": {k: v.to_dict() for k, v in result.step_results.items()},
+                                    "completed_steps": completed_steps + [step.step_id],
+                                    "pending_steps": pending_steps,
+                                    "phase": "after_fallback"
+                                }
                             )
                             step_result.checkpoint_id = checkpoint.checkpoint_id
 
@@ -756,23 +1015,27 @@ class WorkflowEngine:
         step_result.completed_at = datetime.now().isoformat()
 
         # 计算时长
-        start = datetime.fromisoformat(step_result.started_at)
-        end = datetime.fromisoformat(step_result.completed_at)
-        step_result.duration_ms = int((end - start).total_seconds() * 1000)
+        if step_result.started_at and step_result.completed_at:
+            try:
+                start = datetime.fromisoformat(step_result.started_at) if isinstance(step_result.started_at, str) else step_result.started_at
+                end = datetime.fromisoformat(step_result.completed_at) if isinstance(step_result.completed_at, str) else step_result.completed_at
+                step_result.duration_ms = int((end - start).total_seconds() * 1000)
+            except (TypeError, ValueError):
+                step_result.duration_ms = 0
 
         # ========== 第一组：step 成功后保存 checkpoint ==========
         if step_result.status == StepState.COMPLETED:
             checkpoint = self.checkpoint_store.save(
-                workflow_id=result.workflow_id,
+                instance_id=result.instance_id,
                 step_id=step.step_id,
-                state={
+                state_data={
                     "instance_id": result.instance_id,
                     "output": step_result.output,
-                    "step_results": {k: v.to_dict() for k, v in result.step_results.items()}
-                },
-                completed_steps=completed_steps + [step.step_id],
-                pending_steps=pending_steps,
-                metadata={"phase": "after_step"}
+                    "step_results": {k: v.to_dict() for k, v in result.step_results.items()},
+                    "completed_steps": completed_steps + [step.step_id],
+                    "pending_steps": pending_steps,
+                    "phase": "after_step"
+                }
             )
             step_result.checkpoint_id = checkpoint.checkpoint_id
             result.checkpoint_id = checkpoint.checkpoint_id

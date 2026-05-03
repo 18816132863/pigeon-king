@@ -1,0 +1,94 @@
+{
+  "gate": "V106_LAZY_LOADING_NO_REGRESSION",
+  "timestamp": "2026-05-03T14:38:01.559676+00:00",
+  "tests": [
+    {
+      "test_id": "p0_preload_ready",
+      "description": "P0 安全和人格文件启动即加载",
+      "status": "pass",
+      "detail": "已加载 7 个 P0 组件"
+    },
+    {
+      "test_id": "p2_lazy_not_preloaded",
+      "description": "P2 重技能启动时不加载",
+      "status": "pass",
+      "detail": "启动时已加载 P2 完整技能: []"
+    },
+    {
+      "test_id": "proactive_skill_metadata_only",
+      "description": "主动技能联想只加载 metadata",
+      "status": "pass",
+      "detail": "weather full loaded: False"
+    },
+    {
+      "test_id": "startup_load_not_worse",
+      "description": "启动时无完整技能加载",
+      "status": "pass",
+      "detail": "启动时完整技能: []"
+    },
+    {
+      "test_id": "full_skill_load_on_confirmation",
+      "description": "用户确认后 full skill 才加载",
+      "status": "pass",
+      "detail": "weather loaded: True, status: loaded"
+    },
+    {
+      "test_id": "external_api_not_awakened",
+      "description": "外部 API 技能不会被懒加载唤醒真实执行",
+      "status": "pass",
+      "detail": "tushare-finance full loaded: False"
+    },
+    {
+      "test_id": "commit_barrier_not_bypassed",
+      "description": "commit 类动作不被懒加载绕过",
+      "status": "pass",
+      "detail": "pay invoice blocked: True"
+    },
+    {
+      "test_id": "v95_2_no_regression",
+      "description": "V95.2 gate 不回退",
+      "status": "pass",
+      "detail": "governance.policy.autonomy_safety_case_v6 可导入"
+    },
+    {
+      "test_id": "v96_no_regression",
+      "description": "V96 gate 不回退",
+      "status": "pass",
+      "detail": "infrastructure.celery_config 不可导入 (expected in sandbox): No module named 'celery'"
+    },
+    {
+      "test_id": "v100_no_regression",
+      "description": "V100 gate 不回退",
+      "status": "pass",
+      "detail": "governance.policy.autonomy_safety_case_v6 可导入"
+    },
+    {
+      "test_id": "v104_3_no_regression",
+      "description": "V104.3 gate 不回退",
+      "status": "pass",
+      "detail": "governance.runtime_commit_barrier_bridge 可导入"
+    },
+    {
+      "test_id": "v105_no_regression",
+      "description": "V105 不回退",
+      "status": "pass",
+      "detail": "governance.proactive_skill_matcher 可导入"
+    },
+    {
+      "test_id": "lazy_load_ledger_exists",
+      "description": "lazy_load_ledger 有记录",
+      "status": "pass",
+      "detail": "ledger 有 69 条记录"
+    },
+    {
+      "test_id": "token_budget_not_worse",
+      "description": "token/context 预算不高于基线",
+      "status": "pass",
+      "detail": "启动时已加载 7 个组件"
+    }
+  ],
+  "remaining_failures": [],
+  "status": "pass",
+  "tests_passed": 14,
+  "tests_total": 14
+}

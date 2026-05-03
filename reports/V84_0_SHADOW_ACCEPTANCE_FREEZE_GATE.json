@@ -1,0 +1,372 @@
+{
+  "version": "V84.0",
+  "status_report": {
+    "shadow": {
+      "status": "pass",
+      "checks": {
+        "all_scenarios_pass": true,
+        "scenario_count_at_least_5": true,
+        "no_real_side_effects": true,
+        "adapter_contracts_pass": true,
+        "commit_actions_paused_in_every_relevant_scenario": true
+      },
+      "results": [
+        {
+          "scenario_id": "digital_global_agent",
+          "status": "pass",
+          "actions_checked": 4,
+          "commit_actions_paused": 2,
+          "non_commit_actions_allowed": 2,
+          "real_side_effects": 0,
+          "notes": "shadow_acceptance_no_live_commit"
+        },
+        {
+          "scenario_id": "commerce_preparation",
+          "status": "pass",
+          "actions_checked": 3,
+          "commit_actions_paused": 1,
+          "non_commit_actions_allowed": 2,
+          "real_side_effects": 0,
+          "notes": "shadow_acceptance_no_live_commit"
+        },
+        {
+          "scenario_id": "embodied_robot_mock",
+          "status": "pass",
+          "actions_checked": 3,
+          "commit_actions_paused": 1,
+          "non_commit_actions_allowed": 2,
+          "real_side_effects": 0,
+          "notes": "shadow_acceptance_no_live_commit"
+        },
+        {
+          "scenario_id": "contract_and_identity",
+          "status": "pass",
+          "actions_checked": 4,
+          "commit_actions_paused": 4,
+          "non_commit_actions_allowed": 0,
+          "real_side_effects": 0,
+          "notes": "shadow_acceptance_no_live_commit"
+        },
+        {
+          "scenario_id": "destructive_admin",
+          "status": "pass",
+          "actions_checked": 3,
+          "commit_actions_paused": 1,
+          "non_commit_actions_allowed": 2,
+          "real_side_effects": 0,
+          "notes": "shadow_acceptance_no_live_commit"
+        }
+      ],
+      "adapter_contract_gate": {
+        "status": "pass",
+        "score": 1.0,
+        "checks": {
+          "coverage_status_pass": true,
+          "mock_coverage_at_least_90": true,
+          "no_live_enabled_contracts": true,
+          "all_commit_semantics_have_contracts": true,
+          "all_noncommit_semantics_have_contracts": true,
+          "has_payment_contract": true,
+          "has_device_or_robot_contract": true,
+          "has_mcp_or_connector_contract": true,
+          "final_switch_scope_limited": true
+        },
+        "final_switch_scope": "adapter_credential_approval_config_only",
+        "coverage_report": {
+          "status": "pass",
+          "total_contracts": 14,
+          "pending_ready_contracts": 14,
+          "live_connectable_now": 0,
+          "mock_coverage": 1.0,
+          "policy": "mock_first_live_switch_closed",
+          "contracts": [
+            {
+              "name": "file_read",
+              "kind": "local",
+              "semantic_classes": [
+                "observe"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": false,
+              "credential_bound": false,
+              "approval_required": false,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": ""
+            },
+            {
+              "name": "knowledge_search",
+              "kind": "local",
+              "semantic_classes": [
+                "observe",
+                "reason"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": false,
+              "credential_bound": false,
+              "approval_required": false,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": ""
+            },
+            {
+              "name": "draft_generator",
+              "kind": "local",
+              "semantic_classes": [
+                "generate",
+                "prepare"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": false,
+              "credential_bound": false,
+              "approval_required": false,
+              "audit_required": true,
+              "rollback_supported": true,
+              "notes": ""
+            },
+            {
+              "name": "calendar_mock",
+              "kind": "connector",
+              "semantic_classes": [
+                "prepare",
+                "external_send"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": true,
+              "notes": "create/update event only as draft or mock"
+            },
+            {
+              "name": "message_outbox_mock",
+              "kind": "connector",
+              "semantic_classes": [
+                "prepare",
+                "external_send"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": true,
+              "notes": "draft/outbox only; no real send"
+            },
+            {
+              "name": "email_outbox_mock",
+              "kind": "connector",
+              "semantic_classes": [
+                "prepare",
+                "external_send"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": true,
+              "notes": "draft only; live send disabled"
+            },
+            {
+              "name": "payment_mock",
+              "kind": "payment",
+              "semantic_classes": [
+                "prepare",
+                "payment"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": "checkout/payment hard-stopped"
+            },
+            {
+              "name": "contract_signature_mock",
+              "kind": "api",
+              "semantic_classes": [
+                "prepare",
+                "signature"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": "signature hard-stopped"
+            },
+            {
+              "name": "device_control_mock",
+              "kind": "device",
+              "semantic_classes": [
+                "simulate",
+                "physical_actuation"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": "device actuation mock only"
+            },
+            {
+              "name": "robot_controller_mock",
+              "kind": "robot",
+              "semantic_classes": [
+                "simulate",
+                "physical_actuation"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": "trajectory generation only"
+            },
+            {
+              "name": "identity_commit_mock",
+              "kind": "api",
+              "semantic_classes": [
+                "prepare",
+                "identity_commit"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": "identity commitments hard-stopped"
+            },
+            {
+              "name": "destructive_admin_mock",
+              "kind": "api",
+              "semantic_classes": [
+                "prepare",
+                "destructive"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": false,
+              "notes": "destructive actions hard-stopped"
+            },
+            {
+              "name": "mcp_remote_tool_mock",
+              "kind": "mcp",
+              "semantic_classes": [
+                "observe",
+                "reason",
+                "prepare",
+                "external_send"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": true,
+              "credential_bound": false,
+              "approval_required": true,
+              "audit_required": true,
+              "rollback_supported": true,
+              "notes": "remote MCP contract declared; live call disabled by barrier"
+            },
+            {
+              "name": "world_model_sim",
+              "kind": "local",
+              "semantic_classes": [
+                "simulate"
+              ],
+              "mock_adapter_present": true,
+              "live_adapter_declared": true,
+              "live_enabled": false,
+              "credential_required": false,
+              "credential_bound": false,
+              "approval_required": false,
+              "audit_required": true,
+              "rollback_supported": true,
+              "notes": ""
+            }
+          ]
+        },
+        "missing_commit_classes": [],
+        "live_enabled_contracts": []
+      },
+      "invariant": "shadow_scenarios_rehearse_real_world_work_without_real_world_side_effects"
+    },
+    "freeze": {
+      "status": "pass",
+      "checks": {
+        "live_world_disconnected": true,
+        "credentials_unbound": true,
+        "payment_disabled": true,
+        "signature_disabled": true,
+        "external_send_disabled": true,
+        "physical_actuation_disabled": true,
+        "final_switch_scope_limited": true,
+        "has_enough_frozen_boundaries": true,
+        "other_paths_preserved": true
+      },
+      "manifest": {
+        "version": "V85.0",
+        "shape": "final_full_function_embodied_pending_access_state",
+        "live_world_connected": false,
+        "live_credentials_bound": false,
+        "live_payment_enabled": false,
+        "live_signature_enabled": false,
+        "live_external_send_enabled": false,
+        "live_physical_actuation_enabled": false,
+        "final_switch_scope": "adapter_credential_approval_config_only",
+        "frozen_boundaries": [
+          "payment_hard_stop",
+          "signature_hard_stop",
+          "physical_actuation_hard_stop",
+          "identity_commit_hard_stop",
+          "destructive_action_hard_stop",
+          "external_send_draft_or_approval_only",
+          "memory_cannot_override_policy",
+          "tool_content_is_untrusted_until_classified",
+          "global_kill_switch_can_halt_all_runtime"
+        ],
+        "reusable_strength_paths": [
+          "digital_global_agent",
+          "multimodal_creation_execution_engine",
+          "explainable_governance_decision_center",
+          "embodied_pending_access_kernel"
+        ]
+      }
+    }
+  },
+  "status": "pass"
+}

@@ -1,0 +1,20 @@
+{
+  "point_id": "rb_697c60c2",
+  "step_id": "a",
+  "timestamp": "2026-05-02T01:43:13.580339",
+  "state": {
+    "instance_id": "v86_deterministic_replay",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "none"
+      }
+    },
+    "completed_steps": [],
+    "step_results": {}
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

@@ -1,0 +1,69 @@
+{"timestamp": "2026-05-03T14:28:38.399884+00:00", "component": "V90/V92/V100 commit_barrier", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400065+00:00", "component": "offline_runtime_guard", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400150+00:00", "component": "mainline_hook", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400217+00:00", "component": "AGENTS.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400278+00:00", "component": "IDENTITY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400582+00:00", "component": "MEMORY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400729+00:00", "component": "context_capsule", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400789+00:00", "component": "session_handoff", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400847+00:00", "component": "CURRENT_RELEASE_INDEX", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400906+00:00", "component": "skill_policy_gate", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.400970+00:00", "component": "NO_EXTERNAL_API/NO_REAL_*", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.403415+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 2.31, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.405263+00:00", "component": "skill:__nonexistent__", "action": "load_metadata", "status": "not_found", "duration_ms": 0.0, "detail": "not in registry"}
+{"timestamp": "2026-05-03T14:28:38.408387+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 2.78, "detail": ""}
+{"timestamp": "2026-05-03T14:28:38.408598+00:00", "component": "skill:weather", "action": "load_full_skill", "status": "loaded", "duration_ms": 3.14, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.919988+00:00", "component": "V90/V92/V100 commit_barrier", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920091+00:00", "component": "offline_runtime_guard", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920139+00:00", "component": "mainline_hook", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920174+00:00", "component": "AGENTS.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920205+00:00", "component": "IDENTITY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920235+00:00", "component": "MEMORY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920265+00:00", "component": "context_capsule", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920294+00:00", "component": "session_handoff", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920321+00:00", "component": "CURRENT_RELEASE_INDEX", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920349+00:00", "component": "skill_policy_gate", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.920394+00:00", "component": "NO_EXTERNAL_API/NO_REAL_*", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.921730+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 1.17, "detail": ""}
+{"timestamp": "2026-05-03T14:31:32.921841+00:00", "component": "skill:weather", "action": "load_full_skill", "status": "loaded", "duration_ms": 1.35, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408161+00:00", "component": "V90/V92/V100 commit_barrier", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408296+00:00", "component": "offline_runtime_guard", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408347+00:00", "component": "mainline_hook", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408405+00:00", "component": "AGENTS.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408439+00:00", "component": "IDENTITY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408473+00:00", "component": "MEMORY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408503+00:00", "component": "context_capsule", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408534+00:00", "component": "session_handoff", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408563+00:00", "component": "CURRENT_RELEASE_INDEX", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408592+00:00", "component": "skill_policy_gate", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.408621+00:00", "component": "NO_EXTERNAL_API/NO_REAL_*", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.410125+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 1.29, "detail": ""}
+{"timestamp": "2026-05-03T14:34:05.410257+00:00", "component": "skill:weather", "action": "load_full_skill", "status": "loaded", "duration_ms": 1.52, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991424+00:00", "component": "V90/V92/V100 commit_barrier", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991538+00:00", "component": "offline_runtime_guard", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991583+00:00", "component": "mainline_hook", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991618+00:00", "component": "AGENTS.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991649+00:00", "component": "IDENTITY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991679+00:00", "component": "MEMORY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991707+00:00", "component": "context_capsule", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991735+00:00", "component": "session_handoff", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991763+00:00", "component": "CURRENT_RELEASE_INDEX", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991790+00:00", "component": "skill_policy_gate", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.991833+00:00", "component": "NO_EXTERNAL_API/NO_REAL_*", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.993126+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 1.2, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.994324+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 0.98, "detail": ""}
+{"timestamp": "2026-05-03T14:37:28.994445+00:00", "component": "skill:weather", "action": "load_full_skill", "status": "loaded", "duration_ms": 1.18, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.576682+00:00", "component": "V90/V92/V100 commit_barrier", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.576803+00:00", "component": "offline_runtime_guard", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.576863+00:00", "component": "mainline_hook", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.576912+00:00", "component": "AGENTS.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.576969+00:00", "component": "IDENTITY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.577024+00:00", "component": "MEMORY.md", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.577081+00:00", "component": "context_capsule", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.577134+00:00", "component": "session_handoff", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.577196+00:00", "component": "CURRENT_RELEASE_INDEX", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.577239+00:00", "component": "skill_policy_gate", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.577287+00:00", "component": "NO_EXTERNAL_API/NO_REAL_*", "action": "preload_p0", "status": "loaded", "duration_ms": 0.0, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.579328+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 1.9, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.581908+00:00", "component": "skill:weather", "action": "load_metadata", "status": "loaded", "duration_ms": 2.29, "detail": ""}
+{"timestamp": "2026-05-03T14:38:01.582083+00:00", "component": "skill:weather", "action": "load_full_skill", "status": "loaded", "duration_ms": 2.57, "detail": ""}

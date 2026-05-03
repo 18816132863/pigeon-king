@@ -1,0 +1,20 @@
+{
+  "point_id": "rb_26332104",
+  "step_id": "a",
+  "timestamp": "2026-05-02T01:43:13.245167",
+  "state": {
+    "instance_id": "v86_parallel_dependencies",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "none"
+      }
+    },
+    "completed_steps": [],
+    "step_results": {}
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

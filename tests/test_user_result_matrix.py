@@ -9,12 +9,12 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from platform_adapter.user_messages import (
+from infrastructure.platform_adapter.user_messages import (
     get_user_message,
     format_user_result,
 )
-from platform_adapter.result_normalizer import NormalizedStatus
-from platform_adapter.error_codes import (
+from infrastructure.platform_adapter.result_normalizer import NormalizedStatus
+from infrastructure.platform_adapter.error_codes import (
     PLATFORM_TIMEOUT,
     PLATFORM_RESULT_UNCERTAIN,
     PLATFORM_AUTH_REQUIRED,

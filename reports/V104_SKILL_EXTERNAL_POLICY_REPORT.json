@@ -1,0 +1,2014 @@
+{
+  "version": "V104.0",
+  "status": "pass",
+  "items_count": 2011,
+  "policy_classes": [
+    "external_api_blocked",
+    "mock_only",
+    "offline_safe"
+  ],
+  "no_external_api": true,
+  "rule": "NO_EXTERNAL_API=true 时，requests/http/openai/cloud/upload/send/webhook 默认阻断或 mock。",
+  "items": [
+    {
+      "path": "skills/math-edu-assistant/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/math-edu-assistant/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/math-edu-assistant/store_listing.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/README.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/best-minds/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-doc-convert/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/fasting-tracker/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/fasting-tracker/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/wechat-article-search/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/wechat-article-search/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/bdpan-storage/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/claw-art/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/claw-art/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/weather/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/registry/skill_registry.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/registry/__init__.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/autonomous-tasks/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/autonomous-tasks/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/proactive-tasks/HEARTBEAT-CONFIG.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/proactive-tasks/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/proactive-tasks/README.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/proactive-tasks/CHANGELOG.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/proactive-tasks/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/proactive-tasks/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/k12-smart-teacher/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/k12-smart-teacher/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/trading-quant/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/trading-quant/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/trading-quant/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/bytedance-deer-flow-surprise-me/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiao-gui-agent/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/hithink-iwencai/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/hithink-iwencai/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/kids-book-writer/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-image-translation/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-image-translation/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-image-translation/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/ontology/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ontology/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/aminer-data-search/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/aminer-data-search/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/openclaw-skills-video-script-creator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/openclaw-skills-video-script-creator/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openclaw-skills-video-script-creator/tips.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/wendao-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/wendao-skill/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/nicepkg-ai-workflow-user-research/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/html-ux-guidance/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/anthropics-skills-pptx/pptxgenjs.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/anthropics-skills-pptx/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/anthropics-skills-pptx/editing.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-podcast-gen/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/unit-converter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/unit-converter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/affaan-m-everything-claude-code-article-writing/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/amazing129-skills-mbti-for-agents/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/runtime/skill_health_monitor.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_router.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_sandbox.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_package_loader.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_version_selector.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_loader.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_dependency_resolver.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/skill_audit.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/runtime/__init__.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/darwin-skill/README_EN.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/darwin-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/darwin-skill/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/natural-language-planner/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/natural-language-planner/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/natural-language-planner/ARCHITECTURE.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/natural-language-planner/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/habit-flow-skill/SKILL (5).md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/general-writing/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/general-writing/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/shareai-lab-learn-claude-code-pdf/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/agentmcmillan-brain-and-co-plan-ceo-review/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/seedream-image-gen/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/office-automation/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ai-ppt-generator/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ai-ppt-generator/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/pua/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/summarize/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/summarize/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-ai-news-plus/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/imap-smtp-email/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/imap-smtp-email/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/imap-smtp-email/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/gtht-smartstockselection-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/gtht-smartstockselection-skill/gateway-config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/creative-thought-partner/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/creative-thought-partner/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/alphaear-news/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-ppt/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-ppt/step3_generate_monitor.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-ppt/step1_search_confirm.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-ppt/step2_outline.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-ppt/edit.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/openclaw-skills-assistant/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openclaw-skills-assistant/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/read-arxiv-paper/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/policies/skill_budget_policy.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/policies/skill_risk_policy.py",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/policies/skill_permission_policy.py",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/policies/__init__.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/yunshu0909-yunshu-skillshub-prd-doc-writer/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openclaw-skills-agent-builder-1.0.3/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openclaw-skills-agent-builder-1.0.3/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/env-guard/LICENSE.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/env-guard/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/env-guard/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/env-guard/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/browser-control/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/axton-obsidian-visual-skills-excalidraw-diagram/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/excel-analysis/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lyrical-fable/style_guide.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lyrical-fable/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/lyrical-fable/examples.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lyrical-fable/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-web-deploy/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-web-deploy/config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/percentage-calculator/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/percentage-calculator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/seedance-video-gen/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/qq-clawbot-setup/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/metabase-metabase-docs-write/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/remotion-video-toolkit/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/remotion-video-toolkit/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-web-search/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-web-search/package-lock.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-web-search/package.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-web-search/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/web-content-fetcher/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/web-content-fetcher/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-health/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-case-converter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-case-converter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/cron-parser/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/cron-parser/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/brainhole-factory/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/brainhole-factory/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/meituan-coupon-traffic-huawei/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/qr-code-info/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/qr-code-info/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/timezone-converter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/timezone-converter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/hz-proactive-agent/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/hz-proactive-agent/SKILL-v3-draft.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/hz-proactive-agent/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/hz-proactive-agent/SKILL-v2.3-backup.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/calcom-cal.com-web-design-guidelines-1.0.2/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/recipe-to-list/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/recipe-to-list/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/canvas-design/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ab-test-setup/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/webapp-testing/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/url-encoder/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/url-encoder/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/shubhamsaboo-awesome-llm-apps-ux-designer/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/shubhamsaboo-awesome-llm-apps-ux-designer/AGENTS.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/ip-lookup/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/ip-lookup/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-reverse/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-reverse/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/aiskillstore-marketplace-test-case-generator/skill-report.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/aiskillstore-marketplace-test-case-generator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/aiskillstore-marketplace-test-case-generator/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/weixin-clawbot-setup/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/arxiv-search/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/arxiv-search/arxiv_search.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/movie-producer-scene/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/movie-producer-scene/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/react-best-practices/metadata.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/react-best-practices/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/react-best-practices/AGENTS.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/react-best-practices/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/lorem-generator/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lorem-generator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/gtht-realtimemarketdata-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/gtht-realtimemarketdata-skill/gateway-config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/superdesign/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/superdesign/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/ppt-generator-skill/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/speech-to-text/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-file-upload/reference.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-file-upload/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/slidevjs-slidev-slidev/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/slidevjs-slidev-slidev/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/find-skills/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/stock-daily-analysis-pro/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/UPDATE_SUMMARY.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/examples.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/QUICKSTART.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/DEPLOYMENT.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/PROJECT_INDEX.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/test-example.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/smart-followups/CHANNELS.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/CONTRIBUTING.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/CHANGELOG.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/BUILD_SUMMARY.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/smart-followups/FAQ.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/smart-followups/INTERNAL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/headed-browser-open-v3/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/limtdesign/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/limtdesign/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-hot-news/cross_platform.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/README_EN.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-hot-news/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-hot-news/storage.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/news_digest.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/api_client.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-hot-news/sentiment_monitor.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/config.py",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-hot-news/formatter.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/industry_hot.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/personalized.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/daily_hot_news.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-hot-news/__init__.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/user-agent-parser/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/user-agent-parser/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-xlsx/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/SECURITY_DEEP_SCAN_v6.3.4.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/NATIVE_EXTENSION_CONFIG.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/CLAWHUB_APPEAL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/install.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/BUG_FIX_v5.1.6.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/CLAWHUB_ASSESSMENT_ANALYSIS.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/requirements.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/PERMISSION_SEPARATION.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/SECURITY_AUDIT_REPORT.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/MAINTENANCE.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/AGENTS.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/FINAL_SECURITY_REPORT_v5.1.7.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/SECURITY.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/SECURITY_DEEP_CHECK.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/CHANGELOG.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/DUAL_PACKAGE.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/MEMORY.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/COMPLETE_FIX_REPORT_v5.1.8.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/TOOLS.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/llm-memory-integration/SECURITY_FIX_v5.1.5.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/ROOT_REMOVAL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/llm-memory-integration/SOLUTIONS_TO_REMOVE_SUSPICIOUS.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/flowchart-generator-skill/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/flowchart-generator-skill/instruction.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/flowchart-generator-skill/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/product-manager/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/base64-converter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/base64-converter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/skill-creator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/today-task/simple_example.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/today-task/UPDATE_SYSTEM.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/today-task/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/today-task/task_output_temp.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/today-task/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/today-task/SECURITY.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/today-task/version.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/today-task/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/today-task/config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/today-task/update_config.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/uuid-generator/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/uuid-generator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/multi-search-engine/metadata.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/multi-search-engine/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/multi-search-engine/CHANGELOG.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/multi-search-engine/CHANNELLOG.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/multi-search-engine/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/multi-search-engine/config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/content-workflow/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/content-workflow/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/tencent-news/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-image-understanding/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-image-understanding/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-image-understanding/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/writing-style-iterator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/writing-style-iterator/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-HarmonyOSSmartHome-skill/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-HarmonyOSSmartHome-skill/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-tts/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-tts/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-tts/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/copywriter/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/copywriter/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/meituan-coupon-get-tool/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/meituan-coupon-get-tool/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/ai-picture-book/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ai-picture-book/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/article-writer/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/article-writer/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-report/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-report/workflow.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-report/validation.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-report/report-template.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/number-formatter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/number-formatter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-counter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-counter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/bytesagain-ai-skills-meme-generator/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/bytesagain-ai-skills-meme-generator/tips.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/gesture-html/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/jrj-quote-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/opengfx/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/opengfx/LEARNINGS.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/opengfx/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/pptx-posters/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openclaw-skills-soulcraft/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/openclaw-skills-soulcraft/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openclaw-skills-soulcraft/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/agent_reach/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/good-txt-to-hwreader/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/good-txt-to-hwreader/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-image-search/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/pdf-toolkit-pro/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/pdf-toolkit-pro/README.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/pdf-toolkit-pro/package.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/pdf-toolkit-pro/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-trimmer/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-trimmer/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/gtht-financialsearch-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/gtht-financialsearch-skill/gateway-config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ai-drama-prompt-factory/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/ai-drama-prompt-factory/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/news-extractor/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/gtht-ranklist-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/gtht-ranklist-skill/gateway-config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/json-validator/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/json-validator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/feishu-channel-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/alphaear-predictor/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/openmaic/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/huawei-drive/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/amap-jsapi-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/qcc-agent-skill/TEST_REPORT.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/qcc-agent-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/qcc-agent-skill/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/qcc-agent-skill/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/color-converter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/color-converter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/baoyu-url-to-markdown/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-docx/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/2nd-brain/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/2nd-brain/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/lifecycle/deprecation_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/enable_disable_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/remove_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/upgrade_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/compatibility_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/lifecycle_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/install_manager.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/lifecycle/__init__.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/json-formatter/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/json-formatter/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/yanxue-course-manager/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/yanxue-course-manager/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/fenbi/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/fenbi/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-diff/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/text-diff/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/frontend-ui-ux-engineer/SKILL.md",
+      "policy": "mock_only"
+    },
+    {
+      "path": "skills/mime-type-lookup/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/mime-type-lookup/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/educational-video-creator/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/prd-writer/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/prd-writer/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/su-lan-paper-daily-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/Humanizer-zh-main/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/Humanizer-zh-main/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/ima-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/github-awesome-copilot-prd/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/flyai-travel/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/minimax-music-gen/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/personas/SUMMARY.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/personas/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/personas/README.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/personas/CHANGELOG.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/personas/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/personas/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/personas/skill.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/personas/OVERVIEW.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/personas/FAQ.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/self-improving-agent/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/self-improving-agent/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/meitu-skills/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/meitu-skills/SECURITY.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/meitu-skills/package.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/meitu-skills/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/json-minifier/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/json-minifier/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/marketing-ideas/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/deep-search-and-insight-synthesize/skill-report.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/deep-search-and-insight-synthesize/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/fitness-coach/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/jdjr/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/tencent-docs/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/wecom-bot-setup/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/markitdown/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/anthropics-skills-canvas-design/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/davila7-claude-code-templates-ship-learn-next/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/davila7-claude-code-templates-ship-learn-next/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/brainstorming/SKILL.md",
+      "policy": "mock_only"
+    },
+    {
+      "path": "skills/brainstorming/spec-document-reviewer-prompt.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/brainstorming/visual-companion.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/weibo-clawbot-setup/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/regex-tester/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/regex-tester/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/daily-tech-broadcast/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-tech-broadcast/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/daily-tech-broadcast/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/news-writing/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/news-writing/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/nini-writing-inspiration/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/nini-writing-inspiration/_meta.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/baoyu-comic/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/date-calculator/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/date-calculator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/tc-chengxin/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/tc-chengxin/package.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/tc-chengxin/config.example.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/tc-chengxin/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/tushare-finance/metadata.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/tushare-finance/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/tushare-finance/QUICK_REFERENCE.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/tushare-finance/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/tushare-finance/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/voice-synthesis/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/feiskyer-claude-code-settings-deep-research/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/hash-generator/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/hash-generator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/trader-simulator/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/trader-simulator/README.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/trader-simulator/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-cloud-database/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-cloud-database/config.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/humanize-chinese/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/didi-ride-skill/SKILL.md",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/didi-ride-skill/package.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/didi-ride-skill/_meta.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/barcode-info/skill.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/barcode-info/SKILL.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/math-edu-assistant/references/knowledge_points.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/math-edu-assistant/references/grading_rubric.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/math-edu-assistant/references/question_templates.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/math-edu-assistant/references/curriculum_map.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_pdf_split.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_pdf_encrypt.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_watermark_merge.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_pdf_extract_text.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_pdf_decrypt.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_content_builder.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_pdf_extract_tables.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_watermark_cli.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_pdf_merge.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_watermark_image.py",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/_helpers.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_render_body.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_font_resolver.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/test_watermark_text.py",
+      "policy": "mock_only"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/tests/__init__.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/design/design.md",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/test_output/content_minimal.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/test_output/content_full.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/test_output/content_resume.json",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/test_output/content_chinese.json",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/watermark_merge.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/pdf_encrypt.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/pdf_split.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/font_resolver.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/watermark_image.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/fill_write.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/render_body.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/watermark_cli.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/watermark_text.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/pdf_extract_tables.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/merge.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/reformat_parse.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/cover.py",
+      "policy": "external_api_blocked"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/pdf_decrypt.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/palette.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/fill_inspect.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/pdf_extract_text.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/pdf_merge.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/render_cover.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/scripts/content_builder.py",
+      "policy": "offline_safe"
+    },
+    {
+      "path": "skills/xiaoyi-pdf/test_output/full_chinese_test/content_all_blocks.json",
+      "policy": "offline_safe"
+    }
+  ]
+}

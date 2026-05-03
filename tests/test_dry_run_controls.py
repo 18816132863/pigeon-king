@@ -5,7 +5,7 @@ import pytest
 
 def test_preview_side_effect():
     """测试副作用预览"""
-    from capabilities.preview_side_effect import preview_side_effect
+    from execution.capabilities.preview_side_effect import preview_side_effect
     
     # 测试消息发送预览
     result = preview_side_effect(
@@ -35,7 +35,7 @@ def test_preview_side_effect():
 
 def test_batch_preview():
     """测试批量预览"""
-    from capabilities.preview_side_effect import batch_preview
+    from execution.capabilities.preview_side_effect import batch_preview
     
     actions = [
         {"capability": "send_message", "params": {"to": "test", "message": "test"}},

@@ -97,3 +97,37 @@ def reconcile_device_action(
         next_action="classify_failure",
         evidence={"action_result": action_result, "observed_after_timeout": observed_after_timeout},
     )
+
+
+class DeviceReceiptReconciler:
+    """向后兼容的 DeviceReceiptReconciler 包装类。
+
+    纯本地执行，无外部 API，无真实副作用。
+    """
+
+    def __init__(self):
+        self.last_result: ReconcileResult | None = None
+
+    def reconcile(
+        self,
+        action_name: str,
+        action_result: dict[str, Any] | None,
+        expected_state: dict[str, Any],
+        observed_after_timeout: dict[str, Any] | None = None,
+    ) -> ReconcileResult:
+        self.last_result = reconcile_device_action(
+            action_name=action_name,
+            action_result=action_result,
+            expected_state=expected_state,
+            observed_after_timeout=observed_after_timeout,
+        )
+        return self.last_result
+
+    def __call__(
+        self,
+        action_name: str,
+        action_result: dict[str, Any] | None,
+        expected_state: dict[str, Any],
+        observed_after_timeout: dict[str, Any] | None = None,
+    ) -> ReconcileResult:
+        return self.reconcile(action_name, action_result, expected_state, observed_after_timeout)

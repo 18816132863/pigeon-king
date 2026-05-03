@@ -1,0 +1,20 @@
+{
+  "point_id": "rb_eecab3d2",
+  "step_id": "b",
+  "timestamp": "2026-05-02T01:43:13.583774",
+  "state": {
+    "instance_id": "v86_deterministic_replay",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "none"
+      }
+    },
+    "completed_steps": [],
+    "step_results": {}
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

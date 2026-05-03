@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-05-01T00:42:56.781940",
+  "disk_percent": 48.301498801567924,
+  "memory_percent": 18.8,
+  "gateway": {
+    "status": "ok",
+    "output": "Service: systemd (disabled)\nFile logs: /tmp/openclaw/openclaw-2026-05-01.log\n\nConfig (cli): ~/.openclaw/openclaw.json\nConfig (service): ~/.openclaw/openclaw.json\n\nGateway: bind=loopback (127.0.0.1), p"
+  },
+  "daemon": {
+    "status": "running",
+    "pid": "39475"
+  },
+  "imports": [
+    {
+      "module": "core.llm.model_registry",
+      "name": "ModelRegistry",
+      "ok": true
+    },
+    {
+      "module": "core.llm.model_router",
+      "name": "auto_route",
+      "ok": true
+    },
+    {
+      "module": "governance.embodied_pending_state",
+      "name": "CommitBarrier",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.execution_runtime",
+      "name": "RealExecutionBroker",
+      "ok": true
+    },
+    {
+      "module": "orchestration.final_pending_release",
+      "name": "V85FinalPendingAccessKernel",
+      "ok": true
+    }
+  ],
+  "all_ok": true
+}

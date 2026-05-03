@@ -117,6 +117,14 @@ class DaemonManager:
                 command=[sys.executable, str(self.root / "scripts/auto_fusion_hook.py")],
                 interval_seconds=600,  # 10分钟
                 auto_restart=True
+            ),
+            "health_watch": DaemonService(
+                id="health_watch",
+                name="健康巡检",
+                command=[sys.executable, str(self.root / "scripts/health_watch.py"), "--watch", "900"],
+                interval_seconds=900,  # 15分钟
+                auto_restart=True,
+                max_restarts=10,  # 巡检服务允许更多重试
             )
         }
     

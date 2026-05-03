@@ -1,0 +1,116 @@
+{
+  "version": "V98.1",
+  "status": "pass",
+  "checked_at": "2026-05-02T08:14:28Z",
+  "checks": {
+    "skill_rule_installed": true,
+    "mainline_hook_importable": true,
+    "set_last_goal_exists": true,
+    "run_exists": true,
+    "pre_reply_returns_context_summary": true,
+    "no_external_api": true,
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true,
+    "fail_soft": true,
+    "heavy_chain_not_triggered": true
+  },
+  "remaining_failures": [],
+  "items": [
+    {
+      "check": "skill_rule_installed",
+      "result": true,
+      "detail": "SKILL.md has pre_reply hook rule"
+    },
+    {
+      "check": "mainline_hook_importable",
+      "result": true,
+      "detail": "mainline_hook imported successfully"
+    },
+    {
+      "check": "set_last_goal_exists",
+      "result": true,
+      "detail": "set_last_goal is callable"
+    },
+    {
+      "check": "run_exists",
+      "result": true,
+      "detail": "pre_reply is callable"
+    },
+    {
+      "check": "pre_reply_returns_context_summary",
+      "result": true,
+      "detail": {
+        "context": {
+          "standing_orders_loaded": true,
+          "soul_present": true,
+          "tools_present": true,
+          "memory_present": true,
+          "identity_present": true,
+          "file_count": 5,
+          "note": ""
+        },
+        "guardrails": {
+          "no_external_api": true,
+          "no_real_payment": true,
+          "no_real_send": true,
+          "no_real_device": true,
+          "commit_barrier_active": true,
+          "note": "V90/V92 gates active. All commit actions blocked. External API disabled."
+        },
+        "duration_ms": 0,
+        "timeout_warning": false,
+        "warning": null
+      },
+      "context": {
+        "standing_orders_loaded": true,
+        "soul_present": true,
+        "tools_present": true,
+        "memory_present": true,
+        "identity_present": true,
+        "file_count": 5,
+        "note": ""
+      },
+      "guardrails": {
+        "no_external_api": true,
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "commit_barrier_active": true,
+        "note": "V90/V92 gates active. All commit actions blocked. External API disabled."
+      },
+      "duration_ms": 0
+    },
+    {
+      "check": "no_external_api",
+      "result": true,
+      "detail": "NO_EXTERNAL_API=true"
+    },
+    {
+      "check": "no_real_payment",
+      "result": true,
+      "detail": "NO_REAL_PAYMENT=true"
+    },
+    {
+      "check": "no_real_send",
+      "result": true,
+      "detail": "NO_REAL_SEND=true"
+    },
+    {
+      "check": "no_real_device",
+      "result": true,
+      "detail": "NO_REAL_DEVICE=true"
+    },
+    {
+      "check": "fail_soft",
+      "result": true,
+      "detail": "fail-soft works: returned PreReplyResult (duration=9ms, warning=None)"
+    },
+    {
+      "check": "heavy_chain_not_triggered",
+      "result": true,
+      "detail": "Heavy chain references in mainline_hook.py: ['105']"
+    }
+  ],
+  "note": "V98.1 Mainline Hook Runtime Gate — verifies pre-reply hook is properly installed and functional."
+}

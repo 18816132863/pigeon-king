@@ -1,0 +1,12 @@
+{
+  "version": "V105.0",
+  "status": "pass",
+  "created": [
+    "governance/proactive_skill_matcher.py",
+    "docs/SKILL_ACCESS_RULES.md",
+    "scripts/v105_proactive_skill_association_gate.py"
+  ],
+  "mainline_hook_patched": true,
+  "no_external_api": true,
+  "note": "主动技能联想只推荐，不执行；执行仍归 V90/V92/V100 网关。"
+}

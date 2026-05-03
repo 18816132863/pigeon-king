@@ -18,7 +18,7 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime
 from contextlib import contextmanager
 
-from domain.tasks import TaskSpec, TaskStatus, ScheduleType, EventType
+from core.domain.tasks.specs import TaskSpec, TaskStatus, ScheduleType, EventType
 from .interfaces import TaskRepository, TaskRunRepository, TaskEventRepository, CheckpointRepository
 
 
@@ -562,7 +562,7 @@ class SQLiteTaskRepository(TaskRepository):
     
     def _row_to_task(self, row: sqlite3.Row) -> TaskSpec:
         """将数据库行转换为 TaskSpec"""
-        from domain.tasks import ScheduleSpec, RetryPolicy, TimeoutPolicy, StepSpec
+        from core.domain.tasks.specs import ScheduleSpec, RetryPolicy, TimeoutPolicy, StepSpec
         
         schedule = None
         if row["schedule_type"]:

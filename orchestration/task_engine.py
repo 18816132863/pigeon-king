@@ -22,8 +22,8 @@ from infrastructure.shared.router import get_router, RouteResult
 from orchestration.verify_executor import verify_execution, VerifyExecutor
 from orchestration.summarize_executor import summarize_execution, SummarizeExecutor
 from orchestration.result_guard import guard_result, ResultGuard
-from application.response_service.renderer import ResponseRenderer
-from application.response_service.response_schema import FinalResponse, EvidenceSchema
+from execution.application.response_service.renderer import ResponseRenderer
+from execution.application.response_service.response_schema import FinalResponse, EvidenceSchema
 
 class EngineTaskStatus(Enum):
     """任务引擎内部状态（与 domain.tasks.specs.TaskStatus 不同）"""

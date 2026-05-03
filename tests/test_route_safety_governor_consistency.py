@@ -22,7 +22,7 @@ def safety_governor_risk_levels():
     """从 safety_governor 加载风险等级定义"""
     # 动态导入 safety_governor.risk_levels
     sys.path.insert(0, str(SAFETY_GOVERNOR_PATH.parent.parent))
-    from safety_governor.risk_levels import RiskLevel, RiskPolicy, RISK_POLICY_MAP
+    from governance.safety_governor.risk_levels import RiskLevel, RiskPolicy, RISK_POLICY_MAP
     
     return {
         "risk_levels": [level.value for level in RiskLevel],

@@ -1,0 +1,10 @@
+{
+  "mood": "playful",
+  "energy": 80,
+  "trust_level": 50,
+  "closeness": 30,
+  "confidence": 70,
+  "uncertainty": 10,
+  "current_mode": "creator",
+  "last_updated_at": 1777739609.21858
+}

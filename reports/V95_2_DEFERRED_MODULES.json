@@ -1,0 +1,10 @@
+{
+  "version": "V95.2",
+  "items": [
+    {
+      "symbol": "no_external_api",
+      "chain_id": 24,
+      "reason": "no_module_path_mapping_but_chain_step_recorded"
+    }
+  ]
+}

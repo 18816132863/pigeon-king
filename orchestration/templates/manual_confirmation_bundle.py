@@ -20,7 +20,7 @@ def manual_confirmation_bundle(
     Returns:
         执行结果
     """
-    from platform_adapter import invocation_ledger as ledger_module
+    from infrastructure.platform_adapter import invocation_ledger as ledger_module
     from orchestration.workflows.human_confirm import get_pending_confirms, respond_to_confirm
     
     ledger = ledger_module
@@ -98,7 +98,7 @@ def confirm_and_close(
     Returns:
         确认结果
     """
-    from capabilities.confirm_invocation import confirm_invocation
+    from execution.capabilities.confirm_invocation import confirm_invocation
     
     if dry_run:
         return {

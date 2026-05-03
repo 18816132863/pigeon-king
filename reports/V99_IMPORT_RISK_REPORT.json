@@ -1,0 +1,7 @@
+{
+  "agent_kernel": {
+    "physical_move_allowed": false,
+    "reason": "high import risk; keep old path and expose facade later",
+    "layer": "L3 Orchestration Runtime Kernel"
+  }
+}

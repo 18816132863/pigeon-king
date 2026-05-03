@@ -1,0 +1,12 @@
+{
+  "version": "V104.3",
+  "status": "pass",
+  "links": {
+    "mainline_hook_to_runtime_bus": true,
+    "single_runtime_to_commit_barrier": true,
+    "skill_policy_to_runtime_guard": true,
+    "runtime_bus_to_commit_barrier": true,
+    "offline_guard_runtime_hardening": true
+  },
+  "remaining_failures": []
+}

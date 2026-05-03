@@ -1,0 +1,45 @@
+{
+  "policy": "V106 Unified Lazy Loading Policy",
+  "layers": {
+    "P0_PRELOAD": [
+      "V90/V92/V100 commit_barrier",
+      "offline_runtime_guard",
+      "mainline_hook",
+      "AGENTS.md",
+      "IDENTITY.md",
+      "MEMORY.md",
+      "context_capsule",
+      "session_handoff",
+      "CURRENT_RELEASE_INDEX",
+      "skill_policy_gate",
+      "NO_EXTERNAL_API/NO_REAL_*"
+    ],
+    "P1_WARM": [
+      "skill_trigger_registry.json",
+      "proactive_skill_matcher",
+      "skill_metadata_index",
+      "current_reports_summary",
+      "relationship_memory_summary",
+      "persona_state_summary"
+    ],
+    "P2_LAZY": [
+      "full_SKILL.md",
+      "PDF/DOCX/Excel_processor",
+      "Image/Video_processor",
+      "GUI/Visual_Agent",
+      "multimodal_index",
+      "old_reports",
+      "speculative_modules",
+      "connector_factories"
+    ],
+    "P3_BLOCKED": [
+      "external_API_skills",
+      "webhook/email/calendar",
+      "cloud_upload",
+      "real_payment/send/device",
+      "Celery/Redis/PostgreSQL_backend"
+    ]
+  },
+  "total_rules": 30,
+  "timestamp": "2026-05-03T14:38:01.605389+00:00"
+}

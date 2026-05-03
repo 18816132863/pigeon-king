@@ -3,9 +3,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Optional
-from platform_adapter.capability_registry import device_profile, register_default_capabilities
-from platform_adapter.runtime_state_store import summarize_runtime
-from platform_adapter.timeout_circuit import init_circuit_tables, connect
+from infrastructure.platform_adapter.capability_registry import device_profile, register_default_capabilities
+from infrastructure.platform_adapter.runtime_state_store import summarize_runtime
+from infrastructure.platform_adapter.timeout_circuit import init_circuit_tables, connect
 def _circuit_summary(db_path: Optional[Path]=None):
     init_circuit_tables(db_path)
     with connect(db_path) as conn: rows=conn.execute("SELECT state,COUNT(*) n FROM runtime_circuit_breakers GROUP BY state").fetchall()

@@ -14,7 +14,7 @@ def test_router_module_exists():
 
 def test_model_router_exists():
     """测试模型路由存在 - V9 新增"""
-    from orchestration.router.model_router import ModelRouter
+    from core.llm.model_router import auto_route as ModelRouter  # V85替代旧V5
     assert ModelRouter is not None
 
 

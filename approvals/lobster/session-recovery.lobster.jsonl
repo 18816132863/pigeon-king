@@ -1,0 +1,1 @@
+{"created_at": "2026-05-01 19:36:02", "version": "V98.0", "kind": "session_recovery", "mode": "mock_approval_channel", "real_execution": false, "note": "Lobster is approval/audit only, not the main execution chain."}

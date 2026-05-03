@@ -1,0 +1,67 @@
+{
+  "version": "V95.0",
+  "status": "pass",
+  "checked_at": "2026-05-01T09:41:47Z",
+  "checks": {
+    "all_5_chains_completed": true,
+    "all_5_chains_status_pass": true,
+    "each_chain_ge_3_modules": true,
+    "no_external_api": true,
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true,
+    "offline_env_ok": true,
+    "all_commit_actions_blocked": true
+  },
+  "remaining_failures": [],
+  "chain_summary": {
+    "total": 5,
+    "pass": 5,
+    "fail": [],
+    "total_steps": 21,
+    "ok_steps": 21
+  },
+  "chains": [
+    {
+      "chain": "1_记忆写入闭环",
+      "status": "pass",
+      "modules_triggered": 5,
+      "modules_ok": 5,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true
+    },
+    {
+      "chain": "2_方案搜索闭环",
+      "status": "pass",
+      "modules_triggered": 4,
+      "modules_ok": 4,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true
+    },
+    {
+      "chain": "3_自我改进闭环",
+      "status": "pass",
+      "modules_triggered": 4,
+      "modules_ok": 4,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true
+    },
+    {
+      "chain": "4_每日评估闭环",
+      "status": "pass",
+      "modules_triggered": 4,
+      "modules_ok": 4,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true
+    },
+    {
+      "chain": "5_安全拦截闭环",
+      "status": "pass",
+      "modules_triggered": 4,
+      "modules_ok": 4,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true
+    }
+  ],
+  "note": "V95 Task Chain Closure Gate — 5 real local task chains linking 3+ core modules each. All offline, no external API, no real payment/send/device."
+}

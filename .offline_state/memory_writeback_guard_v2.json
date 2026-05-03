@@ -1,0 +1,174 @@
+{
+  "ratio": 0.6899999999999998,
+  "pollution_ratio": 0.15,
+  "min_confidence": {
+    "semantic": 0.95,
+    "episodic": 0.8000000000000003,
+    "procedural": 0.95,
+    "preference": 0.9000000000000002,
+    "long_term_memory": 0.8400000000000002
+  },
+  "history": [
+    {
+      "ts": 1777616692.165726,
+      "ratio": 0.85,
+      "min_confidence": {
+        "semantic": 0.68,
+        "episodic": 0.53,
+        "procedural": 0.73,
+        "preference": 0.63
+      },
+      "stats": {
+        "compaction_rate": 0.25,
+        "pollution_rate": 0.25,
+        "correction_rate": 0.0
+      }
+    },
+    {
+      "ts": 1777616692.1659002,
+      "ratio": 0.85,
+      "min_confidence": {
+        "semantic": 0.7100000000000001,
+        "episodic": 0.56,
+        "procedural": 0.76,
+        "preference": 0.66
+      },
+      "stats": {
+        "compaction_rate": 0.25,
+        "pollution_rate": 0.5,
+        "correction_rate": 0.0
+      }
+    },
+    {
+      "ts": 1777616692.1661112,
+      "ratio": 0.83,
+      "min_confidence": {
+        "semantic": 0.7900000000000001,
+        "episodic": 0.5900000000000001,
+        "procedural": 0.79,
+        "preference": 0.6900000000000001
+      },
+      "stats": {
+        "compaction_rate": 0.25,
+        "pollution_rate": 0.5,
+        "correction_rate": 0.25
+      }
+    },
+    {
+      "ts": 1777627752.2435417,
+      "ratio": 0.8099999999999999,
+      "min_confidence": {
+        "semantic": 0.8200000000000002,
+        "episodic": 0.6200000000000001,
+        "procedural": 0.8200000000000001,
+        "preference": 0.7200000000000001
+      },
+      "stats": {
+        "compaction_rate": 0.143,
+        "pollution_rate": 0.286,
+        "correction_rate": 0.286
+      }
+    },
+    {
+      "ts": 1777627752.2438347,
+      "ratio": 0.7899999999999999,
+      "min_confidence": {
+        "semantic": 0.8500000000000002,
+        "episodic": 0.6500000000000001,
+        "procedural": 0.8500000000000001,
+        "preference": 0.7500000000000001
+      },
+      "stats": {
+        "compaction_rate": 0.286,
+        "pollution_rate": 0.286,
+        "correction_rate": 0.286
+      }
+    },
+    {
+      "ts": 1777627752.2444277,
+      "ratio": 0.7699999999999999,
+      "min_confidence": {
+        "semantic": 0.8800000000000002,
+        "episodic": 0.6800000000000002,
+        "procedural": 0.8800000000000001,
+        "preference": 0.7800000000000001
+      },
+      "stats": {
+        "compaction_rate": 0.286,
+        "pollution_rate": 0.429,
+        "correction_rate": 0.286
+      }
+    },
+    {
+      "ts": 1777628472.1641595,
+      "ratio": 0.7499999999999999,
+      "min_confidence": {
+        "semantic": 0.9100000000000003,
+        "episodic": 0.7100000000000002,
+        "procedural": 0.9100000000000001,
+        "preference": 0.8100000000000002
+      },
+      "stats": {
+        "compaction_rate": 0.222,
+        "pollution_rate": 0.444,
+        "correction_rate": 0.222
+      }
+    },
+    {
+      "ts": 1777628472.164389,
+      "ratio": 0.7299999999999999,
+      "min_confidence": {
+        "semantic": 0.9400000000000003,
+        "episodic": 0.7400000000000002,
+        "procedural": 0.9400000000000002,
+        "preference": 0.8400000000000002,
+        "long_term_memory": 0.7300000000000001
+      },
+      "stats": {
+        "compaction_rate": 0.222,
+        "pollution_rate": 0.444,
+        "correction_rate": 0.333
+      }
+    },
+    {
+      "ts": 1777628507.7057862,
+      "ratio": 0.7099999999999999,
+      "min_confidence": {
+        "semantic": 0.95,
+        "episodic": 0.7700000000000002,
+        "procedural": 0.95,
+        "preference": 0.8700000000000002,
+        "long_term_memory": 0.7600000000000001
+      },
+      "stats": {
+        "compaction_rate": 0.182,
+        "pollution_rate": 0.545,
+        "correction_rate": 0.273
+      }
+    },
+    {
+      "ts": 1777628507.7060366,
+      "ratio": 0.6899999999999998,
+      "min_confidence": {
+        "semantic": 0.95,
+        "episodic": 0.8000000000000003,
+        "procedural": 0.95,
+        "preference": 0.9000000000000002,
+        "long_term_memory": 0.8400000000000002
+      },
+      "stats": {
+        "compaction_rate": 0.182,
+        "pollution_rate": 0.545,
+        "correction_rate": 0.364
+      }
+    }
+  ],
+  "stats": {
+    "total_proposals": 11,
+    "accepted": 1,
+    "rejected": 10,
+    "compaction_failures": 2,
+    "pollution_intercepts": 6,
+    "user_corrections": 4
+  }
+}

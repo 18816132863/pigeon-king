@@ -1,0 +1,270 @@
+{
+  "version": "V82.0",
+  "status_report": {
+    "status": "pass",
+    "score": 1.0,
+    "checks": {
+      "coverage_status_pass": true,
+      "mock_coverage_at_least_90": true,
+      "no_live_enabled_contracts": true,
+      "all_commit_semantics_have_contracts": true,
+      "all_noncommit_semantics_have_contracts": true,
+      "has_payment_contract": true,
+      "has_device_or_robot_contract": true,
+      "has_mcp_or_connector_contract": true,
+      "final_switch_scope_limited": true
+    },
+    "final_switch_scope": "adapter_credential_approval_config_only",
+    "coverage_report": {
+      "status": "pass",
+      "total_contracts": 14,
+      "pending_ready_contracts": 14,
+      "live_connectable_now": 0,
+      "mock_coverage": 1.0,
+      "policy": "mock_first_live_switch_closed",
+      "contracts": [
+        {
+          "name": "file_read",
+          "kind": "local",
+          "semantic_classes": [
+            "observe"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": ""
+        },
+        {
+          "name": "knowledge_search",
+          "kind": "local",
+          "semantic_classes": [
+            "observe",
+            "reason"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": ""
+        },
+        {
+          "name": "draft_generator",
+          "kind": "local",
+          "semantic_classes": [
+            "generate",
+            "prepare"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": ""
+        },
+        {
+          "name": "calendar_mock",
+          "kind": "connector",
+          "semantic_classes": [
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "create/update event only as draft or mock"
+        },
+        {
+          "name": "message_outbox_mock",
+          "kind": "connector",
+          "semantic_classes": [
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "draft/outbox only; no real send"
+        },
+        {
+          "name": "email_outbox_mock",
+          "kind": "connector",
+          "semantic_classes": [
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "draft only; live send disabled"
+        },
+        {
+          "name": "payment_mock",
+          "kind": "payment",
+          "semantic_classes": [
+            "prepare",
+            "payment"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "checkout/payment hard-stopped"
+        },
+        {
+          "name": "contract_signature_mock",
+          "kind": "api",
+          "semantic_classes": [
+            "prepare",
+            "signature"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "signature hard-stopped"
+        },
+        {
+          "name": "device_control_mock",
+          "kind": "device",
+          "semantic_classes": [
+            "simulate",
+            "physical_actuation"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "device actuation mock only"
+        },
+        {
+          "name": "robot_controller_mock",
+          "kind": "robot",
+          "semantic_classes": [
+            "simulate",
+            "physical_actuation"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "trajectory generation only"
+        },
+        {
+          "name": "identity_commit_mock",
+          "kind": "api",
+          "semantic_classes": [
+            "prepare",
+            "identity_commit"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "identity commitments hard-stopped"
+        },
+        {
+          "name": "destructive_admin_mock",
+          "kind": "api",
+          "semantic_classes": [
+            "prepare",
+            "destructive"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "destructive actions hard-stopped"
+        },
+        {
+          "name": "mcp_remote_tool_mock",
+          "kind": "mcp",
+          "semantic_classes": [
+            "observe",
+            "reason",
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "remote MCP contract declared; live call disabled by barrier"
+        },
+        {
+          "name": "world_model_sim",
+          "kind": "local",
+          "semantic_classes": [
+            "simulate"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": ""
+        }
+      ]
+    },
+    "missing_commit_classes": [],
+    "live_enabled_contracts": []
+  },
+  "status": "pass"
+}

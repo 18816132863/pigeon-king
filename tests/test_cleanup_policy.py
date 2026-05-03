@@ -18,7 +18,7 @@ class TestCleanupPolicy:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -32,7 +32,7 @@ class TestCleanupPolicy:
     
     def test_cleanup_completed_records(self):
         """测试清理 completed 记录"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             cleanup_old_records,
             get_statistics,
@@ -56,7 +56,7 @@ class TestCleanupPolicy:
     
     def test_cleanup_preserves_failed(self):
         """测试清理保留 failed 记录"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             cleanup_old_records,
             query_by_status,
@@ -82,7 +82,7 @@ class TestCleanupPolicy:
     
     def test_cleanup_preserves_uncertain(self):
         """测试清理保留 uncertain 记录"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             cleanup_old_records,
             export_uncertain_report,
@@ -109,7 +109,7 @@ class TestCleanupPolicy:
     
     def test_cleanup_removes_old_failed_when_allowed(self):
         """测试允许清理 failed 时删除"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             cleanup_old_records,
             query_by_status,
@@ -135,7 +135,7 @@ class TestCleanupPolicy:
     
     def test_cleanup_returns_deleted_count(self):
         """测试清理返回删除数量"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             cleanup_old_records,
         )
@@ -176,13 +176,13 @@ class TestRetentionPolicy:
     def test_uncertain_retention_permanent(self):
         """测试 uncertain 永久保留"""
         # uncertain 永久保留
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             cleanup_old_records,
             export_uncertain_report,
         )
         
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"

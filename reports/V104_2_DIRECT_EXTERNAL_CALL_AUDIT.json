@@ -1,0 +1,894 @@
+{
+  "version": "V104.2",
+  "direct_external_call_files": 145,
+  "items": [
+    {
+      "path": "infrastructure/auto_backup_uploader.py",
+      "markers": [
+        "git_push"
+      ]
+    },
+    {
+      "path": "infrastructure/offline_runtime_guard.py",
+      "markers": [
+        "requests",
+        "urllib_urlopen",
+        "httpx",
+        "git_push"
+      ]
+    },
+    {
+      "path": "execution/parallel_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "execution/ultimate_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "execution/hybrid_memory_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "scripts/v75_6_plugin_install_check.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "scripts/v95_2_all_chain_coverage_gate.py",
+      "markers": [
+        "git_push"
+      ]
+    },
+    {
+      "path": "scripts/v91_offline_integration_gate.py",
+      "markers": [
+        "git_push"
+      ]
+    },
+    {
+      "path": "scripts/v104_1_final_consistency_enforcement_gate.py",
+      "markers": [
+        "openai_like",
+        "git_push"
+      ]
+    },
+    {
+      "path": "scripts/v104_2_runtime_hardening_gate.py",
+      "markers": [
+        "requests",
+        "urllib_urlopen",
+        "git_push"
+      ]
+    },
+    {
+      "path": "scripts/v104_final_consistency_conflict_cleanup_gate.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "orchestration/collaboration/org_orchestrator.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/trading-quant/scripts/quant.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/hithink-iwencai/scripts/news_search.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/hithink-iwencai/scripts/api_client.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/hithink-iwencai/scripts/announcement_search.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/hithink-iwencai/scripts/test_basic.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-image-translation/scripts/image_translation.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/aminer-data-search/scripts/aminer_client.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-podcast-gen/scripts/podcast_client.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/natural-language-planner/scripts/dashboard_server.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/seedream-image-gen/scripts/generate_seedream.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/ai-ppt-generator/scripts/ppt_theme_list.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/ai-ppt-generator/scripts/generate_ppt.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/alphaear-news/scripts/content_extractor.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/alphaear-news/scripts/news_tools.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-ppt/scripts/generate_ppt.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-ppt/scripts/upload_file.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/scripts/mx_select_stock.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/scripts/mx_data.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/scripts/mx_search.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/scripts/mx_stock_simulator.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/eastmoney-mx-skills-suite/scripts/mx_self_select.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-web-deploy/scripts/baas.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-web-deploy/scripts/upload_file.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/seedance-video-gen/scripts/generate_video.py",
+      "markers": [
+        "requests",
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/content_extractor.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/sentiment_tools.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/stock_tools.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/news_tools.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/search_tools.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/llm/router.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/scripts/utils/llm/factory.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/meituan-coupon-traffic-huawei/scripts/auth.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/meituan-coupon-traffic-huawei/scripts/query.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/meituan-coupon-traffic-huawei/scripts/issue.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/recipe-to-list/scripts/recipe_to_list.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/ppt-generator-skill/scripts/generate_grand.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/ppt-generator-skill/scripts/generate_full.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/find-skills/scripts/search.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/find-skills/scripts/install.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/parallel_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/optimize_vector_system.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/one_click_setup.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/llm_client.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/backfill_l0_vectors.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/opt_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/ultimate_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/hybrid_memory_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/core/vector_ops.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/parallel_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/optimize_vector_system.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/one_click_setup.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/llm_client.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/backfill_l0_vectors.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/opt_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/ultimate_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/model_performance.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/channel_health.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/full_vector_recovery.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/fix_vectorization.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/hybrid_memory_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/core/summarizer.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/core/embedding.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/core/llm.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/src/scripts/core/explainer.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/core/summarizer.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/core/embedding.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/core/llm.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/llm-memory-integration/scripts/core/explainer.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/today-task/scripts/hiboards_client.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/scripts/sentiment_tools.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/scripts/llm/router.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/rkiding-awesome-finance-skills-alphaear-sentiment/scripts/llm/factory.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-image-understanding/scripts/file_upload.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-image-understanding/scripts/image_understanding.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-tts/scripts/ttsList.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-tts/scripts/tts.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/meituan-coupon-get-tool/scripts/auth.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/meituan-coupon-get-tool/scripts/query.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/meituan-coupon-get-tool/scripts/issue.py",
+      "markers": [
+        "httpx"
+      ]
+    },
+    {
+      "path": "skills/ai-picture-book/scripts/ai_picture_book_task_query.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/ai-picture-book/scripts/ai_picture_book_task_create.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/ai-picture-book/scripts/ai_picture_book_poll.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/news-extractor/scripts/crawlers/naver.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/news-extractor/scripts/crawlers/twitter_client.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/news-extractor/scripts/crawlers/fetchers.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/alphaear-predictor/scripts/utils/stock_tools.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/alphaear-predictor/scripts/utils/search_tools.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/alphaear-predictor/scripts/utils/llm/router.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/alphaear-predictor/scripts/utils/llm/factory.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/huawei-drive/scripts/huawei_drive.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/minimax-music-gen/scripts/generate_lyrics.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/minimax-music-gen/scripts/generate_music.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/scientific-slides/scientific-slides/scripts/generate_slide_image_ai.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/jdjr/scripts/query_stock.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/jdjr/scripts/query_gold.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/jdjr/scripts/query_news.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "skills/markitdown/scripts/convert_with_ai.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "skills/dknowc-official-doc-writer/dknowc-official-doc-writer-public-channel/scripts/dkag_search.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "skills/xiaoyi-cloud-database/scripts/baas.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "infrastructure/inventory/violation_test_suite.py",
+      "markers": [
+        "requests",
+        "httpx"
+      ]
+    },
+    {
+      "path": "infrastructure/inventory/skill_access_checker.py",
+      "markers": [
+        "requests",
+        "httpx"
+      ]
+    },
+    {
+      "path": "infrastructure/legacy/llm.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "infrastructure/setup_tools/one_click_setup.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "infrastructure/alerting/channels/feishu_webhook.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "infrastructure/alerting/channels/webhook.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "execution/vector_ops/vector_ops.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "execution/search_enhanced/opt_search.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "governance/audit/summarizer.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "governance/audit/explainer.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/dependency_manager.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/check_ai_apis.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/check_skill_security.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/auto_classify_skills.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/gates/v75_7_plugin_install_check.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/gates/v85_scan_direct_model_calls.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/gates/v75_7_better_gateway_probe.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "archive/scripts/vintage/test_smokes/v75_4_plugin_reality_check.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": ".v104_1_backup/20260503_000144/infrastructure/auto_backup_uploader.py",
+      "markers": [
+        "git_push"
+      ]
+    },
+    {
+      "path": ".v104_1_backup/20260503_000144/infrastructure/alerting/channels/feishu_webhook.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": ".v104_1_backup/20260503_000144/infrastructure/alerting/channels/webhook.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "core/real_work_entry/message_entry.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "core/llm/model_discovery.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/llm/llm_client.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/llm/model_router.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/llm/llm.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "core/llm/llm_gateway.py",
+      "markers": [
+        "urllib_urlopen",
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/llm/schemas.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/llm/provider_guard.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/llm/model_registry.py",
+      "markers": [
+        "openai_like"
+      ]
+    },
+    {
+      "path": "core/runtime_activation/api_facade.py",
+      "markers": [
+        "requests"
+      ]
+    },
+    {
+      "path": "memory_context/vector/embedding.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": "memory_context/vector/qdrant_store.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    },
+    {
+      "path": ".backup_20260501_0102/memory_context/vector_ops/backfill_l0_vectors.py",
+      "markers": [
+        "urllib_urlopen"
+      ]
+    }
+  ],
+  "note": "Files may contain direct external calls. V104.2 adds runtime guard enforcement; future cleanup may patch individual modules when they become active."
+}

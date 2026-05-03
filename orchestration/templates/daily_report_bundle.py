@@ -47,7 +47,7 @@ def daily_report_bundle(
     # 推送结果
     if push_result and report.get("success"):
         try:
-            from capabilities.send_notification import send_notification
+            from execution.capabilities.send_notification import send_notification
             send_notification(
                 title=f"日报: {date}",
                 content=f"总调用: {report.get('total_invocations', 0)}, 成功率: {100 - report.get('failed_rate', 0):.1f}%"

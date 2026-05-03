@@ -1,0 +1,10 @@
+{
+  "module": "doc_fusion_V105.1",
+  "version": "V105.1",
+  "trigger": "new_module",
+  "description": "doc_fusion_engine V2 融合 — 集成 fusion_engine_v2 AST 分析",
+  "status": "pass",
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T07:08:52.787018+00:00"
+}

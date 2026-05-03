@@ -1,0 +1,45 @@
+{
+  "version": "V104.1",
+  "items": [
+    {
+      "conflict": "persona_realism_vs_truthfulness",
+      "status": "cleaned",
+      "resolution": "metaphor/persona_state/pending_access labels"
+    },
+    {
+      "conflict": "continuous_consciousness_vs_no_daemon",
+      "status": "cleaned",
+      "resolution": "simulated_by_context_reload"
+    },
+    {
+      "conflict": "intuition_vs_evidence",
+      "status": "cleaned",
+      "resolution": "pattern_heuristic only; evidence/gate wins"
+    },
+    {
+      "conflict": "lobster_vs_main_execution",
+      "status": "controlled",
+      "resolution": "lobster approval only; V90/V92/V100 gate remains main barrier"
+    },
+    {
+      "conflict": "web_calendar_vs_no_external_api",
+      "status": "blocked",
+      "resolution": "AGENTS offline rule + skill policy"
+    },
+    {
+      "conflict": "git_push_webhook_vs_no_real_send",
+      "status": "blocked",
+      "resolution": "offline draft/mock overrides"
+    },
+    {
+      "conflict": "many_orchestrators_vs_single_entrypoint",
+      "status": "mapped",
+      "resolution": "single_runtime_entrypoint facade"
+    },
+    {
+      "conflict": "old_reports_vs_current_release",
+      "status": "cleaned",
+      "resolution": "reports/current + reports/vintage + CURRENT_RELEASE_INDEX"
+    }
+  ]
+}

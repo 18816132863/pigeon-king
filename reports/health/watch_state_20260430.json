@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-05-03T22:58:38.181824",
+  "disk_percent": 69.46356789904587,
+  "memory_percent": 42.2,
+  "gateway": {
+    "status": "error",
+    "output": "Config invalid\nFile: ~/.openclaw/openclaw.json\nProblem:\n  - agents.defaults.models.xiaoyiprovider/LLM_DeepSeekV4_Thinking: Unrecognized key: \"reasoning\"\n  - agents.defaults: Unrecognized key: \"env\"\n\nR"
+  },
+  "imports": [
+    {
+      "module": "core.llm.model_registry",
+      "name": "ModelRegistry",
+      "ok": true
+    },
+    {
+      "module": "core.llm.model_router",
+      "name": "auto_route",
+      "ok": true
+    },
+    {
+      "module": "governance.embodied_pending_state",
+      "name": "CommitBarrier",
+      "ok": true
+    },
+    {
+      "module": "infrastructure.execution_runtime",
+      "name": "RealExecutionBroker",
+      "ok": true
+    },
+    {
+      "module": "orchestration.final_pending_release",
+      "name": "V85FinalPendingAccessKernel",
+      "ok": true
+    }
+  ],
+  "all_ok": false
+}

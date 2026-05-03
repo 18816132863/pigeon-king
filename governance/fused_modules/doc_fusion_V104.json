@@ -1,0 +1,8 @@
+{
+  "module": "doc_fusion_V104",
+  "version": "V104",
+  "description": "最终一致性清理. 冲突解决，AGENTS.md安全修正，persona超收尾清理，agent_kernel兼容 — Gate全过",
+  "status": "pass",
+  "remaining_failures": [],
+  "fused_at": "2026-05-03T00:48:00+08:00"
+}

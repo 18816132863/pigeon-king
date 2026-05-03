@@ -1,0 +1,856 @@
+{
+  "items": [
+    {
+      "path": "scripts/v197_v226_apply_production_control_plane_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v93_apply_unused_and_incomplete_repair.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/top_ai_operator_main.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_3_capability_registry_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/migrate_to_postgres.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/create_professional_docs.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_apply_top_ai_operator.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v9_inspector.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/quick_start.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v157_v166_verify_personalization_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_1_real_device_e2e_test.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/control_plane_audit.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_2_entry_bypass_scan.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v34_0_persona_drift_guard_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_7_personal_operating_agent_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v35_0_autonomous_os_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/check_route_wiring.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v78_autonomous_runtime_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v15_0_task_graph_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_11_node_pty_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v117_v126_verify_operating_spine_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_5_release_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/top_ai_operator_v25_main.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_final_pending_access_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_8_result_verifier_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_6_plugin_reality_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_11_plugin_runtime_closure_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_2_reality_closure_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_apply_real_connector_execution.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_6_openclaw_plugin_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/heartbeat_executor.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_5_upgrade_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_6_plugin_install_check.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v107_v116_apply_self_evolution_ops_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/real_work_entry_main.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_1_trace_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/unified_inspector_v11.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v227_v256_verify_autonomous_runtime_fabric_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v99_mainline_trigger_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v45_0_autonomous_os_supreme_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_2_self_improvement_goal_hotfix_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_verify_model_module_total.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/create_complete_docs.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_7_plugin_reality_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/dual_channel_pusher.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_11_better_gateway_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v94_mainline_trigger_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v80_redteam_failsafe_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/check_connected_permissions.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v95_2_all_chain_coverage_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v95_task_chain_closure_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v93_unused_and_incomplete_function_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v227_v256_apply_autonomous_runtime_fabric_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_2_replay_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v30_0_constitutional_judge_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v98_1_mainline_hook_runtime_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/check_repo_integrity.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_verify_top_ai_operator.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v167_v196_verify_operations_intelligence_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/probe_connected_runtime.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/unified_inspector_v10.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v127_v136_apply_release_hardening_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/health_watch.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v32_0_extension_pipeline_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_contract_hotfix_apply.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/run_release_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v26_verify_timeout_resilience.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v87_v96_verify_autonomy_upgrade.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/smart_compressor.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_7_end_side_global_serial_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v33_0_autonomy_regression_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v86_apply_personal_execution_agent.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/run_nightly_audit.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_12_sync_root_reality_report.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v16_0_memory_kernel_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_7_lobster_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_verify_model_engine.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v18_0_world_interface_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v10_9_to_v23_0_full_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/check_route_registry.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v100_final_pending_access_release_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v17_0_unified_judge_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_4_plugin_reality_check.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/deploy_verification.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_4_autopilot_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v19_0_capability_extension_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v197_v226_verify_production_control_plane_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_2_real_device_e2e_test.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v29_0_personal_memory_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_12_env_guard_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_7_plugin_install_check.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v100_packaging_integrity_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v75_11_sync_root_reality_report.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v137_v146_verify_runtime_activation_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v96_failure_recovery_and_stability_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v99_directory_fusion_and_cleanup_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/invocation_audit_cli.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v157_v166_apply_personalization_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/task_daemon.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_4_memory_writeback_guard_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_3_self_improvement_signature_cleanup_apply.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/quick_task.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/check_skill_registry.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_apply_offline_repair.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v79_constitutional_preflight_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v87_v96_apply_autonomy_upgrade.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/build_ops_dashboard.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v127_v136_verify_release_hardening_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_full_static_audit_and_repair_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_3_self_improvement_signature_cleanup_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_scan_direct_model_calls.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v91_solution_search_gateway_fix.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v107_v116_verify_self_evolution_ops_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_5_end_side_acceptance_matrix_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_7_audit_ledger_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v98_identity_context_stability_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v75_12_lobster_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v97_long_run_stability_gate.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/check_connected_adapter.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_7_end_side_global_serial_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v23_0_meta_governance_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v86_verify_personal_execution_agent.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_4_slo_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v26_apply_timeout_resilience.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_contract_hotfix_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/session_end_detector.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v97_v106_apply_operating_agent_upgrade.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v167_v196_apply_operations_intelligence_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v13_0_production_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/create_clean_package.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_2_self_improvement_goal_hotfix_apply.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_11_lobster_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v55_0_autonomous_os_governance_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_2_timeout_circuit_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_2_goal_contract_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_apply_model_module_total_fix.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_11_env_guard_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/scan_skills.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v98_apply_identity_context_stability.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/generate_charts.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v257_v316_apply_meta_autonomy_platform_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v147_v156_apply_action_bridge_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/connected_adapter_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_1_layer_integrity_gate_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_5_world_interface_resolver_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_8_risk_matrix_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v27_0_durable_workflow_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_0_final_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_6_recovery_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v91_offline_integration_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_9_device_dependency_barrier_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_6_end_side_stability_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/control_plane.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/e2e_route_scenarios.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v137_v146_apply_runtime_activation_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v97_v106_verify_operating_agent_upgrade.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v257_v316_verify_meta_autonomy_platform_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/unified_inspector.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_all_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v65_0_self_evolving_operating_agent_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_0_device_timeout_receipt_verifier_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_4_plugin_reality_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v24_8_end_side_hard_serial_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_3_snapshot_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/quick_schedule.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v117_v126_apply_operating_spine_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/batch_skill_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/run_daily_growth_check.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v92_4_final_import_and_subprocess_fix_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/top_ai_operator_v26_main.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/full_backup.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_6_self_healing_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v147_v156_verify_action_bridge_upgrade.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_to_final_ai_shape_apply_full.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v77_self_evolving_pending_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_1_state_store_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v23_2_verify_real_work_entry.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/sync_skill_registry.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v10_self_extension_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/run_daily_growth_loop.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_1_long_running_soak_test.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v99_1_ops_dashboard_generator.py",
+      "category": "active_gate"
+    },
+    {
+      "path": "scripts/v11_stable_execution_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v28_0_end_side_serial_lane_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/generate_metrics.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_6_capability_extension_sandbox_gate_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_7_personal_operating_loop_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_3_entry_bypass_scan.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/check_repo_integrity_fast.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_12_better_gateway_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_3_reality_closure_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v21_0_persona_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v26_1_verify_universal_task_contract.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_verify_real_connector_execution.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v26_0_goal_governance_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_7_outbox_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v23_2_apply_real_work_entry.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v14_0_goal_kernel_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_7_better_gateway_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v12_9_long_run_soak_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v20_0_handoff_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_0_self_evolving_personal_os_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v31_0_world_resolver_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_12_plugin_runtime_closure_gate.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v75_12_node_pty_probe.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/connected_route_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v11_9_acceptance_matrix_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/system_integrity_check.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v85_to_final_ai_shape_verify.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v25_3_task_graph_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "scripts/v22_0_autonomous_loop_smoke.py",
+      "category": "utility_or_vintage"
+    },
+    {
+      "path": "infrastructure/inventory/generate_architecture_display_v10.py",
+      "category": "utility_or_vintage"
+    }
+  ]
+}

@@ -68,7 +68,7 @@ def test_event_type_single_source():
 def test_capability_registry_single_source():
     """测试 CapabilityRegistry 真源唯一"""
     # 真源位置
-    from capabilities.registry import CapabilityRegistry as TrueCapabilityRegistry
+    from execution.capabilities.registry import CapabilityRegistry as TrueCapabilityRegistry
     
     # 验证真源存在
     assert TrueCapabilityRegistry is not None
@@ -79,7 +79,7 @@ def test_capability_registry_single_source():
 def test_capability_status_single_source():
     """测试 CapabilityStatus 真源唯一"""
     # 真源位置
-    from capabilities.registry import CapabilityStatus as TrueCapabilityStatus
+    from execution.capabilities.registry import CapabilityStatus as TrueCapabilityStatus
     
     # 验证真源是 Enum
     assert hasattr(TrueCapabilityStatus, 'AVAILABLE')

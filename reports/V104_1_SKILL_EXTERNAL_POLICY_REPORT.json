@@ -1,0 +1,1451 @@
+{
+  "version": "V104.1",
+  "count": 202,
+  "items": [
+    {
+      "skill": "2nd-brain",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "Humanizer-zh-main",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "ab-test-setup",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "affaan-m-everything-claude-code-article-writing",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "agent_reach",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "agentmcmillan-brain-and-co-plan-ceo-review",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "ai-drama-prompt-factory",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "ai-picture-book",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "ai-ppt-generator",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "aiskillstore-marketplace-test-case-generator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "alphaear-news",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "alphaear-predictor",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "amap-jsapi-skill",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "amazing129-skills-mbti-for-agents",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "aminer-data-search",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "anthropics-skills-canvas-design",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "anthropic",
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "anthropics-skills-pptx",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "anthropic",
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "article-writer",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "arxiv-search",
+      "category": "approval_required",
+      "external_markers": [
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "autonomous-tasks",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "axton-obsidian-visual-skills-excalidraw-diagram",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "baoyu-comic",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "baoyu-url-to-markdown",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "barcode-info",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "base64-converter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "bdpan-storage",
+      "category": "approval_required",
+      "external_markers": [
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "best-minds",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "brainhole-factory",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "brainstorming",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "browser-control",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "bytedance-deer-flow-surprise-me",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "bytesagain-ai-skills-meme-generator",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "calcom-cal.com-web-design-guidelines-1.0.2",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "canvas-design",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "claw-art",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "color-converter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "content-workflow",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "copywriter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "creative-thought-partner",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "cron-parser",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "daily-ai-news-plus",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "daily-hot-news",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "daily-tech-broadcast",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "darwin-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "date-calculator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "davila7-claude-code-templates-ship-learn-next",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "deep-search-and-insight-synthesize",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "didi-ride-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "dknowc-official-doc-writer",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "eastmoney-mx-skills-suite",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "educational-video-creator",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests",
+        "tts"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "env-guard",
+      "category": "approval_required",
+      "external_markers": [
+        "openai",
+        "webhook"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "excel-analysis",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "fasting-tracker",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "feishu-channel-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "feiskyer-claude-code-settings-deep-research",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "fenbi",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "find-skills",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "anthropic",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "fitness-coach",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "flowchart-generator-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "flyai-travel",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "frontend-ui-ux-engineer",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "general-writing",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "gesture-html",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "github-awesome-copilot-prd",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "good-txt-to-hwreader",
+      "category": "approval_required",
+      "external_markers": [
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "gtht-financialsearch-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "gtht-ranklist-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "gtht-realtimemarketdata-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "gtht-smartstockselection-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "habit-flow-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "hash-generator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "headed-browser-open-v3",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "hithink-iwencai",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "html-ux-guidance",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "huawei-drive",
+      "category": "approval_required",
+      "external_markers": [
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "humanize-chinese",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "hz-proactive-agent",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "ima-skill",
+      "category": "approval_required",
+      "external_markers": [
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "imap-smtp-email",
+      "category": "approval_required",
+      "external_markers": [
+        "imap",
+        "smtp"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "ip-lookup",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "jdjr",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "jrj-quote-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "json-formatter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "json-minifier",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "json-validator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "k12-smart-teacher",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "kids-book-writer",
+      "category": "mock_only",
+      "external_markers": [
+        "music"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "lifecycle",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "limtdesign",
+      "category": "mock_only",
+      "external_markers": [
+        "music"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "llm-memory-integration",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "openai",
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "lorem-generator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "lyrical-fable",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "marketing-ideas",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "markitdown",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "anthropic",
+        "image",
+        "openai"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "math-edu-assistant",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "meitu-skills",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "meituan-coupon-get-tool",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "httpx"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "meituan-coupon-traffic-huawei",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "httpx"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "metabase-metabase-docs-write",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "mime-type-lookup",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "minimax-music-gen",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "music",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "movie-producer-scene",
+      "category": "mock_only",
+      "external_markers": [
+        "image",
+        "music"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "multi-search-engine",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "natural-language-planner",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "news-extractor",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "news-writing",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "nicepkg-ai-workflow-user-research",
+      "category": "approval_required",
+      "external_markers": [
+        "calendar"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "nini-writing-inspiration",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "number-formatter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "office-automation",
+      "category": "approval_required",
+      "external_markers": [
+        "smtp"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "ontology",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "openclaw-skills-agent-builder-1.0.3",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "openclaw-skills-assistant",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "openclaw-skills-soulcraft",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "openclaw-skills-video-script-creator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "opengfx",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "openmaic",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests",
+        "tts"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "pdf-toolkit-pro",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "percentage-calculator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "personas",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "policies",
+      "category": "approval_required",
+      "external_markers": [
+        "calendar"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "ppt-generator-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "pptx-posters",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "prd-writer",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "proactive-tasks",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "product-manager",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "pua",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "qcc-agent-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "qq-clawbot-setup",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "qr-code-info",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "react-best-practices",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "read-arxiv-paper",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "recipe-to-list",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests",
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "regex-tester",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "registry",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "remotion-video-toolkit",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "rkiding-awesome-finance-skills-alphaear-sentiment",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "dashscope",
+        "openai"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "rkiding-awesome-finance-skills-alphaear-signal-tracker",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "openai",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "runtime",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "scientific-slides",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "seedance-video-gen",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "requests",
+        "upload",
+        "urllib.request"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "seedream-image-gen",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "self-improving-agent",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "shareai-lab-learn-claude-code-pdf",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "shubhamsaboo-awesome-llm-apps-ux-designer",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "skill-creator",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "slidevjs-slidev-slidev",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "smart-followups",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "anthropic"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "speech-to-text",
+      "category": "mock_only",
+      "external_markers": [
+        "music"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "stock-daily-analysis-pro",
+      "category": "approval_required",
+      "external_markers": [
+        "webhook"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "su-lan-paper-daily-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "summarize",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "anthropic",
+        "image",
+        "openai"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "superdesign",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "tc-chengxin",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "tencent-docs",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "tencent-news",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "text-case-converter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "text-counter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "text-diff",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "text-reverse",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "text-trimmer",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "timezone-converter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "today-task",
+      "category": "approval_required",
+      "external_markers": [
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "trader-simulator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "trading-quant",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "tushare-finance",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "unit-converter",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "url-encoder",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "user-agent-parser",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "uuid-generator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "video-generation-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "voice-synthesis",
+      "category": "mock_only",
+      "external_markers": [
+        "tts"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "weather",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "web-content-fetcher",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "webapp-testing",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "wechat-article-search",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "wecom-bot-setup",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "weibo-clawbot-setup",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "weixin-clawbot-setup",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "wendao-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "writing-style-iterator",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "xiao-gui-agent",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "xiaoyi-HarmonyOSSmartHome-skill",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "xiaoyi-cloud-database",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-doc-convert",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-docx",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-file-upload",
+      "category": "approval_required",
+      "external_markers": [
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-health",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "xiaoyi-image-search",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-image-translation",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-image-understanding",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-pdf",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-podcast-gen",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "requests",
+        "tts"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-ppt",
+      "category": "approval_required",
+      "external_markers": [
+        "image",
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-report",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    },
+    {
+      "skill": "xiaoyi-tts",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "image",
+        "requests",
+        "tts"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-web-deploy",
+      "category": "approval_required",
+      "external_markers": [
+        "requests",
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-web-search",
+      "category": "external_api_blocked",
+      "external_markers": [
+        "openai"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "xiaoyi-xlsx",
+      "category": "approval_required",
+      "external_markers": [
+        "upload"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "yanxue-course-manager",
+      "category": "mock_only",
+      "external_markers": [
+        "image"
+      ],
+      "policy_when_no_external_api": "mock_or_block"
+    },
+    {
+      "skill": "yunshu0909-yunshu-skillshub-prd-doc-writer",
+      "category": "offline_safe",
+      "external_markers": [],
+      "policy_when_no_external_api": "allow_offline"
+    }
+  ],
+  "no_external_api_policy": "all external markers are mock/block under NO_EXTERNAL_API=true"
+}

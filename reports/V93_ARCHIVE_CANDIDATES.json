@@ -1,0 +1,31 @@
+{
+  "count": 26,
+  "items": [
+    "scripts/v12_1_to_v12_5_all_smoke.py",
+    "scripts/v14_0_to_v23_0_all_smoke.py",
+    "scripts/v11_6_to_v12_0_all_smoke.py",
+    "scripts/v46_0_to_v55_0_all_smoke.py",
+    "scripts/v26_0_to_v35_0_all_smoke.py",
+    "scripts/v36_0_to_v45_0_all_smoke.py",
+    "scripts/v56_0_to_v65_0_all_smoke.py",
+    "scripts/v12_6_to_v13_0_all_smoke.py",
+    "scripts/v23_2_to_v23_6_all_smoke.py",
+    "scripts/v23_7_to_v24_6_all_smoke.py",
+    "scripts/v66_0_to_v75_0_all_smoke.py",
+    "scripts/v24_8_to_v25_7_all_smoke.py",
+    "scripts/v23_1_to_v55_0_full_replace_gate.py",
+    "scripts/v23_to_v35_full_replace_gate.py",
+    "scripts/v23_1_to_v75_0_full_replace_gate.py",
+    "scripts/v23_1_to_v65_0_full_replace_gate.py",
+    "scripts/v23_1_to_v45_0_full_replace_gate.py",
+    "infrastructure/inventory/generate_architecture_display_v7.py",
+    "infrastructure/inventory/generate_architecture_display_v6.py",
+    "infrastructure/inventory/generate_architecture_display_v3.py",
+    "infrastructure/inventory/generate_architecture_display_v2.py",
+    "infrastructure/inventory/generate_architecture_display_v9.py",
+    "infrastructure/inventory/generate_architecture_display_v5.py",
+    "infrastructure/inventory/generate_architecture_display_v4.py",
+    "infrastructure/inventory/generate_architecture_display_v10.py",
+    "infrastructure/inventory/generate_architecture_display_v8.py"
+  ]
+}

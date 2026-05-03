@@ -1,0 +1,17 @@
+{
+  "comparison": {
+    "baseline": "V105 proactive skill association",
+    "v106_loaded": {
+      "p0": 7,
+      "metadata": 1,
+      "full_skills": 1,
+      "mock_fallbacks": 0
+    },
+    "improvements": [
+      "P2 skills not preloaded (was full load in V105)",
+      "External API skills blocked (was attempted load in V105)",
+      "All loading tracked in ledger"
+    ],
+    "timestamp": "2026-05-03T14:38:01.606296+00:00"
+  }
+}

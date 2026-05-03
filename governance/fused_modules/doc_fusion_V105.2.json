@@ -1,0 +1,20 @@
+{
+  "module": "doc_fusion_V105.2",
+  "version": "V105.2",
+  "trigger": "changed_flow",
+  "description": "doc_fusion_engine V2 融合确认 — 集成 fusion_engine_v2 AST 分析（auto_fuse 自动扫描module）",
+  "status": "pass",
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T07:12:45.115819+00:00",
+  "v2_analysis": {
+    "analyzed_modules": [
+      {
+        "path": "scripts/doc_fusion_engine.py",
+        "suggested_layer": "L6",
+        "functions": 9,
+        "classes": 0
+      }
+    ]
+  }
+}

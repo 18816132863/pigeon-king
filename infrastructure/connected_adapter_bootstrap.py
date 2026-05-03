@@ -7,10 +7,23 @@ V11.0 Connected Adapter Bootstrap
 
 from __future__ import annotations
 
+from enum import Enum
 from dataclasses import dataclass, asdict
 from typing import Any, Dict, List, Optional
 
-from platform_adapter.connection_state import probe_device_connection
+from infrastructure.platform_adapter.connection_state import probe_device_connection
+
+
+class AdapterStatus(Enum):
+    LOADED = "loaded"
+    PARTIAL = "partial"
+    FAILED = "failed"
+
+
+@dataclass
+class ConnectedAdapterConfig:
+    probe_only: bool = True
+    assume_session_connected: bool = True
 
 
 @dataclass

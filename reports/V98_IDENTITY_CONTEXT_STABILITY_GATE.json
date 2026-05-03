@@ -1,0 +1,75 @@
+{
+  "version": "V98.0",
+  "created_at": "2026-05-01 19:36:17",
+  "status": "pass",
+  "standing_orders_loaded": true,
+  "project_context_loaded": true,
+  "identity_persistence_ready": true,
+  "lobster_mock_channel_ready": true,
+  "lobster_not_main_execution": true,
+  "memory_recall_pressure_pass": true,
+  "memory_recall_pressure": {
+    "total": 29,
+    "passed": 29
+  },
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true,
+  "previous_gate_checks": [
+    {
+      "report": "V95_2_ALL_CHAIN_COVERAGE_GATE.json",
+      "present": true,
+      "status": "pass",
+      "blocking": false
+    },
+    {
+      "report": "V96_FAILURE_RECOVERY_AND_STABILITY_GATE.json",
+      "present": true,
+      "status": "pass",
+      "blocking": false
+    }
+  ],
+  "warnings": [],
+  "remaining_failures": [],
+  "details": {
+    "project_context": {
+      "loaded": true,
+      "has_standing_orders": true,
+      "hash": "89496f841f568940",
+      "files": {
+        "AGENTS.md": 8736,
+        "SOUL.md": 1665,
+        "TOOLS.md": 851,
+        "MEMORY.md": 849,
+        "IDENTITY.md": 634
+      },
+      "no_sensitive_leak": true
+    },
+    "openclaw": {
+      "exists": true,
+      "contextInjectionAlways": true,
+      "startupContextEnabled": true,
+      "has_context_files": true,
+      "runtime_offline": true
+    },
+    "lobster": {
+      "ready": true,
+      "not_main_execution": true,
+      "files": [
+        {
+          "file": "approvals/lobster/session-recovery.lobster.jsonl",
+          "exists": true
+        },
+        {
+          "file": "approvals/lobster/heartbeat-full.lobster.jsonl",
+          "exists": true
+        },
+        {
+          "file": "approvals/lobster/memory-store.lobster.jsonl",
+          "exists": true
+        }
+      ]
+    }
+  }
+}

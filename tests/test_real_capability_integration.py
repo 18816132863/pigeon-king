@@ -16,7 +16,7 @@ sys.path.insert(0, str(project_root))
 @pytest.mark.asyncio
 async def test_schedule_task_creates_real_task():
     """测试 schedule_task 创建真实任务"""
-    from capabilities.schedule_task import ScheduleTaskCapability
+    from execution.capabilities.schedule_task import ScheduleTaskCapability
     from infrastructure.storage.repositories.sqlite_repo import SQLiteTaskRepository
     
     cap = ScheduleTaskCapability()
@@ -40,7 +40,7 @@ async def test_schedule_task_creates_real_task():
 @pytest.mark.asyncio
 async def test_retry_task_hits_task_manager():
     """测试 retry_task 命中 TaskManager"""
-    from capabilities.retry_task import RetryTaskCapability
+    from execution.capabilities.retry_task import RetryTaskCapability
     from infrastructure.task_manager import get_task_manager
     from domain.tasks import TaskStatus
     
@@ -70,7 +70,7 @@ async def test_retry_task_hits_task_manager():
 @pytest.mark.asyncio
 async def test_export_history_returns_real_data():
     """测试 export_history 返回真实数据"""
-    from capabilities.export_history import ExportHistoryCapability
+    from execution.capabilities.export_history import ExportHistoryCapability
     from infrastructure.task_manager import get_task_manager
     
     tm = get_task_manager()
@@ -98,7 +98,7 @@ async def test_export_history_returns_real_data():
 @pytest.mark.asyncio
 async def test_replay_run_returns_real_steps():
     """测试 replay_run 返回真实步骤"""
-    from capabilities.replay_run import ReplayRunCapability
+    from execution.capabilities.replay_run import ReplayRunCapability
     from infrastructure.task_manager import get_task_manager
     from infrastructure.storage.repositories.sqlite_repo import SQLiteTaskRepository
     from domain.tasks import TaskStatus
@@ -145,9 +145,9 @@ async def test_replay_run_returns_real_steps():
 @pytest.mark.asyncio
 async def test_pause_resume_cancel_chain():
     """测试暂停/恢复/取消链"""
-    from capabilities.pause_task import PauseTaskCapability
-    from capabilities.resume_task import ResumeTaskCapability
-    from capabilities.cancel_task import CancelTaskCapability
+    from execution.capabilities.pause_task import PauseTaskCapability
+    from execution.capabilities.resume_task import ResumeTaskCapability
+    from execution.capabilities.cancel_task import CancelTaskCapability
     from infrastructure.task_manager import get_task_manager
     
     tm = get_task_manager()

@@ -1,0 +1,61 @@
+{
+  "agents": {
+    "defaults": {
+      "contextInjection": "always",
+      "bootstrapMaxChars": 8000,
+      "bootstrapTotalMaxChars": 24000,
+      "startupContext": {
+        "enabled": true,
+        "dailyMemoryDays": 2
+      }
+    }
+  },
+  "runtime": {
+    "OFFLINE_MODE": true,
+    "NO_EXTERNAL_API": true,
+    "NO_REAL_PAYMENT": true,
+    "NO_REAL_SEND": true,
+    "NO_REAL_DEVICE": true,
+    "DISABLE_THINKING_MODE": true,
+    "DISABLE_LLM_API": true
+  },
+  "projectContextFiles": [
+    "AGENTS.md",
+    "SOUL.md",
+    "TOOLS.md",
+    "MEMORY.md",
+    "IDENTITY.md"
+  ],
+  "contextInjection": "always",
+  "bootstrapMaxChars": 8000,
+  "bootstrapTotalMaxChars": 24000,
+  "contextPriority": {
+    "P0_never_trim": [
+      "safety_red_lines",
+      "current_goal",
+      "user_explicit_preferences",
+      "V90/V92/V100 forbidden actions",
+      "recent_failures",
+      "next_best_action"
+    ],
+    "P1_high": [
+      "persona_state",
+      "relationship_summary",
+      "recent_successes",
+      "available_tools"
+    ],
+    "P2_trimmable": [
+      "old_report_details",
+      "historical_version_details",
+      "long_explanations",
+      "low_importance_chitchat"
+    ]
+  },
+  "NO_EXTERNAL_API": true,
+  "NO_REAL_PAYMENT": true,
+  "NO_REAL_SEND": true,
+  "NO_REAL_DEVICE": true,
+  "DISABLE_THINKING_MODE": true,
+  "OFFLINE_MODE": true,
+  "DISABLE_LLM_API": true
+}

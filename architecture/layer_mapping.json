@@ -1,0 +1,10 @@
+{
+  "agent_kernel": "L3 Orchestration Runtime Kernel",
+  "domain": "L1 Core/domain",
+  "application": "L4 Execution/application",
+  "config": "L6 Infrastructure/config",
+  "ops": "L5 Governance/ops",
+  "evaluation": "L5 Governance/evaluation",
+  "data": "runtime/data_or_var_data",
+  "logs": "runtime/logs_or_var_logs"
+}

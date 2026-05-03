@@ -1,0 +1,20 @@
+{
+  "point_id": "rb_9c0d0c35",
+  "step_id": "d",
+  "timestamp": "2026-05-02T01:43:13.116559",
+  "state": {
+    "instance_id": "v86_parallel_limit",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "none"
+      }
+    },
+    "completed_steps": [],
+    "step_results": {}
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "version": "V104.3",
+  "status": "pass",
+  "runtime_bus_linked": true,
+  "commit_barrier_bridge_ready": true,
+  "mainline_hook_runtime_fusion_ready": true,
+  "single_runtime_entrypoint_coordinated": true,
+  "skill_policy_runtime_enforced": true,
+  "offline_runtime_guard_active": true,
+  "gateway_error": 0,
+  "external_api_calls": 0,
+  "real_side_effects": 0,
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true,
+  "remaining_failures": [],
+  "imports": [
+    {
+      "module": "orchestration.runtime_bus",
+      "ok": true,
+      "file": "/home/sandbox/.openclaw/workspace/orchestration/runtime_bus.py"
+    },
+    {
+      "module": "governance.runtime_commit_barrier_bridge",
+      "ok": true,
+      "file": "/home/sandbox/.openclaw/workspace/governance/runtime_commit_barrier_bridge.py"
+    },
+    {
+      "module": "infrastructure.skill_policy_gate",
+      "ok": true,
+      "file": "/home/sandbox/.openclaw/workspace/infrastructure/skill_policy_gate.py"
+    },
+    {
+      "module": "infrastructure.offline_runtime_guard",
+      "ok": true,
+      "file": "/home/sandbox/.openclaw/workspace/infrastructure/offline_runtime_guard.py"
+    },
+    {
+      "module": "infrastructure.mainline_hook",
+      "ok": true,
+      "file": "/home/sandbox/.openclaw/workspace/infrastructure/mainline_hook.py"
+    },
+    {
+      "module": "orchestration.single_runtime_entrypoint",
+      "ok": true,
+      "file": "/home/sandbox/.openclaw/workspace/orchestration/single_runtime_entrypoint.py"
+    }
+  ]
+}

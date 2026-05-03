@@ -1,0 +1,301 @@
+{
+  "report": "V91_SOLUTION_SEARCH_GATEWAY_FIX",
+  "version": "V91",
+  "timestamp": 1777616697.0599933,
+  "status": "pass",
+  "total": 54,
+  "passed": 54,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "elapsed_s": 0.25,
+  "key_fix": "orchestration.solution_search no longer returns gateway_error",
+  "fixes_applied": [
+    "solution_search_orchestrator.py: offline local file search",
+    "offline_adapters.py: OfflineSolutionSearch adapter registered",
+    "v90_final_access_gateway.py: _handle_orchestration fixed"
+  ],
+  "capabilities_verified": {
+    "gateway_call_ok": true,
+    "action_semantic_analyze": true,
+    "side_effects_false": true,
+    "requires_api_false": true,
+    "no_external_api": true,
+    "no_gateway_error": true,
+    "append_only_audit": true,
+    "no_real_payment_sign_send": true,
+    "offline_local_search": true,
+    "warning_when_empty": true
+  },
+  "results": [
+    {
+      "name": "GW: solution_search returns ok",
+      "status": "PASS",
+      "detail": "actual status=ok error="
+    },
+    {
+      "name": "GW: status != gateway_error",
+      "status": "PASS",
+      "detail": "actual status=ok"
+    },
+    {
+      "name": "GW: mode=offline",
+      "status": "PASS",
+      "detail": "actual mode=offline"
+    },
+    {
+      "name": "GW: action_semantic=analyze",
+      "status": "PASS",
+      "detail": "actual action_semantic=analyze"
+    },
+    {
+      "name": "GW: side_effects=false",
+      "status": "PASS",
+      "detail": "actual side_effects=False"
+    },
+    {
+      "name": "GW: requires_api=false",
+      "status": "PASS",
+      "detail": "actual requires_api=False"
+    },
+    {
+      "name": "GW: route=solution_search",
+      "status": "PASS",
+      "detail": "actual route=orchestration.solution_search"
+    },
+    {
+      "name": "GW: has result key",
+      "status": "PASS",
+      "detail": "keys present: ['action_semantic', 'call_no', 'capability', 'gateway_latency_ms', 'gateway_version', 'mode', 'no_external_api', 'offline', 'query', 'requires_api', 'result', 'route', 'side_effects', 'status', 'warning']"
+    },
+    {
+      "name": "GW: no_route_errors_increment",
+      "status": "PASS",
+      "detail": "route_errors: before=0 after=0"
+    },
+    {
+      "name": "Orchestrator init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Offline detected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "build_search_plan offline",
+      "status": "PASS",
+      "detail": "mode=offline"
+    },
+    {
+      "name": "build_search_plan local_search_order",
+      "status": "PASS",
+      "detail": "order=['local_file_search_memory', 'local_file_search_memory_context', 'local_file_search_reports', 'local_file_search_docs', 'local_capability_registry_lookup', 'local_workflow_registry_lookup']"
+    },
+    {
+      "name": "propose_candidates offline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "propose_candidates no_external",
+      "status": "PASS",
+      "detail": "network_reqs=[False, False, False]"
+    },
+    {
+      "name": "search returns ok",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "search mode offline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "search action_semantic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "search V90 finds docs",
+      "status": "PASS",
+      "detail": "results=3 matches=['reports/V91_SOLUTION_SEARCH_GATEWAY_FIX.json', 'reports/v91_offline_integration_result.json', 'docs/V87_V96_AUTONOMY_UPGRADE.md']"
+    },
+    {
+      "name": "search nonsense returns ok",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "search nonsense has warning",
+      "status": "PASS",
+      "detail": "warning=no_local_solution_found"
+    },
+    {
+      "name": "search nonsense result empty",
+      "status": "PASS",
+      "detail": "result=[]"
+    },
+    {
+      "name": "Adapter registered",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Adapter is OfflineSolutionSearch",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Adapter search returns ok",
+      "status": "PASS",
+      "detail": "status=ok"
+    },
+    {
+      "name": "Adapter search action_semantic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Audit log exists",
+      "status": "PASS",
+      "detail": "/home/sandbox/.openclaw/workspace/governance/audit/solution_search_audit.jsonl"
+    },
+    {
+      "name": "Audit has entries",
+      "status": "PASS",
+      "detail": "entries=52"
+    },
+    {
+      "name": "Audit entries valid JSON + correct module",
+      "status": "PASS",
+      "detail": "validated 52 entries"
+    },
+    {
+      "name": "  Gap 'payment_gap' action 'analyze' not forbidden",
+      "status": "PASS",
+      "detail": "action=analyze in forbidden set"
+    },
+    {
+      "name": "  Gap 'payment_gap' action 'reuse_or_wrap_existing_skill' not forbidden",
+      "status": "PASS",
+      "detail": "action=reuse_or_wrap_existing_skill in forbidden set"
+    },
+    {
+      "name": "  Gap 'payment_gap' action 'prepare' not forbidden",
+      "status": "PASS",
+      "detail": "action=prepare in forbidden set"
+    },
+    {
+      "name": "  Gap 'send_email' action 'analyze' not forbidden",
+      "status": "PASS",
+      "detail": "action=analyze in forbidden set"
+    },
+    {
+      "name": "  Gap 'send_email' action 'reuse_or_wrap_existing_skill' not forbidden",
+      "status": "PASS",
+      "detail": "action=reuse_or_wrap_existing_skill in forbidden set"
+    },
+    {
+      "name": "  Gap 'send_email' action 'prepare' not forbidden",
+      "status": "PASS",
+      "detail": "action=prepare in forbidden set"
+    },
+    {
+      "name": "  Gap 'deploy_service' action 'analyze' not forbidden",
+      "status": "PASS",
+      "detail": "action=analyze in forbidden set"
+    },
+    {
+      "name": "  Gap 'deploy_service' action 'reuse_or_wrap_existing_skill' not forbidden",
+      "status": "PASS",
+      "detail": "action=reuse_or_wrap_existing_skill in forbidden set"
+    },
+    {
+      "name": "  Gap 'deploy_service' action 'prepare' not forbidden",
+      "status": "PASS",
+      "detail": "action=prepare in forbidden set"
+    },
+    {
+      "name": "  Gap 'sign_document' action 'analyze' not forbidden",
+      "status": "PASS",
+      "detail": "action=analyze in forbidden set"
+    },
+    {
+      "name": "  Gap 'sign_document' action 'reuse_or_wrap_existing_skill' not forbidden",
+      "status": "PASS",
+      "detail": "action=reuse_or_wrap_existing_skill in forbidden set"
+    },
+    {
+      "name": "  Gap 'sign_document' action 'prepare' not forbidden",
+      "status": "PASS",
+      "detail": "action=prepare in forbidden set"
+    },
+    {
+      "name": "  Gap 'execute_command' action 'analyze' not forbidden",
+      "status": "PASS",
+      "detail": "action=analyze in forbidden set"
+    },
+    {
+      "name": "  Gap 'execute_command' action 'reuse_or_wrap_existing_skill' not forbidden",
+      "status": "PASS",
+      "detail": "action=reuse_or_wrap_existing_skill in forbidden set"
+    },
+    {
+      "name": "  Gap 'execute_command' action 'prepare' not forbidden",
+      "status": "PASS",
+      "detail": "action=prepare in forbidden set"
+    },
+    {
+      "name": "Payment candidates confidence halved",
+      "status": "PASS",
+      "detail": "confidences=[0.15, 0.2, 0.1]"
+    },
+    {
+      "name": "search has no_external_api flag",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gateway_call V91 returns ok",
+      "status": "PASS",
+      "detail": "status=ok"
+    },
+    {
+      "name": "gateway_call has gateway_version",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Regression: identity.check",
+      "status": "PASS",
+      "detail": "status=safe"
+    },
+    {
+      "name": "  Regression: memory.knowledge_graph",
+      "status": "PASS",
+      "detail": "status=offline_memory_ok"
+    },
+    {
+      "name": "  Regression: memory.preference_evolution",
+      "status": "PASS",
+      "detail": "status=offline_memory_ok"
+    },
+    {
+      "name": "  Regression: memory.writeback_guard",
+      "status": "PASS",
+      "detail": "status=offline_memory_ok"
+    },
+    {
+      "name": "  Regression: execution.tts",
+      "status": "PASS",
+      "detail": "status=mock_tts_done"
+    },
+    {
+      "name": "  Regression: governance.alert",
+      "status": "PASS",
+      "detail": "status=alert_drafted"
+    }
+  ]
+}

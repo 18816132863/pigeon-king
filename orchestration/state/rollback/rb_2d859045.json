@@ -1,0 +1,20 @@
+{
+  "point_id": "rb_2d859045",
+  "step_id": "cal_a",
+  "timestamp": "2026-05-02T01:43:13.365919",
+  "state": {
+    "instance_id": "v86_serial_lane",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "calendar_write"
+      }
+    },
+    "completed_steps": [],
+    "step_results": {}
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

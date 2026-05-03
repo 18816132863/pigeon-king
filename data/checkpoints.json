@@ -131,6 +131,2197 @@
       },
       "context": {},
       "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260430213558944182",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-04-30T21:35:58.944205",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260430213558948184",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-04-30T21:35:58.948201",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260430214205525528",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-04-30T21:42:05.525555",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260430214205529723",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-04-30T21:42:05.529741",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501194512734248",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T19:45:12.734269",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501194512738172",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T19:45:12.738188",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501194542488946",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T19:45:42.488969",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501194542493142",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T19:45:42.493157",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501194708945079",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T19:47:08.945103",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501194708949122",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T19:47:08.949138",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501195055309889",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T19:50:55.309917",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501195055316042",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T19:50:55.316062",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501195127441709",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T19:51:27.441732",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501195127446232",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T19:51:27.446249",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501195500747545",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T19:55:00.747567",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501195500751678",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T19:55:00.751693",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501200139938796",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:01:39.938816",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501200139942927",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:01:39.942942",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501200212412307",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:02:12.412322",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501200212416514",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:02:12.416529",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501200302811937",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:03:02.811955",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501200302816274",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:03:02.816288",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501200320224706",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:03:20.224724",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501200320228916",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:03:20.228931",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501200337732790",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:03:37.732806",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501200337737079",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:03:37.737094",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501200354991973",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:03:54.991995",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501200354998264",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:03:54.998283",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501201732455019",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:17:32.455034",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501201732459317",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:17:32.459331",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501202828755759",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:28:28.755773",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501202828760106",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:28:28.760121",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501205132512198",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:51:32.512213",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501205132516666",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:51:32.516681",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501205326619524",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:53:26.619541",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501205326623876",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:53:26.623892",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501205825410182",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T20:58:25.410204",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501205825417414",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T20:58:25.417434",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "full_loop_test_step_1_20260501210227223885",
+      "instance_id": "full_loop_test",
+      "step_id": "step_1",
+      "timestamp": "2026-05-01T21:02:27.223903",
+      "state_data": {
+        "test": "data"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "test_instance_test_step_20260501210227228357",
+      "instance_id": "test_instance",
+      "step_id": "test_step",
+      "timestamp": "2026-05-01T21:02:27.228382",
+      "state_data": {
+        "key": "value"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502012716817322",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:27:16.817332",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502012716817804",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:27:16.817815",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502012831099087",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:28:31.099099",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502012831099632",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:28:31.099644",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502012944191258",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:29:44.191268",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502012944191813",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:29:44.191826",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013052074704",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:30:52.074714",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013052075169",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:30:52.075180",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013131747265",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:31:31.747275",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013131747762",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:31:31.747773",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013131751634",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:31:31.751651",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013131751715",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:31:31.751727",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013436485619",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:34:36.485630",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013436486112",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:34:36.486124",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013436491355",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:34:36.491380",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013436491457",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:34:36.491470",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013607760457",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:36:07.760468",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013607760935",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:36:07.760947",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013607766462",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:36:07.766478",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013607766553",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:36:07.766566",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013754703670",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:37:54.703680",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013754705681",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:37:54.705693",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013754710049",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:37:54.710064",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013754710150",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:37:54.710162",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013937869049",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:39:37.869057",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013937869579",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:39:37.869592",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502013937875355",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:39:37.875385",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502013937875463",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:39:37.875475",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014103234396",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:41:03.234407",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014103234890",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:41:03.234901",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014103240629",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:41:03.240645",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014103240733",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:41:03.240745",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014301987958",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:01.987969",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014301988550",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:01.988562",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014301993730",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:01.993746",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014301993833",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:01.993845",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 0,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014301995977",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:01.995984",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 1,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 1
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014301997987",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:01.997994",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 1,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 1
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014301999893",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:01.999899",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 2,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 2
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014302001914",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:02.001920",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 2,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 2
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014302004060",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:02.004067",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_a'",
+        "attempt": 3,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 3
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014302005987",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:02.005994",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "error": "No handler for action 'safe_sleep_b'",
+        "attempt": 3,
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "on_error",
+        "attempt_meta": 3
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014312767276",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:12.767286",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014312767804",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:12.767816",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_a_20260502014312969528",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:12.969554",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "output": {
+          "action": "safe_sleep_a"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "a"
+        ],
+        "pending_steps": [
+          "b"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_basic_b_20260502014312971726",
+      "instance_id": "v86_parallel_basic",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:12.971738",
+      "state_data": {
+        "instance_id": "v86_parallel_basic",
+        "output": {
+          "action": "safe_sleep_b"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "b"
+        ],
+        "pending_steps": [
+          "a"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_a_20260502014312985088",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:12.985100",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_b_20260502014312985725",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:12.985737",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a",
+          "c",
+          "d"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_a_20260502014313107590",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:13.107612",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "output": {
+          "action": "safe_job_a"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "a"
+        ],
+        "pending_steps": [
+          "b",
+          "c",
+          "d"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_b_20260502014313109757",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:13.109766",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "output": {
+          "action": "safe_job_b"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "b"
+        ],
+        "pending_steps": [
+          "a",
+          "c",
+          "d"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_c_20260502014313109863",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "c",
+      "timestamp": "2026-05-02T01:43:13.109871",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "c",
+          "a",
+          "b",
+          "d"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_d_20260502014313112169",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "d",
+      "timestamp": "2026-05-02T01:43:13.112176",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "d",
+          "a",
+          "b",
+          "c"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_c_20260502014313234577",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "c",
+      "timestamp": "2026-05-02T01:43:13.234604",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "output": {
+          "action": "safe_job_c"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "c"
+        ],
+        "pending_steps": [
+          "a",
+          "b",
+          "d"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_limit_d_20260502014313236761",
+      "instance_id": "v86_parallel_limit",
+      "step_id": "d",
+      "timestamp": "2026-05-02T01:43:13.236772",
+      "state_data": {
+        "instance_id": "v86_parallel_limit",
+        "output": {
+          "action": "safe_job_d"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "d"
+        ],
+        "pending_steps": [
+          "a",
+          "b",
+          "c"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_dependencies_a_20260502014313243189",
+      "instance_id": "v86_parallel_dependencies",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:13.243199",
+      "state_data": {
+        "instance_id": "v86_parallel_dependencies",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b",
+          "final"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_dependencies_b_20260502014313245454",
+      "instance_id": "v86_parallel_dependencies",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:13.245462",
+      "state_data": {
+        "instance_id": "v86_parallel_dependencies",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a",
+          "final"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_dependencies_a_20260502014313345391",
+      "instance_id": "v86_parallel_dependencies",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:13.345414",
+      "state_data": {
+        "instance_id": "v86_parallel_dependencies",
+        "output": {
+          "action": "safe_a"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "a"
+        ],
+        "pending_steps": [
+          "b",
+          "final"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_dependencies_b_20260502014313347706",
+      "instance_id": "v86_parallel_dependencies",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:13.347717",
+      "state_data": {
+        "instance_id": "v86_parallel_dependencies",
+        "output": {
+          "action": "safe_b"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "b"
+        ],
+        "pending_steps": [
+          "a",
+          "final"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_dependencies_final_20260502014313351010",
+      "instance_id": "v86_parallel_dependencies",
+      "step_id": "final",
+      "timestamp": "2026-05-02T01:43:13.351017",
+      "state_data": {
+        "instance_id": "v86_parallel_dependencies",
+        "step_input": {
+          "context": {},
+          "dependencies": {
+            "a": {
+              "action": "safe_a"
+            },
+            "b": {
+              "action": "safe_b"
+            }
+          },
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {
+          "a": {
+            "step_id": "a",
+            "status": "completed",
+            "started_at": "2026-05-02T01:43:13.243006",
+            "completed_at": "2026-05-02T01:43:13.345355",
+            "output": {
+              "action": "safe_a"
+            },
+            "error": null,
+            "retry_count": 0,
+            "duration_ms": 102,
+            "fallback_used": false,
+            "rollback_used": false,
+            "checkpoint_id": "v86_parallel_dependencies_a_20260502014313345391",
+            "rollback_point_id": "rb_26332104",
+            "fallback_decision": null
+          },
+          "b": {
+            "step_id": "b",
+            "status": "completed",
+            "started_at": "2026-05-02T01:43:13.245304",
+            "completed_at": "2026-05-02T01:43:13.347691",
+            "output": {
+              "action": "safe_b"
+            },
+            "error": null,
+            "retry_count": 0,
+            "duration_ms": 102,
+            "fallback_used": false,
+            "rollback_used": false,
+            "checkpoint_id": "v86_parallel_dependencies_b_20260502014313347706",
+            "rollback_point_id": "rb_77bfb5dc",
+            "fallback_decision": null
+          }
+        },
+        "completed_steps": [
+          "a",
+          "b"
+        ],
+        "pending_steps": [
+          "final"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_parallel_dependencies_final_20260502014313353230",
+      "instance_id": "v86_parallel_dependencies",
+      "step_id": "final",
+      "timestamp": "2026-05-02T01:43:13.353237",
+      "state_data": {
+        "instance_id": "v86_parallel_dependencies",
+        "output": {
+          "action": "safe_final"
+        },
+        "step_results": {
+          "a": {
+            "step_id": "a",
+            "status": "completed",
+            "started_at": "2026-05-02T01:43:13.243006",
+            "completed_at": "2026-05-02T01:43:13.345355",
+            "output": {
+              "action": "safe_a"
+            },
+            "error": null,
+            "retry_count": 0,
+            "duration_ms": 102,
+            "fallback_used": false,
+            "rollback_used": false,
+            "checkpoint_id": "v86_parallel_dependencies_a_20260502014313345391",
+            "rollback_point_id": "rb_26332104",
+            "fallback_decision": null
+          },
+          "b": {
+            "step_id": "b",
+            "status": "completed",
+            "started_at": "2026-05-02T01:43:13.245304",
+            "completed_at": "2026-05-02T01:43:13.347691",
+            "output": {
+              "action": "safe_b"
+            },
+            "error": null,
+            "retry_count": 0,
+            "duration_ms": 102,
+            "fallback_used": false,
+            "rollback_used": false,
+            "checkpoint_id": "v86_parallel_dependencies_b_20260502014313347706",
+            "rollback_point_id": "rb_77bfb5dc",
+            "fallback_decision": null
+          }
+        },
+        "completed_steps": [
+          "a",
+          "b",
+          "final"
+        ],
+        "pending_steps": [],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_serial_lane_cal_a_20260502014313363799",
+      "instance_id": "v86_serial_lane",
+      "step_id": "cal_a",
+      "timestamp": "2026-05-02T01:43:13.363805",
+      "state_data": {
+        "instance_id": "v86_serial_lane",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "calendar_write"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "cal_a",
+          "cal_b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_serial_lane_cal_a_20260502014313466140",
+      "instance_id": "v86_serial_lane",
+      "step_id": "cal_a",
+      "timestamp": "2026-05-02T01:43:13.466166",
+      "state_data": {
+        "instance_id": "v86_serial_lane",
+        "output": {
+          "action": "calendar_create_event"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "cal_a"
+        ],
+        "pending_steps": [
+          "cal_b"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_serial_lane_cal_b_20260502014313468638",
+      "instance_id": "v86_serial_lane",
+      "step_id": "cal_b",
+      "timestamp": "2026-05-02T01:43:13.468643",
+      "state_data": {
+        "instance_id": "v86_serial_lane",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "calendar_write"
+          }
+        },
+        "step_results": {
+          "cal_a": {
+            "step_id": "cal_a",
+            "status": "completed",
+            "started_at": "2026-05-02T01:43:13.363741",
+            "completed_at": "2026-05-02T01:43:13.466104",
+            "output": {
+              "action": "calendar_create_event"
+            },
+            "error": null,
+            "retry_count": 0,
+            "duration_ms": 102,
+            "fallback_used": false,
+            "rollback_used": false,
+            "checkpoint_id": "v86_serial_lane_cal_a_20260502014313466140",
+            "rollback_point_id": "rb_2d859045",
+            "fallback_decision": null
+          }
+        },
+        "completed_steps": [
+          "cal_a"
+        ],
+        "pending_steps": [
+          "cal_b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_serial_lane_cal_b_20260502014313571457",
+      "instance_id": "v86_serial_lane",
+      "step_id": "cal_b",
+      "timestamp": "2026-05-02T01:43:13.571482",
+      "state_data": {
+        "instance_id": "v86_serial_lane",
+        "output": {
+          "action": "calendar_create_event"
+        },
+        "step_results": {
+          "cal_a": {
+            "step_id": "cal_a",
+            "status": "completed",
+            "started_at": "2026-05-02T01:43:13.363741",
+            "completed_at": "2026-05-02T01:43:13.466104",
+            "output": {
+              "action": "calendar_create_event"
+            },
+            "error": null,
+            "retry_count": 0,
+            "duration_ms": 102,
+            "fallback_used": false,
+            "rollback_used": false,
+            "checkpoint_id": "v86_serial_lane_cal_a_20260502014313466140",
+            "rollback_point_id": "rb_2d859045",
+            "fallback_decision": null
+          }
+        },
+        "completed_steps": [
+          "cal_a",
+          "cal_b"
+        ],
+        "pending_steps": [],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_deterministic_replay_a_20260502014313577621",
+      "instance_id": "v86_deterministic_replay",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:13.577631",
+      "state_data": {
+        "instance_id": "v86_deterministic_replay",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "a",
+          "b"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_deterministic_replay_b_20260502014313578114",
+      "instance_id": "v86_deterministic_replay",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:13.578125",
+      "state_data": {
+        "instance_id": "v86_deterministic_replay",
+        "step_input": {
+          "context": {},
+          "dependencies": {},
+          "params": {
+            "side_effect_type": "none"
+          }
+        },
+        "step_results": {},
+        "completed_steps": [],
+        "pending_steps": [
+          "b",
+          "a"
+        ],
+        "phase": "before_step",
+        "attempt": 0
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_deterministic_replay_b_20260502014313603951",
+      "instance_id": "v86_deterministic_replay",
+      "step_id": "b",
+      "timestamp": "2026-05-02T01:43:13.603968",
+      "state_data": {
+        "instance_id": "v86_deterministic_replay",
+        "output": {
+          "action": "safe_b"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "b"
+        ],
+        "pending_steps": [
+          "a"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
+    },
+    {
+      "checkpoint_id": "v86_deterministic_replay_a_20260502014313730594",
+      "instance_id": "v86_deterministic_replay",
+      "step_id": "a",
+      "timestamp": "2026-05-02T01:43:13.730622",
+      "state_data": {
+        "instance_id": "v86_deterministic_replay",
+        "output": {
+          "action": "safe_a"
+        },
+        "step_results": {},
+        "completed_steps": [
+          "a"
+        ],
+        "pending_steps": [
+          "b"
+        ],
+        "phase": "after_step"
+      },
+      "context": {},
+      "metadata": {}
     }
   ]
 }

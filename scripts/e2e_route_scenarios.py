@@ -14,7 +14,7 @@ from typing import Dict, List, Any
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from autonomous_planner.route_selector import RouteSelector, get_route_selector
+from orchestration.planner.route_selector import RouteSelector, get_route_selector
 from skill_orchestrator.route_executor import RouteExecutor, get_route_executor
 from orchestration.route_fallback import RouteFallbackExecutor, get_route_fallback_executor
 

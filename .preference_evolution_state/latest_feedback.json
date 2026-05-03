@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "component": "PreferenceEvolutionModel",
+  "mode": "offline",
+  "feedback": "v92_offline_smoke",
+  "task_result": null,
+  "correction": null,
+  "context_keys": [],
+  "side_effects": false,
+  "requires_api": false,
+  "updated_at": "2026-05-01T09:41:47.704544Z"
+}

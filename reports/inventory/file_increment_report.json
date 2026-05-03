@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-03T01:13:42.753598",
+  "baseline_file_count": 3584,
+  "current_file_count": 3584,
+  "is_first_run": false,
+  "delta": {
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "total_added": 0,
+    "total_removed": 0,
+    "total_changed": 0
+  },
+  "arch_coverage": {
+    "total_files": 3584,
+    "in_arch_doc": 138,
+    "not_in_arch_doc": 1240,
+    "candidates_for_arch_fusion": [
+      "core/README_UPGRADE.md",
+      "core/__init__.py",
+      "core/action_bridge/__init__.py",
+      "core/action_bridge/action_bridge_kernel.py",
+      "core/action_bridge/action_dsl.py",
+      "core/action_bridge/background_run_ledger.py",
+      "core/action_bridge/device_session.py",
+      "core/action_bridge/evidence_capture.py",
+      "core/action_bridge/handoff_inbox.py",
+      "core/action_bridge/notification_center.py",
+      "core/action_bridge/real_world_scenario_harness.py",
+      "core/action_bridge/schemas.py",
+      "core/action_bridge/side_effect_executor.py",
+      "core/action_bridge/storage.py",
+      "core/action_bridge/tool_adapter_registry.py",
+      "core/ai_shape_core/__init__.py",
+      "core/ai_shape_core/ai_shape_core.py",
+      "core/ai_shape_core/capability_expansion.py",
+      "core/ai_shape_core/constitution_judge.py",
+      "core/ai_shape_core/finalizer.py"
+    ],
+    "note": "138/3584 已纳入架构文档; 1240 个六层核心文件未纳入"
+  }
+}

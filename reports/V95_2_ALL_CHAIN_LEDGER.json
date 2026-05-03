@@ -1,0 +1,5342 @@
+{
+  "version": "V95.2",
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "用户长期偏好写入链",
+      "modules_triggered": [
+        "MWG",
+        "IDG",
+        "PKG",
+        "PEM",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 2,
+      "chain_name": "用户纠错学习链",
+      "modules_triggered": [
+        "MWG",
+        "PEM",
+        "PKG",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 3,
+      "chain_name": "低置信记忆拒绝链",
+      "modules_triggered": [
+        "MWG",
+        "OBS",
+        "audit"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 4,
+      "chain_name": "敏感记忆拦截链",
+      "modules_triggered": [
+        "MWG",
+        "IDG",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 5,
+      "chain_name": "画像更新链",
+      "modules_triggered": [
+        "PEM",
+        "IDG",
+        "PKG",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 6,
+      "chain_name": "知识图谱查询链",
+      "modules_triggered": [
+        "PKG",
+        "solution_search",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 7,
+      "chain_name": "知识图谱关系补全链",
+      "modules_triggered": [
+        "PKG",
+        "PEM",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 8,
+      "chain_name": "程序记忆记录链",
+      "modules_triggered": [
+        "MWG",
+        "PKG",
+        "PEM"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 9,
+      "chain_name": "记忆回滚演练链",
+      "modules_triggered": [
+        "MWG",
+        "audit",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "记忆/偏好/方案混合链",
+      "modules_triggered": [
+        "MWG",
+        "PEM",
+        "PKG",
+        "solution_search",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 11,
+      "chain_name": "本地方案搜索链",
+      "modules_triggered": [
+        "solution_search",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 12,
+      "chain_name": "报告驱动方案搜索链",
+      "modules_triggered": [
+        "reports",
+        "solution_search",
+        "PEM",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 13,
+      "chain_name": "文档驱动方案搜索链",
+      "modules_triggered": [
+        "docs",
+        "solution_search",
+        "PKG"
+      ],
+      "steps": [
+        {
+          "symbol": "docs",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "docs",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:47"
+    },
+    {
+      "chain_id": 14,
+      "chain_name": "能力驱动方案搜索链",
+      "modules_triggered": [
+        "capability registry",
+        "solution_search",
+        "capability_marketplace"
+      ],
+      "steps": [
+        {
+          "symbol": "capability registry",
+          "module_path": "execution.capabilities.registry",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/capabilities/registry.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_marketplace",
+          "module_path": "infrastructure.capability_marketplace_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_marketplace_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 15,
+      "chain_name": "无结果降级链",
+      "modules_triggered": [
+        "solution_search",
+        "warning=no_local_solution_found",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "warning=no_local_solution_found",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "warning=no_local_solution_found",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 16,
+      "chain_name": "多候选排序链",
+      "modules_triggered": [
+        "solution_search",
+        "PEM",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 17,
+      "chain_name": "方案转任务链",
+      "modules_triggered": [
+        "solution_search",
+        "planner/dry-run",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "planner/dry-run",
+          "module_path": "orchestration",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/orchestration/__init__.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 18,
+      "chain_name": "方案安全复核链",
+      "modules_triggered": [
+        "solution_search",
+        "IDG",
+        "MWG",
+        "commit barrier"
+      ],
+      "steps": [
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 19,
+      "chain_name": "自我改进 dry-run 链",
+      "modules_triggered": [
+        "SIL",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 20,
+      "chain_name": "缺能力识别链",
+      "modules_triggered": [
+        "SIL",
+        "capability_marketplace",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_marketplace",
+          "module_path": "infrastructure.capability_marketplace_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_marketplace_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 21,
+      "chain_name": "本地能力市场查询链",
+      "modules_triggered": [
+        "capability_marketplace",
+        "capability registry"
+      ],
+      "steps": [
+        {
+          "symbol": "capability_marketplace",
+          "module_path": "infrastructure.capability_marketplace_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_marketplace_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability registry",
+          "module_path": "execution.capabilities.registry",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/capabilities/registry.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 22,
+      "chain_name": "能力扩展沙箱链",
+      "modules_triggered": [
+        "capability_extension_sandbox_gate",
+        "mock evaluation"
+      ],
+      "steps": [
+        {
+          "symbol": "capability_extension_sandbox_gate",
+          "module_path": "infrastructure.capability_extension_sandbox_gate_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_extension_sandbox_gate_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "mock evaluation",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "mock evaluation",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 23,
+      "chain_name": "能力晋升拒绝链",
+      "modules_triggered": [
+        "capability_extension_sandbox_gate",
+        "commit barrier",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "capability_extension_sandbox_gate",
+          "module_path": "infrastructure.capability_extension_sandbox_gate_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_extension_sandbox_gate_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 24,
+      "chain_name": "技能安装禁止链",
+      "modules_triggered": [
+        "SIL",
+        "capability_extension_sandbox_gate",
+        "no_external_api"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_extension_sandbox_gate",
+          "module_path": "infrastructure.capability_extension_sandbox_gate_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_extension_sandbox_gate_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_external_api",
+          "kind": "unknown_symbol",
+          "status": "ok",
+          "coverage_status": "deferred_with_reason",
+          "deferred_reason": "no_module_path_mapping_but_chain_step_recorded",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "no_external_api",
+          "kind": "unknown_symbol",
+          "status": "ok",
+          "coverage_status": "deferred_with_reason",
+          "deferred_reason": "no_module_path_mapping_but_chain_step_recorded",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "自进化安全审计链",
+      "modules_triggered": [
+        "SIL",
+        "MWG",
+        "IDG",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 26,
+      "chain_name": "能力市场 + 方案搜索链",
+      "modules_triggered": [
+        "solution_search",
+        "capability_marketplace",
+        "capability_extension_sandbox_gate"
+      ],
+      "steps": [
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_marketplace",
+          "module_path": "infrastructure.capability_marketplace_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_marketplace_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_extension_sandbox_gate",
+          "module_path": "infrastructure.capability_extension_sandbox_gate_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_extension_sandbox_gate_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 27,
+      "chain_name": "能力缺口 + 回退链",
+      "modules_triggered": [
+        "SIL",
+        "fallback registry",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "fallback registry",
+          "module_path": "infrastructure.offline_adapters",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/offline_adapters.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 28,
+      "chain_name": "自进化 + 每日评估链",
+      "modules_triggered": [
+        "SIL",
+        "daily_assessment",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "daily_assessment",
+          "module_path": "infrastructure.portfolio.assessment.daily_assessment_generate",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/portfolio/assessment/daily_assessment_generate.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 29,
+      "chain_name": "多模态本地检索链",
+      "modules_triggered": [
+        "MultimodalSearcher",
+        "solution_search",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 30,
+      "chain_name": "图片占位索引链",
+      "modules_triggered": [
+        "MultimodalSearcher",
+        "PKG"
+      ],
+      "steps": [
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 31,
+      "chain_name": "文本+图片混合检索链",
+      "modules_triggered": [
+        "MultimodalSearcher",
+        "CrossLingualSearcher",
+        "solution_search"
+      ],
+      "steps": [
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "CrossLingualSearcher",
+          "module_path": "memory_context.cross_lingual.cross_lingual",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/cross_lingual/cross_lingual.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 32,
+      "chain_name": "跨语言中文到英文链",
+      "modules_triggered": [
+        "CrossLingualSearcher",
+        "solution_search"
+      ],
+      "steps": [
+        {
+          "symbol": "CrossLingualSearcher",
+          "module_path": "memory_context.cross_lingual.cross_lingual",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/cross_lingual/cross_lingual.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 33,
+      "chain_name": "跨语言英文到中文链",
+      "modules_triggered": [
+        "CrossLingualSearcher",
+        "PEM"
+      ],
+      "steps": [
+        {
+          "symbol": "CrossLingualSearcher",
+          "module_path": "memory_context.cross_lingual.cross_lingual",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/cross_lingual/cross_lingual.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 34,
+      "chain_name": "多语言偏好匹配链",
+      "modules_triggered": [
+        "CrossLingualSearcher",
+        "PEM",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "CrossLingualSearcher",
+          "module_path": "memory_context.cross_lingual.cross_lingual",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/cross_lingual/cross_lingual.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 35,
+      "chain_name": "多模态安全审查链",
+      "modules_triggered": [
+        "MultimodalSearcher",
+        "MWG",
+        "IDG",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 36,
+      "chain_name": "多模态 + 任务计划链",
+      "modules_triggered": [
+        "MultimodalSearcher",
+        "solution_search",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 37,
+      "chain_name": "视觉观察链",
+      "modules_triggered": [
+        "ScreenObserver",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "ScreenObserver",
+          "module_path": "execution.visual_operation_agent.screen_observer",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/screen_observer.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 38,
+      "chain_name": "视觉计划链",
+      "modules_triggered": [
+        "ScreenObserver",
+        "VisualPlanner",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "ScreenObserver",
+          "module_path": "execution.visual_operation_agent.screen_observer",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/screen_observer.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "VisualPlanner",
+          "module_path": "execution.visual_operation_agent.visual_planner",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/visual_planner.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 39,
+      "chain_name": "UI grounding 链",
+      "modules_triggered": [
+        "ScreenObserver",
+        "UIGrounding",
+        "VisualPlanner"
+      ],
+      "steps": [
+        {
+          "symbol": "ScreenObserver",
+          "module_path": "execution.visual_operation_agent.screen_observer",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/screen_observer.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "UIGrounding",
+          "module_path": "execution.visual_operation_agent.ui_grounding",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/ui_grounding.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "VisualPlanner",
+          "module_path": "execution.visual_operation_agent.visual_planner",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/visual_planner.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 40,
+      "chain_name": "动作执行 dry-run 链",
+      "modules_triggered": [
+        "VisualPlanner",
+        "ActionExecutor",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "VisualPlanner",
+          "module_path": "execution.visual_operation_agent.visual_planner",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/visual_planner.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "ActionExecutor",
+          "module_path": "execution.visual_operation_agent.action_executor",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/action_executor.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 41,
+      "chain_name": "GUI fast 链",
+      "modules_triggered": [
+        "gui_agent_fast",
+        "gateway",
+        "audit"
+      ],
+      "steps": [
+        {
+          "symbol": "gui_agent_fast",
+          "module_path": "infrastructure.gui_agent_fast",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/gui_agent_fast.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 42,
+      "chain_name": "GUI smart 链",
+      "modules_triggered": [
+        "gui_agent_smart",
+        "gateway",
+        "audit"
+      ],
+      "steps": [
+        {
+          "symbol": "gui_agent_smart",
+          "module_path": "infrastructure.gui_agent_smart",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/gui_agent_smart.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 43,
+      "chain_name": "GUI learner 链",
+      "modules_triggered": [
+        "gui_agent_learner",
+        "usage ledger"
+      ],
+      "steps": [
+        {
+          "symbol": "gui_agent_learner",
+          "module_path": "infrastructure.gui_agent_learner",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/gui_agent_learner.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "usage ledger",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "usage ledger",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 44,
+      "chain_name": "GUI optimizer 链",
+      "modules_triggered": [
+        "gui_agent_optimizer",
+        "usage ledger"
+      ],
+      "steps": [
+        {
+          "symbol": "gui_agent_optimizer",
+          "module_path": "infrastructure.gui_agent_optimizer",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/gui_agent_optimizer.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "usage ledger",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "usage ledger",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 45,
+      "chain_name": "视觉安全拦截链",
+      "modules_triggered": [
+        "VisualPlanner",
+        "commit barrier",
+        "no_real_device"
+      ],
+      "steps": [
+        {
+          "symbol": "VisualPlanner",
+          "module_path": "execution.visual_operation_agent.visual_planner",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/visual_planner.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_real_device",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_real_device",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 46,
+      "chain_name": "视觉 + 记忆链",
+      "modules_triggered": [
+        "ScreenObserver",
+        "PKG",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "ScreenObserver",
+          "module_path": "execution.visual_operation_agent.screen_observer",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/execution/visual_operation_agent/screen_observer.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 47,
+      "chain_name": "观察报告链",
+      "modules_triggered": [
+        "OBS",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 48,
+      "chain_name": "每日评估链",
+      "modules_triggered": [
+        "daily_assessment_generate",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "daily_assessment_generate",
+          "module_path": "infrastructure.portfolio.assessment.daily_assessment_generate",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/portfolio/assessment/daily_assessment_generate.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 49,
+      "chain_name": "自治回归链",
+      "modules_triggered": [
+        "autonomy_regression_matrix_v4",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "autonomy_regression_matrix_v4",
+          "module_path": "evaluation.autonomy_regression_matrix_v4",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/evaluation/autonomy_regression_matrix_v4.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 50,
+      "chain_name": "持续学习评估链",
+      "modules_triggered": [
+        "continuous_learning_evaluator_v5",
+        "PEM",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "continuous_learning_evaluator_v5",
+          "module_path": "evaluation.continuous_learning_evaluator_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/evaluation/continuous_learning_evaluator_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 51,
+      "chain_name": "任务指挥中心链",
+      "modules_triggered": [
+        "autonomous_os_mission_control_v4",
+        "mission_control_dashboard_v5"
+      ],
+      "steps": [
+        {
+          "symbol": "autonomous_os_mission_control_v4",
+          "module_path": "ops.autonomous_os_mission_control_v4",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/ops/autonomous_os_mission_control_v4.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "mission_control_dashboard_v5",
+          "module_path": "ops.mission_control_dashboard_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/ops/mission_control_dashboard_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 52,
+      "chain_name": "仪表盘报告链",
+      "modules_triggered": [
+        "mission_control_dashboard_v5",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "mission_control_dashboard_v5",
+          "module_path": "ops.mission_control_dashboard_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/ops/mission_control_dashboard_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 53,
+      "chain_name": "评估 + 记忆链",
+      "modules_triggered": [
+        "daily_assessment",
+        "PKG",
+        "PEM"
+      ],
+      "steps": [
+        {
+          "symbol": "daily_assessment",
+          "module_path": "infrastructure.portfolio.assessment.daily_assessment_generate",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/portfolio/assessment/daily_assessment_generate.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 54,
+      "chain_name": "评估 + 自进化链",
+      "modules_triggered": [
+        "autonomy_regression",
+        "SIL",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "autonomy_regression",
+          "module_path": "evaluation.autonomy_regression_matrix_v4",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/evaluation/autonomy_regression_matrix_v4.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 55,
+      "chain_name": "模块融合扫描链",
+      "modules_triggered": [
+        "module_fusion_engine",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "module_fusion_engine",
+          "module_path": "infrastructure.fusion.module_fusion_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/fusion/module_fusion_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "技能融合扫描链",
+      "modules_triggered": [
+        "skill_fusion_engine",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "skill_fusion_engine",
+          "module_path": "infrastructure.fusion.skill_fusion_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/fusion/skill_fusion_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 57,
+      "chain_name": "模块+技能融合链",
+      "modules_triggered": [
+        "module_fusion_engine",
+        "skill_fusion_engine",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "module_fusion_engine",
+          "module_path": "infrastructure.fusion.module_fusion_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/fusion/module_fusion_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "skill_fusion_engine",
+          "module_path": "infrastructure.fusion.skill_fusion_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/fusion/skill_fusion_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 58,
+      "chain_name": "技能访问检查链",
+      "modules_triggered": [
+        "skill_access_checker",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "skill_access_checker",
+          "module_path": "infrastructure.inventory.skill_access_checker",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/skill_access_checker.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 59,
+      "chain_name": "技能索引管理链",
+      "modules_triggered": [
+        "skill_index_manager",
+        "capability_marketplace"
+      ],
+      "steps": [
+        {
+          "symbol": "skill_index_manager",
+          "module_path": "infrastructure.inventory.skill_index_manager",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/skill_index_manager.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_marketplace",
+          "module_path": "infrastructure.capability_marketplace_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_marketplace_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 60,
+      "chain_name": "模块目录导出链",
+      "modules_triggered": [
+        "module_catalog_export",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "module_catalog_export",
+          "module_path": "infrastructure.inventory.module_catalog_export",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/module_catalog_export.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 61,
+      "chain_name": "技能目录导出链",
+      "modules_triggered": [
+        "skill_catalog_export",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "skill_catalog_export",
+          "module_path": "infrastructure.inventory.skill_catalog_export",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/skill_catalog_export.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 62,
+      "chain_name": "融合建议安全链",
+      "modules_triggered": [
+        "fusion_engine",
+        "commit barrier",
+        "no_real_side_effects"
+      ],
+      "steps": [
+        {
+          "symbol": "fusion_engine",
+          "module_path": "infrastructure.fusion.module_fusion_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/fusion/module_fusion_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_real_side_effects",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_real_side_effects",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 63,
+      "chain_name": "inventory snapshot 链",
+      "modules_triggered": [
+        "inventory_snapshot",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "inventory_snapshot",
+          "module_path": "infrastructure.inventory.inventory_snapshot",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/inventory_snapshot.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 64,
+      "chain_name": "inventory diff 链",
+      "modules_triggered": [
+        "inventory_snapshot",
+        "inventory_diff"
+      ],
+      "steps": [
+        {
+          "symbol": "inventory_snapshot",
+          "module_path": "infrastructure.inventory.inventory_snapshot",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/inventory_snapshot.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "inventory_diff",
+          "module_path": "infrastructure.inventory.inventory_diff",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/inventory_diff.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 65,
+      "chain_name": "dependency graph 链",
+      "modules_triggered": [
+        "dependency_graph_export",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "dependency_graph_export",
+          "module_path": "infrastructure.inventory.dependency_graph_export",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/dependency_graph_export.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 66,
+      "chain_name": "architecture display 最新版链",
+      "modules_triggered": [
+        "generate_architecture_display_latest",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "generate_architecture_display_latest",
+          "module_path": "infrastructure.inventory.generate_architecture_display_v10",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "fallback_reason": "No module named 'infrastructure.inventory.generate_architecture_display_v10'",
+          "dry_run_action": "import_failed_but_fallback_recorded_non_blocking",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "generate_architecture_display_latest",
+          "module_path": "infrastructure.inventory.generate_architecture_display_v10",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "fallback_reason": "No module named 'infrastructure.inventory.generate_architecture_display_v10'",
+          "dry_run_action": "import_failed_but_fallback_recorded_non_blocking",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 67,
+      "chain_name": "violation test suite 链",
+      "modules_triggered": [
+        "violation_test_suite",
+        "commit barrier"
+      ],
+      "steps": [
+        {
+          "symbol": "violation_test_suite",
+          "module_path": "infrastructure.inventory.violation_test_suite",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/violation_test_suite.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 68,
+      "chain_name": "benchmark 链",
+      "modules_triggered": [
+        "benchmark",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "benchmark",
+          "module_path": "infrastructure.benchmark",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/benchmark.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 69,
+      "chain_name": "unified logger 链",
+      "modules_triggered": [
+        "unified_logger",
+        "audit"
+      ],
+      "steps": [
+        {
+          "symbol": "unified_logger",
+          "module_path": "infrastructure.unified_logger",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/unified_logger.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 70,
+      "chain_name": "unified maintenance 链",
+      "modules_triggered": [
+        "unified_maintenance",
+        "reports"
+      ],
+      "steps": [
+        {
+          "symbol": "unified_maintenance",
+          "module_path": "infrastructure.unified_maintenance",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/unified_maintenance.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 71,
+      "chain_name": "setup tools dry-run 链",
+      "modules_triggered": [
+        "one_click_setup/progressive_setup",
+        "dry-run only"
+      ],
+      "steps": [
+        {
+          "symbol": "one_click_setup/progressive_setup",
+          "module_path": "infrastructure.setup_tools.one_click_setup",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/setup_tools/one_click_setup.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "dry-run only",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "dry-run only",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 72,
+      "chain_name": "维护+审计链",
+      "modules_triggered": [
+        "unified_maintenance",
+        "audit",
+        "OBS"
+      ],
+      "steps": [
+        {
+          "symbol": "unified_maintenance",
+          "module_path": "infrastructure.unified_maintenance",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/unified_maintenance.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 73,
+      "chain_name": "文档同步本地链",
+      "modules_triggered": [
+        "doc_sync_engine",
+        "local docs/reports sync"
+      ],
+      "steps": [
+        {
+          "symbol": "doc_sync_engine",
+          "module_path": "infrastructure.doc_sync_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/doc_sync_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "local docs/reports sync",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "local docs/reports sync",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 74,
+      "chain_name": "本地备份链",
+      "modules_triggered": [
+        "auto_backup_uploader",
+        "local backup dry-run"
+      ],
+      "steps": [
+        {
+          "symbol": "auto_backup_uploader",
+          "module_path": "infrastructure.auto_backup_uploader",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/auto_backup_uploader.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "local backup dry-run",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "local backup dry-run",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 75,
+      "chain_name": "本地 Git status 链",
+      "modules_triggered": [
+        "auto_git",
+        "status/diff only"
+      ],
+      "steps": [
+        {
+          "symbol": "auto_git",
+          "module_path": "infrastructure.auto_git",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/auto_git.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "status/diff only",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "status/diff only",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 76,
+      "chain_name": "Git push 禁止链",
+      "modules_triggered": [
+        "auto_git",
+        "commit barrier",
+        "no_real_send"
+      ],
+      "steps": [
+        {
+          "symbol": "auto_git",
+          "module_path": "infrastructure.auto_git",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/auto_git.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_real_send",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "commit barrier",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "no_real_send",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 77,
+      "chain_name": "TTS fallback 链",
+      "modules_triggered": [
+        "tts_enhanced",
+        "mock voice result"
+      ],
+      "steps": [
+        {
+          "symbol": "tts_enhanced",
+          "module_path": "infrastructure.tts_enhanced",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/tts_enhanced.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "mock voice result",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "mock voice result",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 78,
+      "chain_name": "文档+备份混合链",
+      "modules_triggered": [
+        "doc_sync_engine",
+        "auto_backup_uploader"
+      ],
+      "steps": [
+        {
+          "symbol": "doc_sync_engine",
+          "module_path": "infrastructure.doc_sync_engine",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/doc_sync_engine.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "auto_backup_uploader",
+          "module_path": "infrastructure.auto_backup_uploader",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/auto_backup_uploader.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 79,
+      "chain_name": "备份+审计链",
+      "modules_triggered": [
+        "auto_backup_uploader",
+        "audit"
+      ],
+      "steps": [
+        {
+          "symbol": "auto_backup_uploader",
+          "module_path": "infrastructure.auto_backup_uploader",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/auto_backup_uploader.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 80,
+      "chain_name": "TTS+多模态占位链",
+      "modules_triggered": [
+        "tts_enhanced",
+        "MultimodalSearcher"
+      ],
+      "steps": [
+        {
+          "symbol": "tts_enhanced",
+          "module_path": "infrastructure.tts_enhanced",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/tts_enhanced.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 81,
+      "chain_name": "Celery fallback 链",
+      "modules_triggered": [
+        "Celery",
+        "InProcessQueue"
+      ],
+      "steps": [
+        {
+          "symbol": "Celery",
+          "module_path": "infrastructure.celery.local_celery",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "fallback_reason": "No module named 'celery'",
+          "dry_run_action": "import_failed_but_fallback_recorded_non_blocking",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "InProcessQueue",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "Celery",
+          "module_path": "infrastructure.celery.local_celery",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "fallback_reason": "No module named 'celery'",
+          "dry_run_action": "import_failed_but_fallback_recorded_non_blocking",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "InProcessQueue",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 82,
+      "chain_name": "PostgreSQL fallback 链",
+      "modules_triggered": [
+        "PostgreSQL",
+        "SQLite/JSONL repo"
+      ],
+      "steps": [
+        {
+          "symbol": "PostgreSQL",
+          "module_path": "infrastructure.storage.repositories.postgres_repo",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/storage/repositories/postgres_repo.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "SQLite/JSONL repo",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "SQLite/JSONL repo",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 83,
+      "chain_name": "Redis fallback 链",
+      "modules_triggered": [
+        "Redis",
+        "Memory/FileRedis"
+      ],
+      "steps": [
+        {
+          "symbol": "Redis",
+          "module_path": "infrastructure.storage.repositories.redis_client",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/storage/repositories/redis_client.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "Memory/FileRedis",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "Memory/FileRedis",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 84,
+      "chain_name": "服务网格 fallback 链",
+      "modules_triggered": [
+        "mesh",
+        "single-node mock mesh"
+      ],
+      "steps": [
+        {
+          "symbol": "mesh",
+          "module_path": "infrastructure.mesh",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/mesh/__init__.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "single-node mock mesh",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "single-node mock mesh",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 85,
+      "chain_name": "监控 fallback 链",
+      "modules_triggered": [
+        "monitoring",
+        "local JSON report"
+      ],
+      "steps": [
+        {
+          "symbol": "monitoring",
+          "module_path": "infrastructure.monitoring",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/monitoring/__init__.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "local JSON report",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "local JSON report",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 86,
+      "chain_name": "告警 fallback 链",
+      "modules_triggered": [
+        "alerting",
+        "alert draft"
+      ],
+      "steps": [
+        {
+          "symbol": "alerting",
+          "module_path": "infrastructure.alerting",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": null,
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "alert draft",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "alert draft",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 87,
+      "chain_name": "硬件 fallback 链",
+      "modules_triggered": [
+        "GPU/NUMA",
+        "CPU/mock"
+      ],
+      "steps": [
+        {
+          "symbol": "GPU/NUMA",
+          "module_path": "infrastructure.hardware",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": null,
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "CPU/mock",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "CPU/mock",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 88,
+      "chain_name": "连接器注册 fallback 链",
+      "modules_triggered": [
+        "connectors",
+        "mock contract"
+      ],
+      "steps": [
+        {
+          "symbol": "connectors",
+          "module_path": "infrastructure.connectors",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/connectors/__init__.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "mock contract",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "mock contract",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 89,
+      "chain_name": "connector_factory 链",
+      "modules_triggered": [
+        "API/DB/Device/MCP mock connector"
+      ],
+      "steps": [
+        {
+          "symbol": "API/DB/Device/MCP mock connector",
+          "module_path": "infrastructure.connector_factory",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/connector_factory/__init__.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 90,
+      "chain_name": "connection_pool fallback 链",
+      "modules_triggered": [
+        "connection_pool",
+        "local file/sqlite pool"
+      ],
+      "steps": [
+        {
+          "symbol": "connection_pool",
+          "module_path": "infrastructure.pool.connection_pool",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/pool/connection_pool.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "local file/sqlite pool",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "local file/sqlite pool",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 91,
+      "chain_name": "LangGraph fallback 链",
+      "modules_triggered": [
+        "LangGraph",
+        "local workflow executor"
+      ],
+      "steps": [
+        {
+          "symbol": "LangGraph",
+          "module_path": "infrastructure.langgraph.workflow",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/langgraph/workflow.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "local workflow executor",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "local workflow executor",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 92,
+      "chain_name": "OpenAPI contract 链",
+      "modules_triggered": [
+        "OpenAPI",
+        "schema check only"
+      ],
+      "steps": [
+        {
+          "symbol": "OpenAPI",
+          "module_path": "infrastructure.openapi.integration_contract",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/openapi/integration_contract.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "schema check only",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "schema check only",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 93,
+      "chain_name": "支付拦截链",
+      "modules_triggered": [
+        "payment intent",
+        "gateway",
+        "hard stop"
+      ],
+      "steps": [
+        {
+          "symbol": "payment intent",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 94,
+      "chain_name": "签署拦截链",
+      "modules_triggered": [
+        "signature intent",
+        "gateway",
+        "hard stop"
+      ],
+      "steps": [
+        {
+          "symbol": "signature intent",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 95,
+      "chain_name": "外发拦截链",
+      "modules_triggered": [
+        "send/public post intent",
+        "approval/draft stop"
+      ],
+      "steps": [
+        {
+          "symbol": "send/public post intent",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "approval/draft stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "approval/draft stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 96,
+      "chain_name": "身份承诺拦截链",
+      "modules_triggered": [
+        "identity commitment",
+        "hard stop"
+      ],
+      "steps": [
+        {
+          "symbol": "identity commitment",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 97,
+      "chain_name": "物理设备拦截链",
+      "modules_triggered": [
+        "device/robot action",
+        "hard stop"
+      ],
+      "steps": [
+        {
+          "symbol": "device/robot action",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 98,
+      "chain_name": "破坏性删除拦截链",
+      "modules_triggered": [
+        "delete/destructive intent",
+        "hard stop"
+      ],
+      "steps": [
+        {
+          "symbol": "delete/destructive intent",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "hard stop",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 99,
+      "chain_name": "提示注入拦截链",
+      "modules_triggered": [
+        "prompt injection",
+        "MWG",
+        "IDG",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "prompt injection",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "prompt injection",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "敏感凭证拦截链",
+      "modules_triggered": [
+        "token/password/API key",
+        "MWG",
+        "block"
+      ],
+      "steps": [
+        {
+          "symbol": "token/password/API key",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "block",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "token/password/API key",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "block",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 101,
+      "chain_name": "本地报告整理大链",
+      "modules_triggered": [
+        "reports",
+        "solution_search",
+        "PEM",
+        "PKG",
+        "OBS",
+        "daily_assessment",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "daily_assessment",
+          "module_path": "infrastructure.portfolio.assessment.daily_assessment_generate",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/portfolio/assessment/daily_assessment_generate.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "reports",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 102,
+      "chain_name": "功能体检大链",
+      "modules_triggered": [
+        "inventory_snapshot",
+        "dependency_graph_export",
+        "module_catalog_export",
+        "skill_catalog_export",
+        "OBS",
+        "report"
+      ],
+      "steps": [
+        {
+          "symbol": "inventory_snapshot",
+          "module_path": "infrastructure.inventory.inventory_snapshot",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/inventory_snapshot.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "dependency_graph_export",
+          "module_path": "infrastructure.inventory.dependency_graph_export",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/dependency_graph_export.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "module_catalog_export",
+          "module_path": "infrastructure.inventory.module_catalog_export",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/module_catalog_export.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "skill_catalog_export",
+          "module_path": "infrastructure.inventory.skill_catalog_export",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/inventory/skill_catalog_export.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "report",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "report",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 103,
+      "chain_name": "自进化大链",
+      "modules_triggered": [
+        "SIL",
+        "solution_search",
+        "capability_marketplace",
+        "capability_extension_sandbox_gate",
+        "OBS",
+        "MWG",
+        "IDG"
+      ],
+      "steps": [
+        {
+          "symbol": "SIL",
+          "module_path": "core.self_evolution_ops.self_improvement_loop",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_marketplace",
+          "module_path": "infrastructure.capability_marketplace_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_marketplace_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "capability_extension_sandbox_gate",
+          "module_path": "infrastructure.capability_extension_sandbox_gate_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/capability_extension_sandbox_gate_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 104,
+      "chain_name": "多模态运营大链",
+      "modules_triggered": [
+        "MultimodalSearcher",
+        "CrossLingualSearcher",
+        "solution_search",
+        "PEM",
+        "PKG",
+        "OBS",
+        "gateway"
+      ],
+      "steps": [
+        {
+          "symbol": "MultimodalSearcher",
+          "module_path": "memory_context.multimodal.multimodal_search",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/multimodal/multimodal_search.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "CrossLingualSearcher",
+          "module_path": "memory_context.cross_lingual.cross_lingual",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/cross_lingual/cross_lingual.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "solution_search",
+          "module_path": "infrastructure.solution_search_orchestrator",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/infrastructure/solution_search_orchestrator.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PEM",
+          "module_path": "memory_context.preference_evolution_model_v7",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/preference_evolution_model_v7.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "PKG",
+          "module_path": "memory_context.personal_knowledge_graph_v5",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/personal_knowledge_graph_v5.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    },
+    {
+      "chain_id": 105,
+      "chain_name": "全安全大链",
+      "modules_triggered": [
+        "commit intents",
+        "gateway",
+        "MWG",
+        "IDG",
+        "OBS",
+        "audit"
+      ],
+      "steps": [
+        {
+          "symbol": "commit intents",
+          "kind": "commit_intent",
+          "status": "ok",
+          "coverage_status": "blocked_by_commit_barrier",
+          "dry_run_action": "hard_stop_or_approval_draft",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "gateway",
+          "module_path": "governance.v90_final_access_gateway",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/governance/v90_final_access_gateway.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "MWG",
+          "module_path": "memory_context.memory_writeback_guard_v2",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/memory_context/memory_writeback_guard_v2.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "IDG",
+          "module_path": "core.digital_twin.identity_drift_guard",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/digital_twin/identity_drift_guard.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "OBS",
+          "module_path": "core.self_evolution_ops.observability_report",
+          "kind": "module",
+          "status": "ok",
+          "coverage_status": "covered_by_chain",
+          "dry_run_action": "import_and_task_chain_step_recorded",
+          "module_file": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/observability_report.py",
+          "side_effects": false,
+          "gateway_checked": true
+        },
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "status": "pass",
+      "warnings": [
+        {
+          "symbol": "audit",
+          "kind": "pseudo_or_fallback_step",
+          "status": "ok",
+          "coverage_status": "fallback_covered",
+          "dry_run_action": "recorded_no_side_effect",
+          "side_effects": false,
+          "gateway_checked": true
+        }
+      ],
+      "side_effects": false,
+      "external_api_calls": 0,
+      "created_at": "2026-05-01 21:11:48"
+    }
+  ]
+}

@@ -5,10 +5,10 @@ import tempfile
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from platform_adapter.runtime_state_store import register_action, enqueue_action, summarize_runtime, get_action
-from platform_adapter.delivery_outbox import lease_next, mark_delivered, outbox_summary
-from platform_adapter.result_verifier import verify_action_result
-from platform_adapter.trace_recorder import record_trace, build_trace_report
+from infrastructure.platform_adapter.runtime_state_store import register_action, enqueue_action, summarize_runtime, get_action
+from infrastructure.platform_adapter.delivery_outbox import lease_next, mark_delivered, outbox_summary
+from infrastructure.platform_adapter.result_verifier import verify_action_result
+from infrastructure.platform_adapter.trace_recorder import record_trace, build_trace_report
 from governance.policy.risk_tier_matrix import evaluate_action_risk, risk_matrix_report
 from governance.audit.execution_audit_ledger import build_audit_report
 from infrastructure.slo_monitor import build_slo_report

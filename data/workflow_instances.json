@@ -4,8 +4,8 @@
       "instance_id": "test_instance",
       "template_id": "test_template",
       "status": "pending",
-      "created_at": "2026-04-26T17:53:17.828441",
-      "updated_at": "2026-04-26T17:53:17.828441",
+      "created_at": "2026-05-01T21:02:27.209836",
+      "updated_at": "2026-05-01T21:02:27.209836",
       "context": {},
       "current_step": null,
       "error": null,
@@ -17,12 +17,108 @@
       "instance_id": "full_loop_test",
       "template_id": "test_template",
       "status": "pending",
-      "created_at": "2026-04-26T17:53:17.854535",
-      "updated_at": "2026-04-26T17:53:17.854535",
+      "created_at": "2026-05-01T21:02:27.223752",
+      "updated_at": "2026-05-01T21:02:27.223752",
       "context": {},
       "current_step": null,
       "error": null,
       "metadata": {},
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "instance_id": "v86_parallel_basic",
+      "template_id": "v86_parallel_basic",
+      "status": "completed",
+      "created_at": "2026-05-02T01:43:12.764665",
+      "updated_at": "2026-05-02T01:43:12.974810",
+      "context": {},
+      "current_step": null,
+      "error": null,
+      "metadata": {
+        "version": "1777657392764564530",
+        "profile": "default"
+      },
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "instance_id": "v86_parallel_limit",
+      "template_id": "v86_parallel_limit",
+      "status": "completed",
+      "created_at": "2026-05-02T01:43:12.976772",
+      "updated_at": "2026-05-02T01:43:13.240065",
+      "context": {},
+      "current_step": null,
+      "error": null,
+      "metadata": {
+        "version": "1777657392976706037",
+        "profile": "default"
+      },
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "instance_id": "v86_parallel_dependencies",
+      "template_id": "v86_parallel_dependencies",
+      "status": "completed",
+      "created_at": "2026-05-02T01:43:13.242025",
+      "updated_at": "2026-05-02T01:43:13.355936",
+      "context": {},
+      "current_step": null,
+      "error": null,
+      "metadata": {
+        "version": "1777657393241967054",
+        "profile": "default"
+      },
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "instance_id": "v86_commit_barrier",
+      "template_id": "v86_commit_barrier",
+      "status": "failed",
+      "created_at": "2026-05-02T01:43:13.359041",
+      "updated_at": "2026-05-02T01:43:13.360725",
+      "context": {},
+      "current_step": null,
+      "error": null,
+      "metadata": {
+        "version": "1777657393358992768",
+        "profile": "default"
+      },
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "instance_id": "v86_serial_lane",
+      "template_id": "v86_serial_lane",
+      "status": "completed",
+      "created_at": "2026-05-02T01:43:13.362826",
+      "updated_at": "2026-05-02T01:43:13.573979",
+      "context": {},
+      "current_step": null,
+      "error": null,
+      "metadata": {
+        "version": "1777657393362778042",
+        "profile": "default"
+      },
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "instance_id": "v86_deterministic_replay",
+      "template_id": "v86_deterministic_replay",
+      "status": "completed",
+      "created_at": "2026-05-02T01:43:13.576247",
+      "updated_at": "2026-05-02T01:43:13.733541",
+      "context": {},
+      "current_step": null,
+      "error": null,
+      "metadata": {
+        "version": "1777657393576190538",
+        "profile": "default"
+      },
       "started_at": null,
       "completed_at": null
     }

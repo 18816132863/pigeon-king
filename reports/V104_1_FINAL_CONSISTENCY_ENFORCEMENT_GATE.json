@@ -1,0 +1,138 @@
+{
+  "version": "V104.1",
+  "status": "pass",
+  "checks": {
+    "mainline_hook_root_stable": true,
+    "agents_safety_conflicts_removed": true,
+    "persona_overclaim_cleaned": true,
+    "agent_kernel_compat_ready": true,
+    "skill_external_policy_ready": true,
+    "webhook_gitpush_blocked": true,
+    "old_reports_archived": true,
+    "current_release_index_ready": true,
+    "context_budget_controlled": true,
+    "single_runtime_entrypoint_ready": true,
+    "clean_release_exclude_ready": true,
+    "no_external_api": true,
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true
+  },
+  "results": {
+    "mainline_hook": {
+      "present": true,
+      "fixed": false,
+      "root_stable": true,
+      "path": "infrastructure/mainline_hook.py"
+    },
+    "agents": {
+      "path": "AGENTS.md",
+      "changed": true,
+      "conflicts_removed": true,
+      "safety_block_ready": true
+    },
+    "persona_docs": [
+      {
+        "file": "IDENTITY.md",
+        "changed": true,
+        "truth_table_ready": true,
+        "no_persistent_consciousness_overclaim": true,
+        "emotion_tagged_not_real_experience": true
+      },
+      {
+        "file": "SOUL.md",
+        "changed": true,
+        "truth_table_ready": true,
+        "no_persistent_consciousness_overclaim": true,
+        "emotion_tagged_not_real_experience": true
+      }
+    ],
+    "agent_kernel": {
+      "compat_dir": "agent_kernel",
+      "wrappers_expected": 11,
+      "wrappers_written_or_ready": 11,
+      "created_or_refreshed": [],
+      "ready": true
+    },
+    "skill_policy": {
+      "ready": true,
+      "skills_scanned": 202,
+      "blocked_or_mocked_count": 91
+    },
+    "external_send": {
+      "ready": true,
+      "items": [
+        {
+          "path": "infrastructure/alerting/channels/webhook.py",
+          "functions_guarded": [
+            "send_webhook",
+            "send",
+            "post",
+            "push"
+          ],
+          "changed": true
+        },
+        {
+          "path": "infrastructure/alerting/channels/feishu_webhook.py",
+          "functions_guarded": [
+            "send_feishu",
+            "send_webhook",
+            "send",
+            "post",
+            "push"
+          ],
+          "changed": true
+        },
+        {
+          "path": "infrastructure/auto_backup_uploader.py",
+          "functions_guarded": [
+            "push",
+            "upload",
+            "git_push",
+            "git_add_commit_push"
+          ],
+          "changed": true
+        },
+        {
+          "path": "infrastructure/auto_git.py",
+          "functions_guarded": [
+            "push",
+            "commit_and_push"
+          ],
+          "changed": true
+        }
+      ]
+    },
+    "context_budget": {
+      "budget_controlled": true,
+      "bootstrapMaxChars": 8000,
+      "bootstrapTotalMaxChars": 24000
+    },
+    "single_runtime": {
+      "ready": true,
+      "path": "orchestration/single_runtime_entrypoint.py"
+    },
+    "clean_release": {
+      "clean_release_exclude_ready": true,
+      "patterns": [
+        "__pycache__",
+        ".pytest_cache",
+        ".repair_state",
+        ".backup_*",
+        "v86_backup_*",
+        "*.zip",
+        "*.tar.gz",
+        "runtime/tmp",
+        "cache"
+      ]
+    },
+    "report_cleanup": {
+      "current_release_index_ready": true,
+      "old_reports_archived": true,
+      "copied_current": 17,
+      "moved_vintage": 1
+    }
+  },
+  "remaining_failures": [],
+  "note": "V104.1 cleans final consistency conflicts only; it does not add new major capabilities or connect real-world APIs/devices."
+}

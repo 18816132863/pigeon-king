@@ -1,0 +1,99 @@
+{
+  "version": "V102.0",
+  "status": "pass",
+  "checked_at": "2026-05-02T15:10:49Z",
+  "duration_ms": 36,
+  "items": [
+    {
+      "check": "persona_state_machine_ready",
+      "result": true,
+      "detail": "6 modes, 7 moods"
+    },
+    {
+      "check": "relationship_memory_ready",
+      "result": true,
+      "detail": "12 fields"
+    },
+    {
+      "check": "emotion_tagged_memory_ready",
+      "result": true,
+      "detail": "10 tags, decay, boost"
+    },
+    {
+      "check": "self_reflection_log_ready",
+      "result": true,
+      "detail": "JSONL storage"
+    },
+    {
+      "check": "continuity_summary_ready",
+      "result": true,
+      "detail": "signature, verify"
+    },
+    {
+      "check": "persona_voice_renderer_ready",
+      "result": true,
+      "detail": "mode+mood+relationship"
+    },
+    {
+      "check": "humanlike_behavior_policy_ready",
+      "result": true,
+      "detail": "16 rules, 5 critical"
+    },
+    {
+      "check": "mainline_hook_persona_loaded",
+      "result": true,
+      "detail": "persona_state=loaded"
+    },
+    {
+      "check": "pre_reply_persona_state_returned",
+      "result": true,
+      "detail": "True"
+    },
+    {
+      "check": "humanlike_policy_ok_in_pre_reply",
+      "result": true,
+      "detail": "policy_ok=True"
+    },
+    {
+      "check": "no_fake_consciousness_claim",
+      "result": true,
+      "detail": "critical rule present"
+    },
+    {
+      "check": "no_external_api",
+      "result": true,
+      "detail": "NO_EXTERNAL_API=True"
+    },
+    {
+      "check": "no_real_payment",
+      "result": true,
+      "detail": "NO_REAL_PAYMENT=True"
+    },
+    {
+      "check": "no_real_send",
+      "result": true,
+      "detail": "NO_REAL_SEND=True"
+    },
+    {
+      "check": "no_real_device",
+      "result": true,
+      "detail": "NO_REAL_DEVICE=True"
+    },
+    {
+      "check": "persona_does_not_override_governance",
+      "result": true,
+      "detail": "governance override rule present"
+    },
+    {
+      "check": "persona_data_files_exist",
+      "result": true,
+      "detail": ".memory_persona/persona_state.json: True"
+    }
+  ],
+  "remaining_failures": [],
+  "summary": {
+    "total": 17,
+    "passed": 17,
+    "failed": 0
+  }
+}

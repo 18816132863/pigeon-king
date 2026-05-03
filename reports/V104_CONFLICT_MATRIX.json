@@ -1,0 +1,40 @@
+{
+  "version": "V104.0",
+  "items": [
+    {
+      "conflict": "persona_realism_vs_truthfulness",
+      "status": "resolved",
+      "rule": "metaphor/persona_state/pending_access labels required"
+    },
+    {
+      "conflict": "offline_mode_vs_web_search_calendar",
+      "status": "resolved",
+      "rule": "NO_EXTERNAL_API blocks external access"
+    },
+    {
+      "conflict": "secret_memory_vs_user_request",
+      "status": "resolved",
+      "rule": "secrets default forbidden"
+    },
+    {
+      "conflict": "git_push_webhook_vs_no_real_send",
+      "status": "resolved",
+      "rule": "draft/mock only"
+    },
+    {
+      "conflict": "multi_orchestrator_vs_single_entrypoint",
+      "status": "resolved",
+      "rule": "single runtime facade marks child/legacy runtimes"
+    },
+    {
+      "conflict": "old_reports_vs_current_release",
+      "status": "resolved",
+      "rule": "current index + vintage archive"
+    },
+    {
+      "conflict": "context_bloat_vs_persona_stability",
+      "status": "resolved",
+      "rule": "budget and priority trimming"
+    }
+  ]
+}

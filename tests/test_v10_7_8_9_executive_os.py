@@ -3,7 +3,7 @@ from __future__ import annotations
 from core.collaboration import CollaborativeAutonomyKernel, AgentRoleRegistry, ConsensusGate
 from infrastructure.mesh import MeshNodeRegistry, MeshMessageBus
 from core.digital_twin import PersonalDigitalTwin, IdentityDriftGuard
-from learning_loop.identity_evolution import IdentityEvolutionEngine
+from memory_context.learning_loop.identity_evolution import IdentityEvolutionEngine
 from core.executive_os import ExecutiveOperatingKernel, CommandIntentCompiler, OperatingModeSwitch, AutonomyMaturityScore
 from core.self_governance import ConstitutionalPolicyCore, ValueAlignmentChecker, AutonomyBoundaryManager
 from infrastructure.runtime_fabric import RuntimeFabricOrchestrator

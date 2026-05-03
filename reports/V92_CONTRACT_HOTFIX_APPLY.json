@@ -1,0 +1,34 @@
+{
+  "status": "patched",
+  "root": "/home/sandbox/.openclaw/workspace",
+  "backup_dir": "/home/sandbox/.openclaw/workspace/.repair_state/v92_contract_hotfix_20260501_150210",
+  "offline_env": {
+    "OFFLINE_MODE": "true",
+    "NO_EXTERNAL_API": "true",
+    "NO_REAL_SEND": "true",
+    "NO_REAL_PAYMENT": "true",
+    "NO_REAL_DEVICE": "true"
+  },
+  "results": [
+    {
+      "path": "memory_context/personal_knowledge_graph_v5.py",
+      "changed": true,
+      "reason": "patched"
+    },
+    {
+      "path": "memory_context/preference_evolution_model_v7.py",
+      "changed": true,
+      "reason": "patched"
+    },
+    {
+      "path": "core/self_evolution_ops/self_improvement_loop.py",
+      "changed": true,
+      "reason": "patched"
+    },
+    {
+      "path": "infrastructure/solution_search_orchestrator.py",
+      "changed": true,
+      "reason": "patched"
+    }
+  ]
+}

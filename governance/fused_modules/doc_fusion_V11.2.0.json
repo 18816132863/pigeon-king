@@ -1,0 +1,10 @@
+{
+  "module": "doc_fusion_V11.2.0",
+  "version": "V11.2.0",
+  "trigger": "new_module",
+  "description": "巡检脚本V11.2.0 — 集成Commit Barrier探针检查（6类提交流阻塞+非阻塞分类+模块完整性）",
+  "status": "pass",
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-02T23:39:46.327881+00:00"
+}

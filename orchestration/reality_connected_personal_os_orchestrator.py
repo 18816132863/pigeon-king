@@ -8,7 +8,7 @@ from core.project_autonomy import ProjectBrain
 from infrastructure.tool_negotiation import ToolCapabilityNegotiator
 from infrastructure.execution_runtime import RealExecutionBroker
 from infrastructure.upgrade_governance import SelfUpgradeGovernor
-from learning_loop.audit_replay import AuditReplayLearner
+from memory_context.learning_loop.audit_replay import AuditReplayLearner
 
 
 class RealityConnectedPersonalOSOrchestrator:

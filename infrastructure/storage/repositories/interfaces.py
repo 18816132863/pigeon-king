@@ -12,7 +12,7 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime
 import uuid
 
-from domain.tasks import TaskSpec, TaskStatus, ScheduleType
+from core.domain.tasks.specs import TaskSpec, TaskStatus, ScheduleType
 
 
 class TaskRepository(ABC):

@@ -11,14 +11,14 @@ from datetime import datetime, timedelta
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from platform_adapter.invocation_ledger import (
+from infrastructure.platform_adapter.invocation_ledger import (
     get_statistics,
     export_recent,
     export_failed_report,
     export_timeout_report,
     export_uncertain_report,
 )
-from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
 
 
 def get_24h_stats() -> dict:

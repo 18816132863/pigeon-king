@@ -1,0 +1,53 @@
+{
+  "version": "V92.4",
+  "checked_at": "2026-05-01T08:07:57Z",
+  "checks": {
+    "deduplicator_class_exists": true,
+    "deduplicator_dedup_works": true,
+    "visual_speculative_all_importable": true,
+    "self_improvement_import_ok": true,
+    "subprocess_env_has_pythonpath": true,
+    "offline_env_ok": true
+  },
+  "imports": {
+    "execution.visual_operation_agent.visual_planner": {
+      "module": "execution.visual_operation_agent.visual_planner",
+      "status": "importable"
+    },
+    "execution.visual_operation_agent.action_executor": {
+      "module": "execution.visual_operation_agent.action_executor",
+      "status": "importable"
+    },
+    "execution.visual_operation_agent.screen_observer": {
+      "module": "execution.visual_operation_agent.screen_observer",
+      "status": "importable"
+    },
+    "execution.visual_operation_agent.ui_grounding": {
+      "module": "execution.visual_operation_agent.ui_grounding",
+      "status": "importable"
+    },
+    "execution.speculative_decoding_v1.speculative_decoder": {
+      "module": "execution.speculative_decoding_v1.speculative_decoder",
+      "status": "importable"
+    },
+    "execution.speculative_decoding_v1.nvidia_adapter": {
+      "module": "execution.speculative_decoding_v1.nvidia_adapter",
+      "status": "importable"
+    },
+    "core.self_evolution_ops.self_improvement_loop": {
+      "module": "core.self_evolution_ops.self_improvement_loop",
+      "status": "importable"
+    }
+  },
+  "env": {
+    "OFFLINE_MODE": true,
+    "NO_EXTERNAL_API": true,
+    "DISABLE_LLM_API": true,
+    "DISABLE_THINKING_MODE": true,
+    "NO_REAL_SEND": true,
+    "NO_REAL_PAYMENT": true,
+    "NO_REAL_DEVICE": true
+  },
+  "status": "pass",
+  "remaining_failures": []
+}

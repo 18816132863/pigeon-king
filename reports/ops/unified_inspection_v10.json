@@ -1,0 +1,50 @@
+{
+  "version": "V10.0.0",
+  "timestamp": "2026-05-01T21:42:41.031213",
+  "system_stats": {
+    "cpu_percent": 0.0,
+    "memory_percent": 22.3,
+    "disk_percent": 48.9
+  },
+  "errors": [],
+  "warnings": [],
+  "info": [],
+  "checks": [
+    {
+      "name": "系统状态",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "六层架构",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "V76-V85 模块",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "LLM 引擎",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "安全边界",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "报告完整性",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0
+    }
+  ]
+}

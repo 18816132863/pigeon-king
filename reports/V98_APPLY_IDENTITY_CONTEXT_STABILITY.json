@@ -1,0 +1,22 @@
+{
+  "version": "V98.0",
+  "status": "pass",
+  "files_created_or_updated": [
+    "AGENTS.md",
+    "SOUL.md",
+    "TOOLS.md",
+    "MEMORY.md",
+    "IDENTITY.md",
+    "openclaw.json"
+  ],
+  "lobster_mock_files": [
+    "approvals/lobster/session-recovery.lobster.jsonl",
+    "approvals/lobster/memory-store.lobster.jsonl",
+    "approvals/lobster/heartbeat-full.lobster.jsonl"
+  ],
+  "contextInjection": "always",
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true
+}

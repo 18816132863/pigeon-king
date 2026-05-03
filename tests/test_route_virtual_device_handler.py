@@ -90,7 +90,7 @@ def test_normal_handler_still_import_check():
 
 def test_device_capability_executor_importable():
     """device_capability_bus.executor 可以导入"""
-    from device_capability_bus.executor import CapabilityExecutor
+    from infrastructure.device_capability_bus.executor import CapabilityExecutor
     
     executor = CapabilityExecutor()
     assert executor is not None

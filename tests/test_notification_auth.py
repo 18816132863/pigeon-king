@@ -9,9 +9,9 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-from platform_adapter.base import PlatformCapability
-from platform_adapter.result_normalizer import NormalizedStatus
+from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+from infrastructure.platform_adapter.base import PlatformCapability
+from infrastructure.platform_adapter.result_normalizer import NormalizedStatus
 
 
 class TestNotificationAuthAndConfirmation:
@@ -49,14 +49,16 @@ class TestNotificationAuthAndConfirmation:
         )
         
         assert "status" in result
-        # 状态可能是 completed, failed, timeout, result_uncertain
-        assert result["status"] in [
+        # 状态可能是 completed, failed, timeout, result_uncertain, queued
+        valid_statuses = {
             NormalizedStatus.COMPLETED,
             NormalizedStatus.FAILED,
             NormalizedStatus.TIMEOUT,
             NormalizedStatus.RESULT_UNCERTAIN,
             NormalizedStatus.AUTH_REQUIRED,
-        ]
+            NormalizedStatus.QUEUED_FOR_DELIVERY,
+        }
+        assert result["status"] in valid_statuses, f"Got unexpected status: {result['status']}"
     
     @pytest.mark.asyncio
     async def test_notification_success_is_interface_level(self):
@@ -124,7 +126,7 @@ class TestNotificationAuthCodeHandling:
     @pytest.mark.asyncio
     async def test_auth_error_returns_auth_required(self):
         """测试授权错误返回 AUTH_REQUIRED"""
-        from platform_adapter.result_normalizer import normalize_result
+        from infrastructure.platform_adapter.result_normalizer import normalize_result
         
         # 模拟授权错误
         result = normalize_result(

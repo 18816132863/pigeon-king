@@ -99,4 +99,4 @@
 
 ## ⚠️ 下一步（必须执行）
 
-> **在执行任何大纲生成操作之前，必须先使用 Read 工具读取 `{baseDir}/step2_outline.md` 的完整内容，再继续。**
+> **在执行任何大纲生成操作之前，必须先使用 Read 工具读取 `~/.openclaw/workspace/skills/xiaoyi-ppt/step2_outline.md` 的完整内容，再继续。**

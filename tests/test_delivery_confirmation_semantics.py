@@ -73,8 +73,8 @@ class TestConfirmationDegradation:
     
     def test_platform_without_confirmation(self):
         """测试无确认平台的降级"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-        from platform_adapter.base import PlatformCapability
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.base import PlatformCapability
         import asyncio
         
         adapter = XiaoyiAdapter()
@@ -95,8 +95,8 @@ class TestConfirmationDegradation:
     
     def test_degradation_does_not_claim_success(self):
         """测试降级不声称成功"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-        from platform_adapter.base import PlatformCapability
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.base import PlatformCapability
         import asyncio
         
         adapter = XiaoyiAdapter()
@@ -131,7 +131,7 @@ class TestConfirmationLevels:
     
     def test_current_platform_confirmation_level(self):
         """测试当前平台确认级别"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
         import asyncio
         
         adapter = XiaoyiAdapter()

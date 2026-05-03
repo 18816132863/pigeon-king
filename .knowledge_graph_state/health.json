@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "component": "PersonalKnowledgeGraphV5",
+  "mode": "offline",
+  "state_dir": "/home/sandbox/.openclaw/workspace/.knowledge_graph_state",
+  "side_effects": false,
+  "requires_api": false,
+  "checked_at": "2026-05-01T09:29:12.203922Z"
+}

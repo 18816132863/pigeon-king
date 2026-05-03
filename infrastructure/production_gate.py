@@ -6,8 +6,8 @@ import tempfile
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from platform_adapter.runtime_state_store import register_action, transition_action, enqueue_action
-from platform_adapter.self_healing_supervisor import run_self_healing
+from infrastructure.platform_adapter.runtime_state_store import register_action, transition_action, enqueue_action
+from infrastructure.platform_adapter.self_healing_supervisor import run_self_healing
 from governance.audit.execution_audit_ledger import audit_event, build_audit_report
 from governance.policy.risk_tier_matrix import evaluate_action_risk, risk_matrix_report
 from infrastructure.long_run_soak import run_long_run_soak
@@ -29,7 +29,7 @@ def run_production_gate(
     # Seed one stale running action and one expired lease to verify healing is active.
     stale = register_action(capability='local_runtime', op_name='production_gate_stale_probe', payload={'probe': 'stale'}, task_id='v13-stale', risk_level='L2', db_path=db)
     transition_action(stale.action_id, 'running', reason='seed_stale_for_v13_gate', db_path=db)
-    from platform_adapter.runtime_state_store import connect, _now_ms
+    from infrastructure.platform_adapter.runtime_state_store import connect, _now_ms
     from contextlib import closing
     with closing(connect(db)) as conn:
         conn.execute('UPDATE runtime_actions SET updated_at_ms=? WHERE action_id=?', (_now_ms() - 600_000, stale.action_id))

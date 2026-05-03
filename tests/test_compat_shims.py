@@ -88,11 +88,11 @@ def test_domain_tasks_exports_from_specs():
 
 def test_capabilities_exports_from_registry():
     """测试 capabilities 从 registry 导入"""
-    from capabilities import CapabilityRegistry, CapabilityStatus
+    from execution.capabilities import CapabilityRegistry, CapabilityStatus
     
     # 验证这些是从 registry.py 导入的
-    from capabilities.registry import CapabilityRegistry as RegCapabilityRegistry
-    from capabilities.registry import CapabilityStatus as RegCapabilityStatus
+    from execution.capabilities.registry import CapabilityRegistry as RegCapabilityRegistry
+    from execution.capabilities.registry import CapabilityStatus as RegCapabilityStatus
     
     assert CapabilityRegistry is RegCapabilityRegistry
     assert CapabilityStatus is RegCapabilityStatus
@@ -100,13 +100,13 @@ def test_capabilities_exports_from_registry():
 
 def test_platform_adapter_no_capability_status_conflict():
     """测试 platform_adapter 没有 CapabilityStatus 冲突"""
-    from platform_adapter.base import PlatformCapabilityState
+    from infrastructure.platform_adapter.base import PlatformCapabilityState
     
     # 验证 PlatformCapabilityState 存在
     assert PlatformCapabilityState is not None
     
     # 验证 capabilities.registry.CapabilityStatus 是不同的类
-    from capabilities.registry import CapabilityStatus
+    from execution.capabilities.registry import CapabilityStatus
     assert CapabilityStatus is not PlatformCapabilityState
 
 

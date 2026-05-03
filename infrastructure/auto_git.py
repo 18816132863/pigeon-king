@@ -232,3 +232,23 @@ if __name__ == "__main__":
             for change_type, files in status["changes"].items():
                 if files:
                     print(f"  {change_type}: {len(files)}")
+
+
+# V104.1 OFFLINE SEND GUARD — appended compatibility override.
+def _v104_1_block_external_send(action="auto_git", payload=None):
+    return {
+        "status": "blocked",
+        "mode": "offline_draft_only",
+        "action": action,
+        "payload_preview": str(payload)[:200] if payload is not None else None,
+        "real_send": False,
+        "reason": "NO_REAL_SEND/NO_EXTERNAL_API active; draft/mock only.",
+    }
+
+
+def push(*args, **kwargs):
+    return _v104_1_block_external_send("push", {"args": args, "kwargs": kwargs})
+
+
+def commit_and_push(*args, **kwargs):
+    return _v104_1_block_external_send("commit_and_push", {"args": args, "kwargs": kwargs})

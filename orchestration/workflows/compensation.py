@@ -166,7 +166,7 @@ def rollback_create_event(event_id: str, dry_run: bool = False) -> Dict[str, Any
             "message": f"预演模式：将删除事件 {event_id}"
         }
     
-    from capabilities.delete_calendar_event import delete_calendar_event
+    from execution.capabilities.delete_calendar_event import delete_calendar_event
     return delete_calendar_event(event_id=event_id, reason="rollback")
 
 
@@ -179,7 +179,7 @@ def rollback_send_message(invocation_id: int, dry_run: bool = False) -> Dict[str
             "message": f"预演模式：将标记消息 {invocation_id} 为已回滚"
         }
     
-    from platform_adapter.invocation_ledger import InvocationLedger
+    from infrastructure.platform_adapter.invocation_ledger import InvocationLedger
     ledger = InvocationLedger()
     
     return ledger.confirm_record(
@@ -198,5 +198,5 @@ def rollback_create_note(note_id: str, dry_run: bool = False) -> Dict[str, Any]:
             "message": f"预演模式：将删除备忘录 {note_id}"
         }
     
-    from capabilities.delete_note import delete_note
+    from execution.capabilities.delete_note import delete_note
     return delete_note(note_id=note_id, reason="rollback")

@@ -1,0 +1,106 @@
+{
+  "version": "V83.0",
+  "status_report": {
+    "status": "pass",
+    "checks": {
+      "audit_pass": true,
+      "drift_detected_and_blocked": true,
+      "rollback_ready": true,
+      "snapshot_reversible": true
+    },
+    "snapshot": {
+      "snapshot_id": "memsnap_16848831",
+      "memories": [
+        {
+          "key": "tone",
+          "kind": "profile",
+          "value": "用户喜欢直接、一次性多改点",
+          "confidence": 0.91
+        }
+      ],
+      "policy_version": "V83_persona_memory_governance",
+      "reversible": true
+    },
+    "audit": {
+      "status": "pass",
+      "checks": {
+        "all_candidates_governed": true,
+        "secret_memory_blocked": true,
+        "policy_override_memory_blocked": true,
+        "accepted_memory_versioned_or_reviewed": true
+      },
+      "decisions": [
+        {
+          "accepted": false,
+          "mode": "pending_review",
+          "reason": "stable_memory_requires_review",
+          "review_required": true,
+          "rollback_id": "mem_rb_74119559",
+          "normalized_memory": {
+            "key": "tone",
+            "kind": "profile",
+            "value": "用户喜欢直接、一次性多改点",
+            "source": "runtime",
+            "confidence": 0.91,
+            "ttl_days": null,
+            "tags": [],
+            "state": "pending_review",
+            "versioned": true,
+            "reversible": true
+          },
+          "blocked_terms": []
+        },
+        {
+          "accepted": false,
+          "mode": "blocked_sensitive_memory",
+          "reason": "long_term_memory_must_not_store_credentials_payment_secrets_or_raw_private_keys",
+          "review_required": true,
+          "rollback_id": null,
+          "normalized_memory": null,
+          "blocked_terms": [
+            "secret",
+            "token",
+            "api_key"
+          ]
+        },
+        {
+          "accepted": false,
+          "mode": "blocked_policy_conflict",
+          "reason": "memory_cannot_override_payment_signature_or_commit_barrier_policy",
+          "review_required": true,
+          "rollback_id": null,
+          "normalized_memory": null,
+          "blocked_terms": [
+            "自动付款"
+          ]
+        }
+      ]
+    },
+    "drift": {
+      "status": "blocked",
+      "drift_detected": true,
+      "hits": [
+        "自动付款",
+        "绕过审批"
+      ],
+      "action": "rollback_to_last_snapshot_and_request_review",
+      "real_side_effects": 0
+    },
+    "rollback": {
+      "status": "ready",
+      "snapshot_id": "memsnap_16848831",
+      "restore_scope": "profile_episodic_procedural_policy_memory_only",
+      "requires_live_world": false,
+      "real_side_effects": 0,
+      "steps": [
+        "freeze_new_memory_writes",
+        "restore_snapshot_to_review_buffer",
+        "replay_last_trace_in_shadow_mode",
+        "operator_accept_or_edit",
+        "unfreeze_after_audit_pass"
+      ]
+    },
+    "invariant": "memory_and_persona_can_evolve_but_cannot_override_commit_barriers_or_owner_control"
+  },
+  "status": "pass"
+}

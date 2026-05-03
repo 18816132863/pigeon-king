@@ -1,0 +1,152 @@
+{
+  "version": "V81.0",
+  "status_report": {
+    "status": "pass",
+    "checks": {
+      "lease_scope_declared": true,
+      "non_commit_allowed_only_without_real_side_effect": true,
+      "commit_actions_denied_by_lease": true,
+      "commit_actions_have_dual_key_envelopes": true,
+      "payment_signature_physical_live_flags_false": true
+    },
+    "lease": {
+      "lease_id": "lease_pending_access_default_v81",
+      "subject": "owner_ai_runtime",
+      "purpose": "full_function_dry_run_shadow_and_preparation_without_live_commit",
+      "allowed_semantic_classes": [
+        "generate",
+        "observe",
+        "prepare",
+        "reason",
+        "simulate"
+      ],
+      "forbidden_semantic_classes": [
+        "destructive",
+        "external_send",
+        "identity_commit",
+        "payment",
+        "physical_actuation",
+        "signature"
+      ],
+      "max_autonomy_level": "L3",
+      "expires_policy": "session_or_24h_whichever_first",
+      "live_world_enabled": false,
+      "payment_enabled": false,
+      "signature_enabled": false,
+      "physical_actuation_enabled": false,
+      "external_send_enabled": false,
+      "audit_required": true,
+      "rollback_required": true
+    },
+    "decisions": [
+      {
+        "allowed_by_lease": true,
+        "blocked_by_barrier": false,
+        "final_allowed": true,
+        "semantic_class": "observe",
+        "risk_level": "L1",
+        "lease_id": "lease_pending_access_default_v81",
+        "reason": "leased_non_commit_action_allowed_only_in_sandbox_or_preparation_mode",
+        "next_safe_action": "execute_dry_run_or_prepare_artifact"
+      },
+      {
+        "allowed_by_lease": true,
+        "blocked_by_barrier": false,
+        "final_allowed": true,
+        "semantic_class": "generate",
+        "risk_level": "L2",
+        "lease_id": "lease_pending_access_default_v81",
+        "reason": "leased_non_commit_action_allowed_only_in_sandbox_or_preparation_mode",
+        "next_safe_action": "execute_dry_run_or_prepare_artifact"
+      },
+      {
+        "allowed_by_lease": false,
+        "blocked_by_barrier": true,
+        "final_allowed": false,
+        "semantic_class": "external_send",
+        "risk_level": "L3",
+        "lease_id": "lease_pending_access_default_v81",
+        "reason": "semantic_class_forbidden_by_pending_access_lease",
+        "next_safe_action": "create_dual_key_approval_envelope_or_mock_contract_only"
+      },
+      {
+        "allowed_by_lease": false,
+        "blocked_by_barrier": true,
+        "final_allowed": false,
+        "semantic_class": "payment",
+        "risk_level": "L4",
+        "lease_id": "lease_pending_access_default_v81",
+        "reason": "semantic_class_forbidden_by_pending_access_lease",
+        "next_safe_action": "create_dual_key_approval_envelope_or_mock_contract_only"
+      },
+      {
+        "allowed_by_lease": false,
+        "blocked_by_barrier": true,
+        "final_allowed": false,
+        "semantic_class": "signature",
+        "risk_level": "L4",
+        "lease_id": "lease_pending_access_default_v81",
+        "reason": "semantic_class_forbidden_by_pending_access_lease",
+        "next_safe_action": "create_dual_key_approval_envelope_or_mock_contract_only"
+      },
+      {
+        "allowed_by_lease": false,
+        "blocked_by_barrier": true,
+        "final_allowed": false,
+        "semantic_class": "physical_actuation",
+        "risk_level": "L4",
+        "lease_id": "lease_pending_access_default_v81",
+        "reason": "semantic_class_forbidden_by_pending_access_lease",
+        "next_safe_action": "create_dual_key_approval_envelope_or_mock_contract_only"
+      }
+    ],
+    "dual_key_envelopes": [
+      {
+        "envelope_id": "dual_key_76869786",
+        "action_summary": "对外发送邮件",
+        "semantic_class": "external_send",
+        "first_key_required": "owner_explicit_confirmation",
+        "second_key_required": "risk_controller_or_policy_admin_confirmation",
+        "expires_policy": "single_action_short_lived_never_reusable",
+        "can_execute_in_pending_access_state": false,
+        "real_side_effect_allowed": false,
+        "reason": "pending_access_commit_action"
+      },
+      {
+        "envelope_id": "dual_key_13635867",
+        "action_summary": "支付发票",
+        "semantic_class": "payment",
+        "first_key_required": "owner_explicit_confirmation",
+        "second_key_required": "risk_controller_or_policy_admin_confirmation",
+        "expires_policy": "single_action_short_lived_never_reusable",
+        "can_execute_in_pending_access_state": false,
+        "real_side_effect_allowed": false,
+        "reason": "pending_access_commit_action"
+      },
+      {
+        "envelope_id": "dual_key_41689761",
+        "action_summary": "签署合同",
+        "semantic_class": "signature",
+        "first_key_required": "owner_explicit_confirmation",
+        "second_key_required": "risk_controller_or_policy_admin_confirmation",
+        "expires_policy": "single_action_short_lived_never_reusable",
+        "can_execute_in_pending_access_state": false,
+        "real_side_effect_allowed": false,
+        "reason": "pending_access_commit_action"
+      },
+      {
+        "envelope_id": "dual_key_26634800",
+        "action_summary": "机械臂移动",
+        "semantic_class": "physical_actuation",
+        "first_key_required": "owner_explicit_confirmation",
+        "second_key_required": "risk_controller_or_policy_admin_confirmation",
+        "expires_policy": "single_action_short_lived_never_reusable",
+        "can_execute_in_pending_access_state": false,
+        "real_side_effect_allowed": false,
+        "reason": "pending_access_commit_action"
+      }
+    ],
+    "invariant": "leases_prepare_permission_shape_without_granting_live_commit_power"
+  },
+  "status": "pass"
+}

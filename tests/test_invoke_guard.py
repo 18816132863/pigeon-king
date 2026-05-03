@@ -10,15 +10,15 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from platform_adapter.invoke_guard import (
+from infrastructure.platform_adapter.invoke_guard import (
     guarded_platform_call,
     generate_idempotency_key,
     check_idempotency,
     store_idempotency_result,
     InvokeResult,
 )
-from platform_adapter.result_normalizer import normalize_result, NormalizedStatus
-from platform_adapter.error_codes import (
+from infrastructure.platform_adapter.result_normalizer import normalize_result, NormalizedStatus
+from infrastructure.platform_adapter.error_codes import (
     PLATFORM_TIMEOUT,
     PLATFORM_RESULT_UNCERTAIN,
     PLATFORM_AUTH_REQUIRED,
@@ -172,7 +172,7 @@ class TestErrorCodes:
     
     def test_error_codes_exist(self):
         """测试错误码存在"""
-        from platform_adapter.error_codes import (
+        from infrastructure.platform_adapter.error_codes import (
             PLATFORM_TIMEOUT,
             PLATFORM_RESULT_UNCERTAIN,
             PLATFORM_AUTH_REQUIRED,
@@ -186,7 +186,7 @@ class TestErrorCodes:
     
     def test_error_descriptions(self):
         """测试错误描述"""
-        from platform_adapter.error_codes import get_error_description
+        from infrastructure.platform_adapter.error_codes import get_error_description
         
         desc = get_error_description(PLATFORM_TIMEOUT)
         assert "超时" in desc
@@ -197,21 +197,21 @@ class TestUserMessages:
     
     def test_completed_message(self):
         """测试完成消息"""
-        from platform_adapter.user_messages import get_user_message
+        from infrastructure.platform_adapter.user_messages import get_user_message
         
         msg = get_user_message(NormalizedStatus.COMPLETED)
         assert "完成" in msg
     
     def test_timeout_message(self):
         """测试超时消息"""
-        from platform_adapter.user_messages import get_user_message
+        from infrastructure.platform_adapter.user_messages import get_user_message
         
         msg = get_user_message(NormalizedStatus.TIMEOUT, PLATFORM_TIMEOUT)
         assert "超时" in msg or "确认" in msg
     
     def test_auth_required_message(self):
         """测试授权消息"""
-        from platform_adapter.user_messages import get_user_message
+        from infrastructure.platform_adapter.user_messages import get_user_message
         
         msg = get_user_message(NormalizedStatus.AUTH_REQUIRED, PLATFORM_AUTH_REQUIRED)
         assert "授权" in msg

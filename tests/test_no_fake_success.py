@@ -10,7 +10,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from orchestration.result_guard import ResultGuard, GuardReason
 from orchestration.verify_executor import VerifyExecutor
-from application.response_service.response_schema import EvidenceSchema
+from execution.application.response_service.response_schema import EvidenceSchema
 
 
 class TestNoFakeSuccess(unittest.TestCase):

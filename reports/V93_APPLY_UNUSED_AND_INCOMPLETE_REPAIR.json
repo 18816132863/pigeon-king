@@ -1,0 +1,18 @@
+{
+  "version": "V93.0",
+  "status": "pass",
+  "offline_mode": true,
+  "local_state": {
+    "knowledge_graph_state": "/home/sandbox/.openclaw/workspace/.knowledge_graph_state",
+    "preference_evolution_state": "/home/sandbox/.openclaw/workspace/.preference_evolution_state",
+    "ready": true
+  },
+  "usage_count": 45,
+  "dependency_fallback_count": 7,
+  "external_infra_fallback_count": 12,
+  "archive_candidate_count": 26,
+  "no_external_api": true,
+  "no_real_payment": true,
+  "no_real_send": true,
+  "no_real_device": true
+}

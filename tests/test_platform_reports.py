@@ -19,7 +19,7 @@ class TestDailyReport:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -45,7 +45,7 @@ class TestDailyReport:
     def test_get_daily_stats_with_data(self):
         """测试有数据的日报"""
         from scripts.export_daily_platform_report import get_daily_stats
-        from platform_adapter.invocation_ledger import record_invocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation
         
         # 插入一些记录
         for i in range(5):
@@ -135,7 +135,7 @@ class TestWeeklyReport:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -161,7 +161,7 @@ class TestWeeklyReport:
     def test_get_weekly_stats_with_data(self):
         """测试有数据的周报"""
         from scripts.export_weekly_platform_report import get_weekly_stats
-        from platform_adapter.invocation_ledger import record_invocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation
         
         # 插入一些记录
         for i in range(10):

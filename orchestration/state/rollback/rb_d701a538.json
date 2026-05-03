@@ -1,0 +1,65 @@
+{
+  "point_id": "rb_d701a538",
+  "step_id": "final",
+  "timestamp": "2026-05-02T01:43:13.353074",
+  "state": {
+    "instance_id": "v86_parallel_dependencies",
+    "step_input": {
+      "context": {},
+      "dependencies": {
+        "a": {
+          "action": "safe_a"
+        },
+        "b": {
+          "action": "safe_b"
+        }
+      },
+      "params": {
+        "side_effect_type": "none"
+      }
+    },
+    "completed_steps": [
+      "a",
+      "b"
+    ],
+    "step_results": {
+      "a": {
+        "step_id": "a",
+        "status": "completed",
+        "started_at": "2026-05-02T01:43:13.243006",
+        "completed_at": "2026-05-02T01:43:13.345355",
+        "output": {
+          "action": "safe_a"
+        },
+        "error": null,
+        "retry_count": 0,
+        "duration_ms": 102,
+        "fallback_used": false,
+        "rollback_used": false,
+        "checkpoint_id": "v86_parallel_dependencies_a_20260502014313345391",
+        "rollback_point_id": "rb_26332104",
+        "fallback_decision": null
+      },
+      "b": {
+        "step_id": "b",
+        "status": "completed",
+        "started_at": "2026-05-02T01:43:13.245304",
+        "completed_at": "2026-05-02T01:43:13.347691",
+        "output": {
+          "action": "safe_b"
+        },
+        "error": null,
+        "retry_count": 0,
+        "duration_ms": 102,
+        "fallback_used": false,
+        "rollback_used": false,
+        "checkpoint_id": "v86_parallel_dependencies_b_20260502014313347706",
+        "rollback_point_id": "rb_77bfb5dc",
+        "fallback_decision": null
+      }
+    }
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

@@ -5,8 +5,8 @@ from pathlib import Path
 from typing import Dict, Optional
 from infrastructure.release_manifest import build_release_manifest
 from infrastructure.slo_monitor import build_slo_report
-from platform_adapter.replay_harness import run_default_replay, run_replay_plan, timeout_replay_plan
-from platform_adapter.snapshot_manager import create_snapshot, verify_snapshot
+from infrastructure.platform_adapter.replay_harness import run_default_replay, run_replay_plan, timeout_replay_plan
+from infrastructure.platform_adapter.snapshot_manager import create_snapshot, verify_snapshot
 
 def run_upgrade_gate(*, root:str|Path='.', db_path:Optional[Path]=None, output_path:Optional[Path]=None)->Dict:
     root=Path(root).resolve(); db=Path(db_path) if db_path else Path(tempfile.mkdtemp(prefix='pk_v125_'))/'runtime.db'; snapdir=db.parent/'snapshots'

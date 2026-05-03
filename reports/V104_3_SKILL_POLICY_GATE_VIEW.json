@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "send_probe": {
+    "status": "blocked",
+    "skill": "email_skill",
+    "action": "send email to user",
+    "category": "external_api_blocked",
+    "side_effects": false,
+    "requires_api": false,
+    "no_external_api": true,
+    "no_real_send": true
+  },
+  "local_probe": {
+    "status": "ok",
+    "skill": "local_skill",
+    "action": "summarize local file",
+    "category": "offline_safe",
+    "side_effects": false,
+    "requires_api": false,
+    "no_external_api": true,
+    "no_real_send": true
+  },
+  "generated": {
+    "total_scanned": 255,
+    "external_api_blocked": 125
+  }
+}

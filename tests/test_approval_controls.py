@@ -5,7 +5,7 @@ import pytest
 
 def test_request_approval():
     """测试请求审批"""
-    from capabilities.approve_action import request_approval
+    from execution.capabilities.approve_action import request_approval
     
     result = request_approval(
         action_type="batch_sms",
@@ -19,7 +19,7 @@ def test_request_approval():
 
 def test_approve_action():
     """测试批准操作"""
-    from capabilities.approve_action import request_approval, approve_action
+    from execution.capabilities.approve_action import request_approval, approve_action
     
     # 先请求审批
     request = request_approval(
@@ -39,7 +39,7 @@ def test_approve_action():
 
 def test_reject_action():
     """测试拒绝操作"""
-    from capabilities.approve_action import request_approval, reject_action
+    from execution.capabilities.approve_action import request_approval, reject_action
     
     # 先请求审批
     request = request_approval(

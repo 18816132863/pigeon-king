@@ -133,7 +133,7 @@ def respond_to_confirm(
     
     # 如果有关联的 invocation，更新其确认状态
     if node.get("invocation_id"):
-        from platform_adapter.invocation_ledger import InvocationLedger
+        from infrastructure.platform_adapter.invocation_ledger import InvocationLedger
         ledger = InvocationLedger()
         ledger.confirm_record(
             record_id=node["invocation_id"],

@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from learning_loop import ExecutionMemory, PlanOptimizer
+from memory_context.learning_loop import ExecutionMemory, PlanOptimizer
 
 
 def test_no_false_claim_when_no_match():

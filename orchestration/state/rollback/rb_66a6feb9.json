@@ -1,0 +1,40 @@
+{
+  "point_id": "rb_66a6feb9",
+  "step_id": "cal_b",
+  "timestamp": "2026-05-02T01:43:13.471217",
+  "state": {
+    "instance_id": "v86_serial_lane",
+    "step_input": {
+      "context": {},
+      "dependencies": {},
+      "params": {
+        "side_effect_type": "calendar_write"
+      }
+    },
+    "completed_steps": [
+      "cal_a"
+    ],
+    "step_results": {
+      "cal_a": {
+        "step_id": "cal_a",
+        "status": "completed",
+        "started_at": "2026-05-02T01:43:13.363741",
+        "completed_at": "2026-05-02T01:43:13.466104",
+        "output": {
+          "action": "calendar_create_event"
+        },
+        "error": null,
+        "retry_count": 0,
+        "duration_ms": 102,
+        "fallback_used": false,
+        "rollback_used": false,
+        "checkpoint_id": "v86_serial_lane_cal_a_20260502014313466140",
+        "rollback_point_id": "rb_2d859045",
+        "fallback_decision": null
+      }
+    }
+  },
+  "metadata": {
+    "phase": "before_step"
+  }
+}

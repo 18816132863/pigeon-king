@@ -1,0 +1,10 @@
+{
+  "module": "doc_fusion_V105",
+  "version": "V105",
+  "trigger": "other",
+  "description": "测试架构兜底融合",
+  "status": "pass",
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-02T17:01:45.269020+00:00"
+}

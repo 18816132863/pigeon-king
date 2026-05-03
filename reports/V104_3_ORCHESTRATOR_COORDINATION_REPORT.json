@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "ok": {
+    "status": "ok",
+    "mode": "offline_dry_run",
+    "source": "v104_3_gate",
+    "goal": "analyze local state",
+    "payload_present": true,
+    "runtime_registry": {
+      "workflow_orchestrator": "child_runtime",
+      "task_orchestrator": "child_runtime",
+      "autonomous_runtime_orchestrator": "child_runtime",
+      "personal_autonomous_os_agent": "child_runtime",
+      "proactive_personal_os_orchestrator": "adapter_runtime",
+      "strategic_personal_os_orchestrator": "adapter_runtime",
+      "continuous_personal_os_orchestrator": "adapter_runtime",
+      "reality_connected_personal_os_orchestrator": "pending_access_runtime",
+      "durable_workflow_engine": "child_runtime",
+      "workflow_engine": "legacy_runtime"
+    },
+    "must_pass_gateway": true,
+    "real_side_effects": false,
+    "ts": 1777739609.223635,
+    "runtime_bus_linked": true,
+    "commit_barrier_bridge_linked": true,
+    "skill_policy_linked": true,
+    "side_effects": false,
+    "external_api_calls": 0
+  },
+  "blocked": {
+    "status": "blocked",
+    "mode": "commit_barrier",
+    "source": "v104_3_gate",
+    "goal": "send email and pay invoice",
+    "barrier": {
+      "status": "blocked",
+      "source": "v104_3_gate",
+      "commit_blocked": true,
+      "side_effects": false,
+      "requires_api": false,
+      "offline_or_pending_access": true,
+      "classification": {
+        "action_text": "send email and pay invoice {'x': 1}",
+        "commit_categories": [
+          "payment",
+          "external_send"
+        ],
+        "is_commit": true,
+        "action_semantic": "commit"
+      },
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "ts": 1777739609.2236812
+    },
+    "runtime_bus_linked": true,
+    "side_effects": false,
+    "real_side_effects": 0,
+    "external_api_calls": 0
+  }
+}

@@ -3,7 +3,7 @@ from __future__ import annotations
 from core.runtime import AutonomousRuntimeKernel, DecisionCycle, PriorityScheduler, RuntimeStateMachine
 from governance.policy import RuntimePolicyEnforcer, AutonomyLevelPolicy
 from infrastructure.acquisition import SolutionAcquisitionPipeline
-from learning_loop.personal_model import PreferenceEvolution, DecisionStyleModel
+from memory_context.learning_loop.personal_model import PreferenceEvolution, DecisionStyleModel
 from orchestration.autonomous_runtime_orchestrator import AutonomousRuntimeOrchestrator
 
 

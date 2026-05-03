@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "target": "/home/sandbox/.openclaw/workspace/core/self_evolution_ops/self_improvement_loop.py",
+  "changes": [],
+  "errors": [],
+  "offline": true,
+  "real_side_effects": false,
+  "defs_before": 1,
+  "defs_after": 1,
+  "has_args_signature": false,
+  "backup_dir": "/home/sandbox/.openclaw/workspace/.repair_state/v92_3_self_improvement_signature_cleanup_20260501_152737"
+}

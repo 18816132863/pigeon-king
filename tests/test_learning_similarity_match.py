@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from learning_loop import ExecutionMemory, ExecutionRecord
+from memory_context.learning_loop import ExecutionMemory, ExecutionRecord
 
 
 def test_similarity_match_by_pattern():

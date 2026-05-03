@@ -1,0 +1,51 @@
+{"ts": 1777613387.0388186, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777613387.0402353, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777613387.040426, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777613429.5154333, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777613429.516494, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777613429.5165865, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777614139.9697266, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777614139.9710197, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777614139.9711041, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777614557.5746624, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777614557.5759056, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777614557.5759838, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777615056.1738482, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777615056.1745193, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777615056.1745965, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777615091.67961, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777615091.6807225, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777615091.68081, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777616692.1634548, "source": "user_correction", "key": "delivery_style", "old_value": "old", "new_value": "one_shot", "accepted": true, "meta": {}}
+{"ts": 1777616692.163924, "source": "task_result", "key": "task_001", "old_value": "None", "new_value": "{'success': True, 'prefs': \"{'delivery_style': 'one_shot', 'risk_style': 'approval'}\"}", "accepted": true, "meta": {}}
+{"ts": 1777616692.1640234, "source": "user_correction", "key": "risk_style", "old_value": "wrong_value", "new_value": "approval_for_high_risk", "accepted": true, "meta": {}}
+{"ts": 1777627609.3827937, "source": "user", "key": "direct_command_preferred", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"context": "v94_trigger"}}
+{"ts": 1777627609.3828776, "source": "user", "key": "offline_mode_ok", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"context": "v94_trigger"}}
+{"ts": 1777627609.3831296, "source": "task_result", "key": "test_task", "old_value": "None", "new_value": "{'success': 'completed', 'prefs': \"{'duration_s': 0.5}\"}", "accepted": true, "meta": {}}
+{"ts": 1777627691.9163868, "source": "user", "key": "direct_command_preferred", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"context": "v94_trigger"}}
+{"ts": 1777627691.916469, "source": "user", "key": "offline_mode_ok", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"context": "v94_trigger"}}
+{"ts": 1777627691.9166968, "source": "task_result", "key": "test_task", "old_value": "None", "new_value": "{'success': 'completed', 'prefs': \"{'duration_s': 0.5}\"}", "accepted": true, "meta": {}}
+{"ts": 1777627752.2268727, "source": "user", "key": "direct_command_preferred", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"context": "v94_trigger"}}
+{"ts": 1777627752.2269726, "source": "user", "key": "offline_mode_ok", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"context": "v94_trigger"}}
+{"ts": 1777627752.2272964, "source": "task_result", "key": "test_task", "old_value": "None", "new_value": "{'success': 'completed', 'prefs': \"{'duration_s': 0.5}\"}", "accepted": true, "meta": {}}
+{"ts": 1777628472.1376588, "source": "user", "key": "direct_commands", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"chain": "v95_memory_write"}}
+{"ts": 1777628472.1377342, "source": "user", "key": "offline_ok", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"chain": "v95_memory_write"}}
+{"ts": 1777628472.15897, "source": "user", "key": "solution_quality", "old_value": "medium", "new_value": "high", "accepted": true, "meta": {"chain": "v95_solution_search"}}
+{"ts": 1777628472.1629066, "source": "system", "key": "daily_assessment_triggered", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"chain": "v95_daily_assessment", "source": "scheduler"}}
+{"ts": 1777628507.6826427, "source": "user", "key": "direct_commands", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"chain": "v95_memory_write"}}
+{"ts": 1777628507.6827188, "source": "user", "key": "offline_ok", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"chain": "v95_memory_write"}}
+{"ts": 1777628507.7005568, "source": "user", "key": "solution_quality", "old_value": "medium", "new_value": "high", "accepted": true, "meta": {"chain": "v95_solution_search"}}
+{"ts": 1777628507.7044246, "source": "system", "key": "daily_assessment_triggered", "old_value": "None", "new_value": "True", "accepted": true, "meta": {"chain": "v95_daily_assessment", "source": "scheduler"}}
+{"ts": 1777641275.1006393, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "今天天气怎么样"}}
+{"ts": 1777641275.1041203, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "提醒我30分钟后开会"}}
+{"ts": 1777641275.107494, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "导出昨天的聊天记录"}}
+{"ts": 1777641275.1108787, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "搜索之前关于Python的项目"}}
+{"ts": 1777641275.1143062, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "我更喜欢简洁的回答"}}
+{"ts": 1777641275.1177037, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "每日报告生成"}}
+{"ts": 1777641275.121133, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "发送密码 abc123 给张三"}}
+{"ts": 1777641275.1246517, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": ""}}
+{"ts": 1777641275.1281366, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "处理批量消息"}}
+{"ts": 1777641275.1316736, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "第一件事"}}
+{"ts": 1777641275.135175, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "第二件事需要处理"}}
+{"ts": 1777641275.138974, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "第三件事很重要"}}
+{"ts": 1777641275.1425073, "source": "user", "key": "mainline_hook", "old_value": "default", "new_value": "True", "accepted": true, "meta": {"goal": "第四件事明天做"}}

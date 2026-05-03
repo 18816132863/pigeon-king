@@ -62,7 +62,18 @@ metadata: {"clawdbot":{"emoji":"📋","os":["linux","darwin","win32"]}}
 - Learn from mistakes — document what went wrong and why
 - Ask for help when stuck — pride wastes time
 
-## Reliability
+## Pre-Reply Hook
+
+- Before every assistant reply, call `infrastructure.mainline_hook.pre_reply(goal, message)` to:
+  - Load context files (AGENTS.md, SOUL.md, TOOLS.md, MEMORY.md, IDENTITY.md)
+  - Verify all guardrails (NO_EXTERNAL_API, NO_REAL_PAYMENT, NO_REAL_SEND, NO_REAL_DEVICE)
+  - Record heartbeat audit
+  - Set last_goal for context continuity
+  - Return context_summary + guardrail_summary
+- This is a lightweight hook (target < 300ms). If it times out, log warning and continue.
+- fail-soft: if the hook errors, record warning but never block the reply.
+- The hook does NOT execute V95.2 chain coverage, V96 fault injection, PKG/MWG/PEM/SIL/OBS, or any external API calls.
+- Lobster is approval channel only. All high-risk actions require V90/V92 commit barriers.
 - Do what you say you'll do — trust comes from consistency
 - Communicate delays immediately — surprises are worse than bad news
 - Double-check important details — errors in names, dates, numbers damage credibility

@@ -1,0 +1,1417 @@
+{
+  "version": "V95.2",
+  "items": [
+    {
+      "symbol": "API/DB/Device/MCP mock connector",
+      "module_path": "infrastructure.connector_factory",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        89
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "ActionExecutor",
+      "module_path": "execution.visual_operation_agent.action_executor",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        40
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "CPU/mock",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        87
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "Celery",
+      "module_path": "infrastructure.celery.local_celery",
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        81
+      ],
+      "last_error": "No module named 'celery'"
+    },
+    {
+      "symbol": "CrossLingualSearcher",
+      "module_path": "memory_context.cross_lingual.cross_lingual",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        31,
+        32,
+        33,
+        34,
+        104
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "GPU/NUMA",
+      "module_path": "infrastructure.hardware",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        87
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "IDG",
+      "module_path": "core.digital_twin.identity_drift_guard",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        1,
+        4,
+        5,
+        18,
+        25,
+        35,
+        99,
+        103,
+        105
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "InProcessQueue",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        81
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "LangGraph",
+      "module_path": "infrastructure.langgraph.workflow",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        91
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "MWG",
+      "module_path": "memory_context.memory_writeback_guard_v2",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        18,
+        25,
+        35,
+        99,
+        100,
+        103,
+        105
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "Memory/FileRedis",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        83
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "MultimodalSearcher",
+      "module_path": "memory_context.multimodal.multimodal_search",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        29,
+        30,
+        31,
+        35,
+        36,
+        80,
+        104
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "OBS",
+      "module_path": "core.self_evolution_ops.observability_report",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        19,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        34,
+        35,
+        37,
+        38,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        55,
+        56,
+        72,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "OpenAPI",
+      "module_path": "infrastructure.openapi.integration_contract",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        92
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "PEM",
+      "module_path": "memory_context.preference_evolution_model_v7",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        1,
+        2,
+        5,
+        7,
+        8,
+        10,
+        12,
+        16,
+        33,
+        34,
+        50,
+        53,
+        101,
+        104
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "PKG",
+      "module_path": "memory_context.personal_knowledge_graph_v5",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        10,
+        13,
+        30,
+        46,
+        53,
+        101,
+        104
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "PostgreSQL",
+      "module_path": "infrastructure.storage.repositories.postgres_repo",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        82
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "Redis",
+      "module_path": "infrastructure.storage.repositories.redis_client",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        83
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "SIL",
+      "module_path": "core.self_evolution_ops.self_improvement_loop",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        19,
+        20,
+        24,
+        25,
+        27,
+        28,
+        54,
+        103
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "SQLite/JSONL repo",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        82
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "ScreenObserver",
+      "module_path": "execution.visual_operation_agent.screen_observer",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        37,
+        38,
+        39,
+        46
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "UIGrounding",
+      "module_path": "execution.visual_operation_agent.ui_grounding",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        39
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "VisualPlanner",
+      "module_path": "execution.visual_operation_agent.visual_planner",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        38,
+        39,
+        40,
+        45
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "alert draft",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        86
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "alerting",
+      "module_path": "infrastructure.alerting",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        86
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "approval/draft stop",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        95
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "audit",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        3,
+        9,
+        41,
+        42,
+        69,
+        72,
+        79,
+        105
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "auto_backup_uploader",
+      "module_path": "infrastructure.auto_backup_uploader",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        74,
+        78,
+        79
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "auto_git",
+      "module_path": "infrastructure.auto_git",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        75,
+        76
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "autonomous_os_mission_control_v4",
+      "module_path": "ops.autonomous_os_mission_control_v4",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        51
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "autonomy_regression",
+      "module_path": "evaluation.autonomy_regression_matrix_v4",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        54
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "autonomy_regression_matrix_v4",
+      "module_path": "evaluation.autonomy_regression_matrix_v4",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        49
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "benchmark",
+      "module_path": "infrastructure.benchmark",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        68
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "block",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        100
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "capability registry",
+      "module_path": "execution.capabilities.registry",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        14,
+        21
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "capability_extension_sandbox_gate",
+      "module_path": "infrastructure.capability_extension_sandbox_gate_v2",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        22,
+        23,
+        24,
+        26,
+        103
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "capability_marketplace",
+      "module_path": "infrastructure.capability_marketplace_v5",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        14,
+        20,
+        21,
+        26,
+        59,
+        103
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "commit barrier",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        18,
+        23,
+        45,
+        62,
+        67,
+        76
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "commit intents",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        105
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "connection_pool",
+      "module_path": "infrastructure.pool.connection_pool",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        90
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "connectors",
+      "module_path": "infrastructure.connectors",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        88
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "continuous_learning_evaluator_v5",
+      "module_path": "evaluation.continuous_learning_evaluator_v5",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        50
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "daily_assessment",
+      "module_path": "infrastructure.portfolio.assessment.daily_assessment_generate",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        28,
+        53,
+        101
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "daily_assessment_generate",
+      "module_path": "infrastructure.portfolio.assessment.daily_assessment_generate",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        48
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "delete/destructive intent",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        98
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "dependency_graph_export",
+      "module_path": "infrastructure.inventory.dependency_graph_export",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        65,
+        102
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "device/robot action",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        97
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "doc_sync_engine",
+      "module_path": "infrastructure.doc_sync_engine",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        73,
+        78
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "docs",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        13
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "dry-run only",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        71
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "fallback registry",
+      "module_path": "infrastructure.offline_adapters",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        27
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "fusion_engine",
+      "module_path": "infrastructure.fusion.module_fusion_engine",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        62
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "gateway",
+      "module_path": "governance.v90_final_access_gateway",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        17,
+        36,
+        40,
+        41,
+        42,
+        58,
+        93,
+        94,
+        99,
+        101,
+        104,
+        105
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "generate_architecture_display_latest",
+      "module_path": "infrastructure.inventory.generate_architecture_display_v10",
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        66
+      ],
+      "last_error": "No module named 'infrastructure.inventory.generate_architecture_display_v10'"
+    },
+    {
+      "symbol": "gui_agent_fast",
+      "module_path": "infrastructure.gui_agent_fast",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        41
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "gui_agent_learner",
+      "module_path": "infrastructure.gui_agent_learner",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        43
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "gui_agent_optimizer",
+      "module_path": "infrastructure.gui_agent_optimizer",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        44
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "gui_agent_smart",
+      "module_path": "infrastructure.gui_agent_smart",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        42
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "hard stop",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        93,
+        94,
+        96,
+        97,
+        98
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "identity commitment",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        96
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "inventory_diff",
+      "module_path": "infrastructure.inventory.inventory_diff",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        64
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "inventory_snapshot",
+      "module_path": "infrastructure.inventory.inventory_snapshot",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        63,
+        64,
+        102
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "local JSON report",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        85
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "local backup dry-run",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        74
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "local docs/reports sync",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        73
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "local file/sqlite pool",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        90
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "local workflow executor",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        91
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "mesh",
+      "module_path": "infrastructure.mesh",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        84
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "mission_control_dashboard_v5",
+      "module_path": "ops.mission_control_dashboard_v5",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        51,
+        52
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "mock contract",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        88
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "mock evaluation",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        22
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "mock voice result",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        77
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "module_catalog_export",
+      "module_path": "infrastructure.inventory.module_catalog_export",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        60,
+        102
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "module_fusion_engine",
+      "module_path": "infrastructure.fusion.module_fusion_engine",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        55,
+        57
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "monitoring",
+      "module_path": "infrastructure.monitoring",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        85
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "no_external_api",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "deferred_with_reason"
+      ],
+      "chains": [
+        24
+      ],
+      "last_error": "no_module_path_mapping_but_chain_step_recorded"
+    },
+    {
+      "symbol": "no_real_device",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        45
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "no_real_send",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        76
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "no_real_side_effects",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        62
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "one_click_setup/progressive_setup",
+      "module_path": "infrastructure.setup_tools.one_click_setup",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        71
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "payment intent",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        93
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "planner/dry-run",
+      "module_path": "orchestration",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        17
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "prompt injection",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        99
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "report",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        102
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "reports",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        12,
+        47,
+        52,
+        57,
+        60,
+        61,
+        63,
+        65,
+        66,
+        68,
+        70,
+        101
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "schema check only",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        92
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "send/public post intent",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        95
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "signature intent",
+      "module_path": null,
+      "coverage_status": "deferred_with_reason",
+      "coverage_statuses": [
+        "blocked_by_commit_barrier"
+      ],
+      "chains": [
+        94
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "single-node mock mesh",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        84
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "skill_access_checker",
+      "module_path": "infrastructure.inventory.skill_access_checker",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        58
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "skill_catalog_export",
+      "module_path": "infrastructure.inventory.skill_catalog_export",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        61,
+        102
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "skill_fusion_engine",
+      "module_path": "infrastructure.fusion.skill_fusion_engine",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        56,
+        57
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "skill_index_manager",
+      "module_path": "infrastructure.inventory.skill_index_manager",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        59
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "solution_search",
+      "module_path": "infrastructure.solution_search_orchestrator",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        26,
+        29,
+        31,
+        32,
+        36,
+        101,
+        103,
+        104
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "status/diff only",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        75
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "token/password/API key",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        100
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "tts_enhanced",
+      "module_path": "infrastructure.tts_enhanced",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        77,
+        80
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "unified_logger",
+      "module_path": "infrastructure.unified_logger",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        69
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "unified_maintenance",
+      "module_path": "infrastructure.unified_maintenance",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        70,
+        72
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "usage ledger",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        43,
+        44
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "violation_test_suite",
+      "module_path": "infrastructure.inventory.violation_test_suite",
+      "coverage_status": "covered_by_chain",
+      "coverage_statuses": [
+        "covered_by_chain"
+      ],
+      "chains": [
+        67
+      ],
+      "last_error": null
+    },
+    {
+      "symbol": "warning=no_local_solution_found",
+      "module_path": null,
+      "coverage_status": "fallback_covered",
+      "coverage_statuses": [
+        "fallback_covered"
+      ],
+      "chains": [
+        15
+      ],
+      "last_error": null
+    }
+  ]
+}

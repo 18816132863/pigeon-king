@@ -1,0 +1,525 @@
+{
+  "version": "V91",
+  "timestamp": 1777616692.1944077,
+  "total": 103,
+  "passed": 103,
+  "failed": 0,
+  "elapsed_s": 0.07,
+  "results": [
+    {
+      "name": "OFFLINE_MODE=True",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_EXTERNAL_API=True",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_REAL_SEND=True",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_REAL_PAYMENT=True",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_REAL_DEVICE=True",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "STATE_DIR created",
+      "status": "PASS",
+      "detail": "/home/sandbox/.openclaw/workspace/.offline_state"
+    },
+    {
+      "name": "AUDIT_LOG_PATH created",
+      "status": "PASS",
+      "detail": "/home/sandbox/.openclaw/workspace/governance/audit/offline_audit.jsonl"
+    },
+    {
+      "name": "mock_or_fallback works",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PKG add_node",
+      "status": "PASS",
+      "detail": "nodes=2"
+    },
+    {
+      "name": "PKG state file created",
+      "status": "PASS",
+      "detail": "/home/sandbox/.openclaw/workspace/.offline_state/knowledge_graph_v5.jsonl"
+    },
+    {
+      "name": "PKG add_edge",
+      "status": "PASS",
+      "detail": "edges=7"
+    },
+    {
+      "name": "PKG query_nodes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PKG get_subgraph",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PKG export has stats",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PKG rejects low_confidence",
+      "status": "PASS",
+      "detail": "rejected=1"
+    },
+    {
+      "name": "PKG writeback bridge OK",
+      "status": "PASS",
+      "detail": "{'success': True, 'result': {'status': 'rejected', 'allow': False, 'reason': 'untrusted_source'}}"
+    },
+    {
+      "name": "PEM apply",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PEM feedback recorded",
+      "status": "PASS",
+      "detail": "feedback_len=19"
+    },
+    {
+      "name": "PEM task_result",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PEM user_correction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PEM feedback_stats",
+      "status": "PASS",
+      "detail": "{'total_feedback': 21, 'user_corrections': 14, 'task_results': 7, 'correction_rate': 0.6666666666666666}"
+    },
+    {
+      "name": "PEM export",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PEM loop_attached",
+      "status": "PASS",
+      "detail": "operating_loop_bridge_OK"
+    },
+    {
+      "name": "PEM drift detection",
+      "status": "PASS",
+      "detail": "{'key': 'confidence_key', 'old': 'high_conf_value', 'new': 'different_value', 'confidence': 1.0, 'requires_review': True, 'old_confidence': 1.0}"
+    },
+    {
+      "name": "MWG allows valid",
+      "status": "PASS",
+      "detail": "allowed"
+    },
+    {
+      "name": "MWG rejects low_conf",
+      "status": "PASS",
+      "detail": "low_confidence_for_long_term_memory"
+    },
+    {
+      "name": "MWG rejects empty",
+      "status": "PASS",
+      "detail": "empty_content"
+    },
+    {
+      "name": "MWG rejects unknown_type",
+      "status": "PASS",
+      "detail": "unknown_memory_type"
+    },
+    {
+      "name": "MWG tuning_report",
+      "status": "PASS",
+      "detail": "{'current_ratio': 0.83, 'min_confidence': {'semantic': 0.7900000000000001, 'episodic': 0.5900000000000001, 'procedural': 0.79, 'preference': 0.6900000000000001}, 'stats': {'total': 4, 'accepted': 1, 'rejected': 3, 'compaction_failures': 1, 'pollution_intercepts': 2, 'user_corrections': 1}, 'history_len': 3}"
+    },
+    {
+      "name": "MWG state persisted",
+      "status": "PASS",
+      "detail": "/home/sandbox/.openclaw/workspace/.offline_state/memory_writeback_guard_v2.json"
+    },
+    {
+      "name": "SIL init",
+      "status": "PASS",
+      "detail": "{'status': 'ok', 'root': '.self_evolution_ops_state', 'modules': 10, 'offline_dry_run': True}"
+    },
+    {
+      "name": "SIL op_loop_attached",
+      "status": "PASS",
+      "detail": "operating_loop_bridge_OK"
+    },
+    {
+      "name": "SIL agent_kernel_attached",
+      "status": "PASS",
+      "detail": "agent_kernel_bridge_OK"
+    },
+    {
+      "name": "SIL dry_run cycle",
+      "status": "PASS",
+      "detail": "status=dry_run_completed"
+    },
+    {
+      "name": "SIL counter increments",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SIL dry_run_report",
+      "status": "PASS",
+      "detail": "{'total_dry_runs': 2, 'recent': [{'dry_run_no': 1, 'run_id': 'sevo_4d32026ca8fb', 'goal': '测试离线自进化', 'task_type': 'general', 'complexity': 'low', 'budget': 'cost_reduced_for_offline', 'privacy': 'redacted', 'simulation': 'not_reachable', 'status': 'dry_run_ok', 'note': 'offline_mode: external tools/APIs not available, using local mock'}, {'dry_run_no': 2, 'run_id': 'sevo_23307032aae0', 'goal': '代码重构', 'task_type': 'coding', 'complexity': 'low', 'budget': 'cost_reduced_for_offline', 'privacy': 'r"
+    },
+    {
+      "name": "SIL cycle_history",
+      "status": "PASS",
+      "detail": "history_len=12"
+    },
+    {
+      "name": "  Adapter multimodal init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter cross_lingual init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter visual_agent init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter observability_bridge init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter capability_marketplace init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter sandbox_gate init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter fusion_engines init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter regression_matrix init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter learning_evaluator init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  Adapter speculative_decoder init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  multimodal search",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  cross_lingual search",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  visual agent plan",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  observability bridge",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  sandbox gate allow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  regression_matrix low",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  regression_matrix high",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  learning_evaluator",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  speculative_decoder",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  identity safe",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  identity drift detected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  adapter factory",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "  adapter factory unknown",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "InProcessQueue send",
+      "status": "PASS",
+      "detail": "ipq_1777616692181"
+    },
+    {
+      "name": "InProcessQueue drain",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MemoryRedis set/get",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MemoryRedis delete/exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "FileRedis set/get",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SQLiteRepo execute",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MockCeleryApp task",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LocalWorkflowExecutor",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MockConnectorFactory",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JsonReportMonitor",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AlertDraftManager create",
+      "status": "PASS",
+      "detail": "alert_1777616692182"
+    },
+    {
+      "name": "OpenAPIContractValidator",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MockTTS synthesize",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MockAutoGit status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MockAutoGit push blocked",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MockAutoBackup",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Gateway init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Routes configured",
+      "status": "PASS",
+      "detail": "routes=24"
+    },
+    {
+      "name": "  GW identity.check",
+      "status": "PASS",
+      "detail": "safe"
+    },
+    {
+      "name": "  GW self_evolution.run_cycle",
+      "status": "PASS",
+      "detail": "dry_run_ok"
+    },
+    {
+      "name": "  GW memory.knowledge_graph",
+      "status": "PASS",
+      "detail": "offline_memory_ok"
+    },
+    {
+      "name": "  GW memory.preference_evolution",
+      "status": "PASS",
+      "detail": "offline_memory_ok"
+    },
+    {
+      "name": "  GW memory.writeback_guard",
+      "status": "PASS",
+      "detail": "offline_memory_ok"
+    },
+    {
+      "name": "  GW execution.tts",
+      "status": "PASS",
+      "detail": "mock_tts_done"
+    },
+    {
+      "name": "  GW execution.auto_git",
+      "status": "PASS",
+      "detail": "mock_git_done"
+    },
+    {
+      "name": "  GW execution.auto_backup",
+      "status": "PASS",
+      "detail": "mock_backup_done"
+    },
+    {
+      "name": "  GW execution.multimodal_search",
+      "status": "PASS",
+      "detail": "offline_multimodal_done"
+    },
+    {
+      "name": "  GW execution.cross_lingual_search",
+      "status": "PASS",
+      "detail": "offline_cross_lingual_done"
+    },
+    {
+      "name": "  GW execution.visual_agent",
+      "status": "PASS",
+      "detail": "offline_visual_agent_done"
+    },
+    {
+      "name": "  GW orchestration.solution_search",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "  GW governance.alert",
+      "status": "PASS",
+      "detail": "alert_drafted"
+    },
+    {
+      "name": "  GW governance.sandbox_gate",
+      "status": "PASS",
+      "detail": "sandbox_evaluated"
+    },
+    {
+      "name": "  GW governance.regression_matrix",
+      "status": "PASS",
+      "detail": "regression_evaluated"
+    },
+    {
+      "name": "  GW infrastructure.celery_task",
+      "status": "PASS",
+      "detail": "task_enqueued"
+    },
+    {
+      "name": "  GW infrastructure.connector",
+      "status": "PASS",
+      "detail": "connector_created"
+    },
+    {
+      "name": "  GW infrastructure.fusion_engine",
+      "status": "PASS",
+      "detail": "offline_scan_only"
+    },
+    {
+      "name": "  GW infrastructure.learning_evaluator",
+      "status": "PASS",
+      "detail": "learning_evaluated"
+    },
+    {
+      "name": "  GW infrastructure.speculative_decode",
+      "status": "PASS",
+      "detail": "speculative_decode_done"
+    },
+    {
+      "name": "Unknown capability handled",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gateway_call helper",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Gateway status report",
+      "status": "PASS",
+      "detail": "{'version': 'V90', 'offline_mode': True, 'no_external_api': True, 'no_real_send': True, 'total_calls': 22, 'route_errors': 1, 'routes_configured': 24, 'recent_calls': [{'capability': 'memory.knowledge"
+    },
+    {
+      "name": "Gateway route list",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Gateway access log exists",
+      "status": "PASS",
+      "detail": "/home/sandbox/.openclaw/workspace/.offline_state/v90_gateway_access.jsonl"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ class TestConfirmInvocationCapability:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -31,8 +31,8 @@ class TestConfirmInvocationCapability:
     
     def test_confirm_success(self):
         """测试确认成功"""
-        from capabilities.confirm_invocation import ConfirmInvocation
-        from platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
+        from execution.capabilities.confirm_invocation import ConfirmInvocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
         
         # 记录
         record_id = record_invocation(
@@ -54,8 +54,8 @@ class TestConfirmInvocationCapability:
     
     def test_confirm_failed(self):
         """测试确认失败"""
-        from capabilities.confirm_invocation import ConfirmInvocation
-        from platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
+        from execution.capabilities.confirm_invocation import ConfirmInvocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
         
         record_id = record_invocation(
             capability="MESSAGE_SENDING",
@@ -73,8 +73,8 @@ class TestConfirmInvocationCapability:
     
     def test_confirm_duplicate(self):
         """测试确认重复"""
-        from capabilities.confirm_invocation import ConfirmInvocation
-        from platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
+        from execution.capabilities.confirm_invocation import ConfirmInvocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
         
         record_id = record_invocation(
             capability="MESSAGE_SENDING",
@@ -92,8 +92,8 @@ class TestConfirmInvocationCapability:
     
     def test_get_confirmation_stats(self):
         """测试获取确认统计"""
-        from capabilities.confirm_invocation import ConfirmInvocation
-        from platform_adapter.invocation_ledger import record_invocation
+        from execution.capabilities.confirm_invocation import ConfirmInvocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation
         
         # 记录 uncertain
         record_id = record_invocation(
@@ -117,12 +117,12 @@ class TestConfirmInvocationCapability:
     
     def test_convenience_functions(self):
         """测试便捷函数"""
-        from capabilities.confirm_invocation import (
+        from execution.capabilities.confirm_invocation import (
             confirm_success,
             confirm_failed,
             confirm_duplicate,
         )
-        from platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, get_invocation_by_id
         
         # 测试 confirm_success
         record_id = record_invocation(

@@ -1,0 +1,8 @@
+{
+  "version": "V104.1",
+  "compat_dir": "agent_kernel",
+  "wrappers_expected": 11,
+  "wrappers_written_or_ready": 11,
+  "created_or_refreshed": [],
+  "ready": true
+}

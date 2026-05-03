@@ -1,0 +1,1795 @@
+{
+  "version": "V104.3",
+  "status": "pass",
+  "total_scanned": 255,
+  "offline_safe": 130,
+  "approval_required": 0,
+  "external_api_blocked": 125,
+  "items": [
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/math-edu-assistant/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-pdf/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/best-minds/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-doc-convert/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/fasting-tracker/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/wechat-article-search/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/bdpan-storage/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/claw-art/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/weather/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/autonomous-tasks/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/proactive-tasks/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/k12-smart-teacher/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/trading-quant/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/bytedance-deer-flow-surprise-me/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiao-gui-agent/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/hithink-iwencai/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/kids-book-writer/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-image-translation/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ontology/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/aminer-data-search/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/openclaw-skills-video-script-creator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/wendao-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/nicepkg-ai-workflow-user-research/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/html-ux-guidance/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/anthropics-skills-pptx/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-podcast-gen/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/unit-converter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/affaan-m-everything-claude-code-article-writing/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/amazing129-skills-mbti-for-agents/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/darwin-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/natural-language-planner/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/general-writing/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/shareai-lab-learn-claude-code-pdf/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/agentmcmillan-brain-and-co-plan-ceo-review/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/seedream-image-gen/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/office-automation/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ai-ppt-generator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/pua/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/summarize/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/daily-ai-news-plus/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/imap-smtp-email/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/gtht-smartstockselection-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/creative-thought-partner/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/alphaear-news/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-ppt/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/openclaw-skills-assistant/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/read-arxiv-paper/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/eastmoney-mx-skills-suite/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/yunshu0909-yunshu-skillshub-prd-doc-writer/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/openclaw-skills-agent-builder-1.0.3/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/env-guard/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/browser-control/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/axton-obsidian-visual-skills-excalidraw-diagram/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/excel-analysis/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/lyrical-fable/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-web-deploy/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/percentage-calculator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/seedance-video-gen/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/qq-clawbot-setup/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/metabase-metabase-docs-write/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/remotion-video-toolkit/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-web-search/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/web-content-fetcher/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/text-case-converter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/cron-parser/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/brainhole-factory/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meituan-coupon-traffic-huawei/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/qr-code-info/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/timezone-converter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/hz-proactive-agent/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/calcom-cal.com-web-design-guidelines-1.0.2/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/recipe-to-list/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/canvas-design/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ab-test-setup/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/webapp-testing/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/url-encoder/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/shubhamsaboo-awesome-llm-apps-ux-designer/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ip-lookup/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/text-reverse/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/aiskillstore-marketplace-test-case-generator/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/weixin-clawbot-setup/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/arxiv-search/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/movie-producer-scene/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/react-best-practices/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/lorem-generator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/gtht-realtimemarketdata-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/superdesign/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ppt-generator-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/speech-to-text/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-file-upload/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/slidevjs-slidev-slidev/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/find-skills/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/stock-daily-analysis-pro/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/smart-followups/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/headed-browser-open-v3/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/limtdesign/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/daily-hot-news/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/user-agent-parser/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-xlsx/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/llm-memory-integration/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/flowchart-generator-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/product-manager/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/base64-converter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/skill-creator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/today-task/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/uuid-generator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/multi-search-engine/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/content-workflow/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/tencent-news/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/rkiding-awesome-finance-skills-alphaear-sentiment/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-image-understanding/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/writing-style-iterator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-tts/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/copywriter/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meituan-coupon-get-tool/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ai-picture-book/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/article-writer/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-report/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/number-formatter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/text-counter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/bytesagain-ai-skills-meme-generator/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/gesture-html/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/jrj-quote-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/opengfx/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/pptx-posters/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/openclaw-skills-soulcraft/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/agent_reach/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/good-txt-to-hwreader/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-image-search/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/pdf-toolkit-pro/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/text-trimmer/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/gtht-financialsearch-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ai-drama-prompt-factory/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/news-extractor/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/gtht-ranklist-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/json-validator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/feishu-channel-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/alphaear-predictor/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/openmaic/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/huawei-drive/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/amap-jsapi-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/qcc-agent-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/color-converter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/baoyu-url-to-markdown/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-docx/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/2nd-brain/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/json-formatter/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/yanxue-course-manager/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/fenbi/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/text-diff/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/frontend-ui-ux-engineer/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/mime-type-lookup/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/educational-video-creator/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/prd-writer/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/su-lan-paper-daily-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/Humanizer-zh-main/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ima-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/github-awesome-copilot-prd/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/flyai-travel/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/minimax-music-gen/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/personas/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/self-improving-agent/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/json-minifier/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/marketing-ideas/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/deep-search-and-insight-synthesize/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/fitness-coach/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/jdjr/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/tencent-docs/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/wecom-bot-setup/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/markitdown/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/anthropics-skills-canvas-design/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/davila7-claude-code-templates-ship-learn-next/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/brainstorming/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/weibo-clawbot-setup/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/regex-tester/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/daily-tech-broadcast/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/news-writing/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/nini-writing-inspiration/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/baoyu-comic/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/date-calculator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/tc-chengxin/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/tushare-finance/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/voice-synthesis/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/feiskyer-claude-code-settings-deep-research/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/hash-generator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/trader-simulator/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-cloud-database/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/humanize-chinese/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/didi-ride-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/barcode-info/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/fitness/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/cardiovascular/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/weekly-review/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/diet-logging/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/blood-oxygen/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/healthy-shared/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/weight-management/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/blood-sugar-coach/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/naps/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/running/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/body-temperature/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/sleep-coach/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/nutrition/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/reproductive-health/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/mental-health/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/photo-diet-logging/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-health/health-overview/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/router-skill/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/homevision-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-palm/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-power/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-volume/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-info/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-history/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-weather/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-greeting/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-face/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-familycare/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/lock-skill/lock-cateye/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/get_homes_info/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/operations_manager/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/get_control_records/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/get_device_messages/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/get_devices_info/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/get_device_detail/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/common-skill/control_device/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/default-spec-skill/router-network/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/default-spec-skill/child-control/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/default-spec-skill/family-info/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/xiaoyi-HarmonyOSSmartHome-skill/default-spec-skill/family-brief/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ima-skill/knowledge-base/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/ima-skill/notes/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/scientific-slides/scientific-slides/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/meitu-tools/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-product-view/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-cutout/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-id-photo/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-visual-me/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-video-dance/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-image-adapt/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-product-swap/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-image-fix/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-upscale/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-beauty/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-poster/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-stickers/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/meitu-skills/skills/meitu-carousel/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/dknowc-official-doc-writer/dknowc-official-doc-writer-public-channel/SKILL.md",
+      "category": "external_api_blocked",
+      "offline_allowed": false,
+      "requires_approval": false,
+      "blocked_in_offline": true
+    },
+    {
+      "path": "/home/sandbox/.openclaw/workspace/skills/video-generation-skill/video-generation-skill/SKILL.md",
+      "category": "offline_safe",
+      "offline_allowed": true,
+      "requires_approval": false,
+      "blocked_in_offline": false
+    }
+  ]
+}

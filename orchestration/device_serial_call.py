@@ -107,7 +107,7 @@ async def serial_call_device_tool(
     def executor(a: DeviceAction) -> Dict[str, Any]:
         try:
             # 导入底层适配器（仅在此处允许）
-            from platform_adapter.device_tool_adapter import call_device_tool
+            from infrastructure.platform_adapter.device_tool_adapter import call_device_tool
             
             # 调用端侧工具
             result = call_device_tool(tool_type, action, a.payload)

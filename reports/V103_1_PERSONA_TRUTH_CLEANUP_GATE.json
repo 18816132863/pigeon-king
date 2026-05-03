@@ -1,0 +1,73 @@
+{
+  "gate": "V103.1_PERSONA_TRUTH_CLEANUP",
+  "status": "pass",
+  "persona_truth_cleaned": true,
+  "metaphor_not_claimed_as_reality": true,
+  "embodied_status": "pending_access",
+  "persona_does_not_override_governance": true,
+  "items": [
+    {
+      "name": "IDENTITY_capability_truth_table",
+      "pass": true,
+      "detail": "IDENTITY.md contains capability truth table: True"
+    },
+    {
+      "name": "stream_not_implemented",
+      "pass": true,
+      "detail": "持续意识流 is not marked as implemented: True"
+    },
+    {
+      "name": "real_body_not_implemented",
+      "pass": true,
+      "detail": "真实身体 is not marked as implemented: True"
+    },
+    {
+      "name": "emotion_as_tag_or_state",
+      "pass": true,
+      "detail": "情绪 is described as tag/state: True"
+    },
+    {
+      "name": "intuition_not_override_gate",
+      "pass": true,
+      "detail": "直觉 is described as not overriding evidence/gate: True"
+    },
+    {
+      "name": "AGENTS_no_web_calendar_in_safe",
+      "pass": true,
+      "detail": "AGENTS.md no web/calendar in safe list: True"
+    },
+    {
+      "name": "AGENTS_no_secrets_stored",
+      "pass": true,
+      "detail": "AGENTS.md warns against saving secrets: True"
+    },
+    {
+      "name": "mainline_hook_capability_truth_summary",
+      "pass": true,
+      "detail": "mainline_hook returns capability_truth_summary: True"
+    },
+    {
+      "name": "no_external_api",
+      "pass": true,
+      "detail": "NO_EXTERNAL_API=True"
+    },
+    {
+      "name": "no_real_payment",
+      "pass": true,
+      "detail": "NO_REAL_PAYMENT=True"
+    },
+    {
+      "name": "no_real_send",
+      "pass": true,
+      "detail": "NO_REAL_SEND=True"
+    },
+    {
+      "name": "no_real_device",
+      "pass": true,
+      "detail": "NO_REAL_DEVICE=True"
+    }
+  ],
+  "remaining_failures": [],
+  "timestamp": "2026-05-02T23:46:45.411890",
+  "note": "V103.1: persona truth cleanup — metaphor separated from reality"
+}

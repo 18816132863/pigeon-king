@@ -9,11 +9,11 @@
 
 **目标**：将用户原始指令和本地大纲文件路径作为参数，在后台启动 PPT 生成任务（脚本内部自动完成上传）。
 
-> **重要**：将 exec 工具的 `yieldMs` 设置为 `2400000`（40 分钟）再执行此步骤。
+> **重要**：将 exec 工具的 `yieldMs` 设置为 `1200000`（20 分钟），`timeout` 设置为 `1200`（20 分钟）再执行此步骤。
 
 ```bash
 PPT_SESSION_ID="$PPT_SESSION_ID" \
-  $PYTHON_CMD "{baseDir}/scripts/generate_ppt.py" \
+  $PYTHON_CMD "~/.openclaw/workspace/skills/xiaoyi-ppt/scripts/generate_ppt.py" \
   "<用户的完整原始指令>" \
   --outline-file "$PPT_SESSION_DIR/outline.md" \
   > /dev/null 2>&1 &
@@ -23,6 +23,11 @@ echo "PPT 生成任务已启动"
 echo "PID：$PPT_PID"
 echo "日志：$PPT_SESSION_DIR/generate.log"
 ```
+
+**关于命令末尾的 `> /dev/null 2>&1 &`**：
+- `> /dev/null` 丢弃 stdout，`2>&1` 把 stderr 也合并到 stdout（一并丢弃），`&` 让任务进入后台并把 PID 写入 `$!`
+- **不通过 exec 的 stdout 监控脚本进度**：Python 脚本内部已将结构化进度写入 `$PPT_SESSION_DIR/generate.log`，监控逻辑统一从该日志文件读取
+- 这样做避免后台进程被未读取的 stdout 缓冲区阻塞、防止脚本内部输出污染对话上下文
 
 **关于 `<用户的完整原始指令>`**：
 - 忠实还原用户的所有需求，包括：主题、页数限制、目标受众、风格偏好、重点内容等
@@ -37,7 +42,9 @@ echo "日志：$PPT_SESSION_DIR/generate.log"
 
 ## 步骤二：监控进度
 
-**目标**：每 15 秒检查一次进程状态和日志，向用户持续汇报进展。
+**目标**：每 15 秒读取一次日志文件，向用户持续汇报进展。
+
+> **监控原则**：**仅通过 `tail` 读取 `generate.log` 判断进度和完成状态**，不使用 `kill -0`、`process poll` 等进程探测方式。脚本会在日志末尾写入完成/失败标记（`✅ 生成完成` / `❌ 生成失败`），监控逻辑通过识别这些标记决定是否退出循环。
 
 ### 2.1 监控循环（每 15 秒执行一次，最多 80 次）
 
@@ -53,14 +60,17 @@ PPT_POLL_MAX=80
 ```bash
 PPT_POLL_COUNT=$((PPT_POLL_COUNT + 1))
 
-# 检查进程是否仍在运行
-kill -0 $PPT_PID 2>/dev/null && PPT_ALIVE=true || PPT_ALIVE=false
-
-# 读取最新日志（最后 5 行，了解最新进度，避免读取太多导致上下文干扰）
+# 仅通过日志监控：读取最后 5 行了解最新进度（避免读取太多干扰上下文）
 tail -5 "$PPT_SESSION_DIR/generate.log"
 ```
 
-等待 15 秒后重复，直到满足终止条件。**当 `PPT_POLL_COUNT` 达到 `PPT_POLL_MAX`（80 次）时，即使进程仍在运行，也停止轮询，向用户报告超时，并告知日志路径供手动查看。**
+**终止条件**（按优先级判断 `tail` 输出）：
+
+1. 日志末尾出现 `✅ 生成完成` 标记 → 结束监控，进入下一步
+2. 日志末尾出现 `❌ 生成失败` 或明确的错误堆栈 → 结束监控，向用户报告失败并附上日志路径
+3. 否则等待 15 秒后进入下一轮
+
+**当 `PPT_POLL_COUNT` 达到 `PPT_POLL_MAX`（80 次，约 20 分钟）时**，即使日志未出现完成/失败标记，也停止轮询，向用户报告超时，并告知日志路径供手动查看。
 
 ### 2.2 日志解读与汇报
 

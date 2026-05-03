@@ -133,7 +133,7 @@ def failure_compensation_bundle(
     # 4. 失败通知
     if notify_on_failure and final_status != "success":
         try:
-            from capabilities.send_notification import send_notification
+            from execution.capabilities.send_notification import send_notification
             send_notification(
                 title="故障补偿通知",
                 content=f"主动作失败，已执行 {'fallback' if fallback_success else '补偿'} 动作"

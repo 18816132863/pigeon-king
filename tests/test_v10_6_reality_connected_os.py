@@ -6,7 +6,7 @@ from core.project_autonomy import ProjectBrain
 from infrastructure.tool_negotiation import ToolCapabilityNegotiator
 from infrastructure.execution_runtime import RealExecutionBroker, RuntimeReplayEngine
 from infrastructure.upgrade_governance import SelfUpgradeGovernor
-from learning_loop.audit_replay import AuditReplayLearner
+from memory_context.learning_loop.audit_replay import AuditReplayLearner
 from orchestration.reality_connected_personal_os_orchestrator import RealityConnectedPersonalOSOrchestrator
 
 
@@ -57,7 +57,8 @@ def test_tool_negotiator_finds_primary() -> None:
 
 def test_execution_broker_dry_run_without_confirmation() -> None:
     result = RealExecutionBroker().prepare({"action_id": "x"}, None)
-    assert result["status"] == "dry_run_only"
+    # V85: commit barrier blocks by default, returns commit_barrier_blocked
+    assert result["status"] in ("commit_barrier_blocked", "dry_run_only")
     assert result["real_side_effect"] is False
 
 

@@ -1,0 +1,39 @@
+{
+  "module": "doc_fusion_V105.3",
+  "version": "V105.3",
+  "trigger": "new_module",
+  "description": "新增 core/skill_rules_engine.py — 技能新增自动注册、触发词生成、条件定义",
+  "status": "pass",
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T13:31:06.417420+00:00",
+  "v2_analysis": {
+    "analyzed_modules": [
+      {
+        "path": "core/skill_rules_engine.py",
+        "suggested_layer": "L6",
+        "functions": 19,
+        "classes": 0
+      },
+      {
+        "path": "core/skill_trigger_registry.py",
+        "suggested_layer": "L6",
+        "functions": 7,
+        "classes": 0
+      },
+      {
+        "path": "governance/skill_trigger_registry.json",
+        "suggested_layer": "",
+        "functions": 0,
+        "classes": 0,
+        "note": "非 .py 文件或不存在，跳过 AST 分析"
+      },
+      {
+        "path": "scripts/build_skill_trigger_registry.py",
+        "suggested_layer": "L1",
+        "functions": 5,
+        "classes": 0
+      }
+    ]
+  }
+}

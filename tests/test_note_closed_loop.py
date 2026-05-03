@@ -5,7 +5,7 @@ import pytest
 
 def test_query_note():
     """测试查询备忘录"""
-    from capabilities.query_note import query_note
+    from execution.capabilities.query_note import query_note
     
     result = query_note()
     assert result["success"] == True
@@ -14,7 +14,7 @@ def test_query_note():
 
 def test_search_notes():
     """测试搜索备忘录"""
-    from capabilities.search_notes import search_notes
+    from execution.capabilities.search_notes import search_notes
     
     result = search_notes(keyword="测试")
     assert result["success"] == True
@@ -24,7 +24,7 @@ def test_search_notes():
 
 def test_list_recent_notes():
     """测试列出最近备忘录"""
-    from capabilities.list_recent_notes import list_recent_notes
+    from execution.capabilities.list_recent_notes import list_recent_notes
     
     result = list_recent_notes(limit=10)
     assert result["success"] == True
@@ -34,7 +34,7 @@ def test_list_recent_notes():
 
 def test_update_note_dry_run():
     """测试更新备忘录（dry_run）"""
-    from capabilities.update_note import update_note
+    from execution.capabilities.update_note import update_note
     
     result = update_note(
         note_id="test_note",
@@ -47,7 +47,7 @@ def test_update_note_dry_run():
 
 def test_delete_note_dry_run():
     """测试删除备忘录（dry_run）"""
-    from capabilities.delete_note import delete_note
+    from execution.capabilities.delete_note import delete_note
     
     result = delete_note(
         note_id="test_note",

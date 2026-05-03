@@ -1,7 +1,7 @@
 """测试降级策略"""
 import pytest
-from platform_adapter.null_adapter import NullAdapter
-from platform_adapter.base import PlatformCapability
+from infrastructure.platform_adapter.null_adapter import NullAdapter
+from infrastructure.platform_adapter.base import PlatformCapability
 
 
 @pytest.mark.asyncio

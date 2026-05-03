@@ -23,7 +23,7 @@ sys.path.insert(0, str(project_root))
 
 from infrastructure.task_manager import get_task_manager
 from infrastructure.storage.repositories.sqlite_repo import SQLiteTaskRepository
-from domain.tasks import TaskStatus
+from core.domain.tasks.specs import TaskStatus
 
 
 async def main():

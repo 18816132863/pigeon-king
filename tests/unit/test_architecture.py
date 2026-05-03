@@ -12,7 +12,10 @@ class TestArchitecture:
         """测试核心文件存在"""
         core_files = [
             "MEMORY.md",
-            "ARCHITECTURE_UPGRADE_V9.md",
+            "SOUL.md",
+            "USER.md",
+            "IDENTITY.md",
+            "docs/ARCHITECTURE_V10.md",
         ]
         for f in core_files:
             assert Path(f).exists(), f"核心文件缺失: {f}"

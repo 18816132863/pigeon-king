@@ -171,7 +171,7 @@ class RouteRegistryChecker:
                     sys.path.insert(0, str(workspace_root))
                 
                 try:
-                    from device_capability_bus.executor import CapabilityExecutor
+                    from infrastructure.device_capability_bus.executor import CapabilityExecutor
                 except ImportError as e:
                     self.errors.append(
                         f"路由 {route_id} resolved_by 模块不可导入: device_capability_bus.executor ({e})"

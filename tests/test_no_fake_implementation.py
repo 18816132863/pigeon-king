@@ -14,7 +14,7 @@ sys.path.insert(0, str(project_root))
 
 def test_send_message_not_hardcoded():
     """测试 send_message 不是硬编码返回"""
-    from capabilities.send_message import SendMessageCapability
+    from execution.capabilities.send_message import SendMessageCapability
     
     cap = SendMessageCapability()
     source = inspect.getsource(cap.execute)
@@ -25,7 +25,7 @@ def test_send_message_not_hardcoded():
 
 def test_schedule_task_not_hardcoded():
     """测试 schedule_task 不是硬编码返回"""
-    from capabilities.schedule_task import ScheduleTaskCapability
+    from execution.capabilities.schedule_task import ScheduleTaskCapability
     
     cap = ScheduleTaskCapability()
     source = inspect.getsource(cap.execute)
@@ -36,7 +36,7 @@ def test_schedule_task_not_hardcoded():
 
 def test_export_history_reads_database():
     """测试 export_history 读取数据库"""
-    from capabilities.export_history import ExportHistoryCapability
+    from execution.capabilities.export_history import ExportHistoryCapability
     
     cap = ExportHistoryCapability()
     source = inspect.getsource(cap.execute)
@@ -47,7 +47,7 @@ def test_export_history_reads_database():
 
 def test_replay_run_reads_database():
     """测试 replay_run 读取数据库"""
-    from capabilities.replay_run import ReplayRunCapability
+    from execution.capabilities.replay_run import ReplayRunCapability
     
     cap = ReplayRunCapability()
     source = inspect.getsource(cap.execute)
@@ -58,7 +58,7 @@ def test_replay_run_reads_database():
 
 def test_diagnostics_calls_real_check():
     """测试 diagnostics 调用真实检查"""
-    from capabilities.diagnostics import DiagnosticsCapability
+    from execution.capabilities.diagnostics import DiagnosticsCapability
     
     cap = DiagnosticsCapability()
     source = inspect.getsource(cap.execute)
@@ -69,7 +69,7 @@ def test_diagnostics_calls_real_check():
 
 def test_self_repair_checks_database():
     """测试 self_repair 检查数据库"""
-    from capabilities.self_repair import SelfRepairCapability
+    from execution.capabilities.self_repair import SelfRepairCapability
     
     cap = SelfRepairCapability()
     source = inspect.getsource(cap.execute)
@@ -81,7 +81,7 @@ def test_self_repair_checks_database():
 @pytest.mark.asyncio
 async def test_schedule_task_returns_real_task_id():
     """测试 schedule_task 返回真实 task_id"""
-    from capabilities.schedule_task import ScheduleTaskCapability
+    from execution.capabilities.schedule_task import ScheduleTaskCapability
     from infrastructure.storage.repositories.sqlite_repo import SQLiteTaskRepository
     
     cap = ScheduleTaskCapability()
@@ -109,7 +109,7 @@ async def test_schedule_task_returns_real_task_id():
 @pytest.mark.asyncio
 async def test_export_history_not_empty_result():
     """测试 export_history 返回非空结果"""
-    from capabilities.export_history import ExportHistoryCapability
+    from execution.capabilities.export_history import ExportHistoryCapability
     from infrastructure.task_manager import get_task_manager
     from datetime import datetime
     import uuid

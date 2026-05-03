@@ -1,0 +1,289 @@
+{
+  "version": "V2.0",
+  "timestamp": "2026-05-02 00:16:15",
+  "total_candidates": 54,
+  "fused": 53,
+  "already_fused": 1,
+  "failed": 0,
+  "errors": [],
+  "layer_distribution": {
+    "L6": 30,
+    "L5": 17,
+    "L3": 1,
+    "L2": 4,
+    "L4": 1,
+    "L1": 1
+  },
+  "details": [
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/build_ops_dashboard.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/build_ops_dashboard.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/check_connected_permissions.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/check_connected_permissions.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/check_repo_integrity.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/check_repo_integrity.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/check_repo_integrity_fast.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/check_repo_integrity_fast.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/check_route_registry.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/check_route_registry.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/check_route_wiring.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/check_route_wiring.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/connected_route_smoke.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/connected_route.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/control_plane.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/control_plane.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/control_plane_audit.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/control_plane_audit.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/create_complete_docs.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/create_complete_docs.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/create_professional_docs.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/create_professional_docs.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/dual_channel_pusher.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/dual_channel_pusher.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/e2e_route_scenarios.py",
+      "status": "fused",
+      "module_path": "orchestration/fused_modules/e2e_route_scenarios.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/full_backup.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/full_backup.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/generate_charts.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/generate_charts.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/generate_metrics.py",
+      "status": "fused",
+      "module_path": "memory_context/fused_modules/generate_metrics.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/health_watch.py",
+      "status": "already_fused",
+      "module_path": "infrastructure/fused_modules/health_watch.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/heartbeat_executor.py",
+      "status": "fused",
+      "module_path": "execution/fused_modules/heartbeat_executor.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/invocation_audit_cli.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/invocation_audit_cli.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/probe_connected_runtime.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/probe_connected_runtime.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/quick_start.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/quick_start.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/run_daily_growth_check.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/run_daily_growth_check.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/run_daily_growth_loop.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/run_daily_growth_loop.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/run_nightly_audit.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/run_nightly_audit.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/run_release_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/run_release.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/session_end_detector.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/session_end_detector.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/smart_compressor.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/smart_compressor.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/sync_skill_registry.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/sync_skill_registry.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/system_integrity_check.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/system_integrity_check.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/task_daemon.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/task_daemon.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/unified_inspector.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/unified_inspector.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/unified_inspector_v10.py",
+      "status": "fused",
+      "module_path": "core/fused_modules/unified_inspector_v10.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/unified_inspector_v11.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/unified_inspector_v11.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v100_packaging_integrity_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/packaging_integrity.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v75_6_plugin_install_check.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/6_plugin_install_check.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v75_6_plugin_reality_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/6_plugin_reality.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v92_2_self_improvement_goal_hotfix_apply.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/2_self_improvement_goal_hotfix_apply.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v92_3_self_improvement_signature_cleanup_apply.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/3_self_improvement_signature_cleanup_apply.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v92_4_final_import_and_subprocess_fix_gate.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/4_final_import_and_subprocess_fix.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v92_apply_offline_repair.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/apply_offline_repair.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v92_contract_hotfix_apply.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/contract_hotfix_apply.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v92_full_static_audit_and_repair_gate.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/full_static_audit_and_repair.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v93_apply_unused_and_incomplete_repair.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/apply_unused_and_incomplete_repair.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v94_mainline_trigger_gate.py",
+      "status": "fused",
+      "module_path": "memory_context/fused_modules/mainline_trigger.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v95_2_all_chain_coverage_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/2_all_chain_coverage.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v95_task_chain_closure_gate.py",
+      "status": "fused",
+      "module_path": "memory_context/fused_modules/task_chain_closure.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v96_failure_recovery_and_stability_gate.py",
+      "status": "fused",
+      "module_path": "memory_context/fused_modules/failure_recovery_and_stability.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v97_long_run_stability_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/long_run_stability.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v98_1_mainline_hook_runtime_gate.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/1_mainline_hook_runtime.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v98_apply_identity_context_stability.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/apply_identity_context_stability.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v98_identity_context_stability_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/identity_context_stability.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v99_1_ops_dashboard_generator.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/1_ops_dashboard_generator.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v99_directory_fusion_and_cleanup_gate.py",
+      "status": "fused",
+      "module_path": "governance/fused_modules/directory_fusion_and_cleanup.py"
+    },
+    {
+      "script": "/home/sandbox/.openclaw/workspace/scripts/v99_mainline_trigger_gate.py",
+      "status": "fused",
+      "module_path": "infrastructure/fused_modules/mainline_trigger.py"
+    }
+  ]
+}

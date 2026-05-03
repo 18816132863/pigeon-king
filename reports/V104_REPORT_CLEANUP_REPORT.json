@@ -1,0 +1,25 @@
+{
+  "version": "V104.0",
+  "generated_at": "2026-05-02 23:49:27",
+  "current_reports": [
+    "V100_FINAL_PENDING_ACCESS_RELEASE_GATE.json",
+    "V100_PACKAGING_INTEGRITY_GATE.json",
+    "V102_PERSONA_CONTINUITY_GATE.json",
+    "V103_1_PERSONA_TRUTH_CLEANUP_GATE.json",
+    "V103_CONTEXT_RELOAD_PERSONA_CONSISTENCY_GATE.json",
+    "V104_SKILL_EXTERNAL_POLICY_REPORT.json",
+    "V95_2_ALL_CHAIN_COVERAGE_GATE.json",
+    "V95_2_ALL_CHAIN_LEDGER.json",
+    "V95_2_DEFERRED_MODULES.json",
+    "V95_2_MODULE_COVERAGE_MATRIX.json",
+    "V96_FAILURE_INJECTION_LEDGER.json",
+    "V96_FAILURE_RECOVERY_AND_STABILITY_GATE.json",
+    "V98_1_MAINLINE_HOOK_RUNTIME_GATE.json"
+  ],
+  "vintage_moved": [
+    "V92_2_SELF_IMPROVEMENT_GOAL_HOTFIX_GATE.json",
+    "V92_CONTRACT_HOTFIX_GATE.json",
+    "V99_MAINLINE_TRIGGER_GATE.json"
+  ],
+  "final_status_source": "reports/current + V104 gate"
+}

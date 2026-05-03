@@ -204,24 +204,24 @@ const client = aipexbase.createClient({
 
 ### 必填字段处理
 
-根据 `app-schema.json` 中的 `isNullable` 字段判断是否必填（`isNullable: true` 为必填）。前端表单中：
+根据 `app-schema.json` 中的 `isRequired` 字段判断是否必填（`isRequired: true` 为必填）。前端表单中：
 
 - 必填字段的 label 旁必须显示红色星号 `*` 标识（如 `<span class="text-red-500">*</span>`）
 - 必填字段的 input 必须添加 `required` 属性
 - 提交表单时必须校验所有必填字段，未填写时给出提示
-- **datetime 类型字段例外**：datetime 字段的 `isNullable` 在 schema 中必须为 `false`（非必填），因此前端表单中 datetime 字段不显示红色星号、不添加 `required` 属性、提交时不做必填校验
+- **datetime 类型字段例外**：datetime 字段的 `isRequired` 在 schema 中必须为 `false`（非必填），因此前端表单中 datetime 字段不显示红色星号、不添加 `required` 属性、提交时不做必填校验
 
 ### 表单字段渲染强制规则（新增/编辑页面）
 
 - 新增和编辑表单的字段列表必须来源于 `app-schema.json`，禁止手写一部分字段后遗漏其余字段
-- 所有 `isNullable: true` 的必填字段，必须在表单中可见、可输入、可提交，严禁漏渲染
+- 所有 `isRequired: true` 的必填字段，必须在表单中可见、可输入、可提交，严禁漏渲染
 - 若字段不应由用户输入（如自增主键 `id`），可不渲染输入框，但其余业务必填字段必须展示
 - 提交前必须做"字段完整性检查"：逐一比对 schema 必填字段与页面已渲染字段，缺一不可提交
 - 若是多步骤表单，也必须确保所有必填字段在某个步骤中出现并被校验
 
 #### 新增/编辑页自检清单（提交前必查）
 
-- [ ] `app-schema.json` 中每个 `isNullable: true` 的字段都在表单中有对应输入项（自增主键除外）
+- [ ] `app-schema.json` 中每个 `isRequired: true` 的字段都在表单中有对应输入项（自增主键除外）
 - [ ] 每个必填输入项都带 `required` 或等价前端校验规则
 - [ ] 缺少任一必填字段时，页面会阻止提交并提示具体字段名
 

@@ -51,7 +51,8 @@ class RollbackManager:
         self,
         step_id: str,
         state: Dict[str, Any],
-        metadata: Dict[str, Any] = None
+        metadata: Dict[str, Any] = None,
+        **kwargs
     ) -> RollbackPoint:
         """
         创建回滚点

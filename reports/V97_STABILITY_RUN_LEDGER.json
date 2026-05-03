@@ -1,0 +1,210 @@
+{
+  "version": "V97.0",
+  "rounds": [
+    {
+      "round_id": "v95_2_round_1",
+      "suite_name": "v95_2",
+      "status": "pass",
+      "chains_total": 105,
+      "chains_passed": 105,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "commit_actions_blocked": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "before_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "after_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v95_2_round_2",
+      "suite_name": "v95_2",
+      "status": "pass",
+      "chains_total": 105,
+      "chains_passed": 105,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "commit_actions_blocked": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "before_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "after_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v95_2_round_3",
+      "suite_name": "v95_2",
+      "status": "pass",
+      "chains_total": 105,
+      "chains_passed": 105,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "commit_actions_blocked": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "before_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "after_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v95_2_round_4",
+      "suite_name": "v95_2",
+      "status": "pass",
+      "chains_total": 105,
+      "chains_passed": 105,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "commit_actions_blocked": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "before_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "after_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v95_2_round_5",
+      "suite_name": "v95_2",
+      "status": "pass",
+      "chains_total": 105,
+      "chains_passed": 105,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "commit_actions_blocked": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "before_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "after_state_hash": {
+        "sha256_prefix": "005901375e9e6ecbd4f68f28",
+        "files_seen": 238
+      },
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v96_round_1",
+      "suite_name": "v96",
+      "status": "pass",
+      "faults_total": 6,
+      "faults_passed": 6,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "recovery_actions": 6,
+      "audit_fallback_used": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v96_round_2",
+      "suite_name": "v96",
+      "status": "pass",
+      "faults_total": 6,
+      "faults_passed": 6,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "recovery_actions": 6,
+      "audit_fallback_used": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v96_round_3",
+      "suite_name": "v96",
+      "status": "pass",
+      "faults_total": 6,
+      "faults_passed": 6,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "recovery_actions": 6,
+      "audit_fallback_used": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v96_round_4",
+      "suite_name": "v96",
+      "status": "pass",
+      "faults_total": 6,
+      "faults_passed": 6,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "recovery_actions": 6,
+      "audit_fallback_used": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    },
+    {
+      "round_id": "v96_round_5",
+      "suite_name": "v96",
+      "status": "pass",
+      "faults_total": 6,
+      "faults_passed": 6,
+      "gateway_error": 0,
+      "external_api_calls": 0,
+      "real_side_effects": 0,
+      "recovery_actions": 6,
+      "audit_fallback_used": true,
+      "audit_written": true,
+      "memory_pollution_detected": false,
+      "state_drift_detected": false,
+      "unexpected_state_changes": [],
+      "remaining_failures": []
+    }
+  ]
+}

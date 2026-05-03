@@ -1,0 +1,166 @@
+{
+  "ledger_entries": 50,
+  "recent_events": [
+    {
+      "timestamp": "2026-05-03T14:37:28.991763+00:00",
+      "component": "CURRENT_RELEASE_INDEX",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:37:28.991790+00:00",
+      "component": "skill_policy_gate",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:37:28.991833+00:00",
+      "component": "NO_EXTERNAL_API/NO_REAL_*",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:37:28.993126+00:00",
+      "component": "skill:weather",
+      "action": "load_metadata",
+      "status": "loaded",
+      "duration_ms": 1.2,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:37:28.994324+00:00",
+      "component": "skill:weather",
+      "action": "load_metadata",
+      "status": "loaded",
+      "duration_ms": 0.98,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:37:28.994445+00:00",
+      "component": "skill:weather",
+      "action": "load_full_skill",
+      "status": "loaded",
+      "duration_ms": 1.18,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.576682+00:00",
+      "component": "V90/V92/V100 commit_barrier",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.576803+00:00",
+      "component": "offline_runtime_guard",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.576863+00:00",
+      "component": "mainline_hook",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.576912+00:00",
+      "component": "AGENTS.md",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.576969+00:00",
+      "component": "IDENTITY.md",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.577024+00:00",
+      "component": "MEMORY.md",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.577081+00:00",
+      "component": "context_capsule",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.577134+00:00",
+      "component": "session_handoff",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.577196+00:00",
+      "component": "CURRENT_RELEASE_INDEX",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.577239+00:00",
+      "component": "skill_policy_gate",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.577287+00:00",
+      "component": "NO_EXTERNAL_API/NO_REAL_*",
+      "action": "preload_p0",
+      "status": "loaded",
+      "duration_ms": 0.0,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.579328+00:00",
+      "component": "skill:weather",
+      "action": "load_metadata",
+      "status": "loaded",
+      "duration_ms": 1.9,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.581908+00:00",
+      "component": "skill:weather",
+      "action": "load_metadata",
+      "status": "loaded",
+      "duration_ms": 2.29,
+      "detail": ""
+    },
+    {
+      "timestamp": "2026-05-03T14:38:01.582083+00:00",
+      "component": "skill:weather",
+      "action": "load_full_skill",
+      "status": "loaded",
+      "duration_ms": 2.57,
+      "detail": ""
+    }
+  ],
+  "timestamp": "2026-05-03T14:38:01.605951+00:00"
+}

@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from skill_asset_registry import SkillScanner, SkillRegistry
+from core.skill_asset_registry import SkillScanner, SkillRegistry
 
 
 def test_skill_scanner_finds_skills():

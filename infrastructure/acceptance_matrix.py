@@ -6,10 +6,10 @@ from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
 
 from governance.policy.execution_autopilot import plan_runtime_action
-from platform_adapter.runtime_state_store import register_action, enqueue_action, summarize_runtime
-from platform_adapter.delivery_outbox import lease_next, mark_failed, outbox_summary
-from platform_adapter.result_verifier import build_result_contract, verify_action_result
-from platform_adapter.recovery_manager import recover_stale_actions
+from infrastructure.platform_adapter.runtime_state_store import register_action, enqueue_action, summarize_runtime
+from infrastructure.platform_adapter.delivery_outbox import lease_next, mark_failed, outbox_summary
+from infrastructure.platform_adapter.result_verifier import build_result_contract, verify_action_result
+from infrastructure.platform_adapter.recovery_manager import recover_stale_actions
 
 
 @dataclass
@@ -50,7 +50,7 @@ def _scenario_result_contract(db_path: Optional[Path]) -> ScenarioResult:
 def _scenario_recovery(db_path: Optional[Path]) -> ScenarioResult:
     action = register_action(capability="search", op_name="stale_lookup", payload={"q": "recover"}, risk_level="L1", db_path=db_path)
     # Make it look stale in a deterministic way.
-    from platform_adapter.runtime_state_store import connect
+    from infrastructure.platform_adapter.runtime_state_store import connect
     with connect(db_path) as conn:
         conn.execute("UPDATE runtime_actions SET state='running', updated_at_ms=1 WHERE action_id=?", (action.action_id,))
     report = recover_stale_actions(stale_after_ms=1_000, db_path=db_path).to_dict()

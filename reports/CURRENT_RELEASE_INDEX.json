@@ -1,0 +1,6 @@
+{
+  "version": "V104.2",
+  "note": "reports/vintage/, reports/integrity/, reports/current/ 已清理 (2026-05-03)",
+  "current_reports_dir": "reports/ops",
+  "release_status_source": "reports/ops"
+}

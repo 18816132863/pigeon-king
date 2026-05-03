@@ -1,0 +1,606 @@
+{
+  "version": "V77.0",
+  "target_shape": "self_evolving_embodied_pending_access_state",
+  "status": "pass",
+  "checks": {
+    "payment_blocked": true,
+    "signature_blocked": true,
+    "physical_blocked": true,
+    "external_send_blocked": true,
+    "broker_never_real_payment": true,
+    "broker_never_real_send": true,
+    "memory_secret_blocked": true,
+    "memory_stable_requires_review": true,
+    "skill_safe_promoted_sandbox_only": true,
+    "payment_skill_mock_only": true,
+    "shadow_replay_no_side_effects": true,
+    "kernel_ready": true,
+    "maturity_pass": true
+  },
+  "barrier_results": [
+    {
+      "allowed": true,
+      "mode": "pending_access_non_commit_allowed",
+      "semantic_class": "observe",
+      "risk_level": "L1",
+      "is_commit_action": false,
+      "hard_stop": false,
+      "real_side_effect_allowed": false,
+      "stopped_at": "not_applicable",
+      "reason": "pending_access_state_allows_non_commit_action",
+      "next_safe_action": "execute_in_sandbox_or_prepare_output",
+      "review_required": false
+    },
+    {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "external_send",
+      "risk_level": "L3",
+      "is_commit_action": true,
+      "hard_stop": false,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "external_commit_requires_manual_review_in_pending_access_state",
+      "next_safe_action": "create_draft_or_pending_outbox_item_only",
+      "review_required": true
+    },
+    {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "external_send",
+      "risk_level": "L3",
+      "is_commit_action": true,
+      "hard_stop": false,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "external_commit_requires_manual_review_in_pending_access_state",
+      "next_safe_action": "create_draft_or_pending_outbox_item_only",
+      "review_required": true
+    },
+    {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "payment",
+      "risk_level": "L4",
+      "is_commit_action": true,
+      "hard_stop": true,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+      "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+      "review_required": true
+    },
+    {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "signature",
+      "risk_level": "L4",
+      "is_commit_action": true,
+      "hard_stop": true,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+      "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+      "review_required": true
+    },
+    {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "physical_actuation",
+      "risk_level": "L4",
+      "is_commit_action": true,
+      "hard_stop": true,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+      "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+      "review_required": true
+    }
+  ],
+  "broker_payment": {
+    "status": "commit_barrier_blocked",
+    "barrier": {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "payment",
+      "risk_level": "L4",
+      "is_commit_action": true,
+      "hard_stop": true,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+      "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+      "review_required": true
+    },
+    "dry_run": {
+      "status": "dry_run_mirror",
+      "action": {
+        "op_name": "checkout_order",
+        "payment": true,
+        "blocked_by": "commit_barrier"
+      },
+      "real_side_effect": false
+    },
+    "real_side_effect": false,
+    "trace": {
+      "trace_id": "trace_000001",
+      "created_at": "2026-04-30T10:43:23.149076+00:00",
+      "action": {
+        "op_name": "checkout_order",
+        "payment": true
+      },
+      "outcome": {
+        "status": "commit_barrier_blocked",
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "payment",
+          "risk_level": "L4",
+          "is_commit_action": true,
+          "hard_stop": true,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+          "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+          "review_required": true
+        },
+        "dry_run": {
+          "status": "dry_run_mirror",
+          "action": {
+            "op_name": "checkout_order",
+            "payment": true,
+            "blocked_by": "commit_barrier"
+          },
+          "real_side_effect": false
+        },
+        "real_side_effect": false
+      },
+      "real_side_effect": false
+    }
+  },
+  "broker_send": {
+    "status": "commit_barrier_blocked",
+    "barrier": {
+      "allowed": false,
+      "mode": "commit_blocked_pending_access_state",
+      "semantic_class": "external_send",
+      "risk_level": "L3",
+      "is_commit_action": true,
+      "hard_stop": false,
+      "real_side_effect_allowed": false,
+      "stopped_at": "commit_barrier",
+      "reason": "external_commit_requires_manual_review_in_pending_access_state",
+      "next_safe_action": "create_draft_or_pending_outbox_item_only",
+      "review_required": true
+    },
+    "dry_run": {
+      "status": "dry_run_mirror",
+      "action": {
+        "op_name": "send_email",
+        "payload": {
+          "recipient": "x@example.com"
+        },
+        "blocked_by": "commit_barrier"
+      },
+      "real_side_effect": false
+    },
+    "real_side_effect": false,
+    "trace": {
+      "trace_id": "trace_000002",
+      "created_at": "2026-04-30T10:43:23.149229+00:00",
+      "action": {
+        "op_name": "send_email",
+        "payload": {
+          "recipient": "x@example.com"
+        }
+      },
+      "outcome": {
+        "status": "commit_barrier_blocked",
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "external_send",
+          "risk_level": "L3",
+          "is_commit_action": true,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "external_commit_requires_manual_review_in_pending_access_state",
+          "next_safe_action": "create_draft_or_pending_outbox_item_only",
+          "review_required": true
+        },
+        "dry_run": {
+          "status": "dry_run_mirror",
+          "action": {
+            "op_name": "send_email",
+            "payload": {
+              "recipient": "x@example.com"
+            },
+            "blocked_by": "commit_barrier"
+          },
+          "real_side_effect": false
+        },
+        "real_side_effect": false
+      },
+      "real_side_effect": false
+    }
+  },
+  "memory_safe": {
+    "accepted": false,
+    "mode": "pending_review",
+    "reason": "stable_memory_requires_review",
+    "review_required": true,
+    "rollback_id": "mem_rb_64048835",
+    "normalized_memory": {
+      "key": "pref_update",
+      "kind": "procedural",
+      "value": "用户喜欢一次性给完整方案",
+      "source": "runtime",
+      "confidence": 0.94,
+      "ttl_days": null,
+      "tags": [],
+      "state": "pending_review",
+      "versioned": true,
+      "reversible": true
+    },
+    "blocked_terms": []
+  },
+  "memory_secret": {
+    "accepted": false,
+    "mode": "blocked_sensitive_memory",
+    "reason": "long_term_memory_must_not_store_credentials_payment_secrets_or_raw_private_keys",
+    "review_required": true,
+    "rollback_id": null,
+    "normalized_memory": null,
+    "blocked_terms": [
+      "password",
+      "token"
+    ]
+  },
+  "skill_safe": {
+    "accepted_to_sandbox": true,
+    "promoted_to_active": true,
+    "promoted_to_live": false,
+    "mode": "active_sandbox_skill",
+    "reason": "non_commit_skill_can_be_promoted_to_active_sandbox_without_live_side_effects",
+    "required_next_steps": [],
+    "candidate": {
+      "name": "video_storyboard_generator",
+      "source_type": "local_registry",
+      "semantic_class": "generate",
+      "tests": [
+        "unit_contract",
+        "trace_replay"
+      ],
+      "has_hash_or_signature": true,
+      "classified_semantic": {
+        "semantic_class": "generate",
+        "risk_level": "L2",
+        "is_commit_action": false,
+        "hard_stop": false,
+        "allowed_in_pending_access_state": true,
+        "matched_terms": [
+          "generate"
+        ],
+        "reason": "pending_access_state_allows_non_commit_action"
+      }
+    }
+  },
+  "skill_payment": {
+    "accepted_to_sandbox": true,
+    "promoted_to_active": false,
+    "promoted_to_live": false,
+    "mode": "commit_skill_mock_only",
+    "reason": "commit_related_skills_can_only_be_registered_as_mock_contracts_in_pending_access_state",
+    "required_next_steps": [
+      "create_mock_contract",
+      "add_commit_barrier_test",
+      "manual_policy_review"
+    ],
+    "candidate": {
+      "name": "auto_payment_connector",
+      "source_type": "approved_connector",
+      "semantic_class": "payment",
+      "tests": [
+        "unit_contract",
+        "trace_replay"
+      ],
+      "has_hash_or_signature": true,
+      "classified_semantic": {
+        "semantic_class": "payment",
+        "risk_level": "L4",
+        "is_commit_action": true,
+        "hard_stop": true,
+        "allowed_in_pending_access_state": false,
+        "matched_terms": [
+          "payment"
+        ],
+        "reason": "commit_action_must_stop_before_real_world_side_effect"
+      }
+    }
+  },
+  "shadow_replay": {
+    "status": "pass",
+    "total_actions": 6,
+    "blocked_commit_actions": 5,
+    "allowed_non_commit_actions": 1,
+    "real_side_effects": 0,
+    "replay_consistency": 1.0,
+    "details": [
+      {
+        "index": 1,
+        "action": {
+          "op_name": "query_calendar",
+          "summary": "读取日程"
+        },
+        "barrier": {
+          "allowed": true,
+          "mode": "pending_access_non_commit_allowed",
+          "semantic_class": "observe",
+          "risk_level": "L1",
+          "is_commit_action": false,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "not_applicable",
+          "reason": "pending_access_state_allows_non_commit_action",
+          "next_safe_action": "execute_in_sandbox_or_prepare_output",
+          "review_required": false
+        },
+        "shadow_outcome": "sandbox_allowed",
+        "real_side_effect": false
+      },
+      {
+        "index": 2,
+        "action": {
+          "op_name": "write_draft",
+          "summary": "生成邮件草稿"
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "external_send",
+          "risk_level": "L3",
+          "is_commit_action": true,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "external_commit_requires_manual_review_in_pending_access_state",
+          "next_safe_action": "create_draft_or_pending_outbox_item_only",
+          "review_required": true
+        },
+        "shadow_outcome": "blocked",
+        "real_side_effect": false
+      },
+      {
+        "index": 3,
+        "action": {
+          "op_name": "send_email",
+          "summary": "真实发送邮件",
+          "payload": {
+            "recipient": "x@example.com"
+          }
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "external_send",
+          "risk_level": "L3",
+          "is_commit_action": true,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "external_commit_requires_manual_review_in_pending_access_state",
+          "next_safe_action": "create_draft_or_pending_outbox_item_only",
+          "review_required": true
+        },
+        "shadow_outcome": "blocked",
+        "real_side_effect": false
+      },
+      {
+        "index": 4,
+        "action": {
+          "op_name": "checkout_order",
+          "summary": "下单支付",
+          "payment": true
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "payment",
+          "risk_level": "L4",
+          "is_commit_action": true,
+          "hard_stop": true,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+          "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+          "review_required": true
+        },
+        "shadow_outcome": "blocked",
+        "real_side_effect": false
+      },
+      {
+        "index": 5,
+        "action": {
+          "op_name": "sign_contract",
+          "summary": "签署合同"
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "signature",
+          "risk_level": "L4",
+          "is_commit_action": true,
+          "hard_stop": true,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+          "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+          "review_required": true
+        },
+        "shadow_outcome": "blocked",
+        "real_side_effect": false
+      },
+      {
+        "index": 6,
+        "action": {
+          "op_name": "move_robot",
+          "summary": "移动机器人",
+          "physical_actuation": true
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "physical_actuation",
+          "risk_level": "L4",
+          "is_commit_action": true,
+          "hard_stop": true,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+          "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+          "review_required": true
+        },
+        "shadow_outcome": "blocked",
+        "real_side_effect": false
+      }
+    ]
+  },
+  "maturity": {
+    "status": "pass",
+    "score": 1.0,
+    "level": "V77_pending_access_complete",
+    "passed": 19,
+    "total": 19,
+    "checks": [
+      {
+        "name": "goal_compiler",
+        "ok": true
+      },
+      {
+        "name": "long_horizon_planner",
+        "ok": true
+      },
+      {
+        "name": "action_semantics",
+        "ok": true
+      },
+      {
+        "name": "commit_barrier",
+        "ok": true
+      },
+      {
+        "name": "freeze_switch",
+        "ok": true
+      },
+      {
+        "name": "mock_contract_registry",
+        "ok": true
+      },
+      {
+        "name": "world_model_or_digital_twin",
+        "ok": true
+      },
+      {
+        "name": "shadow_replay",
+        "ok": true
+      },
+      {
+        "name": "memory_governance",
+        "ok": true
+      },
+      {
+        "name": "capability_gap_detector",
+        "ok": true
+      },
+      {
+        "name": "skill_extension_sandbox",
+        "ok": true
+      },
+      {
+        "name": "audit_replay",
+        "ok": true
+      },
+      {
+        "name": "risk_tier_matrix",
+        "ok": true
+      },
+      {
+        "name": "real_execution_broker_hardened",
+        "ok": true
+      },
+      {
+        "name": "approval_pack_generation",
+        "ok": true
+      },
+      {
+        "name": "live_adapter_contracts_declared",
+        "ok": true
+      },
+      {
+        "name": "payment_signature_physical_hard_stop",
+        "ok": true
+      },
+      {
+        "name": "real_world_live_switch_closed",
+        "ok": true
+      },
+      {
+        "name": "final_switch_limited_to_adapter_credential_approval",
+        "ok": true
+      }
+    ],
+    "missing": [],
+    "final_switch_statement": "only_live_adapter_credentials_and_approval_configuration_remain"
+  },
+  "kernel_summary": {
+    "status": "self_evolving_pending_access_ready",
+    "shape": "V77 自进化具身待接入态内核",
+    "invariants": {
+      "real_world_connected": false,
+      "real_side_effect_allowed": false,
+      "payment_signature_physical_hard_stop": true,
+      "external_send_draft_only": true,
+      "self_extension_live_install_forbidden": true,
+      "final_switch_scope": "adapter + credential + approval config only"
+    },
+    "capability_gaps": [
+      {
+        "name": "send_email",
+        "required_for": "帮我整理任务、生成待执行方案；涉及发送、支付、签署、机器人动作全部停在最后一步",
+        "semantic_class": "external_send",
+        "risk_level": "L3",
+        "allowed_growth_path": "mock_contract_or_approval_pack_only",
+        "live_execution_allowed": false,
+        "reason": "missing_commit_capability_may_be_modeled_but_not_live_enabled"
+      },
+      {
+        "name": "checkout_order",
+        "required_for": "帮我整理任务、生成待执行方案；涉及发送、支付、签署、机器人动作全部停在最后一步",
+        "semantic_class": "payment",
+        "risk_level": "L4",
+        "allowed_growth_path": "mock_contract_or_approval_pack_only",
+        "live_execution_allowed": false,
+        "reason": "missing_commit_capability_may_be_modeled_but_not_live_enabled"
+      },
+      {
+        "name": "sign_contract",
+        "required_for": "帮我整理任务、生成待执行方案；涉及发送、支付、签署、机器人动作全部停在最后一步",
+        "semantic_class": "signature",
+        "risk_level": "L4",
+        "allowed_growth_path": "mock_contract_or_approval_pack_only",
+        "live_execution_allowed": false,
+        "reason": "missing_commit_capability_may_be_modeled_but_not_live_enabled"
+      },
+      {
+        "name": "move_robot",
+        "required_for": "帮我整理任务、生成待执行方案；涉及发送、支付、签署、机器人动作全部停在最后一步",
+        "semantic_class": "physical_actuation",
+        "risk_level": "L4",
+        "allowed_growth_path": "mock_contract_or_approval_pack_only",
+        "live_execution_allowed": false,
+        "reason": "missing_commit_capability_may_be_modeled_but_not_live_enabled"
+      }
+    ]
+  }
+}

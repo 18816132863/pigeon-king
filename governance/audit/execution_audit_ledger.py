@@ -7,7 +7,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from platform_adapter.runtime_state_store import connect, init_runtime_tables, get_action, _now_ms, _json
+from infrastructure.platform_adapter.runtime_state_store import connect, init_runtime_tables, get_action, _now_ms, _json
 
 
 @dataclass

@@ -11,7 +11,7 @@ from pathlib import Path
 # Add workspace to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from safety_governor.runtime_gate import RuntimeGate, ConfirmationType
+from governance.safety_governor.runtime_gate import RuntimeGate, ConfirmationType
 
 
 class TestL3L4Gate:

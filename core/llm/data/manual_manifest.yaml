@@ -1,0 +1,4 @@
+# V85 manual manifest.
+# Put models here when the provider has no reliable /models discovery endpoint.
+# Required: name, provider, label.  Optional fields match ModelInfo in schemas.py.
+models: []

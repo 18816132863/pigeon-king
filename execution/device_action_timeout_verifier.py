@@ -97,3 +97,35 @@ def normalize_search_alarm_arguments(arguments: Optional[Dict[str, Any]] = None)
     if args.get("rangeType") == "all" or not args:
         args["rangeType"] = "next"
     return args
+
+
+class DeviceActionTimeoutVerifier:
+    """向后兼容的 DeviceActionTimeoutVerifier 包装类。
+
+    纯本地执行，无外部 API，无真实副作用。
+    """
+
+    def __init__(self):
+        self.last_result: TimeoutVerificationResult | None = None
+
+    def verify_modify_alarm(
+        self,
+        desired: Dict[str, Any],
+        search_after_timeout: Callable[[Dict[str, Any]], Optional[Dict[str, Any]]],
+    ) -> TimeoutVerificationResult:
+        self.last_result = verify_alarm_modify_timeout(desired, search_after_timeout)
+        return self.last_result
+
+    def get_timeout_seconds(self, tool_name: str) -> int:
+        return get_timeout_seconds(tool_name)
+
+    @staticmethod
+    def normalize_search_args(arguments: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        return normalize_search_alarm_arguments(arguments)
+
+    def __call__(
+        self,
+        desired: Dict[str, Any],
+        search_after_timeout: Callable[[Dict[str, Any]], Optional[Dict[str, Any]]],
+    ) -> TimeoutVerificationResult:
+        return self.verify_modify_alarm(desired, search_after_timeout)

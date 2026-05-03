@@ -1,0 +1,16 @@
+{
+  "wrapper_dir": "/home/sandbox/.openclaw/workspace/agent_kernel",
+  "created_count": 10,
+  "created": [
+    "/home/sandbox/.openclaw/workspace/agent_kernel/goal_compiler.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/task_graph.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/memory_kernel.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/unified_judge.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/world_interface.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/capability_extension.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/handoff_orchestrator.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/persona_kernel.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/autonomous_loop.py",
+    "/home/sandbox/.openclaw/workspace/agent_kernel/meta_governance.py"
+  ]
+}

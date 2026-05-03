@@ -15,7 +15,7 @@ from datetime import datetime
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from platform_adapter.invocation_ledger import (
+from infrastructure.platform_adapter.invocation_ledger import (
     query_by_task_id,
     query_by_capability,
     query_by_status,

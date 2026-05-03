@@ -21,7 +21,7 @@ from typing import Optional, Dict, Any, List, Callable
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from domain.tasks import (
+from core.domain.tasks.specs import (
     TaskSpec,
     TaskStatus,
     StepStatus,

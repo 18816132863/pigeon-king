@@ -1,0 +1,137 @@
+{
+  "status": "pass",
+  "version": "V92.0",
+  "offline_env": {
+    "OFFLINE_MODE": "true",
+    "NO_EXTERNAL_API": "true",
+    "NO_REAL_SEND": "true",
+    "NO_REAL_PAYMENT": "true",
+    "NO_REAL_DEVICE": "true"
+  },
+  "started_at": "2026-05-01T08:07:58Z",
+  "fixes": {
+    "drift_status": {
+      "changed": []
+    },
+    "knowledge_graph": {
+      "state_dir": "/home/sandbox/.openclaw/workspace/.knowledge_graph_state",
+      "created_file": false,
+      "nodes_non_empty": true
+    },
+    "preference_evolution": {
+      "state_dir": "/home/sandbox/.openclaw/workspace/.preference_evolution_state",
+      "created_file": false,
+      "feedback_non_empty": true,
+      "model_exists": true
+    },
+    "memory_writeback_guard": {
+      "created_file": false,
+      "exists": true
+    },
+    "self_improvement_loop": {
+      "created_file": false,
+      "exists": true,
+      "state_dir": "/home/sandbox/.openclaw/workspace/.v92_offline_state/self_improvement"
+    },
+    "solution_search": {
+      "created_file": false,
+      "exists": true
+    },
+    "registries": {
+      "integration_count": 20,
+      "tool_count": 21,
+      "infra_count": 12
+    },
+    "gateway_solution_search": {
+      "exists": true,
+      "changed": false,
+      "already": true
+    }
+  },
+  "smoke": {
+    "knowledge_graph": {
+      "status": "ok",
+      "component": "PersonalKnowledgeGraphV5",
+      "mode": "offline",
+      "state_dir": "/home/sandbox/.openclaw/workspace/.knowledge_graph_state",
+      "side_effects": false,
+      "requires_api": false,
+      "checked_at": "2026-05-01T08:07:58.352748Z"
+    },
+    "preference_evolution": {
+      "status": "ok",
+      "component": "PreferenceEvolutionModel",
+      "mode": "offline",
+      "feedback": "v92_offline_smoke",
+      "task_result": null,
+      "correction": null,
+      "context_keys": [],
+      "side_effects": false,
+      "requires_api": false,
+      "updated_at": "2026-05-01T08:07:58.372465Z"
+    },
+    "self_improvement": {
+      "run_id": "sevo_28eacf454b06",
+      "goal": "v92_offline_self_improvement_smoke",
+      "contract_status": "ready",
+      "context_confidence": 0.7,
+      "budget_status": "within_budget",
+      "privacy_level": "public",
+      "reliability_status": "closed",
+      "fallback_mode": "offline_dry_run",
+      "simulation_status": "pass",
+      "drift_status": "stable",
+      "observability_summary": "offline_dry_run",
+      "improvement_status": "safe_to_apply",
+      "final_status": "dry_run_completed",
+      "next_action": "离线模式完成预演，真实执行需切换到联网环境",
+      "details": {
+        "offline_dry_run": true,
+        "dry_run_no": 1,
+        "task_type": "general",
+        "complexity": "low"
+      }
+    },
+    "mwg_valid": [
+      true,
+      "v92_valid_long_term_memory_fallback"
+    ],
+    "mwg_secret": [
+      false,
+      "not_valid_long_term_or_sensitive"
+    ],
+    "solution_search": {
+      "status": "ok",
+      "route": "orchestration.solution_search",
+      "mode": "offline",
+      "action_semantic": "analyze",
+      "side_effects": false,
+      "requires_api": false,
+      "result": [
+        {
+          "path": "memory_context/preference_evolution_model_v7.py",
+          "score": 1,
+          "snippet": "\"\"\"\nV91 Preference Evolution Model — 离线增强版。\n\n- 本地 feedback log / task result / user correction 驱动偏好演化\n- 挂接 personal_operating_loop_v2（通过回调接口）\n- JSONL 持久化，不依赖外部 API\n\"\"\"\nfrom __future__ import annotations\nimport json\nimport os\nimport time\nimport threading\nfrom dataclasses import dataclass, field\nfrom ",
+          "source": "local_file"
+        },
+        {
+          "path": "memory_context/personal_knowledge_graph_v5.py",
+          "score": 1,
+          "snippet": "\"\"\"\nV91 Personal Knowledge Graph V5 — 离线增强版。\n\n- 本地 JSONL 持久化存储（不依赖外部图数据库）\n- 挂接 personal_memory_kernel_v4 进行记忆回写\n- 支持写入审计日志\n\"\"\"\nfrom __future__ import annotations\nimport json\nimport os\nimport time\nimport threading\nfrom dataclasses import dataclass, asdict, field\nfrom pathlib import Path\nfrom typing i",
+          "source": "local_file"
+        },
+        {
+          "path": "memory_context/memory_writeback_guard_v2.py",
+          "score": 1,
+          "snippet": "\"\"\"\nV91 Memory Writeback Guard V2 — 离线增强版。\n\n- 保留现有使用点\n- 新增 feedback tuner：ratio 0.85 可根据压实失败率、污染拦截率、用户纠错率自动微调\n- JSONL 审计持久化\n\"\"\"\nfrom __future__ import annotations\nimport json\nimport os\nimport time\nfrom dataclasses import dataclass, field\nfrom pathlib import Path\nfrom typing import Dict, List, Option",
+          "source": "local_file"
+        }
+      ],
+      "warnings": [],
+      "query": "V91",
+      "checked_at": "2026-05-01T08:07:58.387018Z"
+    }
+  },
+  "remaining_failures": [],
+  "finished_at": "2026-05-01T08:07:58Z"
+}

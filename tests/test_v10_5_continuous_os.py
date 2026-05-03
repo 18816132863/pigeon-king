@@ -6,7 +6,7 @@ from core.knowledge import KnowledgeRefinery, SourceQualityEvaluator
 from core.privacy import PrivacyBoundaryEngine
 from infrastructure.ops import OpsHealthSupervisor, DriftDetector
 from infrastructure.capability_lifecycle import CapabilityPromotionEngine, CapabilityRetirementPolicy
-from learning_loop.meta_learning import MetaLearningEngine, PromptStrategyOptimizer
+from memory_context.learning_loop.meta_learning import MetaLearningEngine, PromptStrategyOptimizer
 from orchestration.continuous_personal_os_orchestrator import ContinuousPersonalOSOrchestrator
 
 

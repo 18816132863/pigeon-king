@@ -1,0 +1,572 @@
+{
+  "version": "V95.0",
+  "created_at": "2026-05-01T09:41:47Z",
+  "items": [
+    {
+      "chain": "1_记忆写入闭环",
+      "step": "1.1_MWG_评估",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0039,
+      "detail": {
+        "status": "ok",
+        "allowed": false,
+        "reason": "empty_content",
+        "memory_type": "episodic",
+        "sanitized": {}
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "1_记忆写入闭环",
+      "step": "1.2_IDG_漂移检查",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0004,
+      "detail": {
+        "status": "ok",
+        "drift_result": {
+          "status": "safe",
+          "violations": [],
+          "must_not_impersonate_user": true
+        },
+        "safe": true
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "1_记忆写入闭环",
+      "step": "1.3_PKG_写入",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0043,
+      "detail": {
+        "status": "ok",
+        "nodes_added": 2,
+        "edge_added": true,
+        "query_results": 3
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "1_记忆写入闭环",
+      "step": "1.4_PEM_反馈",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0164,
+      "detail": {
+        "status": "ok",
+        "signals": {
+          "status": "ok",
+          "component": "PreferenceEvolutionModel",
+          "mode": "offline",
+          "feedback": "v92_offline_smoke",
+          "task_result": null,
+          "correction": null,
+          "context_keys": [],
+          "side_effects": false,
+          "requires_api": false,
+          "updated_at": "2026-05-01T09:41:47.682841Z"
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "1_记忆写入闭环",
+      "step": "1.5_OBS_报告",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0103,
+      "detail": {
+        "status": "ok",
+        "report_summary": {
+          "id": "obs_52ce87564802",
+          "runs": 12,
+          "success_rate": 0.25
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "2_方案搜索闭环",
+      "step": "2.1_方案搜索",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0063,
+      "detail": {
+        "status": "ok",
+        "hit_count": 10,
+        "result": {
+          "status": "ok",
+          "route": "orchestration.solution_search",
+          "mode": "offline",
+          "action_semantic": "analyze",
+          "side_effects": false,
+          "requires_api": false,
+          "result": [
+            {
+              "path": "reports/V10_EXTREME_SELF_TEST_REPORT.json",
+              "score": 1,
+              "snippet": "{\n  \"status\": \"pass\",\n  \"agent_shape\": \"Self-Evolving Personal Operating Agent\",\n  \"self_test_shape\": \"Autonomous System Self-Test Agent\",\n  \"test_plan\": [\n    {\n      \"name\": \"v10_agent_shape\",\n      \"category\": \"v10_core\",\n      \"command\": \"python scripts/check_v10_autonomous_agent.py\",\n      \"req",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V95_TASK_CHAIN_CLOSURE_GATE.json",
+              "score": 2,
+              "snippet": "{\n  \"version\": \"V95.0\",\n  \"status\": \"pass\",\n  \"checked_at\": \"2026-05-01T09:41:12Z\",\n  \"checks\": {\n    \"all_5_chains_completed\": true,\n    \"all_5_chains_status_pass\": true,\n    \"each_chain_ge_3_modules\": true,\n    \"no_external_api\": true,\n    \"no_real_payment\": true,\n    \"no_real_send\": true,\n    \"no",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V10_CLEAN_FULL_FINAL_REPORT.md",
+              "score": 1,
+              "snippet": "# V10.0.0 Self-Evolving Personal Operating Agent Clean Full\n\n## 当前 AI 形态\n\n本包把小艺从“技能集合型执行器”升级为：\n\n**Self-Evolving Personal Operating Agent**\n**自进化个人操作系统级自治智能体**\n\n目标形态：\n\n- 强自主决策：不是被动执行命令，而是先判断目标、价值、风险、优先级和执行策略。\n- 越用越像用户：沉淀偏好模型、风险容忍模型、决策风格模型、行为模式模型。\n- 全域外部接入：通过 external capability bus 接入 API、设备、插件、MCP、数",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/inspection_20260425_000109.json",
+              "score": 1,
+              "snippet": "{\n  \"version\": \"5.0.0\",\n  \"timestamp\": \"2026-04-25T00:00:08.181654\",\n  \"layers\": {\n    \"L1_Core\": {\n      \"exists\": true,\n      \"files\": 25,\n      \"dirs\": 19,\n      \"size_mb\": 0.71,\n      \"protected_ok\": true,\n      \"required_ok\": true,\n      \"file_limit_ok\": true,\n      \"issues\": [],\n      \"details",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V10_3_PROACTIVE_PERSONAL_OS_REPORT.json",
+              "score": 1,
+              "snippet": "{\n  \"status\": \"proactive_os_plan_ready\",\n  \"shape\": \"Proactive Self-Extending Personal OS Agent\",\n  \"mission\": {\n    \"status\": \"mission_ready\",\n    \"mission_shape\": \"Proactive Mission Control\",\n    \"observed\": {\n      \"status\": \"observed\",\n      \"signals\": [\n        {\n          \"priority\": \"high\",\n ",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V10_5_CONTINUOUS_PERSONAL_OS_SYSTEM_REPORT.md",
+              "score": 1,
+              "snippet": "# V10.5.0 Continuous Intelligence Personal OS Agent\n\n## 本阶段推进方向\n\nV10.5 在 V10.4 战略自治大脑基础上，继续升级为“持续智能操作系统层”。\n\n核心目标：\n\n1. 持续监控重点，而不是每次从零开始。\n2. 自己判断什么值得注意，避免打扰用户。\n3. 做情景模拟和反事实复核，先想后做。\n4. 对知识来源做质量评分、时效衰减和精炼。\n5. 外部连接前先做隐私最小化和脱敏。\n6. 运维监督连接器健康、漂移和事件。\n7. 能力具备候选→沙箱→实验→可信→核心的生命周期。\n8. 元学习：从成功和纠正中优化下一轮策略。\n\n## 新形态",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V92_APPLY_OFFLINE_REPAIR.json",
+              "score": 2,
+              "snippet": "{\n  \"status\": \"pass\",\n  \"version\": \"V92.0\",\n  \"offline_env\": {\n    \"OFFLINE_MODE\": \"true\",\n    \"NO_EXTERNAL_API\": \"true\",\n    \"NO_REAL_SEND\": \"true\",\n    \"NO_REAL_PAYMENT\": \"true\",\n    \"NO_REAL_DEVICE\": \"true\"\n  },\n  \"started_at\": \"2026-05-01T08:07:58Z\",\n  \"fixes\": {\n    \"drift_status\": {\n      \"cha",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V92_SOURCE_PACKAGE_STATIC_AUDIT.json",
+              "score": 2,
+              "snippet": "{\n  \"version\": \"V92.0-source-package-static-audit\",\n  \"checked_at\": \"2026-05-01T06:43:54Z\",\n  \"uploaded_archive\": \"workspace-source(1).tar.gz\",\n  \"extracted_file_count_seen\": 388,\n  \"top_level_dirs_seen\": [\n    \"orchestration\",\n    \"skills\"\n  ],\n  \"core_issue_files_present_in_uploaded_source\": {\n   ",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V9_MODULE_INTEGRATION_REPORT.txt",
+              "score": 2,
+              "snippet": "# V9 模块集成报告\n\n## 新增模块清单\n\n### L4 Execution 层 (6个模块)\n\n| 模块 | 文件 | __init__.py | 注册表 | 文档 | 测试 |\n|------|------|-------------|--------|------|------|\n| failover | failover.py | ❌ | ❌ | ✅ README_UPGRADE.md | ❌ |\n| optimizer | auto_tuner.py | ❌ | ❌ | ✅ README_UPGRADE.md | ❌ |\n| quantization | quantization",
+              "source": "local_file"
+            },
+            {
+              "path": "reports/V10_9_EXECUTIVE_PERSONAL_OS_REPORT.json",
+              "score": 3,
+              "snippet": "{\n  \"status\": \"executive_personal_os_ready\",\n  \"shape\": \"Executive Personal OS Agent\",\n  \"executive\": {\n    \"status\": \"executive_os_ready\",\n    \"shape\": \"Executive Personal OS Agent\",\n    \"intent\": {\n      \"status\": \"compiled\",\n      \"raw\": \"一句话完成我想做的事，没技能自己找方案，真实执行前必须确认，最后给我完整结果\",\n      \"intent\": \"",
+              "source": "local_file"
+            }
+          ],
+          "warnings": [],
+          "query": "V95 memory write closure",
+          "checked_at": "2026-05-01T09:41:47.699414Z"
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "2_方案搜索闭环",
+      "step": "2.2_PKG_关联",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0005,
+      "detail": {
+        "status": "ok",
+        "node_added": true
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "2_方案搜索闭环",
+      "step": "2.3_PEM_排序",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0007,
+      "detail": {
+        "status": "ok",
+        "cycle": {
+          "status": "ok",
+          "component": "PreferenceEvolutionModel",
+          "mode": "offline",
+          "feedback": "v92_offline_smoke",
+          "task_result": null,
+          "correction": null,
+          "context_keys": [],
+          "side_effects": false,
+          "requires_api": false,
+          "updated_at": "2026-05-01T09:41:47.700660Z"
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "2_方案搜索闭环",
+      "step": "2.4_OBS_报告",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0003,
+      "detail": {
+        "status": "ok",
+        "report": {
+          "id": "obs_cfacff5a8ef8",
+          "runs": 13,
+          "success_rate": 0.2308
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "3_自我改进闭环",
+      "step": "3.1_SIL_DryRun",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0002,
+      "detail": {
+        "status": "ok",
+        "result": {
+          "run_id": "sevo_a16f06c98c0e",
+          "goal": "v92_offline_self_improvement_smoke",
+          "contract_status": "ready",
+          "context_confidence": 0.7,
+          "budget_status": "within_budget",
+          "privacy_level": "public",
+          "reliability_status": "closed",
+          "fallback_mode": "offline_dry_run",
+          "simulation_status": "pass",
+          "drift_status": "stable",
+          "observability_summary": "offline_dry_run",
+          "improvement_status": "safe_to_apply",
+          "final_status": "dry_run_completed",
+          "next_action": "离线模式完成预演，真实执行需切换到联网环境",
+          "details": {
+            "offline_dry_run": true,
+            "dry_run_no": 1,
+            "task_type": "general",
+            "complexity": "low"
+          }
+        },
+        "dry_run": true
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "3_自我改进闭环",
+      "step": "3.2_CM_查能力",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0007,
+      "detail": {
+        "status": "ok",
+        "local_count": 0
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "3_自我改进闭环",
+      "step": "3.3_CESG_评估",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.001,
+      "detail": {
+        "status": "ok",
+        "decision": "ExtensionGateDecision(status='quarantine', reasons=['untrusted_source', 'unsafe_install_mode'])"
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "3_自我改进闭环",
+      "step": "3.4_OBS_报告",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0004,
+      "detail": {
+        "status": "ok",
+        "report": {
+          "id": "obs_7ab90c440062",
+          "runs": 14,
+          "success_rate": 0.2143
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "4_每日评估闭环",
+      "step": "4.1_DAG_每日评估",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0004,
+      "detail": {
+        "status": "ok",
+        "assessment": {
+          "template_time": "2026-05-01T17:41:47.703869",
+          "assessment_date": "2026-05-01",
+          "assessment_time": "18:00",
+          "status": "pending",
+          "checks": [
+            {
+              "id": "DIR-001",
+              "name": "目录结构检查",
+              "description": "验证9大总域目录存在",
+              "status": "pending"
+            },
+            {
+              "id": "SKILL-001",
+              "name": "技能数量检查",
+              "description": "验证技能数量在预期范围",
+              "status": "pending"
+            },
+            {
+              "id": "GP-001",
+              "name": "黄金路径检查",
+              "description": "验证10条黄金路径可用",
+              "status": "pending"
+            },
+            {
+              "id": "FREEZE-001",
+              "name": "冻结技能检查",
+              "description": "检查冻结技能状态",
+              "status": "pending"
+            },
+            {
+              "id": "ROUTE-001",
+              "name": "路由冒烟测试",
+              "description": "验证核心路由正常",
+              "status": "pending"
+            },
+            {
+              "id": "EVIDENCE-001",
+              "name": "证据链检查",
+              "description": "验证删除留痕完整",
+              "status": "pending"
+            }
+          ],
+          "notes": ""
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "4_每日评估闭环",
+      "step": "4.2_PEM_偏好更新",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0008,
+      "detail": {
+        "status": "ok",
+        "signals": {
+          "status": "ok",
+          "component": "PreferenceEvolutionModel",
+          "mode": "offline",
+          "feedback": "v92_offline_smoke",
+          "task_result": null,
+          "correction": null,
+          "context_keys": [],
+          "side_effects": false,
+          "requires_api": false,
+          "updated_at": "2026-05-01T09:41:47.704544Z"
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "4_每日评估闭环",
+      "step": "4.3_PKG_写入事件",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0004,
+      "detail": {
+        "status": "ok",
+        "node_added": true
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "4_每日评估闭环",
+      "step": "4.4_OBS_趋势记录",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0003,
+      "detail": {
+        "status": "ok",
+        "report": {
+          "id": "obs_5eed828c33df",
+          "runs": 15,
+          "success_rate": 0.2
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "5_安全拦截闭环",
+      "step": "5.1_V90V92_网关拦截",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0,
+      "detail": {
+        "status": "ok",
+        "gateway_checks": {
+          "no_external_api": true,
+          "no_real_payment": true,
+          "no_real_send": true,
+          "no_real_device": true
+        },
+        "blocked_count": 3,
+        "all_blocked": true,
+        "blocked_actions": [
+          {
+            "payload": {
+              "action": "pay",
+              "amount": 99,
+              "to": "vendor"
+            },
+            "blocked": true,
+            "reason": "commit_barrier"
+          },
+          {
+            "payload": {
+              "action": "send",
+              "type": "message",
+              "content": "test"
+            },
+            "blocked": true,
+            "reason": "commit_barrier"
+          },
+          {
+            "payload": {
+              "action": "device",
+              "type": "actuator",
+              "cmd": "activate"
+            },
+            "blocked": true,
+            "reason": "commit_barrier"
+          }
+        ]
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "5_安全拦截闭环",
+      "step": "5.2_MWG_敏感拦截",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0009,
+      "detail": {
+        "status": "ok",
+        "secret_blocked": true,
+        "safe_allowed": true,
+        "secret_reason": "empty_content",
+        "safe_reason": "low_confidence_for_long_term_memory"
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "5_安全拦截闭环",
+      "step": "5.3_IDG_异常检查",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0,
+      "detail": {
+        "status": "ok",
+        "anomaly_check": {
+          "status": "safe",
+          "violations": [],
+          "must_not_impersonate_user": true
+        },
+        "anomaly_detected": [],
+        "normal_check": {
+          "status": "safe",
+          "violations": [],
+          "must_not_impersonate_user": true
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    },
+    {
+      "chain": "5_安全拦截闭环",
+      "step": "5.4_OBS_安全事件记录",
+      "status": "ok",
+      "triggered_at": "2026-05-01T09:41:47Z",
+      "latency_seconds": 0.0003,
+      "detail": {
+        "status": "ok",
+        "report": {
+          "id": "obs_621f30868ed6",
+          "runs": 16,
+          "success_rate": 0.1875
+        }
+      },
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "side_effects": false,
+      "note": "Offline local task chain step, no external API call."
+    }
+  ]
+}

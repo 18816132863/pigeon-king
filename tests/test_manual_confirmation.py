@@ -18,7 +18,7 @@ class TestManualConfirmation:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -32,7 +32,7 @@ class TestManualConfirmation:
     
     def test_confirm_success(self):
         """测试确认成功"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             confirm_invocation,
             get_invocation_by_id,
@@ -63,7 +63,7 @@ class TestManualConfirmation:
     
     def test_confirm_failed(self):
         """测试确认失败"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             confirm_invocation,
             get_invocation_by_id,
@@ -89,7 +89,7 @@ class TestManualConfirmation:
     
     def test_confirm_duplicate(self):
         """测试确认重复"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             confirm_invocation,
             get_invocation_by_id,
@@ -115,7 +115,7 @@ class TestManualConfirmation:
     
     def test_confirm_nonexistent_record(self):
         """测试确认不存在的记录"""
-        from platform_adapter.invocation_ledger import confirm_invocation
+        from infrastructure.platform_adapter.invocation_ledger import confirm_invocation
         
         result = confirm_invocation(
             record_id=99999,
@@ -127,7 +127,7 @@ class TestManualConfirmation:
     
     def test_confirmation_updates_statistics(self):
         """测试确认后统计更新"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             confirm_invocation,
             get_statistics,
@@ -162,7 +162,7 @@ class TestConfirmationWorkflow:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -176,7 +176,7 @@ class TestConfirmationWorkflow:
     
     def test_full_confirmation_workflow(self):
         """测试完整确认工作流"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             export_uncertain_report,
             confirm_invocation,
@@ -208,7 +208,7 @@ class TestConfirmationWorkflow:
     
     def test_batch_confirmation(self):
         """测试批量确认"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             confirm_invocation,
             export_uncertain_report,

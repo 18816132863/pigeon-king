@@ -28,8 +28,8 @@ from infrastructure.storage.repositories.sqlite_repo import (
     SQLiteTaskEventRepository,
 )
 from infrastructure.storage.sqlite_utils import serialize_datetime
-from application.task_service.scheduler import SchedulerService
-from domain.tasks import TaskStatus
+from execution.application.task_service.scheduler import SchedulerService
+from core.domain.tasks.specs import TaskStatus
 from infrastructure.observability import get_logger, get_metrics, HealthChecker, HealthStatus
 from config import get_settings
 

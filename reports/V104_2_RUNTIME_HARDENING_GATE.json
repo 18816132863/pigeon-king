@@ -1,0 +1,37 @@
+{
+  "version": "V104.2",
+  "status": "pass",
+  "offline_runtime_guard_active": true,
+  "guard_status": {
+    "active": true,
+    "offline_enabled": true,
+    "originals_saved": [
+      "requests.sessions.Session.request",
+      "subprocess.Popen",
+      "subprocess.run",
+      "urllib.request.urlopen",
+      "urllib.request.urlretrieve"
+    ]
+  },
+  "mainline_hook_guarded": true,
+  "network_block_tests": {
+    "urllib_blocked": {
+      "blocked": true,
+      "error": "urllib.request.urlopen blocked by offline runtime guard: NO_EXTERNAL_API=true"
+    },
+    "requests_blocked": {
+      "blocked": true,
+      "error": "requests blocked by offline runtime guard: NO_EXTERNAL_API=true url=https://example.com"
+    },
+    "git_push_blocked": {
+      "blocked": true,
+      "error": "subprocess.run blocked by offline runtime guard: outbound command blocked: git push"
+    }
+  },
+  "runtime_cache_artifacts": [],
+  "no_external_api": true,
+  "no_real_send": true,
+  "no_real_payment": true,
+  "no_real_device": true,
+  "remaining_failures": []
+}

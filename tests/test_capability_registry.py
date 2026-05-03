@@ -1,6 +1,6 @@
 """测试能力注册表"""
 import pytest
-from capabilities.registry import CapabilityRegistry, CapabilityStatus
+from execution.capabilities.registry import CapabilityRegistry, CapabilityStatus
 
 
 def test_registry_creation():

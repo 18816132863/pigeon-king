@@ -1,6 +1,6 @@
 """测试平台探测"""
 import pytest
-from platform_adapter.runtime_probe import RuntimeProbe
+from infrastructure.platform_adapter.runtime_probe import RuntimeProbe
 
 
 def test_detect_environment():
@@ -21,11 +21,14 @@ def test_runtime_mode_values():
     """测试运行模式值"""
     env = RuntimeProbe.detect_environment()
     
-    assert env["runtime_mode"] in [
+    # 手机已连接时可能出现 platform_probe_fallback（桥未就绪）
+    valid_modes = [
         "skill_default",
         "platform_enhanced",
-        "self_hosted_enhanced"
+        "self_hosted_enhanced",
+        "platform_probe_fallback",
     ]
+    assert env["runtime_mode"] in valid_modes
 
 
 def test_get_recommended_adapter():

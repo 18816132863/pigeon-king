@@ -1,0 +1,18 @@
+{
+  "version": "V93.0",
+  "status": "pass",
+  "checks": {
+    "no_external_api": true,
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true,
+    "usage_ledger_ready": true,
+    "dependency_fallback_ready": true,
+    "apply_report_ready": true
+  },
+  "registered_count": 45,
+  "dryrun_import_ok_count": 45,
+  "fallback_registered_count": 0,
+  "remaining_failures": [],
+  "note": "V93 是使用率审计与离线 fallback 收口，不代表所有模块已生产级真实运行。"
+}

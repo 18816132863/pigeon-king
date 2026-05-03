@@ -7,7 +7,7 @@ from core.multi_agent import RoleTeam
 from core.verification import RollbackManager, AuditTrail
 from infrastructure.capability_acquisition import SkillDiscoveryEngine
 from infrastructure.connectors import ExternalConnectorRegistry, PermissionScopeManager
-from learning_loop.personal_evolution import PersonalFeedbackRouter, BehaviorPatternMiner, RiskToleranceCalibrator
+from memory_context.learning_loop.personal_evolution import PersonalFeedbackRouter, BehaviorPatternMiner, RiskToleranceCalibrator
 
 
 class ProactivePersonalOSOrchestrator:

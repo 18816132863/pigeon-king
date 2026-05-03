@@ -2,11 +2,21 @@
 
 ## 核心文档
 
+- [快速上手指南](QUICKSTART.md) ← **新人从这里开始**
+- [V10 架构总览](ARCHITECTURE_V10.md) ← **六层架构 + V76-V85 新模块**
 - [架构文档](architecture.md)
 - [贡献指南](CONTRIBUTING.md)
 - [变更日志](CHANGELOG.md)
 - [维护指南](MAINTENANCE_GUIDE.md)
 - [部署指南](DEPLOY.md)
+
+## 使用指南
+
+- [配置指南](configuration.md)
+- [运行手册](runbook.md)
+- [在线部署](production_deployment.md)
+- [状态机](state_machine.md)
+- [任务生命周期](task_lifecycle.md)
 
 ## API 参考
 

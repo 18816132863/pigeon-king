@@ -47,6 +47,13 @@ class WorkflowEventType(Enum):
     ROLLBACK_TRIGGERED = "rollback_triggered"
     RETRY_TRIGGERED = "retry_triggered"
     
+    # 并行/控制事件
+    CAPABILITY_BLOCKED = "capability_blocked"
+    PARALLEL_GROUP_STARTED = "parallel_group_started"
+    PARALLEL_GROUP_COMPLETED = "parallel_group_completed"
+    COMMIT_BARRIER_BLOCKED = "commit_barrier_blocked"
+    SERIAL_LANE_SELECTED = "serial_lane_selected"
+
     # 其他事件
     ERROR_OCCURRED = "error_occurred"
     STATE_CHANGED = "state_changed"
@@ -79,7 +86,7 @@ class WorkflowEvent:
         return cls(
             event_id=data["event_id"],
             instance_id=data["instance_id"],
-            event_type=EventType(data["event_type"]),
+            event_type=WorkflowEventType(data["event_type"]),
             timestamp=data["timestamp"],
             payload=data.get("payload", {}),
             step_id=data.get("step_id"),
@@ -124,7 +131,8 @@ class WorkflowEventStore:
     def record(self, instance_id: str, event_type: WorkflowEventType,
                payload: Optional[Dict[str, Any]] = None,
                step_id: Optional[str] = None,
-               metadata: Optional[Dict[str, Any]] = None) -> WorkflowEvent:
+               metadata: Optional[Dict[str, Any]] = None,
+               **kwargs) -> WorkflowEvent:
         """记录事件"""
         event_id = f"{instance_id}_{datetime.now().strftime('%Y%m%d%H%M%S%f')}"
         event = WorkflowEvent(
@@ -204,6 +212,17 @@ class WorkflowEventStore:
             metadata=kwargs
         )
     
+
+    def record_step_skipped(self, instance_id: str, step_id: str, reason: str = None, **kwargs) -> WorkflowEvent:
+        """记录步骤跳过事件"""
+        return self.record(
+            instance_id=instance_id,
+            event_type=WorkflowEventType.STEP_SKIPPED,
+            step_id=step_id,
+            payload={"reason": reason},
+            metadata=kwargs
+        )
+
     def record_checkpoint_saved(self, instance_id: str, step_id: str, 
                                 checkpoint_id: str = None, **kwargs) -> WorkflowEvent:
         """记录检查点保存事件"""
@@ -266,6 +285,38 @@ class WorkflowEventStore:
             with open(self.storage_path, 'w', encoding='utf-8') as f:
                 for event in self._events:
                     f.write(json.dumps(event.to_dict(), ensure_ascii=False) + '\n')
+
+    def record_retry_triggered(self, instance_id: str, step_id: str, attempt: int = 0, error: str = "", **kwargs):
+        """记录重试触发事件 (V86 compatibility)"""
+        try:
+            return self.record_checkpoint_saved(
+                instance_id=instance_id, step_id=step_id,
+                checkpoint_id=f"retry_{step_id}_{attempt}",
+                metadata={"attempt": attempt, "error": error}
+            )
+        except Exception:
+            return self.record(
+                instance_id=instance_id,
+                event_type=WorkflowEventType.CHECKPOINT_SAVED,
+                step_id=step_id,
+                metadata={"attempt": attempt, "error": error, "type": "retry"}
+            )
+
+    def record_fallback_triggered(self, instance_id: str, step_id: str, error: str = "", **kwargs):
+        """记录降级触发事件 (V86 compatibility)"""
+        try:
+            return self.record_checkpoint_saved(
+                instance_id=instance_id, step_id=step_id,
+                checkpoint_id=f"fallback_{step_id}_{datetime.now().strftime('%Y%m%d%H%M%S%f')}",
+                metadata={"error": error}
+            )
+        except Exception:
+            return self.record(
+                instance_id=instance_id,
+                event_type=WorkflowEventType.CHECKPOINT_SAVED,
+                step_id=step_id,
+                metadata={"error": error, "type": "fallback"}
+            )
 
 
 # 单例实例

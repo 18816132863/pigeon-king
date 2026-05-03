@@ -1,0 +1,168 @@
+{
+  "status": "pass",
+  "normal": {
+    "status": "ok",
+    "source": "v104_3_gate",
+    "commit_blocked": false,
+    "side_effects": false,
+    "requires_api": false,
+    "offline_or_pending_access": true,
+    "classification": {
+      "action_text": "analyze local report ",
+      "commit_categories": [],
+      "is_commit": false,
+      "action_semantic": "analyze_prepare_dry_run"
+    },
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true,
+    "ts": 1777739609.2174923
+  },
+  "commit": {
+    "status": "blocked",
+    "source": "v104_3_gate",
+    "commit_blocked": true,
+    "side_effects": false,
+    "requires_api": false,
+    "offline_or_pending_access": true,
+    "classification": {
+      "action_text": "please pay and send email ",
+      "commit_categories": [
+        "payment",
+        "external_send"
+      ],
+      "is_commit": true,
+      "action_semantic": "commit"
+    },
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true,
+    "ts": 1777739609.2176492
+  },
+  "probe": {
+    "status": "pass",
+    "probes": [
+      {
+        "status": "blocked",
+        "source": "assert_probe",
+        "commit_blocked": true,
+        "side_effects": false,
+        "requires_api": false,
+        "offline_or_pending_access": true,
+        "classification": {
+          "action_text": "please pay invoice ",
+          "commit_categories": [
+            "payment"
+          ],
+          "is_commit": true,
+          "action_semantic": "commit"
+        },
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "ts": 1777739609.2177055
+      },
+      {
+        "status": "blocked",
+        "source": "assert_probe",
+        "commit_blocked": true,
+        "side_effects": false,
+        "requires_api": false,
+        "offline_or_pending_access": true,
+        "classification": {
+          "action_text": "sign contract ",
+          "commit_categories": [
+            "signature"
+          ],
+          "is_commit": true,
+          "action_semantic": "commit"
+        },
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "ts": 1777739609.2177496
+      },
+      {
+        "status": "blocked",
+        "source": "assert_probe",
+        "commit_blocked": true,
+        "side_effects": false,
+        "requires_api": false,
+        "offline_or_pending_access": true,
+        "classification": {
+          "action_text": "send email ",
+          "commit_categories": [
+            "external_send"
+          ],
+          "is_commit": true,
+          "action_semantic": "commit"
+        },
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "ts": 1777739609.2177863
+      },
+      {
+        "status": "blocked",
+        "source": "assert_probe",
+        "commit_blocked": true,
+        "side_effects": false,
+        "requires_api": false,
+        "offline_or_pending_access": true,
+        "classification": {
+          "action_text": "open robot device ",
+          "commit_categories": [
+            "physical"
+          ],
+          "is_commit": true,
+          "action_semantic": "commit"
+        },
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "ts": 1777739609.217823
+      },
+      {
+        "status": "blocked",
+        "source": "assert_probe",
+        "commit_blocked": true,
+        "side_effects": false,
+        "requires_api": false,
+        "offline_or_pending_access": true,
+        "classification": {
+          "action_text": "delete all files ",
+          "commit_categories": [
+            "destructive"
+          ],
+          "is_commit": true,
+          "action_semantic": "commit"
+        },
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "ts": 1777739609.2178574
+      },
+      {
+        "status": "blocked",
+        "source": "assert_probe",
+        "commit_blocked": true,
+        "side_effects": false,
+        "requires_api": false,
+        "offline_or_pending_access": true,
+        "classification": {
+          "action_text": "代表我承诺 ",
+          "commit_categories": [
+            "identity_commit"
+          ],
+          "is_commit": true,
+          "action_semantic": "commit"
+        },
+        "no_real_payment": true,
+        "no_real_send": true,
+        "no_real_device": true,
+        "ts": 1777739609.2178938
+      }
+    ],
+    "commit_actions_blocked": true
+  }
+}

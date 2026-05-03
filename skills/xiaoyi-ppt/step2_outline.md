@@ -185,4 +185,4 @@
 
 ## ⚠️ 下一步（必须执行）
 
-> **在执行任何 PPT 生成操作之前，必须先使用 Read 工具读取 `{baseDir}/step3_generate_monitor.md` 的完整内容，再继续。**
+> **在执行任何 PPT 生成操作之前，必须先使用 Read 工具读取 `~/.openclaw/workspace/skills/xiaoyi-ppt/step3_generate_monitor.md` 的完整内容，再继续。**

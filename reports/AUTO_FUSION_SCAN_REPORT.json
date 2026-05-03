@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "version": "V106",
+  "new_skills": 0,
+  "new_modules": 1590,
+  "result": {
+    "should_fuse": true,
+    "reason": "architecture_related",
+    "arch_updated": true,
+    "changelog_updated": true,
+    "fused_registered": true,
+    "v2_analysis_available": true,
+    "status": "pass",
+    "version": "V106",
+    "auto_scan": true
+  },
+  "timestamp": "2026-05-03T14:11:44.222120+00:00"
+}

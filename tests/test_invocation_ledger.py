@@ -18,7 +18,7 @@ class TestInvocationLedger:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         # 使用临时数据库
         self.temp_dir = tempfile.mkdtemp()
@@ -33,7 +33,7 @@ class TestInvocationLedger:
     
     def test_record_invocation(self):
         """测试记录调用"""
-        from platform_adapter.invocation_ledger import record_invocation
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation
         
         record_id = record_invocation(
             capability="MESSAGE_SENDING",
@@ -51,7 +51,7 @@ class TestInvocationLedger:
     
     def test_query_invocations(self):
         """测试查询调用"""
-        from platform_adapter.invocation_ledger import record_invocation, query_invocations
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, query_invocations
         
         # 记录几条
         record_invocation(
@@ -80,7 +80,7 @@ class TestInvocationLedger:
     
     def test_get_by_idempotency_key(self):
         """测试按幂等键查询"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             get_invocation_by_idempotency_key,
         )
@@ -100,7 +100,7 @@ class TestInvocationLedger:
     
     def test_result_uncertain_flag(self):
         """测试结果不确定标志"""
-        from platform_adapter.invocation_ledger import record_invocation, query_invocations
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, query_invocations
         
         record_invocation(
             capability="MESSAGE_SENDING",
@@ -115,7 +115,7 @@ class TestInvocationLedger:
     
     def test_fallback_used_flag(self):
         """测试 fallback 使用标志"""
-        from platform_adapter.invocation_ledger import record_invocation, query_invocations
+        from infrastructure.platform_adapter.invocation_ledger import record_invocation, query_invocations
         
         record_invocation(
             capability="MESSAGE_SENDING",

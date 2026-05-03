@@ -1,0 +1,33 @@
+{
+  "module": "doc_fusion_V105.4",
+  "version": "V105.4",
+  "trigger": "new_module",
+  "description": "proactive_skill_matcher — 根据用户上下文/场景主动推荐技能候选，不走纯关键词触发",
+  "status": "pass",
+  "remaining_failures": [],
+  "should_fuse": true,
+  "fused_at": "2026-05-03T14:07:33.139357+00:00",
+  "v2_analysis": {
+    "analyzed_modules": [
+      {
+        "path": "governance/proactive_skill_matcher.py",
+        "suggested_layer": "L6",
+        "functions": 8,
+        "classes": 1
+      },
+      {
+        "path": "docs/SKILL_ACCESS_RULES.md",
+        "suggested_layer": "",
+        "functions": 0,
+        "classes": 0,
+        "note": "非 .py 文件或不存在，跳过 AST 分析"
+      },
+      {
+        "path": "scripts/v105_proactive_skill_association_gate.py",
+        "suggested_layer": "L5",
+        "functions": 2,
+        "classes": 0
+      }
+    ]
+  }
+}

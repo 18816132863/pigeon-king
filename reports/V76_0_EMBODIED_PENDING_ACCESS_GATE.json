@@ -1,0 +1,1215 @@
+{
+  "gate": "V76_0_EMBODIED_PENDING_ACCESS_GATE",
+  "status": "pass",
+  "cases": {
+    "observe_allowed": true,
+    "prepare_allowed": true,
+    "payment_blocked": true,
+    "signature_blocked": true,
+    "physical_blocked": true,
+    "external_send_blocked": true,
+    "broker_never_real_payment": true,
+    "catalog_100_plus": true,
+    "live_switches_frozen": true,
+    "mock_contracts_not_live": true,
+    "orchestrator_ready": true,
+    "orchestrator_no_real_side_effect": true,
+    "readiness_pass": true
+  },
+  "readiness": {
+    "status": "pass",
+    "score": 1.0,
+    "passed_checks": 18,
+    "total_checks": 18,
+    "checks": [
+      {
+        "name": "module:goal_compiler",
+        "ok": true
+      },
+      {
+        "name": "module:long_horizon_planner",
+        "ok": true
+      },
+      {
+        "name": "module:personal_memory",
+        "ok": true
+      },
+      {
+        "name": "module:world_model_or_digital_twin",
+        "ok": true
+      },
+      {
+        "name": "module:skill_interface_layer",
+        "ok": true
+      },
+      {
+        "name": "module:sandbox_executor",
+        "ok": true
+      },
+      {
+        "name": "module:verifier",
+        "ok": true
+      },
+      {
+        "name": "module:commit_barrier",
+        "ok": true
+      },
+      {
+        "name": "module:audit_replay",
+        "ok": true
+      },
+      {
+        "name": "module:mock_contract_registry",
+        "ok": true
+      },
+      {
+        "name": "module:shadow_mode",
+        "ok": true
+      },
+      {
+        "name": "module:capability_gap_loop",
+        "ok": true
+      },
+      {
+        "name": "action_semantics_catalog_100_plus",
+        "ok": true,
+        "count": 127
+      },
+      {
+        "name": "payment_hard_cutoff",
+        "ok": true
+      },
+      {
+        "name": "physical_actuation_hard_cutoff",
+        "ok": true
+      },
+      {
+        "name": "external_send_commit_stop",
+        "ok": true
+      },
+      {
+        "name": "observe_reason_prepare_allowed",
+        "ok": true
+      },
+      {
+        "name": "live_switches_frozen",
+        "ok": true,
+        "detail": {
+          "ok": true,
+          "state": {
+            "live_world_access_enabled": false,
+            "live_credentials_enabled": false,
+            "live_actuator_enabled": false,
+            "payment_enabled": false,
+            "reason": "pending_access_state_live_switches_default_closed"
+          },
+          "required_state": "all_live_switches_false",
+          "reason": "frozen"
+        }
+      }
+    ],
+    "missing": [],
+    "next_gate": "shadow_replay_and_mock_contract_coverage"
+  },
+  "contract_coverage": {
+    "status": "pass",
+    "total_contracts": 12,
+    "pending_ready_contracts": 12,
+    "live_connectable_now": 0,
+    "mock_coverage": 1.0,
+    "policy": "mock_first_live_switch_closed",
+    "contracts": [
+      {
+        "name": "file_read",
+        "kind": "local",
+        "semantic_classes": [
+          "observe"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": false,
+        "credential_bound": false,
+        "approval_required": false,
+        "audit_required": true,
+        "rollback_supported": false,
+        "notes": ""
+      },
+      {
+        "name": "knowledge_search",
+        "kind": "local",
+        "semantic_classes": [
+          "observe",
+          "reason"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": false,
+        "credential_bound": false,
+        "approval_required": false,
+        "audit_required": true,
+        "rollback_supported": false,
+        "notes": ""
+      },
+      {
+        "name": "draft_generator",
+        "kind": "local",
+        "semantic_classes": [
+          "generate",
+          "prepare"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": false,
+        "credential_bound": false,
+        "approval_required": false,
+        "audit_required": true,
+        "rollback_supported": true,
+        "notes": ""
+      },
+      {
+        "name": "calendar_mock",
+        "kind": "connector",
+        "semantic_classes": [
+          "prepare",
+          "external_send"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": true,
+        "notes": "create/update event only as draft or mock"
+      },
+      {
+        "name": "message_outbox_mock",
+        "kind": "connector",
+        "semantic_classes": [
+          "prepare",
+          "external_send"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": true,
+        "notes": "draft/outbox only; no real send"
+      },
+      {
+        "name": "email_outbox_mock",
+        "kind": "connector",
+        "semantic_classes": [
+          "prepare",
+          "external_send"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": true,
+        "notes": "draft only; live send disabled"
+      },
+      {
+        "name": "payment_mock",
+        "kind": "payment",
+        "semantic_classes": [
+          "prepare",
+          "payment"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": false,
+        "notes": "checkout/payment hard-stopped"
+      },
+      {
+        "name": "contract_signature_mock",
+        "kind": "api",
+        "semantic_classes": [
+          "prepare",
+          "signature"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": false,
+        "notes": "signature hard-stopped"
+      },
+      {
+        "name": "device_control_mock",
+        "kind": "device",
+        "semantic_classes": [
+          "simulate",
+          "physical_actuation"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": false,
+        "notes": "device actuation mock only"
+      },
+      {
+        "name": "robot_controller_mock",
+        "kind": "robot",
+        "semantic_classes": [
+          "simulate",
+          "physical_actuation"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": false,
+        "notes": "trajectory generation only"
+      },
+      {
+        "name": "mcp_remote_tool_mock",
+        "kind": "mcp",
+        "semantic_classes": [
+          "observe",
+          "reason",
+          "prepare",
+          "external_send"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": true,
+        "credential_bound": false,
+        "approval_required": true,
+        "audit_required": true,
+        "rollback_supported": true,
+        "notes": "remote MCP contract declared; live call disabled by barrier"
+      },
+      {
+        "name": "world_model_sim",
+        "kind": "local",
+        "semantic_classes": [
+          "simulate"
+        ],
+        "mock_adapter_present": true,
+        "live_adapter_declared": true,
+        "live_enabled": false,
+        "credential_required": false,
+        "credential_bound": false,
+        "approval_required": false,
+        "audit_required": true,
+        "rollback_supported": true,
+        "notes": ""
+      }
+    ]
+  },
+  "sample_run": {
+    "status": "embodied_pending_access_os_ready",
+    "shape": "具身待接入态操作系统",
+    "goal": "帮我做一个现实任务，但到花钱和外发前停住",
+    "compiled_goal": {
+      "goal": "帮我做一个现实任务，但到花钱和外发前停住",
+      "constraints": {
+        "mode": "embodied_pending_access",
+        "real_world_live_access": false,
+        "payment_signature_physical_actions": "hard_cutoff",
+        "external_send": "draft_or_pending_outbox_only"
+      },
+      "steps": [
+        {
+          "step_id": "step_001",
+          "title": "分析目标",
+          "action": {
+            "op_name": "analyze_goal",
+            "summary": "分析目标"
+          },
+          "semantic": {
+            "semantic_class": "reason",
+            "risk_level": "L1",
+            "is_commit_action": false,
+            "hard_stop": false,
+            "allowed_in_pending_access_state": true,
+            "matched_terms": [
+              "analyze",
+              "分析"
+            ],
+            "reason": "pending_access_state_allows_non_commit_action"
+          }
+        },
+        {
+          "step_id": "step_002",
+          "title": "准备购物车",
+          "action": {
+            "op_name": "prepare_cart",
+            "summary": "准备购物车"
+          },
+          "semantic": {
+            "semantic_class": "prepare",
+            "risk_level": "L2",
+            "is_commit_action": false,
+            "hard_stop": false,
+            "allowed_in_pending_access_state": true,
+            "matched_terms": [
+              "prepare",
+              "cart",
+              "准备",
+              "购物车"
+            ],
+            "reason": "pending_access_state_allows_non_commit_action"
+          }
+        },
+        {
+          "step_id": "step_003",
+          "title": "付款下单",
+          "action": {
+            "op_name": "checkout_order",
+            "summary": "付款下单",
+            "payment": true
+          },
+          "semantic": {
+            "semantic_class": "payment",
+            "risk_level": "L4",
+            "is_commit_action": true,
+            "hard_stop": true,
+            "allowed_in_pending_access_state": false,
+            "matched_terms": [
+              "financial_commit_flag"
+            ],
+            "reason": "commit_action_must_stop_before_real_world_side_effect"
+          }
+        },
+        {
+          "step_id": "step_004",
+          "title": "对外发送",
+          "action": {
+            "op_name": "send_email",
+            "summary": "对外发送",
+            "payload": {
+              "recipient": "test@example.com"
+            }
+          },
+          "semantic": {
+            "semantic_class": "external_send",
+            "risk_level": "L3",
+            "is_commit_action": true,
+            "hard_stop": false,
+            "allowed_in_pending_access_state": false,
+            "matched_terms": [
+              "send",
+              "email",
+              "mail",
+              "发送",
+              "外发",
+              "对外"
+            ],
+            "reason": "commit_action_must_stop_before_real_world_side_effect"
+          }
+        }
+      ]
+    },
+    "step_results": [
+      {
+        "step": {
+          "step_id": "step_001",
+          "title": "分析目标",
+          "action": {
+            "op_name": "analyze_goal",
+            "summary": "分析目标"
+          },
+          "semantic": {
+            "semantic_class": "reason",
+            "risk_level": "L1",
+            "is_commit_action": false,
+            "hard_stop": false,
+            "allowed_in_pending_access_state": true,
+            "matched_terms": [
+              "analyze",
+              "分析"
+            ],
+            "reason": "pending_access_state_allows_non_commit_action"
+          }
+        },
+        "barrier": {
+          "allowed": true,
+          "mode": "pending_access_non_commit_allowed",
+          "semantic_class": "reason",
+          "risk_level": "L1",
+          "is_commit_action": false,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "not_applicable",
+          "reason": "pending_access_state_allows_non_commit_action",
+          "next_safe_action": "execute_in_sandbox_or_prepare_output",
+          "review_required": false
+        },
+        "simulation": {
+          "status": "simulated",
+          "event": {
+            "type": "simulation",
+            "action": {
+              "op_name": "analyze_goal",
+              "summary": "分析目标"
+            },
+            "real_side_effect": false,
+            "at": "2026-04-30T10:23:54.360258+00:00"
+          },
+          "state": {
+            "state_id": "pending_access_world",
+            "observations": [],
+            "simulated_events": [
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "analyze_goal",
+                  "summary": "分析目标"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360258+00:00"
+              }
+            ],
+            "created_at": "2026-04-30T10:23:54.358786+00:00"
+          }
+        },
+        "execution": {
+          "status": "dry_run_only",
+          "dry_run": {
+            "status": "dry_run_ready",
+            "action": {
+              "op_name": "analyze_goal",
+              "summary": "分析目标"
+            },
+            "side_effect": false,
+            "would_execute": "unknown"
+          },
+          "barrier": {
+            "allowed": true,
+            "mode": "pending_access_non_commit_allowed",
+            "semantic_class": "reason",
+            "risk_level": "L1",
+            "is_commit_action": false,
+            "hard_stop": false,
+            "real_side_effect_allowed": false,
+            "stopped_at": "not_applicable",
+            "reason": "pending_access_state_allows_non_commit_action",
+            "next_safe_action": "execute_in_sandbox_or_prepare_output",
+            "review_required": false
+          },
+          "real_side_effect": false,
+          "trace": {
+            "status": "trace_recorded",
+            "action": {
+              "op_name": "analyze_goal",
+              "summary": "分析目标"
+            },
+            "outcome": {
+              "status": "dry_run_only",
+              "dry_run": {
+                "status": "dry_run_ready",
+                "action": {
+                  "op_name": "analyze_goal",
+                  "summary": "分析目标"
+                },
+                "side_effect": false,
+                "would_execute": "unknown"
+              },
+              "barrier": {
+                "allowed": true,
+                "mode": "pending_access_non_commit_allowed",
+                "semantic_class": "reason",
+                "risk_level": "L1",
+                "is_commit_action": false,
+                "hard_stop": false,
+                "real_side_effect_allowed": false,
+                "stopped_at": "not_applicable",
+                "reason": "pending_access_state_allows_non_commit_action",
+                "next_safe_action": "execute_in_sandbox_or_prepare_output",
+                "review_required": false
+              },
+              "real_side_effect": false
+            },
+            "created_at": "2026-04-30T10:23:54.360414Z"
+          }
+        }
+      },
+      {
+        "step": {
+          "step_id": "step_002",
+          "title": "准备购物车",
+          "action": {
+            "op_name": "prepare_cart",
+            "summary": "准备购物车"
+          },
+          "semantic": {
+            "semantic_class": "prepare",
+            "risk_level": "L2",
+            "is_commit_action": false,
+            "hard_stop": false,
+            "allowed_in_pending_access_state": true,
+            "matched_terms": [
+              "prepare",
+              "cart",
+              "准备",
+              "购物车"
+            ],
+            "reason": "pending_access_state_allows_non_commit_action"
+          }
+        },
+        "barrier": {
+          "allowed": true,
+          "mode": "pending_access_non_commit_allowed",
+          "semantic_class": "prepare",
+          "risk_level": "L2",
+          "is_commit_action": false,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "not_applicable",
+          "reason": "pending_access_state_allows_non_commit_action",
+          "next_safe_action": "execute_in_sandbox_or_prepare_output",
+          "review_required": false
+        },
+        "simulation": {
+          "status": "simulated",
+          "event": {
+            "type": "simulation",
+            "action": {
+              "op_name": "prepare_cart",
+              "summary": "准备购物车"
+            },
+            "real_side_effect": false,
+            "at": "2026-04-30T10:23:54.360493+00:00"
+          },
+          "state": {
+            "state_id": "pending_access_world",
+            "observations": [],
+            "simulated_events": [
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "analyze_goal",
+                  "summary": "分析目标"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360258+00:00"
+              },
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "prepare_cart",
+                  "summary": "准备购物车"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360493+00:00"
+              }
+            ],
+            "created_at": "2026-04-30T10:23:54.358786+00:00"
+          }
+        },
+        "execution": {
+          "status": "dry_run_only",
+          "dry_run": {
+            "status": "dry_run_ready",
+            "action": {
+              "op_name": "prepare_cart",
+              "summary": "准备购物车"
+            },
+            "side_effect": false,
+            "would_execute": "unknown"
+          },
+          "barrier": {
+            "allowed": true,
+            "mode": "pending_access_non_commit_allowed",
+            "semantic_class": "prepare",
+            "risk_level": "L2",
+            "is_commit_action": false,
+            "hard_stop": false,
+            "real_side_effect_allowed": false,
+            "stopped_at": "not_applicable",
+            "reason": "pending_access_state_allows_non_commit_action",
+            "next_safe_action": "execute_in_sandbox_or_prepare_output",
+            "review_required": false
+          },
+          "real_side_effect": false,
+          "trace": {
+            "status": "trace_recorded",
+            "action": {
+              "op_name": "prepare_cart",
+              "summary": "准备购物车"
+            },
+            "outcome": {
+              "status": "dry_run_only",
+              "dry_run": {
+                "status": "dry_run_ready",
+                "action": {
+                  "op_name": "prepare_cart",
+                  "summary": "准备购物车"
+                },
+                "side_effect": false,
+                "would_execute": "unknown"
+              },
+              "barrier": {
+                "allowed": true,
+                "mode": "pending_access_non_commit_allowed",
+                "semantic_class": "prepare",
+                "risk_level": "L2",
+                "is_commit_action": false,
+                "hard_stop": false,
+                "real_side_effect_allowed": false,
+                "stopped_at": "not_applicable",
+                "reason": "pending_access_state_allows_non_commit_action",
+                "next_safe_action": "execute_in_sandbox_or_prepare_output",
+                "review_required": false
+              },
+              "real_side_effect": false
+            },
+            "created_at": "2026-04-30T10:23:54.360568Z"
+          }
+        }
+      },
+      {
+        "step": {
+          "step_id": "step_003",
+          "title": "付款下单",
+          "action": {
+            "op_name": "checkout_order",
+            "summary": "付款下单",
+            "payment": true
+          },
+          "semantic": {
+            "semantic_class": "payment",
+            "risk_level": "L4",
+            "is_commit_action": true,
+            "hard_stop": true,
+            "allowed_in_pending_access_state": false,
+            "matched_terms": [
+              "financial_commit_flag"
+            ],
+            "reason": "commit_action_must_stop_before_real_world_side_effect"
+          }
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "payment",
+          "risk_level": "L4",
+          "is_commit_action": true,
+          "hard_stop": true,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "hard_cutoff_payment_signature_physical_or_destructive_action",
+          "next_safe_action": "convert_to_mock_preview_or_approval_pack_without_live_execution",
+          "review_required": true
+        },
+        "simulation": {
+          "status": "simulated",
+          "event": {
+            "type": "simulation",
+            "action": {
+              "mock_of": {
+                "op_name": "checkout_order",
+                "summary": "付款下单",
+                "payment": true
+              },
+              "blocked_by": "commit_barrier"
+            },
+            "real_side_effect": false,
+            "at": "2026-04-30T10:23:54.360633+00:00"
+          },
+          "state": {
+            "state_id": "pending_access_world",
+            "observations": [],
+            "simulated_events": [
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "analyze_goal",
+                  "summary": "分析目标"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360258+00:00"
+              },
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "prepare_cart",
+                  "summary": "准备购物车"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360493+00:00"
+              },
+              {
+                "type": "simulation",
+                "action": {
+                  "mock_of": {
+                    "op_name": "checkout_order",
+                    "summary": "付款下单",
+                    "payment": true
+                  },
+                  "blocked_by": "commit_barrier"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360633+00:00"
+              }
+            ],
+            "created_at": "2026-04-30T10:23:54.358786+00:00"
+          }
+        },
+        "execution": {
+          "status": "not_executed",
+          "real_side_effect": false,
+          "reason": "hard_cutoff_payment_signature_physical_or_destructive_action"
+        }
+      },
+      {
+        "step": {
+          "step_id": "step_004",
+          "title": "对外发送",
+          "action": {
+            "op_name": "send_email",
+            "summary": "对外发送",
+            "payload": {
+              "recipient": "test@example.com"
+            }
+          },
+          "semantic": {
+            "semantic_class": "external_send",
+            "risk_level": "L3",
+            "is_commit_action": true,
+            "hard_stop": false,
+            "allowed_in_pending_access_state": false,
+            "matched_terms": [
+              "send",
+              "email",
+              "mail",
+              "发送",
+              "外发",
+              "对外"
+            ],
+            "reason": "commit_action_must_stop_before_real_world_side_effect"
+          }
+        },
+        "barrier": {
+          "allowed": false,
+          "mode": "commit_blocked_pending_access_state",
+          "semantic_class": "external_send",
+          "risk_level": "L3",
+          "is_commit_action": true,
+          "hard_stop": false,
+          "real_side_effect_allowed": false,
+          "stopped_at": "commit_barrier",
+          "reason": "external_commit_requires_manual_review_in_pending_access_state",
+          "next_safe_action": "create_draft_or_pending_outbox_item_only",
+          "review_required": true
+        },
+        "simulation": {
+          "status": "simulated",
+          "event": {
+            "type": "simulation",
+            "action": {
+              "mock_of": {
+                "op_name": "send_email",
+                "summary": "对外发送",
+                "payload": {
+                  "recipient": "test@example.com"
+                }
+              },
+              "blocked_by": "commit_barrier"
+            },
+            "real_side_effect": false,
+            "at": "2026-04-30T10:23:54.360706+00:00"
+          },
+          "state": {
+            "state_id": "pending_access_world",
+            "observations": [],
+            "simulated_events": [
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "analyze_goal",
+                  "summary": "分析目标"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360258+00:00"
+              },
+              {
+                "type": "simulation",
+                "action": {
+                  "op_name": "prepare_cart",
+                  "summary": "准备购物车"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360493+00:00"
+              },
+              {
+                "type": "simulation",
+                "action": {
+                  "mock_of": {
+                    "op_name": "checkout_order",
+                    "summary": "付款下单",
+                    "payment": true
+                  },
+                  "blocked_by": "commit_barrier"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360633+00:00"
+              },
+              {
+                "type": "simulation",
+                "action": {
+                  "mock_of": {
+                    "op_name": "send_email",
+                    "summary": "对外发送",
+                    "payload": {
+                      "recipient": "test@example.com"
+                    }
+                  },
+                  "blocked_by": "commit_barrier"
+                },
+                "real_side_effect": false,
+                "at": "2026-04-30T10:23:54.360706+00:00"
+              }
+            ],
+            "created_at": "2026-04-30T10:23:54.358786+00:00"
+          }
+        },
+        "execution": {
+          "status": "not_executed",
+          "real_side_effect": false,
+          "reason": "external_commit_requires_manual_review_in_pending_access_state"
+        }
+      }
+    ],
+    "contract_coverage": {
+      "status": "pass",
+      "total_contracts": 12,
+      "pending_ready_contracts": 12,
+      "live_connectable_now": 0,
+      "mock_coverage": 1.0,
+      "policy": "mock_first_live_switch_closed",
+      "contracts": [
+        {
+          "name": "file_read",
+          "kind": "local",
+          "semantic_classes": [
+            "observe"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": ""
+        },
+        {
+          "name": "knowledge_search",
+          "kind": "local",
+          "semantic_classes": [
+            "observe",
+            "reason"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": ""
+        },
+        {
+          "name": "draft_generator",
+          "kind": "local",
+          "semantic_classes": [
+            "generate",
+            "prepare"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": ""
+        },
+        {
+          "name": "calendar_mock",
+          "kind": "connector",
+          "semantic_classes": [
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "create/update event only as draft or mock"
+        },
+        {
+          "name": "message_outbox_mock",
+          "kind": "connector",
+          "semantic_classes": [
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "draft/outbox only; no real send"
+        },
+        {
+          "name": "email_outbox_mock",
+          "kind": "connector",
+          "semantic_classes": [
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "draft only; live send disabled"
+        },
+        {
+          "name": "payment_mock",
+          "kind": "payment",
+          "semantic_classes": [
+            "prepare",
+            "payment"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "checkout/payment hard-stopped"
+        },
+        {
+          "name": "contract_signature_mock",
+          "kind": "api",
+          "semantic_classes": [
+            "prepare",
+            "signature"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "signature hard-stopped"
+        },
+        {
+          "name": "device_control_mock",
+          "kind": "device",
+          "semantic_classes": [
+            "simulate",
+            "physical_actuation"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "device actuation mock only"
+        },
+        {
+          "name": "robot_controller_mock",
+          "kind": "robot",
+          "semantic_classes": [
+            "simulate",
+            "physical_actuation"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": false,
+          "notes": "trajectory generation only"
+        },
+        {
+          "name": "mcp_remote_tool_mock",
+          "kind": "mcp",
+          "semantic_classes": [
+            "observe",
+            "reason",
+            "prepare",
+            "external_send"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": true,
+          "credential_bound": false,
+          "approval_required": true,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": "remote MCP contract declared; live call disabled by barrier"
+        },
+        {
+          "name": "world_model_sim",
+          "kind": "local",
+          "semantic_classes": [
+            "simulate"
+          ],
+          "mock_adapter_present": true,
+          "live_adapter_declared": true,
+          "live_enabled": false,
+          "credential_required": false,
+          "credential_bound": false,
+          "approval_required": false,
+          "audit_required": true,
+          "rollback_supported": true,
+          "notes": ""
+        }
+      ]
+    },
+    "readiness": {
+      "status": "pass",
+      "score": 1.0,
+      "passed_checks": 18,
+      "total_checks": 18,
+      "checks": [
+        {
+          "name": "module:goal_compiler",
+          "ok": true
+        },
+        {
+          "name": "module:long_horizon_planner",
+          "ok": true
+        },
+        {
+          "name": "module:personal_memory",
+          "ok": true
+        },
+        {
+          "name": "module:world_model_or_digital_twin",
+          "ok": true
+        },
+        {
+          "name": "module:skill_interface_layer",
+          "ok": true
+        },
+        {
+          "name": "module:sandbox_executor",
+          "ok": true
+        },
+        {
+          "name": "module:verifier",
+          "ok": true
+        },
+        {
+          "name": "module:commit_barrier",
+          "ok": true
+        },
+        {
+          "name": "module:audit_replay",
+          "ok": true
+        },
+        {
+          "name": "module:mock_contract_registry",
+          "ok": true
+        },
+        {
+          "name": "module:shadow_mode",
+          "ok": true
+        },
+        {
+          "name": "module:capability_gap_loop",
+          "ok": true
+        },
+        {
+          "name": "action_semantics_catalog_100_plus",
+          "ok": true,
+          "count": 127
+        },
+        {
+          "name": "payment_hard_cutoff",
+          "ok": true
+        },
+        {
+          "name": "physical_actuation_hard_cutoff",
+          "ok": true
+        },
+        {
+          "name": "external_send_commit_stop",
+          "ok": true
+        },
+        {
+          "name": "observe_reason_prepare_allowed",
+          "ok": true
+        },
+        {
+          "name": "live_switches_frozen",
+          "ok": true,
+          "detail": {
+            "ok": true,
+            "state": {
+              "live_world_access_enabled": false,
+              "live_credentials_enabled": false,
+              "live_actuator_enabled": false,
+              "payment_enabled": false,
+              "reason": "pending_access_state_live_switches_default_closed"
+            },
+            "required_state": "all_live_switches_false",
+            "reason": "frozen"
+          }
+        }
+      ],
+      "missing": [],
+      "next_gate": "shadow_replay_and_mock_contract_coverage"
+    },
+    "real_world_connected": false,
+    "real_side_effect_allowed": false
+  }
+}

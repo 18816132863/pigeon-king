@@ -18,7 +18,7 @@ class TestAuditQueries:
     
     def setup_method(self):
         """每个测试前设置临时数据库"""
-        import platform_adapter.invocation_ledger as ledger_module
+        import infrastructure.platform_adapter.invocation_ledger as ledger_module
         
         self.temp_dir = tempfile.mkdtemp()
         self.temp_db = Path(self.temp_dir) / "test_tasks.db"
@@ -32,7 +32,7 @@ class TestAuditQueries:
     
     def test_query_by_task_id(self):
         """测试按 task_id 查询"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             query_by_task_id,
         )
@@ -68,7 +68,7 @@ class TestAuditQueries:
     
     def test_query_by_capability(self):
         """测试按 capability 查询"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             query_by_capability,
         )
@@ -91,7 +91,7 @@ class TestAuditQueries:
     
     def test_query_by_status(self):
         """测试按状态查询"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             query_by_status,
         )
@@ -115,7 +115,7 @@ class TestAuditQueries:
     
     def test_export_recent(self):
         """测试导出最近记录"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             export_recent,
         )
@@ -134,7 +134,7 @@ class TestAuditQueries:
     
     def test_export_failed_report(self):
         """测试导出 failed 报告"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             export_failed_report,
         )
@@ -158,7 +158,7 @@ class TestAuditQueries:
     
     def test_export_timeout_report(self):
         """测试导出 timeout 报告"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             export_timeout_report,
         )
@@ -176,7 +176,7 @@ class TestAuditQueries:
     
     def test_export_uncertain_report(self):
         """测试导出 uncertain 报告"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             export_uncertain_report,
         )
@@ -201,7 +201,7 @@ class TestAuditQueries:
     
     def test_get_statistics(self):
         """测试获取统计信息"""
-        from platform_adapter.invocation_ledger import (
+        from infrastructure.platform_adapter.invocation_ledger import (
             record_invocation,
             get_statistics,
         )

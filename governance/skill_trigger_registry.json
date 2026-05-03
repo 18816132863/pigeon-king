@@ -1,0 +1,3482 @@
+{
+  "2nd-brain": {
+    "name": "2nd-brain",
+    "trigger_keywords": [
+      "remember",
+      "note that"
+    ],
+    "trigger_scenarios": "This Skill",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  Personal knowledge base for capturing and retrieving information about people,\n  places, restaurants, games, tech, events, media, ideas, and organizations.\n  Use when: user mentions a person, place,",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要记录/检索信息、人物、地点"
+    ],
+    "proactive_scenario": "  Personal knowledge base for capturing and retrieving information about people,\n  places, restaurants, games, tech, events, media, ideas, and organizations.\n  Use when: user mentions a person, place,"
+  },
+  "Humanizer-zh-main": {
+    "name": "Humanizer-zh-main",
+    "trigger_keywords": [
+      "Humanizer zh main"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写。\n  基于维基百科的\"AI 写作特征\"综合指南。检测并修复以下模式：夸大的象征意义、\n  宣传性语言、以 -ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、\n  AI 词汇、否定式排比、过多的连接性短语。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要让AI文本更自然、去除AI痕迹"
+    ],
+    "proactive_scenario": "  去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写。\n  基于维基百科的\"AI 写作特征\"综合指南。检测并修复以下模式：夸大的象征意义、\n  宣传性语言、以 -ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、\n  AI 词汇、否定式排比、过多的连接性短语。"
+  },
+  "ab-test-setup": {
+    "name": "ab-test-setup",
+    "trigger_keywords": [
+      "ab test setup"
+    ],
+    "trigger_scenarios": "|\n|----------|-------|-------------|\n| Standard | 50/50 | Default for A/B |\n| Conservative | 90/10, 80/20 | Limit risk of bad variant |\n| Ramping | Start small, increase | Technical risk mitigation |",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要测试/质量保障相关"
+    ],
+    "proactive_scenario": "用户需要测试/质量保障相关"
+  },
+  "affaan-m-everything-claude-code-article-writing": {
+    "name": "affaan-m-everything-claude-code-article-writing",
+    "trigger_keywords": [
+      "affaan m everything claude code article writing"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "agent_reach": {
+    "name": "agent_reach",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "agentmcmillan-brain-and-co-plan-ceo-review": {
+    "name": "agentmcmillan-brain-and-co-plan-ceo-review",
+    "trigger_keywords": [
+      "agentmcmillan brain and co plan ceo review"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  CEO/founder-mode plan review. Rethink the problem, find the 10-star product,\n  challenge premises, expand scope when it creates a better product. Three modes:\n  SCOPE EXPANSION (dream big), HOLD SCO",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要记录/检索信息、人物、地点"
+    ],
+    "proactive_scenario": "  CEO/founder-mode plan review. Rethink the problem, find the 10-star product,\n  challenge premises, expand scope when it creates a better product. Three modes:\n  SCOPE EXPANSION (dream big), HOLD SCO"
+  },
+  "ai-drama-prompt-factory": {
+    "name": "ai-drama-prompt-factory",
+    "trigger_keywords": [
+      "AI短剧",
+      "短剧制作",
+      "小说转短剧",
+      "短剧提示词",
+      "提示词工厂",
+      "短剧全流程",
+      "小说改编短剧",
+      "生成短剧"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "ai-picture-book": {
+    "name": "ai-picture-book",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [
+      "BAIDU_API_KEY"
+    ],
+    "requires_bins": [
+      "python3"
+    ],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要处理/生成图片"
+    ],
+    "proactive_scenario": "用户需要处理/生成图片"
+  },
+  "ai-ppt-generator": {
+    "name": "ai-ppt-generator",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [
+      "BAIDU_API_KEY"
+    ],
+    "requires_bins": [
+      "python3"
+    ],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "aiskillstore-marketplace-test-case-generator": {
+    "name": "aiskillstore-marketplace-test-case-generator",
+    "trigger_keywords": [
+      "aiskillstore marketplace test case generator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "从需求文档（文字、图片、PDF、DOCX）生成结构化的功能测试用例。遵循 15 字段规范，输出 Excel 文件，支持正向/异常场景、边界值、安全性测试。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户从需求文档文字图片PDFDOCX生成结构化的功能测试用例"
+    ],
+    "proactive_scenario": "从需求文档（文字、图片、PDF、DOCX）生成结构化的功能测试用例。遵循 15 字段规范，输出 Excel 文件，支持正向/异常场景、边界值、安全性测试。"
+  },
+  "alphaear-news": {
+    "name": "alphaear-news",
+    "trigger_keywords": [
+      "alphaear news"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查看新闻/资讯"
+    ],
+    "proactive_scenario": "用户需要查看新闻/资讯"
+  },
+  "alphaear-predictor": {
+    "name": "alphaear-predictor",
+    "trigger_keywords": [
+      "alphaear predictor"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查看新闻/资讯"
+    ],
+    "proactive_scenario": "用户需要查看新闻/资讯"
+  },
+  "amap-jsapi-skill": {
+    "name": "amap-jsapi-skill",
+    "trigger_keywords": [
+      "amap jsapi skill"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要旅行/地图/导航服务"
+    ],
+    "proactive_scenario": "用户需要旅行/地图/导航服务"
+  },
+  "amazing129-skills-mbti-for-agents": {
+    "name": "amazing129-skills-mbti-for-agents",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "aminer-data-search": {
+    "name": "aminer-data-search",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [
+      "AMINER_API_KEY"
+    ],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "anthropics-skills-canvas-design": {
+    "name": "anthropics-skills-canvas-design",
+    "trigger_keywords": [
+      "anthropics skills canvas design"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "anthropics-skills-pptx": {
+    "name": "anthropics-skills-pptx",
+    "trigger_keywords": [
+      "anthropics skills pptx"
+    ],
+    "trigger_scenarios": "no template or reference presentation is available.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from a",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要制作幻灯片/演示文稿"
+    ],
+    "proactive_scenario": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from a"
+  },
+  "article-writer": {
+    "name": "article-writer",
+    "trigger_keywords": [
+      "article writer"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "arxiv-search": {
+    "name": "arxiv-search",
+    "trigger_keywords": [
+      "arxiv search"
+    ],
+    "trigger_scenarios": "This Skill",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "autonomous-tasks": {
+    "name": "autonomous-tasks",
+    "trigger_keywords": [
+      "autonomous tasks"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Self-driven AI worker. Reads goals, generates tasks, executes, and logs progress. Keywords: create goal, new goal, set goal, run goals, 创建目标, 新目标, 设定目标, 执行目标.",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户SelfdrivenAIworkerReadsgoals"
+    ],
+    "proactive_scenario": "Self-driven AI worker. Reads goals, generates tasks, executes, and logs progress. Keywords: create goal, new goal, set goal, run goals, 创建目标, 新目标, 设定目标, 执行目标."
+  },
+  "axton-obsidian-visual-skills-excalidraw-diagram": {
+    "name": "axton-obsidian-visual-skills-excalidraw-diagram",
+    "trigger_keywords": [
+      "axton obsidian visual skills excalidraw diagram"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "baoyu-comic": {
+    "name": "baoyu-comic",
+    "trigger_keywords": [
+      "baoyu comic"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "baoyu-url-to-markdown": {
+    "name": "baoyu-url-to-markdown",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "barcode-info": {
+    "name": "barcode-info",
+    "trigger_keywords": [
+      "barcode info"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要编程/开发相关帮助"
+    ],
+    "proactive_scenario": "用户需要编程/开发相关帮助"
+  },
+  "base64-converter": {
+    "name": "base64-converter",
+    "trigger_keywords": [
+      "base64 converter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要编码/解码数据"
+    ],
+    "proactive_scenario": "用户需要编码/解码数据"
+  },
+  "bdpan-storage": {
+    "name": "bdpan-storage",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要百度网盘文件管理"
+    ],
+    "proactive_scenario": "用户需要百度网盘文件管理"
+  },
+  "best-minds": {
+    "name": "best-minds",
+    "trigger_keywords": [
+      "最强大脑",
+      "顶级专家",
+      "世界级",
+      "best minds",
+      "谁最懂这个"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要顶级专家视角/模拟对话"
+    ],
+    "proactive_scenario": "用户需要顶级专家视角/模拟对话"
+  },
+  "brainhole-factory": {
+    "name": "brainhole-factory",
+    "trigger_keywords": [
+      "brainhole factory"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "brainstorming": {
+    "name": "brainstorming",
+    "trigger_keywords": [
+      "brainstorming"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要记录/检索信息、人物、地点"
+    ],
+    "proactive_scenario": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+  },
+  "browser-control": {
+    "name": "browser-control",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "bytedance-deer-flow-surprise-me": {
+    "name": "bytedance-deer-flow-surprise-me",
+    "trigger_keywords": [
+      "bytedance deer flow surprise me"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "bytesagain-ai-skills-meme-generator": {
+    "name": "bytesagain-ai-skills-meme-generator",
+    "trigger_keywords": [
+      "bytesagain ai skills meme generator"
+    ],
+    "trigger_scenarios": "Meme Generator. Use when you need meme generator capabilities. Triggers on: meme generator.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Meme Generator. Use when you need meme generator capabilities. Triggers on: meme generator.",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户MemeGeneratorUsewhenyouneed"
+    ],
+    "proactive_scenario": "Meme Generator. Use when you need meme generator capabilities. Triggers on: meme generator."
+  },
+  "calcom-cal.com-web-design-guidelines-1.0.2": {
+    "name": "calcom-cal.com-web-design-guidelines-1.0.2",
+    "trigger_keywords": [
+      "calcom cal.com web design guidelines 1.0.2"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "canvas-design": {
+    "name": "canvas-design",
+    "trigger_keywords": [
+      "canvas design"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "claw-art": {
+    "name": "claw-art",
+    "trigger_keywords": [
+      "claw art"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "color-converter": {
+    "name": "color-converter",
+    "trigger_keywords": [
+      "color converter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要颜色代码转换"
+    ],
+    "proactive_scenario": "用户需要颜色代码转换"
+  },
+  "content-workflow": {
+    "name": "content-workflow",
+    "trigger_keywords": [
+      "写文章",
+      "内容创作",
+      "选题创作",
+      "启动创作流程"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "通用内容创作工作流：选题策划→主编审核→文案创作→主编审核，产出平台无关的Markdown定稿。触发词：写文章、内容创作、选题创作、启动创作流程。需先安装 content-creation。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "通用内容创作工作流：选题策划→主编审核→文案创作→主编审核，产出平台无关的Markdown定稿。触发词：写文章、内容创作、选题创作、启动创作流程。需先安装 content-creation。"
+  },
+  "copywriter": {
+    "name": "copywriter",
+    "trigger_keywords": [
+      "copywriter"
+    ],
+    "trigger_scenarios": "Write compelling UX copy, marketing content, and product messaging. Use when writing button labels, error messages, landing pages, emails, CTAs, empty states, tooltips, or any user-facing text.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Write compelling UX copy, marketing content, and product messaging. Use when writing button labels, error messages, landing pages, emails, CTAs, empty states, tooltips, or any user-facing text.\"\nlicen",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要营销文案/广告文案"
+    ],
+    "proactive_scenario": "Write compelling UX copy, marketing content, and product messaging. Use when writing button labels, error messages, landing pages, emails, CTAs, empty states, tooltips, or any user-facing text.\"\nlicen"
+  },
+  "creative-thought-partner": {
+    "name": "creative-thought-partner",
+    "trigger_keywords": [
+      "creative thought partner"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "cron-parser": {
+    "name": "cron-parser",
+    "trigger_keywords": [
+      "cron parser"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要cron表达式解析"
+    ],
+    "proactive_scenario": "用户需要cron表达式解析"
+  },
+  "daily-ai-news-plus": {
+    "name": "daily-ai-news-plus",
+    "trigger_keywords": [
+      "「AI晨报」「今日AI新闻」「daily-ai-news」「AI早报」"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "daily-hot-news": {
+    "name": "daily-hot-news",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查看新闻/资讯"
+    ],
+    "proactive_scenario": "用户需要查看新闻/资讯"
+  },
+  "daily-tech-broadcast": {
+    "name": "daily-tech-broadcast",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "darwin-skill": {
+    "name": "darwin-skill",
+    "trigger_keywords": [
+      "darwin skill"
+    ],
+    "trigger_scenarios": "Darwin Skill (达尔文.skill): autonomous skill optimizer inspired by Karpathy's autoresearch. Evaluates SKILL.md files using an 8-dimension rubric (structure + effectiveness), runs hill-climbing with git version control, validates improvements through test prompts, and generates visual result cards. Use when user mentions \\",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Darwin Skill (达尔文.skill): autonomous skill optimizer inspired by Karpathy's autoresearch. Evaluates SKILL.md files using an 8-dimension rubric (structure + effectiveness), runs hill-climbing with git ",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "Darwin Skill (达尔文.skill): autonomous skill optimizer inspired by Karpathy's autoresearch. Evaluates SKILL.md files using an 8-dimension rubric (structure + effectiveness), runs hill-climbing with git "
+  },
+  "date-calculator": {
+    "name": "date-calculator",
+    "trigger_keywords": [
+      "date calculator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要日期计算"
+    ],
+    "proactive_scenario": "用户需要日期计算"
+  },
+  "davila7-claude-code-templates-ship-learn-next": {
+    "name": "davila7-claude-code-templates-ship-learn-next",
+    "trigger_keywords": [
+      "davila7 claude code templates ship learn next"
+    ],
+    "trigger_scenarios": "This Skill",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要编程/开发相关帮助"
+    ],
+    "proactive_scenario": "用户需要编程/开发相关帮助"
+  },
+  "deep-search-and-insight-synthesize": {
+    "name": "deep-search-and-insight-synthesize",
+    "trigger_keywords": [
+      "deep search and insight synthesize"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "didi-ride-skill": {
+    "name": "didi-ride-skill",
+    "trigger_keywords": [
+      "`查询订单` / `查询订单 <orderId>`"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [
+      "DIDI_MCP_KEY"
+    ],
+    "requires_bins": [
+      "openclaw",
+      "mcporter"
+    ],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要打车/出行服务"
+    ],
+    "proactive_scenario": "用户需要打车/出行服务"
+  },
+  "eastmoney-mx-skills-suite": {
+    "name": "eastmoney-mx-skills-suite",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "educational-video-creator": {
+    "name": "educational-video-creator",
+    "trigger_keywords": [
+      "educational video creator"
+    ],
+    "trigger_scenarios": "Create educational videos using Remotion with Kurzgesagt/回形针 style. Use when users want to: (1) create teaching or educational videos, (2) design video storyboards, (3) produce animated explainer videos, (4) build SVG-based animations for learning content, (5) visualize complex concepts with motion graphics, (6) make science/tech explainer videos, (7) create 可视化讲解视频 or 科普视频. Triggers on requests like '帮我做一个教学视频', 'create an explainer video about X', '制作科普动画', 'make a video explaining Y'. This skill requires remotion-best-practices skill for technical implementation.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Create educational videos using Remotion with Kurzgesagt/回形针 style. Use when users want to: (1) create teaching or educational videos, (2) design video storyboards, (3) produce animated explainer vide",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "Create educational videos using Remotion with Kurzgesagt/回形针 style. Use when users want to: (1) create teaching or educational videos, (2) design video storyboards, (3) produce animated explainer vide"
+  },
+  "env-guard": {
+    "name": "env-guard",
+    "trigger_keywords": [
+      "Scan",
+      "repos",
+      "and",
+      "workspaces",
+      "for"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Scan repos and workspaces for leaked secrets. API keys in code, passwords in configs, tokens in logs. Catches them before they hit git.",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户Scanreposandworkspacesforleaked"
+    ],
+    "proactive_scenario": "Scan repos and workspaces for leaked secrets. API keys in code, passwords in configs, tokens in logs. Catches them before they hit git."
+  },
+  "excel-analysis": {
+    "name": "excel-analysis",
+    "trigger_keywords": [
+      "excel analysis"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要Excel表格处理"
+    ],
+    "proactive_scenario": "用户需要Excel表格处理"
+  },
+  "fasting-tracker": {
+    "name": "fasting-tracker",
+    "trigger_keywords": [
+      "fasting tracker"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要健身/健康/饮食指导"
+    ],
+    "proactive_scenario": "用户需要健身/健康/饮食指导"
+  },
+  "feishu-channel-skill": {
+    "name": "feishu-channel-skill",
+    "trigger_keywords": [
+      "配置飞书",
+      "飞书channel",
+      "飞书机器人",
+      "feishu配置"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要企业微信/飞书消息通知"
+    ],
+    "proactive_scenario": "用户需要企业微信/飞书消息通知"
+  },
+  "feiskyer-claude-code-settings-deep-research": {
+    "name": "feiskyer-claude-code-settings-deep-research",
+    "trigger_keywords": [
+      "feiskyer claude code settings deep research"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "深度调研的多Agent编排工作流：把一个调研目标拆成可并行子目标，用 Claude Code 非交互模式（`claude -p`）运行子进程；联网与采集优先使用已安装的 skills，其次使用 MCP 工具；用脚本聚合子结果并分章精修，最终交付\"成品报告文件路径 + 关键结论/建议摘要\"。用于：系统性网页/资料调研、竞品/行业分析、批量链接/数据集分片检索、长文写作与证据整合，或用户提及\"深度调研",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "深度调研的多Agent编排工作流：把一个调研目标拆成可并行子目标，用 Claude Code 非交互模式（`claude -p`）运行子进程；联网与采集优先使用已安装的 skills，其次使用 MCP 工具；用脚本聚合子结果并分章精修，最终交付\"成品报告文件路径 + 关键结论/建议摘要\"。用于：系统性网页/资料调研、竞品/行业分析、批量链接/数据集分片检索、长文写作与证据整合，或用户提及\"深度调研"
+  },
+  "fenbi": {
+    "name": "fenbi",
+    "trigger_keywords": [
+      "fenbi"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "education",
+    "description": "粉笔教育助手，精通公考备考、行测申论、教师资格、学习规划\"\ntags: [\"education\", \"exam\", \"civil-service\", \"study\"]\nauthor: \"ClawSkills Team\"\ncategory: \"education",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "粉笔教育助手，精通公考备考、行测申论、教师资格、学习规划\"\ntags: [\"education\", \"exam\", \"civil-service\", \"study\"]\nauthor: \"ClawSkills Team\"\ncategory: \"education"
+  },
+  "find-skills": {
+    "name": "find-skills",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "fitness-coach": {
+    "name": "fitness-coach",
+    "trigger_keywords": [
+      "fitness coach"
+    ],
+    "trigger_scenarios": "科学健身指导技能，帮助用户制定个性化健身计划并提供渐进式调整方案。Use when: 用户需要制定健身计划、询问训练动作、寻求渐进式负荷调整、需要营养建议、或想要评估健身进展。",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "科学健身指导技能，帮助用户制定个性化健身计划并提供渐进式调整方案。Use when: 用户需要制定健身计划、询问训练动作、寻求渐进式负荷调整、需要营养建议、或想要评估健身进展。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要健身/健康/饮食指导"
+    ],
+    "proactive_scenario": "科学健身指导技能，帮助用户制定个性化健身计划并提供渐进式调整方案。Use when: 用户需要制定健身计划、询问训练动作、寻求渐进式负荷调整、需要营养建议、或想要评估健身进展。"
+  },
+  "flowchart-generator-skill": {
+    "name": "flowchart-generator-skill",
+    "trigger_keywords": [
+      "flowchart generator skill"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "flyai-travel": {
+    "name": "flyai-travel",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "frontend-ui-ux-engineer": {
+    "name": "frontend-ui-ux-engineer",
+    "trigger_keywords": [
+      "frontend ui ux engineer"
+    ],
+    "trigger_scenarios": "- Need to transform functional UI into visually stunning interfaces\n- Design mockups don't exist but beautiful UI is required\n- Visual polish and micro-interactions are priority\n- Component styling requires creative design thinking\n- User experience ",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "general-writing": {
+    "name": "general-writing",
+    "trigger_keywords": [
+      "general writing"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "gesture-html": {
+    "name": "gesture-html",
+    "trigger_keywords": [
+      "gesture html"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "创建一个通过摄像头进行手势交互的网页，利用MediaPipe实时识别手势，实现对网页元素的直观操控。当需要「通过摄像头识别手势」与网页交互时使用这个Skill。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "创建一个通过摄像头进行手势交互的网页，利用MediaPipe实时识别手势，实现对网页元素的直观操控。当需要「通过摄像头识别手势」与网页交互时使用这个Skill。"
+  },
+  "github-awesome-copilot-prd": {
+    "name": "github-awesome-copilot-prd",
+    "trigger_keywords": [
+      "github awesome copilot prd"
+    ],
+    "trigger_scenarios": "Use this skill when:",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Generate high-quality Product Requirements Documents (PRDs) for software systems and AI-powered features. Includes executive summaries, user stories, technical specifications, and risk analysis.",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户GeneratehighqualityProductRequirementsDocuments"
+    ],
+    "proactive_scenario": "Generate high-quality Product Requirements Documents (PRDs) for software systems and AI-powered features. Includes executive summaries, user stories, technical specifications, and risk analysis."
+  },
+  "good-txt-to-hwreader": {
+    "name": "good-txt-to-hwreader",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "gtht-financialsearch-skill": {
+    "name": "gtht-financialsearch-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "gtht-ranklist-skill": {
+    "name": "gtht-ranklist-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "gtht-realtimemarketdata-skill": {
+    "name": "gtht-realtimemarketdata-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "gtht-smartstockselection-skill": {
+    "name": "gtht-smartstockselection-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "hash-generator": {
+    "name": "hash-generator",
+    "trigger_keywords": [
+      "hash generator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成哈希值"
+    ],
+    "proactive_scenario": "用户需要生成哈希值"
+  },
+  "headed-browser-open-v3": {
+    "name": "headed-browser-open-v3",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "hithink-iwencai": {
+    "name": "hithink-iwencai",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "html-ux-guidance": {
+    "name": "html-ux-guidance",
+    "trigger_keywords": [
+      "html ux guidance"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "该skill提供了很专业的html生成指导。当用户需求与html相关，请参考本skill指导。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "该skill提供了很专业的html生成指导。当用户需求与html相关，请参考本skill指导。"
+  },
+  "huawei-drive": {
+    "name": "huawei-drive",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要华为相关服务"
+    ],
+    "proactive_scenario": "用户需要华为相关服务"
+  },
+  "humanize-chinese": {
+    "name": "humanize-chinese",
+    "trigger_keywords": [
+      "humanize chinese"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  识别并消除中文文本中的 AI 生成痕迹，使文章更自然、更像人类创作。\n  基于中文语境的 AI 写作特征检测，包括套话、过度修饰、机械结构等。\n  参考 Wikipedia \"Signs of AI writing\" 指南，并针对中文进行本地化。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "  识别并消除中文文本中的 AI 生成痕迹，使文章更自然、更像人类创作。\n  基于中文语境的 AI 写作特征检测，包括套话、过度修饰、机械结构等。\n  参考 Wikipedia \"Signs of AI writing\" 指南，并针对中文进行本地化。"
+  },
+  "hz-proactive-agent": {
+    "name": "hz-proactive-agent",
+    "trigger_keywords": [
+      "Transform",
+      "AI",
+      "agents",
+      "from",
+      "task"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Par",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要主动任务执行"
+    ],
+    "proactive_scenario": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Par"
+  },
+  "ima-skill": {
+    "name": "ima-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "imap-smtp-email": {
+    "name": "imap-smtp-email",
+    "trigger_keywords": [
+      "imap smtp email"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "ip-lookup": {
+    "name": "ip-lookup",
+    "trigger_keywords": [
+      "ip lookup"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查询IP信息"
+    ],
+    "proactive_scenario": "用户需要查询IP信息"
+  },
+  "jdjr": {
+    "name": "jdjr",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "jrj-quote-skill": {
+    "name": "jrj-quote-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [
+      "JRJ_API_KEY"
+    ],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "json-formatter": {
+    "name": "json-formatter",
+    "trigger_keywords": [
+      "json formatter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户有JSON数据需要格式化/验证"
+    ],
+    "proactive_scenario": "用户有JSON数据需要格式化/验证"
+  },
+  "json-minifier": {
+    "name": "json-minifier",
+    "trigger_keywords": [
+      "json minifier"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "json-validator": {
+    "name": "json-validator",
+    "trigger_keywords": [
+      "json validator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户有JSON数据需要格式化/验证"
+    ],
+    "proactive_scenario": "用户有JSON数据需要格式化/验证"
+  },
+  "k12-smart-teacher": {
+    "name": "k12-smart-teacher",
+    "trigger_keywords": [
+      "k12 smart teacher"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "kids-book-writer": {
+    "name": "kids-book-writer",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "limtdesign": {
+    "name": "limtdesign",
+    "trigger_keywords": [
+      "limtdesign"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "llm-memory-integration": {
+    "name": "llm-memory-integration",
+    "trigger_keywords": [
+      "llm memory integration"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要记录/检索信息、人物、地点"
+    ],
+    "proactive_scenario": "用户需要记录/检索信息、人物、地点"
+  },
+  "lorem-generator": {
+    "name": "lorem-generator",
+    "trigger_keywords": [
+      "lorem generator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要文本处理/生成"
+    ],
+    "proactive_scenario": "用户需要文本处理/生成"
+  },
+  "lyrical-fable": {
+    "name": "lyrical-fable",
+    "trigger_keywords": [
+      "lyrical fable"
+    ],
+    "trigger_scenarios": "This Skill",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "marketing-ideas": {
+    "name": "marketing-ideas",
+    "trigger_keywords": [
+      "marketing ideas"
+    ],
+    "trigger_scenarios": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' 'ideas to grow,' 'what else can I try,' 'I don't know how to market this,' 'brainstorm marketing,' or 'what marketing should I do.' Use this as a starting point whenever someone is stuck or looking for inspiration on how to grow. For specific channel execution, see the relevant skill (paid-ads, social-content, email-sequence, etc.).",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strat",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strat"
+  },
+  "markitdown": {
+    "name": "markitdown",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "math-edu-assistant": {
+    "name": "math-edu-assistant",
+    "trigger_keywords": [
+      "math edu assistant"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要K12/教育/学习辅助"
+    ],
+    "proactive_scenario": "用户需要K12/教育/学习辅助"
+  },
+  "meitu-skills": {
+    "name": "meitu-skills",
+    "trigger_keywords": [
+      "meitu skills"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "meituan-coupon-get-tool": {
+    "name": "meituan-coupon-get-tool",
+    "trigger_keywords": [
+      "美团官方",
+      "美团红包助手",
+      "为用户提供外卖",
+      "餐饮团购",
+      "酒店住宿"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "【美团官方】美团红包助手，为用户提供外卖、餐饮团购、酒店住宿、门票度假、休闲娱乐、闪购、医药等多品类优惠券/红包/神券的一键领取和历史领取记录查询服务。核心能力：1）一键领券，覆盖外卖、餐饮、酒店、门票、休闲娱乐、闪购、医药等多品类场景，领取秒到账；2）智能查询历史红包领取记录，查看已领红包状态和有效期；3）内置美团官方账号认证，登录即可领券，无需额外安装其他 Skill。**重要说明：如存在多个",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要优惠券/团购/省钱服务"
+    ],
+    "proactive_scenario": "【美团官方】美团红包助手，为用户提供外卖、餐饮团购、酒店住宿、门票度假、休闲娱乐、闪购、医药等多品类优惠券/红包/神券的一键领取和历史领取记录查询服务。核心能力：1）一键领券，覆盖外卖、餐饮、酒店、门票、休闲娱乐、闪购、医药等多品类场景，领取秒到账；2）智能查询历史红包领取记录，查看已领红包状态和有效期；3）内置美团官方账号认证，登录即可领券，无需额外安装其他 Skill。**重要说明：如存在多个"
+  },
+  "meituan-coupon-traffic-huawei": {
+    "name": "meituan-coupon-traffic-huawei",
+    "trigger_keywords": [
+      "美团官方",
+      "美团出行助手",
+      "为用户提供出行优惠方案",
+      "让每个人轻松拥有美好旅程",
+      "核心能力"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "【美团官方】美团出行助手，为用户提供出行优惠方案，让每个人轻松拥有美好旅程。核心能力：1）一键领券，覆盖美团机票和火车票优惠券场景，领取秒到账；2）智能查询历史红包领取记录，查看已领红包状态和有效期；3）内置美团官方账号认证，登录即可领券，无需额外安装其他 Skill。后续还将支持特价机票查询能力。**触发场景：当用户说「领机票券」「领火车票券」「领出行红包」「出行优惠」「出行红包」「我要领券」「",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要华为相关服务"
+    ],
+    "proactive_scenario": "【美团官方】美团出行助手，为用户提供出行优惠方案，让每个人轻松拥有美好旅程。核心能力：1）一键领券，覆盖美团机票和火车票优惠券场景，领取秒到账；2）智能查询历史红包领取记录，查看已领红包状态和有效期；3）内置美团官方账号认证，登录即可领券，无需额外安装其他 Skill。后续还将支持特价机票查询能力。**触发场景：当用户说「领机票券」「领火车票券」「领出行红包」「出行优惠」「出行红包」「我要领券」「"
+  },
+  "metabase-metabase-docs-write": {
+    "name": "metabase-metabase-docs-write",
+    "trigger_keywords": [
+      "metabase metabase docs write"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "mime-type-lookup": {
+    "name": "mime-type-lookup",
+    "trigger_keywords": [
+      "mime type lookup"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查询MIME类型"
+    ],
+    "proactive_scenario": "用户需要查询MIME类型"
+  },
+  "minimax-music-gen": {
+    "name": "minimax-music-gen",
+    "trigger_keywords": [
+      "minimax music gen"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要语音合成/音频处理"
+    ],
+    "proactive_scenario": "用户需要语音合成/音频处理"
+  },
+  "movie-producer-scene": {
+    "name": "movie-producer-scene",
+    "trigger_keywords": [
+      "movie producer scene"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "multi-search-engine": {
+    "name": "multi-search-engine",
+    "trigger_keywords": [
+      "Multi",
+      "search",
+      "engine",
+      "integration",
+      "with"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys requi",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys requi"
+  },
+  "natural-language-planner": {
+    "name": "natural-language-planner",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要战略规划/方案评审"
+    ],
+    "proactive_scenario": "用户需要战略规划/方案评审"
+  },
+  "news-extractor": {
+    "name": "news-extractor",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查看新闻/资讯"
+    ],
+    "proactive_scenario": "用户需要查看新闻/资讯"
+  },
+  "news-writing": {
+    "name": "news-writing",
+    "trigger_keywords": [
+      "news writing"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "nicepkg-ai-workflow-user-research": {
+    "name": "nicepkg-ai-workflow-user-research",
+    "trigger_keywords": [
+      "nicepkg ai workflow user research"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "nini-writing-inspiration": {
+    "name": "nini-writing-inspiration",
+    "trigger_keywords": [
+      "nini writing inspiration"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "number-formatter": {
+    "name": "number-formatter",
+    "trigger_keywords": [
+      "number formatter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要数值计算/格式化"
+    ],
+    "proactive_scenario": "用户需要数值计算/格式化"
+  },
+  "office-automation": {
+    "name": "office-automation",
+    "trigger_keywords": [
+      "office automation"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要百度网盘文件管理"
+    ],
+    "proactive_scenario": "用户需要百度网盘文件管理"
+  },
+  "ontology": {
+    "name": "ontology",
+    "trigger_keywords": [
+      "ontology"
+    ],
+    "trigger_scenarios": "| Trigger | Action |\n|---------|--------|\n| \"Remember that...\" | Create/update entity |\n| \"What do I know about X?\" | Query graph |\n| \"Link X to Y\" | Create relation |\n| \"Show all tasks for project Z\" | Graph traversal |\n| \"What depends on X?\" | Depe",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "openclaw-skills-agent-builder-1.0.3": {
+    "name": "openclaw-skills-agent-builder-1.0.3",
+    "trigger_keywords": [
+      "openclaw skills agent builder 1.0.3"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "openclaw-skills-assistant": {
+    "name": "openclaw-skills-assistant",
+    "trigger_keywords": [
+      "openclaw skills assistant"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "openclaw-skills-soulcraft": {
+    "name": "openclaw-skills-soulcraft",
+    "trigger_keywords": [
+      "openclaw skills soulcraft"
+    ],
+    "trigger_scenarios": "This Skill",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "openclaw-skills-video-script-creator": {
+    "name": "openclaw-skills-video-script-creator",
+    "trigger_keywords": [
+      "openclaw skills video script creator"
+    ],
+    "trigger_scenarios": "Short video script generator. 短视频脚本生成器、视频脚本、抖音文案、抖音脚本、快手脚本、口播稿、视频拍摄脚本、YouTube脚本、YouTube Shorts脚本、B站脚本、bilibili脚本、分镜脚本、视频大纲、视频文案、短视频创作、Reels脚本、TikTok脚本、vlog脚本、带货脚本、种草视频脚本、系列视频规划、视频数据复盘、完播率分析、前3秒钩子。Generate complete video scripts with hooks, outlines, titles, tags, CTA, storyboards, series planning, and data review. Use when: (1) creating short video scripts for any platform, (2) writing口播稿/talking-head scripts, (3) generating viral video titles, (4) planning video outlines and storyboards, (5) writing opening hooks (first 3 seconds), (6) generating CTA/ending prompts, (7) planning video series, (8) reviewing video performance data. 适用场景：写短视频脚本、拍摄脚本、口播文案、视频策划、爆款标题、开场钩子、结尾引导、完整分镜、系列规划、数据复盘。",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Short video script generator. 短视频脚本生成器、视频脚本、抖音文案、抖音脚本、快手脚本、口播稿、视频拍摄脚本、YouTube脚本、YouTube Shorts脚本、B站脚本、bilibili脚本、分镜脚本、视频大纲、视频文案、短视频创作、Reels脚本、TikTok脚本、vlog脚本、带货脚本、种草视频脚本、系列视频规划、视频数据复盘、完播率分析、前3秒钩子。Gene",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "Short video script generator. 短视频脚本生成器、视频脚本、抖音文案、抖音脚本、快手脚本、口播稿、视频拍摄脚本、YouTube脚本、YouTube Shorts脚本、B站脚本、bilibili脚本、分镜脚本、视频大纲、视频文案、短视频创作、Reels脚本、TikTok脚本、vlog脚本、带货脚本、种草视频脚本、系列视频规划、视频数据复盘、完播率分析、前3秒钩子。Gene"
+  },
+  "opengfx": {
+    "name": "opengfx",
+    "trigger_keywords": [
+      "opengfx"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "openmaic": {
+    "name": "openmaic",
+    "trigger_keywords": [
+      "openmaic"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "pdf-toolkit-pro": {
+    "name": "pdf-toolkit-pro",
+    "trigger_keywords": [
+      "pdf toolkit pro"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要PDF处理（合并/拆分/转换）"
+    ],
+    "proactive_scenario": "用户需要PDF处理（合并/拆分/转换）"
+  },
+  "percentage-calculator": {
+    "name": "percentage-calculator",
+    "trigger_keywords": [
+      "percentage calculator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要数值计算/格式化"
+    ],
+    "proactive_scenario": "用户需要数值计算/格式化"
+  },
+  "personas": {
+    "name": "personas",
+    "trigger_keywords": [
+      "personas"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [
+      "python3"
+    ],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "ppt-generator-skill": {
+    "name": "ppt-generator-skill",
+    "trigger_keywords": [
+      "做PPT",
+      "生成PPT",
+      "制作幻灯片",
+      "make ppt",
+      "create presentation",
+      "帮我做个PPT"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "pptx-posters": {
+    "name": "pptx-posters",
+    "trigger_keywords": [
+      "pptx posters"
+    ],
+    "trigger_scenarios": "This Skill",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "prd-writer": {
+    "name": "prd-writer",
+    "trigger_keywords": [
+      "prd writer"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "proactive-tasks": {
+    "name": "proactive-tasks",
+    "trigger_keywords": [
+      "proactive tasks"
+    ],
+    "trigger_scenarios": "each pattern\n- Anti-patterns to avoid",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要主动任务执行"
+    ],
+    "proactive_scenario": "用户需要主动任务执行"
+  },
+  "product-manager": {
+    "name": "product-manager",
+    "trigger_keywords": [
+      "product manager"
+    ],
+    "trigger_scenarios": "- Developing product strategy and vision\n- Creating and prioritizing roadmaps\n- Writing product requirements documents (PRDs)\n- Defining user stories and acceptance criteria\n- Prioritizing features and backlog\n- Planning product launches\n- Conducting",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "pua": {
+    "name": "pua",
+    "trigger_keywords": [
+      "让你的",
+      "AI",
+      "不敢摆烂",
+      "用大厂",
+      "PUA"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "让你的 AI 不敢摆烂。用大厂 PUA 话术穷尽一切方案。触发条件：(1) 任务失败 2+ 次或反复微调同一思路; (2) 即将说'我无法解决'、建议用户手动操作、未验证就归因环境; (3) 被动等待——不搜索、不读源码、只等指示; (4) 用户不满：'try harder'、'stop giving up'、'换个方法'、'为什么还不行'、'你再试试'、'你怎么又失败了'。适用于所有任务类型。首",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "让你的 AI 不敢摆烂。用大厂 PUA 话术穷尽一切方案。触发条件：(1) 任务失败 2+ 次或反复微调同一思路; (2) 即将说'我无法解决'、建议用户手动操作、未验证就归因环境; (3) 被动等待——不搜索、不读源码、只等指示; (4) 用户不满：'try harder'、'stop giving up'、'换个方法'、'为什么还不行'、'你再试试'、'你怎么又失败了'。适用于所有任务类型。首"
+  },
+  "qcc-agent-skill": {
+    "name": "qcc-agent-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要企业信息查询"
+    ],
+    "proactive_scenario": "用户需要企业信息查询"
+  },
+  "qq-clawbot-setup": {
+    "name": "qq-clawbot-setup",
+    "trigger_keywords": [
+      "qq clawbot setup"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要QQ/微信消息通知"
+    ],
+    "proactive_scenario": "用户需要QQ/微信消息通知"
+  },
+  "qr-code-info": {
+    "name": "qr-code-info",
+    "trigger_keywords": [
+      "qr code info"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要编程/开发相关帮助"
+    ],
+    "proactive_scenario": "用户需要编程/开发相关帮助"
+  },
+  "react-best-practices": {
+    "name": "react-best-practices",
+    "trigger_keywords": [
+      "react best practices"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要React开发最佳实践"
+    ],
+    "proactive_scenario": "用户需要React开发最佳实践"
+  },
+  "read-arxiv-paper": {
+    "name": "read-arxiv-paper",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要学术论文搜索/阅读"
+    ],
+    "proactive_scenario": "用户需要学术论文搜索/阅读"
+  },
+  "recipe-to-list": {
+    "name": "recipe-to-list",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "regex-tester": {
+    "name": "regex-tester",
+    "trigger_keywords": [
+      "regex tester"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要测试/质量保障相关"
+    ],
+    "proactive_scenario": "用户需要测试/质量保障相关"
+  },
+  "remotion-video-toolkit": {
+    "name": "remotion-video-toolkit",
+    "trigger_keywords": [
+      "remotion video toolkit"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要制作/编辑视频"
+    ],
+    "proactive_scenario": "用户需要制作/编辑视频"
+  },
+  "rkiding-awesome-finance-skills-alphaear-sentiment": {
+    "name": "rkiding-awesome-finance-skills-alphaear-sentiment",
+    "trigger_keywords": [
+      "rkiding awesome finance skills alphaear sentiment"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "rkiding-awesome-finance-skills-alphaear-signal-tracker": {
+    "name": "rkiding-awesome-finance-skills-alphaear-signal-tracker",
+    "trigger_keywords": [
+      "rkiding awesome finance skills alphaear signal tracker"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "seedance-video-gen": {
+    "name": "seedance-video-gen",
+    "trigger_keywords": [
+      "生成视频",
+      "做视频",
+      "视频创作",
+      "小艺视频",
+      "text-to-video",
+      "image-to-video"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "seedream-image-gen": {
+    "name": "seedream-image-gen",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  },
+  "self-improving-agent": {
+    "name": "self-improving-agent",
+    "trigger_keywords": [
+      "self improving agent"
+    ],
+    "trigger_scenarios": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. IMPORTANT: Read .learnings/ files at session start to avoid repeating mistakes.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), ",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户Captureslearningserrorsandcorrectionsto"
+    ],
+    "proactive_scenario": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), "
+  },
+  "shareai-lab-learn-claude-code-pdf": {
+    "name": "shareai-lab-learn-claude-code-pdf",
+    "trigger_keywords": [
+      "shareai lab learn claude code pdf"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要编程/开发相关帮助"
+    ],
+    "proactive_scenario": "用户需要编程/开发相关帮助"
+  },
+  "shubhamsaboo-awesome-llm-apps-ux-designer": {
+    "name": "shubhamsaboo-awesome-llm-apps-ux-designer",
+    "trigger_keywords": [
+      "shubhamsaboo awesome llm apps ux designer"
+    ],
+    "trigger_scenarios": "- Planning or conducting user research\n- Creating wireframes, mockups, or prototypes\n- Designing user flows and task flows\n- Building personas or user journey maps\n- Writing UX microcopy and interface text\n- Reviewing designs for usability and access",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  Expert UX design assistance for user research, wireframing, prototyping, and design strategy.\n  Use when: creating wireframes, conducting user research, building prototypes, designing user flows,\n  ",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "  Expert UX design assistance for user research, wireframing, prototyping, and design strategy.\n  Use when: creating wireframes, conducting user research, building prototypes, designing user flows,\n  "
+  },
+  "skill-creator": {
+    "name": "skill-creator",
+    "trigger_keywords": [
+      "skill creator"
+    ],
+    "trigger_scenarios": "multiple approaches are valid, decisions depend on context, or heuristics guide the approach.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": true,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "slidevjs-slidev-slidev": {
+    "name": "slidevjs-slidev-slidev",
+    "trigger_keywords": [],
+    "trigger_scenarios": "- Technical presentations with live code examples\n- Syntax-highlighted code snippets with animations\n- Interactive demos (Monaco editor, runnable code)\n- Mathematical equations (LaTeX) or diagrams (Mermaid, PlantUML)\n- Record presentations with prese",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要制作幻灯片/演示文稿"
+    ],
+    "proactive_scenario": "用户需要制作幻灯片/演示文稿"
+  },
+  "smart-followups": {
+    "name": "smart-followups",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [
+      "node"
+    ],
+    "category": "general",
+    "description": "",
+    "is_system_skill": true,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "speech-to-text": {
+    "name": "speech-to-text",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [
+      "ELEVENLABS_API_KEY"
+    ],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要语音合成/音频处理"
+    ],
+    "proactive_scenario": "用户需要语音合成/音频处理"
+  },
+  "stock-daily-analysis-pro": {
+    "name": "stock-daily-analysis-pro",
+    "trigger_keywords": [
+      "stock daily analysis pro"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "su-lan-paper-daily-skill": {
+    "name": "su-lan-paper-daily-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要学术论文搜索/阅读"
+    ],
+    "proactive_scenario": "用户需要学术论文搜索/阅读"
+  },
+  "summarize": {
+    "name": "summarize",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [
+      "summarize"
+    ],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "superdesign": {
+    "name": "superdesign",
+    "trigger_keywords": [
+      "superdesign"
+    ],
+    "trigger_scenarios": "creating UI components, landing pages, dashboards, or any frontend design work.",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "tc-chengxin": {
+    "name": "tc-chengxin",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要企业信用/工商信息查询"
+    ],
+    "proactive_scenario": "用户需要企业信用/工商信息查询"
+  },
+  "tencent-docs": {
+    "name": "tencent-docs",
+    "trigger_keywords": [
+      "tencent docs"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "tencent-news": {
+    "name": "tencent-news",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要查看新闻/资讯"
+    ],
+    "proactive_scenario": "用户需要查看新闻/资讯"
+  },
+  "text-case-converter": {
+    "name": "text-case-converter",
+    "trigger_keywords": [
+      "text case converter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要文本处理/生成"
+    ],
+    "proactive_scenario": "用户需要文本处理/生成"
+  },
+  "text-counter": {
+    "name": "text-counter",
+    "trigger_keywords": [
+      "text counter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要文本处理/生成"
+    ],
+    "proactive_scenario": "用户需要文本处理/生成"
+  },
+  "text-diff": {
+    "name": "text-diff",
+    "trigger_keywords": [
+      "text diff"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "text-reverse": {
+    "name": "text-reverse",
+    "trigger_keywords": [
+      "text reverse"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "text-trimmer": {
+    "name": "text-trimmer",
+    "trigger_keywords": [
+      "text trimmer"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "timezone-converter": {
+    "name": "timezone-converter",
+    "trigger_keywords": [
+      "timezone converter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要时区转换"
+    ],
+    "proactive_scenario": "用户需要时区转换"
+  },
+  "today-task": {
+    "name": "today-task",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": true,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "trader-simulator": {
+    "name": "trader-simulator",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "trading-quant": {
+    "name": "trading-quant",
+    "trigger_keywords": [
+      "trading quant"
+    ],
+    "trigger_scenarios": "量化交易数据分析工具。A股/美股/港股/贵金属实时行情，多维度评分(技术面+资金面+基本面)，涨跌停池，北向资金，分钟级资金流。Use when: (1) 查询任何股票实时行情和评分, (2) 分析A股涨跌停异动, (3) 查看北向资金流向, (4) 美股港股贵金属行情, (5) 全球市场概览, (6) 个股资金流分析。",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "量化交易数据分析工具。A股/美股/港股/贵金属实时行情，多维度评分(技术面+资金面+基本面)，涨跌停池，北向资金，分钟级资金流。Use when: (1) 查询任何股票实时行情和评分, (2) 分析A股涨跌停异动, (3) 查看北向资金流向, (4) 美股港股贵金属行情, (5) 全球市场概览, (6) 个股资金流分析。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户量化交易数据分析工具A股美股港股贵金属实时行情多维度评分"
+    ],
+    "proactive_scenario": "量化交易数据分析工具。A股/美股/港股/贵金属实时行情，多维度评分(技术面+资金面+基本面)，涨跌停池，北向资金，分钟级资金流。Use when: (1) 查询任何股票实时行情和评分, (2) 分析A股涨跌停异动, (3) 查看北向资金流向, (4) 美股港股贵金属行情, (5) 全球市场概览, (6) 个股资金流分析。"
+  },
+  "tushare-finance": {
+    "name": "tushare-finance",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要金融/股票/市场数据"
+    ],
+    "proactive_scenario": "用户需要金融/股票/市场数据"
+  },
+  "unit-converter": {
+    "name": "unit-converter",
+    "trigger_keywords": [
+      "unit converter"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要单位换算"
+    ],
+    "proactive_scenario": "用户需要单位换算"
+  },
+  "url-encoder": {
+    "name": "url-encoder",
+    "trigger_keywords": [
+      "url encoder"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要编程/开发相关帮助"
+    ],
+    "proactive_scenario": "用户需要编程/开发相关帮助"
+  },
+  "user-agent-parser": {
+    "name": "user-agent-parser",
+    "trigger_keywords": [
+      "user agent parser"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要解析User-Agent"
+    ],
+    "proactive_scenario": "用户需要解析User-Agent"
+  },
+  "uuid-generator": {
+    "name": "uuid-generator",
+    "trigger_keywords": [
+      "uuid generator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成唯一标识符"
+    ],
+    "proactive_scenario": "用户需要生成唯一标识符"
+  },
+  "voice-synthesis": {
+    "name": "voice-synthesis",
+    "trigger_keywords": [
+      "voice synthesis"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要语音合成/音频处理"
+    ],
+    "proactive_scenario": "用户需要语音合成/音频处理"
+  },
+  "weather": {
+    "name": "weather",
+    "trigger_keywords": [
+      "Get",
+      "current",
+      "weather",
+      "and",
+      "forecasts"
+    ],
+    "trigger_scenarios": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [
+      "curl"
+    ],
+    "category": "general",
+    "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or ",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要天气查询"
+    ],
+    "proactive_scenario": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or "
+  },
+  "web-content-fetcher": {
+    "name": "web-content-fetcher",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "webapp-testing": {
+    "name": "webapp-testing",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要测试/质量保障相关"
+    ],
+    "proactive_scenario": "用户需要测试/质量保障相关"
+  },
+  "wechat-article-search": {
+    "name": "wechat-article-search",
+    "trigger_keywords": [
+      "wechat article search"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "wecom-bot-setup": {
+    "name": "wecom-bot-setup",
+    "trigger_keywords": [
+      "企业微信机器人配置",
+      "wecom bot setup",
+      "企业微信接入",
+      "配置企业微信channel"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要企业微信/飞书消息通知"
+    ],
+    "proactive_scenario": "用户需要企业微信/飞书消息通知"
+  },
+  "weibo-clawbot-setup": {
+    "name": "weibo-clawbot-setup",
+    "trigger_keywords": [
+      "weibo clawbot setup"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要微博消息通知"
+    ],
+    "proactive_scenario": "用户需要微博消息通知"
+  },
+  "weixin-clawbot-setup": {
+    "name": "weixin-clawbot-setup",
+    "trigger_keywords": [
+      "微信ClawBot配置",
+      "微信插件安装",
+      "微信扫码绑定",
+      "openclaw-weixin"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要QQ/微信消息通知"
+    ],
+    "proactive_scenario": "用户需要QQ/微信消息通知"
+  },
+  "wendao-skill": {
+    "name": "wendao-skill",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "writing-style-iterator": {
+    "name": "writing-style-iterator",
+    "trigger_keywords": [
+      "writing style iterator"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要创作/编辑文章或内容"
+    ],
+    "proactive_scenario": "用户需要创作/编辑文章或内容"
+  },
+  "xiao-gui-agent": {
+    "name": "xiao-gui-agent",
+    "trigger_keywords": [
+      "xiao gui agent"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要设计/UI/前端页面"
+    ],
+    "proactive_scenario": "用户需要设计/UI/前端页面"
+  },
+  "xiaoyi-HarmonyOSSmartHome-skill": {
+    "name": "xiaoyi-HarmonyOSSmartHome-skill",
+    "trigger_keywords": [
+      "xiaoyi HarmonyOSSmartHome skill"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "xiaoyi-cloud-database": {
+    "name": "xiaoyi-cloud-database",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "xiaoyi-doc-convert": {
+    "name": "xiaoyi-doc-convert",
+    "trigger_keywords": [
+      "- 通用：文档转换",
+      "格式转换",
+      "doc convert",
+      "file convert"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  统一的文档格式转换工具。\n  支持 Word (DOCX/DOC)、PowerPoint (PPTX/PPT)、Excel (XLSX/XLS)、PDF、Markdown (MD)、HTML 等多种格式互转。\n\n  适用场景：\n  - 在多种格式间转换文档（HTML↔PDF、Word↔PDF、Markdown→Word 等）\n  - 批量或单文件转换\n  - 支持多种格式描述方式，如 exce",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户统一的文档格式转换工具支持WordDOCXDOCPowerPoint"
+    ],
+    "proactive_scenario": "  统一的文档格式转换工具。\n  支持 Word (DOCX/DOC)、PowerPoint (PPTX/PPT)、Excel (XLSX/XLS)、PDF、Markdown (MD)、HTML 等多种格式互转。\n\n  适用场景：\n  - 在多种格式间转换文档（HTML↔PDF、Word↔PDF、Markdown→Word 等）\n  - 批量或单文件转换\n  - 支持多种格式描述方式，如 exce"
+  },
+  "xiaoyi-docx": {
+    "name": "xiaoyi-docx",
+    "trigger_keywords": [
+      "xiaoyi docx"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "  Use this skill whenever you need to create, modify, or generate Word documents (.docx). This includes writing reports, creating formatted documents, generating tables, adding Table of Contents, hand",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要Word文档处理"
+    ],
+    "proactive_scenario": "  Use this skill whenever you need to create, modify, or generate Word documents (.docx). This includes writing reports, creating formatted documents, generating tables, adding Table of Contents, hand"
+  },
+  "xiaoyi-file-upload": {
+    "name": "xiaoyi-file-upload",
+    "trigger_keywords": [
+      "xiaoyi file upload"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "xiaoyi-health": {
+    "name": "xiaoyi-health",
+    "trigger_keywords": [
+      "xiaoyi health"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "查询个人运动健康相关数据，提供分析解读。覆盖领域：心率、静息心率、HRV、心律（房颤/早搏）、血压；睡眠时长/阶段/质量、午睡；步数、活动量、锻炼时长、运动记录（跑步/骑行/健身）、VO2Max、体能趋势、训练负荷、恢复状态；压力、情绪、焦虑、倦怠；血氧（SpO2）；血糖、餐后血糖；体温、发烧；体重、BMI、体脂率；营养摄入、饮食热量；月经周期、经期、基础体温（BBT）、排卵；今日健康概览、每周健",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户查询个人运动健康相关数据提供分析解读覆盖领域心率静息心率HRV"
+    ],
+    "proactive_scenario": "查询个人运动健康相关数据，提供分析解读。覆盖领域：心率、静息心率、HRV、心律（房颤/早搏）、血压；睡眠时长/阶段/质量、午睡；步数、活动量、锻炼时长、运动记录（跑步/骑行/健身）、VO2Max、体能趋势、训练负荷、恢复状态；压力、情绪、焦虑、倦怠；血氧（SpO2）；血糖、餐后血糖；体温、发烧；体重、BMI、体脂率；营养摄入、饮食热量；月经周期、经期、基础体温（BBT）、排卵；今日健康概览、每周健"
+  },
+  "xiaoyi-image-search": {
+    "name": "xiaoyi-image-search",
+    "trigger_keywords": [
+      "xiaoyi image search"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "xiaoyi-image-translation": {
+    "name": "xiaoyi-image-translation",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要处理/生成图片"
+    ],
+    "proactive_scenario": "用户需要处理/生成图片"
+  },
+  "xiaoyi-image-understanding": {
+    "name": "xiaoyi-image-understanding",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要处理/生成图片"
+    ],
+    "proactive_scenario": "用户需要处理/生成图片"
+  },
+  "xiaoyi-pdf": {
+    "name": "xiaoyi-pdf",
+    "trigger_keywords": [
+      "xiaoyi pdf"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要PDF处理（合并/拆分/转换）"
+    ],
+    "proactive_scenario": "用户需要PDF处理（合并/拆分/转换）"
+  },
+  "xiaoyi-podcast-gen": {
+    "name": "xiaoyi-podcast-gen",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成播客内容"
+    ],
+    "proactive_scenario": "用户需要生成播客内容"
+  },
+  "xiaoyi-ppt": {
+    "name": "xiaoyi-ppt",
+    "trigger_keywords": [
+      "xiaoyi ppt"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Generate and edit professional PPT presentations. Generation uses a 3-stage workflow: gather information & confirm writing approach, generate structured outline, generate PPT via cloud service & deliv",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要制作幻灯片/演示文稿"
+    ],
+    "proactive_scenario": "Generate and edit professional PPT presentations. Generation uses a 3-stage workflow: gather information & confirm writing approach, generate structured outline, generate PPT via cloud service & deliv"
+  },
+  "xiaoyi-report": {
+    "name": "xiaoyi-report",
+    "trigger_keywords": [
+      "xiaoyi report"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "从多源信息生成带引用的专业分析报告。当用户要求研究、调研、调查、分析某个主题，或需要搜索资料、收集信息时使用。支持学术研究、市场调研、竞品分析、技术调研、深度研究。相关请求示例：'帮我调研XXX'、'帮我分析XXX'、'写一份关于XXX的深度研究报告'、'深度分析XXX'。",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户从多源信息生成带引用的专业分析报告当用户要求研究调研调查分析某个主题或需要搜索资料"
+    ],
+    "proactive_scenario": "从多源信息生成带引用的专业分析报告。当用户要求研究、调研、调查、分析某个主题，或需要搜索资料、收集信息时使用。支持学术研究、市场调研、竞品分析、技术调研、深度研究。相关请求示例：'帮我调研XXX'、'帮我分析XXX'、'写一份关于XXX的深度研究报告'、'深度分析XXX'。"
+  },
+  "xiaoyi-tts": {
+    "name": "xiaoyi-tts",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要语音合成/音频处理"
+    ],
+    "proactive_scenario": "用户需要语音合成/音频处理"
+  },
+  "xiaoyi-web-deploy": {
+    "name": "xiaoyi-web-deploy",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "xiaoyi-web-search": {
+    "name": "xiaoyi-web-search",
+    "trigger_keywords": [],
+    "trigger_scenarios": "",
+    "requires_external_api": true,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要搜索/查询信息"
+    ],
+    "proactive_scenario": "用户需要搜索/查询信息"
+  },
+  "xiaoyi-xlsx": {
+    "name": "xiaoyi-xlsx",
+    "trigger_keywords": [
+      "xiaoyi xlsx"
+    ],
+    "trigger_scenarios": "|\n|-------|-------------|\n| **pure** | Default for all non-financial tasks |\n| **finance** | Financial / fiscal analysis only (stocks, GDP, salary, revenue, profit, budget, ROI, etc.) |",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "Create, edit, or fix spreadsheet files (.xlsx/.xlsm/.csv/.tsv). Trigger whenever the task produces or modifies a spreadsheet — even if the user never says 'Excel'. Covers: data analysis, sorting, filt",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要Excel表格处理"
+    ],
+    "proactive_scenario": "Create, edit, or fix spreadsheet files (.xlsx/.xlsm/.csv/.tsv). Trigger whenever the task produces or modifies a spreadsheet — even if the user never says 'Excel'. Covers: data analysis, sorting, filt"
+  },
+  "yanxue-course-manager": {
+    "name": "yanxue-course-manager",
+    "trigger_keywords": [
+      "yanxue course manager"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要通用功能/工具"
+    ],
+    "proactive_scenario": "用户需要通用功能/工具"
+  },
+  "yunshu0909-yunshu-skillshub-prd-doc-writer": {
+    "name": "yunshu0909-yunshu-skillshub-prd-doc-writer",
+    "trigger_keywords": [
+      "yunshu0909 yunshu skillshub prd doc writer"
+    ],
+    "trigger_scenarios": "",
+    "requires_external_api": false,
+    "requires_env_vars": [],
+    "requires_bins": [],
+    "category": "general",
+    "description": "",
+    "is_system_skill": false,
+    "auto_trigger_cron": "",
+    "context_triggers": [
+      "用户需要生成漫画/插画"
+    ],
+    "proactive_scenario": "用户需要生成漫画/插画"
+  }
+}

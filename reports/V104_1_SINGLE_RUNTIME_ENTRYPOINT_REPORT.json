@@ -1,0 +1,5 @@
+{
+  "version": "V104.1",
+  "single_runtime_entrypoint_ready": true,
+  "path": "orchestration/single_runtime_entrypoint.py"
+}

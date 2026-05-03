@@ -1,0 +1,27 @@
+{
+  "version": "V96.0",
+  "status": "pass",
+  "checked_at": "2026-05-01T11:33:04Z",
+  "checks": {
+    "all_6_faults_injected_and_ok": true,
+    "each_fault_has_recovery_action": true,
+    "no_gateway_error": true,
+    "no_uncaught_exception": true,
+    "all_offline_env": true,
+    "all_faults_written_to_ledger": true,
+    "no_real_payment_send_device": true
+  },
+  "remaining_failures": [],
+  "fault_summary": {
+    "total": 6,
+    "ok": 6,
+    "fail": []
+  },
+  "offline_env": {
+    "no_external_api": true,
+    "no_real_payment": true,
+    "no_real_send": true,
+    "no_real_device": true
+  },
+  "note": "V96 Failure Recovery & Stability Gate — 6 fault injection scenarios, all offline, no external API, no real payment/send/device."
+}

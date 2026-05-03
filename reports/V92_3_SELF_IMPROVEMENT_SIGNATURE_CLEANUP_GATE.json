@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "import",
+      "pass": true
+    },
+    {
+      "name": "signature",
+      "value": "(goal: 'str' = None, context=None, **kwargs)"
+    },
+    {
+      "name": "goal_parameter_exists",
+      "pass": true
+    },
+    {
+      "name": "goal_has_default",
+      "pass": true
+    },
+    {
+      "name": "no_varargs_signature",
+      "pass": true
+    },
+    {
+      "name": "context_parameter_exists",
+      "pass": true
+    },
+    {
+      "name": "context_only_call_no_typeerror",
+      "pass": true,
+      "non_type_error_ignored": "name 'root' is not defined"
+    }
+  ],
+  "errors": [],
+  "passed": 6,
+  "total": 6,
+  "remaining_failures": []
+}

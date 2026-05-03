@@ -1,0 +1,20 @@
+[
+  {
+    "preferences": {
+      "delivery_style": "one_shot_package",
+      "risk_style": "approval_for_high_risk"
+    }
+  },
+  {
+    "preferences": {
+      "delivery_style": "one_shot_package",
+      "risk_style": "approval_for_high_risk"
+    }
+  },
+  {
+    "preferences": {
+      "delivery_style": "one_shot_package",
+      "risk_style": "approval_for_high_risk"
+    }
+  }
+]

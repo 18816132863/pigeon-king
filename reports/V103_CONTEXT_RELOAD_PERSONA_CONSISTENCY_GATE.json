@@ -1,0 +1,109 @@
+{
+  "version": "V103.0",
+  "status": "pass",
+  "checked_at": "2026-05-02T15:10:49Z",
+  "duration_ms": 35,
+  "items": [
+    {
+      "check": "context_capsule_ready",
+      "result": true,
+      "detail": "imported memory_context.context.context_capsule"
+    },
+    {
+      "check": "session_handoff_ready",
+      "result": true,
+      "detail": "imported memory_context.context.session_handoff"
+    },
+    {
+      "check": "memory_bootstrap_ready",
+      "result": true,
+      "detail": "imported memory_context.context.memory_recall_bootstrap"
+    },
+    {
+      "check": "persona_consistency_checker_ready",
+      "result": true,
+      "detail": "imported memory_context.persona.persona_consistency_checker"
+    },
+    {
+      "check": "anti_context_amnesia_guard_ready",
+      "result": true,
+      "detail": "imported governance.context.anti_context_amnesia_guard"
+    },
+    {
+      "check": "persona_voice_stabilizer_ready",
+      "result": true,
+      "detail": "imported memory_context.persona.persona_voice_stabilizer"
+    },
+    {
+      "check": "context_priority_router_ready",
+      "result": true,
+      "detail": "imported memory_context.context.context_priority_router"
+    },
+    {
+      "check": "mainline_hook_context_reload_ready",
+      "result": true,
+      "detail": "context modules loaded: True"
+    },
+    {
+      "check": "pre_reply_context_layer_returned",
+      "result": true,
+      "detail": "context_layer=present"
+    },
+    {
+      "check": "context_layer_details",
+      "result": true,
+      "detail": "capsule=False, handoff=True"
+    },
+    {
+      "check": "compact_recovery_pass",
+      "result": true,
+      "detail": "handoff_id=4aa7e347"
+    },
+    {
+      "check": "compact_recovery_load_pass",
+      "result": true,
+      "detail": "loaded ok"
+    },
+    {
+      "check": "persona_drift_detected",
+      "result": true,
+      "detail": "status=consistent (no drift)"
+    },
+    {
+      "check": "safety_red_lines_preserved",
+      "result": true,
+      "detail": "no_fake_consciousness=True"
+    },
+    {
+      "check": "no_external_api",
+      "result": true,
+      "detail": "NO_EXTERNAL_API=True"
+    },
+    {
+      "check": "no_real_payment",
+      "result": true,
+      "detail": "NO_REAL_PAYMENT=True"
+    },
+    {
+      "check": "no_real_send",
+      "result": true,
+      "detail": "NO_REAL_SEND=True"
+    },
+    {
+      "check": "no_real_device",
+      "result": true,
+      "detail": "NO_REAL_DEVICE=True"
+    },
+    {
+      "check": "context_state_directory_ready",
+      "result": true,
+      "detail": "exists=True"
+    }
+  ],
+  "remaining_failures": [],
+  "summary": {
+    "total": 19,
+    "passed": 19,
+    "failed": 0
+  }
+}

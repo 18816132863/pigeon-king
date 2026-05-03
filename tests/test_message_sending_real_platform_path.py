@@ -17,7 +17,7 @@ class TestMessageSendingRealPlatformPath:
     
     def test_message_sending_method_exists(self):
         """测试 MESSAGE_SENDING 方法存在"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
         
         adapter = XiaoyiAdapter()
         
@@ -27,7 +27,7 @@ class TestMessageSendingRealPlatformPath:
     
     def test_message_sending_fallback_method_exists(self):
         """测试 MESSAGE_SENDING fallback 方法存在"""
-        from platform_adapter.invoke_guard import create_fallback_result
+        from infrastructure.platform_adapter.invoke_guard import create_fallback_result
         
         # fallback 通过 create_fallback_result 实现
         assert callable(create_fallback_result)
@@ -46,7 +46,7 @@ class TestMessageSendingRealPlatformPath:
     
     def test_message_sending_fallback_returns_queued(self):
         """测试 MESSAGE_SENDING fallback 返回 queued"""
-        from platform_adapter.invoke_guard import create_fallback_result
+        from infrastructure.platform_adapter.invoke_guard import create_fallback_result
         
         result = create_fallback_result(
             capability="MESSAGE_SENDING",
@@ -103,8 +103,8 @@ class TestMessageSendingErrorHandling:
     
     def test_import_error_triggers_fallback(self):
         """测试 ImportError 触发 fallback"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-        from platform_adapter.invoke_guard import create_fallback_result
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.invoke_guard import create_fallback_result
         
         adapter = XiaoyiAdapter()
         
@@ -135,8 +135,8 @@ class TestMessageSendingIntegration:
     
     def test_full_flow_with_fallback(self):
         """测试完整流程 (使用 fallback)"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-        from platform_adapter.base import PlatformCapability
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.base import PlatformCapability
         import asyncio
         
         adapter = XiaoyiAdapter()
@@ -156,8 +156,8 @@ class TestMessageSendingIntegration:
     
     def test_probe_before_invoke(self):
         """测试调用前先探测"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-        from platform_adapter.base import PlatformCapability
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.base import PlatformCapability
         import asyncio
         
         adapter = XiaoyiAdapter()
@@ -180,8 +180,8 @@ class TestMessageSendingPlatformResult:
     
     def test_platform_result_included(self):
         """测试平台结果被包含"""
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
-        from platform_adapter.base import PlatformCapability
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.base import PlatformCapability
         import asyncio
         
         adapter = XiaoyiAdapter()

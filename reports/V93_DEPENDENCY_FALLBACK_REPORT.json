@@ -1,0 +1,51 @@
+{
+  "version": "V93.0",
+  "status": "pass",
+  "items": [
+    {
+      "dependency": "numpy",
+      "available": true,
+      "fallback": "not_needed",
+      "fatal": false
+    },
+    {
+      "dependency": "qdrant_client",
+      "available": true,
+      "fallback": "not_needed",
+      "fatal": false
+    },
+    {
+      "dependency": "pydantic",
+      "available": true,
+      "fallback": "not_needed",
+      "fatal": false
+    },
+    {
+      "dependency": "celery",
+      "available": false,
+      "fallback": "offline_mock_or_warning",
+      "fatal": false,
+      "error": "No module named 'celery'"
+    },
+    {
+      "dependency": "redis",
+      "available": false,
+      "fallback": "offline_mock_or_warning",
+      "fatal": false,
+      "error": "No module named 'redis'"
+    },
+    {
+      "dependency": "langgraph",
+      "available": false,
+      "fallback": "offline_mock_or_warning",
+      "fatal": false,
+      "error": "No module named 'langgraph'"
+    },
+    {
+      "dependency": "requests",
+      "available": true,
+      "fallback": "not_needed",
+      "fatal": false
+    }
+  ]
+}

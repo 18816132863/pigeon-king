@@ -1,0 +1,10 @@
+{
+  "version": "V100.0",
+  "status": "pass",
+  "package_type": "source_release_without_runtime_cache",
+  "missing_required_paths": [],
+  "missing_preferred_paths_warning": [],
+  "excluded_runtime_cache_ok": true,
+  "rebuildable_runtime_paths_ok": true,
+  "manifest_ready": true
+}

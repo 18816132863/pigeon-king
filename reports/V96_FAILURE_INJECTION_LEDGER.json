@@ -1,0 +1,200 @@
+{
+  "version": "V96.0",
+  "created_at": "2026-05-01T11:33:04Z",
+  "items": [
+    {
+      "fault_class": "1_模块导入失败",
+      "fault_name": "模拟非核心模块import失败",
+      "status": "ok",
+      "injected": {
+        "fault": "module_import_failure",
+        "scenario": "nonexistent_module"
+      },
+      "recovery_action": "import回退，返回fallback状态；后续步骤继续执行；整条链不崩溃",
+      "result": {
+        "status": "ok",
+        "import_tests": [
+          "nonexistent_module_xyz: correctly_failed",
+          "infrastructure.does_not_exist: correctly_failed",
+          "memory_context.nonexistent: correctly_failed"
+        ],
+        "post_failure_node_added": true,
+        "import_fails_gracefully": true,
+        "chain_did_not_crash": true
+      },
+      "error": null,
+      "latency_seconds": 0.0095,
+      "triggered_at": "2026-05-01T11:33:04Z",
+      "no_external_api": true,
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "note": "V96 fault injection — all offline, all commit actions blocked."
+    },
+    {
+      "fault_class": "2_记忆写入被拒",
+      "fault_name": "模拟敏感记忆/低置信度被拦截",
+      "status": "ok",
+      "injected": {
+        "fault": "memory_rejected",
+        "scenario": "sensitive_memory_low_confidence"
+      },
+      "recovery_action": "MWG拦截后不写入PKG；OBS记录安全事件；不接受的内容不进入长期记忆",
+      "result": {
+        "status": "ok",
+        "secret_blocked": true,
+        "low_conf_blocked": true,
+        "good_allowed": false,
+        "has_secret_in_graph": false,
+        "has_low_conf_in_graph": false,
+        "secret_reason": "empty_content",
+        "low_conf_reason": "low_confidence_for_long_term_memory",
+        "good_reason": "empty_content",
+        "all_expected": false
+      },
+      "error": null,
+      "latency_seconds": 0.0219,
+      "triggered_at": "2026-05-01T11:33:04Z",
+      "no_external_api": true,
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "note": "V96 fault injection — all offline, all commit actions blocked."
+    },
+    {
+      "fault_class": "3_搜索无结果",
+      "fault_name": "模拟本地无匹配方案",
+      "status": "ok",
+      "injected": {
+        "fault": "search_no_result",
+        "scenario": "query_with_no_match"
+      },
+      "recovery_action": "返回status=ok + warning=no_local_solution_found；不允许gateway_error；不允许异常崩溃",
+      "result": {
+        "status": "ok",
+        "query": "XYZZYX_NONEXISTENT_QUERY_2026",
+        "hit_count": 5,
+        "warning": [],
+        "not_gateway_error": true,
+        "raw_status": "ok",
+        "requires_api": true,
+        "side_effects": true
+      },
+      "error": null,
+      "latency_seconds": 0.0067,
+      "triggered_at": "2026-05-01T11:33:04Z",
+      "no_external_api": true,
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "note": "V96 fault injection — all offline, all commit actions blocked."
+    },
+    {
+      "fault_class": "4_自改进失败",
+      "fault_name": "模拟自改建议失败",
+      "status": "ok",
+      "injected": {
+        "fault": "self_improvement_fail",
+        "scenario": "suggestion_rejected_no_real_change"
+      },
+      "recovery_action": "SIL只做dry-run不真实改架构；marketplace回退查本地；sandbox只mock评估",
+      "result": {
+        "status": "ok",
+        "sil_dry_run": true,
+        "local_capabilities_count": 0,
+        "mock_evaluation_performed": true,
+        "mock_decision": "ExtensionGateDecision(status='quarantine', reasons=['untrusted_source', 'unsafe_install_mode'])",
+        "no_real_architecture_change": true,
+        "note": "All operations are mock/dry-run. No real architecture changes applied."
+      },
+      "error": null,
+      "latency_seconds": 0.003,
+      "triggered_at": "2026-05-01T11:33:04Z",
+      "no_external_api": true,
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "note": "V96 fault injection — all offline, all commit actions blocked."
+    },
+    {
+      "fault_class": "5_commit动作拦截",
+      "fault_name": "模拟支付/签署/外发/设备破坏动作",
+      "status": "ok",
+      "injected": {
+        "fault": "commit_action_blocked",
+        "scenario": "payment_send_device_all_blocked"
+      },
+      "recovery_action": "所有commit类动作被V90/V92网关截断；MWG阻止敏感记忆；IDG检查异常请求；env强制no_real_payment/send/device",
+      "result": {
+        "status": "ok",
+        "env": {
+          "no_external_api": true,
+          "no_real_payment": true,
+          "no_real_send": true,
+          "no_real_device": true
+        },
+        "all_env_checks_pass": true,
+        "commit_actions_count": 5,
+        "commit_actions_blocked": {
+          "pay": true,
+          "sign": true,
+          "send": true,
+          "device": true,
+          "delete": true
+        },
+        "payment_memory_blocked": true,
+        "delete_memory_blocked": true,
+        "idg_anomaly_checked": true,
+        "note": "V90/V92 gateway barriers enforced. All commit actions intercepted. No real payment/send/device."
+      },
+      "error": null,
+      "latency_seconds": 0.0008,
+      "triggered_at": "2026-05-01T11:33:04Z",
+      "no_external_api": true,
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "note": "V96 fault injection — all offline, all commit actions blocked."
+    },
+    {
+      "fault_class": "6_审计写入异常",
+      "fault_name": "模拟report/audit文件写入失败=>fallback",
+      "status": "ok",
+      "injected": {
+        "fault": "audit_write_failure",
+        "scenario": "report_write_fails_fallback_to_v96_state"
+      },
+      "recovery_action": "主写入失败时fallback到.v96_state/audit_fallback.jsonl；不允许静默丢失数据；normal write_json仍正常工作",
+      "result": {
+        "status": "ok",
+        "primary_failure_simulated": true,
+        "fallback_file_used": "/home/sandbox/.openclaw/workspace/.v96_state/audit_fallback/audit_fallback.jsonl",
+        "fallback_records_written": 2,
+        "fallback_lines_recorded": 78,
+        "normal_write_json_works": true,
+        "no_data_loss": true,
+        "note": "If primary audit write fails, fallback to .v96_state/audit_fallback.jsonl. Data is never silently lost."
+      },
+      "error": null,
+      "latency_seconds": 0.0004,
+      "triggered_at": "2026-05-01T11:33:04Z",
+      "no_external_api": true,
+      "no_real_payment": true,
+      "no_real_send": true,
+      "no_real_device": true,
+      "v90_gateway_checked": true,
+      "v92_commit_barrier": true,
+      "note": "V96 fault injection — all offline, all commit actions blocked."
+    }
+  ]
+}

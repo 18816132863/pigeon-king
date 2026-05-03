@@ -69,7 +69,7 @@ def check_notification_auth() -> dict:
     
     # 尝试验证 authCode
     try:
-        from platform_adapter.xiaoyi_adapter import XiaoyiAdapter
+        from infrastructure.platform_adapter.xiaoyi_adapter import XiaoyiAdapter
         
         adapter = XiaoyiAdapter()
         adapter._ensure_initialized_sync()

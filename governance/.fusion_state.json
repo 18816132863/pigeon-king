@@ -1,0 +1,6365 @@
+{
+  "file_hashes": {
+    "core/__init__.py": {
+      "mtime": 1777529633.7092557,
+      "size": 0
+    },
+    "core/action_bridge/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2204
+    },
+    "core/action_bridge/action_bridge_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 6560
+    },
+    "core/action_bridge/action_dsl.py": {
+      "mtime": 1777415504.0,
+      "size": 2536
+    },
+    "core/action_bridge/background_run_ledger.py": {
+      "mtime": 1777415504.0,
+      "size": 1704
+    },
+    "core/action_bridge/device_session.py": {
+      "mtime": 1777415504.0,
+      "size": 2249
+    },
+    "core/action_bridge/evidence_capture.py": {
+      "mtime": 1777415504.0,
+      "size": 1285
+    },
+    "core/action_bridge/handoff_inbox.py": {
+      "mtime": 1777415504.0,
+      "size": 1837
+    },
+    "core/action_bridge/notification_center.py": {
+      "mtime": 1777415504.0,
+      "size": 1325
+    },
+    "core/action_bridge/real_world_scenario_harness.py": {
+      "mtime": 1777415504.0,
+      "size": 1310
+    },
+    "core/action_bridge/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4803
+    },
+    "core/action_bridge/side_effect_executor.py": {
+      "mtime": 1777415504.0,
+      "size": 2570
+    },
+    "core/action_bridge/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/action_bridge/tool_adapter_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 2600
+    },
+    "core/ai_shape_core/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1798
+    },
+    "core/ai_shape_core/ai_shape_core.py": {
+      "mtime": 1777415504.0,
+      "size": 5266
+    },
+    "core/ai_shape_core/capability_expansion.py": {
+      "mtime": 1777415504.0,
+      "size": 2900
+    },
+    "core/ai_shape_core/constitution_judge.py": {
+      "mtime": 1777415504.0,
+      "size": 1407
+    },
+    "core/ai_shape_core/finalizer.py": {
+      "mtime": 1777415504.0,
+      "size": 3418
+    },
+    "core/ai_shape_core/finalizer_schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 2029
+    },
+    "core/ai_shape_core/goal_strategy_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 4633
+    },
+    "core/ai_shape_core/golden_paths.py": {
+      "mtime": 1777415504.0,
+      "size": 6038
+    },
+    "core/ai_shape_core/legacy_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 1556
+    },
+    "core/ai_shape_core/main.py": {
+      "mtime": 1777415504.0,
+      "size": 616
+    },
+    "core/ai_shape_core/memory_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 2989
+    },
+    "core/ai_shape_core/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4063
+    },
+    "core/ai_shape_core/shape_scorecard.py": {
+      "mtime": 1777415504.0,
+      "size": 3447
+    },
+    "core/ai_shape_core/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 962
+    },
+    "core/ai_shape_core/task_graph_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 3808
+    },
+    "core/ai_shape_core/world_interface.py": {
+      "mtime": 1777415504.0,
+      "size": 2483
+    },
+    "core/audit.py": {
+      "mtime": 1777415504.0,
+      "size": 445
+    },
+    "core/authorization/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 379
+    },
+    "core/authorization/action_risk_attestation.py": {
+      "mtime": 1777415504.0,
+      "size": 498
+    },
+    "core/authorization/authorization_intent_gateway.py": {
+      "mtime": 1777415504.0,
+      "size": 1412
+    },
+    "core/authorization/consent_scope_model.py": {
+      "mtime": 1777415504.0,
+      "size": 436
+    },
+    "core/authorization/user_confirmation_contract.py": {
+      "mtime": 1777415504.0,
+      "size": 658
+    },
+    "core/autonomous_runtime_fabric/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 3485
+    },
+    "core/autonomous_runtime_fabric/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 1643
+    },
+    "core/autonomous_runtime_fabric/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/autonomous_runtime_fabric/v227_control_tower.py": {
+      "mtime": 1777415504.0,
+      "size": 547
+    },
+    "core/autonomous_runtime_fabric/v228_runtime_mesh_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 555
+    },
+    "core/autonomous_runtime_fabric/v229_service_discovery.py": {
+      "mtime": 1777415504.0,
+      "size": 414
+    },
+    "core/autonomous_runtime_fabric/v230_config_overlay_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 666
+    },
+    "core/autonomous_runtime_fabric/v231_secret_reference_vault.py": {
+      "mtime": 1777415504.0,
+      "size": 787
+    },
+    "core/autonomous_runtime_fabric/v232_policy_enforcement_point.py": {
+      "mtime": 1777415504.0,
+      "size": 973
+    },
+    "core/autonomous_runtime_fabric/v233_tool_broker.py": {
+      "mtime": 1777415504.0,
+      "size": 657
+    },
+    "core/autonomous_runtime_fabric/v234_workflow_template_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 631
+    },
+    "core/autonomous_runtime_fabric/v235_execution_lease_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 744
+    },
+    "core/autonomous_runtime_fabric/v236_state_checkpoint_graph.py": {
+      "mtime": 1777415504.0,
+      "size": 590
+    },
+    "core/autonomous_runtime_fabric/v237_replay_lab.py": {
+      "mtime": 1777415504.0,
+      "size": 563
+    },
+    "core/autonomous_runtime_fabric/v238_deterministic_verifier.py": {
+      "mtime": 1777415504.0,
+      "size": 548
+    },
+    "core/autonomous_runtime_fabric/v239_self_healing_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 766
+    },
+    "core/autonomous_runtime_fabric/v240_degradation_controller.py": {
+      "mtime": 1777415504.0,
+      "size": 684
+    },
+    "core/autonomous_runtime_fabric/v241_alert_router.py": {
+      "mtime": 1777415504.0,
+      "size": 739
+    },
+    "core/autonomous_runtime_fabric/v242_trust_zone_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 691
+    },
+    "core/autonomous_runtime_fabric/v243_artifact_signer.py": {
+      "mtime": 1777415504.0,
+      "size": 543
+    },
+    "core/autonomous_runtime_fabric/v244_dependency_lockfile_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 645
+    },
+    "core/autonomous_runtime_fabric/v245_cache_coordinator.py": {
+      "mtime": 1777415504.0,
+      "size": 624
+    },
+    "core/autonomous_runtime_fabric/v246_queue_shard_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 574
+    },
+    "core/autonomous_runtime_fabric/v247_resource_forecast_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 676
+    },
+    "core/autonomous_runtime_fabric/v248_model_fleet_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 730
+    },
+    "core/autonomous_runtime_fabric/v249_memory_tier_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 620
+    },
+    "core/autonomous_runtime_fabric/v250_evidence_bundle_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 664
+    },
+    "core/autonomous_runtime_fabric/v251_run_replay_exporter.py": {
+      "mtime": 1777415504.0,
+      "size": 484
+    },
+    "core/autonomous_runtime_fabric/v252_operator_console.py": {
+      "mtime": 1777415504.0,
+      "size": 555
+    },
+    "core/autonomous_runtime_fabric/v253_integration_smoke_test.py": {
+      "mtime": 1777415504.0,
+      "size": 623
+    },
+    "core/autonomous_runtime_fabric/v254_security_posture_review.py": {
+      "mtime": 1777415504.0,
+      "size": 921
+    },
+    "core/autonomous_runtime_fabric/v255_fabric_readiness_board.py": {
+      "mtime": 1777415504.0,
+      "size": 972
+    },
+    "core/autonomous_runtime_fabric/v256_autonomous_runtime_fabric_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 9604
+    },
+    "core/autonomy/__init__.py": {
+      "mtime": 1777555833.2139714,
+      "size": 1553
+    },
+    "core/autonomy/approval_interrupt.py": {
+      "mtime": 1777415504.0,
+      "size": 3073
+    },
+    "core/autonomy/autonomy_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 7397
+    },
+    "core/autonomy/capability_gap.py": {
+      "mtime": 1777415504.0,
+      "size": 3430
+    },
+    "core/autonomy/continuous_task_runner.py": {
+      "mtime": 1777415504.0,
+      "size": 2791
+    },
+    "core/autonomy/extension_sandbox.py": {
+      "mtime": 1777415504.0,
+      "size": 3952
+    },
+    "core/autonomy/goal_strategy_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 5639
+    },
+    "core/autonomy/memory_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 4215
+    },
+    "core/autonomy/quality_evaluator.py": {
+      "mtime": 1777415504.0,
+      "size": 2800
+    },
+    "core/autonomy/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4601
+    },
+    "core/autonomy/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/autonomy/strategy_evolver.py": {
+      "mtime": 1777415504.0,
+      "size": 3008
+    },
+    "core/autonomy/task_graph_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 2042
+    },
+    "core/autonomy/trace_audit.py": {
+      "mtime": 1777415504.0,
+      "size": 1829
+    },
+    "core/autonomy/world_interface.py": {
+      "mtime": 1777415504.0,
+      "size": 4224
+    },
+    "core/bootstrap.py": {
+      "mtime": 1777415504.0,
+      "size": 428
+    },
+    "core/collaboration/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 422
+    },
+    "core/collaboration/agent_role_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 879
+    },
+    "core/collaboration/collaboration_protocol.py": {
+      "mtime": 1777415504.0,
+      "size": 534
+    },
+    "core/collaboration/collaborative_autonomy_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 1181
+    },
+    "core/collaboration/consensus_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 476
+    },
+    "core/collaboration/delegation_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 726
+    },
+    "core/continuous/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 441
+    },
+    "core/continuous/attention_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 790
+    },
+    "core/continuous/context_refresh_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 665
+    },
+    "core/continuous/continuous_intelligence_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 1431
+    },
+    "core/continuous/initiative_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 1059
+    },
+    "core/continuous/runtime_budget_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 812
+    },
+    "core/device_timeout_resilience/__init__.py": {
+      "mtime": 1777445366.0,
+      "size": 1370
+    },
+    "core/device_timeout_resilience/heartbeat.py": {
+      "mtime": 1777445366.0,
+      "size": 816
+    },
+    "core/device_timeout_resilience/job_queue.py": {
+      "mtime": 1777445366.0,
+      "size": 1245
+    },
+    "core/device_timeout_resilience/operator_v26.py": {
+      "mtime": 1777445366.0,
+      "size": 4003
+    },
+    "core/device_timeout_resilience/retry_planner.py": {
+      "mtime": 1777445366.0,
+      "size": 811
+    },
+    "core/device_timeout_resilience/schemas.py": {
+      "mtime": 1777445366.0,
+      "size": 2709
+    },
+    "core/device_timeout_resilience/storage.py": {
+      "mtime": 1777445366.0,
+      "size": 964
+    },
+    "core/device_timeout_resilience/supervisor.py": {
+      "mtime": 1777445366.0,
+      "size": 4210
+    },
+    "core/device_timeout_resilience/task_splitter.py": {
+      "mtime": 1777445366.0,
+      "size": 1044
+    },
+    "core/device_timeout_resilience/timeout_policy.py": {
+      "mtime": 1777445366.0,
+      "size": 1386
+    },
+    "core/diagnostics.py": {
+      "mtime": 1777415504.0,
+      "size": 423
+    },
+    "core/digital_twin/__init__.py": {
+      "mtime": 1777636851.1172676,
+      "size": 401
+    },
+    "core/digital_twin/decision_twin.py": {
+      "mtime": 1777636851.1122677,
+      "size": 309
+    },
+    "core/digital_twin/habit_twin.py": {
+      "mtime": 1777636851.1152678,
+      "size": 287
+    },
+    "core/digital_twin/identity_drift_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 521
+    },
+    "core/digital_twin/personal_digital_twin.py": {
+      "mtime": 1777636851.1082678,
+      "size": 1258
+    },
+    "core/digital_twin/preference_twin.py": {
+      "mtime": 1777636851.1102676,
+      "size": 407
+    },
+    "core/digital_twin/risk_twin.py": {
+      "mtime": 1777636851.1142678,
+      "size": 300
+    },
+    "core/domain/__init__.py": {
+      "mtime": 1777653662.1441686,
+      "size": 46
+    },
+    "core/domain/tasks/specs.py": {
+      "mtime": 1777415504.0,
+      "size": 11748
+    },
+    "core/domain/tasks/state_machine.py": {
+      "mtime": 1777781734.6496933,
+      "size": 1890
+    },
+    "core/execution_contract/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 332
+    },
+    "core/execution_contract/confirmation_ledger.py": {
+      "mtime": 1777415504.0,
+      "size": 518
+    },
+    "core/execution_contract/execution_contract.py": {
+      "mtime": 1777415504.0,
+      "size": 1125
+    },
+    "core/execution_contract/execution_readiness_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 488
+    },
+    "core/execution_contract/side_effect_budget.py": {
+      "mtime": 1777415504.0,
+      "size": 772
+    },
+    "core/executive_os/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 460
+    },
+    "core/executive_os/autonomy_maturity_score.py": {
+      "mtime": 1777415504.0,
+      "size": 675
+    },
+    "core/executive_os/command_intent_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 720
+    },
+    "core/executive_os/end_to_end_closure_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 638
+    },
+    "core/executive_os/executive_operating_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 1467
+    },
+    "core/executive_os/operating_mode_switch.py": {
+      "mtime": 1777415504.0,
+      "size": 801
+    },
+    "core/fused_modules/unified_inspector_v10.py": {
+      "mtime": 1777652175.529602,
+      "size": 1533
+    },
+    "core/goal_contract_v2.py": {
+      "mtime": 1777529633.7092557,
+      "size": 2351
+    },
+    "core/goal_portfolio_v5.py": {
+      "mtime": 1777529633.7092557,
+      "size": 2971
+    },
+    "core/history.py": {
+      "mtime": 1777415504.0,
+      "size": 433
+    },
+    "core/invocation.py": {
+      "mtime": 1777415504.0,
+      "size": 467
+    },
+    "core/knowledge/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 348
+    },
+    "core/knowledge/knowledge_decay_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 466
+    },
+    "core/knowledge/knowledge_refinery.py": {
+      "mtime": 1777415504.0,
+      "size": 1096
+    },
+    "core/knowledge/solution_memory_index.py": {
+      "mtime": 1777415504.0,
+      "size": 424
+    },
+    "core/knowledge/source_quality_evaluator.py": {
+      "mtime": 1777415504.0,
+      "size": 502
+    },
+    "core/llm/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1210
+    },
+    "core/llm/decision_matrix.py": {
+      "mtime": 1777415504.0,
+      "size": 7114
+    },
+    "core/llm/llm.py": {
+      "mtime": 1777529653.2882164,
+      "size": 5032
+    },
+    "core/llm/llm_client.py": {
+      "mtime": 1777529653.2882164,
+      "size": 6019
+    },
+    "core/llm/llm_gateway.py": {
+      "mtime": 1777415504.0,
+      "size": 10026
+    },
+    "core/llm/model_discovery.py": {
+      "mtime": 1777557066.0302057,
+      "size": 6825
+    },
+    "core/llm/model_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 19838
+    },
+    "core/llm/model_router.py": {
+      "mtime": 1777415504.0,
+      "size": 6000
+    },
+    "core/llm/provider_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 6502
+    },
+    "core/llm/scene_classifier.py": {
+      "mtime": 1777415504.0,
+      "size": 10105
+    },
+    "core/llm/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 8130
+    },
+    "core/llm/telemetry/model_call_log.py": {
+      "mtime": 1777415504.0,
+      "size": 1105
+    },
+    "core/meta_autonomy_platform/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 6565
+    },
+    "core/meta_autonomy_platform/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 1666
+    },
+    "core/meta_autonomy_platform/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 962
+    },
+    "core/meta_autonomy_platform/v257_capability_marketplace.py": {
+      "mtime": 1777415504.0,
+      "size": 3007
+    },
+    "core/meta_autonomy_platform/v258_skill_composer.py": {
+      "mtime": 1777415504.0,
+      "size": 2997
+    },
+    "core/meta_autonomy_platform/v259_workflow_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 3009
+    },
+    "core/meta_autonomy_platform/v260_decision_graph_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 3022
+    },
+    "core/meta_autonomy_platform/v261_intent_cache.py": {
+      "mtime": 1777415504.0,
+      "size": 2987
+    },
+    "core/meta_autonomy_platform/v262_semantic_router.py": {
+      "mtime": 1777415504.0,
+      "size": 2999
+    },
+    "core/meta_autonomy_platform/v263_task_batcher.py": {
+      "mtime": 1777415504.0,
+      "size": 2999
+    },
+    "core/meta_autonomy_platform/v264_priority_queue_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3030
+    },
+    "core/meta_autonomy_platform/v265_parallel_plan_simulator.py": {
+      "mtime": 1777415504.0,
+      "size": 3026
+    },
+    "core/meta_autonomy_platform/v266_state_consistency_checker.py": {
+      "mtime": 1777415504.0,
+      "size": 3036
+    },
+    "core/meta_autonomy_platform/v267_isolation_boundary_checker.py": {
+      "mtime": 1777415504.0,
+      "size": 3032
+    },
+    "core/meta_autonomy_platform/v268_policy_diff_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 3010
+    },
+    "core/meta_autonomy_platform/v269_approval_sla_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3014
+    },
+    "core/meta_autonomy_platform/v270_credential_hygiene_scanner.py": {
+      "mtime": 1777415504.0,
+      "size": 3032
+    },
+    "core/meta_autonomy_platform/v271_prompt_firewall.py": {
+      "mtime": 1777415504.0,
+      "size": 2999
+    },
+    "core/meta_autonomy_platform/v272_tool_allowlist_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 3032
+    },
+    "core/meta_autonomy_platform/v273_data_minimization_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 3028
+    },
+    "core/meta_autonomy_platform/v274_context_deduplicator.py": {
+      "mtime": 1777415504.0,
+      "size": 3015
+    },
+    "core/meta_autonomy_platform/v275_memory_conflict_resolver.py": {
+      "mtime": 1777415504.0,
+      "size": 3028
+    },
+    "core/meta_autonomy_platform/v276_knowledge_graph_index.py": {
+      "mtime": 1777415504.0,
+      "size": 3016
+    },
+    "core/meta_autonomy_platform/v277_ontology_mapper.py": {
+      "mtime": 1777415504.0,
+      "size": 2999
+    },
+    "core/meta_autonomy_platform/v278_retrieval_strategy_tuner.py": {
+      "mtime": 1777415504.0,
+      "size": 3028
+    },
+    "core/meta_autonomy_platform/v279_source_credibility_scorer.py": {
+      "mtime": 1777415504.0,
+      "size": 3036
+    },
+    "core/meta_autonomy_platform/v280_evidence_linker.py": {
+      "mtime": 1777415504.0,
+      "size": 2999
+    },
+    "core/meta_autonomy_platform/v281_artifact_dependency_packager.py": {
+      "mtime": 1777415504.0,
+      "size": 3036
+    },
+    "core/meta_autonomy_platform/v282_patch_conflict_resolver.py": {
+      "mtime": 1777415504.0,
+      "size": 3026
+    },
+    "core/meta_autonomy_platform/v283_schema_evolution_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3028
+    },
+    "core/meta_autonomy_platform/v284_migration_dry_run_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 3021
+    },
+    "core/meta_autonomy_platform/v285_compatibility_matrix_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 3036
+    },
+    "core/meta_autonomy_platform/v286_device_capability_matcher.py": {
+      "mtime": 1777415504.0,
+      "size": 3030
+    },
+    "core/meta_autonomy_platform/v287_local_executor_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3024
+    },
+    "core/meta_autonomy_platform/v288_remote_executor_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3026
+    },
+    "core/meta_autonomy_platform/v289_sandbox_fleet_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 3022
+    },
+    "core/meta_autonomy_platform/v290_runtime_contract_broker.py": {
+      "mtime": 1777415504.0,
+      "size": 3032
+    },
+    "core/meta_autonomy_platform/v291_operation_idempotency_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 3028
+    },
+    "core/meta_autonomy_platform/v292_side_effect_reconciliation.py": {
+      "mtime": 1777415504.0,
+      "size": 3026
+    },
+    "core/meta_autonomy_platform/v293_human_checkpoint_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 3044
+    },
+    "core/meta_autonomy_platform/v294_audit_trail_compressor.py": {
+      "mtime": 1777415504.0,
+      "size": 3024
+    },
+    "core/meta_autonomy_platform/v295_observability_correlation_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 3044
+    },
+    "core/meta_autonomy_platform/v296_token_budget_allocator.py": {
+      "mtime": 1777415504.0,
+      "size": 3022
+    },
+    "core/meta_autonomy_platform/v297_cost_center_allocator.py": {
+      "mtime": 1777415504.0,
+      "size": 3022
+    },
+    "core/meta_autonomy_platform/v298_latency_budget_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3024
+    },
+    "core/meta_autonomy_platform/v299_throughput_controller.py": {
+      "mtime": 1777415504.0,
+      "size": 3011
+    },
+    "core/meta_autonomy_platform/v300_concurrency_governor.py": {
+      "mtime": 1777415504.0,
+      "size": 3009
+    },
+    "core/meta_autonomy_platform/v301_adaptive_rate_limiter.py": {
+      "mtime": 1777415504.0,
+      "size": 3016
+    },
+    "core/meta_autonomy_platform/v302_load_shedding_controller.py": {
+      "mtime": 1777415504.0,
+      "size": 3028
+    },
+    "core/meta_autonomy_platform/v303_regression_risk_predictor.py": {
+      "mtime": 1777415504.0,
+      "size": 3030
+    },
+    "core/meta_autonomy_platform/v304_quality_drift_detector.py": {
+      "mtime": 1777415504.0,
+      "size": 3024
+    },
+    "core/meta_autonomy_platform/v305_agent_maturity_assessor.py": {
+      "mtime": 1777415504.0,
+      "size": 3030
+    },
+    "core/meta_autonomy_platform/v306_roadmap_reprioritizer.py": {
+      "mtime": 1777415504.0,
+      "size": 3017
+    },
+    "core/meta_autonomy_platform/v307_technical_debt_register.py": {
+      "mtime": 1777415504.0,
+      "size": 3020
+    },
+    "core/meta_autonomy_platform/v308_deprecation_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 3019
+    },
+    "core/meta_autonomy_platform/v309_user_journey_tracer.py": {
+      "mtime": 1777415504.0,
+      "size": 3018
+    },
+    "core/meta_autonomy_platform/v310_stakeholder_alignment_matrix.py": {
+      "mtime": 1777415504.0,
+      "size": 3036
+    },
+    "core/meta_autonomy_platform/v311_operator_training_packager.py": {
+      "mtime": 1777415504.0,
+      "size": 3026
+    },
+    "core/meta_autonomy_platform/v312_runbook_quality_scorer.py": {
+      "mtime": 1777415504.0,
+      "size": 3026
+    },
+    "core/meta_autonomy_platform/v313_model_quality_arbiter.py": {
+      "mtime": 1777415504.0,
+      "size": 3022
+    },
+    "core/meta_autonomy_platform/v314_vendor_governance_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 3038
+    },
+    "core/meta_autonomy_platform/v315_platform_certification_board.py": {
+      "mtime": 1777415504.0,
+      "size": 3036
+    },
+    "core/meta_autonomy_platform/v316_meta_autonomy_platform_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 11160
+    },
+    "core/mission/__init__.py": {
+      "mtime": 1777555833.2149713,
+      "size": 57
+    },
+    "core/mission/autonomy_horizon_planner_v7.py": {
+      "mtime": 1777529633.7092557,
+      "size": 2209
+    },
+    "core/mission/mission_control_center.py": {
+      "mtime": 1777415504.0,
+      "size": 1223
+    },
+    "core/mission/mission_graph.py": {
+      "mtime": 1777415504.0,
+      "size": 2312
+    },
+    "core/mission/mission_priority_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 659
+    },
+    "core/mission/proactive_observer.py": {
+      "mtime": 1777415504.0,
+      "size": 650
+    },
+    "core/monitoring/cli_tool.py": {
+      "mtime": 1777415504.0,
+      "size": 8000
+    },
+    "core/monitoring/health_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 7635
+    },
+    "core/monitoring/performance_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 2620
+    },
+    "core/multi_agent/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 227
+    },
+    "core/multi_agent/critic_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 537
+    },
+    "core/multi_agent/executor_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 385
+    },
+    "core/multi_agent/role_team.py": {
+      "mtime": 1777415504.0,
+      "size": 874
+    },
+    "core/multi_agent/verifier_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 389
+    },
+    "core/operating_agent/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2112
+    },
+    "core/operating_agent/connector_catalog.py": {
+      "mtime": 1777415504.0,
+      "size": 3341
+    },
+    "core/operating_agent/constitution_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 5137
+    },
+    "core/operating_agent/evaluation_benchmark.py": {
+      "mtime": 1777415504.0,
+      "size": 3156
+    },
+    "core/operating_agent/mcp_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 2865
+    },
+    "core/operating_agent/multi_agent_coordinator.py": {
+      "mtime": 1777415504.0,
+      "size": 1876
+    },
+    "core/operating_agent/operating_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 6894
+    },
+    "core/operating_agent/permission_vault.py": {
+      "mtime": 1777415504.0,
+      "size": 2461
+    },
+    "core/operating_agent/plugin_sandbox.py": {
+      "mtime": 1777415504.0,
+      "size": 2881
+    },
+    "core/operating_agent/recovery_ledger.py": {
+      "mtime": 1777415504.0,
+      "size": 1918
+    },
+    "core/operating_agent/release_governor.py": {
+      "mtime": 1777415504.0,
+      "size": 1665
+    },
+    "core/operating_agent/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4464
+    },
+    "core/operating_agent/specialist_handoff.py": {
+      "mtime": 1777415504.0,
+      "size": 3462
+    },
+    "core/operating_agent/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/operating_contract_v3.py": {
+      "mtime": 1777529633.7092557,
+      "size": 5107
+    },
+    "core/operating_spine/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2520
+    },
+    "core/operating_spine/approval_recovery.py": {
+      "mtime": 1777415504.0,
+      "size": 2118
+    },
+    "core/operating_spine/capability_contracts.py": {
+      "mtime": 1777415504.0,
+      "size": 3600
+    },
+    "core/operating_spine/connector_health.py": {
+      "mtime": 1777415504.0,
+      "size": 1559
+    },
+    "core/operating_spine/event_bus.py": {
+      "mtime": 1777415504.0,
+      "size": 1620
+    },
+    "core/operating_spine/memory_consolidation.py": {
+      "mtime": 1777415504.0,
+      "size": 1800
+    },
+    "core/operating_spine/operating_spine.py": {
+      "mtime": 1777415504.0,
+      "size": 7386
+    },
+    "core/operating_spine/scenario_harness.py": {
+      "mtime": 1777415504.0,
+      "size": 3259
+    },
+    "core/operating_spine/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4522
+    },
+    "core/operating_spine/skill_lifecycle.py": {
+      "mtime": 1777415504.0,
+      "size": 2450
+    },
+    "core/operating_spine/state_migration.py": {
+      "mtime": 1777415504.0,
+      "size": 2670
+    },
+    "core/operating_spine/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/operating_spine/task_runtime_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 2140
+    },
+    "core/operations_intelligence/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 3623
+    },
+    "core/operations_intelligence/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 1937
+    },
+    "core/operations_intelligence/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/operations_intelligence/v167_roadmap_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 1027
+    },
+    "core/operations_intelligence/v168_portfolio_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 996
+    },
+    "core/operations_intelligence/v169_experiment_designer.py": {
+      "mtime": 1777415504.0,
+      "size": 833
+    },
+    "core/operations_intelligence/v170_metrics_kpi_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 834
+    },
+    "core/operations_intelligence/v171_data_ingestion_hub.py": {
+      "mtime": 1777415504.0,
+      "size": 828
+    },
+    "core/operations_intelligence/v172_data_quality_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 867
+    },
+    "core/operations_intelligence/v173_report_generator.py": {
+      "mtime": 1777415504.0,
+      "size": 802
+    },
+    "core/operations_intelligence/v174_decision_memo_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 633
+    },
+    "core/operations_intelligence/v175_risk_register.py": {
+      "mtime": 1777415504.0,
+      "size": 1156
+    },
+    "core/operations_intelligence/v176_incident_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 853
+    },
+    "core/operations_intelligence/v177_slo_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 579
+    },
+    "core/operations_intelligence/v178_cost_analyzer.py": {
+      "mtime": 1777415504.0,
+      "size": 835
+    },
+    "core/operations_intelligence/v179_performance_profiler.py": {
+      "mtime": 1777415504.0,
+      "size": 742
+    },
+    "core/operations_intelligence/v180_token_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 868
+    },
+    "core/operations_intelligence/v181_prompt_policy_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 686
+    },
+    "core/operations_intelligence/v182_eval_dataset_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 797
+    },
+    "core/operations_intelligence/v183_ab_test_runner.py": {
+      "mtime": 1777415504.0,
+      "size": 704
+    },
+    "core/operations_intelligence/v184_continuous_learning_queue.py": {
+      "mtime": 1777415504.0,
+      "size": 822
+    },
+    "core/operations_intelligence/v185_knowledge_freshness_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 780
+    },
+    "core/operations_intelligence/v186_compliance_checklist.py": {
+      "mtime": 1777415504.0,
+      "size": 791
+    },
+    "core/operations_intelligence/v187_data_retention_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 856
+    },
+    "core/operations_intelligence/v188_secret_rotation_advisor.py": {
+      "mtime": 1777415504.0,
+      "size": 922
+    },
+    "core/operations_intelligence/v189_connector_permission_review.py": {
+      "mtime": 1777415504.0,
+      "size": 804
+    },
+    "core/operations_intelligence/v190_multichannel_output_router.py": {
+      "mtime": 1777415504.0,
+      "size": 989
+    },
+    "core/operations_intelligence/v191_stakeholder_briefing.py": {
+      "mtime": 1777415504.0,
+      "size": 731
+    },
+    "core/operations_intelligence/v192_release_notes_generator.py": {
+      "mtime": 1777415504.0,
+      "size": 713
+    },
+    "core/operations_intelligence/v193_audit_exporter.py": {
+      "mtime": 1777415504.0,
+      "size": 733
+    },
+    "core/operations_intelligence/v194_health_dashboard.py": {
+      "mtime": 1777415504.0,
+      "size": 876
+    },
+    "core/operations_intelligence/v195_executive_summary_packager.py": {
+      "mtime": 1777415504.0,
+      "size": 827
+    },
+    "core/operations_intelligence/v196_operations_intelligence_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 9072
+    },
+    "core/persona/auto_update_persona.py": {
+      "mtime": 1777415504.0,
+      "size": 12268
+    },
+    "core/persona/update_l3_profile.py": {
+      "mtime": 1777415504.0,
+      "size": 2919
+    },
+    "core/persona/update_persona.py": {
+      "mtime": 1777415504.0,
+      "size": 2797
+    },
+    "core/personal_agent/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1498
+    },
+    "core/personal_agent/durable_task_state.py": {
+      "mtime": 1777415504.0,
+      "size": 1816
+    },
+    "core/personal_agent/execution_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 3447
+    },
+    "core/personal_agent/experience_writer.py": {
+      "mtime": 1777415504.0,
+      "size": 1596
+    },
+    "core/personal_agent/goal_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 7806
+    },
+    "core/personal_agent/personal_execution_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 3823
+    },
+    "core/personal_agent/policy_judge.py": {
+      "mtime": 1777415504.0,
+      "size": 3940
+    },
+    "core/personal_agent/result_verifier.py": {
+      "mtime": 1777415504.0,
+      "size": 1515
+    },
+    "core/personal_agent/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 7005
+    },
+    "core/personal_agent/task_graph.py": {
+      "mtime": 1777415504.0,
+      "size": 7436
+    },
+    "core/personal_os_v36_v45/__init__.py": {
+      "mtime": 1777529633.7092557,
+      "size": 69
+    },
+    "core/personal_os_v36_v45/operating_organs.py": {
+      "mtime": 1777529633.7102559,
+      "size": 16989
+    },
+    "core/personality/__init__.py": {
+      "mtime": 1777529633.7142558,
+      "size": 0
+    },
+    "core/personality/persona_drift_guard_v4.py": {
+      "mtime": 1777529633.7142558,
+      "size": 1589
+    },
+    "core/personalization/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2063
+    },
+    "core/personalization/decision_pattern_learner.py": {
+      "mtime": 1777415504.0,
+      "size": 2239
+    },
+    "core/personalization/feedback_trainer.py": {
+      "mtime": 1777415504.0,
+      "size": 1709
+    },
+    "core/personalization/personalization_drift_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 1684
+    },
+    "core/personalization/personalization_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 5189
+    },
+    "core/personalization/personalization_scorecard.py": {
+      "mtime": 1777415504.0,
+      "size": 1405
+    },
+    "core/personalization/preference_rules.py": {
+      "mtime": 1777415504.0,
+      "size": 3295
+    },
+    "core/personalization/procedure_library.py": {
+      "mtime": 1777415504.0,
+      "size": 3043
+    },
+    "core/personalization/project_memory.py": {
+      "mtime": 1777415504.0,
+      "size": 3065
+    },
+    "core/personalization/relationship_context.py": {
+      "mtime": 1777415504.0,
+      "size": 1756
+    },
+    "core/personalization/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 3655
+    },
+    "core/personalization/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/personalization/user_profile.py": {
+      "mtime": 1777415504.0,
+      "size": 1849
+    },
+    "core/portfolio/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 217
+    },
+    "core/portfolio/goal_portfolio_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 997
+    },
+    "core/portfolio/progress_evaluator.py": {
+      "mtime": 1777415504.0,
+      "size": 504
+    },
+    "core/portfolio/task_backlog.py": {
+      "mtime": 1777415504.0,
+      "size": 589
+    },
+    "core/preview.py": {
+      "mtime": 1777415504.0,
+      "size": 432
+    },
+    "core/privacy/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 264
+    },
+    "core/privacy/data_minimization_filter.py": {
+      "mtime": 1777415504.0,
+      "size": 173
+    },
+    "core/privacy/privacy_boundary_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 762
+    },
+    "core/privacy/scope_redaction_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 256
+    },
+    "core/production_control_plane/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 3439
+    },
+    "core/production_control_plane/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 1629
+    },
+    "core/production_control_plane/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/production_control_plane/v197_system_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 664
+    },
+    "core/production_control_plane/v198_workspace_tenant_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 595
+    },
+    "core/production_control_plane/v199_role_access_matrix.py": {
+      "mtime": 1777415504.0,
+      "size": 614
+    },
+    "core/production_control_plane/v200_policy_pack_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 799
+    },
+    "core/production_control_plane/v201_event_sourcing_ledger.py": {
+      "mtime": 1777415504.0,
+      "size": 732
+    },
+    "core/production_control_plane/v202_data_lineage_tracker.py": {
+      "mtime": 1777415504.0,
+      "size": 593
+    },
+    "core/production_control_plane/v203_backup_restore_verifier.py": {
+      "mtime": 1777415504.0,
+      "size": 619
+    },
+    "core/production_control_plane/v204_disaster_recovery_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 703
+    },
+    "core/production_control_plane/v205_canary_deployment_controller.py": {
+      "mtime": 1777415504.0,
+      "size": 796
+    },
+    "core/production_control_plane/v206_feature_flag_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 445
+    },
+    "core/production_control_plane/v207_model_canary_evaluator.py": {
+      "mtime": 1777415504.0,
+      "size": 651
+    },
+    "core/production_control_plane/v208_provider_failover_controller.py": {
+      "mtime": 1777415504.0,
+      "size": 705
+    },
+    "core/production_control_plane/v209_connector_quota_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 742
+    },
+    "core/production_control_plane/v210_sla_escalation_router.py": {
+      "mtime": 1777415504.0,
+      "size": 770
+    },
+    "core/production_control_plane/v211_anomaly_detector.py": {
+      "mtime": 1777415504.0,
+      "size": 712
+    },
+    "core/production_control_plane/v212_capacity_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 776
+    },
+    "core/production_control_plane/v213_dependency_graph_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 510
+    },
+    "core/production_control_plane/v214_change_impact_analyzer.py": {
+      "mtime": 1777415504.0,
+      "size": 861
+    },
+    "core/production_control_plane/v215_contract_test_runner.py": {
+      "mtime": 1777415504.0,
+      "size": 640
+    },
+    "core/production_control_plane/v216_golden_path_validator.py": {
+      "mtime": 1777415504.0,
+      "size": 624
+    },
+    "core/production_control_plane/v217_user_acceptance_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 803
+    },
+    "core/production_control_plane/v218_playbook_library.py": {
+      "mtime": 1777415504.0,
+      "size": 743
+    },
+    "core/production_control_plane/v219_runbook_executor.py": {
+      "mtime": 1777415504.0,
+      "size": 502
+    },
+    "core/production_control_plane/v220_training_data_curator.py": {
+      "mtime": 1777415504.0,
+      "size": 811
+    },
+    "core/production_control_plane/v221_review_workflow.py": {
+      "mtime": 1777415504.0,
+      "size": 530
+    },
+    "core/production_control_plane/v222_postmortem_generator.py": {
+      "mtime": 1777415504.0,
+      "size": 614
+    },
+    "core/production_control_plane/v223_governance_board.py": {
+      "mtime": 1777415504.0,
+      "size": 709
+    },
+    "core/production_control_plane/v224_objective_alignment.py": {
+      "mtime": 1777415504.0,
+      "size": 693
+    },
+    "core/production_control_plane/v225_roi_analyzer.py": {
+      "mtime": 1777415504.0,
+      "size": 602
+    },
+    "core/production_control_plane/v226_production_control_plane_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 8968
+    },
+    "core/project_autonomy/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 301
+    },
+    "core/project_autonomy/autonomous_project_review.py": {
+      "mtime": 1777415504.0,
+      "size": 494
+    },
+    "core/project_autonomy/milestone_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 658
+    },
+    "core/project_autonomy/project_brain.py": {
+      "mtime": 1777415504.0,
+      "size": 1036
+    },
+    "core/project_autonomy/project_memory_graph.py": {
+      "mtime": 1777415504.0,
+      "size": 428
+    },
+    "core/query/langdetect.py": {
+      "mtime": 1777415504.0,
+      "size": 2212
+    },
+    "core/query/rewriter.py": {
+      "mtime": 1777415504.0,
+      "size": 3301
+    },
+    "core/query/understand.py": {
+      "mtime": 1777415504.0,
+      "size": 4473
+    },
+    "core/real_connector_execution/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1732
+    },
+    "core/real_connector_execution/connector_executor.py": {
+      "mtime": 1777415504.0,
+      "size": 2737
+    },
+    "core/real_connector_execution/connector_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 3696
+    },
+    "core/real_connector_execution/connector_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 3585
+    },
+    "core/real_connector_execution/connectors.py": {
+      "mtime": 1777415504.0,
+      "size": 6405
+    },
+    "core/real_connector_execution/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 2201
+    },
+    "core/real_connector_execution/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/real_tool_binding/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1037
+    },
+    "core/real_tool_binding/execution_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 1597
+    },
+    "core/real_tool_binding/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 2011
+    },
+    "core/real_tool_binding/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 962
+    },
+    "core/real_tool_binding/tool_binder.py": {
+      "mtime": 1777415504.0,
+      "size": 1557
+    },
+    "core/real_tool_binding/tool_binding_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 2346
+    },
+    "core/real_tool_binding/tool_executor.py": {
+      "mtime": 1777415504.0,
+      "size": 3799
+    },
+    "core/real_tool_binding/tool_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 4107
+    },
+    "core/real_work_entry/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1061
+    },
+    "core/real_work_entry/action_log.py": {
+      "mtime": 1777415504.0,
+      "size": 1718
+    },
+    "core/real_work_entry/message_entry.py": {
+      "mtime": 1777415504.0,
+      "size": 849
+    },
+    "core/real_work_entry/real_work_entry.py": {
+      "mtime": 1777415504.0,
+      "size": 4249
+    },
+    "core/real_work_entry/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 2166
+    },
+    "core/real_work_entry/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/reality/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 363
+    },
+    "core/reality/environment_capability_probe.py": {
+      "mtime": 1777415504.0,
+      "size": 920
+    },
+    "core/reality/fact_state_resolver.py": {
+      "mtime": 1777415504.0,
+      "size": 747
+    },
+    "core/reality/reality_grounding_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 1245
+    },
+    "core/reality/uncertainty_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 791
+    },
+    "core/recovery.py": {
+      "mtime": 1777415504.0,
+      "size": 436
+    },
+    "core/registry.py": {
+      "mtime": 1777415504.0,
+      "size": 427
+    },
+    "core/release_hardening/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2014
+    },
+    "core/release_hardening/config_contract.py": {
+      "mtime": 1777415504.0,
+      "size": 1760
+    },
+    "core/release_hardening/dependency_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 1931
+    },
+    "core/release_hardening/deployment_profile.py": {
+      "mtime": 1777415504.0,
+      "size": 1770
+    },
+    "core/release_hardening/environment_doctor.py": {
+      "mtime": 1777415504.0,
+      "size": 1389
+    },
+    "core/release_hardening/regression_matrix.py": {
+      "mtime": 1777415504.0,
+      "size": 1505
+    },
+    "core/release_hardening/release_hardening_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 4914
+    },
+    "core/release_hardening/release_manifest.py": {
+      "mtime": 1777415504.0,
+      "size": 1447
+    },
+    "core/release_hardening/rollback_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 1045
+    },
+    "core/release_hardening/runtime_report.py": {
+      "mtime": 1777415504.0,
+      "size": 1096
+    },
+    "core/release_hardening/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 3752
+    },
+    "core/release_hardening/snapshot_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 2186
+    },
+    "core/release_hardening/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/release_manifest_v23_7_to_v24_6.py": {
+      "mtime": 1777529633.7102559,
+      "size": 3181
+    },
+    "core/replay.py": {
+      "mtime": 1777415504.0,
+      "size": 427
+    },
+    "core/runtime/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 497
+    },
+    "core/runtime/autonomous_runtime_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 2437
+    },
+    "core/runtime/decision_cycle.py": {
+      "mtime": 1777415504.0,
+      "size": 3549
+    },
+    "core/runtime/goal_memory.py": {
+      "mtime": 1777415504.0,
+      "size": 1507
+    },
+    "core/runtime/priority_scheduler.py": {
+      "mtime": 1777415504.0,
+      "size": 1163
+    },
+    "core/runtime/runtime_state_machine.py": {
+      "mtime": 1777415504.0,
+      "size": 1213
+    },
+    "core/runtime_activation/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2039
+    },
+    "core/runtime_activation/api_facade.py": {
+      "mtime": 1777415504.0,
+      "size": 1290
+    },
+    "core/runtime_activation/artifact_packager.py": {
+      "mtime": 1777415504.0,
+      "size": 1360
+    },
+    "core/runtime_activation/command_bus.py": {
+      "mtime": 1777415504.0,
+      "size": 2074
+    },
+    "core/runtime_activation/compatibility_shim.py": {
+      "mtime": 1777415504.0,
+      "size": 2096
+    },
+    "core/runtime_activation/diagnostic_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 1419
+    },
+    "core/runtime_activation/job_queue.py": {
+      "mtime": 1777415504.0,
+      "size": 2203
+    },
+    "core/runtime_activation/policy_simulator.py": {
+      "mtime": 1777415504.0,
+      "size": 1016
+    },
+    "core/runtime_activation/runtime_activation_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 5561
+    },
+    "core/runtime_activation/scheduler_bridge.py": {
+      "mtime": 1777415504.0,
+      "size": 1400
+    },
+    "core/runtime_activation/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4229
+    },
+    "core/runtime_activation/state_inspector.py": {
+      "mtime": 1777415504.0,
+      "size": 1805
+    },
+    "core/runtime_activation/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/self_evolution_ops/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 2212
+    },
+    "core/self_evolution_ops/budget_governor.py": {
+      "mtime": 1777415504.0,
+      "size": 1953
+    },
+    "core/self_evolution_ops/context_fusion.py": {
+      "mtime": 1777415504.0,
+      "size": 2619
+    },
+    "core/self_evolution_ops/intent_contract.py": {
+      "mtime": 1777415504.0,
+      "size": 1905
+    },
+    "core/self_evolution_ops/local_fallback.py": {
+      "mtime": 1777415504.0,
+      "size": 1872
+    },
+    "core/self_evolution_ops/observability_report.py": {
+      "mtime": 1777415504.0,
+      "size": 1725
+    },
+    "core/self_evolution_ops/preference_drift.py": {
+      "mtime": 1777415504.0,
+      "size": 2012
+    },
+    "core/self_evolution_ops/privacy_redactor.py": {
+      "mtime": 1777415504.0,
+      "size": 1510
+    },
+    "core/self_evolution_ops/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 4117
+    },
+    "core/self_evolution_ops/self_improvement_loop.py": {
+      "mtime": 1777653851.0548604,
+      "size": 17725
+    },
+    "core/self_evolution_ops/simulation_lab.py": {
+      "mtime": 1777415504.0,
+      "size": 1517
+    },
+    "core/self_evolution_ops/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 964
+    },
+    "core/self_evolution_ops/tool_reliability.py": {
+      "mtime": 1777415504.0,
+      "size": 1911
+    },
+    "core/self_governance/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 279
+    },
+    "core/self_governance/autonomy_boundary_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 333
+    },
+    "core/self_governance/constitutional_policy_core.py": {
+      "mtime": 1777415504.0,
+      "size": 382
+    },
+    "core/self_governance/value_alignment_checker.py": {
+      "mtime": 1777415504.0,
+      "size": 563
+    },
+    "core/self_test/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 385
+    },
+    "core/self_test/perfection_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 1388
+    },
+    "core/self_test/self_diagnostics.py": {
+      "mtime": 1777415504.0,
+      "size": 5343
+    },
+    "core/self_test/self_healing_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 1333
+    },
+    "core/self_test/system_self_test_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 1828
+    },
+    "core/self_test/test_plan_generator.py": {
+      "mtime": 1777415504.0,
+      "size": 1412
+    },
+    "core/simulation/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 294
+    },
+    "core/simulation/counterfactual_reviewer.py": {
+      "mtime": 1777415504.0,
+      "size": 437
+    },
+    "core/simulation/outcome_predictor.py": {
+      "mtime": 1777415504.0,
+      "size": 439
+    },
+    "core/simulation/scenario_simulator.py": {
+      "mtime": 1777415504.0,
+      "size": 1015
+    },
+    "core/simulation/what_if_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 399
+    },
+    "core/skill_asset_registry/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 190
+    },
+    "core/skill_asset_registry/registry.py": {
+      "mtime": 1777415504.0,
+      "size": 3270
+    },
+    "core/skill_asset_registry/scanner.py": {
+      "mtime": 1777415504.0,
+      "size": 3710
+    },
+    "core/skill_asset_registry/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 859
+    },
+    "core/skill_entry/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 323
+    },
+    "core/skill_entry/error_codes.py": {
+      "mtime": 1777415504.0,
+      "size": 215
+    },
+    "core/skill_entry/input_router.py": {
+      "mtime": 1777415504.0,
+      "size": 516
+    },
+    "core/skill_entry/response_formatter.py": {
+      "mtime": 1777415504.0,
+      "size": 348
+    },
+    "core/skill_entry/validators.py": {
+      "mtime": 1777415504.0,
+      "size": 299
+    },
+    "core/skill_rules_engine.py": {
+      "mtime": 1777813521.6858163,
+      "size": 17880
+    },
+    "core/skill_trigger_registry.py": {
+      "mtime": 1777807123.239677,
+      "size": 5206
+    },
+    "core/strategy/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 326
+    },
+    "core/strategy/policy_simulator.py": {
+      "mtime": 1777415504.0,
+      "size": 724
+    },
+    "core/strategy/risk_reward_evaluator.py": {
+      "mtime": 1777415504.0,
+      "size": 1223
+    },
+    "core/strategy/strategic_autonomy_cortex.py": {
+      "mtime": 1777415504.0,
+      "size": 1181
+    },
+    "core/strategy/strategy_memory.py": {
+      "mtime": 1777415504.0,
+      "size": 1179
+    },
+    "core/top_ai_operator/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 820
+    },
+    "core/top_ai_operator/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 1543
+    },
+    "core/top_ai_operator/storage.py": {
+      "mtime": 1777415504.0,
+      "size": 962
+    },
+    "core/top_ai_operator/top_operator.py": {
+      "mtime": 1777415504.0,
+      "size": 4372
+    },
+    "core/top_ai_operator/top_operator_v25.py": {
+      "mtime": 1777415504.0,
+      "size": 3358
+    },
+    "core/universal_task_contract/__init__.py": {
+      "mtime": 1777477429.620627,
+      "size": 514
+    },
+    "core/universal_task_contract/contract_builder.py": {
+      "mtime": 1777477223.8772233,
+      "size": 13461
+    },
+    "core/universal_task_contract/report_generator.py": {
+      "mtime": 1777477251.539143,
+      "size": 2685
+    },
+    "core/universal_task_contract/schemas.py": {
+      "mtime": 1777477095.2395961,
+      "size": 7576
+    },
+    "core/verification/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 189
+    },
+    "core/verification/audit_trail.py": {
+      "mtime": 1777415504.0,
+      "size": 349
+    },
+    "core/verification/result_verifier.py": {
+      "mtime": 1777415504.0,
+      "size": 385
+    },
+    "core/verification/rollback_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 400
+    },
+    "core/world_model/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 202
+    },
+    "core/world_model/environment_state.py": {
+      "mtime": 1777415504.0,
+      "size": 362
+    },
+    "core/world_model/intent_state.py": {
+      "mtime": 1777415504.0,
+      "size": 412
+    },
+    "core/world_model/user_context_graph.py": {
+      "mtime": 1777415504.0,
+      "size": 265
+    },
+    "memory_context/__init__.py": {
+      "mtime": 1777529633.713256,
+      "size": 0
+    },
+    "memory_context/context/__init__.py": {
+      "mtime": 1777731288.6149657,
+      "size": 31
+    },
+    "memory_context/context/context_capsule.py": {
+      "mtime": 1777731673.7109687,
+      "size": 4162
+    },
+    "memory_context/context/context_priority_router.py": {
+      "mtime": 1777731747.2997715,
+      "size": 2514
+    },
+    "memory_context/context/memory_recall_bootstrap.py": {
+      "mtime": 1777731792.8606493,
+      "size": 5065
+    },
+    "memory_context/context/session_handoff.py": {
+      "mtime": 1777731718.2068496,
+      "size": 4580
+    },
+    "memory_context/coverage/vector_coverage_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 9234
+    },
+    "memory_context/cross_lingual/cross_lingual.py": {
+      "mtime": 1777415504.0,
+      "size": 7085
+    },
+    "memory_context/fused_modules/failure_recovery_and_stability.py": {
+      "mtime": 1777652175.7506018,
+      "size": 1766
+    },
+    "memory_context/fused_modules/generate_metrics.py": {
+      "mtime": 1777652175.2676024,
+      "size": 929
+    },
+    "memory_context/fused_modules/mainline_trigger.py": {
+      "mtime": 1777652175.6916018,
+      "size": 1679
+    },
+    "memory_context/fused_modules/task_chain_closure.py": {
+      "mtime": 1777652175.7306018,
+      "size": 1866
+    },
+    "memory_context/knowledge_graph_bridge.py": {
+      "mtime": 1777605925.8401551,
+      "size": 7907
+    },
+    "memory_context/learning_loop/__init__.py": {
+      "mtime": 1777415502.0,
+      "size": 433
+    },
+    "memory_context/learning_loop/audit_replay/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 249
+    },
+    "memory_context/learning_loop/audit_replay/audit_replay_learner.py": {
+      "mtime": 1777415504.0,
+      "size": 768
+    },
+    "memory_context/learning_loop/audit_replay/decision_trace_index.py": {
+      "mtime": 1777415504.0,
+      "size": 374
+    },
+    "memory_context/learning_loop/audit_replay/mistake_prevention_rules.py": {
+      "mtime": 1777415504.0,
+      "size": 401
+    },
+    "memory_context/learning_loop/execution_memory.py": {
+      "mtime": 1777415502.0,
+      "size": 5529
+    },
+    "memory_context/learning_loop/identity_evolution/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 268
+    },
+    "memory_context/learning_loop/identity_evolution/correction_incorporator.py": {
+      "mtime": 1777415504.0,
+      "size": 327
+    },
+    "memory_context/learning_loop/identity_evolution/identity_evolution_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 820
+    },
+    "memory_context/learning_loop/identity_evolution/preference_versioning.py": {
+      "mtime": 1777415504.0,
+      "size": 315
+    },
+    "memory_context/learning_loop/meta_learning/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 245
+    },
+    "memory_context/learning_loop/meta_learning/evaluation_memory.py": {
+      "mtime": 1777415504.0,
+      "size": 384
+    },
+    "memory_context/learning_loop/meta_learning/meta_learning_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 803
+    },
+    "memory_context/learning_loop/meta_learning/prompt_strategy_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 441
+    },
+    "memory_context/learning_loop/pattern_extractor.py": {
+      "mtime": 1777415502.0,
+      "size": 2342
+    },
+    "memory_context/learning_loop/personal_evolution/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 270
+    },
+    "memory_context/learning_loop/personal_evolution/behavior_pattern_miner.py": {
+      "mtime": 1777415504.0,
+      "size": 447
+    },
+    "memory_context/learning_loop/personal_evolution/personal_feedback_router.py": {
+      "mtime": 1777415504.0,
+      "size": 383
+    },
+    "memory_context/learning_loop/personal_evolution/risk_tolerance_calibrator.py": {
+      "mtime": 1777415504.0,
+      "size": 352
+    },
+    "memory_context/learning_loop/personal_model/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 164
+    },
+    "memory_context/learning_loop/personal_model/decision_style_model.py": {
+      "mtime": 1777415504.0,
+      "size": 604
+    },
+    "memory_context/learning_loop/personal_model/preference_evolution.py": {
+      "mtime": 1777415504.0,
+      "size": 702
+    },
+    "memory_context/learning_loop/plan_optimizer.py": {
+      "mtime": 1777415502.0,
+      "size": 5557
+    },
+    "memory_context/learning_loop/preference_profile.py": {
+      "mtime": 1777415502.0,
+      "size": 4401
+    },
+    "memory_context/learning_loop/reflection/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 254
+    },
+    "memory_context/learning_loop/reflection/failure_pattern_analyzer.py": {
+      "mtime": 1777415504.0,
+      "size": 404
+    },
+    "memory_context/learning_loop/reflection/reflection_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 689
+    },
+    "memory_context/learning_loop/reflection/success_pattern_promoter.py": {
+      "mtime": 1777415504.0,
+      "size": 396
+    },
+    "memory_context/learning_loop/success_path_store.py": {
+      "mtime": 1777415502.0,
+      "size": 3239
+    },
+    "memory_context/maintenance/check_coverage.py": {
+      "mtime": 1777415504.0,
+      "size": 2897
+    },
+    "memory_context/maintenance/rebuild_fts.py": {
+      "mtime": 1777415504.0,
+      "size": 1659
+    },
+    "memory_context/maintenance/run_maintenance.py": {
+      "mtime": 1777415504.0,
+      "size": 3386
+    },
+    "memory_context/maintenance/vector_system_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 11101
+    },
+    "memory_context/memory_writeback_guard_v2.py": {
+      "mtime": 1777618538.6449366,
+      "size": 11092
+    },
+    "memory_context/multimodal/multimodal_search.py": {
+      "mtime": 1777415504.0,
+      "size": 8710
+    },
+    "memory_context/persona/__init__.py": {
+      "mtime": 1777731288.6149657,
+      "size": 61
+    },
+    "memory_context/persona/continuity_summary.py": {
+      "mtime": 1777731600.4591649,
+      "size": 6473
+    },
+    "memory_context/persona/emotion_tagged_memory.py": {
+      "mtime": 1777731504.305415,
+      "size": 6361
+    },
+    "memory_context/persona/persona_consistency_checker.py": {
+      "mtime": 1777731841.1905189,
+      "size": 5221
+    },
+    "memory_context/persona/persona_state_machine.py": {
+      "mtime": 1777734638.9696002,
+      "size": 5980
+    },
+    "memory_context/persona/persona_voice_renderer.py": {
+      "mtime": 1777731627.5430925,
+      "size": 2238
+    },
+    "memory_context/persona/persona_voice_stabilizer.py": {
+      "mtime": 1777731883.903402,
+      "size": 3580
+    },
+    "memory_context/persona/relationship_memory.py": {
+      "mtime": 1777731445.5055647,
+      "size": 6163
+    },
+    "memory_context/persona/self_reflection_log.py": {
+      "mtime": 1777731540.3373232,
+      "size": 3693
+    },
+    "memory_context/personal_knowledge_graph_v5.py": {
+      "mtime": 1777618930.9264877,
+      "size": 9966
+    },
+    "memory_context/personal_memory_kernel_v4.py": {
+      "mtime": 1777610772.9001799,
+      "size": 12881
+    },
+    "memory_context/personal_memory_lifecycle_v6.py": {
+      "mtime": 1777653851.0578601,
+      "size": 68
+    },
+    "memory_context/personalization/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 131
+    },
+    "memory_context/personalization/personalization_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 2345
+    },
+    "memory_context/preference_evolution_bridge.py": {
+      "mtime": 1777605969.177089,
+      "size": 7797
+    },
+    "memory_context/preference_evolution_model_v7.py": {
+      "mtime": 1777653851.0558603,
+      "size": 11521
+    },
+    "memory_context/vector/cache.py": {
+      "mtime": 1777415504.0,
+      "size": 2793
+    },
+    "memory_context/vector/embedding.py": {
+      "mtime": 1777415504.0,
+      "size": 3245
+    },
+    "memory_context/vector/history.py": {
+      "mtime": 1777415504.0,
+      "size": 3449
+    },
+    "memory_context/vector/qdrant_store.py": {
+      "mtime": 1777567552.9327223,
+      "size": 13493
+    },
+    "memory_context/vector_ops/smart_memory_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 9701
+    },
+    "orchestration/__init__.py": {
+      "mtime": 1777529633.7142558,
+      "size": 0
+    },
+    "orchestration/agent_kernel/__init__.py": {
+      "mtime": 1777557565.7530718,
+      "size": 783
+    },
+    "orchestration/agent_kernel/action_bridge.py": {
+      "mtime": 1777415504.0,
+      "size": 243
+    },
+    "orchestration/agent_kernel/ai_shape_core.py": {
+      "mtime": 1777415504.0,
+      "size": 358
+    },
+    "orchestration/agent_kernel/architecture_boundary.py": {
+      "mtime": 1777415504.0,
+      "size": 3946
+    },
+    "orchestration/agent_kernel/autonomous_loop.py": {
+      "mtime": 1777415504.0,
+      "size": 1506
+    },
+    "orchestration/agent_kernel/autonomous_runtime_fabric.py": {
+      "mtime": 1777415504.0,
+      "size": 343
+    },
+    "orchestration/agent_kernel/autonomy_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 226
+    },
+    "orchestration/agent_kernel/base_device_capability.py": {
+      "mtime": 1777529633.7082558,
+      "size": 9357
+    },
+    "orchestration/agent_kernel/capability_extension.py": {
+      "mtime": 1777415504.0,
+      "size": 1758
+    },
+    "orchestration/agent_kernel/device_capabilities.py": {
+      "mtime": 1777529633.7082558,
+      "size": 14518
+    },
+    "orchestration/agent_kernel/device_timeout_resilience.py": {
+      "mtime": 1777445366.0,
+      "size": 397
+    },
+    "orchestration/agent_kernel/goal_compiler.py": {
+      "mtime": 1777415504.0,
+      "size": 3752
+    },
+    "orchestration/agent_kernel/handoff_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 1168
+    },
+    "orchestration/agent_kernel/hub_boundary_contract.py": {
+      "mtime": 1777415504.0,
+      "size": 3656
+    },
+    "orchestration/agent_kernel/layer_integrity_gate_v2.py": {
+      "mtime": 1777529633.7082558,
+      "size": 1096
+    },
+    "orchestration/agent_kernel/memory_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 2146
+    },
+    "orchestration/agent_kernel/memory_kernel_v2.py": {
+      "mtime": 1777474625.4987416,
+      "size": 12782
+    },
+    "orchestration/agent_kernel/meta_autonomy_platform.py": {
+      "mtime": 1777415504.0,
+      "size": 319
+    },
+    "orchestration/agent_kernel/meta_governance.py": {
+      "mtime": 1777415504.0,
+      "size": 1065
+    },
+    "orchestration/agent_kernel/operating_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 264
+    },
+    "orchestration/agent_kernel/operating_spine.py": {
+      "mtime": 1777415504.0,
+      "size": 248
+    },
+    "orchestration/agent_kernel/operations_intelligence.py": {
+      "mtime": 1777415504.0,
+      "size": 335
+    },
+    "orchestration/agent_kernel/persona_kernel.py": {
+      "mtime": 1777415504.0,
+      "size": 1017
+    },
+    "orchestration/agent_kernel/personal_execution_agent.py": {
+      "mtime": 1777415504.0,
+      "size": 134
+    },
+    "orchestration/agent_kernel/personal_operating_loop_v2.py": {
+      "mtime": 1777610828.699108,
+      "size": 7433
+    },
+    "orchestration/agent_kernel/personalization.py": {
+      "mtime": 1777415504.0,
+      "size": 265
+    },
+    "orchestration/agent_kernel/production_control_plane.py": {
+      "mtime": 1777415504.0,
+      "size": 335
+    },
+    "orchestration/agent_kernel/real_connector_execution.py": {
+      "mtime": 1777415504.0,
+      "size": 254
+    },
+    "orchestration/agent_kernel/real_tool_binding.py": {
+      "mtime": 1777415504.0,
+      "size": 218
+    },
+    "orchestration/agent_kernel/real_work_entry.py": {
+      "mtime": 1777415504.0,
+      "size": 266
+    },
+    "orchestration/agent_kernel/release_hardening.py": {
+      "mtime": 1777415504.0,
+      "size": 264
+    },
+    "orchestration/agent_kernel/rollback_repair_planner_v7.py": {
+      "mtime": 1777529633.7082558,
+      "size": 1027
+    },
+    "orchestration/agent_kernel/runtime_activation.py": {
+      "mtime": 1777415504.0,
+      "size": 278
+    },
+    "orchestration/agent_kernel/self_evolution_ops.py": {
+      "mtime": 1777415504.0,
+      "size": 262
+    },
+    "orchestration/agent_kernel/self_evolving_os_command_center_v7.py": {
+      "mtime": 1777529633.7082558,
+      "size": 1209
+    },
+    "orchestration/agent_kernel/task_graph.py": {
+      "mtime": 1777529633.7092557,
+      "size": 3673
+    },
+    "orchestration/agent_kernel/top_ai_operator.py": {
+      "mtime": 1777415504.0,
+      "size": 250
+    },
+    "orchestration/agent_kernel/top_ai_operator_v25.py": {
+      "mtime": 1777415504.0,
+      "size": 293
+    },
+    "orchestration/agent_kernel/unified_judge.py": {
+      "mtime": 1777415504.0,
+      "size": 1620
+    },
+    "orchestration/agent_kernel/v56_to_v65_operating_agent.py": {
+      "mtime": 1777529633.7092557,
+      "size": 9346
+    },
+    "orchestration/agent_kernel/world_interface.py": {
+      "mtime": 1777415504.0,
+      "size": 1159
+    },
+    "orchestration/agent_kernel_facade.py": {
+      "mtime": 1777652518.4320521,
+      "size": 8957
+    },
+    "orchestration/autonomous_runtime_orchestrator.py": {
+      "mtime": 1777543794.33865,
+      "size": 1833
+    },
+    "orchestration/autonomous_task_runtime/__init__.py": {
+      "mtime": 1777554388.3153183,
+      "size": 725
+    },
+    "orchestration/autonomous_task_runtime/approval_packet.py": {
+      "mtime": 1777554388.3163183,
+      "size": 1708
+    },
+    "orchestration/autonomous_task_runtime/autonomous_runtime_kernel.py": {
+      "mtime": 1777554388.3163183,
+      "size": 4765
+    },
+    "orchestration/autonomous_task_runtime/failure_recovery.py": {
+      "mtime": 1777554388.3173182,
+      "size": 1811
+    },
+    "orchestration/autonomous_task_runtime/runtime_scorecard.py": {
+      "mtime": 1777554388.3183184,
+      "size": 2034
+    },
+    "orchestration/autonomous_task_runtime/task_graph.py": {
+      "mtime": 1777554388.3193183,
+      "size": 3934
+    },
+    "orchestration/batch_orchestrator.py": {
+      "mtime": 1777415502.0,
+      "size": 11536
+    },
+    "orchestration/collaboration/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/collaboration/org_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 19545
+    },
+    "orchestration/collaboration/resource_paths.py": {
+      "mtime": 1777415504.0,
+      "size": 814
+    },
+    "orchestration/continuous_personal_os_orchestrator.py": {
+      "mtime": 1777543795.0256488,
+      "size": 2564
+    },
+    "orchestration/contracts/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/conversation/conversation.py": {
+      "mtime": 1777415504.0,
+      "size": 10056
+    },
+    "orchestration/device_serial_call.py": {
+      "mtime": 1777543795.2756484,
+      "size": 5746
+    },
+    "orchestration/device_workflow_serial_policy.py": {
+      "mtime": 1777529633.7142558,
+      "size": 1365
+    },
+    "orchestration/durable_task_graph_v2.py": {
+      "mtime": 1777529633.7142558,
+      "size": 2486
+    },
+    "orchestration/durable_workflow_engine_v3.py": {
+      "mtime": 1777529633.7142558,
+      "size": 6339
+    },
+    "orchestration/embodied_pending_os/__init__.py": {
+      "mtime": 1777554388.3203182,
+      "size": 234
+    },
+    "orchestration/embodied_pending_os/goal_compiler.py": {
+      "mtime": 1777554388.3213184,
+      "size": 1926
+    },
+    "orchestration/embodied_pending_os/pending_access_orchestrator.py": {
+      "mtime": 1777554388.3213184,
+      "size": 3201
+    },
+    "orchestration/end_side_global_serial_executor.py": {
+      "mtime": 1777529633.7142558,
+      "size": 9039
+    },
+    "orchestration/end_side_hard_serial_gate.py": {
+      "mtime": 1777529633.7142558,
+      "size": 3499
+    },
+    "orchestration/end_side_serial_lanes_v3.py": {
+      "mtime": 1777529633.7142558,
+      "size": 4986
+    },
+    "orchestration/end_side_workflow_contract.py": {
+      "mtime": 1777529633.7142558,
+      "size": 1952
+    },
+    "orchestration/execution_control/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/execution_control/fallback_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 7520
+    },
+    "orchestration/execution_control/retry_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 5681
+    },
+    "orchestration/execution_control/rollback_manager.py": {
+      "mtime": 1777656627.0002224,
+      "size": 6312
+    },
+    "orchestration/executive_personal_os_orchestrator.py": {
+      "mtime": 1777415502.0,
+      "size": 2343
+    },
+    "orchestration/final_pending_release/__init__.py": {
+      "mtime": 1777554388.3233182,
+      "size": 520
+    },
+    "orchestration/final_pending_release/freeze_manifest.py": {
+      "mtime": 1777554388.3243182,
+      "size": 2729
+    },
+    "orchestration/final_pending_release/shadow_acceptance.py": {
+      "mtime": 1777554388.3243182,
+      "size": 4850
+    },
+    "orchestration/final_pending_release/v85_final_kernel.py": {
+      "mtime": 1777554388.3253183,
+      "size": 6521
+    },
+    "orchestration/fused_modules/e2e_route_scenarios.py": {
+      "mtime": 1777652175.2216027,
+      "size": 734
+    },
+    "orchestration/goal_tracker.py": {
+      "mtime": 1777415502.0,
+      "size": 7682
+    },
+    "orchestration/mission_control/__init__.py": {
+      "mtime": 1777554388.3263183,
+      "size": 137
+    },
+    "orchestration/mission_control/mission_control_kernel.py": {
+      "mtime": 1777554388.3273182,
+      "size": 4090
+    },
+    "orchestration/performance_integration.py": {
+      "mtime": 1777415502.0,
+      "size": 263
+    },
+    "orchestration/personal_autonomous_os_agent.py": {
+      "mtime": 1777415502.0,
+      "size": 2407
+    },
+    "orchestration/planner/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 266
+    },
+    "orchestration/planner/goal_parser.py": {
+      "mtime": 1777415504.0,
+      "size": 3518
+    },
+    "orchestration/planner/plan_schema.py": {
+      "mtime": 1777415504.0,
+      "size": 2267
+    },
+    "orchestration/planner/route_selector.py": {
+      "mtime": 1777415504.0,
+      "size": 5128
+    },
+    "orchestration/planner/skill_selector.py": {
+      "mtime": 1777543794.1366503,
+      "size": 1310
+    },
+    "orchestration/planner/task_decomposer.py": {
+      "mtime": 1777415504.0,
+      "size": 2628
+    },
+    "orchestration/planner/task_planner.py": {
+      "mtime": 1777415504.0,
+      "size": 11452
+    },
+    "orchestration/priority_queue.py": {
+      "mtime": 1777415502.0,
+      "size": 3998
+    },
+    "orchestration/proactive_opportunity_detector_v7.py": {
+      "mtime": 1777529633.7142558,
+      "size": 1027
+    },
+    "orchestration/proactive_personal_os_orchestrator.py": {
+      "mtime": 1777543794.5506496,
+      "size": 2801
+    },
+    "orchestration/product/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/product/surface_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 13384
+    },
+    "orchestration/reality_connected_personal_os_orchestrator.py": {
+      "mtime": 1777543795.2506485,
+      "size": 2674
+    },
+    "orchestration/release_assurance/__init__.py": {
+      "mtime": 1777554388.3293183,
+      "size": 127
+    },
+    "orchestration/release_assurance/v80_assurance_kernel.py": {
+      "mtime": 1777554388.3293183,
+      "size": 1876
+    },
+    "orchestration/remediation_planner.py": {
+      "mtime": 1777529633.7142558,
+      "size": 2899
+    },
+    "orchestration/result_guard.py": {
+      "mtime": 1777415502.0,
+      "size": 4231
+    },
+    "orchestration/route_fallback.py": {
+      "mtime": 1777415502.0,
+      "size": 5617
+    },
+    "orchestration/router/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/router/router.py": {
+      "mtime": 1777415504.0,
+      "size": 327
+    },
+    "orchestration/router/routing/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/router/routing/golden_path_regression.py": {
+      "mtime": 1777415504.0,
+      "size": 4744
+    },
+    "orchestration/router/routing/route_impact_analysis.py": {
+      "mtime": 1777415504.0,
+      "size": 3609
+    },
+    "orchestration/router/rrf.py": {
+      "mtime": 1777415504.0,
+      "size": 1492
+    },
+    "orchestration/router/skill_router.py": {
+      "mtime": 1777415504.0,
+      "size": 333
+    },
+    "orchestration/router/weights.py": {
+      "mtime": 1777415504.0,
+      "size": 140
+    },
+    "orchestration/runtime_bus.py": {
+      "mtime": 1777739150.0,
+      "size": 4656
+    },
+    "orchestration/self_evolving_pending_os/__init__.py": {
+      "mtime": 1777554388.3313181,
+      "size": 182
+    },
+    "orchestration/self_evolving_pending_os/self_evolving_kernel.py": {
+      "mtime": 1777554388.3323183,
+      "size": 4112
+    },
+    "orchestration/side_effect_transaction.py": {
+      "mtime": 1777529633.7142558,
+      "size": 2667
+    },
+    "orchestration/single_runtime_entrypoint.py": {
+      "mtime": 1777739600.5322921,
+      "size": 3819
+    },
+    "orchestration/skill_upgrade/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 0
+    },
+    "orchestration/skill_upgrade/scheduler.py": {
+      "mtime": 1777415504.0,
+      "size": 3941
+    },
+    "orchestration/skill_upgrade/workflow.py": {
+      "mtime": 1777415504.0,
+      "size": 4297
+    },
+    "orchestration/state/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 963
+    },
+    "orchestration/state/checkpoint_store.py": {
+      "mtime": 1777656495.7194526,
+      "size": 8025
+    },
+    "orchestration/state/recovery_store.py": {
+      "mtime": 1777657232.1899445,
+      "size": 11263
+    },
+    "orchestration/state/workflow_event_store.py": {
+      "mtime": 1777657359.133686,
+      "size": 12155
+    },
+    "orchestration/state/workflow_instance_store.py": {
+      "mtime": 1777415504.0,
+      "size": 7708
+    },
+    "orchestration/strategic_personal_os_orchestrator.py": {
+      "mtime": 1777543794.7046494,
+      "size": 2533
+    },
+    "orchestration/strategy/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/strategy/goal_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 15421
+    },
+    "orchestration/streaming/llm_streaming.py": {
+      "mtime": 1777415504.0,
+      "size": 6688
+    },
+    "orchestration/summarize_executor.py": {
+      "mtime": 1777415502.0,
+      "size": 5445
+    },
+    "orchestration/task_engine.py": {
+      "mtime": 1777781782.3645744,
+      "size": 28668
+    },
+    "orchestration/task_orchestrator.py": {
+      "mtime": 1777415502.0,
+      "size": 10383
+    },
+    "orchestration/template_registry.py": {
+      "mtime": 1777415502.0,
+      "size": 3843
+    },
+    "orchestration/templates/batch_notify_bundle.py": {
+      "mtime": 1777415504.0,
+      "size": 5232
+    },
+    "orchestration/templates/daily_report_bundle.py": {
+      "mtime": 1777543794.0496507,
+      "size": 3040
+    },
+    "orchestration/templates/failure_compensation_bundle.py": {
+      "mtime": 1777543794.0346506,
+      "size": 5501
+    },
+    "orchestration/templates/manual_confirmation_bundle.py": {
+      "mtime": 1777543794.0216506,
+      "size": 3825
+    },
+    "orchestration/templates/reminder_bundle.py": {
+      "mtime": 1777415504.0,
+      "size": 5173
+    },
+    "orchestration/v92_integration_hub.py": {
+      "mtime": 1777618538.6469367,
+      "size": 909
+    },
+    "orchestration/validators/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 296
+    },
+    "orchestration/validators/workflow_contract_validator.py": {
+      "mtime": 1777415504.0,
+      "size": 9266
+    },
+    "orchestration/verify_executor.py": {
+      "mtime": 1777415502.0,
+      "size": 8264
+    },
+    "orchestration/workflow/INTEGRATION_TEST.py": {
+      "mtime": 1777415504.0,
+      "size": 14028
+    },
+    "orchestration/workflow/VERIFICATION_EXAMPLES.py": {
+      "mtime": 1777415504.0,
+      "size": 15908
+    },
+    "orchestration/workflow/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/workflow/dag_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 6608
+    },
+    "orchestration/workflow/dependency_resolver.py": {
+      "mtime": 1777415504.0,
+      "size": 10617
+    },
+    "orchestration/workflow/parallel_executor.py": {
+      "mtime": 1777651161.0,
+      "size": 2493
+    },
+    "orchestration/workflow/parallel_policy.py": {
+      "mtime": 1777651161.0,
+      "size": 8889
+    },
+    "orchestration/workflow/state_machine.py": {
+      "mtime": 1777415504.0,
+      "size": 10705
+    },
+    "orchestration/workflow/workflow_engine.py": {
+      "mtime": 1777656673.497125,
+      "size": 48560
+    },
+    "orchestration/workflow/workflow_event_projection.py": {
+      "mtime": 1777415504.0,
+      "size": 8349
+    },
+    "orchestration/workflow/workflow_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 10026
+    },
+    "orchestration/workflow/workflow_replay.py": {
+      "mtime": 1777415504.0,
+      "size": 10697
+    },
+    "orchestration/workflow/workflow_template_loader.py": {
+      "mtime": 1777415504.0,
+      "size": 9225
+    },
+    "orchestration/workflow_engine.py": {
+      "mtime": 1777415502.0,
+      "size": 7224
+    },
+    "orchestration/workflow_orchestrator.py": {
+      "mtime": 1777415502.0,
+      "size": 13776
+    },
+    "orchestration/workflows/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1
+    },
+    "orchestration/workflows/branching.py": {
+      "mtime": 1777415504.0,
+      "size": 4184
+    },
+    "orchestration/workflows/code_audit.py": {
+      "mtime": 1777415504.0,
+      "size": 1725
+    },
+    "orchestration/workflows/commission_design.py": {
+      "mtime": 1777415504.0,
+      "size": 6010
+    },
+    "orchestration/workflows/compensation.py": {
+      "mtime": 1777543794.887649,
+      "size": 6217
+    },
+    "orchestration/workflows/cooperation_negotiation.py": {
+      "mtime": 1777415504.0,
+      "size": 5113
+    },
+    "orchestration/workflows/ecommerce_operation.py": {
+      "mtime": 1777415504.0,
+      "size": 7551
+    },
+    "orchestration/workflows/ecommerce_product_analysis.py": {
+      "mtime": 1777415504.0,
+      "size": 4169
+    },
+    "orchestration/workflows/factory_comparison.py": {
+      "mtime": 1777415504.0,
+      "size": 3380
+    },
+    "orchestration/workflows/file_organization.py": {
+      "mtime": 1777415504.0,
+      "size": 1513
+    },
+    "orchestration/workflows/human_confirm.py": {
+      "mtime": 1777543794.941649,
+      "size": 5945
+    },
+    "orchestration/workflows/influencer_cooperation.py": {
+      "mtime": 1777415504.0,
+      "size": 6463
+    },
+    "orchestration/workflows/leader_selection.py": {
+      "mtime": 1777415504.0,
+      "size": 5427
+    },
+    "orchestration/workflows/live_stream_operation.py": {
+      "mtime": 1777415504.0,
+      "size": 9211
+    },
+    "orchestration/workflows/parallel_steps.py": {
+      "mtime": 1777415504.0,
+      "size": 5182
+    },
+    "orchestration/workflows/partner_selection.py": {
+      "mtime": 1777415504.0,
+      "size": 2207
+    },
+    "orchestration/workflows/preview.py": {
+      "mtime": 1777415504.0,
+      "size": 6346
+    },
+    "orchestration/workflows/resource_paths.py": {
+      "mtime": 1777415504.0,
+      "size": 614
+    },
+    "orchestration/workflows/store_launch.py": {
+      "mtime": 1777415504.0,
+      "size": 2420
+    },
+    "orchestration/workflows/workflow_base.py": {
+      "mtime": 1777415504.0,
+      "size": 9795
+    },
+    "execution/__init__.py": {
+      "mtime": 1777610893.9570239,
+      "size": 3550
+    },
+    "execution/action_idempotency_guard.py": {
+      "mtime": 1777529633.7122557,
+      "size": 3838
+    },
+    "execution/application/__init__.py": {
+      "mtime": 1777653662.1481686,
+      "size": 61
+    },
+    "execution/application/response_service/evidence_formatter.py": {
+      "mtime": 1777415504.0,
+      "size": 4106
+    },
+    "execution/application/response_service/renderer.py": {
+      "mtime": 1777415504.0,
+      "size": 7678
+    },
+    "execution/application/response_service/response_schema.py": {
+      "mtime": 1777415504.0,
+      "size": 4158
+    },
+    "execution/application/task_service/scheduler.py": {
+      "mtime": 1777781683.3728337,
+      "size": 3243
+    },
+    "execution/application/task_service/service.py": {
+      "mtime": 1777781683.3728337,
+      "size": 7750
+    },
+    "execution/capabilities/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1333
+    },
+    "execution/capabilities/approve_action.py": {
+      "mtime": 1777415504.0,
+      "size": 6844
+    },
+    "execution/capabilities/audit_queries.py": {
+      "mtime": 1777543806.1186287,
+      "size": 3519
+    },
+    "execution/capabilities/bootstrap.py": {
+      "mtime": 1777415504.0,
+      "size": 2917
+    },
+    "execution/capabilities/cancel_notification.py": {
+      "mtime": 1777543806.0806289,
+      "size": 3140
+    },
+    "execution/capabilities/cancel_task.py": {
+      "mtime": 1777415504.0,
+      "size": 1672
+    },
+    "execution/capabilities/check_calendar_conflicts.py": {
+      "mtime": 1777543806.536628,
+      "size": 3280
+    },
+    "execution/capabilities/confirm_invocation.py": {
+      "mtime": 1777543806.443628,
+      "size": 3289
+    },
+    "execution/capabilities/create_alarm.py": {
+      "mtime": 1777415504.0,
+      "size": 1245
+    },
+    "execution/capabilities/create_album.py": {
+      "mtime": 1777415504.0,
+      "size": 962
+    },
+    "execution/capabilities/create_contact.py": {
+      "mtime": 1777415504.0,
+      "size": 1200
+    },
+    "execution/capabilities/delete_alarm.py": {
+      "mtime": 1777415504.0,
+      "size": 1840
+    },
+    "execution/capabilities/delete_calendar_event.py": {
+      "mtime": 1777543806.5216281,
+      "size": 1689
+    },
+    "execution/capabilities/delete_contact.py": {
+      "mtime": 1777415504.0,
+      "size": 823
+    },
+    "execution/capabilities/delete_file.py": {
+      "mtime": 1777415504.0,
+      "size": 2352
+    },
+    "execution/capabilities/delete_note.py": {
+      "mtime": 1777543806.0676289,
+      "size": 1292
+    },
+    "execution/capabilities/delete_photo.py": {
+      "mtime": 1777415504.0,
+      "size": 2037
+    },
+    "execution/capabilities/delete_xiaoyi_note.py": {
+      "mtime": 1777415504.0,
+      "size": 823
+    },
+    "execution/capabilities/diagnostics.py": {
+      "mtime": 1777415504.0,
+      "size": 1645
+    },
+    "execution/capabilities/explain_invocation_status.py": {
+      "mtime": 1777543805.991629,
+      "size": 7472
+    },
+    "execution/capabilities/explain_message_result.py": {
+      "mtime": 1777543806.3786283,
+      "size": 4411
+    },
+    "execution/capabilities/explain_notification_auth_state.py": {
+      "mtime": 1777543806.3366284,
+      "size": 2376
+    },
+    "execution/capabilities/export_history.py": {
+      "mtime": 1777640239.53885,
+      "size": 3637
+    },
+    "execution/capabilities/get_location.py": {
+      "mtime": 1777415504.0,
+      "size": 2558
+    },
+    "execution/capabilities/list_calendar_events.py": {
+      "mtime": 1777543806.4686282,
+      "size": 2294
+    },
+    "execution/capabilities/list_recent_messages.py": {
+      "mtime": 1777543806.1786287,
+      "size": 2179
+    },
+    "execution/capabilities/list_recent_notes.py": {
+      "mtime": 1777543806.1656287,
+      "size": 1729
+    },
+    "execution/capabilities/make_call.py": {
+      "mtime": 1777415504.0,
+      "size": 2205
+    },
+    "execution/capabilities/manage_file.py": {
+      "mtime": 1777415504.0,
+      "size": 2837
+    },
+    "execution/capabilities/pause_task.py": {
+      "mtime": 1777415504.0,
+      "size": 1674
+    },
+    "execution/capabilities/preview_side_effect.py": {
+      "mtime": 1777415504.0,
+      "size": 5554
+    },
+    "execution/capabilities/query_alarm.py": {
+      "mtime": 1777529633.7092557,
+      "size": 2361
+    },
+    "execution/capabilities/query_calendar_event.py": {
+      "mtime": 1777543806.4176283,
+      "size": 2670
+    },
+    "execution/capabilities/query_contact.py": {
+      "mtime": 1777529633.7092557,
+      "size": 3331
+    },
+    "execution/capabilities/query_file.py": {
+      "mtime": 1777529633.7092557,
+      "size": 3501
+    },
+    "execution/capabilities/query_message_status.py": {
+      "mtime": 1777543806.2236285,
+      "size": 2281
+    },
+    "execution/capabilities/query_note.py": {
+      "mtime": 1777543806.2376285,
+      "size": 2166
+    },
+    "execution/capabilities/query_notification_status.py": {
+      "mtime": 1777543806.3926282,
+      "size": 1817
+    },
+    "execution/capabilities/query_photo.py": {
+      "mtime": 1777529633.7092557,
+      "size": 3248
+    },
+    "execution/capabilities/query_xiaoyi_note.py": {
+      "mtime": 1777529633.7092557,
+      "size": 3396
+    },
+    "execution/capabilities/refresh_notification_auth.py": {
+      "mtime": 1777415504.0,
+      "size": 1522
+    },
+    "execution/capabilities/registry.py": {
+      "mtime": 1777415504.0,
+      "size": 6567
+    },
+    "execution/capabilities/replay_run.py": {
+      "mtime": 1777640247.8658397,
+      "size": 3737
+    },
+    "execution/capabilities/resend_message.py": {
+      "mtime": 1777543806.0286288,
+      "size": 2757
+    },
+    "execution/capabilities/resume_task.py": {
+      "mtime": 1777415504.0,
+      "size": 1675
+    },
+    "execution/capabilities/retry_task.py": {
+      "mtime": 1777415504.0,
+      "size": 1784
+    },
+    "execution/capabilities/schedule_task.py": {
+      "mtime": 1777415504.0,
+      "size": 2767
+    },
+    "execution/capabilities/search_notes.py": {
+      "mtime": 1777543806.042629,
+      "size": 2483
+    },
+    "execution/capabilities/self_repair.py": {
+      "mtime": 1777415504.0,
+      "size": 6585
+    },
+    "execution/capabilities/send_message.py": {
+      "mtime": 1777415504.0,
+      "size": 2601
+    },
+    "execution/capabilities/update_alarm.py": {
+      "mtime": 1777415504.0,
+      "size": 2005
+    },
+    "execution/capabilities/update_calendar_event.py": {
+      "mtime": 1777543806.1056287,
+      "size": 1937
+    },
+    "execution/capabilities/update_contact.py": {
+      "mtime": 1777415504.0,
+      "size": 1556
+    },
+    "execution/capabilities/update_note.py": {
+      "mtime": 1777543806.014629,
+      "size": 1634
+    },
+    "execution/device_action_timeout_verifier.py": {
+      "mtime": 1777620731.6996598,
+      "size": 4591
+    },
+    "execution/device_conflict_resolver_v7.py": {
+      "mtime": 1777529633.7122557,
+      "size": 2289
+    },
+    "execution/device_dependency_barrier.py": {
+      "mtime": 1777529633.7122557,
+      "size": 1614
+    },
+    "execution/device_reality_sync_v5.py": {
+      "mtime": 1777529633.7122557,
+      "size": 2914
+    },
+    "execution/device_receipt_reconciler.py": {
+      "mtime": 1777620681.6717093,
+      "size": 4710
+    },
+    "execution/device_serial_lane_v6.py": {
+      "mtime": 1777653851.0518603,
+      "size": 68
+    },
+    "execution/device_timeout_receipt_verifier_v2.py": {
+      "mtime": 1777529633.7122557,
+      "size": 2714
+    },
+    "execution/distributed_search.py": {
+      "mtime": 1777415502.0,
+      "size": 9920
+    },
+    "execution/failover/failover.py": {
+      "mtime": 1777415504.0,
+      "size": 9482
+    },
+    "execution/fused_modules/heartbeat_executor.py": {
+      "mtime": 1777652175.2966025,
+      "size": 671
+    },
+    "execution/hybrid_memory_search.py": {
+      "mtime": 1777415502.0,
+      "size": 6303
+    },
+    "execution/optimizer/auto_tuner.py": {
+      "mtime": 1777415504.0,
+      "size": 9987
+    },
+    "execution/parallel_search.py": {
+      "mtime": 1777415502.0,
+      "size": 3122
+    },
+    "execution/quantization/opq_quantization.py": {
+      "mtime": 1777415504.0,
+      "size": 9498
+    },
+    "execution/quantization/quantization.py": {
+      "mtime": 1777415504.0,
+      "size": 16154
+    },
+    "execution/rag/query_rewriter.py": {
+      "mtime": 1777415504.0,
+      "size": 9185
+    },
+    "execution/rag/rag_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 17131
+    },
+    "execution/search/dedup.py": {
+      "mtime": 1777620581.633846,
+      "size": 3901
+    },
+    "execution/search/search.py": {
+      "mtime": 1777415504.0,
+      "size": 5685
+    },
+    "execution/search_enhanced/opt_search.py": {
+      "mtime": 1777415504.0,
+      "size": 6633
+    },
+    "execution/speculative_decoding.py": {
+      "mtime": 1777415502.0,
+      "size": 7752
+    },
+    "execution/speculative_decoding_v1/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 830
+    },
+    "execution/speculative_decoding_v1/nvidia_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 7167
+    },
+    "execution/speculative_decoding_v1/speculative_decoder.py": {
+      "mtime": 1777415504.0,
+      "size": 14530
+    },
+    "execution/ultimate_search.py": {
+      "mtime": 1777415502.0,
+      "size": 20669
+    },
+    "execution/vector_ops/ann.py": {
+      "mtime": 1777415504.0,
+      "size": 16031
+    },
+    "execution/vector_ops/vector_ops.py": {
+      "mtime": 1777415504.0,
+      "size": 11388
+    },
+    "execution/visual_operation_agent/__init__.py": {
+      "mtime": 1777566315.5102077,
+      "size": 1015
+    },
+    "execution/visual_operation_agent/action_executor.py": {
+      "mtime": 1777566140.3095617,
+      "size": 6099
+    },
+    "execution/visual_operation_agent/screen_observer.py": {
+      "mtime": 1777566192.0914567,
+      "size": 2845
+    },
+    "execution/visual_operation_agent/ui_grounding.py": {
+      "mtime": 1777566293.2682471,
+      "size": 3919
+    },
+    "execution/visual_operation_agent/visual_planner.py": {
+      "mtime": 1777566246.3493462,
+      "size": 5629
+    },
+    "execution/visual_task_executor.py": {
+      "mtime": 1777610879.778042,
+      "size": 4186
+    },
+    "governance/__init__.py": {
+      "mtime": 1777529633.7122557,
+      "size": 0
+    },
+    "governance/access_control/__init__.py": {
+      "mtime": 1777554388.2783184,
+      "size": 345
+    },
+    "governance/access_control/access_control.py": {
+      "mtime": 1777415504.0,
+      "size": 10425
+    },
+    "governance/access_control/permission_lease.py": {
+      "mtime": 1777554388.2793183,
+      "size": 7101
+    },
+    "governance/audit/execution_audit_ledger.py": {
+      "mtime": 1777543807.2676268,
+      "size": 6445
+    },
+    "governance/audit/explainer.py": {
+      "mtime": 1777415504.0,
+      "size": 2712
+    },
+    "governance/audit/feedback.py": {
+      "mtime": 1777415504.0,
+      "size": 3717
+    },
+    "governance/audit/summarizer.py": {
+      "mtime": 1777415504.0,
+      "size": 2681
+    },
+    "governance/closed_loop_verifier/__init__.py": {
+      "mtime": 1777415502.0,
+      "size": 277
+    },
+    "governance/closed_loop_verifier/audit_writer.py": {
+      "mtime": 1777415502.0,
+      "size": 2585
+    },
+    "governance/closed_loop_verifier/final_summarizer.py": {
+      "mtime": 1777415502.0,
+      "size": 3166
+    },
+    "governance/closed_loop_verifier/recovery_manager.py": {
+      "mtime": 1777415502.0,
+      "size": 3310
+    },
+    "governance/closed_loop_verifier/result_checker.py": {
+      "mtime": 1777415502.0,
+      "size": 2688
+    },
+    "governance/codex/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 160
+    },
+    "governance/codex/judgement_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 674
+    },
+    "governance/codex/personal_codex.py": {
+      "mtime": 1777415504.0,
+      "size": 1436
+    },
+    "governance/constitutional_judge_v4.py": {
+      "mtime": 1777529633.7122557,
+      "size": 2286
+    },
+    "governance/constitutional_runtime/__init__.py": {
+      "mtime": 1777554388.2813184,
+      "size": 360
+    },
+    "governance/constitutional_runtime/operating_constitution.py": {
+      "mtime": 1777554388.2823184,
+      "size": 6919
+    },
+    "governance/constitutional_runtime/preflight_gate.py": {
+      "mtime": 1777554388.2833183,
+      "size": 2401
+    },
+    "governance/constitutional_runtime/risk_proof.py": {
+      "mtime": 1777554388.2833183,
+      "size": 3284
+    },
+    "governance/context/__init__.py": {
+      "mtime": 1777731288.6149657,
+      "size": 37
+    },
+    "governance/context/anti_context_amnesia_guard.py": {
+      "mtime": 1777731928.5352802,
+      "size": 5044
+    },
+    "governance/embodied_pending_state/__init__.py": {
+      "mtime": 1777554388.2853184,
+      "size": 782
+    },
+    "governance/embodied_pending_state/action_semantics.py": {
+      "mtime": 1777554388.2863183,
+      "size": 12087
+    },
+    "governance/embodied_pending_state/commit_barrier.py": {
+      "mtime": 1777554388.2873182,
+      "size": 3584
+    },
+    "governance/embodied_pending_state/freeze_switch.py": {
+      "mtime": 1777554388.2873182,
+      "size": 1876
+    },
+    "governance/embodied_pending_state/maturity_scorecard.py": {
+      "mtime": 1777554388.2883184,
+      "size": 2890
+    },
+    "governance/embodied_pending_state/readiness_gate.py": {
+      "mtime": 1777554388.2893183,
+      "size": 3436
+    },
+    "governance/evaluation/__init__.py": {
+      "mtime": 1777653662.1451685,
+      "size": 60
+    },
+    "governance/evaluation/autonomy_regression_matrix_v4.py": {
+      "mtime": 1777529633.7122557,
+      "size": 1729
+    },
+    "governance/evaluation/continuous_learning_evaluator_v5.py": {
+      "mtime": 1777529633.7122557,
+      "size": 1391
+    },
+    "governance/evolution_safety/__init__.py": {
+      "mtime": 1777554388.2913184,
+      "size": 416
+    },
+    "governance/evolution_safety/autonomy_policy.py": {
+      "mtime": 1777554388.2923183,
+      "size": 1478
+    },
+    "governance/evolution_safety/memory_governance.py": {
+      "mtime": 1777554388.2933183,
+      "size": 4052
+    },
+    "governance/evolution_safety/persona_memory_audit.py": {
+      "mtime": 1777554388.2943184,
+      "size": 4926
+    },
+    "governance/fused_modules/2_all_chain_coverage.py": {
+      "mtime": 1777652175.7086017,
+      "size": 745
+    },
+    "governance/fused_modules/2_self_improvement_goal_hotfix_apply.py": {
+      "mtime": 1777652175.629602,
+      "size": 697
+    },
+    "governance/fused_modules/3_self_improvement_signature_cleanup_apply.py": {
+      "mtime": 1777652175.636602,
+      "size": 579
+    },
+    "governance/fused_modules/6_plugin_reality.py": {
+      "mtime": 1777652175.610602,
+      "size": 871
+    },
+    "governance/fused_modules/check_repo_integrity_fast.py": {
+      "mtime": 1777652175.0356028,
+      "size": 696
+    },
+    "governance/fused_modules/contract_hotfix_apply.py": {
+      "mtime": 1777652175.662602,
+      "size": 585
+    },
+    "governance/fused_modules/directory_fusion_and_cleanup.py": {
+      "mtime": 1777652175.8216016,
+      "size": 984
+    },
+    "governance/fused_modules/dual_channel_pusher.py": {
+      "mtime": 1777652175.2096026,
+      "size": 840
+    },
+    "governance/fused_modules/identity_context_stability.py": {
+      "mtime": 1777652175.8026016,
+      "size": 943
+    },
+    "governance/fused_modules/long_run_stability.py": {
+      "mtime": 1777652175.7706017,
+      "size": 1141
+    },
+    "governance/fused_modules/packaging_integrity.py": {
+      "mtime": 1777652175.563602,
+      "size": 1296
+    },
+    "governance/fused_modules/probe_connected_runtime.py": {
+      "mtime": 1777652175.3436024,
+      "size": 934
+    },
+    "governance/fused_modules/quick_start.py": {
+      "mtime": 1777652175.3536024,
+      "size": 710
+    },
+    "governance/fused_modules/run_release.py": {
+      "mtime": 1777652175.4486022,
+      "size": 2064
+    },
+    "governance/fused_modules/smart_compressor.py": {
+      "mtime": 1777652175.4706023,
+      "size": 680
+    },
+    "governance/fused_modules/sync_skill_registry.py": {
+      "mtime": 1777652175.4756021,
+      "size": 613
+    },
+    "governance/fused_modules/system_integrity_check.py": {
+      "mtime": 1777652175.4816022,
+      "size": 752
+    },
+    "governance/gate_kernel/__init__.py": {
+      "mtime": 1777651238.0231407,
+      "size": 5702
+    },
+    "governance/human_approval_interrupt_v5.py": {
+      "mtime": 1777529633.7122557,
+      "size": 1563
+    },
+    "governance/ops/__init__.py": {
+      "mtime": 1777653662.1471686,
+      "size": 46
+    },
+    "governance/ops/autonomous_os_mission_control_v4.py": {
+      "mtime": 1777543809.1916232,
+      "size": 5179
+    },
+    "governance/ops/mission_control_dashboard_v5.py": {
+      "mtime": 1777529633.713256,
+      "size": 899
+    },
+    "governance/persona/__init__.py": {
+      "mtime": 1777731288.6149657,
+      "size": 34
+    },
+    "governance/persona/humanlike_behavior_policy.py": {
+      "mtime": 1777731975.6451514,
+      "size": 5334
+    },
+    "governance/policy/__init__.py": {
+      "mtime": 1777555833.2179713,
+      "size": 114
+    },
+    "governance/policy/adaptive_execution_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 4469
+    },
+    "governance/policy/autonomy_level_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 675
+    },
+    "governance/policy/autonomy_safety_case_v6.py": {
+      "mtime": 1777653851.0528603,
+      "size": 68
+    },
+    "governance/policy/connector_governance_broker_v7.py": {
+      "mtime": 1777529633.7122557,
+      "size": 991
+    },
+    "governance/policy/device_action_contract_policy.py": {
+      "mtime": 1777529633.7122557,
+      "size": 769
+    },
+    "governance/policy/end_side_global_serial_policy.py": {
+      "mtime": 1777529633.7122557,
+      "size": 1133
+    },
+    "governance/policy/execution_autopilot.py": {
+      "mtime": 1777543807.172627,
+      "size": 4423
+    },
+    "governance/policy/failure_taxonomy.py": {
+      "mtime": 1777529633.713256,
+      "size": 2466
+    },
+    "governance/policy/organ_conflict_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 1683
+    },
+    "governance/policy/risk_tier_matrix.py": {
+      "mtime": 1777543807.125627,
+      "size": 5797
+    },
+    "governance/policy/runtime_policy_enforcer.py": {
+      "mtime": 1777415504.0,
+      "size": 1459
+    },
+    "governance/proactive_skill_matcher.py": {
+      "mtime": 1777817112.4637997,
+      "size": 8062
+    },
+    "governance/red_team_safety/__init__.py": {
+      "mtime": 1777554388.2953184,
+      "size": 415
+    },
+    "governance/red_team_safety/circuit_breakers.py": {
+      "mtime": 1777554388.2963183,
+      "size": 4115
+    },
+    "governance/red_team_safety/red_team_suite.py": {
+      "mtime": 1777554388.2973182,
+      "size": 7816
+    },
+    "governance/red_team_safety/release_assurance.py": {
+      "mtime": 1777554388.2983184,
+      "size": 3845
+    },
+    "governance/review/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 99
+    },
+    "governance/review/change_review.py": {
+      "mtime": 1777415504.0,
+      "size": 447
+    },
+    "governance/runtime_commit_barrier_bridge.py": {
+      "mtime": 1777739150.0,
+      "size": 3618
+    },
+    "governance/safety_governor/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 297
+    },
+    "governance/safety_governor/approval_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 4329
+    },
+    "governance/safety_governor/game_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 6771
+    },
+    "governance/safety_governor/policy_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 4770
+    },
+    "governance/safety_governor/risk_levels.py": {
+      "mtime": 1777415504.0,
+      "size": 2113
+    },
+    "governance/safety_governor/runtime_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 6915
+    },
+    "governance/scheduler/realtime_scheduler.py": {
+      "mtime": 1777415504.0,
+      "size": 12491
+    },
+    "governance/security/security_confirmation.py": {
+      "mtime": 1777415504.0,
+      "size": 8183
+    },
+    "governance/security/strong_confirmation.py": {
+      "mtime": 1777415504.0,
+      "size": 2615
+    },
+    "governance/self_audit/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 71
+    },
+    "governance/self_audit/audit_verifier.py": {
+      "mtime": 1777415504.0,
+      "size": 733
+    },
+    "governance/v90_final_access_gateway.py": {
+      "mtime": 1777618538.6469367,
+      "size": 16940
+    },
+    "infrastructure/__init__.py": {
+      "mtime": 1777529633.713256,
+      "size": 0
+    },
+    "infrastructure/acceptance_matrix.py": {
+      "mtime": 1777543803.0606344,
+      "size": 4145
+    },
+    "infrastructure/acquisition/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 197
+    },
+    "infrastructure/acquisition/capability_marketplace.py": {
+      "mtime": 1777415504.0,
+      "size": 961
+    },
+    "infrastructure/acquisition/solution_acquisition_pipeline.py": {
+      "mtime": 1777415504.0,
+      "size": 1119
+    },
+    "infrastructure/alerting/alert_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 15471
+    },
+    "infrastructure/alerting/channels/feishu_webhook.py": {
+      "mtime": 1777737704.7301064,
+      "size": 6744
+    },
+    "infrastructure/alerting/channels/github_summary.py": {
+      "mtime": 1777415504.0,
+      "size": 5268
+    },
+    "infrastructure/alerting/channels/webhook.py": {
+      "mtime": 1777737704.7301064,
+      "size": 2964
+    },
+    "infrastructure/alerting/notification_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 9213
+    },
+    "infrastructure/alerting/realtime_alert.py": {
+      "mtime": 1777415504.0,
+      "size": 4469
+    },
+    "infrastructure/architecture_inspector.py": {
+      "mtime": 1777415502.0,
+      "size": 41153
+    },
+    "infrastructure/async_support/async_support.py": {
+      "mtime": 1777415504.0,
+      "size": 2225
+    },
+    "infrastructure/async_support/batch_operations.py": {
+      "mtime": 1777415504.0,
+      "size": 7019
+    },
+    "infrastructure/audit_governance/__init__.py": {
+      "mtime": 1777554388.2993183,
+      "size": 105
+    },
+    "infrastructure/audit_governance/audit_ledger.py": {
+      "mtime": 1777554388.3003182,
+      "size": 1759
+    },
+    "infrastructure/auto_backup_uploader.py": {
+      "mtime": 1777737704.7311063,
+      "size": 11261
+    },
+    "infrastructure/auto_git.py": {
+      "mtime": 1777737704.7311063,
+      "size": 7930
+    },
+    "infrastructure/automation/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 353
+    },
+    "infrastructure/automation/event_trigger.py": {
+      "mtime": 1777415504.0,
+      "size": 8327
+    },
+    "infrastructure/automation/pipeline_executor.py": {
+      "mtime": 1777415504.0,
+      "size": 11368
+    },
+    "infrastructure/automation/smart_scheduler.py": {
+      "mtime": 1777415504.0,
+      "size": 10603
+    },
+    "infrastructure/automation/task_automator.py": {
+      "mtime": 1777415504.0,
+      "size": 9209
+    },
+    "infrastructure/benchmark.py": {
+      "mtime": 1777415502.0,
+      "size": 3116
+    },
+    "infrastructure/cache/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 115
+    },
+    "infrastructure/cache/cache_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 260
+    },
+    "infrastructure/cache/cache_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 9106
+    },
+    "infrastructure/cache/query_cache.py": {
+      "mtime": 1777415504.0,
+      "size": 8321
+    },
+    "infrastructure/cache/rag_cache.py": {
+      "mtime": 1777415504.0,
+      "size": 15753
+    },
+    "infrastructure/capability_acquisition/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 367
+    },
+    "infrastructure/capability_acquisition/extension_lifecycle_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 661
+    },
+    "infrastructure/capability_acquisition/sandbox_promotion_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 431
+    },
+    "infrastructure/capability_acquisition/skill_discovery_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 858
+    },
+    "infrastructure/capability_acquisition/trusted_source_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 520
+    },
+    "infrastructure/capability_evolution/__init__.py": {
+      "mtime": 1777554388.3023183,
+      "size": 306
+    },
+    "infrastructure/capability_evolution/gap_detector.py": {
+      "mtime": 1777554388.3023183,
+      "size": 1905
+    },
+    "infrastructure/capability_evolution/skill_extension_sandbox.py": {
+      "mtime": 1777554388.3033183,
+      "size": 3513
+    },
+    "infrastructure/capability_extension/__init__.py": {
+      "mtime": 1777529633.7092557,
+      "size": 0
+    },
+    "infrastructure/capability_extension/controlled_extension_pipeline_v4.py": {
+      "mtime": 1777529633.7092557,
+      "size": 2750
+    },
+    "infrastructure/capability_extension_sandbox_gate_v2.py": {
+      "mtime": 1777529633.713256,
+      "size": 1837
+    },
+    "infrastructure/capability_lifecycle/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 312
+    },
+    "infrastructure/capability_lifecycle/capability_maturity_model.py": {
+      "mtime": 1777415504.0,
+      "size": 544
+    },
+    "infrastructure/capability_lifecycle/capability_promotion_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 607
+    },
+    "infrastructure/capability_lifecycle/capability_retirement_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 438
+    },
+    "infrastructure/capability_marketplace_v5.py": {
+      "mtime": 1777529633.713256,
+      "size": 1241
+    },
+    "infrastructure/capability_self_extension.py": {
+      "mtime": 1777415502.0,
+      "size": 2759
+    },
+    "infrastructure/celery/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 232
+    },
+    "infrastructure/celery/celery_app.py": {
+      "mtime": 1777415504.0,
+      "size": 3333
+    },
+    "infrastructure/celery_config.py": {
+      "mtime": 1777415502.0,
+      "size": 1860
+    },
+    "infrastructure/cli.py": {
+      "mtime": 1777415502.0,
+      "size": 4068
+    },
+    "infrastructure/cold_start_test.py": {
+      "mtime": 1777415502.0,
+      "size": 5568
+    },
+    "infrastructure/cold_start_test_v2.py": {
+      "mtime": 1777415502.0,
+      "size": 6921
+    },
+    "infrastructure/compact_resume_policy.py": {
+      "mtime": 1777415502.0,
+      "size": 1601
+    },
+    "infrastructure/component_base.py": {
+      "mtime": 1777415502.0,
+      "size": 7536
+    },
+    "infrastructure/component_validator.py": {
+      "mtime": 1777415502.0,
+      "size": 5421
+    },
+    "infrastructure/config/__init__.py": {
+      "mtime": 1777777804.211695,
+      "size": 841
+    },
+    "infrastructure/config/default_skill_config.py": {
+      "mtime": 1777415504.0,
+      "size": 3767
+    },
+    "infrastructure/config/feature_flags.py": {
+      "mtime": 1777543819.1226053,
+      "size": 2891
+    },
+    "infrastructure/config/resource_paths.py": {
+      "mtime": 1777415504.0,
+      "size": 1407
+    },
+    "infrastructure/config/runtime_modes.py": {
+      "mtime": 1777415504.0,
+      "size": 2894
+    },
+    "infrastructure/config/safety_controls.py": {
+      "mtime": 1777415504.0,
+      "size": 6943
+    },
+    "infrastructure/config/settings.py": {
+      "mtime": 1777415504.0,
+      "size": 4263
+    },
+    "infrastructure/connected_adapter_bootstrap.py": {
+      "mtime": 1777555782.3510876,
+      "size": 3105
+    },
+    "infrastructure/connected_runtime_recovery_policy.py": {
+      "mtime": 1777415502.0,
+      "size": 18594
+    },
+    "infrastructure/connector_factory/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 491
+    },
+    "infrastructure/connector_factory/api_connector_blueprint.py": {
+      "mtime": 1777415504.0,
+      "size": 305
+    },
+    "infrastructure/connector_factory/connector_blueprint_factory.py": {
+      "mtime": 1777415504.0,
+      "size": 735
+    },
+    "infrastructure/connector_factory/database_connector_blueprint.py": {
+      "mtime": 1777415504.0,
+      "size": 304
+    },
+    "infrastructure/connector_factory/device_connector_blueprint.py": {
+      "mtime": 1777415504.0,
+      "size": 425
+    },
+    "infrastructure/connector_factory/mcp_connector_blueprint.py": {
+      "mtime": 1777415504.0,
+      "size": 265
+    },
+    "infrastructure/connectors/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 282
+    },
+    "infrastructure/connectors/connector_health_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 327
+    },
+    "infrastructure/connectors/external_connector_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 707
+    },
+    "infrastructure/connectors/permission_scope_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 414
+    },
+    "infrastructure/context_resume.py": {
+      "mtime": 1777529633.713256,
+      "size": 10078
+    },
+    "infrastructure/cross_session_mission_continuity_v7.py": {
+      "mtime": 1777529633.713256,
+      "size": 1180
+    },
+    "infrastructure/daemon_manager.py": {
+      "mtime": 1777602400.1817827,
+      "size": 13268
+    },
+    "infrastructure/device_capability_bus/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 305
+    },
+    "infrastructure/device_capability_bus/executor.py": {
+      "mtime": 1777415504.0,
+      "size": 1938
+    },
+    "infrastructure/device_capability_bus/registry.py": {
+      "mtime": 1777415504.0,
+      "size": 8145
+    },
+    "infrastructure/device_capability_bus/schemas.py": {
+      "mtime": 1777415504.0,
+      "size": 1751
+    },
+    "infrastructure/device_runtime_state.py": {
+      "mtime": 1777415502.0,
+      "size": 14679
+    },
+    "infrastructure/diagnose_embedding.py": {
+      "mtime": 1777415502.0,
+      "size": 5200
+    },
+    "infrastructure/doc_sync_engine.py": {
+      "mtime": 1777415502.0,
+      "size": 23616
+    },
+    "infrastructure/ecosystem/partner_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 16124
+    },
+    "infrastructure/evidence_proof_ledger_v7.py": {
+      "mtime": 1777529633.713256,
+      "size": 1565
+    },
+    "infrastructure/execution_runtime/__init__.py": {
+      "mtime": 1777555833.2169714,
+      "size": 475
+    },
+    "infrastructure/execution_runtime/dry_run_mirror.py": {
+      "mtime": 1777554388.3053184,
+      "size": 254
+    },
+    "infrastructure/execution_runtime/execution_trace_recorder.py": {
+      "mtime": 1777554388.3063183,
+      "size": 614
+    },
+    "infrastructure/execution_runtime/real_execution_broker.py": {
+      "mtime": 1777554388.3073182,
+      "size": 1946
+    },
+    "infrastructure/execution_runtime/runtime_replay_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 286
+    },
+    "infrastructure/execution_runtime/shadow_replay_validator.py": {
+      "mtime": 1777554388.3083184,
+      "size": 1915
+    },
+    "infrastructure/extension/contract_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 11930
+    },
+    "infrastructure/external_capability_bus.py": {
+      "mtime": 1777415502.0,
+      "size": 1360
+    },
+    "infrastructure/fault_injection/__init__.py": {
+      "mtime": 1777651299.8950424,
+      "size": 2818
+    },
+    "infrastructure/fused_modules/1_mainline_hook_runtime.py": {
+      "mtime": 1777652175.7846017,
+      "size": 623
+    },
+    "infrastructure/fused_modules/1_ops_dashboard_generator.py": {
+      "mtime": 1777652175.8096015,
+      "size": 947
+    },
+    "infrastructure/fused_modules/4_final_import_and_subprocess_fix.py": {
+      "mtime": 1777652175.643602,
+      "size": 708
+    },
+    "infrastructure/fused_modules/6_plugin_install_check.py": {
+      "mtime": 1777652175.599602,
+      "size": 1102
+    },
+    "infrastructure/fused_modules/apply_identity_context_stability.py": {
+      "mtime": 1777652175.7926016,
+      "size": 769
+    },
+    "infrastructure/fused_modules/apply_offline_repair.py": {
+      "mtime": 1777652175.655602,
+      "size": 1469
+    },
+    "infrastructure/fused_modules/apply_unused_and_incomplete_repair.py": {
+      "mtime": 1777652175.679602,
+      "size": 990
+    },
+    "infrastructure/fused_modules/build_ops_dashboard.py": {
+      "mtime": 1777652174.971603,
+      "size": 1600
+    },
+    "infrastructure/fused_modules/check_connected_permissions.py": {
+      "mtime": 1777652174.9986029,
+      "size": 900
+    },
+    "infrastructure/fused_modules/check_repo_integrity.py": {
+      "mtime": 1777652175.020603,
+      "size": 1640
+    },
+    "infrastructure/fused_modules/check_route_registry.py": {
+      "mtime": 1777652175.0556028,
+      "size": 716
+    },
+    "infrastructure/fused_modules/check_route_wiring.py": {
+      "mtime": 1777652175.0726027,
+      "size": 884
+    },
+    "infrastructure/fused_modules/connected_route.py": {
+      "mtime": 1777652175.0966027,
+      "size": 936
+    },
+    "infrastructure/fused_modules/control_plane.py": {
+      "mtime": 1777652175.1206028,
+      "size": 724
+    },
+    "infrastructure/fused_modules/control_plane_audit.py": {
+      "mtime": 1777652175.1406028,
+      "size": 789
+    },
+    "infrastructure/fused_modules/create_complete_docs.py": {
+      "mtime": 1777652175.1756027,
+      "size": 911
+    },
+    "infrastructure/fused_modules/create_professional_docs.py": {
+      "mtime": 1777652175.1976025,
+      "size": 910
+    },
+    "infrastructure/fused_modules/full_backup.py": {
+      "mtime": 1777652175.2406025,
+      "size": 891
+    },
+    "infrastructure/fused_modules/full_static_audit_and_repair.py": {
+      "mtime": 1777652175.6716018,
+      "size": 886
+    },
+    "infrastructure/fused_modules/generate_charts.py": {
+      "mtime": 1777652175.2556026,
+      "size": 813
+    },
+    "infrastructure/fused_modules/health_watch.py": {
+      "mtime": 1777652096.0807295,
+      "size": 1017
+    },
+    "infrastructure/fused_modules/invocation_audit_cli.py": {
+      "mtime": 1777652175.3226025,
+      "size": 2065
+    },
+    "infrastructure/fused_modules/mainline_trigger.py": {
+      "mtime": 1777652175.8366015,
+      "size": 1581
+    },
+    "infrastructure/fused_modules/run_daily_growth_check.py": {
+      "mtime": 1777652175.3636024,
+      "size": 751
+    },
+    "infrastructure/fused_modules/run_daily_growth_loop.py": {
+      "mtime": 1777652175.3796024,
+      "size": 1307
+    },
+    "infrastructure/fused_modules/run_nightly_audit.py": {
+      "mtime": 1777652175.4166024,
+      "size": 1381
+    },
+    "infrastructure/fused_modules/session_end_detector.py": {
+      "mtime": 1777652175.4656022,
+      "size": 1038
+    },
+    "infrastructure/fused_modules/task_daemon.py": {
+      "mtime": 1777781782.3645744,
+      "size": 772
+    },
+    "infrastructure/fused_modules/unified_inspector.py": {
+      "mtime": 1777652175.5076022,
+      "size": 1269
+    },
+    "infrastructure/fused_modules/unified_inspector_v11.py": {
+      "mtime": 1777652175.549602,
+      "size": 1255
+    },
+    "infrastructure/fusion/module_fusion_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 13654
+    },
+    "infrastructure/fusion/skill_fusion_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 23542
+    },
+    "infrastructure/fusion_engine.py": {
+      "mtime": 1777415502.0,
+      "size": 19992
+    },
+    "infrastructure/fusion_engine_v2/__init__.py": {
+      "mtime": 1777652071.7587686,
+      "size": 16646
+    },
+    "infrastructure/guards/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 195
+    },
+    "infrastructure/guards/package_cleanliness_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 801
+    },
+    "infrastructure/guards/registry_consistency_guard.py": {
+      "mtime": 1777415504.0,
+      "size": 1138
+    },
+    "infrastructure/gui_agent_fast.py": {
+      "mtime": 1777415502.0,
+      "size": 2932
+    },
+    "infrastructure/gui_agent_learner.py": {
+      "mtime": 1777415502.0,
+      "size": 5584
+    },
+    "infrastructure/gui_agent_optimizer.py": {
+      "mtime": 1777415502.0,
+      "size": 2810
+    },
+    "infrastructure/gui_agent_smart.py": {
+      "mtime": 1777415502.0,
+      "size": 5648
+    },
+    "infrastructure/hardware/cpu_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 7266
+    },
+    "infrastructure/hardware/gpu_ops.py": {
+      "mtime": 1777415504.0,
+      "size": 7731
+    },
+    "infrastructure/hardware/numa_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 18573
+    },
+    "infrastructure/integration.py": {
+      "mtime": 1777415502.0,
+      "size": 3127
+    },
+    "infrastructure/inventory/dependency_graph_export.py": {
+      "mtime": 1777415504.0,
+      "size": 3908
+    },
+    "infrastructure/inventory/generate_architecture_display.py": {
+      "mtime": 1777415504.0,
+      "size": 14033
+    },
+    "infrastructure/inventory/generate_architecture_display_v10.py": {
+      "mtime": 1777415504.0,
+      "size": 11387
+    },
+    "infrastructure/inventory/inventory_diff.py": {
+      "mtime": 1777415504.0,
+      "size": 4207
+    },
+    "infrastructure/inventory/inventory_snapshot.py": {
+      "mtime": 1777415504.0,
+      "size": 2821
+    },
+    "infrastructure/inventory/module_catalog_export.py": {
+      "mtime": 1777415504.0,
+      "size": 3564
+    },
+    "infrastructure/inventory/skill_access_checker.py": {
+      "mtime": 1777415504.0,
+      "size": 10928
+    },
+    "infrastructure/inventory/skill_catalog_export.py": {
+      "mtime": 1777415504.0,
+      "size": 4461
+    },
+    "infrastructure/inventory/skill_index_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 2651
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v2.py": {
+      "mtime": 1777415504.0,
+      "size": 15100
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v3.py": {
+      "mtime": 1777415504.0,
+      "size": 15382
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v4.py": {
+      "mtime": 1777415504.0,
+      "size": 14507
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v5.py": {
+      "mtime": 1777415504.0,
+      "size": 13584
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v6.py": {
+      "mtime": 1777415504.0,
+      "size": 17547
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v7.py": {
+      "mtime": 1777415504.0,
+      "size": 16905
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v8.py": {
+      "mtime": 1777415504.0,
+      "size": 10737
+    },
+    "infrastructure/inventory/vintage/generate_architecture_display_v9.py": {
+      "mtime": 1777415504.0,
+      "size": 11442
+    },
+    "infrastructure/inventory/violation_test_suite.py": {
+      "mtime": 1777415504.0,
+      "size": 11268
+    },
+    "infrastructure/langgraph/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 190
+    },
+    "infrastructure/langgraph/workflow.py": {
+      "mtime": 1777415504.0,
+      "size": 7292
+    },
+    "infrastructure/legacy/dynamic_prompt.py": {
+      "mtime": 1777415504.0,
+      "size": 10511
+    },
+    "infrastructure/legacy/guide/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 96
+    },
+    "infrastructure/legacy/guide/assistant_guide.py": {
+      "mtime": 1777415504.0,
+      "size": 28155
+    },
+    "infrastructure/legacy/guide/bootstrap.py": {
+      "mtime": 1777415504.0,
+      "size": 2601
+    },
+    "infrastructure/legacy/layer_bridge/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 937
+    },
+    "infrastructure/legacy/layer_bridge/async_queue.py": {
+      "mtime": 1777415504.0,
+      "size": 4020
+    },
+    "infrastructure/legacy/layer_bridge/benchmark.py": {
+      "mtime": 1777415504.0,
+      "size": 3079
+    },
+    "infrastructure/legacy/layer_bridge/fast_bridge.py": {
+      "mtime": 1777415504.0,
+      "size": 8561
+    },
+    "infrastructure/legacy/layer_bridge/layer_cache.py": {
+      "mtime": 1777415504.0,
+      "size": 250
+    },
+    "infrastructure/legacy/layer_bridge/zero_copy.py": {
+      "mtime": 1777415504.0,
+      "size": 3603
+    },
+    "infrastructure/legacy/llm.py": {
+      "mtime": 1777415504.0,
+      "size": 4323
+    },
+    "infrastructure/legacy/performance_integration.py": {
+      "mtime": 1777415504.0,
+      "size": 263
+    },
+    "infrastructure/legacy/standards/asset_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 19562
+    },
+    "infrastructure/loader/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 170
+    },
+    "infrastructure/loader/layer_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 2561
+    },
+    "infrastructure/loader/lazy_loader.py": {
+      "mtime": 1777415504.0,
+      "size": 3195
+    },
+    "infrastructure/local_celery.py": {
+      "mtime": 1777415502.0,
+      "size": 1823
+    },
+    "infrastructure/long_run_soak.py": {
+      "mtime": 1777543803.4926336,
+      "size": 4237
+    },
+    "infrastructure/mainline_hook.py": {
+      "mtime": 1777817112.4647996,
+      "size": 18940
+    },
+    "infrastructure/manifest/builder.py": {
+      "mtime": 1777415504.0,
+      "size": 3683
+    },
+    "infrastructure/manifest/manifest_generator.py": {
+      "mtime": 1777415504.0,
+      "size": 2205
+    },
+    "infrastructure/memory_writeback_compressor.py": {
+      "mtime": 1777653851.0508602,
+      "size": 7033
+    },
+    "infrastructure/mesh/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 213
+    },
+    "infrastructure/mesh/mesh_health_router.py": {
+      "mtime": 1777415504.0,
+      "size": 334
+    },
+    "infrastructure/mesh/mesh_message_bus.py": {
+      "mtime": 1777415504.0,
+      "size": 354
+    },
+    "infrastructure/mesh/mesh_node_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 433
+    },
+    "infrastructure/message_hook_bootstrap.py": {
+      "mtime": 1777641826.181833,
+      "size": 462
+    },
+    "infrastructure/models/dealer_leader.py": {
+      "mtime": 1777415504.0,
+      "size": 2772
+    },
+    "infrastructure/monitoring/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 567
+    },
+    "infrastructure/monitoring/runtime_alerts.py": {
+      "mtime": 1777415504.0,
+      "size": 8709
+    },
+    "infrastructure/monitoring/system_health_report.py": {
+      "mtime": 1777415504.0,
+      "size": 8783
+    },
+    "infrastructure/monitoring/timeline_generator.py": {
+      "mtime": 1777415504.0,
+      "size": 14181
+    },
+    "infrastructure/observability/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 316
+    },
+    "infrastructure/observability/health.py": {
+      "mtime": 1777415504.0,
+      "size": 2329
+    },
+    "infrastructure/observability/logger.py": {
+      "mtime": 1777415504.0,
+      "size": 4072
+    },
+    "infrastructure/observability/metrics.py": {
+      "mtime": 1777415504.0,
+      "size": 3135
+    },
+    "infrastructure/ocr_service.py": {
+      "mtime": 1777415502.0,
+      "size": 9024
+    },
+    "infrastructure/offline_adapters.py": {
+      "mtime": 1777616320.861956,
+      "size": 12178
+    },
+    "infrastructure/offline_mode.py": {
+      "mtime": 1777612773.8822455,
+      "size": 12794
+    },
+    "infrastructure/offline_runtime_guard.py": {
+      "mtime": 1777738305.0,
+      "size": 6708
+    },
+    "infrastructure/openapi/integration_contract.py": {
+      "mtime": 1777415504.0,
+      "size": 19095
+    },
+    "infrastructure/ops/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 301
+    },
+    "infrastructure/ops/archive_removed_items.py": {
+      "mtime": 1777415504.0,
+      "size": 2867
+    },
+    "infrastructure/ops/connector_uptime_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 563
+    },
+    "infrastructure/ops/dashboard.py": {
+      "mtime": 1777415504.0,
+      "size": 11739
+    },
+    "infrastructure/ops/deletion_review_pack.py": {
+      "mtime": 1777415504.0,
+      "size": 2852
+    },
+    "infrastructure/ops/drift_detector.py": {
+      "mtime": 1777415504.0,
+      "size": 363
+    },
+    "infrastructure/ops/freeze_window_enforcer.py": {
+      "mtime": 1777415504.0,
+      "size": 2758
+    },
+    "infrastructure/ops/incident_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 382
+    },
+    "infrastructure/ops/monitoring/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 137
+    },
+    "infrastructure/ops/monitoring/performance_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 2368
+    },
+    "infrastructure/ops/ops_health_supervisor.py": {
+      "mtime": 1777415504.0,
+      "size": 973
+    },
+    "infrastructure/ops_health.py": {
+      "mtime": 1777543803.7226331,
+      "size": 1638
+    },
+    "infrastructure/optimization/OPTIMIZER.py": {
+      "mtime": 1777415504.0,
+      "size": 90
+    },
+    "infrastructure/optimization/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 102
+    },
+    "infrastructure/optimization/parallel_processor.py": {
+      "mtime": 1777415504.0,
+      "size": 1913
+    },
+    "infrastructure/optimization/performance/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1471
+    },
+    "infrastructure/optimization/performance/integrate.py": {
+      "mtime": 1777415504.0,
+      "size": 3062
+    },
+    "infrastructure/optimization/performance/performance_monitor.py": {
+      "mtime": 1777415504.0,
+      "size": 172
+    },
+    "infrastructure/optimization/performance/smart_router.py": {
+      "mtime": 1777415504.0,
+      "size": 150
+    },
+    "infrastructure/optimization/performance/unified_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 10158
+    },
+    "infrastructure/optimization/performance_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 4366
+    },
+    "infrastructure/optimization/priority_queue.py": {
+      "mtime": 1777415504.0,
+      "size": 2251
+    },
+    "infrastructure/optimization/smart_router.py": {
+      "mtime": 1777415504.0,
+      "size": 150
+    },
+    "infrastructure/optimization/token_budget.py": {
+      "mtime": 1777415504.0,
+      "size": 2839
+    },
+    "infrastructure/optimization/token_optimizer.py": {
+      "mtime": 1777415504.0,
+      "size": 5344
+    },
+    "infrastructure/packaging/__init__.py": {
+      "mtime": 1777651269.4500906,
+      "size": 2784
+    },
+    "infrastructure/path_resolver.py": {
+      "mtime": 1777415502.0,
+      "size": 1875
+    },
+    "infrastructure/paths.py": {
+      "mtime": 1777415502.0,
+      "size": 1130
+    },
+    "infrastructure/performance_integration.py": {
+      "mtime": 1777415502.0,
+      "size": 504
+    },
+    "infrastructure/performance_monitor.py": {
+      "mtime": 1777415502.0,
+      "size": 2542
+    },
+    "infrastructure/performance_optimizer.py": {
+      "mtime": 1777415502.0,
+      "size": 12648
+    },
+    "infrastructure/platform_adapter/__init__.py": {
+      "mtime": 1777529633.7142558,
+      "size": 0
+    },
+    "infrastructure/platform_adapter/alarm_tool_policy.py": {
+      "mtime": 1777529633.7142558,
+      "size": 1864
+    },
+    "infrastructure/platform_adapter/base.py": {
+      "mtime": 1777415504.0,
+      "size": 1699
+    },
+    "infrastructure/platform_adapter/capability_registry.py": {
+      "mtime": 1777543804.2856321,
+      "size": 4592
+    },
+    "infrastructure/platform_adapter/connection_state.py": {
+      "mtime": 1777415504.0,
+      "size": 4491
+    },
+    "infrastructure/platform_adapter/delivery_outbox.py": {
+      "mtime": 1777543804.397632,
+      "size": 6475
+    },
+    "infrastructure/platform_adapter/device_tool_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 6267
+    },
+    "infrastructure/platform_adapter/error_codes.py": {
+      "mtime": 1777415504.0,
+      "size": 1468
+    },
+    "infrastructure/platform_adapter/invocation_ledger.py": {
+      "mtime": 1777637776.01311,
+      "size": 10095
+    },
+    "infrastructure/platform_adapter/invoke_guard.py": {
+      "mtime": 1777640101.5170445,
+      "size": 7552
+    },
+    "infrastructure/platform_adapter/null_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 1321
+    },
+    "infrastructure/platform_adapter/recovery_manager.py": {
+      "mtime": 1777543804.4226317,
+      "size": 3826
+    },
+    "infrastructure/platform_adapter/replay_harness.py": {
+      "mtime": 1777543804.300632,
+      "size": 4067
+    },
+    "infrastructure/platform_adapter/result_normalizer.py": {
+      "mtime": 1777415504.0,
+      "size": 4378
+    },
+    "infrastructure/platform_adapter/result_verifier.py": {
+      "mtime": 1777543804.1696322,
+      "size": 2549
+    },
+    "infrastructure/platform_adapter/runtime_probe.py": {
+      "mtime": 1777415504.0,
+      "size": 3521
+    },
+    "infrastructure/platform_adapter/runtime_state_store.py": {
+      "mtime": 1777415504.0,
+      "size": 9759
+    },
+    "infrastructure/platform_adapter/self_healing_supervisor.py": {
+      "mtime": 1777543804.246632,
+      "size": 5329
+    },
+    "infrastructure/platform_adapter/snapshot_manager.py": {
+      "mtime": 1777543804.2616322,
+      "size": 2381
+    },
+    "infrastructure/platform_adapter/timeout_circuit.py": {
+      "mtime": 1777543804.373632,
+      "size": 5415
+    },
+    "infrastructure/platform_adapter/trace_recorder.py": {
+      "mtime": 1777543804.4356318,
+      "size": 3624
+    },
+    "infrastructure/platform_adapter/user_messages.py": {
+      "mtime": 1777415504.0,
+      "size": 2470
+    },
+    "infrastructure/platform_adapter/world_interface_resolver_v2.py": {
+      "mtime": 1777529633.7142558,
+      "size": 1274
+    },
+    "infrastructure/platform_adapter/xiaoyi_adapter.py": {
+      "mtime": 1777639566.0208206,
+      "size": 19577
+    },
+    "infrastructure/plugin_standard.py": {
+      "mtime": 1777415502.0,
+      "size": 13203
+    },
+    "infrastructure/pool/connection_pool.py": {
+      "mtime": 1777415504.0,
+      "size": 2313
+    },
+    "infrastructure/portfolio/assessment/daily_assessment_generate.py": {
+      "mtime": 1777415504.0,
+      "size": 2534
+    },
+    "infrastructure/portfolio/business/packaging_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 13848
+    },
+    "infrastructure/portfolio/resource_scheduler.py": {
+      "mtime": 1777415504.0,
+      "size": 15350
+    },
+    "infrastructure/production_celery.py": {
+      "mtime": 1777415502.0,
+      "size": 1968
+    },
+    "infrastructure/production_gate.py": {
+      "mtime": 1777543802.3116357,
+      "size": 5050
+    },
+    "infrastructure/progress_heartbeat.py": {
+      "mtime": 1777529633.713256,
+      "size": 2167
+    },
+    "infrastructure/regression_test.py": {
+      "mtime": 1777415502.0,
+      "size": 5837
+    },
+    "infrastructure/release/release_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 12249
+    },
+    "infrastructure/release_manifest.py": {
+      "mtime": 1777415502.0,
+      "size": 2362
+    },
+    "infrastructure/rollback_governance/__init__.py": {
+      "mtime": 1777554388.3093183,
+      "size": 126
+    },
+    "infrastructure/rollback_governance/rollback_plan.py": {
+      "mtime": 1777554388.3103182,
+      "size": 2144
+    },
+    "infrastructure/route_audit.py": {
+      "mtime": 1777415502.0,
+      "size": 6359
+    },
+    "infrastructure/route_state.py": {
+      "mtime": 1777415502.0,
+      "size": 6271
+    },
+    "infrastructure/run_ledger_v5.py": {
+      "mtime": 1777529633.713256,
+      "size": 2443
+    },
+    "infrastructure/runtime_fabric/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 249
+    },
+    "infrastructure/runtime_fabric/runtime_fabric_orchestrator.py": {
+      "mtime": 1777415504.0,
+      "size": 483
+    },
+    "infrastructure/runtime_fabric/service_mesh_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 263
+    },
+    "infrastructure/runtime_fabric/state_sync_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 269
+    },
+    "infrastructure/safe_db.py": {
+      "mtime": 1777415502.0,
+      "size": 4245
+    },
+    "infrastructure/safe_extension_loader.py": {
+      "mtime": 1777415502.0,
+      "size": 8769
+    },
+    "infrastructure/safe_jsonable.py": {
+      "mtime": 1777622785.60594,
+      "size": 1971
+    },
+    "infrastructure/scheduler/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 228
+    },
+    "infrastructure/scheduler/scheduler.py": {
+      "mtime": 1777781734.6486933,
+      "size": 6981
+    },
+    "infrastructure/setup_tools/one_click_setup.py": {
+      "mtime": 1777415504.0,
+      "size": 21655
+    },
+    "infrastructure/setup_tools/progressive_setup.py": {
+      "mtime": 1777415504.0,
+      "size": 2811
+    },
+    "infrastructure/shadow_evaluation_runner.py": {
+      "mtime": 1777415502.0,
+      "size": 2673
+    },
+    "infrastructure/shared/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 575
+    },
+    "infrastructure/shared/cache.py": {
+      "mtime": 1777415504.0,
+      "size": 1918
+    },
+    "infrastructure/shared/config.py": {
+      "mtime": 1777415504.0,
+      "size": 2077
+    },
+    "infrastructure/shared/dedup.py": {
+      "mtime": 1777415504.0,
+      "size": 1196
+    },
+    "infrastructure/shared/prompt_builder.py": {
+      "mtime": 1777415504.0,
+      "size": 1970
+    },
+    "infrastructure/shared/router.py": {
+      "mtime": 1777415504.0,
+      "size": 8237
+    },
+    "infrastructure/shared/smart_router.py": {
+      "mtime": 1777415504.0,
+      "size": 458
+    },
+    "infrastructure/shared/weights.py": {
+      "mtime": 1777415504.0,
+      "size": 1411
+    },
+    "infrastructure/skill_build_sandbox_v5.py": {
+      "mtime": 1777529633.713256,
+      "size": 1382
+    },
+    "infrastructure/skill_policy_gate.py": {
+      "mtime": 1777739150.0,
+      "size": 3116
+    },
+    "infrastructure/skill_supply_chain_attestation_v7.py": {
+      "mtime": 1777529633.713256,
+      "size": 1145
+    },
+    "infrastructure/slo_monitor.py": {
+      "mtime": 1777543803.3836336,
+      "size": 2027
+    },
+    "infrastructure/solution_search_orchestrator.py": {
+      "mtime": 1777618930.9274876,
+      "size": 16617
+    },
+    "infrastructure/storage/repositories/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 729
+    },
+    "infrastructure/storage/repositories/interfaces.py": {
+      "mtime": 1777781734.6496933,
+      "size": 3536
+    },
+    "infrastructure/storage/repositories/postgres_repo.py": {
+      "mtime": 1777781734.6496933,
+      "size": 10280
+    },
+    "infrastructure/storage/repositories/redis_client.py": {
+      "mtime": 1777415504.0,
+      "size": 5921
+    },
+    "infrastructure/storage/repositories/sqlite_repo.py": {
+      "mtime": 1777781734.6496933,
+      "size": 28306
+    },
+    "infrastructure/storage/sqlite_utils.py": {
+      "mtime": 1777415504.0,
+      "size": 1963
+    },
+    "infrastructure/task_manager.py": {
+      "mtime": 1777781782.3645744,
+      "size": 13783
+    },
+    "infrastructure/task_progress_guard.py": {
+      "mtime": 1777415502.0,
+      "size": 7440
+    },
+    "infrastructure/templates/replication_engine.py": {
+      "mtime": 1777415504.0,
+      "size": 18126
+    },
+    "infrastructure/tenant/workspace_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 10449
+    },
+    "infrastructure/token_budget.py": {
+      "mtime": 1777415502.0,
+      "size": 6291
+    },
+    "infrastructure/tool_adapters/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 1384
+    },
+    "infrastructure/tool_adapters/flaky_tool.py": {
+      "mtime": 1777415504.0,
+      "size": 1551
+    },
+    "infrastructure/tool_adapters/message_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 3815
+    },
+    "infrastructure/tool_negotiation/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 261
+    },
+    "infrastructure/tool_negotiation/tool_capability_negotiator.py": {
+      "mtime": 1777415504.0,
+      "size": 993
+    },
+    "infrastructure/tool_negotiation/tool_contract_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 481
+    },
+    "infrastructure/tool_negotiation/tool_fallback_matrix.py": {
+      "mtime": 1777415504.0,
+      "size": 551
+    },
+    "infrastructure/tts_enhanced.py": {
+      "mtime": 1777415502.0,
+      "size": 5309
+    },
+    "infrastructure/unified_logger.py": {
+      "mtime": 1777415502.0,
+      "size": 1599
+    },
+    "infrastructure/unified_maintenance.py": {
+      "mtime": 1777415502.0,
+      "size": 1877
+    },
+    "infrastructure/upgrade_governance/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 371
+    },
+    "infrastructure/upgrade_governance/rollback_snapshot_policy.py": {
+      "mtime": 1777415504.0,
+      "size": 329
+    },
+    "infrastructure/upgrade_governance/self_upgrade_governor.py": {
+      "mtime": 1777415504.0,
+      "size": 1050
+    },
+    "infrastructure/upgrade_governance/upgrade_diff_risk_analyzer.py": {
+      "mtime": 1777415504.0,
+      "size": 448
+    },
+    "infrastructure/upgrade_governance/version_lineage_tracker.py": {
+      "mtime": 1777415504.0,
+      "size": 262
+    },
+    "infrastructure/upgrade_orchestrator.py": {
+      "mtime": 1777543805.6656296,
+      "size": 2245
+    },
+    "infrastructure/v92_local_fallbacks.py": {
+      "mtime": 1777618538.6469367,
+      "size": 923
+    },
+    "infrastructure/vector_engines/three_engine_manager.py": {
+      "mtime": 1777415504.0,
+      "size": 6581
+    },
+    "infrastructure/verify_runtime_integrity.py": {
+      "mtime": 1777415502.0,
+      "size": 19120
+    },
+    "infrastructure/workers/__init__.py": {
+      "mtime": 1777415504.0,
+      "size": 215
+    },
+    "infrastructure/workers/executor.py": {
+      "mtime": 1777781734.6496933,
+      "size": 15539
+    },
+    "infrastructure/world_interface/__init__.py": {
+      "mtime": 1777554388.3113184,
+      "size": 694
+    },
+    "infrastructure/world_interface/adapter_contract_gate.py": {
+      "mtime": 1777554388.3123183,
+      "size": 3215
+    },
+    "infrastructure/world_interface/mock_contract_registry.py": {
+      "mtime": 1777554388.3133183,
+      "size": 4873
+    },
+    "infrastructure/world_interface/universal_world_resolver_v4.py": {
+      "mtime": 1777529633.8292556,
+      "size": 2515
+    },
+    "infrastructure/world_interface/world_model_stub.py": {
+      "mtime": 1777554388.3133183,
+      "size": 1478
+    },
+    "scripts/__init__.py": {
+      "mtime": 1777529633.8262556,
+      "size": 0
+    },
+    "scripts/auto_register_routes.py": {
+      "mtime": 1777798698.086359,
+      "size": 17925
+    },
+    "scripts/batch_skill_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 8970
+    },
+    "scripts/build_ops_dashboard.py": {
+      "mtime": 1777415504.0,
+      "size": 22517
+    },
+    "scripts/build_skill_trigger_registry.py": {
+      "mtime": 1777807280.546259,
+      "size": 12782
+    },
+    "scripts/check_connected_adapter.py": {
+      "mtime": 1777415504.0,
+      "size": 1497
+    },
+    "scripts/check_connected_permissions.py": {
+      "mtime": 1777415504.0,
+      "size": 11122
+    },
+    "scripts/check_notification_auth.py": {
+      "mtime": 1777798698.088359,
+      "size": 4764
+    },
+    "scripts/check_repo_integrity.py": {
+      "mtime": 1777415504.0,
+      "size": 18632
+    },
+    "scripts/check_repo_integrity_fast.py": {
+      "mtime": 1777415504.0,
+      "size": 4328
+    },
+    "scripts/check_route_registry.py": {
+      "mtime": 1777543816.7436097,
+      "size": 16895
+    },
+    "scripts/check_route_wiring.py": {
+      "mtime": 1777415504.0,
+      "size": 7058
+    },
+    "scripts/check_skill_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 1714
+    },
+    "scripts/connected_adapter_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 2931
+    },
+    "scripts/connected_route_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 13670
+    },
+    "scripts/control_plane.py": {
+      "mtime": 1777415504.0,
+      "size": 13723
+    },
+    "scripts/control_plane_audit.py": {
+      "mtime": 1777415504.0,
+      "size": 8190
+    },
+    "scripts/create_clean_package.py": {
+      "mtime": 1777415504.0,
+      "size": 4497
+    },
+    "scripts/create_complete_docs.py": {
+      "mtime": 1777415504.0,
+      "size": 19637
+    },
+    "scripts/create_professional_docs.py": {
+      "mtime": 1777415504.0,
+      "size": 8768
+    },
+    "scripts/deploy_verification.py": {
+      "mtime": 1777781734.6496933,
+      "size": 6185
+    },
+    "scripts/doc_fusion_engine.py": {
+      "mtime": 1777817492.1887395,
+      "size": 24983
+    },
+    "scripts/dual_channel_pusher.py": {
+      "mtime": 1777415504.0,
+      "size": 3600
+    },
+    "scripts/e2e_route_scenarios.py": {
+      "mtime": 1777543818.048607,
+      "size": 9444
+    },
+    "scripts/export_daily_platform_report.py": {
+      "mtime": 1777798698.090359,
+      "size": 8115
+    },
+    "scripts/export_weekly_platform_report.py": {
+      "mtime": 1777798698.0913591,
+      "size": 8267
+    },
+    "scripts/full_backup.py": {
+      "mtime": 1777415504.0,
+      "size": 12072
+    },
+    "scripts/generate_charts.py": {
+      "mtime": 1777415504.0,
+      "size": 6144
+    },
+    "scripts/generate_metrics.py": {
+      "mtime": 1777415504.0,
+      "size": 5814
+    },
+    "scripts/health_watch.py": {
+      "mtime": 1777565459.960965,
+      "size": 9158
+    },
+    "scripts/heartbeat_executor.py": {
+      "mtime": 1777415504.0,
+      "size": 9094
+    },
+    "scripts/invocation_audit_cli.py": {
+      "mtime": 1777543817.148609,
+      "size": 15305
+    },
+    "scripts/legacy/generate_daily_work_summary.py": {
+      "mtime": 1777415504.0,
+      "size": 8244
+    },
+    "scripts/legacy/generate_weekly_skill_report.py": {
+      "mtime": 1777415504.0,
+      "size": 8752
+    },
+    "scripts/legacy/message_sender.py": {
+      "mtime": 1777415504.0,
+      "size": 8545
+    },
+    "scripts/legacy/scheduled_message_daemon.py": {
+      "mtime": 1777415504.0,
+      "size": 6005
+    },
+    "scripts/legacy/scheduled_tasks_daemon.py": {
+      "mtime": 1777415504.0,
+      "size": 10207
+    },
+    "scripts/legacy/scheduled_tasks_launcher.py": {
+      "mtime": 1777415504.0,
+      "size": 4354
+    },
+    "scripts/legacy/test_recurring_real.py": {
+      "mtime": 1777415504.0,
+      "size": 6280
+    },
+    "scripts/migrate_to_postgres.py": {
+      "mtime": 1777415504.0,
+      "size": 6144
+    },
+    "scripts/one_time_trigger.py": {
+      "mtime": 1777798668.9994247,
+      "size": 4043
+    },
+    "scripts/platform_health_check.py": {
+      "mtime": 1777798698.093359,
+      "size": 5306
+    },
+    "scripts/probe_connected_runtime.py": {
+      "mtime": 1777415504.0,
+      "size": 7952
+    },
+    "scripts/quick_schedule.py": {
+      "mtime": 1777415504.0,
+      "size": 1264
+    },
+    "scripts/quick_start.py": {
+      "mtime": 1777415504.0,
+      "size": 2885
+    },
+    "scripts/quick_task.py": {
+      "mtime": 1777415504.0,
+      "size": 1858
+    },
+    "scripts/real_work_entry_main.py": {
+      "mtime": 1777415504.0,
+      "size": 704
+    },
+    "scripts/resume_current_task.py": {
+      "mtime": 1777798669.0004249,
+      "size": 2681
+    },
+    "scripts/run_daily_growth_check.py": {
+      "mtime": 1777415504.0,
+      "size": 5985
+    },
+    "scripts/run_daily_growth_loop.py": {
+      "mtime": 1777415504.0,
+      "size": 11690
+    },
+    "scripts/run_fault_injection_tests.py": {
+      "mtime": 1777798698.095359,
+      "size": 12851
+    },
+    "scripts/run_nightly_audit.py": {
+      "mtime": 1777415504.0,
+      "size": 22727
+    },
+    "scripts/run_release_gate.py": {
+      "mtime": 1777415504.0,
+      "size": 33388
+    },
+    "scripts/scan_skills.py": {
+      "mtime": 1777415504.0,
+      "size": 3972
+    },
+    "scripts/seed_platform_invocations.py": {
+      "mtime": 1777798698.097359,
+      "size": 16580
+    },
+    "scripts/session_end_detector.py": {
+      "mtime": 1777415504.0,
+      "size": 6884
+    },
+    "scripts/simulate_l0_auto_recovery.py": {
+      "mtime": 1777798698.099359,
+      "size": 9096
+    },
+    "scripts/simulate_task_progress_timeout.py": {
+      "mtime": 1777798698.101359,
+      "size": 11254
+    },
+    "scripts/smart_compressor.py": {
+      "mtime": 1777415504.0,
+      "size": 3152
+    },
+    "scripts/sync_skill_registry.py": {
+      "mtime": 1777415504.0,
+      "size": 3391
+    },
+    "scripts/system_integrity_check.py": {
+      "mtime": 1777415504.0,
+      "size": 6734
+    },
+    "scripts/task_daemon.py": {
+      "mtime": 1777781782.3645744,
+      "size": 15653
+    },
+    "scripts/top_ai_operator_main.py": {
+      "mtime": 1777415504.0,
+      "size": 701
+    },
+    "scripts/top_ai_operator_v25_main.py": {
+      "mtime": 1777415504.0,
+      "size": 672
+    },
+    "scripts/top_ai_operator_v26_main.py": {
+      "mtime": 1777445366.0,
+      "size": 698
+    },
+    "scripts/unified_inspector.py": {
+      "mtime": 1777415504.0,
+      "size": 11471
+    },
+    "scripts/unified_inspector_v10.py": {
+      "mtime": 1777565359.9901743,
+      "size": 26136
+    },
+    "scripts/unified_inspector_v11.py": {
+      "mtime": 1777801959.6428468,
+      "size": 34440
+    },
+    "scripts/v100_final_pending_access_release_gate.py": {
+      "mtime": 1777709660.77412,
+      "size": 2184
+    },
+    "scripts/v100_packaging_integrity_gate.py": {
+      "mtime": 1777648701.5881462,
+      "size": 8582
+    },
+    "scripts/v102_persona_continuity_gate.py": {
+      "mtime": 1777732190.5335615,
+      "size": 5898
+    },
+    "scripts/v103_context_reload_persona_consistency_gate.py": {
+      "mtime": 1777732249.839398,
+      "size": 5687
+    },
+    "scripts/v104_1_final_consistency_enforcement_gate.py": {
+      "mtime": 1777737476.0,
+      "size": 24622
+    },
+    "scripts/v104_2_runtime_hardening_apply.py": {
+      "mtime": 1777738748.0,
+      "size": 8163
+    },
+    "scripts/v104_2_runtime_hardening_gate.py": {
+      "mtime": 1777738557.0,
+      "size": 4786
+    },
+    "scripts/v104_3_runtime_fusion_coordination_gate.py": {
+      "mtime": 1777739202.0,
+      "size": 9161
+    },
+    "scripts/v104_4_file_increment_inspector.py": {
+      "mtime": 1777741995.8491216,
+      "size": 14712
+    },
+    "scripts/v104_final_consistency_conflict_cleanup_gate.py": {
+      "mtime": 1777736669.0,
+      "size": 22195
+    },
+    "scripts/v105_proactive_skill_association_apply.py": {
+      "mtime": 1777816882.0,
+      "size": 16526
+    },
+    "scripts/v105_proactive_skill_association_gate.py": {
+      "mtime": 1777817112.4637997,
+      "size": 3781
+    },
+    "scripts/v107_v116_apply_self_evolution_ops_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 3535
+    },
+    "scripts/v10_self_extension_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 1062
+    },
+    "scripts/v117_v126_apply_operating_spine_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 3414
+    },
+    "scripts/v127_v136_apply_release_hardening_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 3806
+    },
+    "scripts/v137_v146_apply_runtime_activation_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 3484
+    },
+    "scripts/v147_v156_apply_action_bridge_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 3500
+    },
+    "scripts/v157_v166_apply_personalization_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 3604
+    },
+    "scripts/v167_v196_apply_operations_intelligence_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 4760
+    },
+    "scripts/v197_v226_apply_production_control_plane_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 4840
+    },
+    "scripts/v227_v256_apply_autonomous_runtime_fabric_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 4864
+    },
+    "scripts/v227_v256_verify_autonomous_runtime_fabric_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 2996
+    },
+    "scripts/v257_v316_apply_meta_autonomy_platform_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 6546
+    },
+    "scripts/v75_6_plugin_install_check.py": {
+      "mtime": 1777529633.8292556,
+      "size": 13602
+    },
+    "scripts/v75_6_plugin_reality_gate.py": {
+      "mtime": 1777529633.8292556,
+      "size": 9603
+    },
+    "scripts/v92_2_self_improvement_goal_hotfix_apply.py": {
+      "mtime": 1777619071.0,
+      "size": 5458
+    },
+    "scripts/v92_3_self_improvement_signature_cleanup_apply.py": {
+      "mtime": 1777590756.0,
+      "size": 4842
+    },
+    "scripts/v92_3_self_improvement_signature_cleanup_gate.py": {
+      "mtime": 1777590756.0,
+      "size": 2803
+    },
+    "scripts/v92_4_final_import_and_subprocess_fix_gate.py": {
+      "mtime": 1777622870.2608702,
+      "size": 4438
+    },
+    "scripts/v92_apply_offline_repair.py": {
+      "mtime": 1777622838.2988968,
+      "size": 28144
+    },
+    "scripts/v92_contract_hotfix_apply.py": {
+      "mtime": 1777618693.0,
+      "size": 11465
+    },
+    "scripts/v92_full_static_audit_and_repair_gate.py": {
+      "mtime": 1777622853.9298837,
+      "size": 6551
+    },
+    "scripts/v93_apply_unused_and_incomplete_repair.py": {
+      "mtime": 1777626655.8164804,
+      "size": 8368
+    },
+    "scripts/v93_unused_and_incomplete_function_gate.py": {
+      "mtime": 1777626687.5104668,
+      "size": 2798
+    },
+    "scripts/v94_mainline_trigger_gate.py": {
+      "mtime": 1777627739.819969,
+      "size": 13101
+    },
+    "scripts/v95_2_all_chain_coverage_gate.py": {
+      "mtime": 1777633418.0,
+      "size": 24009
+    },
+    "scripts/v95_task_chain_closure_gate.py": {
+      "mtime": 1777628499.1476922,
+      "size": 25289
+    },
+    "scripts/v96_failure_recovery_and_stability_gate.py": {
+      "mtime": 1777633428.3812935,
+      "size": 24983
+    },
+    "scripts/v97_long_run_stability_gate.py": {
+      "mtime": 1777635133.2157304,
+      "size": 22215
+    },
+    "scripts/v97_v106_apply_operating_agent_upgrade.py": {
+      "mtime": 1777415504.0,
+      "size": 4101
+    },
+    "scripts/v98_1_mainline_hook_runtime_gate.py": {
+      "mtime": 1777709625.7132108,
+      "size": 6608
+    },
+    "scripts/v98_apply_identity_context_stability.py": {
+      "mtime": 1777634310.0,
+      "size": 10502
+    },
+    "scripts/v98_identity_context_stability_gate.py": {
+      "mtime": 1777634310.0,
+      "size": 7506
+    },
+    "scripts/v99_1_ops_dashboard_generator.py": {
+      "mtime": 1777642578.9186893,
+      "size": 8619
+    },
+    "scripts/v99_2_script_classification_and_archive_gate.py": {
+      "mtime": 1777651622.2014961,
+      "size": 4278
+    },
+    "scripts/v99_5_directory_migration_gate.py": {
+      "mtime": 1777653635.3382123,
+      "size": 9591
+    },
+    "scripts/v99_directory_fusion_and_cleanup_gate.py": {
+      "mtime": 1777643608.5371392,
+      "size": 11291
+    },
+    "scripts/v99_mainline_trigger_gate.py": {
+      "mtime": 1777641308.4615042,
+      "size": 13774
+    },
+    "scripts/vintage/one_time_trigger.py": {
+      "mtime": 1777415504.0,
+      "size": 4043
+    },
+    "scripts/vintage/resume_current_task.py": {
+      "mtime": 1777529633.8262556,
+      "size": 2681
+    },
+    "scripts/vintage/v11_6_to_v12_0_all_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 567
+    },
+    "scripts/vintage/v12_1_to_v12_5_all_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 492
+    },
+    "scripts/vintage/v12_6_to_v13_0_all_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 590
+    },
+    "scripts/vintage/v14_0_to_v23_0_all_smoke.py": {
+      "mtime": 1777415504.0,
+      "size": 4523
+    },
+    "scripts/vintage/v23_1_to_v45_0_full_replace_gate.py": {
+      "mtime": 1777529633.8272555,
+      "size": 459
+    },
+    "scripts/vintage/v23_1_to_v55_0_full_replace_gate.py": {
+      "mtime": 1777529633.8272555,
+      "size": 1664
+    },
+    "scripts/vintage/v23_1_to_v65_0_full_replace_gate.py": {
+      "mtime": 1777529633.8272555,
+      "size": 1373
+    },
+    "scripts/vintage/v23_1_to_v75_0_full_replace_gate.py": {
+      "mtime": 1777529633.8272555,
+      "size": 1402
+    },
+    "scripts/vintage/v23_2_to_v23_6_all_smoke.py": {
+      "mtime": 1777529633.8272555,
+      "size": 3024
+    },
+    "scripts/vintage/v23_7_to_v24_6_all_smoke.py": {
+      "mtime": 1777543818.7836058,
+      "size": 4721
+    },
+    "scripts/vintage/v23_to_v35_full_replace_gate.py": {
+      "mtime": 1777529633.8272555,
+      "size": 3053
+    },
+    "scripts/vintage/v24_8_to_v25_7_all_smoke.py": {
+      "mtime": 1777529633.8272555,
+      "size": 1091
+    },
+    "scripts/vintage/v26_0_to_v35_0_all_smoke.py": {
+      "mtime": 1777529633.8272555,
+      "size": 710
+    },
+    "scripts/vintage/v36_0_to_v45_0_all_smoke.py": {
+      "mtime": 1777529633.8272555,
+      "size": 2682
+    },
+    "scripts/vintage/v46_0_to_v55_0_all_smoke.py": {
+      "mtime": 1777529633.8272555,
+      "size": 3973
+    },
+    "scripts/vintage/v56_0_to_v65_0_all_smoke.py": {
+      "mtime": 1777529633.8282557,
+      "size": 2435
+    },
+    "scripts/vintage/v66_0_to_v75_0_all_smoke.py": {
+      "mtime": 1777529633.8282557,
+      "size": 3439
+    },
+    "skills/2nd-brain/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 11353
+    },
+    "skills/Humanizer-zh-main/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 18898
+    },
+    "skills/ab-test-setup/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 7971
+    },
+    "skills/affaan-m-everything-claude-code-article-writing/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3414
+    },
+    "skills/agent_reach/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7796
+    },
+    "skills/agentmcmillan-brain-and-co-plan-ceo-review/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 34238
+    },
+    "skills/ai-drama-prompt-factory/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 28184
+    },
+    "skills/ai-picture-book/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2349
+    },
+    "skills/ai-ppt-generator/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3943
+    },
+    "skills/aiskillstore-marketplace-test-case-generator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9727
+    },
+    "skills/alphaear-news/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 1076
+    },
+    "skills/alphaear-predictor/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1896
+    },
+    "skills/amap-jsapi-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6296
+    },
+    "skills/amazing129-skills-mbti-for-agents/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7665
+    },
+    "skills/aminer-data-search/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 12496
+    },
+    "skills/anthropics-skills-canvas-design/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 12465
+    },
+    "skills/anthropics-skills-pptx/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9771
+    },
+    "skills/article-writer/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3033
+    },
+    "skills/arxiv-search/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3641
+    },
+    "skills/autonomous-tasks/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3849
+    },
+    "skills/axton-obsidian-visual-skills-excalidraw-diagram/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 15132
+    },
+    "skills/baoyu-comic/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 13431
+    },
+    "skills/baoyu-url-to-markdown/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 14226
+    },
+    "skills/barcode-info/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 208
+    },
+    "skills/base64-converter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 202
+    },
+    "skills/bdpan-storage/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7321
+    },
+    "skills/best-minds/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 1131
+    },
+    "skills/brainhole-factory/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4103
+    },
+    "skills/brainstorming/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 10811
+    },
+    "skills/browser-control/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3482
+    },
+    "skills/bytedance-deer-flow-surprise-me/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2640
+    },
+    "skills/bytesagain-ai-skills-meme-generator/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1444
+    },
+    "skills/calcom-cal.com-web-design-guidelines-1.0.2/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1229
+    },
+    "skills/canvas-design/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 12578
+    },
+    "skills/claw-art/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4118
+    },
+    "skills/color-converter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 208
+    },
+    "skills/content-workflow/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 2789
+    },
+    "skills/copywriter/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2950
+    },
+    "skills/creative-thought-partner/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7473
+    },
+    "skills/cron-parser/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 192
+    },
+    "skills/daily-ai-news-plus/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1623
+    },
+    "skills/daily-hot-news/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6379
+    },
+    "skills/daily-tech-broadcast/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3318
+    },
+    "skills/darwin-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 17119
+    },
+    "skills/date-calculator/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 211
+    },
+    "skills/davila7-claude-code-templates-ship-learn-next/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9419
+    },
+    "skills/deep-search-and-insight-synthesize/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7721
+    },
+    "skills/didi-ride-skill/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 15951
+    },
+    "skills/eastmoney-mx-skills-suite/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5547
+    },
+    "skills/educational-video-creator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 21432
+    },
+    "skills/env-guard/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3547
+    },
+    "skills/excel-analysis/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5834
+    },
+    "skills/fasting-tracker/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3714
+    },
+    "skills/feishu-channel-skill/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1635
+    },
+    "skills/feiskyer-claude-code-settings-deep-research/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 20047
+    },
+    "skills/fenbi/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4652
+    },
+    "skills/find-skills/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6301
+    },
+    "skills/fitness-coach/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5856
+    },
+    "skills/flowchart-generator-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 12206
+    },
+    "skills/flyai-travel/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6992
+    },
+    "skills/frontend-ui-ux-engineer/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 10430
+    },
+    "skills/general-writing/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3071
+    },
+    "skills/gesture-html/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5735
+    },
+    "skills/github-awesome-copilot-prd/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 4665
+    },
+    "skills/good-txt-to-hwreader/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4151
+    },
+    "skills/gtht-financialsearch-skill/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 17106
+    },
+    "skills/gtht-ranklist-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 52791
+    },
+    "skills/gtht-realtimemarketdata-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 32798
+    },
+    "skills/gtht-smartstockselection-skill/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 18816
+    },
+    "skills/hash-generator/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 217
+    },
+    "skills/headed-browser-open-v3/SKILL.md": {
+      "mtime": 1777510712.0,
+      "size": 18322
+    },
+    "skills/hithink-iwencai/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9187
+    },
+    "skills/html-ux-guidance/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 20418
+    },
+    "skills/huawei-drive/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3268
+    },
+    "skills/humanize-chinese/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 13935
+    },
+    "skills/hz-proactive-agent/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 20883
+    },
+    "skills/ima-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 12207
+    },
+    "skills/imap-smtp-email/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 8219
+    },
+    "skills/ip-lookup/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 191
+    },
+    "skills/jdjr/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 967
+    },
+    "skills/jrj-quote-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9103
+    },
+    "skills/json-formatter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 225
+    },
+    "skills/json-minifier/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 201
+    },
+    "skills/json-validator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 210
+    },
+    "skills/k12-smart-teacher/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 15224
+    },
+    "skills/kids-book-writer/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 22106
+    },
+    "skills/limtdesign/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3095
+    },
+    "skills/llm-memory-integration/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 2881
+    },
+    "skills/lorem-generator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 191
+    },
+    "skills/lyrical-fable/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 10050
+    },
+    "skills/marketing-ideas/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6855
+    },
+    "skills/markitdown/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 13225
+    },
+    "skills/math-edu-assistant/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 7268
+    },
+    "skills/meitu-skills/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9168
+    },
+    "skills/meituan-coupon-get-tool/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 27367
+    },
+    "skills/meituan-coupon-traffic-huawei/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 18143
+    },
+    "skills/metabase-metabase-docs-write/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3406
+    },
+    "skills/mime-type-lookup/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 201
+    },
+    "skills/minimax-music-gen/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 8829
+    },
+    "skills/movie-producer-scene/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2400
+    },
+    "skills/multi-search-engine/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3372
+    },
+    "skills/natural-language-planner/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 35052
+    },
+    "skills/news-extractor/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7031
+    },
+    "skills/news-writing/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3662
+    },
+    "skills/nicepkg-ai-workflow-user-research/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4534
+    },
+    "skills/nini-writing-inspiration/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4819
+    },
+    "skills/number-formatter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 208
+    },
+    "skills/office-automation/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5480
+    },
+    "skills/ontology/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6703
+    },
+    "skills/openclaw-skills-agent-builder-1.0.3/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3383
+    },
+    "skills/openclaw-skills-assistant/SKILL.md": {
+      "mtime": 1777642224.402316,
+      "size": 4591
+    },
+    "skills/openclaw-skills-soulcraft/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 11216
+    },
+    "skills/openclaw-skills-video-script-creator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4344
+    },
+    "skills/opengfx/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 5970
+    },
+    "skills/openmaic/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5055
+    },
+    "skills/pdf-toolkit-pro/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 2438
+    },
+    "skills/percentage-calculator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 217
+    },
+    "skills/personas/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2151
+    },
+    "skills/ppt-generator-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 14865
+    },
+    "skills/pptx-posters/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 14684
+    },
+    "skills/prd-writer/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3597
+    },
+    "skills/proactive-tasks/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 16045
+    },
+    "skills/product-manager/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3317
+    },
+    "skills/pua/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 26982
+    },
+    "skills/qcc-agent-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2233
+    },
+    "skills/qq-clawbot-setup/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5037
+    },
+    "skills/qr-code-info/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 208
+    },
+    "skills/react-best-practices/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 6242
+    },
+    "skills/read-arxiv-paper/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 1982
+    },
+    "skills/recipe-to-list/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2473
+    },
+    "skills/regex-tester/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 220
+    },
+    "skills/remotion-video-toolkit/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5595
+    },
+    "skills/rkiding-awesome-finance-skills-alphaear-sentiment/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2056
+    },
+    "skills/rkiding-awesome-finance-skills-alphaear-signal-tracker/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 1835
+    },
+    "skills/seedance-video-gen/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 16260
+    },
+    "skills/seedream-image-gen/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 5441
+    },
+    "skills/self-improving-agent/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 7268
+    },
+    "skills/shareai-lab-learn-claude-code-pdf/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2946
+    },
+    "skills/shubhamsaboo-awesome-llm-apps-ux-designer/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7966
+    },
+    "skills/skill-creator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 18452
+    },
+    "skills/slidevjs-slidev-slidev/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9411
+    },
+    "skills/smart-followups/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 4106
+    },
+    "skills/speech-to-text/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 8028
+    },
+    "skills/stock-daily-analysis-pro/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 5122
+    },
+    "skills/su-lan-paper-daily-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 5576
+    },
+    "skills/summarize/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1425
+    },
+    "skills/superdesign/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 6178
+    },
+    "skills/tc-chengxin/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 23538
+    },
+    "skills/tencent-docs/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 11950
+    },
+    "skills/tencent-news/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 8267
+    },
+    "skills/text-case-converter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 226
+    },
+    "skills/text-counter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 262
+    },
+    "skills/text-diff/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 220
+    },
+    "skills/text-reverse/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 193
+    },
+    "skills/text-trimmer/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 220
+    },
+    "skills/timezone-converter/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 211
+    },
+    "skills/today-task/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 33242
+    },
+    "skills/trader-simulator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 17941
+    },
+    "skills/trading-quant/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2590
+    },
+    "skills/tushare-finance/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 2659
+    },
+    "skills/unit-converter/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 247
+    },
+    "skills/url-encoder/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 187
+    },
+    "skills/user-agent-parser/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 206
+    },
+    "skills/uuid-generator/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 204
+    },
+    "skills/voice-synthesis/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 1941
+    },
+    "skills/weather/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2291
+    },
+    "skills/web-content-fetcher/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 2297
+    },
+    "skills/webapp-testing/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3913
+    },
+    "skills/wechat-article-search/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 2255
+    },
+    "skills/wecom-bot-setup/SKILL.md": {
+      "mtime": 1777529653.2882164,
+      "size": 3506
+    },
+    "skills/weibo-clawbot-setup/SKILL.md": {
+      "mtime": 1777529653.2882164,
+      "size": 2239
+    },
+    "skills/weixin-clawbot-setup/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 472
+    },
+    "skills/wendao-skill/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3532
+    },
+    "skills/writing-style-iterator/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 5923
+    },
+    "skills/xiao-gui-agent/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 4953
+    },
+    "skills/xiaoyi-HarmonyOSSmartHome-skill/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 12857
+    },
+    "skills/xiaoyi-cloud-database/SKILL.md": {
+      "mtime": 1777346412.0,
+      "size": 19013
+    },
+    "skills/xiaoyi-doc-convert/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 8745
+    },
+    "skills/xiaoyi-docx/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 15483
+    },
+    "skills/xiaoyi-file-upload/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 1667
+    },
+    "skills/xiaoyi-health/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3509
+    },
+    "skills/xiaoyi-image-search/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 2899
+    },
+    "skills/xiaoyi-image-translation/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9044
+    },
+    "skills/xiaoyi-image-understanding/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 7926
+    },
+    "skills/xiaoyi-pdf/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 13204
+    },
+    "skills/xiaoyi-podcast-gen/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 5439
+    },
+    "skills/xiaoyi-ppt/SKILL.md": {
+      "mtime": 1777531998.0,
+      "size": 6047
+    },
+    "skills/xiaoyi-report/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3910
+    },
+    "skills/xiaoyi-tts/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 8311
+    },
+    "skills/xiaoyi-web-deploy/SKILL.md": {
+      "mtime": 1777272506.0,
+      "size": 5328
+    },
+    "skills/xiaoyi-web-search/SKILL.md": {
+      "mtime": 1777437848.0,
+      "size": 3369
+    },
+    "skills/xiaoyi-xlsx/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 17879
+    },
+    "skills/yanxue-course-manager/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 3763
+    },
+    "skills/yunshu0909-yunshu-skillshub-prd-doc-writer/SKILL.md": {
+      "mtime": 1777437846.0,
+      "size": 9788
+    },
+    "docs/__init__.py": {
+      "mtime": 1777529633.7112558,
+      "size": 0
+    },
+    "docs/v23_7_to_v24_6/__init__.py": {
+      "mtime": 1777529633.7112558,
+      "size": 0
+    },
+    "docs/v24_7/__init__.py": {
+      "mtime": 1777529633.7112558,
+      "size": 0
+    },
+    "docs/v24_8_to_v25_7/__init__.py": {
+      "mtime": 1777529633.7112558,
+      "size": 0
+    }
+  },
+  "last_scan": "2026-05-03T14:11:42.313112+00:00"
+}

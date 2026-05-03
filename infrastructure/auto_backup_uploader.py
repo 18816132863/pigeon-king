@@ -298,3 +298,54 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+# V104_FINAL_CONSISTENCY_CLEANUP: OFFLINE SEND GUARD
+V104_OFFLINE_SEND_GUARD = True
+
+def v104_block_external_send(action="external_send", payload=None):
+    return {
+        "status": "blocked",
+        "mode": "offline_draft_only",
+        "action": action,
+        "payload_preview": str(payload)[:200] if payload is not None else None,
+        "real_send": False,
+        "reason": "NO_REAL_SEND/NO_EXTERNAL_API active; generate draft/mock only.",
+    }
+
+def send(*args, **kwargs):
+    return v104_block_external_send("send", {"args": args, "kwargs": kwargs})
+
+def post(*args, **kwargs):
+    return v104_block_external_send("post", {"args": args, "kwargs": kwargs})
+
+def push(*args, **kwargs):
+    return v104_block_external_send("git_push", {"args": args, "kwargs": kwargs})
+
+
+# V104.1 OFFLINE SEND GUARD — appended compatibility override.
+def _v104_1_block_external_send(action="auto_backup", payload=None):
+    return {
+        "status": "blocked",
+        "mode": "offline_draft_only",
+        "action": action,
+        "payload_preview": str(payload)[:200] if payload is not None else None,
+        "real_send": False,
+        "reason": "NO_REAL_SEND/NO_EXTERNAL_API active; draft/mock only.",
+    }
+
+
+def push(*args, **kwargs):
+    return _v104_1_block_external_send("push", {"args": args, "kwargs": kwargs})
+
+
+def upload(*args, **kwargs):
+    return _v104_1_block_external_send("upload", {"args": args, "kwargs": kwargs})
+
+
+def git_push(*args, **kwargs):
+    return _v104_1_block_external_send("git_push", {"args": args, "kwargs": kwargs})
+
+
+def git_add_commit_push(*args, **kwargs):
+    return _v104_1_block_external_send("git_add_commit_push", {"args": args, "kwargs": kwargs})

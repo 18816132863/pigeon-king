@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from infrastructure.task_manager import get_task_manager
 from infrastructure.storage.repositories.sqlite_repo import SQLiteTaskRepository
-from domain.tasks import TaskStatus
+from core.domain.tasks.specs import TaskStatus
 
 
 @pytest.fixture(scope="module", autouse=True)

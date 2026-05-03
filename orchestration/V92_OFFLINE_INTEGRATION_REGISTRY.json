@@ -1,0 +1,296 @@
+{
+  "version": "V92.0",
+  "mode": "offline_mock_dry_run",
+  "updated_at": "2026-05-01T08:07:58Z",
+  "integration_modules": [
+    {
+      "module": "memory_context.multimodal.multimodal_search",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "memory_context.cross_lingual.cross_lingual",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "execution.visual_operation_agent.visual_planner",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "execution.visual_operation_agent.action_executor",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "execution.visual_operation_agent.screen_observer",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "execution.visual_operation_agent.ui_grounding",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "core.digital_twin.identity_drift_guard",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "core.self_evolution_ops.observability_report",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "ops.autonomous_os_mission_control_v4",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "ops.mission_control_dashboard_v5",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "infrastructure.portfolio.assessment.daily_assessment_generate",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "infrastructure.solution_search_orchestrator",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "execution.speculative_decoding_v1.speculative_decoder",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "execution.speculative_decoding_v1.nvidia_adapter",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "evaluation.autonomy_regression_matrix_v4",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "evaluation.continuous_learning_evaluator_v5",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "infrastructure.fusion.module_fusion_engine",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "infrastructure.fusion.skill_fusion_engine",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "infrastructure.capability_extension_sandbox_gate_v2",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    },
+    {
+      "module": "infrastructure.capability_marketplace_v5",
+      "status": "registered",
+      "execution": "dry_run_or_mock",
+      "gateway_required": true
+    }
+  ],
+  "tool_modules": [
+    {
+      "module": "infrastructure.gui_agent_fast",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.gui_agent_learner",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.gui_agent_optimizer",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.gui_agent_smart",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.inventory_diff",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.inventory_snapshot",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.module_catalog_export",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.skill_catalog_export",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.skill_access_checker",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.skill_index_manager",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.violation_test_suite",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.inventory.dependency_graph_export",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.setup_tools.one_click_setup",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.setup_tools.progressive_setup",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.benchmark",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.doc_sync_engine",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.tts_enhanced",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.unified_logger",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.unified_maintenance",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.auto_backup_uploader",
+      "status": "offline_maintenance",
+      "mainline": false
+    },
+    {
+      "module": "infrastructure.auto_git",
+      "status": "offline_maintenance",
+      "mainline": false
+    }
+  ],
+  "external_infrastructure": [
+    {
+      "name": "celery",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "postgresql",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "redis",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "mesh",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "monitoring",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "alerting",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "hardware",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "connectors",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "connector_factory",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "connection_pool",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "langgraph",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    },
+    {
+      "name": "openapi",
+      "status": "local_fallback_or_mock_contract",
+      "requires_api": false
+    }
+  ]
+}
