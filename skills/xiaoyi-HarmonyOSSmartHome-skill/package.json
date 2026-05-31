@@ -19,7 +19,7 @@
   "author": "HarmonyOS IoT Team",
   "license": "ISC",
   "dependencies": {
-    "commander": "^12.0.0",
+    "commander": "^15.0.0",
     "redis": "^4.6.0"
   },
   "devDependencies": {
